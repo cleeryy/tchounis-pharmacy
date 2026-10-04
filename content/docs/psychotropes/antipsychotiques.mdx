@@ -1,49 +1,317 @@
 ---
 title: 'Antipsychotiques'
-description: 'Squelette de fiche « Antipsychotiques » — à compléter avec les cours UE 2.11 S3.'
+description: 'Antipsychotiques ou neuroleptiques : propriétés, 20 molécules, indications, contre-indications, interactions, effets indésirables et surveillances — UE 2.11 S3.'
 ---
 
-> Contenu à compléter avec les cours UE 2.11 S3.
+import { Tabs, Tab } from 'fumadocs-ui/components/tabs';
+import { Steps, Step } from 'fumadocs-ui/components/steps';
+
+Les antipsychotiques, ou neuroleptiques, sont les psychotropes des psychose.
+Cette fiche suit le plan imposé par l'UE 2.11 S3. Les chiffres, fréquences et
+délais proviennent du cours et des références listées en [Sources](#sources) ;
+ce qui n'est documenté par aucune de ces sources est indiqué « Non précisé ».
 
 ## Propriétés
 
-Cette fiche rassemble l'essentiel commun de la famille : ce qu'elle fait,
-sans sur-expliquer l'évident. Le mécanisme commun détaillé est à compléter
-avec les cours UE 2.11 S3. Seules les particularités utiles en pratique IDE
-sont retenues dans les sections ci-dessous.
+La psychose est une désorganisation globale de la pensée et du comportement ;
+elle distingue les psychose aiguës des psychose chroniques. La schizophrénie
+associe des symptômes positifs ou productifs — agitation, délire,
+hallucinations, altération ou excès du discours et de la communication, discours
+désorganisé —, des symptômes négatifs ou déficitaires — émoussement affectif,
+retrait émotionnel, pauvreté des relations, passivité, retrait social avec
+apathie —, et des symptômes cognitifs et affectifs.
+
+Dans la schizophrénie, les altérations des voies dopaminergiques s'accompagnent
+d'une altération d'autres systèmes : 5-HT, glutamate, NA, ACh. Les antipsychotiques
+sont donc des antagonistes des récepteurs D2, avec une modulation plus ou moins
+marquée des autres systèmes de neurotransmission.
+
+Les stratégies principales associent les médicaments antipsychotiques et une
+prise en charge psychothérapeutique et sociale.
+
+<Callout type="info" title="Voies d'administration (cours)">
+Voie orale : traitement ambulatoire. Voie IM. Forme retard administrée toutes
+les 2 à 4 semaines selon les spécialités pour améliorer l'observance. Voie IV
+possible pour certaines spécialités.
+</Callout>
+
+<Cards>
+  <Card
+    title="Propriété sédative"
+    description="Diminution de l'agitation et de l'agressivité, état apathique."
+  />
+  <Card
+    title="Propriété antiproductive"
+    description="Diminution de la tension psychique et des productions psychotiques."
+  />
+  <Card
+    title="Propriété antidéficitaire"
+    description="Propriété antidéficitaire ou déshinibitrice."
+  />
+</Cards>
+
+Les effets néfastes découlent des antagonismes : effets extrapyramidaux
+(antagonisme D2 au niveau nigro-striatal), effets endocriniens (antagonisme D2
+au niveau tubéro-infundibulaire), effets alpha-adrénolytiques — hypotension —,
+effets anti-H1 — sédation —, effets atropiniques — bouche sèche, troubles
+mictionnels, constipation, mydriase, vision floue.
+
+### Les différentes classes
+
+Développement des acronymes et position de chaque famille, le détail des
+molécules venant ensuite.
+
+| Classe | Dénomination | Quand l'utiliser |
+| ------ | ------------ | ---------------- |
+| Antipsychotiques de 1re génération | Neuroleptiques, antipsychotiques classiques ou typiques | Épisodes aigus des schizophrénies à symptomatologie positive et prévention de leur récidive (cours). Effets extrapyramidaux marqués : dyskinésies aiguës et tardives +++ (cours). |
+| Antipsychotiques de 2e génération | Antipsychotiques atypiques | 1re intention dans la schizophrénie, sauf clozapine (cours). Désordres métaboliques marqués : prise de poids, diabète, désordres lipidiques +++ (cours). |
+| Clozapine | Antipsychotique de 2e génération, à part | Réservée aux schizophrénies résistantes au traitement et aux troubles psychotiques survenant au cours de la maladie de Parkinson, en cas d'échec de la stratégie thérapeutique habituelle, en raison du risque d'agranulocytose (RCP LEPONEX®). |
+
+<Callout type="info" title="Logique de choix">
+Le cours retient un antipsychotique de 2e génération en 1re intention dans la
+schizophrénie, sauf clozapine.
+
+La clozapine ne peut être initiée qu'en cas d'échec de la stratégie habituelle,
+avec surveillance hématologique obligatoire (RCP LEPONEX®) : les patients ne
+pouvant pas être soumis à des analyses de sang régulières sont contre-indiqués
+(RCP).
+
+Utilisés comme thymoregulateurs, les antipsychotiques de 2e génération (olanzapine,
+rispéridone, aripiprazole, quétiapine) sont indiqués dans le traitement des épisodes
+maniaques modérés à sévères et dans la prévention des rechutes chez les patients
+ayant déjà répondu à ce traitement lors d'un épisode maniaque aigu (cours,
+capsule Thymoregulateurs).
+</Callout>
 
 ## Médicaments de la famille
 
-| DCI | Particularité | Mention honorable |
-| --- | ------------- | ----------------- |
-| À compléter | À compléter | À compléter |
+Vingt entrées classées par génération. Chaque DCI renvoie à sa fiche substance
+VIDAL.
+
+| Classe | DCI | Particularité | Mention honorable |
+| ------ | --- | ------------- | ----------------- |
+| 1re génération | [Chlorpromazine](https://www.vidal.fr/medicaments/substances/chlorpromazine-943.html) | — | LARGACTIL® cp, sol buv, inj |
+| 1re génération | [Lévomépromazine](https://www.vidal.fr/medicaments/substances/levomepromazine-2085.html) | — | NOZINAN® cp, sol buv, inj |
+| 1re génération | [Cyamémazine](https://www.vidal.fr/medicaments/substances/cyamemazine-1136.html) | — | TERCIAN® + génériques cp, sol buv |
+| 1re génération | [Périciazine](https://www.vidal.fr/medicaments/substances/propericiazine-6151.html) | — | NEULEPTIL® cp, sol buv |
+| 1re génération | [Pipotiazine](https://www.vidal.fr/medicaments/substances/pipotiazine-2804.html) | — | PIPORTIL® cp, inj |
+| 1re génération | [Halopéridol](https://www.vidal.fr/medicaments/substances/haloperidol-1726.html) | Syndrome extrapyramidal dans 34 % des essais cliniques (RCP HALDOL®) | HALDOL® cp, sol buv, inj |
+| 1re génération | [Pipamperone](https://www.vidal.fr/medicaments/substances/pipamperone-2792.html) | — | DIPIPERON® cp, sol buv |
+| 1re génération | [Sulpiride](https://www.vidal.fr/medicaments/substances/sulpiride-3408.html) | — | DOGMATIL® + génériques cp, sol buv, gélules |
+| 1re génération | [Tiapride](https://www.vidal.fr/medicaments/substances/tiapride-3517.html) | — | TIAPRIDAL® + génériques cp, sol buv, inj |
+| 1re génération | [Flupentixol](https://www.vidal.fr/medicaments/substances/flupentixol-1528.html) | — | FLUANXOL® sol buv, inj |
+| 1re génération | [Zuclopenthixol](https://www.vidal.fr/medicaments/substances/zuclopenthixol-5833.html) | — | CLOPIXOL® cp, sol buv, inj |
+| 1re génération | [Pimozide](https://www.vidal.fr/medicaments/substances/pimozide-2786.html) | — | ORAP® cp |
+| 1re génération | [Loxapine](https://www.vidal.fr/medicaments/substances/loxapine-2140.html) | — | LOXAPAC® cp, sol buv, inj |
+| 2e génération | [Clozapine](https://www.vidal.fr/medicaments/substances/clozapine-4016.html) | Agranulocytose : surveillance hématologique obligatoire (RCP LEPONEX®) | LEPONEX® + génériques cp |
+| 2e génération | [Olanzapine](https://www.vidal.fr/medicaments/substances/olanzapine-17677.html) | — | ZYPREXA® + génériques cp, inj / ZYPADHERA® inj |
+| 2e génération | [Rispéridone](https://www.vidal.fr/medicaments/substances/risperidone-12116.html) | — | RISPERDAL® + génériques cp, sol buv / RISPERDAL CONSTA® LP inj |
+| 2e génération | [Paliperidone](https://www.vidal.fr/medicaments/substances/paliperidone-22902.html) | Forme retard | TREVICTA LP inj, XEPLION LP inj |
+| 2e génération | [Amisulpride](https://www.vidal.fr/medicaments/substances/amisulpride-297.html) | — | SOLIAN® + génériques cp, sol buv, inj |
+| 2e génération | [Aripiprazole](https://www.vidal.fr/medicaments/substances/aripiprazole-22622.html) | — | ABILIFY® + génériques cp, sol buv, inj |
+| 2e génération | [Quétiapine](https://www.vidal.fr/medicaments/substances/quetiapine-23416.html) | — | XEROQUEL® + génériques cp |
 
 ## Indications
 
-- À compléter avec les cours.
-- À compléter avec les cours.
-- À compléter avec les cours.
+- **Psychoses aiguës et chroniques**
+
+  - Traitement des épisodes aigus des schizophrénies à symptomatologie positive
+    et prévention de leur récidive (cours).
+  - Antipsychotique de 2e génération en 1re intention dans la schizophrénie, sauf
+    clozapine (cours).
+
+- **Autres indications psychiatriques**
+
+  - Épisode maniaque dans le trouble bipolaire, en préventif ou en curatif pour
+    certaines spécialités (cours).
+  - États d'agitation (cours).
+  - Troubles psycho-comportementaux des patients atteints de démence (cours).
+
+- **Clozapine** — schizophrénies résistantes au traitement et troubles psychotiques
+  survenant au cours de la maladie de Parkinson, en cas d'échec de la stratégie
+  thérapeutique habituelle (RCP LEPONEX®).
 
 ## Contre-indications
 
-- À compléter avec les cours.
-- À compléter avec les cours.
-- À compléter avec les cours.
+Le cours ne détaille pas les contre-indications des antipsychotiques ; les
+onglets ci-dessous sont lus sur les RCP ANSM des spécialités représentatives.
+
+<Tabs items={['Chlorpromazine', 'Halopéridol', 'Clozapine']} label="Molécule">
+  <Tab value="Chlorpromazine">
+
+    Lus sur le RCP de LARGACTIL® (chlorpromazine).
+
+    - Hypersensibilité à la substance active ou à l'un des excipients.
+    - Risque de glaucome par fermeture de l'angle.
+    - Risque de rétention urinaire lié à des troubles urétro-prostatiques.
+    - Antécédent d'agranulocytose.
+    - En association : dopaminergiques hors Parkinson (cabergoline, quinagolide),
+      citalopram, escitalopram.
+    - Enfant de moins d'un an, en raison du lien possible entre phénothiazines et
+      syndrome de mort subite du nourrisson.
+  </Tab>
+  <Tab value="Halopéridol">
+
+    Lus sur le RCP d'HALDOL® (halopéridol).
+
+    - État comateux, dépression du système nerveux central.
+    - Maladie de Parkinson, démence à corps de Lewy, paralysie supranucléaire
+      progressive.
+    - Allongement connu de l'intervalle QTc ou syndrome du QT long congénital ;
+      antécédents d'arythmies ventriculaires ou de torsades de pointes ;
+      hypokaliémie non corrigée.
+    - Infarctus du myocarde aigu récent, insuffisance cardiaque non compensée.
+    - Traitement concomitant par des médicaments allongeant l'intervalle QT.
+  </Tab>
+  <Tab value="Clozapine">
+
+    Lus sur le RCP de LEPONEX® (clozapine).
+
+    - Patients ne pouvant être soumis à des analyses de sang régulières.
+    - Antécédent de granulopénie ou d'agranulocytose, antécédent d'agranulocytose
+      induite par LEPONEX®.
+    - Insuffisance médullaire fonctionnelle, épilepsie non contrôlée.
+    - États comateux, collapsus circulatoire et/ou dépression du SNC.
+    - Troubles rénaux ou cardiaques sévères (ex. myocardite), affections
+      hépatiques progressives, iléus paralytique.
+  </Tab>
+</Tabs>
 
 ## Interactions médicamenteuses
 
-- À compléter avec les cours.
-- À compléter avec les cours.
-- À compléter avec les cours.
+**Pharmacocinétique.** Les interactions sont spécifiques à chaque molécule, en
+fonction des profils métaboliques ; le cours cite l'exemple du CYP3A4 (cours).
+
+**Pharmacodynamique.** Les associations à des médicaments agonistes
+dopaminergiques — anti-parkinsoniens, sauf clozapine — exposent à un risque
+d'inefficacité du traitement (cours).
+
+<Callout type="error" title="Syndrome malin des neuroleptiques — urgence vitale">
+Le syndrome malin des neuroleptiques associe hyperthermie, rigidité, prostration
+et dysrégulation cardiovasculaire (cours). Il est décrit comme rare, et distinct
+du syndrome sérotoninergique.
+
+Devant une hyperthermie inexpliquée, il est impératif de suspendre le traitement
+(RCP LARGACTIL®) : surveillance, arrêt des antipsychotiques, transfert en
+réanimation (cours).
+
+Le lithium associé à un neuroleptique expose lui aussi au risque de syndrome
+malin (cours).
+</Callout>
+
+<Callout type="warning" title="Espace QT et torsades de pointes">
+Le cours retient les médicaments susceptibles de donner des torsades de pointes
+dans les interactions. Le RCP LARGACTIL® décrit un allongement de l'intervalle
+QT fréquent et dose-dépendant, des torsades de pointes en fréquence
+indéterminée, et demande un ECG avant l'instauration du traitement.
+</Callout>
+
+- **Alcool** → majoration de l'effet sédatif (cours).
+- **Dépresseurs du SNC** → majoration de l'effet sédatif (cours).
+- **Antihypertenseurs** → majoration du risque d'hypotension (cours).
 
 ## Effets secondaires
 
-| Effet | Fréquence (si disponible) | Conduite |
-| --- | --- | --- |
-| À compléter | À compléter | À compléter |
+Les fréquences proviennent des RCP consultés ; « Non précisée » signifie que les
+sources consultées ne donnent pas de valeur.
+
+| Classe | Effet indésirable | Fréquence | Conduite |
+| ------ | ----------------- | --------- | -------- |
+| 1re et 2e génération | Effets extrapyramidaux aigus : dyskinésies, syndrome parkinsonien | 1re génération +++ / 2e génération + (cours) | Repérer les symptômes, injection IM d'anticholinergiques ; pas de traitement efficace (cours) |
+| 1re et 2e génération | Dyskinésies tardives : mouvements de mâchonnement | 1re génération +++ / 2e génération + (cours) | Repérer les symptômes (cours) |
+| 1re et 2e génération | Gynécomastie, galactorrhée | 1re génération +++ / 2e génération ++ (cours) | Surveiller le volume mammaire (cours) |
+| 1re et 2e génération | Désordres métaboliques : prise de poids massive, diabète, désordres lipidiques | 1re génération + / 2e génération +++ (cours) | Règles hygiéno-diététiques ; surveiller le poids et l'IMC tous les mois puis tous les 3 mois, la glycémie et le bilan lipidique (cours) |
+| 1re et 2e génération | Trouble de la repolarisation : augmentation de l'espace QT, torsades de pointes | Idem selon les générations (cours) ; QT fréquent et dose-dépendant, torsades de fréquence indéterminée (RCP LARGACTIL®) | Réaliser un ECG avant l'instauration du traitement et surveiller l'ECG (cours) |
+| 1re et 2e génération | Agranulocytose avec la clozapine | Non précisée (cours) | Surveillance régulière de la NFS (cours) |
+| 1re et 2e génération | Syndrome malin des neuroleptiques : hyperthermie, rigidité, prostration, dysrégulation cardiovasculaire | Rare (cours) | Urgence vitale : surveillance, arrêt des antipsychotiques, transfert en réanimation (cours) |
+| Toutes | Effets alpha-adrénolytiques (hypotension), anti-H1 (sédation), atropiniques (bouche sèche, troubles mictionnels, constipation, mydriase, vision floue) | Non précisée (cours) | — |
+| Chlorpromazine | Sédation ou somnolence dès les faibles doses, plus marquée en début de traitement | Très fréquent (RCP LARGACTIL®) | — |
+| Chlorpromazine | Dyskinésies précoces, syndrome extrapyramidal akinétique ou hyperkinéto-hypertonique, akathisie | Très fréquent à doses plus élevées (RCP LARGACTIL®) | Cède partiellement aux antiparkinsoniens anticholinergiques, qui sont sans action ou peuvent aggraver les dyskinésies tardives (RCP) |
+| Chlorpromazine | Dyskinésies tardives lors de cures prolongées | Très fréquent (RCP LARGACTIL®) | Peuvent survenir à l'arrêt et disparaître à la réintroduction (RCP) |
+| Chlorpromazine | Prise de poids | Très fréquent à doses plus élevées (RCP LARGACTIL®) | Règles hygiéno-diététiques |
+| Chlorpromazine | Hyperprolactinémie, aménorrhée ; galactorrhée, gynécomastie, impuissance, frigidité | Fréquent à doses plus élevées / fréquence indéterminée (RCP LARGACTIL®) | Cas du cours : prolactinémie à 506 µUI/mL (N 20-150) avec troubles de l'érection et diminution de la libido, normalisation après l'arrêt |
+| Chlorpromazine | Allongement de l'intervalle QT, torsades de pointes | Fréquent / fréquence indéterminée (RCP LARGACTIL®) | ECG avant et pendant le traitement |
+| Halopéridol | Syndrome extrapyramidal 34 %, insomnie 19 %, agitation 15 %, hyperkinésie 13 %, céphalées 12 %, prise de poids 8 %, tremblement 8 %, hypertonie 7 %, hypotension orthostatique 7 %, dystonie 6 %, somnolence 5 % | Pourcentages des essais cliniques (RCP HALDOL®) | — |
+| Clozapine | Somnolence ou sédation, étourdissements, tachycardie, constipation, hypersalivation | Effets les plus fréquents (RCP LEPONEX®) | — |
+| Clozapine | Agranulocytose | Incidence de 32,0 pour 100 000 personnes-semaines sur les semaines 0 à 18, puis 2,3 (semaines 19 à 52) et 1,8 (semaine 53 et au-delà) (RCP LEPONEX®) | Numération leucocytaire obligatoire ; arrêt immédiat du traitement (RCP) |
 
 ## Surveillances
 
-- À compléter avec les cours.
-- À compléter avec les cours.
-- À compléter avec les cours.
+<Steps>
+  <Step>
+    ### Efficacité
+
+    Différée, avec amélioration des symptômes psychotiques : hallucinations,
+    délire, désorganisation. Vérifier l'observance.
+  </Step>
+  <Step>
+    ### Surveiller et dépister
+
+    Effets indésirables : sédation, dystonies aiguës, rigidité extrapyramidale,
+    fièvre annonciatrice d'un syndrome malin. Paraclinique : poids, bilan
+    lipidique, glycémie, NFS, PA, ECG.
+  </Step>
+  <Step>
+    ### Éducation
+
+    Informer sur la prise de poids et expliquer les règles hygiéno-diététiques ;
+    nécessité de poursuivre le suivi médical et le traitement après stabilisation
+    des symptômes ; risque de rechute ; prise en charge des comorbidités
+    psychiatriques et somatiques.
+  </Step>
+</Steps>
+
+- **ECG.** Réaliser un ECG avant l'instauration du traitement et le surveiller
+  (cours).
+- **NFS.** Surveillance régulière de la numération, obligatoire avec la
+  clozapine (cours, RCP LEPONEX®) ; fièvre, angine ou infection imposent
+  d'avertir le médecin et de contrôler immédiatement l'hémogramme (RCP
+  LARGACTIL®).
+- **Sujet âgé.** Mortalité accrue chez les personnes âgées atteintes de démence
+  traitées par antipsychotiques (RCP HALDOL®).
+- **Observance.** Formes retard administrées toutes les 2 à 4 semaines selon les
+  spécialités pour améliorer l'observance (cours).
+
+## Sources
+
+**Cours**
+
+- Pharmacologie des psychotropes — Antipsychotiques (capsule 3/5), Claire
+  Lafay-Chebassier, MCU-PH, Université de Poitiers ; UE 2.11 S3, IFSI Région
+  Nouvelle-Aquitaine.
+
+**VIDAL — fiches substance par DCI**
+
+- Antipsychotiques de 1re génération : [Chlorpromazine](https://www.vidal.fr/medicaments/substances/chlorpromazine-943.html),
+  [Lévomépromazine](https://www.vidal.fr/medicaments/substances/levomepromazine-2085.html),
+  [Cyamémazine](https://www.vidal.fr/medicaments/substances/cyamemazine-1136.html),
+  [Périciazine](https://www.vidal.fr/medicaments/substances/propericiazine-6151.html),
+  [Pipotiazine](https://www.vidal.fr/medicaments/substances/pipotiazine-2804.html),
+  [Halopéridol](https://www.vidal.fr/medicaments/substances/haloperidol-1726.html),
+  [Pipamperone](https://www.vidal.fr/medicaments/substances/pipamperone-2792.html),
+  [Sulpiride](https://www.vidal.fr/medicaments/substances/sulpiride-3408.html),
+  [Tiapride](https://www.vidal.fr/medicaments/substances/tiapride-3517.html),
+  [Flupentixol](https://www.vidal.fr/medicaments/substances/flupentixol-1528.html),
+  [Zuclopenthixol](https://www.vidal.fr/medicaments/substances/zuclopenthixol-5833.html),
+  [Pimozide](https://www.vidal.fr/medicaments/substances/pimozide-2786.html),
+  [Loxapine](https://www.vidal.fr/medicaments/substances/loxapine-2140.html)
+- Antipsychotiques de 2e génération : [Clozapine](https://www.vidal.fr/medicaments/substances/clozapine-4016.html),
+  [Olanzapine](https://www.vidal.fr/medicaments/substances/olanzapine-17677.html),
+  [Rispéridone](https://www.vidal.fr/medicaments/substances/risperidone-12116.html),
+  [Paliperidone](https://www.vidal.fr/medicaments/substances/paliperidone-22902.html),
+  [Amisulpride](https://www.vidal.fr/medicaments/substances/amisulpride-297.html),
+  [Aripiprazole](https://www.vidal.fr/medicaments/substances/aripiprazole-22622.html),
+  [Quétiapine](https://www.vidal.fr/medicaments/substances/quetiapine-23416.html)
+- Recommandation VIDAL : [Prise en charge de la schizophrénie](https://www.vidal.fr/recommandations/1620/schizophrenie/prise_en_charge/)
+
+**ANSM — Résumés des caractéristiques du produit**
+
+- [LARGACTIL 100 mg (chlorpromazine) — RCP](https://agence-prd.ansm.sante.fr/php/ecodex/rcp/R0423861.htm)
+- [HALDOL 5 mg (halopéridol) — RCP](https://agence-prd.ansm.sante.fr/php/ecodex/rcp/R0339780.htm)
+- [LEPONEX 25 mg (clozapine) — RCP](https://agence-prd.ansm.sante.fr/php/ecodex/rcp/R0386991.htm)
+
+**OMS (Organisation mondiale de la Santé)**
+
+- [Schizophrénie — fiche d'information OMS](https://www.who.int/news-room/fact-sheets/detail/schizophrenia)
+- [Troubles mentaux — fiche d'information OMS](https://www.who.int/news-room/fact-sheets/detail/mental-disorders)
+- [Index ATC/DDD de l'OMS (N05A — antipsychotiques)](https://www.whocc.no/atc_ddd_index/)

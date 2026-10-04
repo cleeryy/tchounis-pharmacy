@@ -1,49 +1,278 @@
 ---
 title: 'Thymorégulateurs'
-description: 'Squelette de fiche « Thymorégulateurs » — à compléter avec les cours UE 2.11 S3.'
+description: 'Thymorégulateurs ou normothymiques : propriétés, 9 molécules, indications, contre-indications, interactions, effets indésirables et surveillances — UE 2.11 S3.'
 ---
 
-> Contenu à compléter avec les cours UE 2.11 S3.
+import { Tabs, Tab } from 'fumadocs-ui/components/tabs';
+import { Steps, Step } from 'fumadocs-ui/components/steps';
+
+Les thymorégulateurs, aussi appelés normothymiques, sont les psychotropes du
+trouble de l'humeur. Cette fiche suit le plan imposé par l'UE 2.11 S3. Les
+chiffres, fréquences et délais proviennent du cours et des références listées en
+[Sources](#sources) ; ce qui n'est documenté par aucune de ces sources est
+indiqué « Non précisé ».
 
 ## Propriétés
 
-Cette fiche rassemble l'essentiel commun de la famille : ce qu'elle fait,
-sans sur-expliquer l'évident. Le mécanisme commun détaillé est à compléter
-avec les cours UE 2.11 S3. Seules les particularités utiles en pratique IDE
-sont retenues dans les sections ci-dessous.
+Le trouble bipolaire, ou trouble thymique, ou psychose maniaque-dépressive, est
+une pathologie qui consiste en des perturbations soit de type dépressif, soit de
+type maniaque. On distingue le trouble bipolaire de type I et le trouble
+bipolaire de type II.
+
+Le trouble bipolaire associe des anomalies des systèmes monoaminergiques — NA,
+5-HT, GABA, dopamine — et des perturbations de l'axe hypothalamo-hypophyso-
+surrénalien. La théorie de l'embrasement, ou effet « kindling », décrit une
+action sur le fonctionnement neuronal et sur la transmission dopaminergique :
+c'est le traitement de fond du trouble bipolaire.
+
+<Cards>
+  <Card
+    title="Curatif"
+    description="Action sédative des états d'agitation et en particulier des excitations maniaques."
+  />
+  <Card
+    title="Préventif"
+    description="Prévention des désordres thymiques récidivants : dépression, mélancolie."
+  />
+  <Card
+    title="Objectifs"
+    description="Disparition des symptômes, prévention des rechutes et des complications, dont le suicide, prise en charge des comorbidités, protection des biens."
+  />
+</Cards>
+
+Le lithium est un traitement au long cours, en principe prescrit à vie. Son
+élimination est rénale : les interactions médicamenteuses et les variations
+individuelles dépendent du rein, ce qui impose une marge thérapeutique étroite.
+
+<Callout type="info" title="Posologies du lithium (cours)">
+TERALITHE® 250 mg comprimé : 2 à 3 prises par jour au cours des repas.
+TERALITHE® LP 400 mg comprimé : 1 prise par jour.
+</Callout>
+
+### Les différentes classes
+
+Développement des acronymes et position de chaque famille, le détail des
+molécules venant ensuite.
+
+| Classe | Dénomination | Quand l'utiliser |
+| ------ | ------------ | ---------------- |
+| Sels de lithium | Carbonate de lithium — TERALITHE® 250 mg, TERALITHE® LP 400 mg | Traitement de référence de l'état d'excitation maniaque ou hypomaniaque (cours). Prévention des rechutes des troubles bipolaires et états schizoaffectifs, avec diminution du risque de suicide et des conduites suicidaires (cours). |
+| Anti-épileptiques | Dérivés de l'acide valproïque (divalproate de sodium, valpromide), carbamazépine, lamotrigine | Prévention des rechutes dépressives et/ou traitement des épisodes maniaques du trouble bipolaire en cas de résistance relative, contre-indication ou intolérance au lithium, selon les molécules (cours). Carbamazépine : traitement de 2e voire 3e intention (cours). |
+| Antipsychotiques de 2e génération | Olanzapine, rispéridone, aripiprazole, quétiapine | Épisodes maniaques modérés à sévères, et prévention des rechutes chez les patients ayant déjà répondu à ce traitement lors d'un épisode maniaque aigu (cours). |
+
+<Callout type="info" title="Logique de choix">
+Chez l'adulte, le lithium est le traitement de première intention de l'épisode
+maniaque (ANSM). DEPAKOTE® (divalproate de sodium) et DEPAMIDE® (valpromide) ne
+sont indiqués qu'en deuxième intention, en cas de contre-indication ou
+d'intolérance au lithium (ANSM, juillet 2017) ; la carbamazépine est un
+traitement de 2e voire 3e intention (cours).
+
+Devant une résistance relative, une contre-indication ou une intolérance au
+lithium, le cours retient les dérivés de l'acide valproïque, la carbamazépine et
+la lamotrigine, ainsi que les antipsychotiques de 2e génération.
+
+Grossesse : DEPAKOTE® et DEPAMIDE® sont contre-indiqués chez la femme enceinte et
+chez la femme en âge de procréer n'utilisant pas de contraception efficace
+(ANSM, juillet 2017).
+</Callout>
 
 ## Médicaments de la famille
 
-| DCI | Particularité | Mention honorable |
-| --- | ------------- | ----------------- |
-| À compléter | À compléter | À compléter |
+Neuf entrées classées par famille. Chaque DCI renvoie à sa fiche substance VIDAL.
+
+| Classe | DCI | Particularité | Mention honorable |
+| ------ | --- | ------------- | ----------------- |
+| Sels de lithium | [Lithium](https://www.vidal.fr/medicaments/substances/lithium-2117.html) | Carbonate de lithium ; élimination rénale, marge thérapeutique étroite | TERALITHE® 250 mg cp, TERALITHE® LP 400 mg cp |
+| Dérivés du valproate | [Acide valproique (divalproate de sodium)](https://www.vidal.fr/medicaments/substances/acide-valproique-129.html) | Seule spécialité de valproate indiquée dans les épisodes maniaques, avec la valpromide (ANSM) | DEPAKOTE® cp gastro-résistant |
+| Dérivés du valproate | [Valpromide](https://www.vidal.fr/medicaments/substances/valpromide-3654.html) | Dérivé du valproate indiqué dans les épisodes maniaques | DEPAMIDE® cp |
+| Anti-épileptiques | [Carbamazépine](https://www.vidal.fr/medicaments/substances/carbamazepine-793.html) | Substrat et inducteur du CYP3A4 | TEGRETOL® cp, sol buv / TEGRETOL LP cp |
+| Anti-épileptiques | [Lamotrigine](https://www.vidal.fr/medicaments/substances/lamotrigine-12097.html) | Introduction à doses progressivement croissantes (cours) | LAMICTAL® cp |
+| Antipsychotiques 2g | [Olanzapine](https://www.vidal.fr/medicaments/substances/olanzapine-17677.html) | — | ZYPREXA® cp, inj / ZYPADHERA® inj |
+| Antipsychotiques 2g | [Rispéridone](https://www.vidal.fr/medicaments/substances/risperidone-12116.html) | — | RISPERDAL® cp, sol buv |
+| Antipsychotiques 2g | [Aripiprazole](https://www.vidal.fr/medicaments/substances/aripiprazole-22622.html) | — | ABILIFY® cp, inj |
+| Antipsychotiques 2g | [Quétiapine](https://www.vidal.fr/medicaments/substances/quetiapine-23416.html) | — | XEROQUEL® LP cp |
 
 ## Indications
 
-- À compléter avec les cours.
-- À compléter avec les cours.
-- À compléter avec les cours.
+- **Traitement curatif** — action sédative des états d'agitation, en particulier
+  des excitations maniaques (cours).
+- **Traitement préventif** — désordres thymiques récidivants : dépression,
+  mélancolie (cours).
+- **Lithium**
+
+  - Prévention des rechutes des troubles bipolaires et états schizoaffectifs, avec
+    diminution du risque de suicide et des conduites suicidaires (cours).
+  - Traitement curatif des états d'excitation maniaque ou hypomaniaque :
+    traitement de référence (cours).
+
+- **Autres thymorégulateurs** — prévention des rechutes dépressives et/ou
+  traitement des épisodes maniaques du trouble bipolaire en cas de résistance
+  relative, contre-indication ou intolérance au lithium, selon les molécules
+  (cours).
+- **Antipsychotiques de 2e génération** — traitement des épisodes maniaques
+  modérés à sévères et prévention des rechutes chez les patients ayant déjà
+  répondu à ce traitement lors d'un épisode maniaque aigu (cours).
 
 ## Contre-indications
 
-- À compléter avec les cours.
-- À compléter avec les cours.
-- À compléter avec les cours.
+Le cours ne détaille les contre-indications que pour le lithium et les dérivés du
+valproate. Les onglets anti-épileptiques et antipsychotiques proviennent des RCP
+ANSM ; les familles non documentées sont laissées telles quelles.
+
+<Tabs items={['Lithium', 'Valproate', 'Anti-épileptiques', 'Antipsychotiques']} label="Classe">
+  <Tab value="Lithium">
+
+    - Insuffisance rénale sévère (cours).
+    - Déplétion hydrosodée (cours).
+    - Grossesse : tératogène — maladie d'Ebstein, malformations du cœur et des
+      gros vaisseaux —, contre-indication au cours du 1er trimestre (cours).
+    - Le RCP préconise de vérifier, avant traitement, que la femme en âge de
+      procréer n'est pas enceinte et d'instaurer une contraception efficace
+      (RCP TERALITHE®).
+    - Le lithium doit être évité en cas de facteurs de risque d'allongement de
+      l'intervalle QT : allongement de l'intervalle QT, bradycardie,
+      hypokaliémie (RCP TERALITHE®).
+  </Tab>
+  <Tab value="Valproate">
+
+    - Grossesse (cours).
+    - Femmes enceintes et femmes en âge de procréer n'utilisant pas de
+      contraception efficace, pour les épisodes maniaques du trouble bipolaire
+      (ANSM, juillet 2017) : « DEPAKOTE ou DEPAMIDE + GROSSESSE = INTERDIT ».
+    - Si une grossesse est envisagée ou en cas de découverte d'une grossesse :
+      interrompre le traitement (ANSM, juillet 2017).
+  </Tab>
+  <Tab value="Anti-épileptiques">Non précisé dans les sources consultées (cours, VIDAL, RCP, OMS).</Tab>
+  <Tab value="Antipsychotiques">Non précisé dans les sources consultées (cours, VIDAL, RCP, OMS) — voir la fiche Antipsychotiques.</Tab>
+</Tabs>
 
 ## Interactions médicamenteuses
 
-- À compléter avec les cours.
-- À compléter avec les cours.
-- À compléter avec les cours.
+**Pharmacocinétique.** La carbamazépine est à la fois substrat et inducteur
+enzymatique du CYP3A4 : le cours invite à la prudence vis-à-vis des interactions
+médicamenteuses lorsqu'elle est associée à d'autres traitements.
+
+<Callout type="error" title="Lithium + AINS, diurétiques, IEC, corticoïdes, carbamazépine">
+Le cours associe ces familles à une élévation de la lithémie avec risque de
+surdosage : antagonistes de l'angiotensine, AINS, diurétiques, IEC, corticoïdes,
+carbamazépine. Le RCP TERALITHE® précise que ces prises concomitantes sont
+déconseillées.
+
+Cas du cours : interaction entre le lithium et le nimésulide → effets toxiques du
+lithium liés à un surdosage.
+
+En cas de modification des apports sodés (troubles digestifs, restriction sodée,
+syndrome fébrile), surveiller la lithémie de manière rapprochée (RCP).
+</Callout>
+
+- **Antidépresseurs sérotoninergiques purs** → risque de syndrome
+  sérotoninergique (cours).
+- **Neuroleptiques** → risque de syndrome malin (cours).
+- **Associations déconseillées** (cours) : lithium + AINS, diurétiques,
+  antagonistes de l'angiotensine, IEC, corticoïdes, carbamazépine, antidépresseurs
+  sérotoninergiques purs et neuroleptiques.
+- **Ne pas modifier les apports sodés** au cours d'un traitement par lithium
+  (cours, RCP).
 
 ## Effets secondaires
 
-| Effet | Fréquence (si disponible) | Conduite |
-| --- | --- | --- |
-| À compléter | À compléter | À compléter |
+Les fréquences proviennent des RCP consultés ; « Non précisée » signifie que les
+sources consultées ne donnent pas de valeur.
+
+| Classe | Effet indésirable | Fréquence | Conduite |
+| ------ | ----------------- | --------- | -------- |
+| Lithium | Signes les plus fréquents d'un risque de surdosage : nausées, tremblements, soif, troubles de l'équilibre | Fréquence non précisée (RCP TERALITHE®) | Surveiller la lithémie et adapter le traitement (RCP) |
+| Lithium | Toxicité aiguë : nausées, soif, tremblements, troubles de l'équilibre, diarrhée, surtout dysarthrie et myoclonies | Non précisée (cours) | Urgence : arrêt du traitement et contrôle de la lithémie, sinon risque d'insuffisance rénale, de confusion, de coma, de convulsion, de collapsus pouvant aller jusqu'au décès |
+| Lithium | Effets mineurs sans rapport avec la lithémie : nausées, douleurs abdominales, pollakiurie et polydipsie, léger tremblement fin des mains, sédation et ralentissement | Non précisée (cours) | Prévention : prise au milieu des repas |
+| Lithium | Toxicité chronique : prise de poids, hypothyroïdie et goitre (parfois hyperthyroïdie), troubles du rythme, hyperleucocytose, acné ou aggravation du psoriasis, état prédiabétique | Non précisée (cours) | Bilan thyroïdien, ECG, glycémie (cours, RCP) |
+| Lithium | Affections rénales : soif et polyurie, diabète insipide néphrogénique, néphropathie tubulo-interstitielle chronique après traitement prolongé | Fréquence indéterminée (RCP TERALITHE®) | L'apparition de polydipsie et/ou de polyurie doit motiver une consultation, avec ionogramme et fonction rénale (RCP) |
+| Lithium | Effets tératogènes : maladie d'Ebstein, malformations du cœur et des gros vaisseaux | Non précisée (cours) | Contre-indication au cours du 1er trimestre de grossesse |
+| Valproate | Troubles digestifs en début de traitement : nausées, vomissements, gastralgies, diarrhées | Non précisée (RCP DEPAKOTE®) | Cèdent en général en quelques jours, sans interruption du traitement (RCP) |
+| Valproate | Thrombopénie dose-dépendante, généralement sans retentissement clinique | Non précisée (RCP DEPAKOTE®) | Bilan : NFS, plaquettes, bilan de coagulation (cours) |
+| Valproate | Effets hépatiques : asthénie, anorexie, somnolence, parfois vomissements, douleurs abdominales | Non précisée (cours) | Informer des signes cliniques d'appel et réaliser un bilan hépatique (cours) |
+| Valproate | Rashs cutanés | Non précisée (cours) | — |
+| Valproate | Malformations et troubles neurodéveloppementaux chez l'enfant exposé in utero : environ 10 % de malformations et 30 à 40 % de troubles neurodéveloppementaux | Non précisée (ANSM) | Contre-indication dans les épisodes maniaques chez la femme enceinte et en âge de procréer sans contraception efficace (ANSM) |
+| Carbamazépine | Effets neuropsychiques | Non précisée (cours) | — |
+| Carbamazépine | Effets cardiovasculaires : trouble du rythme | Non précisée (cours) | — |
+| Carbamazépine | Réactions d'hypersensibilité avec atteinte cutanée, hématologique ou hépatique | Non précisée (cours) | Informer des signes cliniques d'appel et réaliser un bilan (cours) |
+| Lamotrigine | Effets neuropsychiques | Non précisée (cours) | — |
+| Lamotrigine | Effets cutanés graves | Non précisée (cours) | Risque augmenté en cas d'association aux dérivés de l'acide valproïque, de posologie d'emblée trop élevée ou d'augmentation trop rapide : introduction à doses progressivement croissantes (cours) |
+| Antipsychotiques 2g | Non précisé dans les sources consultées (cours, VIDAL, RCP, OMS) | Non précisée | Voir la fiche Antipsychotiques |
 
 ## Surveillances
 
-- À compléter avec les cours.
-- À compléter avec les cours.
-- À compléter avec les cours.
+<Steps>
+  <Step>
+    ### Bilan initial
+
+    Rein et calcémie, ionogramme, NFS, examen cardiaque, bilan thyroïdien
+    (T3, T4, TSH), examen neurologique (EEG), test de grossesse. Suivi
+    thérapeutique pharmacologique (STP) et contraception efficace avant la mise
+    sous traitement.
+  </Step>
+  <Step>
+    ### Adaptation posologique
+
+    Progression par paliers d'un demi-comprimé et contrôle à 5 jours, pour
+    amener la lithémie dans la zone thérapeutique de 0,5 à 0,8 mEq/L (0,5 à
+    0,8 mmol/L), quelle que soit la forme pharmaceutique.
+  </Step>
+  <Step>
+    ### Traitement au long cours
+
+    STP toutes les semaines le 1er mois, puis tous les mois le 1er trimestre,
+    puis tous les 2 mois ; contrôle de la créatininémie et de la calcémie. Ne pas
+    modifier les apports sodés.
+  </Step>
+</Steps>
+
+- **Toxicité aiguë.** Devant des nausées, des tremblements, une soif ou des
+  troubles de l'équilibre : arrêt du traitement et contrôle de la lithémie en
+  urgence (cours).
+- **Signes d'appel.** Polydipsie et/ou polyurie : consultation, ionogramme et
+  fonction rénale (RCP).
+- **Valproate.** Bilan hépatique, NFS avec plaquettes et bilan de coagulation ;
+  information du patient sur les signes cliniques d'appel — asthénie, anorexie,
+  somnolence, parfois vomissements et douleurs abdominales (cours).
+- **Grossesse.** Contraception efficace, test de grossesse à l'instauration puis
+  à intervalles réguliers ; interruption du traitement si grossesse envisagée ou
+  découverte (ANSM).
+- **Éducation du patient.** Groupes d'apprentissage dédiés au patient et à sa
+  famille ; objectifs du traitement, en principe prescrit à vie ; optimisation de
+  l'observance : prises régulières et durée du traitement ; règles
+  hygiéno-diététiques ; reconnaissance des symptômes annonciateurs des épisodes
+  maniaco-dépressifs et d'un surdosage, et connaissance des interactions
+  médicamenteuses (cours).
+
+## Sources
+
+**Cours**
+
+- Pharmacologie des psychotropes — Thymorégulateurs (capsule 2/5), Claire
+  Lafay-Chebassier, MCU-PH, Université de Poitiers ; UE 2.11 S3, IFSI Région
+  Nouvelle-Aquitaine.
+
+**VIDAL — fiches substance par DCI**
+
+- Sels de lithium : [Lithium](https://www.vidal.fr/medicaments/substances/lithium-2117.html)
+- Dérivés du valproate : [Acide valproique (divalproate de sodium)](https://www.vidal.fr/medicaments/substances/acide-valproique-129.html),
+  [Valpromide](https://www.vidal.fr/medicaments/substances/valpromide-3654.html)
+- Anti-épileptiques : [Carbamazépine](https://www.vidal.fr/medicaments/substances/carbamazepine-793.html),
+  [Lamotrigine](https://www.vidal.fr/medicaments/substances/lamotrigine-12097.html)
+- Antipsychotiques de 2e génération : [Olanzapine](https://www.vidal.fr/medicaments/substances/olanzapine-17677.html),
+  [Rispéridone](https://www.vidal.fr/medicaments/substances/risperidone-12116.html),
+  [Aripiprazole](https://www.vidal.fr/medicaments/substances/aripiprazole-22622.html),
+  [Quétiapine](https://www.vidal.fr/medicaments/substances/quetiapine-23416.html)
+- Recommandation VIDAL : [Prise en charge du trouble bipolaire](https://www.vidal.fr/recommandations/1568/trouble_bipolaire/prise_en_charge/)
+
+**ANSM — Résumés des caractéristiques du produit et informations de sécurité**
+
+- [TERALITHE LP 400 mg (carbonate de lithium) — RCP](https://agence-prd.ansm.sante.fr/php/ecodex/rcp/R0295410.htm)
+- [DEPAKOTE 250 mg (divalproate de sodium) — RCP](https://agence-prd.ansm.sante.fr/php/ecodex/rcp/R0201455.htm)
+- [Valproate et dérivés : contre-indication pendant la grossesse et programme de prévention des grossesses — ANSM](https://ansm.sante.fr/informations-de-securite/valproate-et-derives-contre-indication-pendant-la-grossesse-sauf-situations-exceptionnelles-et-programme-de-prevention-des-grossesses)
+
+**OMS (Organisation mondiale de la Santé)**
+
+- [Troubles mentaux — fiche d'information OMS](https://www.who.int/news-room/fact-sheets/detail/mental-disorders)
+- [Troubles bipolaires et suicide — fiche d'information OMS](https://www.who.int/news-room/fact-sheets/detail/suicide)
+- [Index ATC/DDD de l'OMS (N05AN — lithium, N03A — antiépileptiques)](https://www.whocc.no/atc_ddd_index/)

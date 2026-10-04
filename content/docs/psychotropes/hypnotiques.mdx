@@ -1,49 +1,282 @@
 ---
 title: 'Hypnotiques'
-description: 'Squelette de fiche « Hypnotiques » — à compléter avec les cours UE 2.11 S3.'
+description: 'Hypnotiques ou somnifères : propriétés, 10 molécules, indications, contre-indications, interactions, effets indésirables et surveillances — UE 2.11 S3.'
 ---
 
-> Contenu à compléter avec les cours UE 2.11 S3.
+import { Tabs, Tab } from 'fumadocs-ui/components/tabs';
+import { Steps, Step } from 'fumadocs-ui/components/steps';
+
+Les hypnotiques, aussi appelés somnifères, sont les psychotropes de l'insomnie.
+Cette fiche suit le plan imposé par l'UE 2.11 S3. Les chiffres, fréquences et
+délais proviennent du cours et des références listées en [Sources](#sources) ;
+ce qui n'est documenté par aucune de ces sources est indiqué « Non précisé ».
 
 ## Propriétés
 
-Cette fiche rassemble l'essentiel commun de la famille : ce qu'elle fait,
-sans sur-expliquer l'évident. Le mécanisme commun détaillé est à compléter
-avec les cours UE 2.11 S3. Seules les particularités utiles en pratique IDE
-sont retenues dans les sections ci-dessous.
+L'insomnie est définie comme la diminution de la durée habituelle de sommeil
+et/ou l'atteinte de la qualité de celui-ci, avec un retentissement sur la qualité
+de la veille du lendemain. Les hypnotiques sont des médicaments utilisés pour
+traiter, de manière symptomatique, les insomnies (cours).
+
+Cliniquement, le cours distingue l'insomnie chronique, l'insomnie transitoire —
+patients qui dorment bien d'ordinaire mais qui subissent une altération des
+conditions du sommeil — et l'insomnie secondaire : autre trouble du sommeil
+(troubles respiratoires du sommeil), pathologie médicale (douleurs), pathologie
+psychiatrique (dépression).
+
+La prise en charge recherche d'abord les facteurs de survenue des troubles du
+sommeil, puis associe mesures comportementales et traitements spécifiques
+(cours).
+
+<Callout type="info" title="Administration (cours)">
+Administrer le soir au coucher. Débuter par la posologie la plus faible, en
+particulier chez le sujet âgé. Arrêter de façon progressive un traitement de
+plusieurs semaines. Informer les patients des effets indésirables et du risque de
+dépendance : durée de traitement la plus courte possible, moins de 4 semaines.
+</Callout>
+
+<Cards>
+  <Card
+    title="Benzodiazépines hypnotiques"
+    description="Effets sédatifs → action hypnotique (cours)."
+  />
+  <Card
+    title="Apparentées aux benzodiazépines"
+    description="Z-drugs : zolpidem, zopiclone (cours)."
+  />
+  <Card
+    title="Hypnotiques anciens"
+    description="Antihistaminiques H1 : alimémazine, doxylamine (cours)."
+  />
+  <Card title="Autres" description="Mélatonine." />
+</Cards>
+
+### Les différentes classes
+
+Développement des acronymes et position de chaque famille, le détail des
+molécules venant ensuite.
+
+| Classe | Dénomination | Quand l'utiliser |
+| ------ | ------------ | ---------------- |
+| Benzodiazépines hypnotiques | Benzodiazépines à visée hypnotique : estazolam, loprazolam, lormétazépam, midazolam, nitrazépam (ANSM 2017) | Effets sédatifs → action hypnotique (cours). Forme injectable : sédation vigile, anesthésie, sédation en unité de soins intensifs (cours). |
+| Apparentées aux benzodiazépines | Z-drugs : zolpidem, zopiclone (ANSM 2017) | Même visée hypnotique, avec prescription limitée à 4 semaines depuis 1991 (cours). |
+| Hypnotiques anciens | Antihistaminiques H1 : alimémazine (phénothiazine), doxylamine (éthanolamine) (cours) | Insomnies : effets résiduels, effets anticholinergiques, excitation chez l'enfant en cas de surdosage, photosensibilisation pour les phénothiazines (cours). |
+| Autres | Mélatonine — CIRCADIN® LP, SLENYTO® LP (liste I) | Traitement court de l'insomnie chez les personnes de plus de 55 ans pour améliorer la qualité du sommeil ; insomnie de l'enfant et de l'adolescent de 2 à 18 ans présentant un trouble du spectre de l'autisme et/ou un syndrome de Smith-Magenis, lorsque les mesures d'hygiène du sommeil ont été insuffisantes (cours). |
+
+<Callout type="info" title="Logique de choix">
+Avant tout traitement : recherche des facteurs de survenue des troubles du sommeil
+et mesures comportementales (cours).
+
+La HAS retient les benzodiazépines et apparentées pour un traitement à court
+terme des troubles sévères du sommeil chez l'adulte — insomnie occasionnelle et
+transitoire —, avec une durée de prescription limitée à 4 semaines en tenant
+compte de la période de réduction de la posologie ; les traitements non
+médicamenteux doivent précéder la prescription de benzodiazépines, et les TCC
+sont à proposer en 1re intention devant toute insomnie autre qu'occasionnelle
+(HAS 2017).
+
+Durée de traitement la plus courte possible, moins de 4 semaines (cours). Chez le
+sujet âgé, posologie la plus faible ; la sensibilité individuelle et l'âge
+conditionnent les effets résiduels (cours, RCP).
+</Callout>
 
 ## Médicaments de la famille
 
-| DCI | Particularité | Mention honorable |
-| --- | ------------- | ----------------- |
-| À compléter | À compléter | À compléter |
+Dix entrées classées par famille. Les spécialités et les demi-vies proviennent du
+tableau ANSM 2017 repris par le cours ; chaque DCI renvoie à sa fiche substance
+VIDAL.
+
+| Classe | DCI | Particularité | Mention honorable |
+| ------ | --- | ------------- | ----------------- |
+| BZD hypnotiques | [Estazolam](https://www.vidal.fr/medicaments/substances/estazolam-1388.html) | Demi-vie 10 à 31 h (ANSM 2017) | NUCTALON® |
+| BZD hypnotiques | [Loprazolam](https://www.vidal.fr/medicaments/substances/loprazolam-2134.html) | Demi-vie 3,3 à 14,8 h (ANSM 2017) | HAVLANE® |
+| BZD hypnotiques | [Lormétazépam](https://www.vidal.fr/medicaments/substances/lormetazepam-2138.html) | Demi-vie 10 h (ANSM 2017) | NOCTAMIDE® + génériques |
+| BZD hypnotiques | [Midazolam](https://www.vidal.fr/medicaments/substances/midazolam-2380.html) | Demi-vie 1 à 4 h (ANSM 2017) | Génériques ; BUCCOLAM® (anticonvulsivant) |
+| BZD hypnotiques | [Nitrazépam](https://www.vidal.fr/medicaments/substances/nitrazepam-4151.html) | Demi-vie 17 à 48 h (ANSM 2017) | MOGADON® |
+| Apparentées | [Zolpidem](https://www.vidal.fr/medicaments/substances/zolpidem-5836.html) | Demi-vie 0,7 à 3 h (ANSM 2017) | STILNOX® + génériques |
+| Apparentées | [Zopiclone](https://www.vidal.fr/medicaments/substances/zopiclone-3744.html) | Demi-vie 5 h (ANSM 2017) ; goût métallique, amertume (cours) | IMOVANE® + génériques |
+| Hypnotiques anciens | [Alimémazine](https://www.vidal.fr/medicaments/substances/alimemazine-5789.html) | Phénothiazine, antihistaminique H1 (cours) | THERALENE® cp, sirop, gouttes |
+| Hypnotiques anciens | [Doxylamine](https://www.vidal.fr/medicaments/substances/doxylamine-9646.html) | Éthanolamine, antihistaminique H1 (cours) | DONORMYL®, LIDENE® cp |
+| Autres | [Mélatonine](https://www.vidal.fr/medicaments/substances/melatonine-20629.html) | Liste I (cours) | CIRCADIN® LP cp, SLENYTO® LP cp |
 
 ## Indications
 
-- À compléter avec les cours.
-- À compléter avec les cours.
-- À compléter avec les cours.
+- **Traitement symptomatique des insomnies** — usage de courte durée, durée la
+  plus courte possible, moins de 4 semaines (cours).
+- **Benzodiazépines et apparentées** — traitement à court terme des troubles
+  sévères du sommeil chez l'adulte : insomnie occasionnelle et transitoire ; aucune
+  benzodiazépine n'est indiquée dans l'insomnie chronique (HAS 2017).
+- **Formes injectables de benzodiazépines** — sédation vigile, anesthésie,
+  sédation en unité de soins intensifs (cours).
+- **Mélatonine**
+
+  - Traitement court de l'insomnie chez les personnes de plus de 55 ans pour
+    améliorer la qualité du sommeil (cours).
+  - Insomnie de l'enfant et de l'adolescent de 2 à 18 ans présentant un trouble
+    du spectre de l'autisme et/ou un syndrome de Smith-Magenis, lorsque les
+    mesures d'hygiène du sommeil ont été insuffisantes (cours).
 
 ## Contre-indications
 
-- À compléter avec les cours.
-- À compléter avec les cours.
-- À compléter avec les cours.
+Le cours de la capsule Hypnotiques ne détaille pas les contre-indications ; les
+onglets ci-dessous sont lus sur les RCP ANSM, à l'exception des hypnotiques
+anciens et de la mélatonine qui restent non documentés.
+
+<Tabs items={['Benzodiazépines hypnotiques', 'Zolpidem', 'Zopiclone', 'Hypnotiques anciens', 'Mélatonine']} label="Classe">
+  <Tab value="Benzodiazépines hypnotiques">
+
+    Lues sur le RCP de STILNOX® (zolpidem), benzodiazépine apparentée ; mêmes
+    contre-indications que les autres benzodiazépines.
+
+    - Hypersensibilité à la substance active ou à l'un des excipients.
+    - Insuffisance respiratoire sévère.
+    - Syndrome d'apnée du sommeil.
+    - Insuffisance hépatique sévère, aiguë ou chronique, avec risque d'encéphalopathie.
+    - Myasthénie.
+  </Tab>
+  <Tab value="Zolpidem">
+
+    Lues sur le RCP de STILNOX®.
+
+    - Hypersensibilité à la substance active ou à l'un des excipients.
+    - Insuffisance respiratoire sévère.
+    - Syndrome d'apnée du sommeil.
+    - Insuffisance hépatique sévère, aiguë ou chronique, avec risque d'encéphalopathie.
+    - Myasthénie.
+  </Tab>
+  <Tab value="Zopiclone">
+
+    Lues sur le RCP d'IMOVANE®.
+
+    - Hypersensibilité à la substance active ou à l'un des excipients.
+    - Insuffisance respiratoire sévère.
+    - Syndrome d'apnée du sommeil.
+    - Insuffisance hépatique sévère, aiguë ou chronique, avec risque d'encéphalopathie.
+    - Myasthénie.
+    - Allergie au blé autre que la maladie cœliaque.
+    - Antécédents de comportements complexes du sommeil après la prise de
+      zopiclone.
+  </Tab>
+  <Tab value="Hypnotiques anciens">Non précisé dans les sources consultées (cours, VIDAL, RCP, OMS).</Tab>
+  <Tab value="Mélatonine">Non précisé dans les sources consultées (cours, VIDAL, RCP, OMS).</Tab>
+</Tabs>
 
 ## Interactions médicamenteuses
 
-- À compléter avec les cours.
-- À compléter avec les cours.
-- À compléter avec les cours.
+Le cours de la capsule Hypnotiques ne consacre pas de rubrique aux interactions ;
+le callout ci-dessous reprend celles de la capsule Anxiolytiques, qui portent sur
+les mêmes molécules, et le cas clinique du cours.
+
+<Callout type="error" title="Hypnotique + alcool et dépresseurs du SNC">
+La somnolence peut aller jusqu'au coma et à la perte de conscience, avec
+réduction de la vigilance et des réflexes (cours). Sont concernés l'alcool et les
+autres dépresseurs du système nerveux central : autres psychotropes sédatifs,
+antalgiques morphiniques par exemple (cours, capsule Anxiolytiques).
+
+Cas du cours : patient de 41 ans, toxicomanie aux opiacés substitué par
+buprénorphine (SUBUTEX®) et alcoolisme chronique, ayant pris 60 g par jour
+d'alcool avec 6 comprimés de zolpidem (STILNOX®) : confusion, désorientation,
+propos incohérents, hallucinations auditives, amnésie de la journée, hospitalisation
+favorable — hallucinations et troubles du comportement dans un contexte
+d'alcoolisation (cours).
+</Callout>
+
+- **Dépendance et sevrage.** Dépendance physique et psychique même à doses
+  thérapeutiques, avec syndrome de sevrage ou de rebond à l'arrêt (RCP STILNOX®,
+  RCP IMOVANE®) : réduction progressive de la posologie (cours).
+- **Comportements complexes du sommeil.** Somnambulisme et autres comportements
+  complexes du sommeil décrits en fréquence indéterminée (RCP STILNOX®, RCP
+  IMOVANE®), avec contre-indication en cas d'antécédent pour le zopiclone (RCP).
 
 ## Effets secondaires
 
-| Effet | Fréquence (si disponible) | Conduite |
-| --- | --- | --- |
-| À compléter | À compléter | À compléter |
+Les fréquences proviennent des RCP consultés ; « Non précisée » signifie que les
+sources consultées ne donnent pas de valeur.
+
+| Classe | Effet indésirable | Fréquence | Conduite |
+| ------ | ----------------- | --------- | -------- |
+| BZD hypnotiques | Effets résiduels matinaux : réveil difficile | Non précisée (cours) | — |
+| BZD hypnotiques | Réactions paradoxales | Non précisée (cours) | Arrêt du traitement |
+| BZD hypnotiques | Amnésie antérograde, troubles de la mémoire | Non précisée (cours) ; risque augmentant proportionnellement à la dose (RCP) | — |
+| BZD hypnotiques | Tolérance avec perte d'efficacité, dépendance physique et psychique si traitement prolongé, syndrome de sevrage, insomnie rebond | Non précisée (cours) | Prescription de moins d'un mois, arrêt progressif (cours) |
+| Apparentées (zolpidem, zopiclone) | À doses supérieures aux doses thérapeutiques : tolérance avec augmentation des doses, dépendance avec risque de syndrome de sevrage | Non précisée (cours) | Risque augmenté avec la dose, la durée du traitement et l'association à une benzodiazépine → prescription limitée à 4 semaines depuis 1991 (cours) |
+| Zolpidem | Baisse de la vigilance voire somnolence, céphalées, sensations ébrieuses, insomnie, amnésie antérograde | Fréquent (RCP STILNOX®) | Particulièrement marquée chez le sujet âgé (RCP) |
+| Zolpidem | Hallucinations, agitation, cauchemars | Fréquent (RCP STILNOX®) | Voir le cas clinique du cours |
+| Zolpidem | Diarrhée, nausée, vomissement, douleur abdominale ; asthénie | Fréquent (RCP STILNOX®) | — |
+| Zolpidem | Infections de l'appareil respiratoire hautes et basses | Fréquent (RCP STILNOX®) | — |
+| Zolpidem | Confusion, irritabilité, diplopie | Peu fréquent (RCP STILNOX®) | — |
+| Zolpidem | Troubles du comportement, agressivité, somnambulisme, dépendance physique et psychique avec syndrome de sevrage ou de rebond, troubles de l'équilibre voire chutes | Fréquence indéterminée (RCP STILNOX®) | Chutes : sujet âgé en particulier (RCP) |
+| Zopiclone | Baisse de la vigilance voire somnolence, dysgueusie ; sécheresse buccale | Fréquent (RCP IMOVANE®) | Goût métallique et amertume décrits par le cours |
+| Zopiclone | Agitation, cauchemars ; asthénie, nausée, céphalées | Peu fréquent (RCP IMOVANE®) | — |
+| Zopiclone | Amnésie antérograde ; chute, particulièrement chez le sujet âgé | Rare (RCP IMOVANE®) | — |
+| Zopiclone | Comportements complexes du sommeil incluant le somnambulisme, dépendance physique et psychique même à doses thérapeutiques, confusion | Fréquence indéterminée (RCP IMOVANE®) | Arrêt du traitement |
+| Hypnotiques anciens | Effets résiduels → somnolence diurne ; effets anticholinergiques ; excitation chez l'enfant en cas de surdosage ; photosensibilisation (phénothiazines) | Non précisée (cours) | — |
 
 ## Surveillances
 
-- À compléter avec les cours.
-- À compléter avec les cours.
-- À compléter avec les cours.
+<Steps>
+  <Step>
+    ### Administration
+
+    Le soir au coucher ; débuter par la posologie la plus faible, en particulier
+    chez le sujet âgé ; arrêter de façon progressive un traitement de plusieurs
+    semaines.
+  </Step>
+  <Step>
+    ### Surveiller et dépister
+
+    Évaluer l'apparition d'une dépendance psychique et d'une tolérance ; durée de
+    traitement la plus courte possible, moins de 4 semaines.
+  </Step>
+  <Step>
+    ### Éducation
+
+    Informer des effets indésirables et du risque de dépendance. Hygiéno-diététiques :
+    éviter alcool et tabac ; activité physique en évitant les efforts intenses 3
+    à 4 heures avant le coucher ; lieu de sommeil calme, frais et à l'abri de la
+    lumière.
+  </Step>
+</Steps>
+
+- **Efficacité et observance.** Rappeler le retentissement diurne de l'insomnie
+  et la prise unique du soir ; avec l'IMOVANE®, une prise le soir au coucher au
+  lit, qui ne doit pas être ré-administrée durant la même nuit (RCP).
+- **Sujet âgé.** Sensibilité accrue à la somnolence, aux chutes et aux
+  comportements complexes du sommeil (RCP STILNOX®, RCP IMOVANE®).
+
+## Sources
+
+**Cours**
+
+- Pharmacologie des psychotropes — Hypnotiques (capsule 5/5), Claire
+  Lafay-Chebassier, MCU-PH, Université de Poitiers ; UE 2.11 S3, IFSI Région
+  Nouvelle-Aquitaine.
+
+**VIDAL — fiches substance par DCI**
+
+- Benzodiazépines hypnotiques : [Estazolam](https://www.vidal.fr/medicaments/substances/estazolam-1388.html),
+  [Loprazolam](https://www.vidal.fr/medicaments/substances/loprazolam-2134.html),
+  [Lormétazépam](https://www.vidal.fr/medicaments/substances/lormetazepam-2138.html),
+  [Midazolam](https://www.vidal.fr/medicaments/substances/midazolam-2380.html),
+  [Nitrazépam](https://www.vidal.fr/medicaments/substances/nitrazepam-4151.html)
+- Apparentées aux benzodiazépines : [Zolpidem](https://www.vidal.fr/medicaments/substances/zolpidem-5836.html),
+  [Zopiclone](https://www.vidal.fr/medicaments/substances/zopiclone-3744.html)
+- Hypnotiques anciens : [Alimémazine](https://www.vidal.fr/medicaments/substances/alimemazine-5789.html),
+  [Doxylamine](https://www.vidal.fr/medicaments/substances/doxylamine-9646.html)
+- Autres : [Mélatonine](https://www.vidal.fr/medicaments/substances/melatonine-20629.html)
+
+**ANSM — Résumés des caractéristiques du produit et rapports**
+
+- [STILNOX 10 mg (zolpidem) — RCP](https://agence-prd.ansm.sante.fr/php/ecodex/rcp/R0286012.htm)
+- [IMOVANE 7,5 mg (zopiclone) — RCP](https://agence-prd.ansm.sante.fr/php/ecodex/rcp/R0394843.htm)
+- [État des lieux de la consommation des benzodiazépines en France — rapport ANSM 2017 (tableau I : benzodiazépines et apparentées commercialisées)](https://archive.ansm.sante.fr/content/download/103771/1314799/version/4/file/ANSM_Rapport_Benzo_2017-2.pdf)
+
+**HAS (Haute Autorité de Santé)**
+
+- [Quelle place pour les benzodiazépines dans l'insomnie ? — HAS, 2017](https://www.has-sante.fr/jcms/c_2015058/fr/quelle-place-pour-les-benzodiazepines-dans-l-insomnie)
+
+**OMS (Organisation mondiale de la Santé)**
+
+- [Troubles mentaux — fiche d'information OMS](https://www.who.int/news-room/fact-sheets/detail/mental-disorders)
+- [Dépression — fiche d'information OMS](https://www.who.int/news-room/fact-sheets/detail/depression)
+- [Index ATC/DDD de l'OMS (N05C — hypnotiques et sédatifs)](https://www.whocc.no/atc_ddd_index/)
