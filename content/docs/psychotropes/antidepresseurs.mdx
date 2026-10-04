@@ -1,122 +1,357 @@
 ---
 title: 'Antidépresseurs'
-description: 'Squelette de fiche « Antidépresseurs » — à compléter avec les cours UE 2.11 S3.'
+description: 'Psycho-analeptiques : propriétés, 25 molécules, indications, contre-indications, interactions, effets indésirables et surveillances — UE 2.11 S3.'
 ---
 
-> Contenu à compléter avec les cours UE 2.11 S3.
+import { Tabs, Tab } from 'fumadocs-ui/components/tabs';
+import { Steps, Step } from 'fumadocs-ui/components/steps';
+
+Les antidépresseurs sont les psycho-analeptiques de la famille des psychotropes.
+Cette fiche suit le plan imposé par l'UE 2.11 S3. Les chiffres, fréquences et
+délais proviennent du cours et des références listées en [Sources](#sources) ;
+ce qui n'est documenté par aucune de ces sources est indiqué « Non précisé ».
 
 ## Propriétés
 
-Les antidépresseurs sont des psycho-analeptiques : des médicaments agissant
-sur le système nerveux central, destinés ici à l'épisode dépressif caractérisé
-(tristesse, douleur morale, ralentissement psychomoteur). La dépression
-s'explique notamment par une baisse des concentrations cérébrales en
-monoamines (sérotonine 5-HT, noradrénaline, dopamine) : l'objectif
-pharmacologique commun est d'augmenter la concentration de ces
-neuromédiateurs dans la fente synaptique, par différents moyens selon la
-famille (inhibition de la recapture, inhibition de la MAO...). Le traitement
-se prend par voie orale en général, sur des périodes plus ou moins prolongées
-et le plus souvent en ambulatoire ; la voie parentérale reste possible dans
-les formes sévères (anxiété ou agitation aiguë, dépression grave à risque
-suicidaire élevé nécessitant l'hospitalisation). Les antidépresseurs se
-classent aussi en sédatifs, stimulants ou intermédiaires, ce qui conditionne
-les horaires de prise : vespérale pour les sédatifs, matinale (ou avant 16 h)
-pour les psychotoniques. À noter : des symptômes dépressifs isolés, souvent
-transitoires, ne justifient pas obligatoirement un médicament ; la prise en
-charge associe aussi la psychothérapie et, selon les cas,
-l'électroconvulsivothérapie.
+L'antidépresseur est un médicament agissant sur le système nerveux central. Il
+est utilisé dans l'épisode dépressif caractérisé : tristesse, douleur morale et
+ralentissement psychomoteur.
+
+La dépression s'explique notamment par une baisse des concentrations cérébrales
+en monoamines — sérotonine (5-HT), noradrénaline (NA) et dopamine. L'objectif
+du traitement est d'augmenter la concentration de ces neuromédiateurs dans la
+fente synaptique, par des moyens différents selon la famille.
+
+La voie orale est utilisée en général, sur des périodes plus ou moins
+prolongées, le plus souvent en ambulatoire. La voie parentérale reste possible
+dans les formes sévères : état d'anxiété ou d'agitation aiguë, dépression grave
+à risque suicidaire élevé nécessitant une hospitalisation.
+
+<Callout type="info" title="Horaires de prise">
+Les antidépresseurs se classent en sédatifs, stimulants ou intermédiaires. Les
+sédatifs se prennent le soir (prise vespérale) ; les psychotoniques le matin ou
+avant 16 h.
+</Callout>
+
+La prise en charge de l'épisode dépressif associe trois stratégies principales :
+
+<Cards>
+  <Card
+    title="Médicaments"
+    description="Antidépresseurs : psycho-analeptiques."
+  />
+  <Card title="Psychothérapie" />
+  <Card title="Électroconvulsivothérapie" />
+</Cards>
+
+Des symptômes dépressifs isolés, souvent transitoires, ne justifient pas
+obligatoirement un médicament.
 
 ## Médicaments de la famille
 
-| DCI | Particularité | Mention honorable |
-| --- | ------------- | ----------------- |
-| Imipramine | Tricyclique (ADT) | TOFRANIL® cp |
-| Trimipramine | Tricyclique (ADT) | SURMONTIL® cp, sol buv |
-| Doxépine | Tricyclique (ADT) | QUITAXON® cp, sol buv, inj |
-| Amitriptyline | Tricyclique (ADT) — aussi indiquée dans les douleurs neuropathiques | LAROXYL® cp, gttes, inj IM, perf IV ; ELAVIL® cp |
-| Amoxapine | Tricyclique (ADT) | DEFANYL® cp |
-| Maprotiline | Tricyclique (ADT) | LUDIOMIL® cp |
-| Clomipramine | Tricyclique (ADT) — aussi indiquée dans les douleurs neuropathiques | ANAFRANIL® cp, inj IM, perf IV |
-| Dosulépine | Tricyclique (ADT) | PROTHIADEN® cp |
-| Moclobémide | IMAO (inhibiteur de la MAO A) | MOCLAMINE® cp |
-| Fluoxétine | ISRS | PROZAC® gélules, cs, sol buv |
-| Fluvoxamine | ISRS | FLOXYFRAL® |
-| Paroxétine | ISRS | DEROXAT® cp, sol buv ; DIVARIUS® cp |
-| Citalopram | ISRS — allongement de l'espace QT dose-dépendant ; cas d'hématomes par interaction hémorragique | SEROPRAM® cp, sol buv, inj (hôpital) |
-| Escitalopram | ISRS — allongement de l'espace QT dose-dépendant | SEROPLEX® cp, sol buv |
-| Sertraline | ISRS | ZOLOFT® gélules |
-| Milnacipran | IRSNa | IXEL® cp |
-| Venlafaxine | IRSNa | EFFEXOR® cp |
-| Duloxétine | IRSNa | CYMBALTA® gélules |
-| Miansérine | Autre (antagoniste alpha-2 adrénergique) | ATHYMIL® cp |
-| Mirtazapine | Autre (antagoniste alpha-2 adrénergique) | NORSET® cp |
-| Tianeptine | Autre | STABLON® |
-| Agomélatine | Autre | VALDOXAN® |
-| Vortioxétine | Autre | BRINTELLIX® cp |
-| Eskétamine | Antagoniste des récepteurs au glutamate — dépression résistante en association à un ISRS ou un IRSNa, stupéfiant, solution nasale auto-administrée sous surveillance directe | SPRAVATO® |
-| Millepertuis | Vente libre mais interactions médicamenteuses, utilisation sans avis médical | À compléter |
+Vingt-cinq entrées classées par famille pharmacologique. Chaque DCI renvoie à sa
+fiche substance VIDAL.
+
+| Classe | DCI | Particularité | Mention honorable |
+| ------ | --- | ------------- | ----------------- |
+| Tricycliques | [Imipramine](https://www.vidal.fr/medicaments/substances/imipramine-6798.html) | — | TOFRANIL® cp |
+| Tricycliques | [Trimipramine](https://www.vidal.fr/medicaments/substances/trimipramine-6107.html) | — | SURMONTIL® cp, sol buv |
+| Tricycliques | [Doxépine](https://www.vidal.fr/medicaments/substances/doxepine-7005.html) | — | QUITAXON® cp, sol buv, inj |
+| Tricycliques | [Amitriptyline](https://www.vidal.fr/medicaments/substances/amitriptyline-6678.html) | Douleurs neuropathiques | LAROXYL® cp, gttes, inj IM, perf IV ; ELAVIL® cp |
+| Tricycliques | [Amoxapine](https://www.vidal.fr/medicaments/substances/amoxapine-309.html) | — | DEFANYL® cp |
+| Tricycliques | [Maprotiline](https://www.vidal.fr/medicaments/substances/maprotiline-6821.html) | — | LUDIOMIL® cp |
+| Tricycliques | [Clomipramine](https://www.vidal.fr/medicaments/substances/clomipramine-6746.html) | Douleurs neuropathiques, TOC | ANAFRANIL® cp, inj IM, perf IV |
+| Tricycliques | [Dosulépine](https://www.vidal.fr/medicaments/substances/dosulepine-15555.html) | — | PROTHIADEN® cp |
+| IMAO | [Moclobémide](https://www.vidal.fr/medicaments/substances/moclobemide-4149.html) | Inhibition réversible de la MAO A | MOCLAMINE® cp |
+| ISRS | [Fluoxétine](https://www.vidal.fr/medicaments/substances/fluoxetine-6007.html) | — | PROZAC® gélules, cs, sol buv |
+| ISRS | [Fluvoxamine](https://www.vidal.fr/medicaments/substances/fluvoxamine-10101.html) | — | FLOXYFRAL® |
+| ISRS | [Paroxétine](https://www.vidal.fr/medicaments/substances/paroxetine-5854.html) | — | DEROXAT® cp, sol buv ; DIVARIUS® cp |
+| ISRS | [Citalopram](https://www.vidal.fr/medicaments/substances/citalopram-7036.html) | Allongement de l'espace QT dose-dépendant ; cas d'hématomes par interaction hémorragique | SEROPRAM® cp, sol buv, inj (hôpital) |
+| ISRS | [Escitalopram](https://www.vidal.fr/medicaments/substances/escitalopram-21916.html) | Allongement de l'espace QT dose-dépendant | SEROPLEX® cp, sol buv |
+| ISRS | [Sertraline](https://www.vidal.fr/medicaments/substances/sertraline-15688.html) | — | ZOLOFT® gélules |
+| IRSNa | [Milnacipran](https://www.vidal.fr/medicaments/substances/milnacipran-17650.html) | — | IXEL® cp |
+| IRSNa | [Venlafaxine](https://www.vidal.fr/medicaments/substances/venlafaxine-5747.html) | — | EFFEXOR® cp |
+| IRSNa | [Duloxétine](https://www.vidal.fr/medicaments/substances/duloxetine-22918.html) | — | CYMBALTA® gélules |
+| Autres | [Miansérine](https://www.vidal.fr/medicaments/substances/mianserine-2374.html) | Antagoniste alpha-2 adrénergique | ATHYMIL® cp |
+| Autres | [Mirtazapine](https://www.vidal.fr/medicaments/substances/mirtazapine-18051.html) | Antagoniste alpha-2 adrénergique | NORSET® cp |
+| Autres | [Tianeptine](https://www.vidal.fr/medicaments/substances/tianeptine-6884.html) | — | STABLON® |
+| Autres | [Agomélatine](https://www.vidal.fr/medicaments/substances/agomelatine-23248.html) | — | VALDOXAN® |
+| Autres | [Vortioxétine](https://www.vidal.fr/medicaments/substances/vortioxetine-24205.html) | — | BRINTELLIX® cp |
+| Glutamate | [Eskétamine](https://www.vidal.fr/medicaments/substances/esketamine-25673.html) | Antagoniste des récepteurs au glutamate ; dépression résistante en association à un ISRS ou un IRSNa ; stupéfiant ; solution nasale auto-administrée sous surveillance directe | SPRAVATO® |
+| Phyto | [Millepertuis](https://www.vidal.fr/medicaments/substances/millepertuis-15066.html) | Vente libre, utilisation sans avis médical mais interactions médicamenteuses | MILDAC® cp (VIDAL) |
 
 ## Indications
 
-- Épisode dépressif caractérisé, modéré à sévère (ISRS ou IRSNa en 1re intention).
-- Troubles obsessionnels compulsifs (TOC).
-- Trouble panique (prévention des attaques de panique).
-- Trouble anxieux généralisé.
-- Phobie sociale.
-- État de stress post-traumatique.
-- Troubles anxieux de l'enfant et de l'adolescent.
-- Hyperactivité avec déficit de l'attention.
-- Douleurs neuropathiques (clomipramine, amitriptyline par exemple).
-- Dépression résistante, en association à un ISRS ou un IRSNa (eskétamine).
-- À noter : des symptômes dépressifs isolés, souvent transitoires, ne justifient pas obligatoirement un médicament.
+- **Épisode dépressif caractérisé, modéré à sévère** — ISRS ou IRSNa en
+  1re intention.
+- **Autres indications psychiatriques**
+  - Troubles obsessionnels compulsifs (TOC).
+  - Trouble panique (prévention des attaques de panique).
+  - Trouble anxieux généralisé.
+  - Phobie sociale.
+  - État de stress post-traumatique.
+  - Troubles anxieux de l'enfant et de l'adolescent.
+  - Hyperactivité avec déficit de l'attention.
+- **Douleurs neuropathiques** — clomipramine, amitriptyline par exemple.
+- **Dépression résistante** — eskétamine, en association à un ISRS ou un IRSNa.
 
 ## Contre-indications
 
-- Troubles cardiaques (tricycliques).
-- Glaucome à angle fermé (tricycliques).
-- Adénome prostatique et rétention urinaire (tricycliques).
-- À compléter avec les cours (autres familles).
+Le cours ne détaille les contre-indications que pour les tricycliques. Les
+onglets ISRS et IMAO proviennent des RCP ANSM ; les familles non documentées
+sont laissées telles quelles.
+
+<Tabs
+  items={['Tricycliques', 'ISRS', 'IMAO', 'IRSNa', 'Autres', 'Eskétamine']}
+  label="Classe"
+>
+  <Tab value="Tricycliques">
+
+    - Troubles cardiaques (cours).
+    - Glaucome à angle fermé (cours).
+    - Adénome prostatique et rétention urinaire (cours).
+    - Infarctus du myocarde récent (RCP ANAFRANIL).
+    - Hypersensibilité à la clomipramine (RCP ANAFRANIL).
+    - Association aux IMAO non sélectifs et au sultopride (RCP ANAFRANIL).
+    - Corriger une hypokaliémie avant de débuter le traitement (RCP ANAFRANIL).
+  </Tab>
+  <Tab value="ISRS">
+    Lus sur le RCP du citalopram ; non vérifiés ici pour les autres ISRS.
+
+    - Hypersensibilité au citalopram (RCP).
+    - Association aux IMAO : 14 jours après l'arrêt d'un IMAO irréversible ;
+      l'IMAO ne doit pas être administré pendant 7 jours après l'arrêt du
+      citalopram (RCP).
+    - Allongement acquis ou congénital de l'intervalle QT (RCP).
+    - Association avec un autre médicament pouvant allonger l'espace QT (RCP).
+    - Association avec le pimozide (RCP).
+    - Association avec le linézolide, sauf surveillance étroite et contrôle de
+      la pression artérielle (RCP).
+    - Insuffisance rénale sévère, clairance de la créatinine inférieure à
+      20 ml/min, en l'absence de données (RCP).
+  </Tab>
+  <Tab value="IMAO">
+    Lus sur le RCP du moclobémide (MOCLAMINE®).
+
+    - Hypersensibilité au moclobémide ou à l'un des excipients (RCP).
+    - États confusionnels aigus (RCP).
+    - Enfants de moins de 15 ans, en l'absence d'études (RCP).
+    - Allaitement (RCP).
+    - Association à la péthidine, au tramadol, au dextrométhorphane, à la
+      sélégiline, au bupropion et aux triptans suivants : sumatriptan,
+      rizatriptan, almotriptan, zolmitriptan (RCP).
+    - Contre-indications relatives : association aux antidépresseurs
+      sérotoninergiques, au milnacipran, à la venlafaxine, à la sibutramine,
+      au frovatriptan, au naratriptan et à l'élétriptan (RCP).
+  </Tab>
+  <Tab value="IRSNa">Non précisé dans les sources consultées (cours, VIDAL, RCP, OMS).</Tab>
+  <Tab value="Autres">
+
+    - Mirtazapine : hypersensibilité à l'un des composants (VIDAL).
+    - Miansérine, tianeptine, agomélatine, vortioxétine : non précisé dans les
+      sources consultées.
+  </Tab>
+  <Tab value="Eskétamine">
+
+    - Forme injectable, fiche substance VIDAL : eclampsie, toxémie gravidique,
+      hypertension artérielle non contrôlée ou sévère, hyperthyroïdie non
+      contrôlée, insuffisance cardiaque sévère, élévation de la pression
+      intracrânienne contre-indiquée, hypersensibilité à l'un des composants.
+    - SPRAVATO® (solution nasale) : non précisé dans les sources consultées.
+  </Tab>
+</Tabs>
 
 ## Interactions médicamenteuses
 
-- Pharmacocinétique : de nombreux médicaments sont métabolisés par les cytochromes CYP 450 — liste non exhaustive des médicaments, inducteurs et inhibiteurs sur pharmacomedicale.org.
-- IMAO + médicaments sérotoninergiques → syndrome sérotoninergique.
-- Triptans (agonistes 5HT1D antimigraineux), lithium, tramadol + antidépresseurs sérotoninergiques → syndrome sérotoninergique.
-- Alcool → majoration de l'effet sédatif (alcool déconseillé).
-- ISRS + anticoagulant, aspirine ou AINS → risque hémorragique augmenté (cas du cours : citalopram SEROPRAM® + Kardégic® → hématomes volumineux des cuisses).
-- Millepertuis (vente libre, sans avis médical) → interactions médicamenteuses.
-- À compléter avec les cours (détail pharmacocinétique par molécule).
+**Pharmacocinétique.** De nombreux médicaments sont métabolisés par les
+cytochromes CYP 450. Le cours renvoie à la liste non exhaustive des médicaments,
+inducteurs et inhibiteurs publiée sur pharmacomedicale.org.
+
+**Pharmacodynamique.** Les associations à des médicaments sérotoninergiques —
+IMAO, triptans (agonistes 5HT1D antimigraineux), lithium, tramadol — exposent au
+syndrome sérotoninergique.
+
+<Callout type="error" title="Syndrome sérotoninergique — IMAO + antidépresseur sérotoninergique">
+Signes décrits dans les RCP : diarrhée, tachycardie, sueurs, tremblements,
+confusion voire coma. Symptômes décrits pour une interaction avec un IMAO :
+agitation, tremblements, myoclonies et hyperthermie. Le traitement doit être
+interrompu immédiatement.
+
+Si l'association ne peut être évitée : surveillance clinique très étroite, et
+début de l'association aux posologies minimales recommandées.
+</Callout>
+
+**Wash-out à respecter (chiffres officiels des RCP ANSM).**
+
+| Situation | Délai | Source |
+| --------- | ----- | ------ |
+| Arrêt d'un IMAO → début d'un antidépresseur sérotoninergique | 2 semaines | RCP MARSILID®, RCP ANAFRANIL®, RCP citalopram |
+| Arrêt d'un antidépresseur sérotoninergique → début d'un IMAO | 1 semaine | RCP MARSILID®, RCP ANAFRANIL®, RCP citalopram |
+| Arrêt de la fluoxétine → début d'un IMAO | 5 semaines | RCP MARSILID® |
+| Arrêt d'un IMAO non sélectif → début du moclobémide | 15 jours | RCP MOCLAMINE® |
+| Arrêt du moclobémide → début d'un IMAO non sélectif | 24 heures | RCP MOCLAMINE® |
+
+- **Alcool** → majoration de l'effet sédatif ; alcool déconseillé (cours).
+- **ISRS + anticoagulant, aspirine ou AINS** → risque hémorragique augmenté.
+  Cas du cours : citalopram (SEROPRAM®) associé à l'acétylsalicylate de lysine
+  (KARDEGIC®) → hématomes volumineux des deux cuisses.
+- **Millepertuis** → interactions médicamenteuses, utilisation sans avis
+  médical (cours) ; risque de syndrome sérotoninergique avec les IMAO (RCP).
 
 ## Effets secondaires
 
-| Effet | Fréquence (si disponible) | Conduite |
-| --- | --- | --- |
-| Risque suicidaire, inhérent à la maladie (propos du patient, insomnie, anxiété, irritabilité, nervosité, hyperactivité) | Non précisée dans le cours | Évaluer en fonction des propos du patient ; surveiller les symptômes cités |
-| Virage maniaque : simple euphorie ou véritable excitation maniaque (élévation de l'humeur, agitation psychomotrice, idées de grandeur, insomnies) | Non précisée dans le cours | Arrêt du traitement |
-| ISRS : troubles digestifs transitoires (nausées, vomissements, constipation) | Non précisée dans le cours | À compléter avec les cours |
-| ISRS : insomnies, céphalées | Non précisée dans le cours | À compléter avec les cours |
-| ISRS : hypersudation, baisse de la libido, troubles sexuels | Non précisée dans le cours | À compléter avec les cours |
-| ISRS : hyponatrémie | Non précisée dans le cours | Dépistage chez le sujet âgé |
-| Citalopram, escitalopram : allongement de l'espace QT dose-dépendant | Non précisée dans le cours | À compléter avec les cours |
-| Syndrome de sevrage à l'arrêt, ISRS et IRSNa (anxiété, insomnies, culpabilité, cauchemars...) | Non précisée dans le cours | Décroissance de posologie à l'arrêt ; arrêt toujours progressif et programmé avec le patient sur plusieurs semaines |
-| Syndrome sérotoninergique (associations sérotoninergiques, IMAO, triptans, lithium, tramadol) | Non précisée dans le cours | À compléter avec les cours |
-| IRSNa : nausées, vomissements, vertiges, somnolences, troubles sexuels | Non précisée dans le cours | À compléter avec les cours |
-| IRSNa : effets cardiovasculaires (HTA, augmentation de la fréquence cardiaque) | Non précisée dans le cours | À compléter avec les cours |
-| Tricycliques : effets atropiniques / anticholinergiques (sécheresse de la bouche, constipation, troubles de l'accommodation, rétention urinaire) | Non précisée dans le cours | À compléter avec les cours |
-| Tricycliques : hypotension orthostatique, tachycardie | Non précisée dans le cours | À compléter avec les cours |
-| Tricycliques : prise de poids, effet stimulant ou sédatif | Non précisée dans le cours | Mesures hygiéno-diététiques si prise de poids |
-| Tricycliques : syndrome confusionnel, syndrome tremblement-dysarthrie, épilepsie par baisse du seuil épileptogène | Non précisée dans le cours | À compléter avec les cours |
-| Tricycliques : toxicité cardiaque dramatique et irréversible en cas d'ingestion massive (suicide) | Non précisée dans le cours | À compléter avec les cours |
-| IMAO : effet stimulant, hypotension orthostatique, troubles sexuels | Non précisée dans le cours | À compléter avec les cours |
-| Antagonistes alpha-2 : effet sédatif, prise de poids, hématotoxicité | Non précisée dans le cours | Mesures hygiéno-diététiques si prise de poids ; à compléter avec les cours |
-| Eskétamine : altération cognitive et motrice, dissociation / modification de la perception, sédation / somnolence, modification de la pression artérielle | Non précisée dans le cours | Auto-administration sous surveillance directe d'un professionnel de santé |
-| ISRS + aspirine, AINS ou anticoagulant : risque hémorragique (hématomes) | Non précisée dans le cours | À compléter avec les cours |
+Trois effets sont liés à la maladie ou à tout traitement antidépresseur, quelle
+que soit la famille. Les fréquences proviennent des RCP consultés ; « Non
+précisée » signifie que les sources consultées ne donnent pas de valeur.
+
+<Callout type="warning" title="Levée de l'inhibition psychomotrice">
+Le RCP décrit, chez le patient dépressif, une « levée de l'inhibition
+psychomotrice, avec risque suicidaire », ainsi qu'une « inversion de l'humeur
+avec apparition d'épisodes maniaques ». Le risque suicidaire est évalué en
+fonction des propos du patient ; la surveillance porte sur l'insomnie,
+l'anxiété, l'irritabilité, la nervosité et l'hyperactivité.
+</Callout>
+
+| Classe | Effet indésirable | Fréquence | Conduite |
+| ------ | ----------------- | --------- | -------- |
+| Toutes | Risque suicidaire, inhérent à la maladie à traiter | Non précisée (cours) | Évaluer selon les propos du patient ; surveiller insomnie, anxiété, irritabilité, nervosité, hyperactivité |
+| Toutes | Virage maniaque : euphorie ou excitation maniaque (élévation de l'humeur, agitation psychomotrice, idées de grandeur, insomnies) | Non précisée (cours) | Arrêt du traitement |
+| ISRS | Nausées, diarrhée, vomissements, constipation | Très fréquent (nausées) ; fréquent (autres) — RCP citalopram | Transitoires ; dose-dépendants, plus fréquents les 2 premières semaines |
+| ISRS | Somnolence, insomnie, céphalées | Très fréquent — RCP citalopram | Dose-dépendants |
+| ISRS | Hypersudation | Très fréquent — RCP citalopram | Dose-dépendant |
+| ISRS | Baisse de la libido, troubles sexuels | Fréquent — RCP citalopram | — |
+| ISRS | Hyponatrémie, sécrétion inappropriée d'hormone antidiurétique | Rare (hyponatrémie) ; fréquence indéterminée (SIADH) — RCP citalopram | Dépistage chez le sujet âgé |
+| ISRS | Allongement de l'espace QT dose-dépendant (citalopram, escitalopram) | Fréquence indéterminée — RCP citalopram | — |
+| ISRS, IRSNa | Syndrome de sevrage à l'arrêt (anxiété, insomnies, culpabilité, cauchemars) | Fréquent, surtout si arrêt brutal — RCP citalopram | Décroissance de posologie ; arrêt toujours progressif et programmé avec le patient sur plusieurs semaines |
+| ISRS | Syndrome sérotoninergique | Fréquence indéterminée — RCP citalopram | Interruption immédiate du traitement |
+| ISRS | Ecchymoses et autres saignements, en association avec aspirine, AINS ou anticoagulant | Fréquence indéterminée — RCP citalopram | Cas du cours : hématomes volumineux des cuisses |
+| IRSNa | Nausées, vomissements, vertiges, somnolences, troubles sexuels | Non précisée (cours) | Décroissance de posologie à l'arrêt |
+| IRSNa | Effets cardiovasculaires : HTA, augmentation de la fréquence cardiaque | Non précisée (cours) | — |
+| Tricycliques | Asthénie, somnolence | Très fréquent — RCP ANAFRANIL® | — |
+| Tricycliques | Vertiges, tremblements, myoclonies | Très fréquent — RCP ANAFRANIL® | — |
+| Tricycliques | Effets anticholinergiques : sécheresse de la bouche, constipation, vision floue, trouble de l'accommodation, trouble de la miction | Très fréquent — RCP ANAFRANIL® | Addition possible avec les autres substances atropiniques |
+| Tricycliques | Hypotension orthostatique | Très fréquent — RCP ANAFRANIL® | Sensibilité accrue chez le sujet âgé |
+| Tricycliques | Tachycardie, palpitations | Fréquent — RCP ANAFRANIL® | — |
+| Tricycliques | Nausées | Très fréquent — RCP ANAFRANIL® | — |
+| Tricycliques | Prise de poids, trouble de la libido, impuissance | Très fréquent — RCP ANAFRANIL® | Mesures hygiéno-diététiques si prise de poids |
+| Tricycliques | Confusion, agitation, insomnie | Fréquent — RCP ANAFRANIL® | Surveillance accrue chez le sujet âgé (chutes, confusion) |
+| Tricycliques | Convulsions | Peu fréquent ; risque augmenté au-delà de 250 mg par jour — RCP ANAFRANIL® | RCP : renforcer la surveillance chez les épileptiques |
+| Tricycliques | Syndrome sérotoninergique | Exceptionnel en monothérapie — RCP ANAFRANIL® | Interruption immédiate du traitement |
+| Tricycliques | Syndrome de sécrétion inappropriée d'hormone antidiurétique | Très rare — RCP ANAFRANIL® | Dépistage chez le sujet âgé |
+| Tricycliques | Syndrome confusionnel, syndrome « tremblement-dysarthrie », épilepsie par baisse du seuil épileptogène | Non précisée (cours) | — |
+| Tricycliques | Toxicité cardiaque dramatique et irréversible en cas d'ingestion massive (suicide) | Non précisée (cours) | RCP : hospitalisation et surveillance médicale stricte pendant au moins 72 h |
+| IMAO | Effet stimulant, hypotension orthostatique, troubles sexuels | Non précisée (cours) | — |
+| IMAO | Céphalées, constipation, rétention d'urine, sécheresse de la bouche, sueurs, troubles du sommeil ou excitation | Non précisée (RCP MARSILID®) | Arrêt immédiat en cas de céphalées fréquentes ou sévères |
+| Autres (antagonistes alpha-2) | Effet sédatif, prise de poids, hématotoxicité | Non précisée (cours) | Mesures hygiéno-diététiques si prise de poids |
+| Autres (mirtazapine) | Sédation, prise de poids, appétit augmenté, sécheresse buccale, céphalées | Très fréquent (VIDAL) | — |
+| Eskétamine | Altération cognitive et motrice, dissociation ou modification de la perception, sédation ou somnolence, modification de la pression artérielle | Non précisée (cours) | Auto-administration sous surveillance directe d'un professionnel de santé |
+| Eskétamine | Augmentation de la pression artérielle | Très fréquent (VIDAL, fiche substance) | — |
+
+Deux effets indésirables des ISRS appellent une vigilance particulière :
+
+<Callout type="warning" title="Espace QT : citalopram et escitalopram">
+Le citalopram entraîne un allongement dose-dépendant de l'intervalle QT ; des
+cas d'arythmie ventriculaire, y compris torsades de pointes, ont été rapportés,
+notamment chez la femme et en cas d'hypokaliémie ou d'allongement du QT
+pré-existant. Des anomalies électrolytiques doivent être corrigées avant de
+débuter le traitement.
+</Callout>
+
+<Callout type="warning" title="Hyponatrémie par SIADH chez la personne âgée">
+De rares cas d'hyponatrémie, probablement dus à une sécrétion inappropriée
+d'hormone antidiurétique, ont été décrits avec les ISRS ; l'hyponatrémie
+disparaît généralement à l'arrêt du traitement. Les femmes âgées semblent être
+les plus à risque.
+</Callout>
 
 ## Surveillances
 
-- Efficacité différée : délai d'action de 3 à 5 semaines, avec au minimum 3 semaines de prise régulière à posologie efficace ; amélioration des symptômes (sommeil, asthénie) ou aggravation (anxiété, angoisse, hyperactivité) ; vérifier l'observance.
-- Dépister les effets indésirables après quelques jours, notamment le risque suicidaire et les effets propres à chaque classe d'antidépresseurs.
-- Sujets âgés : hyponatrémie, hypotension orthostatique, troubles de l'équilibre, interactions médicamenteuses.
-- Durées : traitement d'attaque de 6 à 12 semaines puis consolidation de 4 à 12 mois (minimum 6 mois à 1 an pour limiter les rechutes).
-- Éducation du patient : modalités de prise, délai nécessaire à l'efficacité et nécessité de poursuivre après l'amélioration ; arrêt toujours progressif et programmé ; alcool déconseillé ; mesures hygiéno-diététiques si prise de poids.
-- Eskétamine : auto-administration sous surveillance directe d'un professionnel de santé.
+<Steps>
+  <Step>
+    ### Traitement d'attaque
+
+    Durée de 6 à 12 semaines.
+  </Step>
+  <Step>
+    ### Consolidation
+
+    Durée de 4 à 12 mois, soit un minimum de 6 mois à 1 an pour limiter les
+    risques de rechute.
+  </Step>
+  <Step>
+    ### Arrêt
+
+    Toujours progressif et programmé avec le patient sur plusieurs semaines,
+    pour prévenir un syndrome de sevrage.
+  </Step>
+</Steps>
+
+- **Efficacité différée.** Délai d'action de 3 à 5 semaines, avec au minimum
+  3 semaines de prise régulière à posologie efficace. Point d'attention :
+  amélioration des symptômes (sommeil, asthénie) ou aggravation (anxiété,
+  angoisse, hyperactivité) ; vérifier l'observance.
+- **Dépistage des effets indésirables** après quelques jours, notamment le
+  risque suicidaire et les effets propres à chaque classe d'antidépresseurs.
+- **Début de traitement et changements de dose.** Surveillance étroite des
+  patients, en particulier de ceux à haut risque, et information du patient et
+  de son entourage (RCP).
+- **Sujets âgés.** Hyponatrémie, hypotension orthostatique, troubles de
+  l'équilibre, interactions médicamenteuses.
+- **Citalopram.** Envisager un électrocardiogramme avant le début du traitement
+  si pathologie cardiaque stabilisée ; corriger hypokaliémie et hypomagnésémie
+  avant d'entamer le traitement (RCP).
+- **Éducation du patient.** Modalités de prise, délai nécessaire à l'efficacité
+  et nécessité de poursuivre le traitement après l'amélioration des symptômes ;
+  alcool déconseillé ; mesures hygiéno-diététiques si prise de poids.
+- **Eskétamine.** Auto-administration sous surveillance directe d'un
+  professionnel de santé.
+
+## Sources
+
+**Cours**
+
+- Pharmacologie des psychotropes — Antidépresseurs (capsule 1/5), Claire
+  Lafay-Chebassier, MCU-PH, Université de Poitiers ; UE 2.11 S3, IFSI Région
+  Nouvelle-Aquitaine.
+
+**VIDAL — fiches substance par DCI**
+
+- Tricycliques : [Imipramine](https://www.vidal.fr/medicaments/substances/imipramine-6798.html),
+  [Trimipramine](https://www.vidal.fr/medicaments/substances/trimipramine-6107.html),
+  [Doxépine](https://www.vidal.fr/medicaments/substances/doxepine-7005.html),
+  [Amitriptyline](https://www.vidal.fr/medicaments/substances/amitriptyline-6678.html),
+  [Amoxapine](https://www.vidal.fr/medicaments/substances/amoxapine-309.html),
+  [Maprotiline](https://www.vidal.fr/medicaments/substances/maprotiline-6821.html),
+  [Clomipramine](https://www.vidal.fr/medicaments/substances/clomipramine-6746.html),
+  [Dosulépine](https://www.vidal.fr/medicaments/substances/dosulepine-15555.html)
+- IMAO : [Moclobémide](https://www.vidal.fr/medicaments/substances/moclobemide-4149.html)
+- ISRS : [Fluoxétine](https://www.vidal.fr/medicaments/substances/fluoxetine-6007.html),
+  [Fluvoxamine](https://www.vidal.fr/medicaments/substances/fluvoxamine-10101.html),
+  [Paroxétine](https://www.vidal.fr/medicaments/substances/paroxetine-5854.html),
+  [Citalopram](https://www.vidal.fr/medicaments/substances/citalopram-7036.html),
+  [Escitalopram](https://www.vidal.fr/medicaments/substances/escitalopram-21916.html),
+  [Sertraline](https://www.vidal.fr/medicaments/substances/sertraline-15688.html)
+- IRSNa : [Milnacipran](https://www.vidal.fr/medicaments/substances/milnacipran-17650.html),
+  [Venlafaxine](https://www.vidal.fr/medicaments/substances/venlafaxine-5747.html),
+  [Duloxétine](https://www.vidal.fr/medicaments/substances/duloxetine-22918.html)
+- Autres : [Miansérine](https://www.vidal.fr/medicaments/substances/mianserine-2374.html),
+  [Mirtazapine](https://www.vidal.fr/medicaments/substances/mirtazapine-18051.html),
+  [Tianeptine](https://www.vidal.fr/medicaments/substances/tianeptine-6884.html),
+  [Agomélatine](https://www.vidal.fr/medicaments/substances/agomelatine-23248.html),
+  [Vortioxétine](https://www.vidal.fr/medicaments/substances/vortioxetine-24205.html)
+- Glutamate : [Eskétamine](https://www.vidal.fr/medicaments/substances/esketamine-25673.html)
+- Phytothérapie : [Millepertuis](https://www.vidal.fr/medicaments/substances/millepertuis-15066.html)
+- Recommandation VIDAL : [Prise en charge de la dépression](https://www.vidal.fr/recommandations/1567/depression/prise_en_charge/)
+
+**ANSM — Résumés des caractéristiques du produit**
+
+- [MARSILID® (iproniazide), IMAO non sélectif — RCP](https://agence-prd.ansm.sante.fr/php/ecodex/rcp/R0341868.htm)
+- [MOCLAMINE® (moclobémide), IMAO-A — RCP](https://agence-prd.ansm.sante.fr/php/ecodex/rcp/R0332367.htm)
+- [ANAFRANIL® (clomipramine), tricyclique — RCP](https://agence-prd.ansm.sante.fr/php/ecodex/rcp/R0234979.htm)
+- [CITALOPRAM TEVA SANTE® (citalopram), ISRS — RCP](https://agence-prd.ansm.sante.fr/php/ecodex/rcp/R0364071.htm)
+
+**OMS (Organisation mondiale de la Santé)**
+
+- [Dépression — fiche d'information OMS](https://www.who.int/news-room/fact-sheets/detail/depression)
+- [Troubles mentaux — fiche d'information OMS](https://www.who.int/news-room/fact-sheets/detail/mental-disorders)
+- [Index ATC/DDD de l'OMS (N06A — antidépresseurs)](https://www.whocc.no/atc_ddd_index/)
