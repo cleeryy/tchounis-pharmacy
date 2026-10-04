@@ -12,7 +12,9 @@ WORKDIR /app
 RUN corepack enable && corepack prepare pnpm@9.15.0 --activate
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
-RUN pnpm build
+# Le template n'a pas de dossier public/ : le créer (vide, idempotent)
+# pour que le COPY du stage runner réussisse toujours.
+RUN mkdir -p ./public && pnpm build
 
 FROM base AS runner
 WORKDIR /app
