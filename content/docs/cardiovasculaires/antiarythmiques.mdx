@@ -1,49 +1,340 @@
 ---
 title: 'Antiarythmiques'
-description: 'Squelette de fiche « Antiarythmiques » — à compléter avec les cours UE 2.11 S3.'
+description: 'Antiarythmiques : propriétés, 18 molécules, indications, contre-indications, interactions, effets indésirables et surveillances — UE 2.11 S3.'
 ---
 
-> Contenu à compléter avec les cours UE 2.11 S3.
+import { Tabs, Tab } from 'fumadocs-ui/components/tabs';
+import { Steps, Step } from 'fumadocs-ui/components/steps';
+
+Les antiarythmiques sont les médicaments pour gérer les troubles du rythme
+cardiaque ventriculaires et supra-ventriculaires. Cette fiche suit le plan
+imposé par l'UE 2.11 S3. Les chiffres, fréquences et délais proviennent du cours
+et des références listées en [Sources](#sources) ; ce qui n'est documenté par
+aucune de ces sources est indiqué « Non précisé ».
 
 ## Propriétés
 
-Cette fiche rassemble l'essentiel commun de la famille : ce qu'elle fait,
-sans sur-expliquer l'évident. Le mécanisme commun détaillé est à compléter
-avec les cours UE 2.11 S3. Seules les particularités utiles en pratique IDE
-sont retenues dans les sections ci-dessous.
+Le cours retient trois caractéristiques principales à ces médicaments (cours) :
+
+- **Index thérapeutique étroit** de la majorité des produits existants : effets
+  indésirables potentiellement graves et, pour certains, mortels.
+- **Hétérogénéité** des produits et des effets cellulaires et cliniques.
+- **Grande variabilité** des effets thérapeutiques et toxiques selon la nature de
+  l'arythmie traitée et les pathologies cardiaques sous-jacentes.
+
+Ils sont classés en 4 grandes classes selon la classification de Vaughan-Williams,
+en fonction de leurs propriétés électrophysiologiques cellulaires. Chaque classe
+est associée à des effets sur l'ECG et à des effets indésirables particuliers
+(cours).
+
+Le mécanisme d'action consiste en une modification ou un blocage du fonctionnement
+du rythme cardiaque sur les oreillettes, les ventricules et les nœuds
+auriculoventriculaires, en touchant aux échanges d'ions (Na+, K+, Ca2+), à leurs
+entrées ou à leurs sorties (cours).
+
+<Callout type="info" title="Trois caractéristiques (cours)">
+Index thérapeutique étroit, hétérogénéité des produits et des effets, variabilité
+des effets thérapeutiques et toxiques : l'utilisation des antiarythmiques est
+délicate, en particulier pour les classes I et III (cours, résumé).
+</Callout>
+
+<Cards>
+  <Card title="Classe I" description="Bloqueurs des canaux Na+ rapides, sous-classes Ia, Ib, Ic (cours)." />
+  <Card title="Classe II" description="Bêta-bloquants : bloc des récepteurs β-adrénergiques (cours)." />
+  <Card title="Classe III" description="Bloqueurs des canaux K+ (potassium) (cours)." />
+  <Card title="Classe IV" description="Bloqueurs des canaux calciques lents (cours)." />
+</Cards>
+
+### Les différentes classes
+
+Développement des acronymes, conséquence sur l'ECG et position de chaque famille,
+le détail des molécules venant ensuite.
+
+| Classe | Dénomination | Quand l'utiliser |
+| ------ | ------------ | ---------------- |
+| Classe I | Bloqueurs des canaux Na+ rapides, en 3 sous-classes : Ia, Ib, Ic (cours). Exemples du cours : quinidine et disopyramide (Ia), lidocaïne et méxilétine (Ib), flécaïnide, propafénone et cibenzoline (Ic), amiodarone et dronédarone entre parenthèses (Ib). Conséquence sur l'ECG : allongement de QRS, ± allongement de PR (cours). | Flécaïnide : traitement et prévention des récidives de fibrillation auriculaire paroxystique et persistante et des autres tachycardies supra-ventriculaires (mais ablation possible), récidives de troubles du rythme ventriculaires documentés, symptomatiques et invalidants. Lidocaïne : plutôt gestion en urgence des tachycardies ventriculaires en contexte de syndrome coronarien aigu (cours). **Contre-indiqués après un infarctus du myocarde ou chez l'insuffisant cardiaque (cours, résumé).** |
+| Classe II | Bêta-bloquants : acébutolol, aténolol, propranolol, nadolol, esmolol ; sotalol, amiodarone et dronédarone entre parenthèses (cours). Conséquence sur l'ECG : allongement de PR, diminution de la FC (cours). | Ralentissement de la fréquence ventriculaire si fibrillation auriculaire permanente ; traitement et prévention des récidives de certains troubles du rythme supra-ventriculaires documentés (cours). **Contre-indiqués en cas de risque de bronchospasme (asthme, bronchopathies obstructives sévères) ; l'association à d'autres médicaments bradycardisants est délicate (cours, résumé).** |
+| Classe III | Bloqueurs des canaux K+ (potassium) : amiodarone, sotalol, dronédarone (cours). Conséquence sur l'ECG : allongement de QT, ± diminution de la FC (cours). | Traitement et prévention des récidives de fibrillation auriculaire paroxystique et persistante ; traitement et prévention des récidives des troubles du rythme ventriculaires avec dyspnée stade III et IV de la NYHA (cours). **Risque, rare mais potentiellement mortel, de torsades de pointes du fait d'un allongement excessif du QT ; moindre risque de torsades avec l'amiodarone (cours, résumé).** |
+| Classe IV | Bloqueurs des canaux calciques lents : vérapamil, diltiazem — mais pas les dihydropyridines (cours). Conséquence sur l'ECG : allongement de PR, diminution de la FC (cours). | Ralentissement de la fréquence ventriculaire si fibrillation auriculaire permanente ; traitement et prévention des récidives de certains troubles du rythme supra-ventriculaires documentés (cours). **Contre-indiqués en cas d'insuffisance cardiaque systolique ; l'association à d'autres médicaments bradycardisants (bêta-bloquants) est délicate (cours, résumé).** |
+
+<Callout type="info" title="Logique de choix">
+Le cours répartit les indications en deux blocs : d'une part le flécaïnide et la
+lidocaïne (classe I), d'autre part l'amiodarone, le sotalol et le dronédarone
+(classe III), chaque molécule ayant sa place dans le traitement et la prévention
+des récidives.
+
+Le support attribue le ralentissement de la fréquence ventriculaire en
+fibrillation auriculaire permanente et le traitement des troubles du rythme
+supra-ventriculaires documentés aux bêta-bloquants et aux inhibiteurs calciques
+diltiazem et vérapamil (classes II et IV) (cours).
+
+Grossesse et allaitement : de « à éviter » à « contre-indiqué » selon les
+molécules (cours).
+</Callout>
 
 ## Médicaments de la famille
 
-| DCI | Particularité | Mention honorable |
-| --- | ------------- | ----------------- |
-| À compléter | À compléter | À compléter |
+Dix-huit entrées classées par classe de Vaughan-Williams. Les formes
+pharmaceutiques et les posologies proviennent des tableaux du cours ; chaque DCI
+renvoie à sa fiche substance VIDAL.
+
+| Classe | DCI | Particularité | Mention honorable |
+| ------ | --- | ------------- | ----------------- |
+| Ia | [Hydroquinidine](https://www.vidal.fr/medicaments/substances/hydroquinidine-5049.html) | Effet possiblement modifié par passage CYP3A4 (cours, quinidine et disopyramide) | Orale : gélules LP 300 mg ; 600 à 1200 mg par jour (cours) |
+| Ia | [Quinidine](https://www.vidal.fr/medicaments/substances/quinidine-2990.html) | Augmente l'effet de la digoxine (cours) | Non précisée (cours) |
+| Ia | [Disopyramide](https://www.vidal.fr/medicaments/substances/disopyramide-1292.html) | Effet possiblement modifié par passage CYP3A4 (cours) | Orale : gélules 100 mg, cp LP 125 et 250 mg ; injectable : ampoules 50 mg ; 400 à 600 mg, 250 à 500 mg (voir RCP) (cours) |
+| Ib | [Lidocaïne](https://www.vidal.fr/medicaments/substances/lidocaine-2097.html) | Plutôt gestion en urgence des tachycardies ventriculaires en contexte de syndrome coronarien aigu (cours) ; effet augmenté par l'amiodarone (cours) | Intraveineuse : ampoule et flacon ; 1 à 1,5 mg/kg en dose de charge puis 1,5 à 4 mg/min en perfusion continue (cours) |
+| Ib | [Méxilétine](https://www.vidal.fr/medicaments/substances/mexiletine-15623.html) | Classe Ib (cours) | Non précisée (cours) |
+| Ic | [Flécaïnide](https://www.vidal.fr/medicaments/substances/flecainide-15580.html) | Traitement et prévention des récidives de FA paroxystique et persistante, des autres TSVC (ablation possible) et des troubles du rythme ventriculaires documentés, symptomatiques et invalidants (cours) ; effet augmenté par l'amiodarone (cours) | Orale : cp 100 mg, gélules LP 50, 100, 150 et 200 mg ; intraveineuse (hôpital) ; 100 à 200 mg, 100 à 300 mg (voir RCP) (cours) |
+| Ic | [Propafénone](https://www.vidal.fr/medicaments/substances/propafenone-2937.html) | Classe Ic (cours) ; contre-indiqué en cas d'insuffisance cardiaque même compensée et d'insuffisance coronaire ancienne ou active (cours) | Non précisée (cours) |
+| Ic | [Cibenzoline](https://www.vidal.fr/medicaments/substances/cibenzoline-965.html) | Classe Ic (cours) | Non précisée (cours) |
+| II | [Propranolol](https://www.vidal.fr/medicaments/substances/propranolol-2940.html) | Ralentissement de la fréquence ventriculaire si FA permanente ; traitement et prévention des récidives de certains TSVC documentés (cours) | Non précisée (cours) ; voie injectable citée par le cours des bêta-bloquants |
+| II | [Acébutolol](https://www.vidal.fr/medicaments/substances/acebutolol-4283.html) | Mêmes indications que la classe II (cours) | Non précisée (cours) ; voie injectable citée par le cours des bêta-bloquants |
+| II | [Aténolol](https://www.vidal.fr/medicaments/substances/atenolol-428.html) | Mêmes indications que la classe II (cours) | Non précisée (cours) ; voie injectable citée par le cours des bêta-bloquants |
+| II | [Nadolol](https://www.vidal.fr/medicaments/substances/nadolol-2445.html) | Mêmes indications que la classe II (cours) | Non précisée (cours) |
+| II | [Esmolol](https://www.vidal.fr/medicaments/substances/esmolol-6533.html) | Voie intraveineuse seulement (cours) | Non précisée (cours) ; voie injectable citée par le cours des bêta-bloquants |
+| III | [Amiodarone](https://www.vidal.fr/medicaments/substances/amiodarone-7069.html) | Traitement et prévention des récidives de FA paroxystique et persistante et des troubles du rythme ventriculaires avec dyspnée stade III et IV de la NYHA (cours) ; demi-vie longue à grande variabilité interindividuelle, 20 à 100 jours, dose de charge nécessaire (cours) ; contre-indiquée à partir du 2e trimestre de la grossesse (cours) | Orale : cp 200 mg ; intraveineuse : ampoules 150 mg ; dose de charge (cf. RCP) puis 100 à 200 mg (voir RCP) (cours) ; RCP : CORDARONE 200 mg |
+| III | [Dronédarone](https://www.vidal.fr/medicaments/substances/dronedarone-23309.html) | Classe III, associée à l'amiodarone (cours) | Orale : cp 400 mg, 400 mg × 2 (cours) |
+| III | [Sotalol](https://www.vidal.fr/medicaments/substances/sotalol-6548.html) | Classe III, bêta-bloquant entre parenthèses en classe II dans le cours | Orale : cp 80 mg et 160 mg ; dose initiale de 80 mg puis 160 à 320 mg en 2 prises (cours) |
+| IV | [Vérapamil](https://www.vidal.fr/medicaments/substances/verapamil-6900.html) | Ralentissement de la fréquence ventriculaire si FA permanente ; traitement et prévention des récidives de certains TSVC documentés (cours) ; contre-indiqué en cas d'insuffisance cardiaque systolique (cours, résumé) | Orale : cp 40 mg, gélule 120 mg ; intraveineuse ; 120 à 240 mg, 240 à 360 mg (voir RCP) (cours) |
+| IV | [Diltiazem](https://www.vidal.fr/medicaments/substances/diltiazem-6762.html) | Mêmes indications que le vérapamil (cours) ; les dihydropyridines ne sont pas antiarythmiques (cours) | Orale : cp 60 mg, cp LP 90 et 120 mg, gélules LP 200 et 300 mg ; intraveineuse : ampoule et flacon ; 60 mg × 3, 1 cp × 2, 1 cp par jour, 0,25 à 0,30 mg/kg IV en deux minutes (cours) |
 
 ## Indications
 
-- À compléter avec les cours.
-- À compléter avec les cours.
-- À compléter avec les cours.
+- **Classe I — flécaïnide**
+
+  - Traitement et prévention des récidives de fibrillation auriculaire
+    paroxystique et persistante (cours).
+  - Traitement et prévention des autres tachycardies supra-ventriculaires, mais
+    ablation possible (cours).
+  - Traitement et prévention des récidives des troubles du rythme ventriculaire
+    documentés, symptomatiques et invalidants (cours).
+
+- **Classe I — lidocaïne** — plutôt gestion en urgence des tachycardies
+  ventriculaires survenant en contexte de syndrome coronarien aigu (cours).
+
+- **Classe III** — traitement et prévention des récidives de fibrillation
+  auriculaire paroxystique et persistante ; traitement et prévention des
+  récidives des troubles du rythme ventriculaires avec dyspnée stade III et IV de
+  la NYHA (cours).
+
+- **Classes II et IV — bêta-bloquants, diltiazem et vérapamil**
+
+  - Ralentissement de la fréquence ventriculaire si fibrillation auriculaire
+    permanente (cours).
+  - Traitement et prévention des récidives de certains troubles du rythme
+    supra-ventriculaires documentés (cours).
 
 ## Contre-indications
 
-- À compléter avec les cours.
-- À compléter avec les cours.
-- À compléter avec les cours.
+Les onglets reprennent les situations à risque, les contre-indications et les
+molécules concernées, tels que présentés dans le cours.
+
+<Tabs items={['Classe I', 'Classe II', 'Classe III', 'Classe IV', 'Grossesse et allaitement']} label="Classe">
+  <Tab value="Classe I">
+
+    Situations à risque : toute situation d'insuffisance cardiaque, toute forme
+    d'insuffisance coronaire, blocs de conduction (auriculo-ventriculaires ou de
+    branche), dysfonction sinusale, stimulateurs cardiaques (élévation des
+    seuils), antécédent d'arythmogénicité de ces médicaments (cours).
+
+    Contre-indications : insuffisance cardiaque même compensée ; insuffisance
+    coronaire ancienne ou active ; blocs auriculo-ventriculaires ou blocs de
+    branche de haut grade non appareillés (cours).
+
+    Médicaments concernés : flécaïnide, propafénone, hydroquinidine,
+    disopyramide, lidocaïne (cours).
+  </Tab>
+  <Tab value="Classe II">
+
+    Situations à risque : bradycardie, déficit de conduction
+    auriculo-ventriculaire, toute situation favorisant un bronchospasme,
+    insuffisance cardiaque non stabilisée, hypotension artérielle (cours).
+
+    Contre-indications : asthme et bronchopathie obstructive ; blocs
+    auriculo-ventriculaires de grade II et III et dysfonction sinusale non
+    appareillés ; bradycardie sévère non appareillée (cours).
+
+    Médicaments concernés : propranolol, acébutolol, nadolol, aténolol,
+    bisoprolol, sotalol entre parenthèses (cours).
+  </Tab>
+  <Tab value="Classe III">
+
+    Situations à risque : bradycardie, hypokaliémie, hypomagnésémie, ischémie
+    myocardique, insuffisance cardiaque (sauf amiodarone et dronédarone),
+    antécédents familiaux de torsades de pointes, de syncopes ou de mort subite
+    inexpliquées (cours).
+
+    Contre-indications : insuffisance cardiaque non contrôlée (sauf amiodarone) ;
+    bradycardie sévère non appareillée ; antécédent de torsade de pointe ; QT long
+    congénital ou acquis par des co-prescriptions de médicaments allongeant le QT
+    (cours).
+
+    Médicaments concernés : amiodarone, sotalol, dronédarone (cours).
+  </Tab>
+  <Tab value="Classe IV">
+
+    Situations à risque : bradycardie, trouble de conduction
+    auriculo-ventriculaire, insuffisance cardiaque, hypotension artérielle
+    (cours).
+
+    Contre-indications : blocs auriculo-ventriculaires de grade II et III et
+    dysfonction sinusale non appareillés ; bradycardie sévère non appareillée ;
+    insuffisance cardiaque (cours).
+
+    Médicaments concernés : vérapamil, diltiazem (cours).
+  </Tab>
+  <Tab value="Grossesse et allaitement">
+    De « à éviter » à « contre-indiqué » selon les molécules, pour la grossesse
+    comme pour l'allaitement (cours). Amiodarone : contre-indication à partir du
+    2e trimestre ; allaitement contre-indiqué, passage dans le lait et risque
+    d'hypothyroïdie chez le nourrisson (cours).
+  </Tab>
+</Tabs>
 
 ## Interactions médicamenteuses
 
-- À compléter avec les cours.
-- À compléter avec les cours.
-- À compléter avec les cours.
+<Callout type="error" title="Amiodarone et dronédarone : CYP3A4 et effets AVK">
+- **Flécaïnide, lidocaïne** : effet augmenté par l'amiodarone (cours).
+- **Quinidine** : augmente l'effet de la digoxine (cours).
+- **Quinidine, disopyramide** : effet possiblement modifié par passage CYP3A4
+  (cours).
+- **Amiodarone, dronédarone** : demi-vie de 24 h avec long délai d'action et
+  d'élimination (interactions) ; métabolisés par le CYP3A4 ; inhibent le CYP2D6
+  et le CYP3A4 ; augmentent les effets des antivitamines K (cours). Pour
+  l'amiodarone, le cours précise par ailleurs une demi-vie longue à grande
+  variabilité interindividuelle de 20 à 100 jours et une activité rémanente
+  persistant dix jours à un mois après l'arrêt (cours, pharmacocinétique).
+- **Diltiazem et vérapamil** : mêmes remarques (cours).
+
+Associations déconseillées (cours des bêta-bloquants) : bêta-bloquant +
+antiarythmiques (classes I et III) ou inhibiteurs calciques à tropisme cardiaque
+= majoration des effets inotropes négatifs et allongement du temps de conduction
+auriculo-ventriculaire, jusqu'au bloc auriculo-ventriculaire.
+
+Associations à prendre en compte (cours, diurétiques) : les diurétiques
+hypokaliémiants associés à des médicaments à risque de torsades de pointes
+(astémizole, bépridil, érythromycine IV, sparfloxacine) ; le RCP LASILIX précise
+que les hypokaliémies peuvent entraîner des torsades de pointes, surtout en cas
+d'association avec des antiarythmiques du groupe de la quinidine.
+</Callout>
 
 ## Effets secondaires
 
-| Effet | Fréquence (si disponible) | Conduite |
-| --- | --- | --- |
-| À compléter | À compléter | À compléter |
+Les fréquences proviennent du RCP ANSM consulté ; « Non précisée » signifie que
+les sources consultées ne donnent pas de valeur.
+
+| Classe | Effet indésirable | Fréquence | Conduite |
+| ------ | ----------------- | --------- | -------- |
+| Classe I | Allongement de QRS (Ic surtout), ± allongement de PR | Non précisée (cours) | Vérification du QRS et du QT (cours) |
+| Classe I | Arythmogénicité : tachycardies, flutters — mais pas de torsades de pointes ; inotropisme négatif ; bloc de conduction Hiss ou intraventriculaire (QRS large) ; dysfonction sinusale ; bradycardie | Non précisée (cours) | Absence de signes d'insuffisance cardiaque et de palpitations (cours) |
+| Classe II | Allongement de PR, diminution de la FC, bloc auriculo-ventriculaire, inotropisme négatif | Non précisée (cours) | Absence de bronchospasme, de bradycardie excessive et symptomatique, d'hypotension orthostatique, de bradycardie sinusale excessive (cours) |
+| Classe III | Allongement de QTc, arythmogénicité par torsades de pointes, bradycardie, bloc auriculo-ventriculaire, inotropisme négatif | Non précisée (cours) ; risque rare mais potentiellement mortel (cours, résumé) | Absence de palpitations et d'allongement excessif de l'intervalle QT (cours) |
+| Classe IV | Allongement de PR, diminution de la FC, bradycardie, bloc auriculo-ventriculaire, inotropisme négatif | Non précisée (cours) | Absence de signes d'insuffisance cardiaque, de bradycardie excessive, d'hypotension orthostatique et d'allongement excessif de PR (cours) |
+| Amiodarone — œil | Micro-dépôts lipidiques cornéens localisés à l'aire sous-pupillaire, ne contre-indiquant pas la poursuite du traitement ; halos colorés en lumière éblouissante ou sensation de brouillard | Très fréquemment, quasiment constants chez l'adulte (RCP CORDARONE) | Réversibles à l'arrêt du traitement (cours, RCP) |
+| Amiodarone — œil | Neuropathies optiques (névrite optique) : flou visuel, baisse de la vision, œdème papillaire | Très rarement (RCP CORDARONE) | En l'absence d'autre étiologie, suspendre le traitement (RCP) |
+| Amiodarone — peau | Photosensibilisation : pas d'exposition solaire ni d'ultraviolets en cours de traitement | Très fréquemment (RCP CORDARONE) | Éviter l'exposition solaire (cours, RCP) |
+| Amiodarone — peau | Pigmentations cutanées liliacées ou gris ardoisé, posologies élevées et longue durée ; disparition lente après arrêt (10 à 24 mois) | Fréquemment (RCP CORDARONE) | — |
+| Amiodarone — peau | Rashs cutanés, dermatite exfoliatrice, alopécie, érythème au cours de radiothérapies | Très rarement (RCP CORDARONE) | — |
+| Amiodarone — peau | Eczéma, réactions cutanées sévères parfois fatales (nécrolyse épidermique toxique, syndrome de Stevens-Johnson), dermatites bulleuses, syndrome DRESS | Fréquence indéterminée (RCP CORDARONE) | — |
+| Amiodarone — thyroïde | Hormonémie thyroïdienne dissociée sans signe clinique | Très fréquemment (RCP CORDARONE) | Ne justifie pas l'arrêt du traitement (RCP) |
+| Amiodarone — thyroïde | Hypothyroïdie : prise de poids, frilosité, apathie, somnolence, TSH élevée | Fréquemment (cours) ; arrêt pas impératif | Poursuite possible avec opothérapie à base de L-thyroxine, normalisation en 1 à 3 mois (cours) |
+| Amiodarone — thyroïde | Hyperthyroïdie pauci-symptomatique : léger amaigrissement inexpliqué, baisse d'efficacité | Non précisée (cours) | Arrêt impératif, normalisation en 3 à 4 semaines ; possibles plusieurs mois après l'arrêt (cours) |
+| Amiodarone — poumon | Pneumopathie pouvant évoluer en fibrose pulmonaire : dyspnée d'effort ou toux sèche | Non précisée (cours) | Arrêt du traitement (cours) |
+| Amiodarone — neurologie | Tremblements ou autres symptômes extrapyramidaux, troubles du sommeil dont cauchemars, neuropathies périphériques sensitives, motrices ou mixtes | Non précisée (cours) | — |
+| Amiodarone — foie | Élévation des transaminases isolée et modérée (1,5 à 3 fois la normale), réversible | Non précisée (cours) | — |
+| Amiodarone — foie | Atteinte hépatique aiguë avec hypertransaminasémie et/ou ictère | Non précisée (cours) | Nécessite l'arrêt du traitement (cours) |
 
 ## Surveillances
 
-- À compléter avec les cours.
-- À compléter avec les cours.
-- À compléter avec les cours.
+<Steps>
+  <Step>
+    ### Administration
+
+    Amiodarone : ECG pratiqué avant l'initiation du traitement ; traitement
+    d'attaque de 3 comprimés par jour pendant 8 à 10 jours, puis recherche de la
+    dose minimale efficace en entretien (½ comprimé par jour à 2 comprimés par
+    jour) (cours). Voie intraveineuse : dose d'attaque de 5 mg/kg en moyenne dans
+    du sérum glucosé, renouvelable 2 à 3 fois par 24 heures, puis entretien de
+    10 à 20 mg/kg par jour, avec relais oral dès le premier jour de perfusion
+    (cours).
+  </Step>
+  <Step>
+    ### Signes d'efficacité
+
+    Absence de palpitations ; contrôle de la fréquence cardiaque et de la
+    conduction selon la classe (cours).
+  </Step>
+  <Step>
+    ### Surveiller et dépister
+
+    Classe I : vérification du QRS et du QT, absence de signes d'insuffisance
+    cardiaque et de palpitations. Classe II : absence de bronchospasme, de
+    bradycardie excessive et symptomatique, d'hypotension orthostatique. Classe III :
+    absence de palpitations et d'allongement excessif de l'intervalle QT (torsade
+    de pointes). Classe IV : absence d'insuffisance cardiaque, de bradycardie
+    excessive, d'hypotension orthostatique et d'allongement excessif de PR
+    (cours).
+  </Step>
+  <Step>
+    ### Éducation
+
+    Amiodarone : pas d'exposition solaire ni d'ultraviolets en cours de
+    traitement (cours, RCP). Signaler dyspnée d'effort ou toux sèche (pneumopathie)
+    et signes d'atteinte thyroïdienne (cours).
+  </Step>
+</Steps>
+
+- **Grossesse et allaitement (amiodarone).** Contre-indication à partir du
+  2e trimestre ; allaitement contre-indiqué, passage dans le lait et risque
+  d'hypothyroïdie chez le nourrisson (cours).
+- **Arrêt du traitement.** Après l'arrêt de l'amiodarone, persistance d'une
+  activité rémanente pendant dix jours à un mois, à prendre en considération
+  (cours).
+
+## Sources
+
+**Cours**
+
+- Les antiarythmiques — Dr K Martin-Latry, CHU / Université Bordeaux ; en-tête du
+  support « UE 2.11 S1 – Pharmacologie et thérapeutique », groupe de travail
+  UE 2.11.
+- Médicaments cardiovasculaires — Les β-bloquants, 1re et 2e parties, Pr
+  Véronique MICHEL, IFSI Région Nouvelle Aquitaine ; UE 2.11 S3.
+- Médicaments cardiovasculaires — Les inhibiteurs calciques, 1re et 2e parties,
+  Pr Véronique MICHEL ; UE 2.11 S3.
+- Les digitaliques — Dr K Martin-Latry (quinidine et digoxine) ; UE 2.11.
+- Les diurétiques, 1re et 2e parties — Pr Véronique MICHEL ; UE 2.11 S3
+  (hypokaliémie et torsades de pointes).
+
+**VIDAL — fiches substance par DCI**
+
+- Classe Ia : [Hydroquinidine](https://www.vidal.fr/medicaments/substances/hydroquinidine-5049.html),
+  [Quinidine](https://www.vidal.fr/medicaments/substances/quinidine-2990.html),
+  [Disopyramide](https://www.vidal.fr/medicaments/substances/disopyramide-1292.html)
+- Classe Ib : [Lidocaïne](https://www.vidal.fr/medicaments/substances/lidocaine-2097.html),
+  [Méxilétine](https://www.vidal.fr/medicaments/substances/mexiletine-15623.html)
+- Classe Ic : [Flécaïnide](https://www.vidal.fr/medicaments/substances/flecainide-15580.html),
+  [Propafénone](https://www.vidal.fr/medicaments/substances/propafenone-2937.html),
+  [Cibenzoline](https://www.vidal.fr/medicaments/substances/cibenzoline-965.html)
+- Classe II : [Propranolol](https://www.vidal.fr/medicaments/substances/propranolol-2940.html),
+  [Acébutolol](https://www.vidal.fr/medicaments/substances/acebutolol-4283.html),
+  [Aténolol](https://www.vidal.fr/medicaments/substances/atenolol-428.html),
+  [Nadolol](https://www.vidal.fr/medicaments/substances/nadolol-2445.html),
+  [Esmolol](https://www.vidal.fr/medicaments/substances/esmolol-6533.html)
+- Classe III : [Amiodarone](https://www.vidal.fr/medicaments/substances/amiodarone-7069.html),
+  [Dronédarone](https://www.vidal.fr/medicaments/substances/dronedarone-23309.html),
+  [Sotalol](https://www.vidal.fr/medicaments/substances/sotalol-6548.html)
+- Classe IV : [Vérapamil](https://www.vidal.fr/medicaments/substances/verapamil-6900.html),
+  [Diltiazem](https://www.vidal.fr/medicaments/substances/diltiazem-6762.html)
+
+**ANSM — Résumés des caractéristiques du produit et rapports**
+
+- [CORDARONE 200 mg, comprimé (amiodarone) — RCP](https://agence-prd.ansm.sante.fr/php/ecodex/rcp/R0294236.htm)
+- [LASILIX 40 mg, comprimé (furosémide) — RCP](https://agence-prd.ansm.sante.fr/php/ecodex/rcp/R0216212.htm)
+
+**OMS (Organisation mondiale de la Santé)**
+
+- [Maladies cardiovasculaires — fiche d'information OMS](https://www.who.int/news-room/fact-sheets/detail/cardiovascular-diseases-(cvds))
+- [Hypertension — fiche d'information OMS](https://www.who.int/news-room/fact-sheets/detail/hypertension)
+- [Classification anatomo-thérapeutique chimique (ATC) — OMS Collaborating Centre](https://www.whocc.no/atc_ddd_index/)

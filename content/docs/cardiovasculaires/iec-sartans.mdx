@@ -1,49 +1,252 @@
 ---
 title: 'IEC et sartans'
-description: 'Squelette de fiche « IEC et sartans » — à compléter avec les cours UE 2.11 S3.'
+description: 'Inhibiteurs de l’enzyme de conversion et sartans : propriétés, 12 molécules, indications, contre-indications, interactions, effets indésirables et surveillances — UE 2.11 S3.'
 ---
 
-> Contenu à compléter avec les cours UE 2.11 S3.
+import { Tabs, Tab } from 'fumadocs-ui/components/tabs';
+import { Steps, Step } from 'fumadocs-ui/components/steps';
+
+Les inhibiteurs de l'enzyme de conversion (IEC) et les sartans (ARA II) sont les
+médicaments qui ont en commun d'agir sur le système rénine-angiotensine. Cette
+fiche suit le plan imposé par l'UE 2.11 S3. Les chiffres, fréquences et délais
+proviennent du cours et des références listées en [Sources](#sources) ; ce qui
+n'est documenté par aucune de ces sources est indiqué « Non précisé ».
 
 ## Propriétés
 
-Cette fiche rassemble l'essentiel commun de la famille : ce qu'elle fait,
-sans sur-expliquer l'évident. Le mécanisme commun détaillé est à compléter
-avec les cours UE 2.11 S3. Seules les particularités utiles en pratique IDE
-sont retenues dans les sections ci-dessous.
+Ce sont des médicaments anti-hypertenseurs agissant sur le système
+rénine-angiotensine, reconnaissables à leurs suffixes caractéristiques :
+inhibiteurs de l'enzyme de conversion de l'angiotensine, suffixe **-pril**, et
+antagonistes des récepteurs de l'angiotensine II, suffixe **-sartan** (cours).
+
+Mécanisme des IEC : inhibition de la conversion de l'angiotensine I en
+angiotensine II, avec augmentation de la concentration en bradykinine. Mécanisme
+des ARA II : antagonisme des récepteurs à l'angiotensine II (cours).
+
+Voie d'administration : orale, majoritairement une prise par jour (ou une dose
+divisée en matin et soir), sauf captopril ; prise commune le matin ;
+l'alimentation est sans conséquence pratique (cours).
+
+Pharmacocinétique : élimination rénale +++ de la forme active, d'où un ajustement
+posologique (cours).
+
+<Callout type="info" title="Administration (cours)">
+Voie orale, une prise par jour sauf captopril, de préférence le matin ;
+alimentation sans conséquence. Élimination rénale de la forme active :
+ajustement posologique selon la fonction rénale.
+
+Sacubitril : voie orale, repas léger, en association avec un ARA II (cours).
+</Callout>
+
+<Cards>
+  <Card title="IEC" description="Inhibiteurs de l’enzyme de conversion, suffixe -pril (cours)." />
+  <Card title="ARA II" description="Antagonistes des récepteurs de l’angiotensine II, suffixe -sartan (cours)." />
+  <Card title="Sacubitril" description="Inhibiteur de la néprilysine, en association avec un ARA II (cours)." />
+</Cards>
+
+### Les différentes classes
+
+Développement des acronymes et position de chaque famille, le détail des
+molécules venant ensuite.
+
+| Classe | Dénomination | Quand l'utiliser |
+| ------ | ------------ | ---------------- |
+| IEC | Inhibiteurs de l'enzyme de conversion de l'angiotensine : suffixe -pril — perindopril, ramipril, captopril, enalapril, lisinopril… (cours). Inhibition de la conversion angiotensine I en angiotensine II, augmentation de la bradykinine (cours) | HTA en 1re intention ; prévention secondaire post-SCA ; insuffisance cardiaque en 1re intention si FEVG ≤ 40 % ; néphropathie diabétique (cours) |
+| ARA II | Antagonistes des récepteurs de l'angiotensine II, les « sartans » : suffixe -sartan — candésartan, losartan, valsartan, olmésartan, irbésartan, éprosartan (cours). Antagonisme des récepteurs à l'angiotensine II (cours) | HTA ; prévention secondaire post-SCA ; insuffisance cardiaque (cours) |
+| Sacubitril | Inhibiteur de la néprilysine, endopeptidase qui inactive les peptides natriurétiques : empêche leur dégradation et augmente leurs effets de vasodilatation et d'action diurétique ; en association avec un ARA II, voie orale, repas léger (cours) | Insuffisance cardiaque avec une FEVG ≤ 35 % symptomatique (cours) |
+
+<Callout type="info" title="Logique de choix">
+Le résumé du cours retient quatre points pour ces médicaments : médicaments
+anti-hypertenseurs, suffixes caractéristiques, voie orale, élimination rénale de
+la forme active (cours).
+
+Contre-indication de classe : grossesse au 2e et au 3e trimestre — hypotension
+artérielle fœtale, survenue d'oligamnios, de retard de croissance, et de mort
+fœtale in utero (cours).
+
+Surveillance de classe : hypotension, toux, hyperkaliémie et insuffisance rénale
+aiguë (cours).
+</Callout>
 
 ## Médicaments de la famille
 
-| DCI | Particularité | Mention honorable |
-| --- | ------------- | ----------------- |
-| À compléter | À compléter | À compléter |
+Douze entrées classées par famille. Chaque DCI renvoie à sa fiche substance
+VIDAL ; les particularités proviennent du cours et des RCP consultés.
+
+| Classe | DCI | Particularité | Mention honorable |
+| ------ | --- | ------------- | ----------------- |
+| IEC | [Captopril](https://www.vidal.fr/medicaments/substances/captopril-791.html) | Seul IEC à posologie non quotidienne : le cours le cite en exception à la prise unique par jour (cours) | Non précisée (cours) |
+| IEC | [Enalapril](https://www.vidal.fr/medicaments/substances/enalapril-6771.html) | DCI citée en exemple par le cours | Non précisée (cours) ; RCP : RENITEC 20 mg |
+| IEC | [Lisinopril](https://www.vidal.fr/medicaments/substances/lisinopril-2114.html) | DCI citée en exemple par le cours | Non précisée (cours) |
+| IEC | [Périndopril](https://www.vidal.fr/medicaments/substances/perindopril-5690.html) | DCI citée en exemple par le cours | Non précisée (cours) |
+| IEC | [Ramipril](https://www.vidal.fr/medicaments/substances/ramipril-3014.html) | DCI citée en exemple par le cours | Non précisée (cours) |
+| ARA II | [Candésartan](https://www.vidal.fr/medicaments/substances/candesartan-18125.html) | DCI citée en exemple par le cours | Non précisée (cours) |
+| ARA II | [Losartan](https://www.vidal.fr/medicaments/substances/losartan-8206.html) | DCI citée en exemple par le cours | Non précisée (cours) |
+| ARA II | [Valsartan](https://www.vidal.fr/medicaments/substances/valsartan-17161.html) | Retrait du marché en 2019 : impuretés dans le processus de fabrication, valsartan ++ (cours) | Non précisée (cours) ; RCP : VALSARTAN EG 80 mg |
+| ARA II | [Olmésartan](https://www.vidal.fr/medicaments/substances/olmesartan-medoxomil-22507.html) | Cas grave et rare d'entéropathies ; avis gastro-entérologues devant diarrhée chronique sévère ou perte de poids ; exceptionnel avec les autres ARA II (cours) | Non précisée (cours) |
+| ARA II | [Irbesartan](https://www.vidal.fr/medicaments/substances/irbesartan-17778.html) | DCI citée en exemple par le cours | Non précisée (cours) |
+| ARA II | [Éprosartan](https://www.vidal.fr/medicaments/substances/eprosartan-18209.html) | DCI citée en exemple par le cours | Non précisée (cours) |
+| Sacubitril | [Sacubitril](https://www.vidal.fr/medicaments/substances/sacubitril-24568.html) | Inhibiteur de la néprilysine, en association avec un ARA II ; indication : insuffisance cardiaque avec FEVG ≤ 35 % symptomatique (cours) | Non précisée (cours) |
 
 ## Indications
 
-- À compléter avec les cours.
-- À compléter avec les cours.
-- À compléter avec les cours.
+- **IEC** — quatre indications du cours :
+
+  - HTA, en 1re intention (cours).
+  - Prévention secondaire post-SCA (cours).
+  - Insuffisance cardiaque, en 1re intention si FEVG ≤ 40 % (cours).
+  - Néphropathie diabétique (cours).
+
+- **ARA II** — trois indications du cours : HTA ; prévention secondaire post-SCA ;
+  insuffisance cardiaque (cours).
+
+- **Sacubitril** — insuffisance cardiaque avec une FEVG ≤ 35 % symptomatique,
+  en association avec un ARA II (cours).
 
 ## Contre-indications
 
-- À compléter avec les cours.
-- À compléter avec les cours.
-- À compléter avec les cours.
+Le cours oppose explicitement ses effets indésirables à ses contre-indications ;
+les onglets ci-dessous reprennent ses listes, complétées par le RCP consulté.
+
+<Tabs items={['IEC', 'ARA II', 'Sacubitril']} label="Classe">
+  <Tab value="IEC">
+
+    - Allergie (cours).
+    - Hyperkaliémie (cours).
+    - Sténose bilatérale de l'artère rénale (cours).
+    - Antécédent d'angio-œdème aux IEC (cours).
+    - Grossesse, 2e et 3e trimestre : hypotension artérielle fœtale, survenue
+      d'oligamnios, de retard de croissance, et de mort fœtale in utero (cours).
+    - Allaitement (cours).
+  </Tab>
+  <Tab value="ARA II">
+
+    - Allergie (cours).
+    - Hyperkaliémie (cours).
+    - Insuffisance rénale sévère (cours).
+    - Grossesse, 2e et 3e trimestre : hypotension artérielle fœtale, survenue
+      d'oligamnios, de retard de croissance, et de mort fœtale in utero (cours).
+
+    Précaution d'emploi : sténose bilatérale de l'artère rénale (cours).
+  </Tab>
+  <Tab value="Sacubitril">Non précisé dans les sources consultées (cours, VIDAL, RCP, OMS).</Tab>
+</Tabs>
 
 ## Interactions médicamenteuses
 
-- À compléter avec les cours.
-- À compléter avec les cours.
-- À compléter avec les cours.
+<Callout type="error" title="Grossesse 2e et 3e trimestre, hyperkaliémie et angio-œdème">
+- **Grossesse au 2e et 3e trimestre** (IEC et ARA II) : hypotension artérielle
+  fœtale, survenue d'oligamnios, de retard de croissance, et de mort fœtale in
+  utero (cours).
+- **Médicaments hyperkaliémiants** : sels de potassium ; diurétiques épargneurs de
+  potassium, spironolactone (cours).
+- **AINS** : hyperkaliémiant + risque d'insuffisance rénale (cours).
+- **Angio-œdème** : dû à un excès de bradykinine non dégradée, pour les IEC
+  (cours) ; le sacubitril associe aux effets des ARA II l'angio-œdème (cours).
+
+Associations à prendre en compte (cours des diurétiques) : inhibiteur de l'enzyme
+de conversion + diurétique de l'anse = risque d'hypotension brutale et risque
+d'insuffisance rénale (cours).
+</Callout>
 
 ## Effets secondaires
 
-| Effet | Fréquence (si disponible) | Conduite |
-| --- | --- | --- |
-| À compléter | À compléter | À compléter |
+Les fréquences proviennent des RCP ANSM consultés ; « Non précisé » signifie que
+les sources consultées ne donnent pas de valeur.
+
+| Classe | Effet indésirable | Fréquence | Conduite |
+| ------ | ----------------- | --------- | -------- |
+| IEC | Toux sèche | Fréquent, peu grave mais invalidant pour la personne (cours) ; très fréquent (RCP RENITEC) | Discussion du traitement : toux, diarrhées (cours) |
+| IEC | Hypotension orthostatique | Non précisée (cours) ; fréquent, dont hypotension orthostatique (RCP RENITEC) | Mesure de la tension artérielle (cours) |
+| IEC | Hyperkaliémie | Non précisée (cours) ; fréquent avec élévation de la créatinine (RCP RENITEC) | Biologie : kaliémie et clairance de la créatinine (cours) |
+| IEC | Insuffisance rénale fonctionnelle | Non précisée (cours) | Biologie : kaliémie et clairance de la créatinine (cours) |
+| IEC | Angio-œdème dû à un excès de bradykinine non dégradée | Non précisée (cours) ; très rare angio-œdème intestinal (RCP RENITEC) | — |
+| IEC | Étourdissements, nausées, vision trouble, asthénie | Très fréquent (RCP RENITEC) | — |
+| IEC | Dépression, céphalées, syncope, dysgueusie ; diarrhée et douleurs abdominales ; dyspnée ; diaphorèse, prurit, urticaire, alopécie ; douleurs thoraciques, troubles du rythme, tachycardie | Fréquent (RCP RENITEC) | — |
+| IEC | Confusion, insomnie, nervosité ; somnolence, paresthésies, vertiges ; acouphènes ; iléus, pancréatite ; impuissance ; hyponatrémie | Peu fréquent (RCP RENITEC) | — |
+| IEC | Rêves anormaux ; syndrome de Raynaud | Rare (RCP RENITEC) | — |
+| IEC | Neutropénie, agranulocytose, pancytopénie ; SIADH | Fréquence indéterminée (RCP RENITEC) | — |
+| ARA II | Vertiges, toux, douleurs abdominales, fatigue | Peu fréquent (RCP VALSARTAN EG) | Discussion du traitement : toux, diarrhées (cours) |
+| ARA II | Hypotension orthostatique | Non précisée (cours) | Mesure de la tension artérielle (cours) |
+| ARA II | Hyperkaliémie | Non précisée (cours) ; fréquence inconnue avec élévation du potassium sérique (RCP VALSARTAN EG) | Biologie : kaliémie et clairance de la créatinine (cours) |
+| ARA II | Insuffisance rénale fonctionnelle, ++ si association AINS | Non précisée (cours) ; fréquence inconnue : insuffisance et atteinte rénales, élévation de la créatinine sérique (RCP VALSARTAN EG) | Biologie : kaliémie et clairance de la créatinine (cours) |
+| ARA II | Entéropathies sous olmésartan | Cas grave et rare (cours) | Avis gastro-entérologues devant diarrhée chronique sévère, perte de poids (cours) |
+| ARA II | Angiœdème, éruption cutanée, prurit ; myalgie ; vascularite ; élévation des valeurs de la fonction hépatique ; diminution de l'hémoglobine et de l'hématocrite, neutropénie, thrombopénie | Fréquence inconnue (RCP VALSARTAN EG) | — |
+| Sacubitril | Effets indésirables idem ARA II + angio-œdème | Non précisée (cours) | — |
 
 ## Surveillances
 
-- À compléter avec les cours.
-- À compléter avec les cours.
-- À compléter avec les cours.
+<Steps>
+  <Step>
+    ### Administration
+
+    Voie orale, une prise par jour sauf captopril, de préférence le matin ;
+    alimentation sans conséquence. Sacubitril : repas léger, en association avec
+    un ARA II (cours).
+  </Step>
+  <Step>
+    ### Signes d'efficacité
+
+    Mesure de la tension artérielle : efficacité et surdosage (cours).
+  </Step>
+  <Step>
+    ### Surveiller et dépister
+
+    Biologie : kaliémie et clairance de la créatinine (cours). Effets indésirables
+    à rechercher : discussion clinique autour des toux et des diarrhées (cours).
+    Pas de dosage pharmacologique (cours).
+  </Step>
+  <Step>
+    ### Éducation
+
+    Informer du traitement anti-hypertenseur et de sa prise matinale ; signaler
+    une toux sèche persistante, un gonflement du visage ou des lèvres
+    (angio-œdème), une diarrhée chronique avec perte de poids sous olmésartan
+    (cours).
+  </Step>
+</Steps>
+
+- **Résumé du cours.** Médicaments anti-hypertenseurs, suffixes caractéristiques,
+  voie orale, élimination rénale de la forme active, hypotension et toux,
+  hyperkaliémie et insuffisance rénale aiguë (surveillance), contre-indication en
+  grossesse au 2e et 3e trimestre (cours).
+- **Sartans et crise de 2019.** Valsartan ++ : retrait car impuretés dans le
+  processus de fabrication (cours).
+
+## Sources
+
+**Cours**
+
+- Les IEC et les sartans — Dr K Martin-Latry, CHU / Université Bordeaux ; en-tête
+  du support « UE 2.11 S1 – Pharmacologie et thérapeutique », groupe de travail
+  UE 2.11.
+- Médicaments cardiovasculaires — Les diurétiques, 2e partie, Pr Véronique
+  MICHEL, IFSI Région Nouvelle Aquitaine ; UE 2.11 S3 (association IEC et
+  diurétique de l'anse).
+
+**VIDAL — fiches substance par DCI**
+
+- IEC : [Captopril](https://www.vidal.fr/medicaments/substances/captopril-791.html),
+  [Enalapril](https://www.vidal.fr/medicaments/substances/enalapril-6771.html),
+  [Lisinopril](https://www.vidal.fr/medicaments/substances/lisinopril-2114.html),
+  [Périndopril](https://www.vidal.fr/medicaments/substances/perindopril-5690.html),
+  [Ramipril](https://www.vidal.fr/medicaments/substances/ramipril-3014.html)
+- ARA II : [Candésartan](https://www.vidal.fr/medicaments/substances/candesartan-18125.html),
+  [Losartan](https://www.vidal.fr/medicaments/substances/losartan-8206.html),
+  [Valsartan](https://www.vidal.fr/medicaments/substances/valsartan-17161.html),
+  [Olmésartan](https://www.vidal.fr/medicaments/substances/olmesartan-medoxomil-22507.html),
+  [Irbesartan](https://www.vidal.fr/medicaments/substances/irbesartan-17778.html),
+  [Éprosartan](https://www.vidal.fr/medicaments/substances/eprosartan-18209.html)
+- Sacubitril : [Sacubitril](https://www.vidal.fr/medicaments/substances/sacubitril-24568.html)
+
+**ANSM — Résumés des caractéristiques du produit et rapports**
+
+- [RENITEC 20 mg (énalapril) — RCP](https://agence-prd.ansm.sante.fr/php/ecodex/rcp/R0268037.htm)
+- [VALSARTAN EG 80 mg — RCP](https://agence-prd.ansm.sante.fr/php/ecodex/rcp/R0236291.htm)
+
+**OMS (Organisation mondiale de la Santé)**
+
+- [Hypertension — fiche d'information OMS](https://www.who.int/news-room/fact-sheets/detail/hypertension)
+- [Maladies cardiovasculaires — fiche d'information OMS](https://www.who.int/news-room/fact-sheets/detail/cardiovascular-diseases-(cvds))
+- [Maladies non transmissibles — fiche d'information OMS](https://www.who.int/news-room/fact-sheets/detail/noncommunicable-diseases)
+- [Classification anatomo-thérapeutique chimique (ATC) — OMS Collaborating Centre](https://www.whocc.no/atc_ddd_index/)

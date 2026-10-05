@@ -1,49 +1,252 @@
 ---
 title: 'Dérivés nitrés'
-description: 'Squelette de fiche « Dérivés nitrés » — à compléter avec les cours UE 2.11 S3.'
+description: 'Dérivés nitrés et autres vasodilatateurs : propriétés, 6 molécules, indications, contre-indications, interactions, effets indésirables et surveillances — UE 2.11 S3.'
 ---
 
-> Contenu à compléter avec les cours UE 2.11 S3.
+import { Tabs, Tab } from 'fumadocs-ui/components/tabs';
+import { Steps, Step } from 'fumadocs-ui/components/steps';
+
+Les dérivés nitrés sont les vasodilatateurs de la crise d'angor. Cette fiche suit
+le plan imposé par l'UE 2.11 S3. Les chiffres, fréquences et délais proviennent
+du cours et des références listées en [Sources](#sources) ; ce qui n'est documenté
+par aucune de ces sources est indiqué « Non précisé ».
 
 ## Propriétés
 
-Cette fiche rassemble l'essentiel commun de la famille : ce qu'elle fait,
-sans sur-expliquer l'évident. Le mécanisme commun détaillé est à compléter
-avec les cours UE 2.11 S3. Seules les particularités utiles en pratique IDE
-sont retenues dans les sections ci-dessous.
+Mécanisme d'action : vasodilatation des coronaires, de l'artère et des veines, par
+relaxation du muscle lisse vasculaire, via le monoxyde d'azote (NO) (cours).
+
+Conséquences hémodynamiques du cours :
+
+- Vasodilatation veineuse prédominante, responsable d'une diminution du retour
+  veineux cardiaque, donc de la pré-charge cardiaque.
+- Vasodilatation artériolaire périphérique à forte dose, entraînant une
+  réduction des résistances vasculaires périphériques, donc de la post-charge
+  cardiaque.
+- Vasodilatation coronaire et action antispastique au niveau coronaire : d'où une
+  diminution des besoins en oxygène du myocarde et une augmentation des apports
+  en oxygène (vasodilatation coronaire et redistribution).
+
+Les molécules concernées sont la trinitrine, le mononitrate d'isosorbide et le
+dinitrate d'isosorbide (cours).
+
+<Callout type="info" title="Délai d’action de la trinitrine (cours)">
+Délai d'action : 4 minutes. Demi-vie : 1 à 3 minutes. Effet de premier passage
+hépatique élevé : faible dose absorbée efficace, courte durée d'action.
+</Callout>
+
+<Cards>
+  <Card title="Ampoules pour perfusion" description="Délai d’action rapide curatif (cours)." />
+  <Card title="Spray sublingual" description="Délai d’action rapide préventif et curatif (cours)." />
+  <Card title="Patch" description="Délai d’action longue durée (cours)." />
+</Cards>
+
+### Les différentes classes
+
+Développement des acronymes et position de chaque famille, le détail des
+molécules venant ensuite.
+
+| Classe | Dénomination | Quand l'utiliser |
+| ------ | ------------ | ---------------- |
+| Dérivés nitrés | Trinitrine, mononitrate d'isosorbide, dinitrate d'isosorbide (cours) ; vasodilatation via le NO, vasodilatation veineuse prédominante (cours) | Prévention de la crise d'angor, seul ou en association : spray (action à court terme) et patch (action prolongée) ; traitement curatif de la crise d'angor : spray sublingual à action immédiate ; phase aiguë de SCA et insuffisance cardiaque : voie intraveineuse en perfusion (cours) |
+| Molsidomine | Donneur de NO (monoxyde d'azote) : relaxation vasculaire (cours) | Traitement préventif de la crise angineuse sous toutes ses formes (cours) |
+| Nicorandil (Adancor) | Relaxation des muscles vasculaires toniques lisses, à la fois au niveau veineux et artériel des vaisseaux (cours) | Traitement symptomatique des patients adultes atteints d'angor stable insuffisamment contrôlés ou présentant une contre-indication ou une intolérance aux traitements anti-angineux de première intention (cours) |
+| Heptaminol | Vasodilatateur moins utilisé (cours) | Amélioration des symptômes de l'insuffisance veinolymphatique, augmentation du retour veineux du membre inférieur ; signes fonctionnels liés à la crise hémorroïdaire ; métrorragies induites par un dispositif intra-utérin après bilan étiologique (cours) |
+
+<Callout type="info" title="Logique de choix">
+La forme pharmaceutique conditionne l'usage : ampoules pour perfusion pour un
+délai d'action rapide curatif, spray sublingual pour un délai d'action rapide
+préventif et curatif, patch pour une action prolongée (cours).
+
+Le patch impose une administration discontinue avec un intervalle libre quotidien
+sans trinitrine d'au moins 8 heures, pour éviter la survenue d'une tolérance aux
+dérivés nitrés ; dose quotidienne maximale de 15 mg de trinitrine (cours).
+</Callout>
 
 ## Médicaments de la famille
 
-| DCI | Particularité | Mention honorable |
-| --- | ------------- | ----------------- |
-| À compléter | À compléter | À compléter |
+Six entrées classées par famille. Les particularités proviennent du cours ; chaque
+DCI renvoie à sa fiche substance VIDAL.
+
+| Classe | DCI | Particularité | Mention honorable |
+| ------ | --- | ------------- | ----------------- |
+| Dérivés nitrés | [Trinitrine](https://www.vidal.fr/medicaments/substances/trinitrine-3586.html) | Délai d’action de 4 minutes, demi-vie de 1 à 3 minutes, premier passage hépatique élevé (cours) | Patch à 5, 10 et 15 mg/24 h ; spray sublingual ; ampoules pour perfusion ; EPINITRIL®, DISCOTRINE®, NITRIDERM®, TRINIPATCH® (cours) |
+| Dérivés nitrés | [Mononitrate d’isosorbide](https://www.vidal.fr/medicaments/substances/isosorbide-mononitrate-10781.html) | Molécule concernée par la classe des dérivés nitrés (cours) | Non précisée (cours) |
+| Dérivés nitrés | [Dinitrate d’isosorbide](https://www.vidal.fr/medicaments/substances/isosorbide-dinitrate-1917.html) | Molécule concernée par la classe des dérivés nitrés (cours) | Non précisée (cours) |
+| Molsidomine | [Molsidomine](https://www.vidal.fr/medicaments/substances/molsidomine-2404.html) | Donneur de NO : relaxation vasculaire ; traitement préventif de la crise angineuse sous toutes ses formes (cours) | Non précisée (cours) |
+| Nicorandil | [Nicorandil](https://www.vidal.fr/medicaments/substances/nicorandil-2491.html) | Cité sous son nom de spécialité Adancor dans le cours : angor stable insuffisamment contrôlé ou contre-indication / intolérance aux traitements de 1re intention | ADANCOR® (cours) |
+| Heptaminol | [Heptaminol](https://www.vidal.fr/medicaments/substances/heptaminol-6203.html) | Autres vasodilatateurs moins utilisés (cours) | Non précisée (cours) |
 
 ## Indications
 
-- À compléter avec les cours.
-- À compléter avec les cours.
-- À compléter avec les cours.
+- **Prévention de la crise d'angor** — seul ou en association avec d'autres
+  traitements anti-angineux : spray (action à court terme) en phase aiguë, patch
+  (action prolongée) (cours).
+- **Traitement curatif de la crise d'angor** — spray sublingual, action
+  immédiate (cours).
+- **Phase aiguë de syndrome coronarien aigu : insuffisance cardiaque** — voie
+  intraveineuse en perfusion (cours).
+- **Voie intraveineuse**
+
+  - Insuffisance ventriculaire gauche en particulier à la phase aiguë de
+    l'infarctus du myocarde (cours).
+  - Œdème aigu du poumon cardiogénique (cours).
+  - Angor instable : angor spontané, angor réfractaire, syndrome de menace
+    (cours).
+
+- **Voie intracoronaire** — levée d'un spasme artériel coronaire ou d'une
+  vasoconstriction spontanée ou induite (test pharmacologique ou manipulation
+  instrumentale), dans un but diagnostique ou thérapeutique ; recherche d'une
+  vasodilatation coronaire maximale en cours de coronarographie, en préparation
+  à une angioplastie coronaire (cours).
+- **Molsidomine** — traitement préventif de la crise angineuse sous toutes ses
+  formes (cours).
+- **Nicorandil (Adancor)** — traitement symptomatique des patients adultes
+  atteints d'angor stable insuffisamment contrôlés ou présentant une
+  contre-indication ou une intolérance aux traitements anti-angineux de première
+  intention (cours).
+- **Heptaminol** — insuffisance veinolymphatique, crise hémorroïdaire,
+  métrorragies induites par le port d'un dispositif intra-utérin après bilan
+  étiologique (cours).
 
 ## Contre-indications
 
-- À compléter avec les cours.
-- À compléter avec les cours.
-- À compléter avec les cours.
+Le cours distingue les contre-indications absolues et relatives ; elles ne
+portent que sur les dérivés nitrés.
+
+<Tabs items={['Dérivés nitrés', 'Autres vasodilatateurs']} label="Classe">
+  <Tab value="Dérivés nitrés">
+
+    Contre-indications absolues (cours) :
+
+    - Hypersensibilité aux dérivés nitrés ou aux excipients.
+    - État de choc, hypotension sévère.
+    - Association avec les inhibiteurs de phosphodiestérase de type 5.
+
+    Contre-indications relatives (cours) :
+
+    - Cardiomyopathie obstructive.
+    - Infarctus du myocarde de siège inférieur avec extension au ventricule
+      droit, à la phase aiguë.
+    - Hypertension intracrânienne.
+    - Allaitement.
+  </Tab>
+  <Tab value="Autres vasodilatateurs">Non précisé dans les sources consultées (cours, VIDAL, RCP, OMS).</Tab>
+</Tabs>
 
 ## Interactions médicamenteuses
 
-- À compléter avec les cours.
-- À compléter avec les cours.
-- À compléter avec les cours.
+<Callout type="error" title="Dérivé nitré + inhibiteur de la phosphodiestérase de type 5">
+**Contre-indiquées (cours) :**
+
+- Inhibiteurs de la phosphodiestérase de type 5 (sildénafil ou autre) : risque
+  d'hypotension importante (effet synergique) pouvant aggraver l'état d'ischémie
+  myocardique et provoquer notamment un accident coronarien aigu. Si prise,
+  contre-indication aux dérivés nitrés avec un délai minimum de 24 heures.
+- Riociguat : risque d'hypotension importante (effet synergique).
+
+**À prendre en compte (cours) :**
+
+- Inhibiteurs calciques, inhibiteurs de l'enzyme de conversion, bêta-bloquants,
+  diurétiques, anti-hypertenseurs, antidépresseurs tricycliques, neuroleptiques,
+  principaux psychotropes : risque d'hypotension importante.
+- Alcool : risque d'hypotension importante.
+- Dihydroergotamine : s'oppose à l'effet de la trinitrine et peut induire une
+  vasoconstriction coronaire.
+- Anti-inflammatoires non stéroïdiens (sauf acide acétylsalicylique) :
+  diminution de la réponse thérapeutique.
+- Amifostine et acide acétylsalicylique : augmentation des effets
+  antihypertenseurs.
+- Dapoxétine : risque de majoration des effets indésirables, notamment à type de
+  vertiges ou de syncopes.
+</Callout>
 
 ## Effets secondaires
 
-| Effet | Fréquence (si disponible) | Conduite |
-| --- | --- | --- |
-| À compléter | À compléter | À compléter |
+Les fréquences proviennent du RCP ANSM consulté ; « Non précisée » signifie que
+les sources consultées ne donnent pas de valeur.
+
+| Classe | Effet indésirable | Fréquence | Conduite |
+| ------ | ----------------- | --------- | -------- |
+| Dérivés nitrés | Céphalées dose dépendantes, dues à la vasodilatation cérébrale | Non précisée (cours) ; fréquent (RCP EPINITRIL) | Régressent souvent après quelques jours malgré le maintien du traitement ; si persistance en traitement intermittent, antalgiques légers ; en cas de non-réponse, réduction de la posologie ou arrêt (cours) |
+| Dérivés nitrés | Nausées, vomissements | Très fréquent (RCP EPINITRIL) | — |
+| Dérivés nitrés | Hypotension | Non précisée (cours) ; rare : hypotension orthostatique (RCP EPINITRIL) | Spray à utiliser assis (cours) |
+| Dérivés nitrés | Légères rougeurs de la peau sur le site d'application | Non précisée (cours) | — |
+| Dérivés nitrés | Érythème, prurit, brûlure, irritation au site d’application ; dermite de contact | Peu fréquent (RCP EPINITRIL) | — |
+| Dérivés nitrés | Céphalées | Fréquent (RCP EPINITRIL) | Voir la conduite des céphalées dose dépendantes (cours) |
+| Dérivés nitrés | Sensations vertigineuses, syncope | Très rare (RCP EPINITRIL) | — |
+| Dérivés nitrés | Tachycardie, bouffées vasomotrices ; augmentation de la fréquence cardiaque | Rare (RCP EPINITRIL) | — |
 
 ## Surveillances
 
-- À compléter avec les cours.
-- À compléter avec les cours.
-- À compléter avec les cours.
+<Steps>
+  <Step>
+    ### Administration
+
+    Patch : dose adaptée individuellement, dose quotidienne maximale de 15 mg de
+    trinitrine, administration discontinue avec intervalle libre quotidien d'au
+    moins 8 heures ; chez le patient avec angor nocturne, traitement la nuit suivi
+    d'un intervalle libre le jour. Lieu d'application : peau du thorax ou partie
+    supérieure du bras côté externe, endroit dépourvu de rougeur ou d'irritation,
+    alternance des zones d'application d'un patch à l'autre, pas sur zones
+    formant des plis ou
+    susceptibles de frottements (cours).
+  </Step>
+  <Step>
+    ### Signes d'efficacité
+
+    Régression de la douleur angineuse après la bouffée de spray ; fréquence des
+    crises sous traitement préventif (cours).
+  </Step>
+  <Step>
+    ### Surveiller et dépister
+
+    Biologique : aucune. Clinique : efficacité et effets indésirables (cours).
+    Céphalées : évaluation de la persistance, de la réponse aux antalgiques légers
+    et de la nécessité de réduire la posologie (cours).
+  </Step>
+  <Step>
+    ### Éducation
+
+    Le spray est gardé avec soi, en cas de douleur : 1 bouffée ; après utilisation
+    nécessaire, appeler le 15, le 112 — les secours. Danger de l'utilisation :
+    retard à la prise en charge (cours).
+
+    Le patch adhère pendant un bain ou l'exercice physique ; la zone peut être
+    rasée (cours).
+  </Step>
+</Steps>
+
+- **Grossesse.** Absence de données : le bénéfice pour la mère doit être évalué
+  compte tenu du risque pour l'enfant (cours).
+- **Allaitement.** Peu de données : la décision de continuer ou non l'allaitement
+  ou le traitement doit prendre en compte le bénéfice de l'allaitement pour
+  l'enfant et le bénéfice du traitement pour la mère (cours) ; l'allaitement est
+  une contre-indication relative pour le EPINITRIL (cours).
+
+## Sources
+
+**Cours**
+
+- Les dérivés nitrés — Dr K Martin-Latry, CHU / Université Bordeaux ; en-tête du
+  support « UE 2.11 S3 – Pharmacologie et thérapeutique », groupe de travail
+  UE 2.11.
+
+**VIDAL — fiches substance par DCI**
+
+- Dérivés nitrés : [Trinitrine](https://www.vidal.fr/medicaments/substances/trinitrine-3586.html),
+  [Mononitrate d’isosorbide](https://www.vidal.fr/medicaments/substances/isosorbide-mononitrate-10781.html),
+  [Dinitrate d’isosorbide](https://www.vidal.fr/medicaments/substances/isosorbide-dinitrate-1917.html)
+- Autres : [Molsidomine](https://www.vidal.fr/medicaments/substances/molsidomine-2404.html),
+  [Nicorandil](https://www.vidal.fr/medicaments/substances/nicorandil-2491.html),
+  [Heptaminol](https://www.vidal.fr/medicaments/substances/heptaminol-6203.html)
+
+**ANSM — Résumés des caractéristiques du produit et rapports**
+
+- [EPINITRIL 15 mg/24 h, dispositif transdermique — RCP](https://agence-prd.ansm.sante.fr/php/ecodex/rcp/R0434134.htm)
+
+**OMS (Organisation mondiale de la Santé)**
+
+- [Maladies cardiovasculaires — fiche d'information OMS](https://www.who.int/news-room/fact-sheets/detail/cardiovascular-diseases-(cvds))
+- [AVC — fiche d'information OMS](https://www.who.int/news-room/fact-sheets/detail/stroke)
+- [Classification anatomo-thérapeutique chimique (ATC) — OMS Collaborating Centre](https://www.whocc.no/atc_ddd_index/)

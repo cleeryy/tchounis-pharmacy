@@ -1,49 +1,302 @@
 ---
 title: 'Diurétiques'
-description: 'Squelette de fiche « Diurétiques » — à compléter avec les cours UE 2.11 S3.'
+description: 'Diurétiques : propriétés, 16 molécules, indications, contre-indications, interactions, effets indésirables et surveillances — UE 2.11 S3.'
 ---
 
-> Contenu à compléter avec les cours UE 2.11 S3.
+import { Tabs, Tab } from 'fumadocs-ui/components/tabs';
+import { Steps, Step } from 'fumadocs-ui/components/steps';
+
+Les diurétiques sont les médicaments de l'élimination rénale du sodium et de
+l'eau. Cette fiche suit le plan imposé par l'UE 2.11 S3. Les chiffres, fréquences
+et délais proviennent du cours et des références listées en [Sources](#sources) ;
+ce qui n'est documenté par aucune de ces sources est indiqué « Non précisé ».
 
 ## Propriétés
 
-Cette fiche rassemble l'essentiel commun de la famille : ce qu'elle fait,
-sans sur-expliquer l'évident. Le mécanisme commun détaillé est à compléter
-avec les cours UE 2.11 S3. Seules les particularités utiles en pratique IDE
-sont retenues dans les sections ci-dessous.
+Rappels de fonction rénale du cours : le glomérule rénal filtre le sang et forme
+une urine primitive de 180 litres par jour ; la traversée du néphron la réduit de
+99 %, pour un volume urinaire de 3 à 5 litres par jour. La réabsorption d'eau est
+dépendante de la réabsorption du sodium (cours).
+
+Effets recherchés, sauf pour les anti-vasopressines (cours) : élimination rénale
+du sodium (effet natriurétique), d'où augmentation de l'élimination d'eau et de la
+production d'urine, avec soit augmentation de l'élimination du potassium (diurétiques
+hypokaliémiants), soit au contraire augmentation de la réabsorption du potassium
+(diurétiques hyperkaliémiants ou épargneurs de potassium).
+
+Pharmacocinétique (cours) : absorption correcte, biodisponibilité orale moyenne
+(50 %) à bonne (jusqu'à 96 %) ; métabolisme hépatique faible en général, avec
+implication des CYP450 et des métabolites actifs ; élimination rénale majoritaire ;
+demi-vie variable selon les molécules, de la furosémide (0,5 à 3 h) à l'indapamide
+(13 à 25 h), d'où l'intérêt des formes LP. L'effet des diurétiques se situe dans
+la lumière du néphron : il faut l'atteindre, d'où une réduction des effets en cas
+d'insuffisance rénale. Les passages des barrières — hémato-encéphalique (effets
+centraux), fœto-placentaire (contre-indication en grossesse), lait (contre-indication
+à l'allaitement) — sont à considérer (cours).
+
+<Callout type="info" title="Voies et associations (cours)">
+Voie orale majoritaire, généralement 1 à 2 prises par jour : action immédiate
+(comprimés, solutions buvables selon le poids) ou action retardée (gélules ou
+comprimés LP, une par jour). Voie injectable (IM et/ou IV) : furosémide,
+bumétanide, canrénone, dans les situations d'urgence — poussées hypertensives
+sévères, œdème aigu du poumon.
+
+Prescription en monothérapie rare : en hypertension artérielle, association avec
+des bêta-bloquants, des inhibiteurs de l'enzyme de conversion ou des inhibiteurs
+calciques ; en insuffisance cardiaque, association avec un inhibiteur de l'enzyme
+de conversion.
+</Callout>
+
+<Cards>
+  <Card title="Diurétiques de l’anse" description="Puissants, effet rapide, blocage du transporteur Na/K/2Cl (cours)." />
+  <Card title="Diurétiques thiazidiques" description="Moins puissants, blocage du transporteur Na/Cl du tube contourné distal (cours)." />
+  <Card title="Épargneurs de potassium" description="Anti-aldostérones et bloqueurs des canaux sodiques ENaC (cours)." />
+  <Card title="Anti-vasopressines" description="Élimination d’eau sans élimination de sodium (cours)." />
+</Cards>
+
+### Les différentes classes
+
+Développement des acronymes et position de chaque famille, le détail des
+molécules venant ensuite.
+
+| Classe | Dénomination | Quand l'utiliser |
+| ------ | ------------ | ---------------- |
+| Diurétiques de l’anse | Branche ascendante de l’anse de Henlé ; blocage du transporteur Na/K/2Cl, d’où blocage de la réabsorption de Na+, K+ et Cl−, augmentation de l’élimination d’eau ; diurétiques puissants, effet rapide après administration ; chef de file : furosémide (cours) | Traitement de l’insuffisance cardiaque, des œdèmes (rénaux, hépatiques, pulmonaires) et de l’ascite cirrhotique ; hypertension artérielle en association (cours) ; urgences : poussées hypertensives sévères, œdème aigu du poumon (cours) |
+| Diurétiques thiazidiques | Tube contourné distal ; blocage du transporteur Na/Cl, d’où blocage de la réabsorption de Na+, Cl− et K+, augmentation de l’élimination d’eau ; moins puissants que les diurétiques de l’anse ; chef de file : hydrochlorothiazide (cours) | Traitement de l’hypertension artérielle en association, œdèmes (cours) |
+| Anti-aldostérones | Segment terminal du tube distal et tube collecteur ; blocage des récepteurs à l’aldostérone : blocage de la réabsorption de Na+ et d’eau, augmentation de l’élimination de K+ ; chef de file : spironolactone (cours) | Traitement de l’hyperaldostéroneisme primaire et secondaire (cours) ; insuffisance cardiaque en association (cours) |
+| Bloqueurs des canaux sodiques | Segment terminal du tube distal et tube collecteur, canaux ENaC ; blocage de la réabsorption de Na+, augmentation de l’élimination d’eau, réabsorption de K+ ; chef de file : amiloride (cours) | Effet diurétique faible avec délai de quelques heures : surtout en association pour corriger la kaliémie (cours) |
+| Anti-vasopressines | Tube collecteur ; blocage des récepteurs V2 de la vasopressine, d’où blocage des aquaporines et augmentation de l’élimination d’eau sans élimination de Na+ ; une seule molécule : tolvaptan (cours) | JINARC® : polykystose rénale autosomique dominante chez l’adulte atteint d’insuffisance rénale chronique ; SAMSCA® : hyponatrémie chronique secondaire à un SIADH (cours) |
+| Autres diurétiques | Mannitol (perfusion IV) : diurétique osmotique, molécule filtrée par le glomérule et non réabsorbée. Acétazolamide : inhibiteur de l’anhydrase carbonique, augmentation de l’élimination des bicarbonates et de l’eau (cours) | Mannitol : oligo-anuries d’étiologies diverses et d’installation récente, réduction de certains œdèmes cérébraux, hypertension intraoculaire. Acétazolamide : certaines hypertensions oculaires, certaines alcaloses métaboliques (cours) |
+
+<Callout type="info" title="Logique de choix">
+Le cours répartit les diurétiques par site d'action dans le néphron, puis
+demande de les relier à leur profil kaliémiant : natriurétiques avec soit
+élimination de potassium (hypokaliémiants), soit réabsorption de potassium
+(hyperkaliémiants ou épargneurs de potassium) (cours).
+
+En insuffisance rénale : risque d'hyperkaliémie avec troubles du rythme, d'où la
+possibilité d'utiliser les diurétiques de l'anse, qui n'ont pas d'action sur la
+filtration glomérulaire (cours).
+</Callout>
 
 ## Médicaments de la famille
 
-| DCI | Particularité | Mention honorable |
-| --- | ------------- | ----------------- |
-| À compléter | À compléter | À compléter |
+Seize entrées classées par famille. Les spécialités proviennent du tableau du
+cours ; chaque DCI renvoie à sa fiche substance VIDAL.
+
+| Classe | DCI | Particularité | Mention honorable |
+| ------ | --- | ------------- | ----------------- |
+| Anse | [Furosémide](https://www.vidal.fr/medicaments/substances/furosemide-1579.html) | Chef de file des diurétiques de l’anse ; demi-vie 0,5 à 3 h ; voie IV en urgence (cours) | LASILIX® et génériques (cours) ; RCP : LASILIX 40 mg |
+| Anse | [Bumétanide](https://www.vidal.fr/medicaments/substances/bumetanide-670.html) | Diurétique de l’anse, voie injectable en urgence (cours) | BURINEX® (cours) |
+| Anse | [Pirétanide](https://www.vidal.fr/medicaments/substances/piretanide-2808.html) | Diurétique de l’anse (cours) | EURELIX® (cours) |
+| Thiazidiques | [Hydrochlorothiazide](https://www.vidal.fr/medicaments/substances/hydrochlorothiazide-1798.html) | Chef de file des thiazidiques ; demi-vie intermédiaire (cours) | ESIDREX® (cours) |
+| Thiazidiques | [Indapamide](https://www.vidal.fr/medicaments/substances/indapamide-6495.html) | Demi-vie longue : 13 à 25 h (cours) | FLUDEX® et génériques, associations (cours) |
+| Thiazidiques | [Ciclétanine](https://www.vidal.fr/medicaments/substances/cicletanine-9059.html) | Diurétique thiazidique (cours) | TENSTATEN® et génériques (cours) |
+| Thiazidiques | [Méthyclothiazide](https://www.vidal.fr/medicaments/substances/methyclothiazide-2349.html) | Diurétique thiazidique (cours) | ISOBAR® (+ triamtérène) (cours) |
+| Thiazidiques | [Chlortalidone](https://www.vidal.fr/medicaments/substances/chlortalidone-947.html) | Diurétique thiazidique (cours) | TENORETIC® (+ aténolol) (cours) |
+| Anti-aldostérones | [Spironolactone](https://www.vidal.fr/medicaments/substances/spironolactone-3332.html) | Chef de file des anti-aldostérones ; antagonisme des récepteurs aux hormones sexuelles : gynécomastie et impuissance chez l’homme, mastodynies et troubles menstruels chez la femme (cours) | ALDACTONE®, SPIROCTAN® et génériques (cours) ; RCP : ALDACTONE 25 mg |
+| Anti-aldostérones | [Éplérénone](https://www.vidal.fr/medicaments/substances/eplerenone-22739.html) | Anti-aldostérone (cours) | INSPRA® et génériques (cours) |
+| Anti-aldostérones | Canrénone | Anti-aldostérone, voie injectable en urgence (cours) | SOLUDACTONE® (cours) ; fiche substance non référencée sur VIDAL |
+| Bloqueurs ENaC | [Amiloride](https://www.vidal.fr/medicaments/substances/amiloride-6461.html) | Chef de file des bloqueurs des canaux sodiques (ENaC) ; effet diurétique faible, en association pour corriger la kaliémie (cours) | MODAMIDE®, associations (cours) |
+| Bloqueurs ENaC | [Triamtérène](https://www.vidal.fr/medicaments/substances/triamterene-3565.html) | Bloqueur des canaux sodiques ; contre-indiqué en cas d’insuffisance rénale ou hépatique sévère (cours) | ISOBAR® et PRESTOLE® (les 2 = + thiazidique) (cours) |
+| Anti-vasopressines | [Tolvaptan](https://www.vidal.fr/medicaments/substances/tolvaptan-23433.html) | Seule anti-vasopressine ; blocage des récepteurs V2 (cours) | JINARC® (PKRAD), SAMSCA® (hyponatrémie chronique secondaire à un SIADH) (cours) |
+| Autres | [Mannitol](https://www.vidal.fr/medicaments/substances/mannitol-2222.html) | Diurétique osmotique, perfusion IV ; molécule filtrée par le glomérule et non réabsorbée (cours) | Non précisée (cours) |
+| Autres | [Acétazolamide](https://www.vidal.fr/medicaments/substances/acetazolamide-145.html) | Inhibiteur de l’anhydrase carbonique ; voie orale, IV ou éventuellement IM (cours) | Non précisée (cours) |
 
 ## Indications
 
-- À compléter avec les cours.
-- À compléter avec les cours.
-- À compléter avec les cours.
+- **Insuffisance cardiaque** — effet diurétique, augmentation de l'élimination
+  d'eau, baisse du volume sanguin, baisse des œdèmes d'origine cardiaque (cours).
+- **Hypertension artérielle** — effet diurétique, baisse du volume sanguin, baisse
+  de la pression artérielle ; en association avec bêta-bloquants, inhibiteurs de
+  l'enzyme de conversion ou inhibiteurs calciques (cours).
+- **Œdèmes** (rénaux, hépatiques, pulmonaires) et **ascite cirrhotique** (cours).
+- **Hyperaldostéroneisme** — primaire (tumeur ou hyperplasie des glandes
+  surrénales) et secondaire (baisse du débit sanguin rénal), pour les
+  anti-aldostérones (cours).
+- **Polykystose rénale autosomique dominante** chez l'adulte atteint
+  d'insuffisance rénale chronique, avec JINARC® : ralentissement de la progression
+  du développement des kystes et de l'insuffisance rénale (cours).
+- **Hyponatrémie chronique secondaire à un SIADH**, avec SAMSCA® (cours).
+- **Autres** — mannitol : oligo-anuries d'étiologies diverses et d'installation
+  récente, réduction de certains œdèmes cérébraux, hypertension intraoculaire ;
+  acétazolamide : certaines hypertensions oculaires, certaines alcaloses
+  métaboliques (cours).
 
 ## Contre-indications
 
-- À compléter avec les cours.
-- À compléter avec les cours.
-- À compléter avec les cours.
+Les onglets reprennent les contre-indications propres à chaque famille, telles que
+présentées dans le cours.
+
+<Tabs items={['Diurétiques de l’anse', 'Thiazidiques', 'Diurétiques hyperkaliémiants', 'Grossesse et allaitement']} label="Classe">
+  <Tab value="Diurétiques de l’anse">
+
+    - Grossesse et allaitement (cours).
+    - Hypersensibilité : allergie aux sulfamides, réaction croisée (cours).
+    - Hypovolémie ou déshydratation (cours).
+    - Obstacle sur les voies urinaires (cours).
+    - Encéphalopathie hépatique (cours).
+  </Tab>
+  <Tab value="Thiazidiques">
+
+    - Hypersensibilité aux sulfamides (cours).
+    - Insuffisance rénale sévère (cours).
+    - Encéphalopathie hépatique (cours).
+  </Tab>
+  <Tab value="Diurétiques hyperkaliémiants">
+
+    - Hyperkaliémie, association au potassium (cours).
+    - En plus pour le triamtérène : insuffisances rénale ou hépatique sévères
+      (cours).
+  </Tab>
+  <Tab value="Grossesse et allaitement">
+
+    Passage des barrières fœto-placentaire : contre-indication en grossesse ;
+    passage dans le lait : contre-indication à l'allaitement (cours). Pour les
+    diurétiques de l'anse, grossesse et allaitement figurent en contre-indication
+    de classe (cours).
+  </Tab>
+</Tabs>
 
 ## Interactions médicamenteuses
 
-- À compléter avec les cours.
-- À compléter avec les cours.
-- À compléter avec les cours.
+<Callout type="error" title="Diurétique + lithium, AINS, hypokaliémiants et digitaliques">
+- **Lithium** : risque de surdosage du lithium par diminution de son excrétion
+  urinaire (compétition entre Na+ et Li+ pour la réabsorption tubulaire
+  proximale) (cours).
+- **AINS** : diminution de la filtration glomérulaire, d'où diminution des effets
+  des diurétiques et risque d'insuffisance rénale avec hyperkaliémie (cours).
+- **Médicaments hypokaliémiants** — corticoïdes, laxatifs, digitaliques — pour
+  les diurétiques hypokaliémiants (cours).
+- **Médicaments à risque de troubles du rythme (torsades de pointes)** —
+  astémizole, bépridil, érythromycine IV, sparfloxacine (cours) ; le RCP LASILIX
+  précise que les hypokaliémies peuvent entraîner des troubles du rythme sévères,
+  en particulier des torsades de pointes, surtout en cas d'association avec des
+  antiarythmiques du groupe de la quinidine.
+- **Inhibiteurs de l'enzyme de conversion** — pour les diurétiques de l'anse :
+  risque d'hypotension brutale et risque d'insuffisance rénale (cours).
+
+Le RCP LASILIX ajoute que les perturbations hydroélectrolytiques sont favorisées
+par un régime désodé trop strict, certaines pathologies (cirrhose, insuffisance
+cardiaque), d'autres médicaments et des troubles digestifs et nutritionnels (RCP).
+</Callout>
 
 ## Effets secondaires
 
-| Effet | Fréquence (si disponible) | Conduite |
-| --- | --- | --- |
-| À compléter | À compléter | À compléter |
+Les fréquences ne sont pas données par les sources consultées : « Non précisé »
+signifie que le cours et les RCP consultés ne donnent pas de valeur.
+
+| Classe | Effet indésirable | Fréquence | Conduite |
+| ------ | ----------------- | --------- | -------- |
+| Hypokaliémiants | Hyponatrémie | Non précisée (cours) | Ionogramme sanguin : natrémie, kaliémie (cours) |
+| Hypokaliémiants | Hypokaliémie : fatigue, malaises, crampes, troubles du rythme cardiaque | Non précisée (cours) ; perturbations hydroélectrolytiques pouvant justifier l’arrêt ou la réduction de posologie (RCP LASILIX) | Si traitement long terme : sels de potassium ou association à un diurétique épargneur de potassium (cours) |
+| Hypokaliémiants | Hypovolémie : hypotension orthostatique, baisse de la filtration glomérulaire rénale | Non précisée (cours) ; hypovolémie et déshydratation pouvant entraîner chez le sujet âgé une hémoconcentration avec risque de thrombose (RCP LASILIX) | Recherche des signes de déshydratation (cours) |
+| Hypokaliémiants | Hyperuricémie : réabsorption des urates, crises de goutte | Non précisée (cours) | Contrôle de l’uricémie chez les goutteux (cours) |
+| Hypokaliémiants | Augmentation de la glycémie : baisse de synthèse d’insuline et d’entrée du glucose dans les cellules | Non précisée (cours) ; élévation de la glycémie parfois observée, surtout en administration intense et courte, notamment IV (RCP LASILIX) | Contrôle de la glycémie chez les diabétiques (cours) |
+| Diurétiques de l’anse | Hypocalcémie | Non précisée (cours) | — |
+| Diurétiques de l’anse | Troubles auditifs transitoires | Non précisée (cours) | — |
+| Diurétiques de l’anse | Risque plus élevé de néphrotoxicité | Non précisée (cours) | — |
+| Diurétiques de l’anse | Rétention d’urine en cas d’obstruction et/ou compression des voies urinaires ; augmentation transitoire de la créatininémie, de l’urée, du cholestérol et des triglycérides ; uricémie augmentée pouvant favoriser un accès de goutte | Non précisée (RCP LASILIX) | Arrêt ou réduction de posologie en cas de perturbations hydroélectrolytiques (RCP LASILIX) |
+| Thiazidiques | Hypercalcémie | Non précisée (cours) | — |
+| Thiazidiques | Hypercholestérolémie et/ou hypertriglycéridémie | Non précisé (cours) | — |
+| Thiazidiques | Allergies : réactions cutanées, photosensibilisation | Non précisée (cours) ; rares cas de réactions cutanées, prurit, urticaire, réactions bulleuses, exceptionnellement photosensibilisation, syndrome de Stevens-Johnson, syndrome de Lyell (RCP LASILIX) | — |
+| Hyperkaliémiants | Hyperkaliémie : troubles du rythme cardiaque | Non précisée (cours) | Ionogramme sanguin, ECG (cours) |
+| Hyperkaliémiants | Hyperchlorémie : fatigue, somnolence, confusion mentale | Non précisé (cours) | — |
+| Hyperkaliémiants | Hypocalcémie | Non précisée (cours) | — |
+| Spironolactone | Antagonisme des récepteurs aux hormones sexuelles : gynécomastie et impuissance chez l’homme ; mastodynies et troubles menstruels chez la femme | Non précisée (cours) ; tumeur bénigne du sein (homme) peu fréquente (RCP ALDACTONE) | — |
+| Surdosage | Déshydratation due à une diurèse excessive, troubles électrolytiques : nausées, troubles gastro-intestinaux, sécheresse de la bouche, soif, confusion, agitation, convulsions, douleurs musculaires et crampes, risque majoré d’arythmie cardiaque (hypo- ou hyperkaliémie) | Surdosage (cours) | Restauration de l’équilibre hydro-électrolytique ; la correction de l’hyponatrémie doit être progressive ; surveillance cardiovasculaire selon l’état clinique (cours) |
 
 ## Surveillances
 
-- À compléter avec les cours.
-- À compléter avec les cours.
-- À compléter avec les cours.
+<Steps>
+  <Step>
+    ### Administration
+
+    Voie orale majoritaire, 1 à 2 prises par jour ; formes LP pour les molécules
+    à courte demi-vie. Voie injectable (IM et/ou IV) pour furosémide, bumétanide
+    et canrénone, en situation d'urgence : poussées hypertensives sévères, œdème
+    aigu du poumon (cours).
+
+    Les diurétiques agissent dans la lumière du néphron : en cas d'insuffisance
+    rénale, leurs effets sont réduits (cours).
+  </Step>
+  <Step>
+    ### Signes d'efficacité
+
+    Diurèse, baisse des œdèmes et de la pression artérielle ; poids (cours).
+  </Step>
+  <Step>
+    ### Surveiller et dépister
+
+    Ionogramme sanguin : natrémie et kaliémie. Signes de déshydratation. Poids,
+    fonction rénale, tension artérielle, électrocardiogramme. Contrôle de la
+    glycémie chez les diabétiques. Contrôle de l'uricémie chez les goutteux
+    (cours).
+
+    Diurétiques hypokaliémiants : essai de traitement à court terme ; si traitement
+    long terme, sels de potassium ou association à un diurétique épargneur de
+    potassium — exemple d'association fixe : MODURETIC, hydrochlorothiazide +
+    amiloride (cours).
+  </Step>
+  <Step>
+    ### Éducation
+
+    Sujet âgé : risque de déshydratation, souvent avec diminution des apports
+    hydriques ; même vigilance chez les enfants et les patients avec apports
+    hydriques diminués (cours). Informer des signes de surdosage : déshydratation,
+    troubles électrolytiques, troubles du rythme (cours).
+  </Step>
+</Steps>
+
+- **Précautions d'emploi (cours).** Insuffisance rénale : risque d'hyperkaliémie
+  avec troubles du rythme ; possibilité d'utiliser les diurétiques de l'anse, qui
+  n'ont pas d'action sur la filtration glomérulaire.
+- **Conduite à tenir en cas de surdosage (cours).** Traitement non spécifique :
+  +/- lavage gastrique, restauration de l'équilibre hydro-électrolytique —
+  correction de l'hyponatrémie progressive —, surveillance cardiovasculaire selon
+  l'état clinique.
+
+## Sources
+
+**Cours**
+
+- Médicaments cardiovasculaires — Les diurétiques, 1re partie, Pr Véronique
+  MICHEL, IFSI Région Nouvelle Aquitaine ; UE 2.11 S3.
+- Médicaments cardiovasculaires — Les diurétiques, 2e partie, Pr Véronique
+  MICHEL, IFSI Région Nouvelle Aquitaine ; UE 2.11 S3.
+- Les IEC et les sartans — Dr K Martin-Latry, CHU / Université Bordeaux ; UE 2.11
+  (médicaments hyperkaliémiants).
+- Les digitaliques — Dr K Martin-Latry ; UE 2.11 (médicaments hypokaliémiants et
+  digitaliques).
+
+**VIDAL — fiches substance par DCI**
+
+- Diurétiques de l’anse : [Furosémide](https://www.vidal.fr/medicaments/substances/furosemide-1579.html),
+  [Bumétanide](https://www.vidal.fr/medicaments/substances/bumetanide-670.html),
+  [Pirétanide](https://www.vidal.fr/medicaments/substances/piretanide-2808.html)
+- Thiazidiques : [Hydrochlorothiazide](https://www.vidal.fr/medicaments/substances/hydrochlorothiazide-1798.html),
+  [Indapamide](https://www.vidal.fr/medicaments/substances/indapamide-6495.html),
+  [Ciclétanine](https://www.vidal.fr/medicaments/substances/cicletanine-9059.html),
+  [Méthyclothiazide](https://www.vidal.fr/medicaments/substances/methyclothiazide-2349.html),
+  [Chlortalidone](https://www.vidal.fr/medicaments/substances/chlortalidone-947.html)
+- Anti-aldostérones : [Spironolactone](https://www.vidal.fr/medicaments/substances/spironolactone-3332.html),
+  [Éplérénone](https://www.vidal.fr/medicaments/substances/eplerenone-22739.html)
+- Anti-aldostérone sans fiche substance VIDAL : Canrénone (SOLUDACTONE®,
+  spécialité du cours)
+- Bloqueurs des canaux sodiques : [Amiloride](https://www.vidal.fr/medicaments/substances/amiloride-6461.html),
+  [Triamtérène](https://www.vidal.fr/medicaments/substances/triamterene-3565.html)
+- Anti-vasopressines et autres : [Tolvaptan](https://www.vidal.fr/medicaments/substances/tolvaptan-23433.html),
+  [Mannitol](https://www.vidal.fr/medicaments/substances/mannitol-2222.html),
+  [Acétazolamide](https://www.vidal.fr/medicaments/substances/acetazolamide-145.html)
+
+**ANSM — Résumés des caractéristiques du produit et rapports**
+
+- [LASILIX 40 mg, comprimé (furosémide) — RCP](https://agence-prd.ansm.sante.fr/php/ecodex/rcp/R0216212.htm)
+- [ALDACTONE 25 mg, comprimé (spironolactone) — RCP](https://agence-prd.ansm.sante.fr/php/ecodex/rcp/R0425027.htm)
+
+**OMS (Organisation mondiale de la Santé)**
+
+- [Maladies cardiovasculaires — fiche d'information OMS](https://www.who.int/news-room/fact-sheets/detail/cardiovascular-diseases-(cvds))
+- [Hypertension — fiche d'information OMS](https://www.who.int/news-room/fact-sheets/detail/hypertension)
+- [AVC — fiche d'information OMS](https://www.who.int/news-room/fact-sheets/detail/stroke)
+- [Classification anatomo-thérapeutique chimique (ATC) — OMS Collaborating Centre](https://www.whocc.no/atc_ddd_index/)

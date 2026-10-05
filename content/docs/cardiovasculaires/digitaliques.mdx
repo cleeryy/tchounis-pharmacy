@@ -1,49 +1,206 @@
 ---
 title: 'Digitaliques'
-description: 'Squelette de fiche « Digitaliques » — à compléter avec les cours UE 2.11 S3.'
+description: 'Digitaliques ou tonicardiaques : propriétés, 1 molécule, indications, contre-indications, interactions, effets indésirables et surveillances — UE 2.11 S3.'
 ---
 
-> Contenu à compléter avec les cours UE 2.11 S3.
+import { Tabs, Tab } from 'fumadocs-ui/components/tabs';
+import { Steps, Step } from 'fumadocs-ui/components/steps';
+
+Les digitaliques, aussi appelés tonicardiaques ou cardiotoniques, sont les
+médicaments du ralentissement des fibrillations auricales et de l'insuffisance
+cardiaque chronique gauche. Cette fiche suit le plan imposé par l'UE 2.11 S3.
+Les chiffres, fréquences et délais proviennent du cours et des références
+listées en [Sources](#sources) ; ce qui n'est documenté par aucune de ces
+sources est indiqué « Non précisé ».
 
 ## Propriétés
 
-Cette fiche rassemble l'essentiel commun de la famille : ce qu'elle fait,
-sans sur-expliquer l'évident. Le mécanisme commun détaillé est à compléter
-avec les cours UE 2.11 S3. Seules les particularités utiles en pratique IDE
-sont retenues dans les sections ci-dessous.
+Le digitalique est une molécule extraite de la plante digitale : la digoxine,
+dernière molécule de la classe, de moins en moins utilisée (cours, synthèse).
+
+C'est un médicament à marge thérapeutique étroite, éliminé par voie rénale à
+90 % sous forme inchangée, avec une demi-vie de plus ou moins 36 heures
+(cours).
+
+Voie d'administration : orale surtout, l'intraveineuse lente n'étant réservée
+qu'en urgence. Traitement par dose de charge puis d'entretien, la demi-vie
+étant longue ; les posologies sont individualisées, en particulier en fonction
+de l'âge et de l'état de la fonction rénale (cours).
+
+<Callout type="info" title="Règle des 3R (cours)">
+Renforce : inotrope + (augmente la contraction). Ralentit : chronotrope −
+(ralentit la fréquence du cœur) et dromotrope − (ralentit la conduction).
+Régule : bathmotrope + (augmente l'excitabilité).
+
+Le cours associe l'hypercalcémie et l'hypokaliémie à la pharmacologie de la
+digoxine, et précise que l'hypokaliémie potentialise l'action du médicament.
+</Callout>
+
+<Cards>
+  <Card title="Inotrope +" description="Augmente la contraction (cours)." />
+  <Card title="Chronotrope −" description="Ralentit la fréquence du cœur (cours)." />
+  <Card title="Dromotrope −" description="Ralentit la conduction (cours)." />
+  <Card title="Bathmotrope +" description="Augmente l'excitabilité (cours)." />
+</Cards>
+
+### Les différentes classes
+
+Une seule molécule subsiste dans la classe : la digoxine (cours).
+
+| Classe | Dénomination | Quand l'utiliser |
+| ------ | ------------ | ---------------- |
+| Digitaliques (tonicardiaques) | Glucosides cardiotoniques extraits de la plante digitale : digoxine, dernière molécule de la classe (cours) | Ralentissement des fibrillations auricales (atriales) ; insuffisance cardiaque chronique gauche, peu utilisée (cours) |
+
+<Callout type="info" title="Logique de choix">
+Marge thérapeutique étroite : la digoxine exige une adaptation des posologies en
+fonction des concentrations plasmatiques, avec normes thérapeutiques et normes
+de toxicité (cours). La mesure de la concentration plasmatique se fait à la fin
+de la première semaine et au moins 8 heures après la dernière prise (cours).
+
+Le surdosage est favorisé par l'insuffisance rénale mal adaptée posologiquement,
+le sujet âgé et les interactions médicamenteuses ; il se confirme par des
+concentrations plasmatiques supérieures à 2 ng/ml, voire moins (cours).
+
+Grossesse et allaitement : « Si nécessaire… » (cours).
+</Callout>
 
 ## Médicaments de la famille
 
-| DCI | Particularité | Mention honorable |
-| --- | ------------- | ----------------- |
-| À compléter | À compléter | À compléter |
+Une seule entrée : la digoxine renvoie à sa fiche substance VIDAL et à son RCP
+ANSM.
+
+| Classe | DCI | Particularité | Mention honorable |
+| ------ | --- | ------------- | ----------------- |
+| Digitaliques | [Digoxine](https://www.vidal.fr/medicaments/substances/digoxine-3750.html) | Marge thérapeutique étroite, élimination rénale à 90 % sous forme inchangée, demi-vie +/- 36 heures (cours) | Comprimé 0,25 mg ; HEMIGOXINE 0,125 mg comprimé ; sol buvable 5 microg/0,1 ml ; injectable IV 0,5 mg/2 ml (cours) ; RCP : DIGOXINE NATIVELLE 0,25 mg comprimé |
 
 ## Indications
 
-- À compléter avec les cours.
-- À compléter avec les cours.
-- À compléter avec les cours.
+- **Ralentissement des fibrillations auricales (atriales)** (cours).
+- **Insuffisance cardiaque chronique gauche** — le cours précise « peu utilisé »
+  (cours).
 
 ## Contre-indications
 
-- À compléter avec les cours.
-- À compléter avec les cours.
-- À compléter avec les cours.
+Le cours n'en liste que deux ; les autres situations ne sont pas documentées par
+les sources consultées (cours, VIDAL, RCP, OMS).
+
+<Tabs items={['Contre-indications (digoxine)', 'Grossesse et allaitement']} label="Classe">
+  <Tab value="Contre-indications (digoxine)">
+
+    - **Troubles de la conduction cardiaque non appareillés** (cours).
+    - **Hypokaliémie non corrigée** (cours).
+    - **Hypersensibilité ou surdosage** : l'arrêt des digitaliques est
+      indispensable (RCP DIGOXINE NATIVELLE).
+  </Tab>
+  <Tab value="Grossesse et allaitement">« Si nécessaire… » (cours).</Tab>
+</Tabs>
 
 ## Interactions médicamenteuses
 
-- À compléter avec les cours.
-- À compléter avec les cours.
-- À compléter avec les cours.
+<Callout type="error" title="Digitalique + hypokaliémie et interactions du cours">
+- **Médicaments hypokaliémiants** : potentialisation des effets (cours) — le
+  cours des diurétiques cite corticoïdes, laxatifs et digitaliques parmi les
+  médicaments hypokaliémiants (cours, diurétiques).
+- **Sels de calcium intraveineux** : contre-indication (cours).
+- **Millepertuis** : diminution de l'effet, contre-indication (cours).
+- **Sur dosage favorisé** par les interactions médicamenteuses en général
+  (cours, surdosage).
+
+Le cours des antiarythmiques ajoute : **quinidine : augmente l'effet de la
+digoxine** (cours, antiarythmiques). Le cours des inhibiteurs calciques cite la
+**digoxine** parmi les médicaments bradycardisants à associer avec prudence au
+vérapamil et au diltiazem (cours, inhibiteurs calciques).
+</Callout>
 
 ## Effets secondaires
 
-| Effet | Fréquence (si disponible) | Conduite |
-| --- | --- | --- |
-| À compléter | À compléter | À compléter |
+Les fréquences proviennent du RCP ANSM consulté ; « Non précisé » signifie que
+les sources consultées ne donnent pas de valeur.
+
+| Classe | Effet indésirable | Fréquence | Conduite |
+| ------ | ----------------- | --------- | -------- |
+| Digitaliques | Nausées, vomissements | Effet indésirable du cours, sans fréquence (cours) | — |
+| Digitaliques | Troubles du rythme ventriculaire | Non précisée (cours) | — |
+| Digitaliques | Troubles digestifs : nausées, vomissements, diarrhées | Premiers symptômes fréquents et précoces de la toxicité digitalique, qui cessent rapidement à l'arrêt (RCP) | Arrêt du traitement si hypersensibilité ou surdosage (RCP) |
+| Digitaliques | Troubles de la vision, en particulier chez le sujet âgé | Devant faire suspecter un surdosage (RCP) | Suspendre et contrôler la digoxinémie (cours, RCP) |
+| Digitaliques | Troubles psychiatriques : convulsion, délire, hallucinations, psychose, en particulier chez le sujet très âgé | Devant faire suspecter un surdosage (RCP) | Suspendre et contrôler la digoxinémie (cours, RCP) |
+| Digitaliques | Hyperexcitabilité ventriculaire | Surdosage (RCP) | Phénytoïne ou lidocaïne en cas d'hyperexcitabilité myocardique (RCP) |
+| Digitaliques | Gynécomastie | Exceptionnelle (RCP) | — |
+| Digitaliques | Manifestations allergiques (réactions cutanées) | Exceptionnelles (RCP) | — |
+| Digitaliques | Thrombopénie | Exceptionnelles, en dehors d'un surdosage (RCP) | — |
+| Électrocardiogramme | Aspect en cupule du segment ST | Habituel (RCP) | Traduit une imprégnation digitalique et nullement un surdosage (RCP) |
+| Surdosage | Tous les troubles de la conduction et de l'excitabilité, avec perturbation de l'ECG, potentiellement graves voire mortels | Surdosage (RCP) | Suppression complète du digitalique et repos au lit ; atropine si bradycardie ; phénytoïne ou lidocaïne si hyperexcitabilité myocardique (RCP) |
+| Surdosage | Anorexie, nausées, vomissements, diarrhées, céphalées, vertiges, vision colorée en jaune | Surdosage (RCP) | Confirmation : concentration plasmatique supérieure à 2 ng/ml, voire moins (cours) |
 
 ## Surveillances
 
-- À compléter avec les cours.
-- À compléter avec les cours.
-- À compléter avec les cours.
+<Steps>
+  <Step>
+    ### Administration
+
+    Voie orale surtout, intraveineuse lente en urgence uniquement. Dose de charge
+    puis d'entretien. Individualisation des posologies selon l'âge et la fonction
+    rénale (cours).
+  </Step>
+  <Step>
+    ### Signes d'efficacité
+
+    Ralentissement des fibrillations auricales : contrôle de la fréquence
+    cardiaque (cours, indications).
+  </Step>
+  <Step>
+    ### Surveiller et dépister
+
+    Concentration plasmatique à la fin de la première semaine et au moins
+    8 heures après la dernière prise ; adaptation selon les normes thérapeutiques
+    et les normes de toxicité. Surveillance biologique : fonction rénale et
+    kaliémie — l'hypokaliémie potentialise l'action (cours).
+
+    Confirmation d'un surdosage : concentration plasmatique supérieure à
+    2 ng/ml, voire moins (cours).
+  </Step>
+  <Step>
+    ### Éducation
+
+    Informer des signes de surdosage à signaler : nausées, vomissements,
+    diarrhées, troubles visuels colorés ou hallucinations (cours, RCP).
+  </Step>
+</Steps>
+
+- **Antidote.** Anticorps anti-digoxine, arrêt de commercialisation selon le
+  cours (cours) ; le RCP préconise, en cas d'intoxication massive,
+  l'utilisation d'anticorps monoclonaux spécifiques Fab.
+- **Conduite d'urgence (RCP).** Surdosage thérapeutique : suppression complète du
+  digitalique, repos au lit, s'abstenir d'antiarythmique ou d'isoprénaline à
+  fortes doses ; atropine en cas de bradycardie. Intoxication massive :
+  hospitalisation, lavage gastrique précoce (moins de 3 heures après ingestion),
+  surveillance par moniteur cardiaque.
+
+## Sources
+
+**Cours**
+
+- Les digitaliques — Dr K Martin-Latry, CHU / Université Bordeaux ; en-tête du
+  support « UE 2.11 S1 – Pharmacologie et thérapeutique », groupe de travail
+  UE 2.11 (universités de Bordeaux, Limoges, Poitiers et IFSI de
+  Nouvelle-Aquitaine).
+- Médicaments cardiovasculaires — Les diurétiques, 1re et 2e parties, Pr
+  Véronique MICHEL, IFSI Région Nouvelle Aquitaine ; UE 2.11 S3 (association
+  digitalique et médicaments hypokaliémiants).
+- Les antiarythmiques — Dr K Martin-Latry (quinidine et digoxine) ; UE 2.11.
+- Médicaments cardiovasculaires — Les inhibiteurs calciques, 1re et 2e parties,
+  Pr Véronique MICHEL ; UE 2.11 S3 (digoxine et médicaments bradycardisants).
+
+**VIDAL — fiches substance par DCI**
+
+- [Digoxine](https://www.vidal.fr/medicaments/substances/digoxine-3750.html)
+
+**ANSM — Résumés des caractéristiques du produit et rapports**
+
+- [DIGOXINE NATIVELLE 0,25 mg, comprimé — RCP](https://agence-prd.ansm.sante.fr/php/ecodex/rcp/R0169345.htm)
+
+**OMS (Organisation mondiale de la Santé)**
+
+- [Maladies cardiovasculaires — fiche d'information OMS](https://www.who.int/news-room/fact-sheets/detail/cardiovascular-diseases-(cvds))
+- [Hypertension — fiche d'information OMS](https://www.who.int/news-room/fact-sheets/detail/hypertension)
+- [Classification anatomo-thérapeutique chimique (ATC) — OMS Collaborating Centre](https://www.whocc.no/atc_ddd_index/)
