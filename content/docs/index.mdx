@@ -1,28 +1,112 @@
 ---
 title: Accueil
-description: UE 2.11 S3 — Pharmacologie et thérapeutiques, fiches par familles.
+description: 'Fiches de pharmacologie de l''UE 2.11 S3 — Pharmacologie et thérapeutiques : une famille par page, 18 fiches, 346 molécules et 2 cas cliniques corrigés.'
 ---
 
-> Contenu à compléter avec les cours UE 2.11 S3.
+import { Steps, Step } from 'fumadocs-ui/components/steps';
 
-Bienvenue sur **Tchouni's Pharmacy** ! Ce site regroupe des fiches de
-pharmacologie pensées pour l'UE 2.11 S3 : aller à l'essentiel par famille,
-retenir les grosses différences et les surveillances infirmières.
+**Tchouni's Pharmacy** regroupe les fiches de pharmacologie de l'**UE 2.11 S3 —
+Pharmacologie et thérapeutiques**. Une seule règle de fabrication : une famille
+de médicaments, une page — et sur cette page uniquement ce qui se retient. Le
+mécanisme commun, les molécules (DCI) avec leurs particularités, les grosses
+différences de la classe, puis les effets indésirables et la surveillance
+infirmière.
 
-## Méthode
+<Callout type="info" title="Sources : cours UE 2.11, VIDAL, RCP ANSM, OMS">
+Chaque fiche s'appuie sur les **cours du groupe de travail UE 2.11** — C.
+Lafay-Chebassier, université de Poitiers (psychotropes, anti-infectieux,
+anti-diabétiques) ; Pr V. Michel et Dr K. Martin-Latry, CHU / université de
+Bordeaux (cardiovasculaires) — complétées par les fiches substance **VIDAL**,
+les **RCP de l'ANSM** et les fiches d'information **OMS**. Ce qu'aucune source
+ne documente est écrit « Non précisé » plutôt qu'estimé.
 
-**1 page = 1 famille ou 1 sous-famille.** Chaque page détaille le mécanisme
-commun, un tableau des molécules (DCI) avec leurs particularités, uniquement
-les grosses différences, et les mentions honorables liées à un médicament.
+Couverture : le **S3 en priorité**. Les supports des digitaliques,
+antiarythmiques, IEC et sartans, fibrinolytiques et hypolipémiants portent
+l'en-tête **UE 2.11 S1** — ils sont repris ici, le reste du S1 arrivant ensuite.
+</Callout>
 
-## Sommaire des familles
+## Le gabarit d'une fiche
+
+Les 18 fiches suivent le même plan, dans le même ordre : on sait donc toujours
+où chercher ce dont on a besoin.
+
+<Steps>
+  <Step>
+    ### Propriétés et classes
+
+    Mécanisme d'action, pharmacocinétique, et le tableau des classes de la
+    famille avec l'axe d'action de chacune.
+  </Step>
+  <Step>
+    ### Médicaments de la famille
+
+    Un tableau DCI par DCI : particularité utile, mention honorable, et le lien
+    vers la fiche substance VIDAL.
+  </Step>
+  <Step>
+    ### Indications, contre-indications, interactions
+
+    Ce que le cours prescrit, ce qui fait taire le traitement, et les
+    associations à redouter — souvent en onglets par classe.
+  </Step>
+  <Step>
+    ### Effets indésirables et surveillances
+
+    Fréquences RCP pour les effets les plus courants, puis les étapes de
+    surveillance à connaître en service — le point qui fait la différence côté
+    infirmier.
+  </Step>
+  <Step>
+    ### Sources
+
+    Le cours précis, puis VIDAL, ANSM et OMS : chaque chiffre est traçable.
+  </Step>
+</Steps>
+
+## Les 7 familles
 
 <Cards>
-  <Card title="Psychotropes" href="/docs/psychotropes" />
-  <Card title="Cardiovasculaires" href="/docs/cardiovasculaires" />
-  <Card title="Diabète" href="/docs/diabete" />
-  <Card title="Anti-infectieux" href="/docs/anti-infectieux" />
-  <Card title="Fibrinolytiques" href="/docs/fibrinolytiques" />
-  <Card title="Hypolipémiants" href="/docs/hypolipemiants" />
-  <Card title="Cas cliniques" href="/docs/cas-cliniques" />
+  <Card
+    title="Psychotropes"
+    href="/docs/psychotropes"
+    description="5 fiches, 79 molécules — antidépresseurs, thymorégulateurs, antipsychotiques, anxiolytiques et hypnotiques : la dépression, l'humeur, la psychose, l'anxiété et l'insomnie."
+  />
+  <Card
+    title="Cardiovasculaires"
+    href="/docs/cardiovasculaires"
+    description="7 fiches, 84 molécules — la famille la plus fournie : insuffisance cardiaque, troubles du rythme, angor et hypertension."
+  />
+  <Card
+    title="Diabète"
+    href="/docs/diabete"
+    description="1 fiche, 23 molécules — insulines pour le diabète de type 1, antidiabétiques oraux pour le diabète de type 2."
+  />
+  <Card
+    title="Anti-infectieux"
+    href="/docs/anti-infectieux"
+    description="3 fiches, 138 molécules — antibiotiques, antiviraux et antifongiques : les trois capsules du cours, une fiche chacune."
+  />
+  <Card
+    title="Fibrinolytiques"
+    href="/docs/fibrinolytiques"
+    description="1 fiche, 8 molécules — dissoudre le caillot déjà formé, et son contre-métier antifibrinolytique qui fait taire les saignements."
+  />
+  <Card
+    title="Hypolipémiants"
+    href="/docs/hypolipemiants"
+    description="1 fiche, 14 molécules — cinq classes pour le LDL-cholestérol et les triglycérides, de la statine à l'anti-PCSK9."
+  />
+  <Card
+    title="Cas cliniques"
+    href="/docs/cas-cliniques"
+    description="2 QCM corrigés du semestre, un par enseignant, qui croisent les familles entre elles."
+  />
 </Cards>
+
+## Par où commencer
+
+- **Une famille précise** → les cartes ci-dessus.
+- **Une molécule précise** → la fiche de sa famille : chaque tableau DCI renvoie
+  à la fiche substance VIDAL.
+- **Se tester** → les [cas cliniques](/docs/cas-cliniques), une fois les
+  familles revues : le corrigé se regarde en dernier.
