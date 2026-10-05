@@ -1,49 +1,354 @@
 ---
 title: 'Antidiabétiques'
-description: 'Squelette de fiche « Antidiabétiques » — à compléter avec les cours UE 2.11 S3.'
+description: 'Antidiabétiques : propriétés, 23 molécules, indications, contre-indications, interactions, effets indésirables et surveillances — UE 2.11 S3.'
 ---
 
-> Contenu à compléter avec les cours UE 2.11 S3.
+import { Tabs, Tab } from 'fumadocs-ui/components/tabs';
+import { Steps, Step } from 'fumadocs-ui/components/steps';
+
+Les antidiabétiques sont les médicaments utilisés dans le diabète sucré : les
+insulines pour le diabète de type 1, les antidiabétiques oraux pour le diabète
+de type 2. Cette fiche suit le plan imposé par l'UE 2.11 S3. Les chiffres,
+fréquences et délais proviennent du cours et des références listées en
+[Sources](#sources) ; ce qui n'est documenté par aucune de ces sources est
+indiqué « Non précisé ».
 
 ## Propriétés
 
-Cette fiche rassemble l'essentiel commun de la famille : ce qu'elle fait,
-sans sur-expliquer l'évident. Le mécanisme commun détaillé est à compléter
-avec les cours UE 2.11 S3. Seules les particularités utiles en pratique IDE
-sont retenues dans les sections ci-dessous.
+Le diabète est une élévation chronique de la concentration plasmatique de
+glucose — hyperglycémie — liée à une sécrétion diminuée d'insuline et/ou à une
+réduction de son efficacité. Le diagnostic repose sur une glycémie à jeun
+supérieure à 1,26 g/L (7 mmol/L) relevée à deux reprises.
+
+Deux formes cliniques se distinguent :
+
+| | Diabète de type 1 | Diabète de type 2 |
+| --- | --- | --- |
+| Patient « type » | Jeune (8 à 16 ans), maigre | Plus de 40 ans, surcharge pondérale |
+| Présentation | Polyurie, polydipsie, pas toujours de polyphagie, acidose diabétique | Pas toujours de symptômes, nombreux patients non diagnostiqués |
+| Physiopathologie | Destruction autoimmune des cellules bêta (plus de 80 %) | Résistance à l'insuline, puis baisse de sécrétion d'insuline |
+| Complications | Souvent absentes au diagnostic | Souvent présentes au diagnostic |
+
+L'insuline est sécrétée en continu tout au long du nycthémère avec des pics au
+moment des repas. Hormone hypoglycémiante, elle régule finement la glycémie. Sa
+carence expose aux complications aiguës — coma hyperosmolaire, coma
+acidocétosique, coma hypoglycémique — et aux complications chroniques :
+microangiopathies (néphropathies, rétinopathies, neuropathies),
+macroangiopathies à l'origine de l'augmentation de la mortalité
+cardiovasculaire, et infections.
+
+<Callout type="info" title="Objectifs du traitement">
+Maintenir la glycémie autour des valeurs normales, prévenir l'hyperglycémie
+symptomatique, la décompensation aiguë (acidocétose, voire coma) et les
+complications chroniques. La prise en charge thérapeutique associe les règles
+hygiéno-diététiques, l'éducation thérapeutique du patient, les médicaments et
+la lutte contre les autres facteurs de risque cardiovasculaire (cours).
+</Callout>
+
+### Les différentes classes
+
+Sept familles, deux voies principales : remplacer l'insuline manquante, ou
+corriger la résistance et la sécrétion insuffisante chez le diabétique de
+type 2.
+
+| Classe | Ce que c'est | Quand l'utiliser |
+| ------ | ------------ | ---------------- |
+| Insulines | Insulines humaines et analogues de l'insuline humaine, classés selon leur délai et leur durée d'action : rapide, intermédiaire, lente et prolongée (cours) | Traitement substitutif : diabète de type 1, acidose diabétique, diabète de type 2 chez la femme enceinte, diabète de type 2 insulino-requérant (cours) |
+| Biguanides | Metformine (embonate, chlorhydrate) | 1re intention en monothérapie du diabète de type 2 (cours) |
+| Sulfamides hypoglycémiants | Glibenclamide, gliclazide, glimepiride, glipizide | En association à la metformine, ou en bithérapie et trithérapie orale (cours) |
+| Glinides | Répaglinide | Contrôle de la glycémie postprandiale, prise 15 à 30 min avant le repas (cours) |
+| Inhibiteurs des α-glucosidases | Acarbose, miglitol | Alternatives orales ; attention aux contre-indications digestives (cours) |
+| Incrétinomimétiques | Analogues du GLP-1 (exénatide, liraglutide, dulaglutide, sémaglutide) et inhibiteurs de DPP4 = gliptines (sitagliptine, vildagliptine, saxagliptine) | Stimulation de la sécrétion d'insuline dépendante de la glycémie, donc sans hypoglycémie (cours) |
+| Glifozines | Inhibiteurs du SGLT2 : dapagliflozine | Favorisent l'excrétion urinaire du glucose, donc sans hypoglycémie (cours) |
+
+<Callout type="info" title="Logique de choix">
+Le diabète de type 2 se traite d'abord par les mesures hygiéno-diététiques et
+l'éducation du patient, puis par une monothérapie : la metformine est le
+traitement de 1re intention. Si l'objectif glycémique n'est pas atteint, on
+passe à la bi- puis à la trithérapie orale, ou à une association à une
+insulinothérapie (cours).
+
+Point d'arrêt absolu : tous les antidiabétiques oraux sont contre-indiqués
+pendant la grossesse (cours).
+</Callout>
 
 ## Médicaments de la famille
 
-| DCI | Particularité | Mention honorable |
-| --- | ------------- | ----------------- |
-| À compléter | À compléter | À compléter |
+Vingt-trois entrées classées par famille pharmacologique. Chaque DCI renvoie à
+sa fiche substance VIDAL.
+
+| Classe | DCI | Particularité | Mention honorable |
+| ------ | --- | ------------- | ----------------- |
+| Insulines — action rapide | [Insuline humaine](https://www.vidal.fr/medicaments/substances/insuline-humaine-biogenetique-4048.html) (insuline ordinaire) | Active en 30 min, durée d'action 4 à 6 h, injection SC 10 à 15 min avant chaque repas (cours) | — |
+| Insulines — action intermédiaire | Insuline isophane (insuline NPH) | Insuline + protamine et zinc : après injection SC, protéolyse du complexe et libération progressive ; active en 1 h, durée d'action 12 h ; suspensions injectables, voie SC exclusivement (cours) | — |
+| Insulines — action rapide | [Insuline asparte](https://www.vidal.fr/medicaments/substances/insuline-asparte-21830.html) | Analogue d'action rapide : actif en 15 min, durée d'action 2 à 5 h, injection SC au moment de chaque repas (cours) | NOVORAPID® stylo |
+| Insulines — action rapide | [Insuline lispro](https://www.vidal.fr/medicaments/substances/insuline-lispro-17013.html) | Analogue d'action rapide (cours) | HUMALOG® stylo |
+| Insulines — action rapide | [Insuline glulisine](https://www.vidal.fr/medicaments/substances/insuline-glulisine-22715.html) | Analogue d'action rapide (cours) | APIDRA® stylo |
+| Insulines — lente et prolongée | [Insuline détémir](https://www.vidal.fr/medicaments/substances/insuline-detemir-22706.html) | Analogue lente et prolongée : actif en 1 à 4 h, durée d'action 24 h, 1 seule injection SC par jour (cours) | LEVEMIR® stylo |
+| Insulines — lente et prolongée | [Insuline glargine](https://www.vidal.fr/medicaments/substances/insuline-glargine-20401.html) | Analogue lente et prolongée : actif en 1 à 4 h, durée d'action 24 h, 1 seule injection SC par jour (cours) | LANTUS® stylo |
+| Biguanides | [Metformine](https://www.vidal.fr/medicaments/substances/metformine-2339.html) | Action anti-hyperglycémiante sans hypoglycémie ; 1000 mg de chlorhydrate = 780 mg de metformine, 700 mg d'embonate = 280 mg : pas d'équivalence de dose ; prise au milieu du repas (cours) | STAGID® cp, GLUCOPHAGE® cp, GLUCOVANCE® cp (metformine + glibenclamide) |
+| Sulfamides hypoglycémiants | [Glibenclamide](https://www.vidal.fr/medicaments/substances/glibenclamide-1627.html) | Hypoglycémie dose-dépendante (cours) | DAONIL® cp, HEMI-DAONIL® cp |
+| Sulfamides hypoglycémiants | [Gliclazide](https://www.vidal.fr/medicaments/substances/gliclazide-1641.html) | Hypoglycémie dose-dépendante (cours) | DIAMICRON® cp |
+| Sulfamides hypoglycémiants | [Glimepiride](https://www.vidal.fr/medicaments/substances/glimepiride-17244.html) | Hypoglycémie dose-dépendante (cours) | AMAREL® cp |
+| Sulfamides hypoglycémiants | [Glipizide](https://www.vidal.fr/medicaments/substances/glipizide-1642.html) | Hypoglycémie dose-dépendante (cours) | GLIBENESE® cp, MINIDIAB® cp, OZIDIA® cp |
+| Glinides | [Répaglinide](https://www.vidal.fr/medicaments/substances/repaglinide-18716.html) | Hypoglycémie généralement modérée comparée aux sulfamides ; prise 15 à 30 min avant le repas pour éviter l'hyperglycémie postprandiale, pas de prise si pas de repas (cours) | NOVONORM® cp |
+| Inhibiteurs des α-glucosidases | [Acarbose](https://www.vidal.fr/medicaments/substances/acarbose-5963.html) | Effets digestifs (flatulence, diarrhée), élévation des transaminases, occlusions intestinales (cours) | GLUCOR® cp |
+| Inhibiteurs des α-glucosidases | [Miglitol](https://www.vidal.fr/medicaments/substances/miglitol-17759.html) | Effets digestifs (cours) | DIASTABOL® cp |
+| Analogues du GLP-1 | [Exénatide](https://www.vidal.fr/medicaments/substances/exenatide-22874.html) | BYETTA® : 2 injections SC par jour, 60 min avant le repas ; BYDUREON® : 1 injection SC par semaine (cours) | BYETTA® stylo pré-rempli, BYDUREON® stylo pré-rempli |
+| Analogues du GLP-1 | [Liraglutide](https://www.vidal.fr/medicaments/substances/liraglutide-23220.html) | 1 injection SC par jour (cours) | VICTOZA® stylo pré-rempli |
+| Analogues du GLP-1 | [Dulaglutide](https://www.vidal.fr/medicaments/substances/dulaglutide-24468.html) | 1 injection SC par jour (cours) | TRULICITY® stylo pré-rempli |
+| Analogues du GLP-1 | [Sémaglutide](https://www.vidal.fr/medicaments/substances/semaglutide-25733.html) | 1 injection SC par semaine (cours) | OZEMPIC® stylo pré-rempli |
+| Inhibiteurs de DPP4 (gliptines) | [Sitagliptine](https://www.vidal.fr/medicaments/substances/sitagliptine-22893.html) | Stimule indirectement la sécrétion d'insuline dépendante de la glycémie : pas d'hypoglycémie (cours) | JANUVIA® cp, XELEVIA® cp ; JANUMET® cp (avec metformine) |
+| Inhibiteurs de DPP4 (gliptines) | [Vildagliptine](https://www.vidal.fr/medicaments/substances/vildagliptine-23071.html) | Stimule indirectement la sécrétion d'insuline dépendante de la glycémie (cours) | GALVUS® cp ; EUCREAS® cp (avec metformine) |
+| Inhibiteurs de DPP4 (gliptines) | [Saxagliptine](https://www.vidal.fr/medicaments/substances/saxagliptine-23234.html) | Stimule indirectement la sécrétion d'insuline dépendante de la glycémie (cours) | ONGLYSA® cp ; KOMBOGLYSE® cp (avec metformine) |
+| Glifozines (inhibiteurs du SGLT2) | [Dapagliflozine](https://www.vidal.fr/medicaments/substances/dapagliflozine-24092.html) | Favorise l'excrétion urinaire du glucose, donc pas d'hypoglycémie ; effets indésirables nombreux : hypotension artérielle, infections urogénitales, acidocétose ; faible recul pour la balance bénéfice/risque post-AMM (cours) | FORXIGA® cp, XIGDUO® cp |
+
+<Callout type="warning" title="Voies d'administration des insulines">
+Voie parentérale IV : injection continue avec pousse-seringue électrique.
+Voie sous-cutanée : stylos jetables ou réutilisables avec cartouches, flacons,
+pompes portables — injection continue SC avec doses supplémentaires. Les délais
+et durées d'action fonctionnent des préparations et de facteurs de variabilité :
+site d'injection, profondeur d'injection, flux sanguin local du tissu
+sous-cutané. Erreurs à éviter : toutes les insulines ne sont pas dosées à
+100 UI/mL ; conservation au réfrigérateur avant utilisation, puis à
+température ambiante, inférieure à 25 °C (cours).
+</Callout>
 
 ## Indications
 
-- À compléter avec les cours.
-- À compléter avec les cours.
-- À compléter avec les cours.
+- **Insulines** — traitement substitutif, pour compenser la carence en
+  insuline (cours) :
+
+  - diabète de type 1 ;
+  - acidose diabétique ;
+  - diabète de type 2 chez la femme enceinte ;
+  - diabète de type 2 insulino-requérant.
+
+- **Diabète de type 2** — en association aux mesures hygiéno-diététiques et à
+  l'éducation du patient (cours) :
+
+  - monothérapie : 1re intention par la metformine ;
+  - ou bithérapie : metformine + sulfamides hypoglycémiants ;
+  - ou trithérapie ;
+  - ou association à une insulinothérapie si l'objectif glycémique cible n'est
+    pas atteint.
+
+- **Grossesse** — tous les antidiabétiques oraux sont contre-indiqués (cours).
 
 ## Contre-indications
 
-- À compléter avec les cours.
-- À compléter avec les cours.
-- À compléter avec les cours.
+Les onglets Biguanides et Sulfamides proviennent des RCP ANSM consultés ; les
+familles non documentées par le cours ni par les RCP consultés restent
+indiquées telles quelles.
+
+<Tabs
+  items={['Insulines', 'Biguanides', 'Sulfamides hypoglycémiants', 'Glinides', 'Inhibiteurs des α-glucosidases', 'Incrétinomimétiques', 'Glifozines']}
+  label="Classe"
+>
+  <Tab value="Insulines">
+    Non précisé dans les sources consultées (cours, VIDAL, RCP, OMS).
+  </Tab>
+  <Tab value="Biguanides">
+    Lus sur le RCP du GLUCOPHAGE®.
+
+    - Hypersensibilité à la metformine ou à l'un des excipients (RCP).
+    - Tout type d'acidose métabolique aiguë, telle que l'acidose lactique ou
+      l'acidocétose diabétique (RCP).
+    - Précoma diabétique (RCP).
+    - Insuffisance rénale sévère, DFG inférieur à 30 mL/min (RCP).
+    - Affections aiguës susceptibles d'altérer la fonction rénale, telles que
+      déshydratation, infection grave, choc (RCP).
+    - Maladies pouvant entraîner une hypoxie tissulaire : insuffisance
+      cardiaque en décompensation, insuffisance respiratoire, infarctus du
+      myocarde récent, choc (RCP).
+    - Insuffisance hépatocellulaire, intoxication alcoolique aiguë,
+      alcoolisme (RCP).
+  </Tab>
+  <Tab value="Sulfamides hypoglycémiants">
+    Lus sur le RCP du DIAMICRON® (gliclazide).
+
+    - Hypersensibilité au gliclazide, aux autres sulfonylurées, aux
+      sulfamides, ou à l'un des excipients (RCP).
+    - Diabète de type 1 (RCP).
+    - Pré-coma et coma diabétiques, acidocétose diabétique (RCP).
+    - Insuffisances rénale ou hépatique sévères : recourir à l'insuline (RCP).
+    - Traitement par le miconazole (RCP).
+    - Allaitement (RCP).
+  </Tab>
+  <Tab value="Glinides">
+    Non précisé dans les sources consultées (cours, VIDAL, RCP, OMS).
+  </Tab>
+  <Tab value="Inhibiteurs des α-glucosidases">
+    D'après le cours : troubles de la digestion et de l'absorption, maladies
+    inflammatoires chroniques, ulcères intestinaux ; antécédents de syndrome
+    occlusif.
+  </Tab>
+  <Tab value="Incrétinomimétiques">
+    Non précisé dans les sources consultées (cours, VIDAL, RCP, OMS).
+  </Tab>
+  <Tab value="Glifozines">
+    Non précisé dans les sources consultées (cours, VIDAL, RCP, OMS).
+  </Tab>
+</Tabs>
 
 ## Interactions médicamenteuses
 
-- À compléter avec les cours.
-- À compléter avec les cours.
-- À compléter avec les cours.
+**Insulines.** Le cours signale deux situations opposées : des interactions
+médicamenteuses avec risque majoré d'hypoglycémie en cas d'association à
+certains médicaments, et une réduction de l'effet hypoglycémiant en cas
+d'association à d'autres, notamment les corticoïdes.
+
+**Antidiabétiques oraux insulinosécréteurs.** Majoration du risque
+d'hypoglycémies avec les sulfamides et les glinides associés à un autre
+antidiabétique oral insulinosécréteur (cours).
+
+<Callout type="error" title="Sulfamides hypoglycémiants — interactions du cours">
+Avec les bêtabloquants, les AINS et les inhibiteurs de l'enzyme de
+conversion : risque d'hypoglycémies. Avec les corticoïdes : au contraire,
+hyperglycémies (cours).
+
+Les facteurs déclenchantes d'hypoglycémie à rechercher chez un patient sous
+sulfamide sont nombreux : surdosage, sujet âgé, insuffisance rénale ou
+hépatique (contre-indication), alcool, certains médicaments, suppression d'un
+repas, exercice physique inhabituel (cours).
+</Callout>
+
+**Biguanides.** Pas d'interaction médicamenteuse particulière documentée par
+le cours ; en revanche, la fonction rénale conditionne l'élimination de la
+metformine, et c'est par elle que se déclenche l'acidose lactique (cas du
+cours). La metformine doit être arrêtée en cas d'anesthésie et en cas
+d'examen radiologique avec produit de contraste iodé : reprise après 48 h avec
+contrôle de la fonction rénale (cours).
 
 ## Effets secondaires
 
-| Effet | Fréquence (si disponible) | Conduite |
-| --- | --- | --- |
-| À compléter | À compléter | À compléter |
+Les fréquences proviennent des RCP consultés ; « Non précisé » signifie que les
+sources consultées ne donnent pas de valeur.
+
+| Classe | Effet indésirable | Fréquence | Conduite |
+| ------ | ----------------- | --------- | -------- |
+| Toutes — insulines | Hypoglycémie pouvant aller jusqu'au coma hypoglycémique | Non précisée (cours) | Dose-dépendante : éducation du patient |
+| Toutes — insulines | Prise de poids | Non précisée (cours) | — |
+| Toutes — insulines | Hypersensibilité (rare), réactions locales : érythème et douleur au point d'injection, lipodystrophies en cas d'injections répétées au même site | Non précisée (cours) | Rotation des sites d'injection |
+| Biguanides | Troubles gastro-intestinaux — nausées, vomissements, diarrhée, douleurs abdominales, perte d'appétit | Très fréquent — RCP GLUCOPHAGE® | Dose-dépendants ; survenir le plus souvent à l'instauration et régressant spontanément ; fractionner la dose en 2 à 3 prises dans la journée, au cours ou à la fin des repas, et augmenter progressivement la posologie |
+| Biguanides | Diminution ou carence en vitamine B12 | Fréquent — RCP GLUCOPHAGE® | — |
+| Biguanides | Perturbation du goût | Fréquent — RCP GLUCOPHAGE® | — |
+| Biguanides | Acidose lactique | Très rare — RCP GLUCOPHAGE® | Urgence médicale : hospitalisation, hémodialyse |
+| Biguanides | Anomalies des tests de la fonction hépatique ou hépatite, réactions cutanées (érythème, prurit, urticaire) | Très rare — RCP GLUCOPHAGE® | Régression à l'arrêt du traitement |
+| Sulfamides hypoglycémiants | Hypoglycémie | Non précisée par classe : « l'effet indésirable le plus fréquent avec le gliclazide est l'hypoglycémie » — RCP DIAMICRON® | Dose-dépendante, surtout surdosage, sujets âgés, insuffisance rénale ou hépatique, alcool, suppression d'un repas, exercice inhabituel ; traitement par apport glucidique, adaptation de la posologie ou modification du régime |
+| Sulfamides hypoglycémiants | Troubles gastro-intestinaux : douleurs abdominales, nausées, vomissements, dyspepsie, diarrhées, constipation | Non précisée — RCP DIAMICRON® | Évités ou diminués si le traitement est pris pendant le petit-déjeuner |
+| Sulfamides hypoglycémiants | Éruptions cutanéo-muqueuses (rash, prurit, urticaire, angio-œdème, syndrome de Stevens-Johnson, nécrolyse épidermique toxique, syndrome DRESS) | Plus rarement rapportées — RCP DIAMICRON® | — |
+| Sulfamides hypoglycémiants | Troubles hématologiques : anémie, leucopénie, thrombocytopénie, granulocytopénie | Rares — RCP DIAMICRON® | Généralement réversibles à l'arrêt |
+| Sulfamides hypoglycémiants | Élévation des enzymes hépatiques (ASAT, ALAT, phosphatases alcalines), hépatites (cas isolés) | Non précisée — RCP DIAMICRON® | Interrompre en cas d'ictère cholestatique |
+| Glinides | Hypoglycémie, généralement modérée comparée aux sulfamides | Non précisée (cours) | Pas de prise si pas de repas |
+| Inhibiteurs des α-glucosidases | Flatulence, diarrhée | Non précisée (cours) | — |
+| Inhibiteurs des α-glucosidases | Élévation des transaminases, occlusions intestinales (acarbose) | Non précisée (cours) | — |
+| Incrétinomimétiques | Troubles digestifs, surtout en début de traitement | Non précisée (cours) | — |
+| Incrétinomimétiques | Pancréatites | Non précisée (cours) | — |
+| Glifozines | Hypotension artérielle, infections urogénitales, acidocétose | Non précisée (cours) | Faible recul pour évaluer la balance bénéfice/risque post-AMM |
+
+<Callout type="warning" title="Acidose lactique — cas du cours">
+Patiente de 80 ans traitée par metformine + vildagliptine (EUCREAS®),
+douleurs abdominales avec troubles du transit, puis vomissements et altération
+franche de l'état général. À l'entrée : acidose lactique (pH à 7,182, lactates
+à 15 mmol/L), insuffisance rénale aiguë (créatininémie à 220 µmol/L,
+clairance MDRD à 17,5 mL/min) avec hyperkaliémie, et dosage de metformine
+plasmatique à 39 mg/L (normale : 0,1 à 2). Il s'agit d'un surdosage en
+metformine lié à une insuffisance rénale aiguë : acidocétose lactique dans ce
+contexte d'insuffisance rénale (cours).
+</Callout>
+
+<Callout type="warning" title="Signes d'alerte de l'acidose lactique">
+Chez le sujet traité par metformine, il faut sensibiliser les patients au
+respect des posologies, identifier les facteurs de risque et les premiers
+signes : vomissements, crampes musculaires, douleurs abdominales,
+difficultés à respirer, asthénie, hypothermie et diminution du rythme
+cardiaque (cours).
+</Callout>
 
 ## Surveillances
 
-- À compléter avec les cours.
-- À compléter avec les cours.
-- À compléter avec les cours.
+<Steps>
+  <Step>
+    ### Mise en route de l'insulinothérapie
+
+    Doses d'insuline calculées individuellement puis augmentation progressive,
+    avec autosurveillance glycémique et urinaire, et modifications des doses en
+    fonction des résultats du régime et de l'activité physique (cours).
+  </Step>
+  <Step>
+    ### Évaluation de l'efficacité
+
+    Mesures pluriquotidiennes de la glycémie capillaire, pré- et
+    postprandiale, pour l'insulinothérapie ; autocontrôles moins fréquents
+    pour les antidiabétiques oraux. Dosage de l'hémoglobine glyquée HbA1c tous
+    les 3 mois (cours).
+  </Step>
+  <Step>
+    ### Dépistage des effets indésirables
+
+    Hypoglycémies trop fréquentes sous sulfamides et glinides, décompensation
+    acidocétosique à savoir prévenir, lipodystrophies en examinant les zones
+    d'injection (cours).
+  </Step>
+</Steps>
+
+- **Surveillance biologique et clinique.** Poids, pression artérielle,
+  paramètres lipidiques pour les antidiabétiques oraux (cours).
+- **Arrêts à connaître.** Arrêt de la metformine en cas d'anesthésie et en cas
+  d'examen radiologique avec produit de contraste iodé : reprise après 48 h et
+  contrôle de la fonction rénale (cours).
+- **Éducation du patient.** Auto-surveillance : technique, régularité, tenue du
+  carnet ; vérification de la technique d'injection, rotation des sites, délais
+  avec les repas ; adaptation des doses ; respect des mesures
+  hygiéno-diététiques et de la régularité de l'activité physique ; prévention
+  des effets indésirables (cours).
+- **Sujet âgé.** Prévention des hypoglycémies et de la déshydratation (cours).
+- **Pied diabétique.** Surveillance des pieds et du poids, pour l'insuline
+  comme pour les antidiabétiques oraux (cours).
+
+## Sources
+
+**Cours**
+
+- Pharmacologie des anti-diabétiques (capsules 1/2 et 2/2), Claire
+  Lafay-Chebassier, MCU-PH, Université de Poitiers ; UE 2.11 S3, IFSI Région
+  Nouvelle-Aquitaine.
+
+**VIDAL — fiches substance par DCI**
+
+- Insulines : [Insuline humaine](https://www.vidal.fr/medicaments/substances/insuline-humaine-biogenetique-4048.html)
+  (la fiche VIDAL est publiée sous la dénomination « insuline humaine
+  biogénétique » ; aucune fiche n'est référencée pour l'insuline isophane),
+  [Insuline asparte](https://www.vidal.fr/medicaments/substances/insuline-asparte-21830.html),
+  [Insuline lispro](https://www.vidal.fr/medicaments/substances/insuline-lispro-17013.html),
+  [Insuline glulisine](https://www.vidal.fr/medicaments/substances/insuline-glulisine-22715.html),
+  [Insuline détémir](https://www.vidal.fr/medicaments/substances/insuline-detemir-22706.html),
+  [Insuline glargine](https://www.vidal.fr/medicaments/substances/insuline-glargine-20401.html)
+- Biguanide : [Metformine](https://www.vidal.fr/medicaments/substances/metformine-2339.html)
+- Sulfamides hypoglycémiants : [Glibenclamide](https://www.vidal.fr/medicaments/substances/glibenclamide-1627.html),
+  [Gliclazide](https://www.vidal.fr/medicaments/substances/gliclazide-1641.html),
+  [Glimepiride](https://www.vidal.fr/medicaments/substances/glimepiride-17244.html),
+  [Glipizide](https://www.vidal.fr/medicaments/substances/glipizide-1642.html)
+- Glinide : [Répaglinide](https://www.vidal.fr/medicaments/substances/repaglinide-18716.html)
+- Inhibiteurs des α-glucosidases : [Acarbose](https://www.vidal.fr/medicaments/substances/acarbose-5963.html),
+  [Miglitol](https://www.vidal.fr/medicaments/substances/miglitol-17759.html)
+- Analogues du GLP-1 : [Exénatide](https://www.vidal.fr/medicaments/substances/exenatide-22874.html),
+  [Liraglutide](https://www.vidal.fr/medicaments/substances/liraglutide-23220.html),
+  [Dulaglutide](https://www.vidal.fr/medicaments/substances/dulaglutide-24468.html),
+  [Sémaglutide](https://www.vidal.fr/medicaments/substances/semaglutide-25733.html)
+- Inhibiteurs de DPP4 : [Sitagliptine](https://www.vidal.fr/medicaments/substances/sitagliptine-22893.html),
+  [Vildagliptine](https://www.vidal.fr/medicaments/substances/vildagliptine-23071.html),
+  [Saxagliptine](https://www.vidal.fr/medicaments/substances/saxagliptine-23234.html)
+- Glifozines : [Dapagliflozine](https://www.vidal.fr/medicaments/substances/dapagliflozine-24092.html)
+
+**ANSM — Résumés des caractéristiques du produit**
+
+- [GLUCOPHAGE® 1000 mg (metformine), biguanide — RCP](https://agence-prd.ansm.sante.fr/php/ecodex/rcp/R0444362.htm)
+- [DIAMICRON® 30 mg (gliclazide), sulfamide hypoglycémiant — RCP](https://agence-prd.ansm.sante.fr/php/ecodex/rcp/R0366122.htm)
+
+**OMS (Organisation mondiale de la Santé)**
+
+- [Diabète — fiche d'information OMS](https://www.who.int/news-room/fact-sheets/detail/diabetes)
+- [Maladies non transmissibles — fiche d'information OMS](https://www.who.int/news-room/fact-sheets/detail/noncommunicable-diseases)
+- [Index ATC/DDD de l'OMS (A10 — antidiabétiques)](https://www.whocc.no/atc_ddd_index/)

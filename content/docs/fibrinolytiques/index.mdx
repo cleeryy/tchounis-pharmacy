@@ -1,49 +1,253 @@
 ---
 title: 'Fibrinolytiques'
-description: 'Squelette de fiche « Fibrinolytiques » — à compléter avec les cours UE 2.11 S3.'
+description: 'Fibrinolytiques : propriétés, 8 molécules, indications, contre-indications, interactions, effets indésirables et surveillances — UE 2.11 S3.'
 ---
 
-> Contenu à compléter avec les cours UE 2.11 S3.
+import { Tabs, Tab } from 'fumadocs-ui/components/tabs';
+import { Steps, Step } from 'fumadocs-ui/components/steps';
+
+Les fibrinolytiques — aussi appelés thrombolytiques ou antithrombotiques —
+accélèrent la dissolution des caillots intra-vasculaires. Administration
+exclusivement veineuse, contexte d'urgence : syndrome coronarien aigu, AVC,
+embolie pulmonaire. Cette fiche suit le plan imposé par l'UE 2.11 S3. Les
+chiffres, fréquences et délais proviennent du cours et des références listées en
+[Sources](#sources) ; ce qui n'est documenté par aucune de ces sources est
+indiqué « Non précisé ».
 
 ## Propriétés
 
-Cette fiche rassemble l'essentiel commun de la famille : ce qu'elle fait,
-sans sur-expliquer l'évident. Le mécanisme commun détaillé est à compléter
-avec les cours UE 2.11 S3. Seules les particularités utiles en pratique IDE
-sont retenues dans les sections ci-dessous.
+**Mécanisme.** En présence de fibrine, les fibrinolytiques activent la
+transformation du plasminogène en plasmine, entraînant la dissolution du caillot
+de fibrine. La plasmine dégrade la fibrine ; le plasminogène est inactif, libre
+dans le sérum ou lié à la fibrine. Fixation préférentielle au plasminogène lié à
+la fibrine → effet principalement localisé au caillot (cours).
+
+- **Efficacité d'autant plus grande que le caillot est récent** (cours).
+- **Administration uniquement par voie IV** (cours).
+- **Utilisation en urgence** — SCA, AVC, EP… (cours).
+
+**Pharmacocinétique.** Voie IV : action rapide ; élimination rapide ; demi-vie
+courte, de quelques minutes à environ 2 heures dans le compartiment profond
+(cours).
+
+**Caractéristiques réglementaires.** Liste I ; médicaments réservés à l'usage
+hospitalier et à l'usage en situation d'urgence (cours).
+
+### Les différentes classes
+
+Le cours rappelle les trois familles du domaine de la thrombose — empêcher la
+formation d'une thrombose ou la détruire quand elle est constituée :
+
+| Classe | But |
+| ------ | --- |
+| Anticoagulants | Empêcher l'activation de la thrombine, puis la synthèse de la fibrine |
+| Antiagrégants plaquettaires | Empêcher l'agrégation plaquettaire — le caillot provisoire |
+| Fibrinolytiques, thrombolytiques ou antithrombotiques | Dissoudre les caillots formés |
+
+La seconde grande famille de cette fiche — les **antifibrinolytiques** — agit à
+l'inverse : ils inhibent la plasmine et traitent ou préviennent les hémorragies
+consécutives à une fibrinolyse (cours).
 
 ## Médicaments de la famille
 
-| DCI | Particularité | Mention honorable |
-| --- | ------------- | ----------------- |
-| À compléter | À compléter | À compléter |
+Huit entrées, classes fibrinolytiques et antifibrinolytiques. Chaque DCI renvoie
+à sa fiche substance VIDAL.
+
+| Classe | DCI | Particularité | Mention honorable |
+| ------ | --- | ------------- | ----------------- |
+| Fibrinolytiques — activateurs du plasminogène | [Altéplase](https://www.vidal.fr/medicaments/substances/alteplase-5959.html) | Injectable ; poudre/solvant pour solution inj ou perfusion — 2, 10, 20 et 50 mg (cours) | ACTILYSE® |
+| Fibrinolytiques — activateurs du plasminogène | [Rétéplase](https://www.vidal.fr/medicaments/substances/reteplase-16968.html) | Injectable ; 10 U, poudre/solvant pour solution inj ; héparine et acide acétylsalicylique à administrer avant et après pour réduire le risque de re-thrombose (cours) | — |
+| Fibrinolytiques — activateurs du plasminogène | [Ténectéplase](https://www.vidal.fr/medicaments/substances/tenecteplase-21763.html) | Injectable ; 10 000 U/10 ml, poudre/solvant pour solution inj (cours) | — |
+| Fibrinolytiques — activateurs du plasminogène | [Urokinase](https://www.vidal.fr/medicaments/substances/urokinase-15265.html) | Injectable ; 100 000 UI ou 600 000 UI, poudre pour solution inj ou perfusion (cours) | — |
+| Fibrinolytiques — activateurs du plasminogène | [Streptokinase](https://www.vidal.fr/medicaments/substances/streptokinase-3360.html) | Injectable ; mention « 2019 » dans le cours (cours) | — |
+| Antifibrinolytiques — inhibiteurs de la plasmine | [Acide tranexamique](https://www.vidal.fr/medicaments/substances/acide-tranexamique-127.html) | Injectable, comprimé et solution buvable — 0,5 g/5 ml inj, cp 500 mg, sol buvable 1 g/10 ml ; injection IV lente à 1 ml/minute ; posologie à ajuster en cas d'insuffisance rénale légère à modérée (cours) | — |
+| Antifibrinolytiques — inhibiteurs de la plasmine | [Aprotinine](https://www.vidal.fr/medicaments/substances/aprotinine-374.html) | 500 000 UIK/50 ml, solution inj pour perfusion ; inhibe la plasmine (cours) | — |
+| Antifibrinolytiques — inhibiteurs de la plasmine | [Protéine C humaine](https://www.vidal.fr/medicaments/substances/proteine-c-humaine-18866.html) | Injectable, poudre/solvant pour solution inj ; inhibe la plasmine (cours) | — |
+
+<Callout type="info" title="Reconstitution et compatibilité">
+Lyophilisat — poudre à reconstituer ; utilisation immédiate après
+reconstitution ; vérifier l'administration par voie veineuse spécifique et la
+compatibilité du solvant. Le cours donne l'exemple de la Métalyse®,
+incompatible avec les solutions de glucose (cours).
+</Callout>
 
 ## Indications
 
-- À compléter avec les cours.
-- À compléter avec les cours.
-- À compléter avec les cours.
+- **Embolie pulmonaire massive à la phase aiguë** avec instabilité
+  hémodynamique (cours).
+- **Infarctus du myocarde** avec présence d'une élévation persistante du
+  segment ST ou apparition d'un bloc de branche gauche dans les 12 heures
+  suivant le début des symptômes (cours).
+- **Accident vasculaire cérébral ischémique à la phase aiguë** : le plus tôt
+  possible dans le délai des 4 h 30 suivant l'apparition des symptômes (cours).
+- **Occlusions artérielles et veineuses** provoquées par un thrombus en
+  formation ou récemment formé (cours).
+- **Restauration de la perméabilité des cathéters veineux** — cathéters veineux
+  centraux et cathéters de dialyse — en cas d'obstruction liée à un thrombus en
+  formation ou récemment formé (cours).
+- **Acide tranexamique** — prévention et traitement des hémorragies dues à une
+  fibrinolyse générale ou locale chez l'adulte et l'enfant à partir d'un an ;
+  ménorragies et métrorragies, hémorragies gastro-intestinales, interventions
+  chirurgicales, hémorragies dues à l'administration d'un agent fibrinolytique
+  (cours).
+- **Aprotinine** — prévention des risques de saignements et des besoins en
+  transfusion chez l'adulte avec pontage aorto-coronarien isolé sous circulation
+  extracorporelle (cours).
+- **Protéine C humaine** — déficit en protéine C, épisodes thrombotiques,
+  prévention de la thrombose en cas de contre-indication aux héparines ou aux
+  AVK (cours).
 
 ## Contre-indications
 
-- À compléter avec les cours.
-- À compléter avec les cours.
-- À compléter avec les cours.
+Le cours donne la liste détaillée des contre-indications des fibrinolytiques ;
+le volet antifibrinolytique tient à l'acide tranexamique.
+
+<Tabs
+  items={['Fibrinolytiques', 'Antifibrinolytiques']}
+  label="Classe"
+>
+  <Tab value="Fibrinolytiques">
+    Liste du cours — toutes les pathologies à risque hémorragique.
+
+    - Toute pathologie à risque hémorragique : néoplasie, ulcération (cours).
+    - Tous les antécédents de pathologie hémorragique, notamment chirurgicale
+      (cours).
+    - Antécédents de lésion sévère du système nerveux central — par exemple
+      néoplasie, anévrisme, intervention chirurgicale intracérébrale ou
+      intrarachidienne (cours).
+    - Antécédents connus d'accident vasculaire cérébral ischémique ou d'accident
+      ischémique transitoire (AIT) au cours des six mois précédents, sauf si
+      l'accident vasculaire cérébral ischémique aigu est survenu dans les 4 h 30
+      précédentes (cours).
+    - Déficit neurologique mineur ou symptômes s'améliorant rapidement avant
+      l'initiation du traitement ; accident vasculaire cérébral jugé sévère
+      cliniquement — par exemple NIHSS supérieur à 25 — et/ou par imagerie ;
+      crise convulsive au début de l'accident vasculaire cérébral (cours).
+    - Plaquettes inférieures à 100 000/mm³ (cours).
+    - Hypertension artérielle sévère non contrôlée ; endocardite bactérienne,
+      péricardite ; pancréatite aiguë (cours).
+    - Hépatopathie sévère, y compris insuffisance hépatique, cirrhose,
+      hypertension portale — varices œsophagiennes — et hépatite évolutive
+      (cours).
+    - Glycémie inférieure à 50 mg/dl ou supérieure à 400 mg/dl — soit
+      inférieure à 2,8 mmol/l ou supérieure à 22,2 mmol/l (cours).
+    - Utilisation chez l'enfant et l'adolescent (cours).
+    - L'ACTILYSE® n'est pas indiqué pour le traitement de l'accident vasculaire
+      cérébral ischémique (cours).
+  </Tab>
+  <Tab value="Antifibrinolytiques">
+
+    - Acide tranexamique : insuffisance rénale grave (cours).
+    - Aprotinine et protéine C humaine : non précisé dans les sources consultées
+      (cours, VIDAL, RCP, OMS).
+  </Tab>
+</Tabs>
 
 ## Interactions médicamenteuses
 
-- À compléter avec les cours.
-- À compléter avec les cours.
-- À compléter avec les cours.
+- **Peu d'études d'interaction** (cours).
+- **Potentialisation du risque hémorragique** avec tous les médicaments agissant
+  sur la thrombose durant la période d'abaissement du fibrinogène plasmatique —
+  jusqu'à 2 jours après un traitement fibrinolytique de l'infarctus (cours).
+- **Rétéplase** — l'héparine et l'acide acétylsalicylique s'administrent avant
+  et après la rétéplase afin de réduire le risque de re-thrombose (cours).
+- **Acide tranexamique** — effet antifibrinolytique en lien avec le mécanisme
+  d'action (cours).
+
+<Callout type="error" title="Héparine + rétéplase — posologie du cours">
+Dose d'héparine recommandée : 5 000 UI en bolus avant le traitement par
+rétéplase, suivi d'une perfusion de 1 000 UI par heure, celle-ci devant être
+posée après le second bolus de rétéplase. Poursuite de l'héparine pendant au
+moins 24 heures, de préférence 48 à 72 heures, avec un TCA cible entre 1,5 et
+2 fois celui du témoin. Dose initiale d'acide acétylsalicylique avant
+thrombolyse : au moins 250 mg — 250 à 350 mg — suivie par 75 à 150 mg par jour
+jusqu'à la fin de l'hospitalisation (cours).
+</Callout>
 
 ## Effets secondaires
 
-| Effet | Fréquence (si disponible) | Conduite |
-| --- | --- | --- |
-| À compléter | À compléter | À compléter |
+Les fréquences proviennent du RCP consulté pour l'altéplase ; « Non précisé »
+signifie que les sources consultées ne donnent pas de valeur.
+
+| Classe | Effet indésirable | Fréquence | Conduite |
+| ------ | ----------------- | --------- | -------- |
+| Fibrinolytiques | Hémorragie — toute hémorragie, dont hémorragie intracrânienne | Très fréquent — RCP ACTILYSE® | Interrompre, arrêt du traitement, surveillance clinique |
+| Fibrinolytiques | Ischémie myocardique / angor récurrent ; hypotension et insuffisance cardiaque / œdème pulmonaire | Très fréquent — RCP ACTILYSE® | Surveillance hémodynamique |
+| Fibrinolytiques | Hémorragie intracrânienne dans l'infarctus du myocarde et l'embolie pulmonaire ; hémorragie pharyngée, gastro-intestinale, ecchymoses, hémorragie urogénitale, hémorragie au site d'injection ; choc cardiogénique, arrêt cardiaque, récidive d'infarctus | Fréquent — RCP ACTILYSE® | — |
+| Fibrinolytiques | Hémorragie pulmonaire, épistaxis, otorragie ; arythmies de reperfusion, régurgitation mitrale, embolie pulmonaire ; diminution de la pression artérielle | Peu fréquent — RCP ACTILYSE® | — |
+| Fibrinolytiques | Réactions d'hypersensibilité — éruption cutanée, urticaire, bronchospasme, angio-œdème, hypotension, choc ; saignements oculaires, hémopéricarde, hémorragie rétropéritonéale ; nausées | Rare — RCP ACTILYSE® | — |
+| Fibrinolytiques | Réactions allergiques graves ou anaphylactiques ; événements d'origine centrale — crises d'épilepsie, convulsions, aphasie, délires | Très rare — RCP ACTILYSE® | — |
+| Fibrinolytiques | Saignements d'organes à paroi parenchymateuse ; vomissements ; élévation de la température ; embolie graisseuse ; besoin de transfusion | Fréquence non déterminée — RCP ACTILYSE® | — |
+| Fibrinolytiques | Hémorragie, hypotension, troubles du rythme auriculo-ventriculaires ; ischémie myocardique / angor récurrent, insuffisance cardiaque / œdème pulmonaire | Non précisée (cours) | Risque hémorragique principal |
+| Antifibrinolytiques — acide tranexamique | Non précisé dans les sources consultées | — | — |
+| Antifibrinolytiques — aprotinine | Non précisé dans les sources consultées | — | — |
+| Antifibrinolytiques — protéine C humaine | Non précisé dans les sources consultées | — | — |
 
 ## Surveillances
 
-- À compléter avec les cours.
-- À compléter avec les cours.
-- À compléter avec les cours.
+<Steps>
+  <Step>
+    ### Protocole d'administration
+
+    Bolus + perfusion intraveineuse de 1 à 2 heures ; lyophilisat à
+    reconstituer avec utilisation immédiate ; vérifier la voie veineuse
+    spécifique et la compatibilité du solvant. Deux schémas selon le délai de
+    prise en charge — schéma « accéléré » de 90 minutes pour un traitement
+    débutable dans les 6 heures suivant l'apparition des symptômes, schéma « des
+    3 heures » entre 6 et 12 heures après l'apparition des symptômes (cours).
+  </Step>
+  <Step>
+    ### Traçabilité et conservation
+
+    Médicaments biologiques : enregistrer le nom et le numéro de lot du produit
+    administré dans le dossier du patient. Conservation selon le produit : à
+    température ambiante — moins de 25 °C — ou au réfrigérateur — entre 2 °C et
+    8 °C — dans l'emballage d'origine, à l'abri de la lumière (cours).
+  </Step>
+  <Step>
+    ### Dépistage des effets indésirables
+
+    Signe d'efficacité, de surdosage, d'effet indésirable attendu ou inattendu :
+    risque hémorragique en premier plan, tension artérielle, rythme cardiaque,
+    TCA sous héparine (cible 1,5 à 2 fois le témoin) (cours).
+  </Step>
+</Steps>
+
+- **Grossesse** — données limitées, peu d'utilisation ; des études précliniques
+  ont révélé une immaturité fœtale et/ou une embryotoxicité ; en cas de menace
+  du pronostic vital, peser bénéfices attendus et risques éventuels (cours).
+- **Allaitement** — pas d'information (cours).
+- **Population pédiatrique** — aucune donnée disponible pour la rétéplase
+  (cours).
+- **Éducation thérapeutique** — indication, modalité d'administration et
+  surveillance expliquées au patient (les 5 questions du médicament du cours).
+
+## Sources
+
+**Cours**
+
+- Les thrombolytiques ou fibrinolytiques — Dr K. Martin-Latry, CHU de
+  Bordeaux ; UE 2.11 S1, Pharmacologie et thérapeutique (groupe de travail
+  UE 2.11 — universités de Bordeaux, Limoges et Poitiers, IFSI région Nouvelle-
+  Aquitaine).
+
+**VIDAL — fiches substance par DCI**
+
+- Fibrinolytiques : [Altéplase](https://www.vidal.fr/medicaments/substances/alteplase-5959.html),
+  [Rétéplase](https://www.vidal.fr/medicaments/substances/reteplase-16968.html),
+  [Ténectéplase](https://www.vidal.fr/medicaments/substances/tenecteplase-21763.html),
+  [Urokinase](https://www.vidal.fr/medicaments/substances/urokinase-15265.html),
+  [Streptokinase](https://www.vidal.fr/medicaments/substances/streptokinase-3360.html)
+- Antifibrinolytiques : [Acide tranexamique](https://www.vidal.fr/medicaments/substances/acide-tranexamique-127.html),
+  [Aprotinine](https://www.vidal.fr/medicaments/substances/aprotinine-374.html),
+  [Protéine C humaine](https://www.vidal.fr/medicaments/substances/proteine-c-humaine-18866.html)
+
+**ANSM — Résumés des caractéristiques du produit**
+
+- [ACTILYSE® poly, altéplase — RCP](https://agence-prd.ansm.sante.fr/php/ecodex/rcp/R0450989.htm)
+
+**OMS (Organisation mondiale de la Santé)**
+
+- [Stroke — fiche d'information OMS](https://www.who.int/news-room/fact-sheets/detail/stroke)
+- [Cardiovascular diseases (CVDs) — fiche d'information OMS](https://www.who.int/news-room/fact-sheets/detail/cardiovascular-diseases-(cvds))
+- [Index ATC/DDD de l'OMS (B01 — antithrombotiques)](https://www.whocc.no/atc_ddd_index/)

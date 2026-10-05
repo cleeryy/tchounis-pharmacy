@@ -1,49 +1,343 @@
 ---
 title: 'Antiviraux'
-description: 'Squelette de fiche « Antiviraux » — à compléter avec les cours UE 2.11 S3.'
+description: 'Antiviraux : propriétés, 46 molécules, indications, contre-indications, interactions, effets indésirables et surveillances — UE 2.11 S3.'
 ---
 
-> Contenu à compléter avec les cours UE 2.11 S3.
+import { Tabs, Tab } from 'fumadocs-ui/components/tabs';
+import { Steps, Step } from 'fumadocs-ui/components/steps';
+
+Les antiviraux sont les anti-infectieux qui ciblent le virus : anti-Herpesviridae, antiviraux de la grippe, antirétroviraux du VIH, antiviraux des hépatites B et C. Cette fiche suit le plan imposé par l'UE 2.11 S3. Les chiffres, fréquences et délais proviennent du cours et des références listées en [Sources](#sources) ; ce qui n'est documenté par aucune de ces sources est indiqué « Non précisé ».
 
 ## Propriétés
 
-Cette fiche rassemble l'essentiel commun de la famille : ce qu'elle fait,
-sans sur-expliquer l'évident. Le mécanisme commun détaillé est à compléter
-avec les cours UE 2.11 S3. Seules les particularités utiles en pratique IDE
-sont retenues dans les sections ci-dessous.
+Le virus vit en parasite intracellulaire strict, sans capacité à
+s'autorépliquer, et présente une grande diversité — virus à ADN et à ARN. Ces
+propriétés intrinsèques expliquent les difficultés du traitement, auxquelles
+s'ajoutent trois situations cliniques distinctes (cours) :
+
+- infection aiguë — traitement de la grippe ;
+- infection latente avec réactivation — herpesviridae ;
+- infection chronique — VIH, VHB et VHC.
+
+Les cibles pharmacologiques sont les étapes du cycle de réplication viral :
+fixation du virus à la cellule cible, fusion des membranes, synthèse des
+acides nucléiques avant intégration, intégration du génome viral au génome de
+la cellule hôte, maturation protéique des virions, libération des virions.
+Deux obstacles structurent tout l'antivirothérapie : l'interférence avec le
+métabolisme cellulaire normal — risque de cytotoxicité — et la variabilité
+génétique des virus (cours).
+
+<Callout type="info" title="Objectifs de la prise en charge">
+Cliniques : amélioration rapide des symptômes. Virologiques : diminution des
+réservoirs sanguins. Immunologiques : préservation du taux des lymphocytes T
+CD4 et restauration immunitaire. Épidémiologiques : diminution du risque de
+transmission sexuelle, sanguine et mère-enfant (cours).
+
+Pour les hépatites B et C : prévenir la progression vers la cirrhose ou le
+carcinome hépatocellulaire, et pour le VHC obtenir une guérison virologique —
+ARN du VHC indétectable 12 semaines au moins après la fin du traitement
+(cours).
+</Callout>
+
+### Les différentes classes
+
+| Classe | Ce que c'est | Quand l'utiliser |
+| ------ | ------------ | ---------------- |
+| Anti-Herpesviridae | Inhibiteurs de la synthèse des acides nucléiques par inhibition de l'ADN polymérase — aciclovir, valaciclovir, famciclovir, ganciclovir, valganciclovir — plus foscarnet, cidofovir et letermovir | Herpès simplex, varicelle-zona, cytomégalovirus (cours) |
+| Antiviraux de la grippe | Antineuraminidases, inhibiteurs de la sortie du virus de la cellule — zanamivir, oseltamivir | Traitement curatif de la grippe ; la prévention repose sur la vaccination annuelle avant l'épidémie (cours) |
+| INTI — inhibiteurs nucléosidiques de la transcriptase inverse | Zidovudine, lamivudine, abacavir, ténofovir, emtricitabine | Cœur de la trithérapie du VIH (cours) |
+| INNTI — inhibiteurs non nucléosidiques de la transcriptase inverse | Névirapine, efavirenz, étravirine, rilpivirine | En association (cours) |
+| IP — inhibiteurs de protéase | Fosamprénavir, atazanavir, darunavir, ritonavir | HAART, avec ritonavir en booster pharmacologique (cours) |
+| INI — inhibiteurs d'intégrase | Raltégravir, elvitégravir, dolutégravir, bictégravir | Option d'initiation recommandée en 2 INTI + 1 INI (cours) |
+| Inhibiteurs de fusion et antagonistes de CCR5 | Enfuvirtide, maraviroc | Autres antirétroviraux (cours) |
+| Anti-VHB | Interféron pégylé alfa-2a, analogues nucléosidiques ou nucléotidiques de 2e génération — lamivudine, adéfovir, entécavir, telbivudine, ténofovir | Virosuppression prolongée du virus de l'hépatite B (cours) |
+| Anti-VHC | Inhibiteurs de la polymérase NS5B, de NS5A et de la protéase NS3A4 — les agents antiviraux directs (AAD) — plus ribavirine | Hépatite C : guérison virologique attestée par une réponse virologique soutenue (cours) |
+
+<Callout type="info" title="Logique de choix — VIH">
+Option d'initiation : 2 INTI + 1 INI — ténofovir/émtricitabine +
+dolutégravir, abacavir/lamivudine + dolutégravir, ténofovir/émtricitabine +
+elvitégravir/cobicistat, ténofovir/émtricitabine + raltégravir — choisis en
+fonction de la charge virale et de la fonction rénale ; ou 2 INTI + 1 INNTI —
+ténofovir/émtricitabine + rilpivirine ; ou 2 INTI + 1 IP boosterisé —
+ténofovir/émtricitabine + darunavir/ritonavir. Traitement systématique chez le
+patient VIH symptomatique ; recommandé chez le patient asymptomatique quel que
+soit le nombre de lymphocyttes CD4, y compris au-dessus de 500/mm3 (cours).
+
+Traitement continu au long cours, contraignant — contraintes horaires,
+alimentaires ou galéniques, suivi médical et biologique régulier, interactions
+médicamenteuses, toxicité au long cours, émergence de résistances — d'où
+l'observance, l'éducation thérapeutique et l'intérêt du suivi thérapeutique
+pharmacologique (cours).
+</Callout>
 
 ## Médicaments de la famille
 
-| DCI | Particularité | Mention honorable |
-| --- | ------------- | ----------------- |
-| À compléter | À compléter | À compléter |
+Quarante-six entrées classées par famille pharmacologique. Chaque DCI renvoie
+à sa fiche substance VIDAL, sauf mention contraire.
+
+| Classe | DCI | Particularité | Mention honorable |
+| ------ | --- | ------------- | ----------------- |
+| Anti-Herpesviridae — HSV et VZV | [Aciclovir](https://www.vidal.fr/medicaments/substances/aciclovir-156.html) | Toxicité digestive, rénale et neurologique, aggravée en cas d'insuffisance rénale ; voie orale, voie IV dans les infections sévères (cours) | ZOVIRAX® + génériques ; existe aussi en crème et en pommade ophtalmique |
+| Anti-Herpesviridae — HSV et VZV | [Valaciclovir](https://www.vidal.fr/medicaments/substances/valaciclovir-8161.html) | Voie orale (cours) | ZÉLITREX® + génériques |
+| Anti-Herpesviridae — HSV et VZV | [Famciclovir](https://www.vidal.fr/medicaments/substances/famciclovir-15497.html) | Voie orale (cours) | ORAVIR® |
+| Anti-Herpesviridae — CMV | [Valganciclovir](https://www.vidal.fr/medicaments/substances/valganciclovir-21836.html) | Toxicité hématologique — neutropénie et anémie (cours) ; voie orale | ROVALCYTE® |
+| Anti-Herpesviridae — CMV | [Ganciclovir](https://www.vidal.fr/medicaments/substances/ganciclovir-6922.html) | Toxicité hématologique — neutropénie et anémie (cours) ; voie IV | CYMEVAN® |
+| Anti-Herpesviridae — CMV | [Foscarnet](https://www.vidal.fr/medicaments/substances/foscarnet-sodique-10121.html) | Toxicité rénale ; hydratation veineuse nécessaire (cours) ; voie IV | FOSCAVIR® |
+| Anti-Herpesviridae — CMV | [Cidofovir](https://www.vidal.fr/medicaments/substances/cidofovir-17406.html) | Toxicité rénale (cours) ; voie IV | CIDOFOVIR NEXCAPE® ATU |
+| Anti-Herpesviridae — CMV | [Letermovir](https://www.vidal.fr/medicaments/substances/letermovir-25379.html) | Prophylaxie de la réactivation du CMV lors de greffe de moelle ; voie orale (cours) | PREVYMIS® |
+| Antiviraux de la grippe | [Zanamivir](https://www.vidal.fr/medicaments/substances/zanamivir-18715.html) | Antineuraminidase, inhibiteur de la sortie du virus ; traitement curatif de la grippe (cours) | DECTOVA® injection |
+| Antiviraux de la grippe | [Oseltamivir](https://www.vidal.fr/medicaments/substances/oseltamivir-21893.html) | Antineuraminidase ; traitement curatif de la grippe (cours) | TAMIFLU®, EBIFLUMIN®, générique |
+| INTI | [Zidovudine](https://www.vidal.fr/medicaments/substances/zidovudine-3728.html) | Administration orale ; effets indésirables des INTI : troubles digestifs (cours) | RETROVIR® |
+| INTI | [Lamivudine](https://www.vidal.fr/medicaments/substances/lamivudine-16728.html) | État porteur de l'hépatite B ; risque d'atteinte hépatique (cours) ; anti-VHB aussi | EPIVIR® ; KIVEXA® (abacavir + lamivudine) |
+| INTI | [Abacavir](https://www.vidal.fr/medicaments/substances/abacavir-18415.html) | Risque d'hypersensibilité si HLA B*57*01 → génotypage obligatoire (cours) | ZIAGEN® ; KIVEXA® (abacavir + lamivudine) |
+| INTI | [Ténofovir](https://www.vidal.fr/medicaments/substances/tenofovir-disoproxil-18995.html) | Tubulopathie proximale → surveillance de la fonction rénale (cours) ; anti-VHB aussi ; fiche VIDAL intitulée « ténofovir disoproxil » | VIREAD® ; TRUVADA® (ténofovir + emtricitabine), ATRIPLA®, EVIPLERA®, STRIBID®, BIKTARVY® |
+| INTI | [Emtricitabine](https://www.vidal.fr/medicaments/substances/emtricitabine-22578.html) | Cytopénie (cours) | EMTRIVA® ; TRUVADA®, ATRIPLA®, EVIPLERA® en association fixe |
+| INNTI | [Névirapine](https://www.vidal.fr/medicaments/substances/nevirapine-18204.html) | Effets indésirables des INNTI : réactions cutanées (cours) | VIRAMUNE® |
+| INNTI | [Efavirenz](https://www.vidal.fr/medicaments/substances/efavirenz-18667.html) | Troubles du système nerveux central, hépatite (cours) | SUSTIVA® ; ATRIPLA® en association fixe |
+| INNTI | [Étravirine](https://www.vidal.fr/medicaments/substances/etravirine-22951.html) | Réactions cutanées (cours) | INTELENCE® |
+| INNTI | [Rilpivirine](https://www.vidal.fr/medicaments/substances/rilpivirine-23462.html) | Risque d'hypersensibilité, allongement de l'espace QT (cours) | EDURANT® ; EVIPLERA® en association fixe |
+| IP | [Fosamprénavir](https://www.vidal.fr/medicaments/substances/fosamprenavir-22644.html) | Métabolisme CYP3A4 et inhibiteur du CYP3A4 : interactions médicamenteuses (cours) | TELZIR® |
+| IP | [Atazanavir](https://www.vidal.fr/medicaments/substances/atazanavir-22626.html) | Hyperbilirubinémie, voire ictère, troubles gastro-intestinaux, troubles du système nerveux central (cours) | REYATAZ® |
+| IP | [Darunavir](https://www.vidal.fr/medicaments/substances/darunavir-22877.html) | Troubles gastro-intestinaux, allergie (cours) | PREZISTA® |
+| IP | [Ritonavir](https://www.vidal.fr/medicaments/substances/ritonavir-17246.html) | Booster pharmacologique des autres inhibiteurs de protéase (cours) | NORVIR® |
+| INI | [Raltégravir](https://www.vidal.fr/medicaments/substances/raltegravir-22913.html) | Option d'initiation 2 INTI + 1 INI (cours) | ISENTRESS® ; STRIBID® en association fixe |
+| INI | [Elvitégravir](https://www.vidal.fr/medicaments/substances/elvitegravir-24006.html) | En association avec cobicistat (cours) | VITEKTA® ; STRIBID® (ténofovir + emtricitabine + elvitégravir + cobicistat) |
+| INI | [Dolutégravir](https://www.vidal.fr/medicaments/substances/dolutegravir-24024.html) | Première option d'initiation recommandée (cours) | TIVICAY® |
+| INI | [Bictégravir](https://www.vidal.fr/medicaments/substances/bictegravir-25645.html) | Option d'initiation en association fixe (cours) | BIKTARVY® (ténofovir + emtricitabine + bictégravir) |
+| Inhibiteurs de fusion | [Enfuvirtide](https://www.vidal.fr/medicaments/substances/enfuvirtide-22466.html) | Injectable SC (cours) | FUZEON® |
+| Antagonistes de CCR5 | [Maraviroc](https://www.vidal.fr/medicaments/substances/maraviroc-23023.html) | Voie orale (cours) | CELSENTRI® |
+| Anti-VHB — interféron | Péginterféron alfa-2a | Syndrome pseudo-grippal, asthénie, syndrome dépressif, leuco-neutropénie, thrombopénie, hypothyroïdie : surveillance (cours) ; 1 injection SC par semaine | PEGASYS® injection — aucune fiche substance VIDAL référencée pour cette DCI |
+| Anti-VHB — analogues nucléosidiques ou nucléotidiques de 2e génération | [Adéfovir](https://www.vidal.fr/medicaments/substances/adefovir-21864.html) | Voie orale (cours) | HEPSERA® |
+| Anti-VHB — analogues nucléosidiques ou nucléotidiques de 2e génération | [Entécavir](https://www.vidal.fr/medicaments/substances/entecavir-22834.html) | Voie orale (cours) | BARACLUDE® |
+| Anti-VHB — analogues nucléosidiques ou nucléotidiques de 2e génération | [Telbivudine](https://www.vidal.fr/medicaments/substances/telbivudine-23022.html) | Voie orale (cours) | SEBIVO® |
+| Anti-VHC — inhibiteurs de NS5B | [Sofosbuvir](https://www.vidal.fr/medicaments/substances/sofosbuvir-24014.html) | Bradycardie en association avec l'amiodarone (cours) | SOVALDI® ; HARVONI®, EPCLUSA®, VOSEVI® en association fixe |
+| Anti-VHC — inhibiteur de NS5B + inhibiteur de NS5A | [Ledipasvir](https://www.vidal.fr/medicaments/substances/ledipasvir-24326.html) | En association avec sofosbuvir (cours) | HARVONI® (sofosbuvir + ledipasvir) |
+| Anti-VHC — inhibiteur de NS5B + inhibiteur de NS5A | [Velpatasvir](https://www.vidal.fr/medicaments/substances/velpatasvir-25029.html) | En association avec sofosbuvir (cours) | EPCLUSA® (sofosbuvir + velpatasvir), VOSEVI® en triple association |
+| Anti-VHC — inhibiteur de NS5A | [Grazoprévir](https://www.vidal.fr/medicaments/substances/grazoprevir-24636.html) | En association avec elbasvir (cours) | ZEPATIER® (grazoprévir + elbasvir) |
+| Anti-VHC — inhibiteur de NS5A | [Elbasvir](https://www.vidal.fr/medicaments/substances/elbasvir-24637.html) | En association avec grazoprévir (cours) | ZEPATIER® |
+| Anti-VHC — inhibiteur de protéase NS3A4 + inhibiteur de NS5A | [Glecaprévir](https://www.vidal.fr/medicaments/substances/glecaprevir-25296.html) | En association avec pibrentasvir (cours) | MAVIRET® (glecaprévir + pibrentasvir) |
+| Anti-VHC — inhibiteur de protéase NS3A4 + inhibiteur de NS5A | [Pibrentasvir](https://www.vidal.fr/medicaments/substances/pibrentasvir-25297.html) | En association avec glecaprévir (cours) | MAVIRET® |
+| Anti-VHC — inhibiteur de protéase NS3A4/ritonavir + inhibiteur de NS5A | [Paritaprévir](https://www.vidal.fr/medicaments/substances/paritaprevir-24372.html) | En association avec ombitasvir (cours) | VIEKIRAX® (paritaprévir/ritonavir + ombitasvir) |
+| Anti-VHC — inhibiteur de NS5A | [Ombitasvir](https://www.vidal.fr/medicaments/substances/ombitasvir-24371.html) | En association avec paritaprévir/ritonavir (cours) | VIEKIRAX® |
+| Anti-VHC — triple association | [Voxilaprevir](https://www.vidal.fr/medicaments/substances/voxilaprevir-25310.html) | Inhibiteur de protéase NS3A4 en triple association (cours) | VOSEVI® (sofosbuvir + velpatasvir + voxilaprevir) |
+| Anti-VHC — nucléoside analogue | [Ribavirine](https://www.vidal.fr/medicaments/substances/ribavirine-18579.html) | Anémie, surveillance de la NFS et adaptations nécessaires (cours) ; bithérapie PEG-IFN/ribavirine jusqu'en 2014 | — |
+| Anti-VHC — 1re génération d'AAD | [Bocéprévir](https://www.vidal.fr/medicaments/substances/boceprevir-23368.html) | 1re génération d'agents antiviraux directs entre 2011 et 2014 (cours) | — |
+| Anti-VHC — 1re génération d'AAD | [Télaprévir](https://www.vidal.fr/medicaments/substances/telaprevir-23367.html) | 1re génération d'agents antiviraux directs entre 2011 et 2014 (cours) | — |
+
+<Callout type="warning" title="Voies et formes du VIH — associations fixes du cours">
+KIVEXA® = abacavir + lamivudine. TRUVADA® = ténofovir + emtricitabine.
+ATRIPLA® = ténofovir + emtricitabine + efavirenz. EVIPLERA® = ténofovir +
+emtricitabine + rilpivirine. STRIBID® = ténofovir + emtricitabine +
+elvitégravir + cobicistat. BIKTARVY® = ténofovir + emtricitabine +
+bictégravir. Vaccination anti-VHB : ENGERIX B® et HBVAXPRO® (cours).
+</Callout>
 
 ## Indications
 
-- À compléter avec les cours.
-- À compléter avec les cours.
-- À compléter avec les cours.
+- **Herpès simplex et varicelle-zona** — diminution de la fréquence et de
+  l'intensité des signes cliniques : primo-infection d'herpès génital,
+  récurrence d'herpès génital ou labial, kératite herpétique, prévention des
+  douleurs du zona et des complications du zona ophtalmique chez
+  l'immunocompétent, traitement du zona de l'immunodéprimé, encéphalopathie
+  herpétique par aciclovir IV (cours).
+- **Cytomégalovirus** — réactivation du CMV en contexte d'immunodépression :
+  rétinite à CMV au cours du SIDA, de la transplantation d'organes, de la
+  greffe de moelle ; prophylaxie de la réactivation du CMV lors de greffe de
+  moelle par le letermovir (cours).
+- **Grippe** — traitement curatif par antineuraminidases ; traitement
+  symptomatique — repos au lit, hydratation abondante, antipyrétiques — et pas
+  d'antibiothérapie préventive ; prévention par la vaccination annuelle avant
+  l'arrivée de l'épidémie (cours).
+- **VIH** — traitement continu au long cours, systématique chez le patient
+  symptomatique et recommandé chez le patient asymptomatique (cours).
+- **Hépatite B** — améliorer la survie et la qualité de vie en prévenant la
+  progression vers la cirrhose ou le carcinome hépatocellulaire et le décès,
+  par virosuppression prolongée (cours).
+- **Hépatite C** — réduction de la mortalité toutes causes et des
+  complications hépatiques par une guérison virologique attestée (cours).
+- **Prévention** — vaccination anti-VHB : ENGERIX B®, HBVAXPRO® ; vaccination
+  anti-grippale annuelle (cours).
 
 ## Contre-indications
 
-- À compléter avec les cours.
-- À compléter avec les cours.
-- À compléter avec les cours.
+Le cours ne détaille aucune contre-indication de la famille ; seul l'onglet
+Antiviraux de la grippe provient d'un RCP ANSM consulté.
+
+<Tabs
+  items={['Anti-Herpesviridae', 'Antiviraux de la grippe', 'Antirétroviraux', 'Anti-VHB', 'Anti-VHC']}
+  label="Classe"
+>
+  <Tab value="Anti-Herpesviridae">
+    Non précisé dans les sources consultées (cours, VIDAL, RCP, OMS).
+  </Tab>
+  <Tab value="Antiviraux de la grippe">
+    Lus sur le RCP de l'oséltamivir (TAMIFLU® et génériques).
+
+    - Hypersensibilité à la substance active ou à l'un des excipients mentionnés
+      à la rubrique 6.1 (RCP).
+  </Tab>
+  <Tab value="Antirétroviraux">
+    Non précisé dans les sources consultées (cours, VIDAL, RCP, OMS).
+  </Tab>
+  <Tab value="Anti-VHB">
+    Non précisé dans les sources consultées (cours, VIDAL, RCP, OMS).
+  </Tab>
+  <Tab value="Anti-VHC">
+    Non précisé dans les sources consultées (cours, VIDAL, RCP, OMS).
+  </Tab>
+</Tabs>
 
 ## Interactions médicamenteuses
 
-- À compléter avec les cours.
-- À compléter avec les cours.
-- À compléter avec les cours.
+**Inhibiteurs de protéase.** Métabolisme CYP3A4 et propriétés d'inhibiteurs
+du CYP3A4 : interactions médicamenteuses majeures. Ritonavir sert de booster
+pharmacologique (cours).
+
+**Antiviraux anti-VHC.** Effets indésirables des AAD avec le mot d'ordre
+« IM ! » — interactions médicamenteuses (cours).
+
+<Callout type="error" title="Docétaxel + inhibiteurs de protéase — cas du cours">
+Patiente de 58 ans suivie pour une infection VIH traitée par inhibiteurs de
+protéase depuis plus d'un an — NORVIR® = ritonavir et REYATAZ® = atazanavir —,
+traitée pour un cancer du sein par une 1re cure de docétaxel 100 mg/m2. Dans
+les 10 jours qui suivent : signes en faveur d'un surdosage avec
+pancytopénie, y compris agranulocytose fébrile, et éruption cutanée.
+
+Mécanisme : probable interaction pharmacocinétique entre docétaxel et
+ritonavir/atazanavir sur la voie CYP3A4, avec inhibition du métabolisme du
+docétaxel, d'où accumulation et surdosage (cours).
+</Callout>
+
+**Sofosbuvir.** Bradycardie en association avec l'amiodarone (cours).
 
 ## Effets secondaires
 
-| Effet | Fréquence (si disponible) | Conduite |
-| --- | --- | --- |
-| À compléter | À compléter | À compléter |
+Les fréquences proviennent des RCP consultés ; « Non précisé » signifie que les
+sources consultées ne donnent pas de valeur.
+
+| Classe | Effet indésirable | Fréquence | Conduite |
+| ------ | ----------------- | --------- | -------- |
+| Anti-Herpesviridae — aciclovir | Céphalées | Très fréquent — RCP ZOVIRAX® | — |
+| Anti-Herpesviridae — aciclovir | Nausées, vomissements, diarrhées, douleurs abdominales, sensations d'ébriété | Fréquent — RCP ZOVIRAX® | — |
+| Anti-Herpesviridae — aciclovir | Prurit ; augmentation de l'urée et de la créatinine sanguines ; augmentations réversibles de la bilirubine et des enzymes hépatiques sériques | Fréquent — RCP ZOVIRAX® | — |
+| Anti-Herpesviridae — aciclovir | Éruptions cutanées, urticaire | Peu fréquent — RCP ZOVIRAX® | — |
+| Anti-Herpesviridae — aciclovir | Thrombopénie, leucopénie, réactions anaphylactiques, dyspnées, atteinte hépatique aiguë, insuffisance rénale aiguë et douleur rénale | Fréquence non déterminée — RCP ZOVIRAX® | Surveiller la fonction rénale, notamment chez le sujet âgé ou l'insuffisant rénal |
+| Anti-Herpesviridae | Toxicité digestive, rénale, neurologique (aciclovir) ; toxicité hématologique — neutropénie et anémie (ganciclovir, valganciclovir) ; toxicité rénale (foscarnet, cidofovir) | Non précisée (cours) | Surveillance adaptée à chaque molécule |
+| Antiviraux de la grippe | Céphalées, nausées | Très fréquent — RCP oséltamivir | — |
+| Antiviraux de la grippe | Vomissements, douleurs abdominales, dyspepsie, insomnie | Fréquent — RCP oséltamivir | — |
+| INTI | Troubles digestifs | Non précisée (cours) | — |
+| INTI | Atteinte hépatique (lamivudine), hypersensibilité si HLA B*57*01 (abacavir), tubulopathie proximale (ténofovir), cytopénie (emtricitabine) | Non précisée (cours) | Génotypage obligatoire, surveillance de la fonction rénale |
+| INNTI | Réactions cutanées | Non précisée (cours) | — |
+| INNTI | Troubles du système nerveux central, hépatite (efavirenz) ; hypersensibilité et allongement de l'espace QT (rilpivirine) | Non précisée (cours) | — |
+| IP | Hyperbilirubinémie, voire ictère, troubles gastro-intestinaux, troubles du système nerveux central (atazanavir) ; troubles gastro-intestinaux, allergie (darunavir) | Non précisée (cours) | Interactions médicamenteuses : risque d'accumulation des substrats |
+| Anti-VHB | Syndrome pseudo-grippal, asthénie, syndrome dépressif, leuco-neutropénie, thrombopénie, hypothyroïdie (interférons) ; tubulopathies proximales (ténofovir) | Non précisée (cours) | Surveillance |
+| Anti-VHC | Fatigue, céphalées, insomnie, nausées et diarrhée | Non précisée (cours) — « bon profil de tolérance » | — |
+| Anti-VHC | Bradycardie (sofosbuvir avec amiodarone) ; anémie (ribavirine) | Non précisée (cours) | Surveillance de la NFS pour la ribavirine |
+| VIH au long cours | Anomalies de la répartition des graisses — lipoatrophie du visage et des membres, lipohypertrophie du tronc et du cou | Non précisée (cours) | À long terme, sous INTI + IP |
+| VIH au long cours | Troubles du métabolisme des lipides — hypertriglycéridémie avec risque de pancréatite, hypercholestérolémie avec risque cardiovasculaire ; troubles du métabolisme des glucides — diabète de type 2, insulinorésistance | Non précisée (cours) | L'infarctus du myocarde est la 4e cause de décès chez les patients VIH, sous IP en priorité |
 
 ## Surveillances
 
-- À compléter avec les cours.
-- À compléter avec les cours.
-- À compléter avec les cours.
+<Steps>
+  <Step>
+    ### Fonction rénale et génotypage
+
+    Surveillance de la fonction rénale — ténofovir, foscarnet, cidofovir — et
+    génotypage obligatoire du HLA B*5701 avant abacavir (cours).
+  </Step>
+  <Step>
+    ### Suivi thérapeutique pharmacologique
+
+    Les antirétroviraux relèvent d'un suivi médical et biologique régulier,
+    avec intérêt du suivi thérapeutique pharmacologique (cours).
+  </Step>
+  <Step>
+    ### Dépistage des effets indésirables
+
+    Interférons : syndrome pseudo-grippal, asthénie, syndrome dépressif,
+    leuco-neutropénie, thrombopénie, hypothyroïdie — surveillance (cours).
+  </Step>
+</Steps>
+
+- **Observance et éducation thérapeutique.** Modes d'emploi et critères
+  d'efficacité des traitements et de leurs effets indésirables, mais aussi la
+  pathologie elle-même — transmission du virus, prévention des complications et
+  des comorbidités (cours).
+- **Anti-VHC.** Éducation thérapeutique sur l'importance de l'observance et des
+  effets indésirables ; prévention et prise en charge des comorbidités et des
+  addictions ; modification du mode de vie — suivi régulier des patients avec
+  comorbidités, consommation d'alcool à risque, diabète, obésité ; prévention
+  des nouvelles contaminations — éviter le partage de rasoirs ou de brosses à
+  dents, conseiller les personnes usagères de drogues injectables (cours).
+- **Surveillance hépatique et virologique** de l'hépatite B et de l'hépatite C :
+  charge virale, bilan hépatique (cours).
+
+## Sources
+
+**Cours**
+
+- Pharmacologie des anti-infectieux — Antiviraux (capsule 2/3), Claire
+  Lafay-Chebassier, MCU-PH, Université de Poitiers ; UE 2.11 S3, IFSI Région
+  Nouvelle-Aquitaine.
+
+**VIDAL — fiches substance par DCI**
+
+- Anti-Herpesviridae : [Aciclovir](https://www.vidal.fr/medicaments/substances/aciclovir-156.html),
+  [Valaciclovir](https://www.vidal.fr/medicaments/substances/valaciclovir-8161.html),
+  [Famciclovir](https://www.vidal.fr/medicaments/substances/famciclovir-15497.html),
+  [Valganciclovir](https://www.vidal.fr/medicaments/substances/valganciclovir-21836.html),
+  [Ganciclovir](https://www.vidal.fr/medicaments/substances/ganciclovir-6922.html),
+  [Foscarnet](https://www.vidal.fr/medicaments/substances/foscarnet-sodique-10121.html),
+  [Cidofovir](https://www.vidal.fr/medicaments/substances/cidofovir-17406.html),
+  [Letermovir](https://www.vidal.fr/medicaments/substances/letermovir-25379.html)
+- Antiviraux de la grippe : [Zanamivir](https://www.vidal.fr/medicaments/substances/zanamivir-18715.html),
+  [Oseltamivir](https://www.vidal.fr/medicaments/substances/oseltamivir-21893.html)
+- INTI : [Zidovudine](https://www.vidal.fr/medicaments/substances/zidovudine-3728.html),
+  [Lamivudine](https://www.vidal.fr/medicaments/substances/lamivudine-16728.html),
+  [Abacavir](https://www.vidal.fr/medicaments/substances/abacavir-18415.html),
+  [Ténofovir](https://www.vidal.fr/medicaments/substances/tenofovir-disoproxil-18995.html),
+  [Emtricitabine](https://www.vidal.fr/medicaments/substances/emtricitabine-22578.html)
+- INNTI : [Névirapine](https://www.vidal.fr/medicaments/substances/nevirapine-18204.html),
+  [Efavirenz](https://www.vidal.fr/medicaments/substances/efavirenz-18667.html),
+  [Étravirine](https://www.vidal.fr/medicaments/substances/etravirine-22951.html),
+  [Rilpivirine](https://www.vidal.fr/medicaments/substances/rilpivirine-23462.html)
+- IP : [Fosamprénavir](https://www.vidal.fr/medicaments/substances/fosamprenavir-22644.html),
+  [Atazanavir](https://www.vidal.fr/medicaments/substances/atazanavir-22626.html),
+  [Darunavir](https://www.vidal.fr/medicaments/substances/darunavir-22877.html),
+  [Ritonavir](https://www.vidal.fr/medicaments/substances/ritonavir-17246.html)
+- INI : [Raltégravir](https://www.vidal.fr/medicaments/substances/raltegravir-22913.html),
+  [Elvitégravir](https://www.vidal.fr/medicaments/substances/elvitegravir-24006.html),
+  [Dolutégravir](https://www.vidal.fr/medicaments/substances/dolutegravir-24024.html),
+  [Bictégravir](https://www.vidal.fr/medicaments/substances/bictegravir-25645.html)
+- Autres antirétroviraux : [Enfuvirtide](https://www.vidal.fr/medicaments/substances/enfuvirtide-22466.html),
+  [Maraviroc](https://www.vidal.fr/medicaments/substances/maraviroc-23023.html)
+- Anti-VHB : [Adéfovir](https://www.vidal.fr/medicaments/substances/adefovir-21864.html),
+  [Entécavir](https://www.vidal.fr/medicaments/substances/entecavir-22834.html),
+  [Telbivudine](https://www.vidal.fr/medicaments/substances/telbivudine-23022.html)
+  — aucune fiche substance VIDAL référencée pour le péginterféron alfa-2a
+- Anti-VHC : [Ribavirine](https://www.vidal.fr/medicaments/substances/ribavirine-18579.html),
+  [Bocéprévir](https://www.vidal.fr/medicaments/substances/boceprevir-23368.html),
+  [Télaprévir](https://www.vidal.fr/medicaments/substances/telaprevir-23367.html),
+  [Sofosbuvir](https://www.vidal.fr/medicaments/substances/sofosbuvir-24014.html),
+  [Ledipasvir](https://www.vidal.fr/medicaments/substances/ledipasvir-24326.html),
+  [Velpatasvir](https://www.vidal.fr/medicaments/substances/velpatasvir-25029.html),
+  [Grazoprévir](https://www.vidal.fr/medicaments/substances/grazoprevir-24636.html),
+  [Elbasvir](https://www.vidal.fr/medicaments/substances/elbasvir-24637.html),
+  [Glecaprévir](https://www.vidal.fr/medicaments/substances/glecaprevir-25296.html),
+  [Pibrentasvir](https://www.vidal.fr/medicaments/substances/pibrentasvir-25297.html),
+  [Paritaprévir](https://www.vidal.fr/medicaments/substances/paritaprevir-24372.html),
+  [Ombitasvir](https://www.vidal.fr/medicaments/substances/ombitasvir-24371.html),
+  [Voxilaprevir](https://www.vidal.fr/medicaments/substances/voxilaprevir-25310.html)
+
+**ANSM — Résumés des caractéristiques du produit**
+
+- [OSELTAMIVIR HEC PHARM 75 mg, antiviral de la grippe — RCP](https://agence-prd.ansm.sante.fr/php/ecodex/rcp/R0354791.htm)
+  (le TAMIFLU® ne publie aucun document de référence sur le portail ANSM)
+- [ZOVIRAX® 200 mg, anti-herpès — RCP](https://agence-prd.ansm.sante.fr/php/ecodex/rcp/R0447344.htm)
+
+**OMS (Organisation mondiale de la Santé)**
+
+- [VIH/SIDA — fiche d'information OMS](https://www.who.int/news-room/fact-sheets/detail/hiv-aids)
+- [Hépatite — fiche d'information OMS](https://www.who.int/news-room/fact-sheets/detail/hepatitis)
+- [Grippe (saisonnière) — fiche d'information OMS](https://www.who.int/news-room/fact-sheets/detail/influenza-(seasonal))
+- [Index ATC/DDD de l'OMS (J05 — antiviraux)](https://www.whocc.no/atc_ddd_index/)

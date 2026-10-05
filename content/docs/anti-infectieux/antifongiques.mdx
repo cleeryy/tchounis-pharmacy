@@ -1,49 +1,271 @@
 ---
 title: 'Antifongiques'
-description: 'Squelette de fiche « Antifongiques » — à compléter avec les cours UE 2.11 S3.'
+description: 'Antifongiques : propriétés, 19 molécules, indications, contre-indications, interactions, effets indésirables et surveillances — UE 2.11 S3.'
 ---
 
-> Contenu à compléter avec les cours UE 2.11 S3.
+import { Tabs, Tab } from 'fumadocs-ui/components/tabs';
+import { Steps, Step } from 'fumadocs-ui/components/steps';
+
+Les antifongiques traitent les mycoses superficielles, cutanéo-muqueuses et systémiques — quatre classes pharmacologiques pour les formes profondes, des molécules kératinophiles et topiques pour les formes superficielles. Cette fiche suit le plan imposé par l'UE 2.11 S3. Les chiffres, fréquences et délais proviennent du cours et des références listées en [Sources](#sources) ; ce qui n'est documenté par aucune de ces sources est indiqué « Non précisé ».
 
 ## Propriétés
 
-Cette fiche rassemble l'essentiel commun de la famille : ce qu'elle fait,
-sans sur-expliquer l'évident. Le mécanisme commun détaillé est à compléter
-avec les cours UE 2.11 S3. Seules les particularités utiles en pratique IDE
-sont retenues dans les sections ci-dessous.
+Les germes en cause sont les champignons filamenteux — *Aspergillus*,
+dermatophytes, pityriasis versicolor — et les levures — *Candida*,
+*Cryptococcus* (cours).
+
+- **Mycoses superficielles** — dermatophytes en priorité : intertrigo des plis,
+  intertrigo interorteils, teignes dans les cheveux, onyxis des mains et des
+  pieds.
+- **Mycoses cutanéo-muqueuses** — candidoses en priorité : oropharyngées
+  (muguet), digestives, génitales et cutanées.
+- **Mycoses systémiques et profondes** — *Candida*, *Aspergillus*,
+  *Cryptococcus*, infections opportunistes chez des sujets prédisposés :
+  immunodépression sévère, diabétiques (cours).
+
+Les mycoses systémiques ont une morbidité et une mortalité importantes, en
+raison de l'utilisation croissante de l'antibiothérapie à large spectre, de la
+chimiothérapie cytotoxique, de la greffe d'organes solides ou de cellules, et
+des procédures chirurgicales invasives (cours).
+
+<Callout type="info" title="Les quatre questions de départ du cours">
+Curatif ou prophylaxie ? Efficacité ? Résistances, statut immunitaire, porte
+d'entrée ? Interactions médicamenteuses ? (cours)
+</Callout>
+
+### Les différentes classes
+
+| Classe | Ce que c'est | Quand l'utiliser |
+| ------ | ------------ | ---------------- |
+| Polyènes | Fongicides : altération de la membrane plasmique par interaction directe avec l'ergostérol membranaire | Candidoses, cryptococcose, mucoromycoses, aspergillose de 2e ligne, traitement empirique des neutropénies fébriles (cours) |
+| Azolés | Fongistatiques : altération de la membrane plasmique par inhibition de la synthèse d'ergostérol — inhibition de la 14 α-déméthylase ; inhibiteurs du CYP3A4, marge thérapeutique étroite | Candidoses selon l'espèce, cryptococcose, aspergillose invasive, candidoses invasives (cours) |
+| Échinocandines | Fongicides : altération de la paroi fongique par inhibition de la synthèse des glucanes | Candidoses, traitement empirique des neutropénies fébriles (cours) |
+| Antimétabolites | Fongistatiques : inhibition du cycle cellulaire | Candidose, cryptococcose, en association avec l'amphotéricine B (cours) |
+| Topiques et kératinophiles — azolés locaux, polyènes locaux, terbinafine, ciclopiroxolamine, griséofulvine, amorolfine, bifonazole | Voie locale ou à visée digestive, voie orale pour les dermatophytoses étendues rebelles et les onyxis | Mycoses superficielles : intertrigos, teignes, onyxis, pityriasis versicolor, candidoses (cours) |
+
+<Callout type="info" title="Logique de choix">
+Mycoses superficielles : voie locale — crème, poudre, solution (spray), gel
+moussant, solution filmogène, ovule, capsule vaginale, gel buccal — avec les
+azolés, les polyènes, la terbinafine et la ciclopiroxolamine. Voie orale pour
+les dermatophytoses étendues rebelles et les onyxis : terbinafine et
+gréiséofulvine, kératinophiles, diffusant facilement dans la couche cornée et
+les follicules pileux. Attention : passage systémique, interactions
+médicamenteuses — la CI miconazole est l'antivitamine K (cours).
+</Callout>
 
 ## Médicaments de la famille
 
-| DCI | Particularité | Mention honorable |
-| --- | ------------- | ----------------- |
-| À compléter | À compléter | À compléter |
+Dix-neuf entrées classées par famille pharmacologique. Chaque DCI renvoie à sa
+fiche substance VIDAL.
+
+| Classe | DCI | Particularité | Mention honorable |
+| ------ | --- | ------------- | ----------------- |
+| Polyènes | [Amphotéricine B](https://www.vidal.fr/medicaments/substances/amphotericine-b-314.html) | Fongicide. Facteur limitant : toxicité rénale ; déséquilibres ioniques — hypokaliémie et hypomagnésémie — ; réactions liées à la perfusion ; anémies hémolytiques → surveillance rénale, perfusion lente, prémédication et dose test, surveillance de la NFS (cours) | FUNGIZONE® orale et inj (forme conventionnelle), AMBISOME® inj (liposomale), ABELCET® inj (complexe lipidique) |
+| Azolés | [Fluconazole](https://www.vidal.fr/medicaments/substances/fluconazole-1507.html) | Fongistatique ; inhibiteur du CYP3A4, marge thérapeutique étroite, effets digestifs et toxicité hépatique → suivi thérapeutique recommandé (cours) | TRIFLUCAN® + génériques orale et inj |
+| Azolés | [Itraconazole](https://www.vidal.fr/medicaments/substances/itraconazole-3992.html) | Fonction hépatique, fonction cardiaque et signes de neuropathie à surveiller (cours) | SPORANOX® + génériques orale et inj |
+| Azolés | [Voriconazole](https://www.vidal.fr/medicaments/substances/voriconazole-21915.html) | 1re intention dans l'aspergillose invasive ; fonction rénale et signes cutanés à surveiller (cours) | VFEND® + génériques orale et inj |
+| Azolés | [Posaconazole](https://www.vidal.fr/medicaments/substances/posaconazole-22809.html) | Aspergillose de 2e ligne, candidoses (cours) | NOXAFIL® + génériques orale et inj |
+| Azolés | [Isavuconazole](https://www.vidal.fr/medicaments/substances/isavuconazole-24436.html) | Aspergillose (cours) | CRESEMBA® orale et inj |
+| Échinocandines | [Caspofungine](https://www.vidal.fr/medicaments/substances/caspofungine-21849.html) | Fongicide sur les glucanes de la paroi ; troubles digestifs, thrombophlébites et toxicité hépatique → fonction hépatique à surveiller (cours) | CANCIDAS® + génériques inj |
+| Échinocandines | [Micafungine](https://www.vidal.fr/medicaments/substances/micafungine-22990.html) | Inhibiteur de la synthèse des glucanes (cours) | MYCAMINE® inj |
+| Échinocandines | [Anidulafungine](https://www.vidal.fr/medicaments/substances/anidulafungine-23024.html) | Inhibiteur de la synthèse des glucanes (cours) | ECALTA® inj |
+| Antimétabolites | [Flucytosine](https://www.vidal.fr/medicaments/substances/flucytosine-4135.html) | Troubles digestifs, hépatiques et hématologiques → suivi thérapeutique recommandé, hémogramme et bilan hépatique en début de traitement ; toujours en association avec l'amphotéricine B (cours) | ANCOTIL® inj |
+| Azolés topiques | [Kétoconazole](https://www.vidal.fr/medicaments/substances/ketoconazole-1956.html) | Gel moussant dans le pityriasis versicolor (cours) | — |
+| Azolés topiques | [Miconazole](https://www.vidal.fr/medicaments/substances/miconazole-2376.html) | Formes locales ; passage systémique en usage oral → interaction avec les antivitamines K (cours) | LORAMYC® (gel buccal) |
+| Azolés topiques | [Éconazole](https://www.vidal.fr/medicaments/substances/econazole-4037.html) | Formes locales (cours) | — |
+| Azolés topiques | [Isoconazole](https://www.vidal.fr/medicaments/substances/isoconazole-6812.html) | Formes locales (cours) | — |
+| Allylamines | [Terbinafine](https://www.vidal.fr/medicaments/substances/terbinafine-5820.html) | Kératinophile : dermatophytoses étendues rebelles et onyxis par voie orale ; intertrigo à dermatophytes en usage local (cours) | LAMISIL® |
+| Autres topiques | [Ciclopiroxolamine](https://www.vidal.fr/medicaments/substances/ciclopirox-968.html) | Intertrigo à dermatophytes en usage local ; fiche VIDAL intitulée « ciclopirox » (cours) | MYCOSTER® |
+| Griséofulvines | [Griséofulvine](https://www.vidal.fr/medicaments/substances/griseofulvine-1701.html) | Kératinophile : teignes et dermatophytose rebelle par voie orale (cours) | GRISEFULINE® |
+| Azolés topiques | [Amorolfine](https://www.vidal.fr/medicaments/substances/amorolfine-4146.html) | Varnis dans l'onyxis à dermatophytes, traitement de plusieurs mois (cours) | LOCERYL® vernis |
+| Azolés topiques | [Bifonazole](https://www.vidal.fr/medicaments/substances/bifonazole-578.html) | Onyxis à dermatophytes, en association avec l'urée (cours) | AMYCOR ONYCHOSET® |
+
+<Callout type="warning" title="Amphotéricine B — points de vigilance du RCP">
+La dose totale journalière ne doit jamais dépasser 1,5 mg/kg ; un surdosage
+peut entraîner un arrêt cardiaque ou un arrêt cardiorespiratoire fatal. Le
+FUNGIZONE® est une amphotéricine B standard : les spécialités liposomales ou à
+complexe phospholipidique ne sont pas interchangeables. Les premières doses sont
+administrées sous surveillance médicale ; les réactions aiguës — frissons,
+fièvre, nausées, vomissements, céphalées, myalgies, arthralgies, hypotension —
+sont courantes en IV. Une perfusion rapide, en moins d'une heure, a été
+associée à des hyperkaliémies et des arythmies : perfusion intraveineuse lente
+(RCP FUNGIZONE®).
+</Callout>
 
 ## Indications
 
-- À compléter avec les cours.
-- À compléter avec les cours.
-- À compléter avec les cours.
+- **Candidoses, cryptococcose, mucoromycoses** — amphotéricine B ; aspergillose
+  de 2e ligne par amphotéricine B ; traitement empirique des neutropénies
+  fébriles par amphotéricine B et par caspofungine (cours).
+- **Aspergillose invasive** — voriconazole en 1re ligne ; itraconazole ;
+  posaconazole de 2e ligne (cours).
+- **Candidoses selon l'espèce, cryptococcose** — fluconazole (cours).
+- **Candidose et cryptococcose** — flucytosine, en association avec
+  l'amphotéricine B (cours).
+- **Intertrigo à dermatophytes** — azolés locaux ou terbinafine (LAMISIL®),
+  ciclopiroxolamine (MYCOSTER®) (cours).
+- **Intertrigo candidosique** — azolés locaux ou amphotéricine B locaux
+  (cours).
+- **Dermatophytose de la peau glabre et des plis** — azolés locaux (cours).
+- **Dermatophytose rebelle** — griséofulvine (GRISEFULINE®) ou terbinafine per
+  os (cours).
+- **Teignes** — griséofulvine per os (cours).
+- **Onyxis à dermatophytes** — vernis d'amorolfine (LOCERYL®) ou urée +
+  bifonazole (AMYCOR ONYCHOSET®) ; traitement de plusieurs mois (cours).
+- **Onyxis ou péri-onyxis à *Candida*** — polyènes locaux, avec recours
+  possible au fluconazole per os (cours).
+- **Pityriasis versicolor** — gel moussant de kétoconazole (cours).
+- **Candidose buccale** — polyènes ou azolés en suspension, fluconazole per os
+  selon le contexte ; penser aux facteurs favorisants — antibiothérapie,
+  immunosuppression (cours).
+- **Candidose génitale** — formes gynécologiques de polyènes ou d'azolés
+  (cours).
 
 ## Contre-indications
 
-- À compléter avec les cours.
-- À compléter avec les cours.
-- À compléter avec les cours.
+Le cours ne détaille les contre-indications que pour les formes locales. Les
+onglets Polyènes et Azolés proviennent des RCP ANSM consultés.
+
+<Tabs
+  items={['Polyènes', 'Azolés', 'Échinocandines', 'Antimétabolites', 'Mycoses superficielles']}
+  label="Classe"
+>
+  <Tab value="Polyènes">
+    Lus sur le RCP du FUNGIZONE® 50 mg (amphotéricine B).
+
+    - Hypersensibilité à la substance active ou à l'un des excipients (RCP).
+    - Insuffisance rénale (RCP).
+  </Tab>
+  <Tab value="Azolés">
+    Lus sur le RCP du TRIFLUCAN® 100 mg (fluconazole) ; non vérifiés ici pour
+    les autres azolés.
+
+    - Hypersensibilité à la substance active, à d'autres dérivés azolés ou à
+      l'un des excipients (RCP).
+    - TRIFLUCAN® 100 mg, gélule : non administré chez l'enfant de moins de
+      6 ans, en raison de la forme pharmaceutique (RCP).
+    - Co-administration avec la terfénadine contre-indiquée à partir de 400 mg
+      par jour de fluconazole ; co-administration avec d'autres médicaments
+      allongeant l'intervalle QT et métabolisés par le CYP3A4 — cisapride,
+      astémizole, pimozide, quinidine, érythromycine (RCP).
+  </Tab>
+  <Tab value="Échinocandines">
+    Non précisé dans les sources consultées (cours, VIDAL, RCP, OMS).
+  </Tab>
+  <Tab value="Antimétabolites">
+    Non précisé dans les sources consultées (cours, VIDAL, RCP, OMS).
+  </Tab>
+  <Tab value="Mycoses superficielles">
+
+    - Antivitamine K en cas de miconazole, du fait du passage systémique de la
+      voie orale (cours).
+  </Tab>
+</Tabs>
 
 ## Interactions médicamenteuses
 
-- À compléter avec les cours.
-- À compléter avec les cours.
-- À compléter avec les cours.
+**Azolés systémiques.** Inhibiteurs du CYP3A4 : interactions médicamenteuses,
+marge thérapeutique étroite, d'où le suivi thérapeutique pharmacologique
+recommandé (cours).
+
+**Azolés locaux.** Passage systémique : interaction avec les antivitamines K
+(cours).
+
+<Callout type="error" title="Miconazole topique + tacrolimus — cas du cours">
+Qu'est-ce que le miconazole ou LORAMYC® ? Quels sont ses risques ? Qu'est-ce
+qui s'est passé ? Il s'agit d'une interaction médicamenteuse entre le
+tacrolimus et le miconazole sous forme topique, conduisant à un surdosage
+sanguin de tacrolimus — adapté de Lepelley et al, 2017 (cours).
+</Callout>
 
 ## Effets secondaires
 
-| Effet | Fréquence (si disponible) | Conduite |
-| --- | --- | --- |
-| À compléter | À compléter | À compléter |
+Les fréquences proviennent des RCP consultés ; « Non précisé » signifie que les
+sources consultées ne donnent pas de valeur.
+
+| Classe | Effet indésirable | Fréquence | Conduite |
+| ------ | ----------------- | --------- | -------- |
+| Polyènes — amphotéricine B IV | Hypokaliémie | Très fréquent — RCP FUNGIZONE® | Bilan électrolytique, hyperhydratation |
+| Polyènes — amphotéricine B IV | Frissons, fièvre ; augmentation de la créatinine sérique | Très fréquent — RCP FUNGIZONE® | Réaction à perfusion en début de traitement |
+| Polyènes — amphotéricine B IV | Anémie normochrome normocytaire ; hypomagnésémie, anorexie ; céphalées ; hypotension ; dyspnée ; nausées, vomissements, diarrhée ; perturbations du bilan hépatique ; insuffisance rénale aiguë, azotémie ; douleur au point d'injection | Fréquent — RCP FUNGIZONE® | Surveiller la créatininémie et le bilan électrolytique |
+| Polyènes — amphotéricine B IV | Agranulocytose, leucopénie, thrombocytopénie ; neuropathies périphériques ; arythmies ; bronchospasme ; douleurs gastriques ; rash ; myalgie ; insuffisance rénale permanente | Peu fréquent — RCP FUNGIZONE® | Surveiller la NFS |
+| Polyènes — amphotéricine B IV | Réactions anaphylactiques et autres manifestations d'hypersensibilité ; convulsions ; perte d'audition, bourdonnements, vertiges ; arrêt cardiaque | Rare — RCP FUNGIZONE® | Prémédication et dose test |
+| Polyènes — amphotéricine B | Toxicité rénale, déséquilibres ioniques, réactions liées à la perfusion, anémies hémolytiques | Non précisée (cours) | Surveillance rénale, perfusion lente, prémédication et dose test, surveillance de la NFS |
+| Azolés — fluconazole | Céphalées ; douleurs abdominales, vomissements, diarrhée, nausées ; augmentations d'ALAT, d'ASAT et de phosphatase alcaline ; éruption cutanée | Fréquent — RCP TRIFLUCAN® | Suivi thérapeutique recommandé |
+| Azolés — fluconazole | Anémie ; diminution de l'appétit ; somnolence, insomnie ; crises d'épilepsie, paresthésie, étourdissements, altération du goût ; vertiges ; constipation, dyspepsie, flatulences, bouche sèche ; cholestase, ictère, augmentation de la bilirubine ; urticaire, prurit, hypersudation ; myalgie ; fatigue, malaise, asthénie, fièvre | Peu fréquent — RCP TRIFLUCAN® | — |
+| Azolés — fluconazole | Agranulocytose, leucopénie, thrombocytopénie, neutropénie ; anaphylaxie ; hypercholestérolémie, hypertriglycéridémie, hypokaliémie ; torsade de pointe, allongement de l'intervalle QT ; insuffisance hépatique, hépatite, nécrose hépatocellulaire ; syndrome de Lyell, syndrome de Stevens-Johnson, pustulose exanthématique aiguë généralisée | Rare — RCP TRIFLUCAN® | Surveillance clinique et biologique |
+| Azolés — fluconazole | Syndrome DRESS rapporté | Résumé du profil de sécurité — RCP TRIFLUCAN® | — |
+| Azolés systémiques | Effets digestifs et toxicité hépatique | Non précisée (cours) | Fonction hépatique ; ± fonction cardiaque et neuropathie pour l'itraconazole, ± fonction rénale et signes cutanés pour le voriconazole |
+| Échinocandines | Troubles digestifs, thrombophlébites, toxicité hépatique | Non précisée (cours) | Fonction hépatique pour la caspofungine |
+| Antimétabolites | Troubles digestifs, hépatiques et hématologiques | Non précisée (cours) | Hémogramme et bilan hépatique en début de traitement, suivi thérapeutique recommandé |
+| Topiques et kératinophiles | Non précisé dans les sources consultées | — | — |
 
 ## Surveillances
 
-- À compléter avec les cours.
-- À compléter avec les cours.
-- À compléter avec les cours.
+<Steps>
+  <Step>
+    ### Évaluation de l'efficacité
+
+    Disparition des lésions mycosiques ou des signes cliniques. Durées
+    variables selon les affections : mycoses profondes de 6 à 12 semaines ou
+    plus (cours).
+  </Step>
+  <Step>
+    ### Dépistage des effets indésirables
+
+    Amphotéricine B IV : dose totale cumulée inférieure à 5 g,
+    hyperhydratation, mesure de la créatininémie et bilan électrolytique.
+    Azolés : fonction hépatique, ± fonction cardiaque, ± signes de neuropathie
+    pour l'itraconazole, ± fonction rénale et signes cutanés pour le
+    voriconazole. Caspofungine : fonction hépatique. Flucytosine : hémogramme
+    et bilan hépatique en début de traitement, voire suivi thérapeutique selon
+    l'antifongique utilisé (cours).
+  </Step>
+</Steps>
+
+- **Éducation du patient.** Facteurs favorisants les mycoses cutanées ;
+  respecter les modalités d'application locale et la durée du traitement
+  (cours).
+- **À rechercher systématiquement.** Chez les patients sous antibiothérapie,
+  immunodéprimés ou diabétiques, penser aux facteurs favorisants d'une candidose
+  (cours).
+
+## Sources
+
+**Cours**
+
+- Pharmacologie des anti-infectieux — Antifongiques (capsule 3/3), Claire
+  Lafay-Chebassier, MCU-PH, Université de Poitiers ; UE 2.11 S3, IFSI Région
+  Nouvelle-Aquitaine. Cas miconazole adapté de Lepelley et al, 2017.
+
+**VIDAL — fiches substance par DCI**
+
+- Systémiques — polyènes : [Amphotéricine B](https://www.vidal.fr/medicaments/substances/amphotericine-b-314.html)
+- Systémiques — azolés : [Fluconazole](https://www.vidal.fr/medicaments/substances/fluconazole-1507.html),
+  [Itraconazole](https://www.vidal.fr/medicaments/substances/itraconazole-3992.html),
+  [Voriconazole](https://www.vidal.fr/medicaments/substances/voriconazole-21915.html),
+  [Posaconazole](https://www.vidal.fr/medicaments/substances/posaconazole-22809.html),
+  [Isavuconazole](https://www.vidal.fr/medicaments/substances/isavuconazole-24436.html)
+- Systémiques — échinocandines : [Caspofungine](https://www.vidal.fr/medicaments/substances/caspofungine-21849.html),
+  [Micafungine](https://www.vidal.fr/medicaments/substances/micafungine-22990.html),
+  [Anidulafungine](https://www.vidal.fr/medicaments/substances/anidulafungine-23024.html)
+- Systémiques — antimétabolite : [Flucytosine](https://www.vidal.fr/medicaments/substances/flucytosine-4135.html)
+- Superficielles : [Kétoconazole](https://www.vidal.fr/medicaments/substances/ketoconazole-1956.html),
+  [Miconazole](https://www.vidal.fr/medicaments/substances/miconazole-2376.html),
+  [Éconazole](https://www.vidal.fr/medicaments/substances/econazole-4037.html),
+  [Isoconazole](https://www.vidal.fr/medicaments/substances/isoconazole-6812.html),
+  [Terbinafine](https://www.vidal.fr/medicaments/substances/terbinafine-5820.html),
+  [Ciclopiroxolamine](https://www.vidal.fr/medicaments/substances/ciclopirox-968.html),
+  [Griséofulvine](https://www.vidal.fr/medicaments/substances/griseofulvine-1701.html),
+  [Amorolfine](https://www.vidal.fr/medicaments/substances/amorolfine-4146.html),
+  [Bifonazole](https://www.vidal.fr/medicaments/substances/bifonazole-578.html)
+
+**ANSM — Résumés des caractéristiques du produit**
+
+- [FUNGIZONE® 50 mg, amphotéricine B — RCP](https://agence-prd.ansm.sante.fr/php/ecodex/rcp/R0434753.htm)
+- [TRIFLUCAN® 100 mg, fluconazole — RCP](https://agence-prd.ansm.sante.fr/php/ecodex/rcp/R0417857.htm)
+
+**OMS (Organisation mondiale de la Santé)**
+
+- [Antimicrobial resistance — fiche d'information OMS](https://www.who.int/news-room/fact-sheets/detail/antimicrobial-resistance)
+- [Index ATC/DDD de l'OMS (J02 — antimycotiques)](https://www.whocc.no/atc_ddd_index/)

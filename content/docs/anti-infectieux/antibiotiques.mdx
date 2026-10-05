@@ -1,49 +1,467 @@
 ---
 title: 'Antibiotiques'
-description: 'Squelette de fiche « Antibiotiques » — à compléter avec les cours UE 2.11 S3.'
+description: 'Antibiotiques : propriétés, 73 molécules, indications, contre-indications, interactions, effets indésirables et surveillances — UE 2.11 S3.'
 ---
 
-> Contenu à compléter avec les cours UE 2.11 S3.
+import { Tabs, Tab } from 'fumadocs-ui/components/tabs';
+import { Steps, Step } from 'fumadocs-ui/components/steps';
+
+Les antibiotiques limitent la multiplication des bactéries pathogènes ; les
+plus puissants peuvent même éradiquer l'inoculum bactérien. Cette fiche suit
+le plan imposé par l'UE 2.11 S3. Les chiffres, fréquences et délais proviennent
+du cours et des références listées en [Sources](#sources) ; ce qui n'est
+documenté par aucune de ces sources est indiqué « Non précisé ».
 
 ## Propriétés
 
-Cette fiche rassemble l'essentiel commun de la famille : ce qu'elle fait,
-sans sur-expliquer l'évident. Le mécanisme commun détaillé est à compléter
-avec les cours UE 2.11 S3. Seules les particularités utiles en pratique IDE
-sont retenues dans les sections ci-dessous.
+Un antibiotique efficace doit rencontrer sa cible, son point d'impact. Le
+cours distingue la résistance naturelle ou intrinsèque et la résistance
+acquise, qui repose sur quatre mécanismes : production d'une enzyme modifiant
+ou détruisant l'antibiotique, modification de la cible, imperméabilisation de
+la paroi, pompe d'efflux.
+
+Côté pharmacodynamie, quatre notions suffisent à lire toutes les posologies
+(cours) :
+
+- **Bactéricide ou bactériostatique.** Un antibiotique bactéricide entraîne la
+  mort bactérienne — CMB = concentration minimale bactéricide ; un
+  bactériostatique réduit la croissance bactérienne sans la supprimer — CMI =
+  concentration minimale inhibitrice, celle que renseigne l'antibiogramme.
+- **Concentration-dépendants ou temps-dépendants.** Les antibiotiques
+  concentration-dépendants — aminosides, fluoroquinolones — gagnent en vitesse
+  et en intensité quand la concentration augmente ; les temps-dépendants —
+  bêta-lactamines, glycopeptides — exigent le maintien des concentrations
+  plasmatiques au-dessus de la CMB, sans effet de l'augmentation.
+- **Effet post-antibiotique.** L'inhibition de la croissance persiste alors que
+  l'antibiotique n'est plus présent dans le milieu (par exemple aminosides et
+  bactéries à Gram négatif) : c'est lui qui autorise des schémas posologiques
+  espacés.
+- **Synergie et antagonisme.** Les effets antibactériens des bêta-lactamines
+  sont synergiques avec les aminosides, vis-à-vis de certaines bactéries
+  (cours).
+
+<Callout type="info" title="Bon usage — les six questions du cours">
+S'agit-il d'une maladie infectieuse ? L'infection est-elle bactérienne ? Quelle
+est la bactérie probablement responsable ? Quelles sont ses résistances
+naturelles, et l'état de l'épidémiologie de ses résistances acquises ? Y a-t-il
+urgence à traiter ? Quels sont les risques si je ne prescris pas ou si je
+retarde, et les risques liés au traitement ? Ne jamais oublier les traitements
+non antibiotiques (cours).
+</Callout>
+
+### Les différentes classes
+
+Le cours classe les antibiotiques selon le point d'impact — quatre cibles
+pharmacologiques, douze familles.
+
+| Classe | Point d'impact | Particularité |
+| ------ | -------------- | ------------- |
+| Bêta-lactamines — pénicillines, céphalosporines, carbapénèmes, monobactames | Synthèse de la paroi | Bactéricides temps-dépendants ; résistance par bêta-lactamases, contrée par les inhibiteurs — acide clavulanique, tazobactam, sulbactam, avibactam |
+| Glycopeptides — vancomycine, daptomycine | Synthèse de la paroi | Bactéricides temps-dépendants, sans effet post-antibiotique |
+| Quinolones et fluoroquinolones | ADN gyrase — synthèse des acides nucléiques | Bactéricides concentrations-dépendants, effet post-antibiotique prolongé |
+| Sulfamides et triméthoprime | Synthèse des folates | Bactéricide par synergie des deux molécules (cours) |
+| Rifampicine | ARN polymérase | Antituberculeux, inducteur enzymatique |
+| Polymyxines | Membrane cytoplasmique | Bactéricides sur bacilles Gram négatif, profil de sécurité défavorable |
+| Macrolides, clindamycine, streptogramines, linézolide, chloramphénicol | Synthèse protéique — sous-unité 50S | Bactériostatiques (cours) |
+| Aminoglycosides, tétracyclines | Synthèse protéique — sous-unité 30S | Aminosides bactéricides concentration-dépendants, cyclines bactériostatiques |
+
+<Callout type="info" title="Logique de choix">
+L'antibiothérapie est curative — traiter une infection déclarée, documentée ou
+non — ou prophylactique — chirurgicale ou médicale (cours). La curative est
+probabiliste ou empirique, sans isolement de la bactérie responsable, ou
+documentée, quand son choix s'appuie sur l'isolement d'une bactérie et sur
+l'antibiogramme.
+
+La voie d'administration suit la disponibilité des formes, la
+pharmacocinétique — les aminosides ne sont pas résorbés par le tube digestif —,
+l'urgence (IV, IM), le site infectieux (IV pour l'os, les méninges, le système
+cardiovasculaire ; voie locale pour l'œil, la peau, le vagin), l'état du
+réseau veineux et les traitements associés. Deux pièges d'administration à
+connaître : reconstitution, avec respect des solutés recommandés du fait
+d'incompatibilités physicochimiques, et respect de la durée et du rythme
+d'administration (cours).
+
+La monothérapie a de nombreuses indications, en ville comme à l'hôpital ;
+l'association vise à élargir le spectre, accélérer la vitesse de bactéricidie
+et empêcher l'émergence de mutants résistants — mais elle augmente la pression
+de sélection sur la flore commensale et le risque iatrogène : réservée aux
+infections graves, aux sujets à risque, pour une période limitée (cours).
+</Callout>
 
 ## Médicaments de la famille
 
-| DCI | Particularité | Mention honorable |
-| --- | ------------- | ----------------- |
-| À compléter | À compléter | À compléter |
+Soixante-treize entrées classées par famille pharmacologique. Chaque DCI
+renvoie à sa fiche substance VIDAL.
+
+| Classe | DCI | Particularité | Mention honorable |
+| ------ | --- | ------------- | ----------------- |
+| Pénicillines G | [Benzylpénicilline](https://www.vidal.fr/medicaments/substances/benzylpenicilline-4413.html) | Pénicilline G parentérale (cours) | Penicilline G® IV ou IM |
+| Pénicillines G | [Benzathine benzylpénicilline](https://www.vidal.fr/medicaments/substances/benzathine-benzylpenicilline-526.html) | Prévention du rhumatisme articulaire aigu (cours) | EXTENCILLINE® IM |
+| Pénicillines V | [Phénoxyméthylpénicilline](https://www.vidal.fr/medicaments/substances/phenoxymethylpenicilline-2739.html) | Pénicilline V orale, prophylaxie en priorité (cours) | ORACILLINE® cp |
+| Pénicillines A | [Amoxicilline](https://www.vidal.fr/medicaments/substances/amoxicilline-310.html) | Nombreuses indications : broncho-pulmonaires, ORL, urinaires, maladie de Lyme, endocardite (cours) | Génériques, CLAMOXYL® orale, IM ou IV ; AUGMENTIN® et génériques en association avec acide clavulanique |
+| Pénicillines A | [Ampicilline](https://www.vidal.fr/medicaments/substances/ampicilline-315.html) | En association avec sulbactam (cours) | AGRAM® orale, IM ou IV ; UNACIM® IM |
+| Pénicillines M | [Oxacilline](https://www.vidal.fr/medicaments/substances/oxacilline-5830.html) | Infections à staphylocoque méti-S (cours) | BRISTOPEN® IV |
+| Pénicillines M | [Cloxacilline](https://www.vidal.fr/medicaments/substances/cloxacilline-6748.html) | Infections à staphylocoque méti-S (cours) | ORBENINE® orale ou IV |
+| Carboxypénicillines | [Ticarcilline](https://www.vidal.fr/medicaments/substances/ticarcilline-3998.html) | Usage hospitalier, réservée aux infections sévères (cours) | TICARPEN® IV perfusion ; CLAVENTIN® (ticarcilline + acide clavulanique) IV perfusion |
+| Uréidopénicillines | [Pipéracilline](https://www.vidal.fr/medicaments/substances/piperacilline-6998.html) | Usage hospitalier, réservée aux infections sévères (cours) | Génériques IM ou IV perfusion ; TAZOCILINE® (pipéracilline + tazobactam) IV perfusion |
+| Céphalosporines C1G | [Céfaclor](https://www.vidal.fr/medicaments/substances/cefaclor-6715.html) | Infections ORL et urinaires (cours) | ALFATIL® |
+| Céphalosporines C1G | [Céfalexine](https://www.vidal.fr/medicaments/substances/cefalexine-849.html) | Infections ORL et urinaires (cours) | KEFORAL® |
+| Céphalosporines C1G | [Céfadroxil](https://www.vidal.fr/medicaments/substances/cefadroxil-6716.html) | Infections ORL et urinaires (cours) | ORACEFAL® + génériques |
+| Céphalosporines C1G | [Céfazoline](https://www.vidal.fr/medicaments/substances/cefazoline-856.html) | Voies orale, IV ou IM selon les molécules (cours) | Génériques |
+| Céphalosporines C2G | [Céfuroxime](https://www.vidal.fr/medicaments/substances/cefuroxime-5669.html) | Infections ORL et urinaires (cours) | ZINNAT® + génériques |
+| Céphalosporines C2G | [Céfamandole](https://www.vidal.fr/medicaments/substances/cefamandole-853.html) | Orales (cours) | Génériques |
+| Céphalosporines C2G | [Céfoxitine](https://www.vidal.fr/medicaments/substances/cefoxitine-6977.html) | Orales (cours) | Génériques |
+| Céphalosporines C3G | [Céfixime](https://www.vidal.fr/medicaments/substances/cefixime-6720.html) | Orale (cours) | OROKEN® + génériques |
+| Céphalosporines C3G | [Cefpodoxime](https://www.vidal.fr/medicaments/substances/cefpodoxime-864.html) | Orale (cours) | ORELOX® + génériques |
+| Céphalosporines C3G | [Céfotiam](https://www.vidal.fr/medicaments/substances/cefotiam-5927.html) | IV ou IM (cours) | TAKETIAM® |
+| Céphalosporines C3G | [Céfotaxime](https://www.vidal.fr/medicaments/substances/cefotaxime-861.html) | Usage hospitalier, infections sévères (cours) | Génériques |
+| Céphalosporines C3G | [Ceftriaxone](https://www.vidal.fr/medicaments/substances/ceftriaxone-6723.html) | Usage hospitalier, infections sévères (cours) | ROCEPHINE® + génériques |
+| Céphalosporines C3G | [Ceftazidime](https://www.vidal.fr/medicaments/substances/ceftazidime-6722.html) | Usage hospitalier, infections sévères (cours) | FORTUM® + génériques |
+| Céphalosporines C4G | [Céfépime](https://www.vidal.fr/medicaments/substances/cefepime-6916.html) | C3G à spectre étendu, usage hospitalier, infections sévères (cours) | AXEPIM® + génériques |
+| Céphalosporines C4G | [Ceftaroline](https://www.vidal.fr/medicaments/substances/ceftaroline-fosamil-23578.html) | Usage hospitalier, infections sévères (cours) | ZINFORO® IV |
+| Carbapénèmes | [Imipénème](https://www.vidal.fr/medicaments/substances/imipenem-6797.html) | Usage hospitalier, infections sévères ; en association avec cilastatine (cours) | TIENAM® + génériques IV |
+| Carbapénèmes | [Méropénème](https://www.vidal.fr/medicaments/substances/meropenem-17685.html) | Usage hospitalier, infections sévères (cours) | KIVAREM® + génériques IV |
+| Carbapénèmes | [Ertapénème](https://www.vidal.fr/medicaments/substances/ertapenem-22505.html) | Usage hospitalier, infections sévères (cours) | INVANZ® IV |
+| Monobactames | [Aztréonam](https://www.vidal.fr/medicaments/substances/aztreonam-472.html) | Usage hospitalier, infections sévères ; risque de réaction croisée inférieur à 1 % avec les autres bêta-lactamines (cours) | AZACTAM®, CAYSTON® IV |
+| Glycopeptides | [Vancomycine](https://www.vidal.fr/medicaments/substances/vancomycine-6898.html) | Bactéricide temps-dépendant sans effet post-antibiotique ; STP recommandé (taux résiduel) ; perfusion IV lente ou continue (cours) | Génériques IV |
+| Glycopeptides | [Teicoplanine](https://www.vidal.fr/medicaments/substances/teicoplanine-3439.html) | Usage hospitalier, infections sévères à bactéries Gram positif, y compris SAMR (cours) | TARGOCID® IV ou IM |
+| Glycopeptides | [Dalbavancine](https://www.vidal.fr/medicaments/substances/dalbavancine-24624.html) | Usage hospitalier (cours) | XYDALBA® IV |
+| Glycopeptides | [Daptomycine](https://www.vidal.fr/medicaments/substances/daptomycine-22846.html) | Néphrotoxicité ; « Red Man Syndrome » (cours) | CUBICIN® + génériques injectable |
+| Macrolides | [Erythromycine](https://www.vidal.fr/medicaments/substances/erythromycine-1371.html) | Bactériostatique ; métabolisme CYP3A4 avec pouvoir inhibiteur le plus élevé de la classe (cours) | ERYTHROCINE® orale, IV ou IM |
+| Macrolides | [Spiramycine](https://www.vidal.fr/medicaments/substances/spiramycine-3329.html) | Alternative en cas d'allergie aux pénicillines (cours) | ROVAMYCINE® + génériques |
+| Macrolides | [Josamycine](https://www.vidal.fr/medicaments/substances/josamycine-3834.html) | Infections à germes atypiques intracellulaires — chlamydia, légionella, mycoplasme (cours) | JOSACINE® |
+| Macrolides | [Roxithromycine](https://www.vidal.fr/medicaments/substances/roxithromycine-3083.html) | Infections à bactéries Gram positif et atypiques (cours) | RULID® + génériques |
+| Macrolides | [Clarithromycine](https://www.vidal.fr/medicaments/substances/clarithromycine-4601.html) | Infections à bactéries Gram positif et atypiques ; 2e intention dans la tuberculose (cours) | ZECLAR® + génériques |
+| Macrolides | [Azithromycine](https://www.vidal.fr/medicaments/substances/azithromycine-5925.html) | Infections à bactéries Gram positif et atypiques (cours) | ZITHROMAX® + génériques |
+| Macrolides | [Midécamycine](https://www.vidal.fr/medicaments/substances/midecamycine-11810.html) | Infections à bactéries Gram positif et atypiques (cours) | MOSIL® |
+| Macrolides | [Télithromycine](https://www.vidal.fr/medicaments/substances/telithromycine-21842.html) | Cétolide, voie orale (cours) | KETEK® |
+| Lincosamides | [Clindamycine](https://www.vidal.fr/medicaments/substances/clindamycine-6742.html) | Indications des macrolides + toxoplasmose (cours) | DALACINE® orale, IV ou IM |
+| Lincosamides | [Lincomycine](https://www.vidal.fr/medicaments/substances/lincomycine-6817.html) | Indications des macrolides + toxoplasmose (cours) | LINCOCINE® orale, IV ou IM |
+| Synergistines (streptogramines) | [Pristinamycine](https://www.vidal.fr/medicaments/substances/pristinamycine-2923.html) | Indications des macrolides (cours) | PYOSTACINE® orale |
+| Oxazolidinones | [Linézolide](https://www.vidal.fr/medicaments/substances/linezolide-21801.html) | Bactériostatique sur Gram positif ; toxicité hématologique (NFS) ; interactions médicamenteuses et syndrome sérotoninergique (cours) | ZYVOXID® + génériques orale ou IV |
+| Oxazolidinones | [Tédizolide](https://www.vidal.fr/medicaments/substances/tedizolid-phosphate-24456.html) | Infections à germes Gram positif résistants aux autres antibiotiques (cours) ; fiche VIDAL intitulée « tédizolid phosphate » | SIVEXTRO® orale ou IV |
+| Aminoglycosides | [Streptomycine](https://www.vidal.fr/medicaments/substances/streptomycine-6877.html) | Bactéricide concentration-dépendant avec effet post-antibiotique ; index thérapeutique étroit ; STP recommandé (pic d'efficacité et taux résiduel de toxicité) ; néphrotoxicité réversible, toxicité cochléo-vestibulaire irréversible ; toujours en association (cours) | Génériques IM ou IV |
+| Aminoglycosides | [Gentamicine](https://www.vidal.fr/medicaments/substances/gentamicine-1610.html) | Mêmes propriétés et mêmes surveillances que la famille (cours) | Génériques IM ou IV |
+| Aminoglycosides | [Amikacine](https://www.vidal.fr/medicaments/substances/amikacine-6676.html) | Mêmes propriétés que la famille ; réservée aux infections sévères (cours) | Génériques IM ou IV |
+| Aminoglycosides | [Tobramycine](https://www.vidal.fr/medicaments/substances/tobramycine-3542.html) | Nébulisation pour certaines formes (cours) | NEBCINE® IM, IV ou collyre ; TOBI® nébulisation |
+| Tétracyclines | [Doxycycline](https://www.vidal.fr/medicaments/substances/doxycycline-1316.html) | Bactériostatique large spectre ; prévention du paludisme chez le voyageur en cas de résistance, de contre-indication ou d'intolérance à la méfloquine (cours) | VIBRAMYCINE N®, DOXY® + génériques, DOXYPALU®, VIBRAVEINEUSE® IV |
+| Tétracyclines | [Minocycline](https://www.vidal.fr/medicaments/substances/minocycline-2393.html) | Bactériostatique large spectre (cours) | MYNOCINE® + génériques |
+| Tétracyclines | [Lymécycline](https://www.vidal.fr/medicaments/substances/lymecycline-2146.html) | Bactériostatique large spectre (cours) | TÉTRALYSAL® |
+| Tétracyclines | [Métacycline](https://www.vidal.fr/medicaments/substances/metacycline-5810.html) | Bactériostatique large spectre (cours) | PHYSIOMYCINE®, LYSOCLINE® |
+| Tétracyclines | [Tigécycline](https://www.vidal.fr/medicaments/substances/tigecycline-22811.html) | Bactériostatique large spectre (cours) | TYGACIL® IV |
+| Quinolones (1re génération) | [Fluméquine](https://www.vidal.fr/medicaments/substances/flumequine-1510.html) | Infections urinaires basses ; voie orale (cours) | APURONE® |
+| Quinolones (1re génération) | [Acide pipémidique](https://www.vidal.fr/medicaments/substances/acide-pipemidique-4380.html) | Infections urinaires basses ; voie orale (cours) | PIPRAM® Fort |
+| Fluoroquinolones (2e génération) | [Ciprofloxacine](https://www.vidal.fr/medicaments/substances/ciprofloxacine-4070.html) | Nombreuses indications : urinaires, osseuses, broncho-pulmonaires, ORL (cours) | CIFLOX® + génériques |
+| Fluoroquinolones (2e génération) | [Ofloxacine](https://www.vidal.fr/medicaments/substances/ofloxacine-2539.html) | Orale ou IV selon les molécules (cours) | OFLOCET® + génériques |
+| Fluoroquinolones (2e génération) | [Norfloxacine](https://www.vidal.fr/medicaments/substances/norfloxacine-3937.html) | Infections urinaires, osseuses, broncho-pulmonaires, ORL (cours) | Génériques |
+| Fluoroquinolones (2e génération) | [Loméfloxacine](https://www.vidal.fr/medicaments/substances/lomefloxacine-5936.html) | Infections urinaires, osseuses, broncho-pulmonaires, ORL (cours) | LOGIFLOX® |
+| Fluoroquinolones antipneumococciques (3e et 4e générations) | [Lévofloxacine](https://www.vidal.fr/medicaments/substances/levofloxacine-18499.html) | Orale ou IV (cours) | TAVANIC® + génériques |
+| Fluoroquinolones antipneumococciques (3e et 4e générations) | [Moxifloxacine](https://www.vidal.fr/medicaments/substances/moxifloxacine-21802.html) | Orale ou IV (cours) | IZILOX® + génériques |
+| Sulfamides | [Cotrimoxazole](https://www.vidal.fr/medicaments/substances/sulfamethoxazole-3387.html) : [sulfaméthoxazole](https://www.vidal.fr/medicaments/substances/sulfamethoxazole-3387.html) + [triméthoprime](https://www.vidal.fr/medicaments/substances/trimethoprime-3582.html) | Bactéricide par synergie des deux molécules ; pneumocystose en curatif et en prophylaxie chez l'immunodéprimé ; otites et sinusites après documentation bactériologique (cours) | BACTRIM® orale ou IV |
+| Sulfamides | [Sulfadiazine](https://www.vidal.fr/medicaments/substances/sulfadiazine-3774.html) | Toxoplasmose (cours) | ADIAZINE® |
+| Sulfamides | [Sulfaméthizol](https://www.vidal.fr/medicaments/substances/sulfamethizol-3386.html) | Infections urinaires de la femme (cours) | RUFOL® |
+| Sulfamides | [Triméthoprime](https://www.vidal.fr/medicaments/substances/trimethoprime-3582.html) | Infections urinaires de la femme (cours) | DELPRIM® |
+| Polymyxines | [Colistine](https://www.vidal.fr/medicaments/substances/colistine-3872.html) (polymyxine E) | Bactéricide sur bacilles Gram négatif ; profil de sécurité défavorable — néphrotoxicité et neurotoxicité ; infections à germes résistants aux autres antibiotiques (cours) | COLIMYCINE® IV ou nébulisation |
+| Polymyxines | [Polymyxine B](https://www.vidal.fr/medicaments/substances/polymyxine-b-6857.html) | Voie locale (cours) | En association avec néomycine |
+| Antituberculeux (1re intention) | [Isoniazide](https://www.vidal.fr/medicaments/substances/isoniazide-1913.html) | Inhibition de la synthèse de la paroi ; neuropathies périphériques → vitamine B6 (cours) | RIMIFON® cp, inj ; RIFINAH® (isoniazide + rifampicine), DEXAMBUTOL-INH® (isoniazide + éthambutol), RIFATER® (isoniazide + rifampicine + pyrazinamide) |
+| Antituberculeux (1re intention) | [Éthambutol](https://www.vidal.fr/medicaments/substances/ethambutol-15563.html) | Troubles oculaires → bilan ophtalmologique avant et pendant (cours) | DEXAMBUTOL®, MYAMBUTOL® cp, inj |
+| Antituberculeux (1re intention) | [Pyrazinamide](https://www.vidal.fr/medicaments/substances/pyrazinamide-2974.html) | Destruction de la membrane cytoplasmique ; arthralgies (cours) | PIRILENE® cp |
+| Antituberculeux (1re intention) | [Rifampicine](https://www.vidal.fr/medicaments/substances/rifampicine-3060.html) | Inhibition de la synthèse des protéines ; coloration orangée des liquides biologiques ; inducteur enzymatique → interactions médicamenteuses (cours) | RIFADINE® gél, inj ; RIMACTAN® gél |
+| Antituberculeux (2e intention) | [Rifabutine](https://www.vidal.fr/medicaments/substances/rifabutine-3059.html) | Formes multirésistantes, mycobactéries atypiques, infection à *Mycobacterium avium*, intolérance sévère aux 1res intentions (cours) | ANSATIPINE® gél |
+
+<Callout type="warning" title="Allergie aux bêta-lactamines">
+L'effet indésirable le plus fréquent des pénicillines et des céphalosporines
+est de type allergique : généralement des éruptions cutanées, mais des
+réactions anaphylactiques possibles, parfois fatales — incidence plus faible
+avec les céphalosporines qu'avec les pénicillines. Toute réaction allergique
+grave avec une bêta-lactamine indique un risque élevé d'allergie aux autres
+bêta-lactamines : risque de réactions croisées entre pénicillines et
+céphalosporines de 10 à 20 % ; risque de réaction croisée avec l'aztréonam
+inférieur à 1 % (cours).
+</Callout>
 
 ## Indications
 
-- À compléter avec les cours.
-- À compléter avec les cours.
-- À compléter avec les cours.
+- **Infections à bactéries Gram positif et à germes atypiques
+  intracellulaires** — macrolides : alternative en cas d'allergie aux
+  pénicillines (cours).
+- **Infections à staphylocoque méti-S** — pénicillines M : oxacilline,
+  cloxacilline (cours).
+- **Infections urinaires basses** — quinolones de 1re génération : fluméquine,
+  acide pipémidique (cours).
+- **Pneumocystose en curatif et en prophylaxie chez l'immunodéprimé,
+  toxoplasmose** — cotrimoxazole, sulfadiazine (cours).
+- **Prévention du rhumatisme articulaire aigu, syphilis, érysipèle** —
+  benzylpénicilline, benzathine benzylpénicilline ; prophylaxie en priorité
+  avec la phénoxyméthylpénicilline (cours).
+- **Prévention du paludisme chez le voyageur** — doxycycline (DOXYPALU®) en
+  cas de résistance, de contre-indication ou d'intolérance à la méfloquine
+  (cours).
+- **Infections sévères, usage hospitalier** — carboxypénicillines,
+  uréidopénicillines, céphalosporines injectables de spectre étendu,
+  carbapénèmes, monobactames, glycopeptides, aminoglycosides, polymyxines :
+  toujours en association pour les aminosides (cours).
+- **Tuberculose** — traitement systématique de la tuberculose maladie, quadri-
+  puis bithérapie, institué après recherches bactériologiques répétées —
+  examen direct, mise en culture et antibiogramme —, une prise par jour le
+  matin à jeun (cours).
+- **Curatif ou prophylactique** — l'antibiothérapie curative est probabiliste
+  ou documentée ; la prophylactique est chirurgicale ou médicale (cours).
 
 ## Contre-indications
 
-- À compléter avec les cours.
-- À compléter avec les cours.
-- À compléter avec les cours.
+Le cours ne détaille des contre-indications que pour les cyclines et les
+quinolones. Les onglets Bêta-lactamines, Macrolides et Sulfamides proviennent
+des RCP ANSM consultés ; les familles non documentées restent indiquées
+telles quelles.
+
+<Tabs
+  items={['Bêta-lactamines', 'Glycopeptides', 'Macrolides', 'Tétracyclines', 'Quinolones', 'Sulfamides', 'Antituberculeux']}
+  label="Classe"
+>
+  <Tab value="Bêta-lactamines">
+    Lus sur le RCP de l'AUGMENTIN® (amoxicilline + acide clavulanique) ; non
+    vérifiés ici pour les autres bêta-lactamines.
+
+    - Hypersensibilité aux substances actives, aux pénicillines, ou à l'un
+      des excipients (RCP).
+    - Antécédents de réaction d'hypersensibilité immédiate sévère, par exemple
+      anaphylaxie, à une autre bêta-lactamine — céphalosporine, carbapénème ou
+      monobactame (RCP).
+    - Antécédent d'ictère ou d'atteinte hépatique lié à l'amoxicilline / acide
+      clavulanique (RCP).
+  </Tab>
+  <Tab value="Glycopeptides">
+    Non précisé dans les sources consultées (cours, VIDAL, RCP, OMS).
+  </Tab>
+  <Tab value="Macrolides">
+    Lus sur le RCP du ZITHROMAX® (azithromycine) ; non vérifiés ici pour les
+    autres macrolides.
+
+    - Hypersensibilité à la substance active, à l'érythromycine, à tout
+      antibiotique de la famille des macrolides ou des kétolides, ou à l'un
+      des excipients (RCP).
+  </Tab>
+  <Tab value="Tétracyclines">
+
+    - Femme enceinte (cours).
+    - Enfant de moins de 8 ans (cours).
+  </Tab>
+  <Tab value="Quinolones">
+
+    - Enfant de moins de 15 ans (cours).
+  </Tab>
+  <Tab value="Sulfamides">
+
+    - Hypersensibilité (cours).
+    - Toxicité hématologique : conduite à tenir par surveillance de la NFS
+      (cours).
+  </Tab>
+  <Tab value="Antituberculeux">
+    Non précisé dans les sources consultées (cours, VIDAL, RCP, OMS).
+  </Tab>
+</Tabs>
 
 ## Interactions médicamenteuses
 
-- À compléter avec les cours.
-- À compléter avec les cours.
-- À compléter avec les cours.
+**Macrolides et apparentés.** Bactériostatiques, métabolisés par le CYP3A4 et
+inhibiteurs du CYP3A4 : interactions médicamenteuses. Le cours donne l'ordre
+croissant du pouvoir inhibiteur : érythromycine > roxithromycine >
+clarithromycine > azithromycine = josamycine > spiramycine (cours).
+
+**Oxazolidinones.** Linézolide et tédizolide : interactions médicamenteuses et
+risque de syndrome sérotoninergique (cours).
+
+**Antituberculeux.** Rifampicine : inducteur enzymatique, donc interactions
+médicamenteuses (cours) ; hépatotoxicité de l'association isoniazide +
+pyrazinamide.
+
+**Bêta-lactamines et aminosides.** Synergie des effets antibactériens vis-à-vis
+de certaines bactéries (cours).
+
+<Callout type="error" title="Surdosage en gentamicine — erreur médicamenteuse du cours">
+Monsieur PH, 72 ans, hospitalisé pour une endocardite à *Enterococcus
+faecalis* sur valve mécanique aortique : 2 g de gentamicine IV prescrits selon
+avis infectieux, soit 23 mg/kg, alors que la prescription informatisée de
+l'infectiologue est de 3 mg/kg/jour. Le médicament n'étant pas en dotation, les
+25 ampoules de 80 mg sont prélevées dans la dotation d'un autre service sans
+contacter le pharmacien d'astreinte.
+
+Conséquence : 7,8 fois la dose recommandée d'un médicament fortement
+néphrotoxique ou ototoxique, avec insuffisance rénale aiguë — créatininémie à
+318 µmol/L avec anurie, puis 748 µmol/L le 23/10 et mise sous dialyse. Mesures
+prises : arrêt de la prescription, mesure de la concentration résiduelle de
+gentamicine, retrait de la gentamicine du service et réflexion sur la
+sécurisation du circuit des antibiotiques, déclaration à la Pharmacovigilance,
+explication aux IDE de la procédure de demande de médicaments hors dotation
+(cours).
+</Callout>
 
 ## Effets secondaires
 
-| Effet | Fréquence (si disponible) | Conduite |
-| --- | --- | --- |
-| À compléter | À compléter | À compléter |
+Les fréquences proviennent des RCP consultés ; « Non précisé » signifie que les
+sources consultées ne donnent pas de valeur.
+
+| Classe | Effet indésirable | Fréquence | Conduite |
+| ------ | ----------------- | --------- | -------- |
+| Bêta-lactamines | Diarrhée | Très fréquent — RCP AUGMENTIN® | — |
+| Bêta-lactamines | Nausées, vomissements | Fréquent — RCP AUGMENTIN® | — |
+| Bêta-lactamines | Éruption cutanée | Peu fréquent — RCP AUGMENTIN® | — |
+| Bêta-lactamines | Candidose cutanéo-muqueuse | Fréquent — RCP AUGMENTIN® | — |
+| Bêta-lactamines | Étourdissements | Peu fréquent — RCP AUGMENTIN® | — |
+| Bêta-lactamines | Élévations des taux d'ASAT et/ou d'ALAT | Peu fréquent — RCP AUGMENTIN® | Bilan hépatique |
+| Bêta-lactamines | Leucopénie, thrombocytopénie | Rare — RCP AUGMENTIN® | NFS |
+| Bêta-lactamines | Réactions allergiques — éruptions cutanées, réactions anaphylactiques parfois fatales | Non précisée (cours) | Interrompre, évaluer le risque d'allergie croisée de 10 à 20 % avec les céphalosporines |
+| Bêta-lactamines | Surinfections à *Candida* — surtout avec amoxicilline + acide clavulanique — et colite pseudomembraneuse à *Clostridium difficile* | Non précisée (cours) | — |
+| Bêta-lactamines | Réactions locales à l'injection IM douloureuse ; neurotoxicité si concentrations plasmatiques élevées de pénicillines | Non précisée (cours) | — |
+| Carbapénèmes et monobactames | Hypersensibilité, troubles digestifs ; troubles neuro-psychiques en cas de surdosage | Non précisée (cours) | — |
+| Glycopeptides | Néphrotoxicité ; « Red Man Syndrome » (daptomycine, vancomycine) | Non précisée (cours) | Surveillance rénale, STP, perfusion lente ou continue de vancomycine |
+| Macrolides | Diarrhée | Très fréquent — RCP ZITHROMAX® | — |
+| Macrolides | Céphalées | Fréquent — RCP ZITHROMAX® | — |
+| Macrolides | Vomissements, douleurs abdominales, nausées | Fréquent — RCP ZITHROMAX® | — |
+| Macrolides | Rash, prurit, urticaire | Peu fréquent — RCP ZITHROMAX® | — |
+| Macrolides | Effets digestifs bénins, cardiaques, hépatiques | Non précisée (cours) | — |
+| Oxazolidinones | Toxicité hématologique, atteintes hépatiques, hyperlactatémies | Non précisée (cours) | Surveillance de la NFS |
+| Aminoglycosides | Néphrotoxicité réversible ; toxicité cochléo-vestibulaire irréversible | Non précisée (cours) | Surveillance rénale, STP — pic d'efficacité et taux résiduel de toxicité |
+| Tétracyclines | Coloration des dents, hypoplasie de l'émail dentaire ; photosensibilisation ; troubles gastro-intestinaux | Non précisée (cours) | CI chez la femme enceinte et l'enfant de moins de 8 ans ; éviter l'exposition au soleil |
+| Quinolones | Photosensibilisation ; tendinopathies, rupture du tendon d'Achille ; troubles neuro-psychiques et convulsions ; effets cardiaques | Non précisée (cours) | Éviter l'exposition au soleil ; CI chez l'enfant de moins de 15 ans |
+| Sulfamides | Hypersensibilité ; toxicité hématologique | Non précisée (cours) | Surveiller la NFS |
+| Polymyxines | Néphrotoxicité et neurotoxicité | Non précisée (cours) | Profil de sécurité défavorable |
+| Antituberculeux | Neuropathies périphériques (isoniazide) ; coloration orangée des liquides biologiques, hypersensibilités, hépatotoxicité (rifampicine) ; troubles oculaires (éthambutol) ; arthralgies (pyrazinamide) | Non précisée (cours) | Vitamine B6, bilan hépatique régulier, bilan ophtalmologique avant et pendant |
 
 ## Surveillances
 
-- À compléter avec les cours.
-- À compléter avec les cours.
-- À compléter avec les cours.
+<Steps>
+  <Step>
+    ### Évaluation de l'efficacité
+
+    Impérative après 48 à 72 heures de traitement : température, état général
+    et disparition des symptômes (cours).
+  </Step>
+  <Step>
+    ### Dépistage des effets indésirables
+
+    Réactions allergiques — signes cutanés, œdèmes, accidents graves type choc
+    anaphylactique ou œdème de Quincke —, troubles digestifs, effets
+    indésirables spécifiques à chaque classe (cours).
+  </Step>
+  <Step>
+    ### Surveillance biologique
+
+    Prélèvements bactériologiques réguliers, antibiogramme, CRP, NFS, voire STP,
+    bilan hépatique ou rénal en fonction de l'antibiotique utilisé (cours).
+  </Step>
+</Steps>
+
+- **Administration.** Reconstitution : respect des solutés de perfusion
+  recommandés du fait d'incompatibilités physicochimiques ; respect de la durée
+  et du rythme d'administration (cours).
+- **Posologie.** Concentrations-dépendants : pics efficaces après de fortes
+  doses fractionnées dans la journée ; effet post-antibiotique : nombre
+  d'administrations réduit ; temps-dépendants : maintien long de concentrations
+  efficaces. Durée habituelle 7 à 14 jours, prise unique possible dans les
+  infections urinaires, traitement prolongé dans les endocardites et infections
+  ostéo-articulaires (cours).
+- **Éducation du patient.** Interroger sur les antécédents de réactions
+  allergiques à un antibiotique ; poursuivre le traitement même si le patient se
+  sent mieux ; respecter le mode et les horaires de prises ; consultation
+  médicale si traitement non efficace ou survenue d'un effet indésirable
+  (cours).
+- **Antituberculeux.** Déclaration obligatoire ; prévention par la
+  vaccination ; une prise par jour le matin à jeun ; bilan hépatique régulier et
+  prévention du patient devant l'hépatotoxicité, bilan ophtalmologique avant et
+  pendant l'éthambutol (cours).
+
+## Sources
+
+**Cours**
+
+- Pharmacologie des anti-infectieux — Antibiotiques (capsule 1/3), Claire
+  Lafay-Chebassier, MCU-PH, Université de Poitiers ; UE 2.11 S3, IFSI Région
+  Nouvelle-Aquitaine.
+
+**VIDAL — fiches substance par DCI**
+
+- Pénicillines : [Benzylpénicilline](https://www.vidal.fr/medicaments/substances/benzylpenicilline-4413.html),
+  [Benzathine benzylpénicilline](https://www.vidal.fr/medicaments/substances/benzathine-benzylpenicilline-526.html),
+  [Phénoxyméthylpénicilline](https://www.vidal.fr/medicaments/substances/phenoxymethylpenicilline-2739.html),
+  [Amoxicilline](https://www.vidal.fr/medicaments/substances/amoxicilline-310.html),
+  [Ampicilline](https://www.vidal.fr/medicaments/substances/ampicilline-315.html),
+  [Oxacilline](https://www.vidal.fr/medicaments/substances/oxacilline-5830.html),
+  [Cloxacilline](https://www.vidal.fr/medicaments/substances/cloxacilline-6748.html),
+  [Ticarcilline](https://www.vidal.fr/medicaments/substances/ticarcilline-3998.html),
+  [Pipéracilline](https://www.vidal.fr/medicaments/substances/piperacilline-6998.html)
+- Céphalosporines : [Céfaclor](https://www.vidal.fr/medicaments/substances/cefaclor-6715.html),
+  [Céfalexine](https://www.vidal.fr/medicaments/substances/cefalexine-849.html),
+  [Céfadroxil](https://www.vidal.fr/medicaments/substances/cefadroxil-6716.html),
+  [Céfazoline](https://www.vidal.fr/medicaments/substances/cefazoline-856.html),
+  [Céfuroxime](https://www.vidal.fr/medicaments/substances/cefuroxime-5669.html),
+  [Céfamandole](https://www.vidal.fr/medicaments/substances/cefamandole-853.html),
+  [Céfoxitine](https://www.vidal.fr/medicaments/substances/cefoxitine-6977.html),
+  [Céfixime](https://www.vidal.fr/medicaments/substances/cefixime-6720.html),
+  [Cefpodoxime](https://www.vidal.fr/medicaments/substances/cefpodoxime-864.html),
+  [Céfotiam](https://www.vidal.fr/medicaments/substances/cefotiam-5927.html),
+  [Céfotaxime](https://www.vidal.fr/medicaments/substances/cefotaxime-861.html),
+  [Ceftriaxone](https://www.vidal.fr/medicaments/substances/ceftriaxone-6723.html),
+  [Ceftazidime](https://www.vidal.fr/medicaments/substances/ceftazidime-6722.html),
+  [Céfépime](https://www.vidal.fr/medicaments/substances/cefepime-6916.html),
+  [Ceftaroline](https://www.vidal.fr/medicaments/substances/ceftaroline-fosamil-23578.html)
+- Carbapénèmes et monobactame : [Imipénème](https://www.vidal.fr/medicaments/substances/imipenem-6797.html),
+  [Méropénème](https://www.vidal.fr/medicaments/substances/meropenem-17685.html),
+  [Ertapénème](https://www.vidal.fr/medicaments/substances/ertapenem-22505.html),
+  [Aztréonam](https://www.vidal.fr/medicaments/substances/aztreonam-472.html)
+- Glycopeptides : [Vancomycine](https://www.vidal.fr/medicaments/substances/vancomycine-6898.html),
+  [Teicoplanine](https://www.vidal.fr/medicaments/substances/teicoplanine-3439.html),
+  [Dalbavancine](https://www.vidal.fr/medicaments/substances/dalbavancine-24624.html),
+  [Daptomycine](https://www.vidal.fr/medicaments/substances/daptomycine-22846.html)
+- Macrolides : [Erythromycine](https://www.vidal.fr/medicaments/substances/erythromycine-1371.html),
+  [Spiramycine](https://www.vidal.fr/medicaments/substances/spiramycine-3329.html),
+  [Josamycine](https://www.vidal.fr/medicaments/substances/josamycine-3834.html),
+  [Roxithromycine](https://www.vidal.fr/medicaments/substances/roxithromycine-3083.html),
+  [Clarithromycine](https://www.vidal.fr/medicaments/substances/clarithromycine-4601.html),
+  [Azithromycine](https://www.vidal.fr/medicaments/substances/azithromycine-5925.html),
+  [Midécamycine](https://www.vidal.fr/medicaments/substances/midecamycine-11810.html),
+  [Télithromycine](https://www.vidal.fr/medicaments/substances/telithromycine-21842.html)
+- Lincosamides et synergistines : [Clindamycine](https://www.vidal.fr/medicaments/substances/clindamycine-6742.html),
+  [Lincomycine](https://www.vidal.fr/medicaments/substances/lincomycine-6817.html),
+  [Pristinamycine](https://www.vidal.fr/medicaments/substances/pristinamycine-2923.html)
+- Oxazolidinones : [Linézolide](https://www.vidal.fr/medicaments/substances/linezolide-21801.html),
+  [Tédizolide](https://www.vidal.fr/medicaments/substances/tedizolid-phosphate-24456.html)
+- Aminoglycosides : [Streptomycine](https://www.vidal.fr/medicaments/substances/streptomycine-6877.html),
+  [Gentamicine](https://www.vidal.fr/medicaments/substances/gentamicine-1610.html),
+  [Amikacine](https://www.vidal.fr/medicaments/substances/amikacine-6676.html),
+  [Tobramycine](https://www.vidal.fr/medicaments/substances/tobramycine-3542.html)
+- Tétracyclines : [Doxycycline](https://www.vidal.fr/medicaments/substances/doxycycline-1316.html),
+  [Minocycline](https://www.vidal.fr/medicaments/substances/minocycline-2393.html),
+  [Lymécycline](https://www.vidal.fr/medicaments/substances/lymecycline-2146.html),
+  [Métacycline](https://www.vidal.fr/medicaments/substances/metacycline-5810.html),
+  [Tigécycline](https://www.vidal.fr/medicaments/substances/tigecycline-22811.html)
+- Quinolones : [Fluméquine](https://www.vidal.fr/medicaments/substances/flumequine-1510.html),
+  [Acide pipémidique](https://www.vidal.fr/medicaments/substances/acide-pipemidique-4380.html),
+  [Ciprofloxacine](https://www.vidal.fr/medicaments/substances/ciprofloxacine-4070.html),
+  [Ofloxacine](https://www.vidal.fr/medicaments/substances/ofloxacine-2539.html),
+  [Norfloxacine](https://www.vidal.fr/medicaments/substances/norfloxacine-3937.html),
+  [Loméfloxacine](https://www.vidal.fr/medicaments/substances/lomefloxacine-5936.html),
+  [Lévofloxacine](https://www.vidal.fr/medicaments/substances/levofloxacine-18499.html),
+  [Moxifloxacine](https://www.vidal.fr/medicaments/substances/moxifloxacine-21802.html)
+- Sulfamides : [Cotrimoxazole — sulfaméthoxazole](https://www.vidal.fr/medicaments/substances/sulfamethoxazole-3387.html) et [triméthoprime](https://www.vidal.fr/medicaments/substances/trimethoprime-3582.html),
+  [Sulfadiazine](https://www.vidal.fr/medicaments/substances/sulfadiazine-3774.html),
+  [Sulfaméthizol](https://www.vidal.fr/medicaments/substances/sulfamethizol-3386.html)
+- Polymyxines : [Colistine](https://www.vidal.fr/medicaments/substances/colistine-3872.html),
+  [Polymyxine B](https://www.vidal.fr/medicaments/substances/polymyxine-b-6857.html)
+- Antituberculeux : [Isoniazide](https://www.vidal.fr/medicaments/substances/isoniazide-1913.html),
+  [Éthambutol](https://www.vidal.fr/medicaments/substances/ethambutol-15563.html),
+  [Pyrazinamide](https://www.vidal.fr/medicaments/substances/pyrazinamide-2974.html),
+  [Rifampicine](https://www.vidal.fr/medicaments/substances/rifampicine-3060.html),
+  [Rifabutine](https://www.vidal.fr/medicaments/substances/rifabutine-3059.html)
+
+**ANSM — Résumés des caractéristiques du produit**
+
+- [AUGMENTIN® 1 g / 125 mg, pénicilline — RCP](https://agence-prd.ansm.sante.fr/php/ecodex/rcp/R0451177.htm)
+- [ZITHROMAX® 250 mg, macrolide — RCP](https://agence-prd.ansm.sante.fr/php/ecodex/rcp/R0450365.htm)
+
+**OMS (Organisation mondiale de la Santé)**
+
+- [Antimicrobial resistance — fiche d'information OMS](https://www.who.int/news-room/fact-sheets/detail/antimicrobial-resistance)
+- [Tuberculose — fiche d'information OMS](https://www.who.int/news-room/fact-sheets/detail/tuberculosis)
+- [Index ATC/DDD de l'OMS (J — anti-infectieux)](https://www.whocc.no/atc_ddd_index/)
