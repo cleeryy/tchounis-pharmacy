@@ -1,0 +1,5 @@
+{
+  "title": "Tchouni's Pharmacy",
+  "root": true,
+  "pages": ["index", "anti-infectieux", "cardiovasculaires", "diabete", "fibrinolytiques", "hypolipemiants", "psychotropes"]
+}
