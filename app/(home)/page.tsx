@@ -2,6 +2,18 @@ import Link from 'next/link';
 
 const subjects = [
   {
+    href: '/docs/crew',
+    title: "Tchouni's Crew",
+    description:
+      'UE 3.3 · Rôles infirmiers : histoire, équipe, dossier patient, réseau de soins.',
+  },
+  {
+    href: '/docs/flow',
+    title: "Tchouni's Flow",
+    description:
+      'UE 2.8 S3 · Processus obstructifs : cœur, poumons, digestif, urinaire — et le rôle IDE.',
+  },
+  {
     href: '/docs/immunity',
     title: "Tchouni's Immunity",
     description:
@@ -20,12 +32,6 @@ const subjects = [
       'UE 3.2 S3 · Projet de soins : raisonnement clinique, plan de soins, transmissions.',
   },
   {
-    href: '/docs/plumbing',
-    title: "Tchouni's Plumbing",
-    description:
-      'UE 2.8 S3 · Processus obstructifs : cœur, poumons, digestif, urinaire — et le rôle IDE.',
-  },
-  {
     href: '/docs/school',
     title: "Tchouni's School",
     description:
@@ -36,12 +42,6 @@ const subjects = [
     title: "Tchouni's Talk",
     description:
       'UE 4.2 S3 · Soins relationnels : entretien, écoute, alliance thérapeutique.',
-  },
-  {
-    href: '/docs/team',
-    title: "Tchouni's Team",
-    description:
-      'UE 3.3 · Rôles infirmiers : histoire, équipe, dossier patient, réseau de soins.',
   },
 ];
 

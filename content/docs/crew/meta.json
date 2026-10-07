@@ -1,0 +1,5 @@
+{
+  "title": "Tchouni's Crew",
+  "root": true,
+  "pages": ["index", "histoire-profession", "concepts", "equipe-outils", "dossier-patient", "reseau-irc", "roles-missions"]
+}
