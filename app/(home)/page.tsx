@@ -2,10 +2,46 @@ import Link from 'next/link';
 
 const subjects = [
   {
+    href: '/docs/immunity',
+    title: "Tchouni's Immunity",
+    description:
+      'UE 2.5 S3 · Processus inflammatoires et infectieux : défenses de l’hôte, infections d’organes, VIH, IST, vaccination.',
+  },
+  {
     href: '/docs/pharmacy',
     title: "Tchouni's Pharmacy",
     description:
-      "Fiches de pharmacologie (UE 2.11) : classes médicamenteuses, effets indésirables et surveillance infirmière.",
+      'UE 2.11 S3 · Pharmacologie : classes médicamenteuses, effets indésirables et surveillance infirmière.',
+  },
+  {
+    href: '/docs/plan',
+    title: "Tchouni's Plan",
+    description:
+      'UE 3.2 S3 · Projet de soins : raisonnement clinique, plan de soins, transmissions.',
+  },
+  {
+    href: '/docs/plumbing',
+    title: "Tchouni's Plumbing",
+    description:
+      'UE 2.8 S3 · Processus obstructifs : cœur, poumons, digestif, urinaire — et le rôle IDE.',
+  },
+  {
+    href: '/docs/school',
+    title: "Tchouni's School",
+    description:
+      'UE 4.6 S3 · Soins éducatifs et préventifs : ETP, entretien motivationnel, promotion de la santé.',
+  },
+  {
+    href: '/docs/talk',
+    title: "Tchouni's Talk",
+    description:
+      'UE 4.2 S3 · Soins relationnels : entretien, écoute, alliance thérapeutique.',
+  },
+  {
+    href: '/docs/team',
+    title: "Tchouni's Team",
+    description:
+      'UE 3.3 · Rôles infirmiers : histoire, équipe, dossier patient, réseau de soins.',
   },
 ];
 

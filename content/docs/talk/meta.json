@@ -1,0 +1,17 @@
+{
+  "title": "Tchouni's Talk",
+  "root": true,
+  "pages": [
+    "index",
+    "types-entretien",
+    "outils-entretien",
+    "fondements-relation",
+    "emotions",
+    "attitudes",
+    "ecoute",
+    "alliance-therapeutique",
+    "relation-aide",
+    "douleur-meopa",
+    "agressivite"
+  ]
+}

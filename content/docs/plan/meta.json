@@ -1,0 +1,12 @@
+{
+  "title": "Tchouni's Plan",
+  "root": true,
+  "pages": [
+    "index",
+    "methode-rc",
+    "accueil",
+    "negociation",
+    "plan-soins",
+    "transmissions"
+  ]
+}

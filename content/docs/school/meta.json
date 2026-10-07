@@ -1,0 +1,15 @@
+{
+  "title": "Tchouni's School",
+  "root": true,
+  "pages": [
+    "index",
+    "demarche-etp",
+    "concepts",
+    "promotion-sante",
+    "bilan-educatif",
+    "entretien-motivationnel",
+    "outils-etp",
+    "competences-psychosociales",
+    "analyse-demarche"
+  ]
+}
