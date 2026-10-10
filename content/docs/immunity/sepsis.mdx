@@ -3,6 +3,11 @@ title: "Fièvre, bactériémie, sepsis et choc septique"
 description: "Réactions et complications systémiques de l’infection."
 ---
 
+import { Callout } from 'fumadocs-ui/components/callout';
+import { Card, Cards } from 'fumadocs-ui/components/card';
+import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
+import { Step, Steps } from 'fumadocs-ui/components/steps';
+
 Une température à 38,5 °C chez un patient neutropénique n'a pas la même signification que chez un adulte sans antécédent. C'est tout l'enjeu de cette fiche : apprendre à caractériser la fièvre, à repérer les terrains à risque et à comprendre pourquoi les hémocultures conditionnent la suite de la prise en charge. Les repères viennent du cours cité en sources, dont certains contenus datés de 2021 restent à confronter aux protocoles locaux en vigueur. Le plan suit la progression clinique, de la physiopathologie de la fièvre jusqu'au prélèvement bactériémique.
 
 ## L'essentiel en une minute
@@ -11,10 +16,14 @@ Les quatre lignes ci-dessous condensent les seuils et définitions à avoir en t
 
 - **Température normale** (cours) : ~37 °C le matin, 37,5 °C le soir ; **hyperthermie** : élévation interne > 38 °C en dehors de tout effort.
 - La fièvre a des effets positifs (frein à la réplication, aide à l'immunité) et négatifs (stase, œdème, translocation digestive, baisse de filtration glomérulaire).
-- **Sepsis** = dysfonction d'organe menaçant le pronostic vital par réponse inappropriée à une infection ; **choc septique** = défaillance circulatoire + anomalies métaboliques/cellulaires profondes (contenu de cours, 2021 — se référer aux définitions et protocoles locaux en vigueur).
-- **Bactériémie** = présence de bactéries dans le sang (fongémie pour champignons) ; les **hémocultures** sont l'examen clé, à prélever avant l'antibiothérapie si possible.
+- **Sepsis = dysfonction d'organe menaçant le pronostic vital par réponse inappropriée à une infection** ; **choc septique = défaillance circulatoire + anomalies métaboliques/cellulaires profondes** (contenu de cours, 2021 — se référer aux définitions et protocoles locaux en vigueur).
+- **Bactériémie = présence de bactéries dans le sang (fongémie pour champignons)** ; les **hémocultures** sont l'examen clé, à prélever avant l'antibiothérapie si possible.
 
 À retenir avant de poursuivre : la fièvre seule ne dit pas tout, ses effets sont à double tranchant et le sepsis comme le choc septique engagent le pronostic vital. D'où l'importance de la bactériémie et de ses hémocultures, qui feront l'objet de la dernière section.
+
+<Callout type="error" title="Urgence">
+Sepsis et choc septique engagent le pronostic vital : la dysfonction d'organe par réponse inappropriée à une infection et la défaillance circulatoire citées dans le cours imposent d'alerter sans délai selon le protocole local.
+</Callout>
 
 ## 1. Fièvre : physiopathologie et caractéristiques
 
@@ -25,16 +34,31 @@ Pour surveiller une fièvre utilement, il faut comprendre comment elle naît et 
 - Caractériser : début, horaire, aiguë (< 5 jours) ou prolongée (> 38 °C plus de 3 semaines), persistante / rémittente / intermittente / par pics ; signes associés (sueurs, frissons, arthralgies, myalgies, céphalées, signes fonctionnels) ; prise d'antipyrétiques (heure de la dernière prise).
 - Prise de température (cours) : centrale = rectale ou tympanique ; rectale traumatique à éviter ; tympanique gênée par bouchon de cérumen ; privilégier axillaire ou buccale avec correction souvent + 0,5 °C ; frontale peu fiable.
 
+<Callout type="warn" title="Repères datés">
+Conséquences chiffrées par degré > 37 °C (FR augmentée, FC + ~10 bpm, pertes hydriques + ~400 mL) : contenu de cours daté de 2021, repères pédagogiques à confronter au protocole local, à ne pas utiliser comme protocole actuel.
+</Callout>
+
 En pratique, cette section invite à une méthode de lecture : relier frissons et sueurs au mécanisme central, chiffrer l'augmentation de fréquence respiratoire, de fréquence cardiaque et des pertes hydriques comme des repères de surveillance et non comme des normes actuelles, et tracer systématiquement le mode de prise, l'heure et la dernière prise d'antipyrétique. Le choix du site de mesure, avec ses limites rappelées par le cours, conditionne la fiabilité de toute la courbe.
 
 ## 2. Causes et terrains à risque
 
 Une fois la fièvre caractérisée, la question suivante est d'où elle vient et chez qui elle survient. Distinguer causes infectieuses et non infectieuses évite de conclure trop vite à l'infection, tandis que le terrain détermine le niveau d'inquiétude. C'est ce double repérage qui oriente l'interrogatoire.
 
-- **Causes infectieuses** : virales, bactériennes, parasitaires, mycobactéries, champignons.
-- **Causes non infectieuses** : allergiques, thrombo-emboliques, inflammatoires/dysimmunitaires, néoplasiques ; en détail dans le CM (cours magistral) : IDM (infarctus du myocarde, fièvre retardée 24 h), embolie/phlébite, cancers (rein inaugural dans ~10 % des cas cité), Crohn, cirrhoses, goutte, leucémie aiguë, canicule. Chiffres et exemples = contenu de cours, à confronter au référentiel actuel.
+<Tabs items={['Infectieuses', 'Non infectieuses']}>
+  <Tab value="Infectieuses">
+    **Causes infectieuses** : virales, bactériennes, parasitaires, mycobactéries, champignons.
+  </Tab>
+  <Tab value="Non infectieuses">
+    **Causes non infectieuses** : allergiques, thrombo-emboliques, inflammatoires/dysimmunitaires, néoplasiques ; en détail dans le CM (cours magistral) : IDM (infarctus du myocarde, fièvre retardée 24 h), embolie/phlébite, cancers (rein inaugural dans ~10 % des cas cité), Crohn, cirrhoses, goutte, leucémie aiguë, canicule. Chiffres et exemples = contenu de cours, à confronter au référentiel actuel.
+  </Tab>
+</Tabs>
+
 - **Terrains à risque** : femme enceinte, nourrisson < 3 mois, personne âgée dépendante, immunodépression (neutropénie < 500/mm³, asplénie/splénectomie cités), comorbidités cardiaques/rénales/pulmonaires. Questionner le statut vaccinal.
 - **Cas particulier neutropénique** : hyperthermie si ≥ 38,3 °C ou 2 × ≥ 38 °C à 1 h d'intervalle (contenu de cours — appliquer le seuil du protocole local).
+
+<Callout type="warn" title="Seuils datés">
+Causes non infectieuses, seuil neutropénique (≥ 38,3 °C ou 2 × ≥ 38 °C à 1 h) et neutropénie < 500/mm³ : contenus de cours à vérifier contre le protocole local en vigueur, sans les appliquer comme des seuils actuels.
+</Callout>
 
 Ce qu'il faut en retenir : la liste des causes non infectieuses citées par le cours, de l'infarctus du myocarde à la canicule, montre qu'une fièvre n'est pas toujours infectieuse. Chez les terrains à risque listés, et tout particulièrement en cas de neutropénie, les seuils cités restent des contenus de cours à vérifier contre le protocole local en vigueur, sans les appliquer comme des seuils actuels.
 
@@ -48,18 +72,37 @@ La fièvre et son terrain étant posés, il reste à décider quand s'inquiéter
 - **Antibiothérapie urgente si** (cours) : sepsis/choc, immunodépression (neutropénie, asplénie), purpura fulminans.
 - Traitement symptomatique cité : paracétamol (max 4 g/j cité, non systématique — vérifier posologie et contre-indications actuelles), AINS (anti-inflammatoires non stéroïdiens) non recommandés dans ce cours, hydratation orale ou IV (intraveineuse). Aucune prescription dans cette fiche : appliquer la prescription médicale et le protocole local.
 
+<Callout type="error" title="Urgence">
+Purpura fébrile, purpura fulminans, sepsis, choc, immunodépression (neutropénie, asplénie) : antibiothérapie urgente citée dans le cours et alerte sans délai selon le protocole local.
+</Callout>
+
+<Callout type="warn" title="Seuils datés">
+Signes d'alerte listés (tachycardie > 120/min, hypotensions, oligurie, polypnée, SaO2 < 90 %, créatinine, bilirubine, plaquettes, TP/INR) : seuils de cours datés, à ne pas utiliser comme protocole actuel, se référer au protocole local.
+</Callout>
+
 Pour lire cette liste en méthode : les signes d'alerte associent constantes hémodynamiques, respiratoires, neurologiques, cutanées et biologiques, et aucun seuil isolé ne suffit. Les seuils cités sont des contenus de cours datés, à ne pas utiliser comme protocole actuel. Les critères d'hospitalisation et d'antibiothérapie urgente rappellent quand la situation ne relève plus de la simple surveillance, tandis que le traitement symptomatique cité reste soumis à la prescription médicale et au protocole local.
 
 ## 4. Bactériémie et hémocultures
 
 Dernière étape du raisonnement : documenter la présence du germe dans le sang pour adapter le traitement. L'hémoculture est l'examen clé cité par le cours, mais sa fiabilité dépend entièrement de la qualité du prélèvement et de son timing. D'où le détail apporté ici aux volumes, à l'ordre des flacons et à l'acheminement.
 
-- **Définition** : présence dans le sang d'une bactérie (fongémie si champignon) ; rechercher foyer/porte d'entrée et localisations secondaires possibles.
+- **Définition : présence dans le sang d'une bactérie (fongémie si champignon)** ; rechercher foyer/porte d'entrée et localisations secondaires possibles.
 - **Correspondances germe–foyer citées** (orientation, Pilly 2020 cité) : pneumocoque → poumon/sinus/méninges ; staphylocoques → peau/cathéters ; anaérobies → bouche/côlon ; streptocoques → bouche/tube digestif/peau ; entérobactéries et entérocoques → urinaire/digestif/biliaire/cathéters ; Candida → cathéters.
-- **Prélèvement** : 2–3 paires aéro-anaérobie, ~10 mL par flacon (8–10 mL minimum), veine périphérique unique sauf suspicion sur cathéter ; asepsie stricte ; flacon aérobie d'abord (purge tubulure) puis anaérobie ; idéalement pendant les frissons ; avant antibiothérapie ; acheminement immédiat à température ambiante ; noter température, frissons, lieu, numérotation.
-- **Analyse** : automate à 37 °C détectant le CO2 (dioxyde de carbone, positivité souvent 24–48 h), identification rapide type MALDI-TOF (désorption-ionisation laser assistée par matrice couplée au temps de vol) citée ; positivité globale ~5–10 % ; contaminations fréquentes (jusqu'à 30–50 % des flacons positifs cités) : un seul flacon positif à staphylocoque non aureus, Bacillus, Corynebacterium ou Cutibacterium acnes évoque une contamination.
-- **Indications** (cours) : T ≥ 38,5 °C ou < 36 °C (< 36,5 °C dans le CM bilans), frissons, sepsis/choc même sans fièvre, neutropénique (≥ 38,3 °C ou 2 × ≥ 38 °C à 1 h). Pas d'hémocultures « systématiques ».
-- **Traitement** (cours) : antibiothérapie urgente IV (intraveineuse), probabiliste puis adaptée à l'antibiogramme selon germe, foyer et patient ; contrôle de négativation à 48 h cité. Contenu de cours — appliquer la prescription et le protocole local.
+
+<Steps>
+  <Step>
+    Vérifier l'indication (cours) : T ≥ 38,5 °C ou < 36 °C (< 36,5 °C dans le CM bilans), frissons, sepsis/choc même sans fièvre, neutropénique (≥ 38,3 °C ou 2 × ≥ 38 °C à 1 h). Pas d'hémocultures « systématiques ».
+  </Step>
+  <Step>
+    Prélever : 2–3 paires aéro-anaérobie, ~10 mL par flacon (8–10 mL minimum), veine périphérique unique sauf suspicion sur cathéter ; asepsie stricte ; flacon aérobie d'abord (purge tubulure) puis anaérobie ; idéalement pendant les frissons ; avant antibiothérapie.
+  </Step>
+  <Step>
+    Acheminer et tracer : acheminement immédiat à température ambiante ; noter température, frissons, lieu, numérotation.
+  </Step>
+  <Step>
+    Analyser et traiter : automate à 37 °C détectant le CO2 (dioxyde de carbone, positivité souvent 24–48 h), identification rapide type MALDI-TOF (désorption-ionisation laser assistée par matrice couplée au temps de vol) citée ; positivité globale ~5–10 % ; contaminations fréquentes (jusqu'à 30–50 % des flacons positifs cités) : un seul flacon positif à staphylocoque non aureus, Bacillus, Corynebacterium ou Cutibacterium acnes évoque une contamination. Antibiothérapie urgente IV (intraveineuse), probabiliste puis adaptée à l'antibiogramme selon germe, foyer et patient ; contrôle de négativation à 48 h cité. Contenu de cours — appliquer la prescription et le protocole local.
+  </Step>
+</Steps>
 
 À retenir en méthode de lecture : les correspondances germe-foyer citées restent des orientations, jamais des preuves. La qualité du résultat dépend du volume, de l'asepsie, du moment du prélèvement pendant les frissons et de son anticipation sur l'antibiothérapie. Une positivité isolée à un germe de contamination cutanée listé fait évoquer une contamination plutôt qu'une bactériémie vraie, et l'antibiothérapie comme le contrôle cités relèvent de la prescription et du protocole local en vigueur.
 
@@ -73,7 +116,19 @@ La vigilance infirmière découle de tout ce qui précède : interroger avec mé
 - Purpura fébrile, sepsis, choc, neutropénie fébrile : urgence — alerter sans délai selon protocole local.
 - TODO : définitions Sepsis-3 actuelles et conduite du choc septique non détaillées dans les extraits — compléter avec le référentiel local.
 
+<Callout type="error" title="Urgence">
+Purpura fébrile, sepsis, choc, neutropénie fébrile : urgence — alerter sans délai selon le protocole local.
+</Callout>
+
 Concrètement, cela signifie tracer la courbe avec l'heure de la dernière prise d'antipyrétique, tenir le bilan entrées-sorties face aux pertes majorées, et sécuriser chaque étape de l'hémoculture sans retarder une urgence. Devant un purpura fébrile, un sepsis, un choc ou une neutropénie fébrile, l'alerte immédiate selon le protocole local prime, les définitions Sepsis-3 actuelles restant à compléter avec le référentiel local comme l'indique le TODO.
+
+## Voir aussi
+
+<Cards>
+  <Card title="Physiopathologie des réactions inflammatoires et infectieuses" description="Socle : inflammation, infection et défenses de l'hôte." href="./physiopathologie" />
+  <Card title="Examens biologiques" description="Hémocultures, ECBU et marqueurs : réalisation et interprétation." href="./examens-bio" />
+  <Card title="Épidémiologie et déclarations obligatoires" description="Lire une épidémie et savoir ce qui se déclare." href="./epidemiologie" />
+</Cards>
 
 ## Sources
 

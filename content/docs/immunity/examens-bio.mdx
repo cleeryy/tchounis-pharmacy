@@ -3,6 +3,11 @@ title: "Examens biologiques"
 description: "Biochimie, hématologie et microbiologie : réalisation et interprétation."
 ---
 
+import { Callout } from 'fumadocs-ui/components/callout';
+import { Card, Cards } from 'fumadocs-ui/components/card';
+import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
+import { Step, Steps } from 'fumadocs-ui/components/steps';
+
 Une CRP (protéine C réactive) normale n'exclut pas une infection débutante, et une bandelette urinaire positive ne suffit pas à affirmer une infection. Tout l'enjeu de cette fiche est d'apprendre à prélever sans fausser le résultat, puis à lire les marqueurs et les prélèvements microbiologiques avec prudence. Les normes, seuils, tubes et coûts cités sont des contenus de cours à confronter au laboratoire local. Le plan suit le geste infirmier, du prélèvement aux marqueurs puis à la microbiologie et aux tests rapides.
 
 ## L'essentiel en une minute
@@ -16,14 +21,37 @@ Les quatre lignes ci-dessous condensent les pièges à éviter avant d'entrer da
 
 À retenir avant de poursuivre : ces repères annoncent la méthode de toute la fiche, qui consiste à sécuriser le pré-analytique puis à interpréter chaque résultat avec la clinique. Les sections suivantes détaillent d'abord le prélèvement, ensuite les marqueurs, enfin la microbiologie et les tests rapides.
 
+<Callout type="info" title="Méthode">
+Sécuriser le pré-analytique puis interpréter avec la clinique : aucun marqueur isolé ni aucun test d'orientation ne vaut preuve à lui seul, et l'inflammation ne signifie pas infection.
+</Callout>
+
 ## 1. Bonnes pratiques de prélèvement (rôle IDE)
 
 Un résultat faussé par un garrot trop serré, un tube mal rempli ou une étiquette posée à l'avance fait plus de tort qu'une absence de résultat. Cette section décrit l'ordre et les points techniques cités dans le cours : elle explique pourquoi chaque étape protège la fiabilité du résultat et la sécurité du patient.
 
 - Pour tout prélèvement en infectiologie (cours) : **asepsie**, avant antibiothérapie si possible, acheminement rapide, renseignements cliniques (température, site, traitement).
-- Étapes citées : prescription, information du patient, conditions (ex. glycémie), renseignements (poids, traitement), identitovigilance (le patient décline son identité ; bracelet/dossier sinon), matériel conforme, prélèvement (asepsie, AES — accident d'exposition au sang, ordre des tubes, homogénéisation), identification **après** le prélèvement (jamais à l'avance), bon de laboratoire (+ urgence et appel si besoin), transport adapté (sachet/boîte, glace si indiqué).
+
+<Steps>
+  <Step>
+    Vérifier la prescription, informer le patient, vérifier les conditions (ex. glycémie) et recueillir les renseignements (poids, traitement).
+  </Step>
+  <Step>
+    Appliquer l'identitovigilance (le patient décline son identité ; bracelet/dossier sinon) et préparer le matériel conforme.
+  </Step>
+  <Step>
+    Prélever avec asepsie (AES — accident d'exposition au sang, ordre des tubes, homogénéisation).
+  </Step>
+  <Step>
+    Identifier après le prélèvement (jamais à l'avance), renseigner le bon de laboratoire (+ urgence et appel si besoin) puis assurer le transport adapté (sachet/boîte, glace si indiqué).
+  </Step>
+</Steps>
+
 - Points techniques cités : garrot < 1 minute (au-delà, potassium perturbé cité) ; tube bleu (coagulation) rempli à ~90 % avec retournements lents ; base réglementaire citée : article R.4311-7 (prélèvements veineux/capillaires, téguments/muqueuses, sécrétions/excrétions, urines) — contenu de cours, vérifier le texte en vigueur localement.
 - Rôle : respect de la prescription, identitovigilance, réalisation, acheminement ; transmettre les indications techniques au laboratoire.
+
+<Callout type="warn" title="Vigilance">
+Garrot < 1 minute, tube bleu rempli à ~90 % avec retournements lents, identification après le geste et base réglementaire citée (article R.4311-7) : contenus de cours à vérifier dans leur version en vigueur localement.
+</Callout>
 
 Pour la pratique, l'ordre à mémoriser va de la prescription à l'acheminement sans sauter d'étape : informer, vérifier l'identité selon la méthode citée, respecter l'ordre des tubes et l'homogénéisation, identifier après le geste et renseigner le bon avec le contexte clinique. Les points techniques sur le garrot et le tube bleu montrent comment un détail pré-analytique modifie le résultat, et la base réglementaire citée reste à vérifier dans sa version en vigueur localement.
 
@@ -47,6 +75,10 @@ Ce tableau se lit par la cinétique : la CRP (protéine C réactive) et la PCT (
 - Conduite devant un syndrome inflammatoire biologique : ~50 % d'origine infectieuse citée (aiguë ou chronique à bas bruit : prothèse, valve, ORL — oto-rhino-laryngologique, abdominal, tuberculose, parasitose, VIH — virus de l'immunodéficience humaine…) ; évoquer aussi cancers, maladies auto-immunes/rhumatismes, thrombose/embolie. Aucun marqueur totalement spécifique : en mesurer 2–3 si besoin (PCT — procalcitonine, CRP — protéine C réactive, fibrinogène — coûteux). L'absence de SIB (syndrome inflammatoire biologique) n'exclut ni rhumatisme, ni tumeur, ni infection.
 - Conséquences d'une inflammation chronique citées : dénutrition/cachexie, risque cardiovasculaire/métabolique/thrombotique, ostéoporose.
 
+<Callout type="warn" title="Normes et seuils datés">
+Normes, tubes et coûts cités (CRP, PCT, fibrinogène, haptoglobine, EPP, VS, ferritine avec TODO normes locales) : contenus de cours à confronter aux valeurs du laboratoire local, sans extrapolation.
+</Callout>
+
 En méthode de lecture, l'orientation leucocytaire citée ne vaut qu confrontée à la clinique, et la conduite devant un syndrome inflammatoire biologique associe plusieurs marqueurs sans en attendre une spécificité totale. Le fait qu'une infection à bas bruit, un cancer, une maladie auto-immune ou une thrombose puissent donner le même profil explique pourquoi l'absence de syndrome inflammatoire biologique n'exclut rien à elle seule, et pourquoi l'inflammation chronique expose aux conséquences citées.
 
 ## 3. Microbiologie : hémocultures, ECBU, LCR et autres
@@ -54,11 +86,28 @@ En méthode de lecture, l'orientation leucocytaire citée ne vaut qu confrontée
 Après les marqueurs vient la preuve microbiologique : isoler le germe et son antibiogramme pour adapter le traitement. Chaque prélèvement listé reprend les conditions citées dans le cours, car un flacon, des urines ou un liquide céphalorachidien mal prélevé ou mal acheminé perd sa valeur. Les seuils et volumes cités restent à vérifier localement.
 
 - **Principes** : examen guidé par la clinique ; isoler le germe + antibiogramme pour adapter le traitement ; le plus tôt possible, avant antibiothérapie ; asepsie rigoureuse.
-- **Hémocultures** : 2–3 paires aéro-anaérobie (~8–10 mL/flacon), veine périphérique sauf suspicion sur cathéter, aérobie puis anaérobie, idéalement pendant les frissons, avant antibiothérapie, acheminement immédiat à température ambiante ; automate à 37 °C (CO2 — dioxyde de carbone), alerte souvent 24–48 h ; germes fréquents cités : S. aureus, P. aeruginosa, C. albicans. Indications : T > 38,5 °C ou < 36,5 °C, sepsis/choc, hyperthermie prolongée inexpliquée. Contenu de cours — appliquer le protocole local.
-- **ECBU (examen cytobactériologique des urines)** : si BU (bandelette urinaire) positive (leucocytes, nitrites) **et** symptômes ; avant antibiothérapie ; toilette périnéale, 1ʳᵉˢ urines du matin si possible, 2ᵉ jet (1ᵉʳ jet si IST — infection sexuellement transmissible) ; transport < 30 min ou réfrigération max 12 h citées ; seuil cité : bactériurie > 10⁴ UFC/mL (unités formant colonie par millilitre) à germe unique = infection, sinon contamination probable ; germes fréquents : E. coli, Proteus, Klebsiella. Contenu de cours — appliquer les seuils du laboratoire local.
-- **Ponction lombaire** : acte médical assisté par l'IDE (infirmier diplômé d'État, L3/L4 ou L4/L5 — 3ᵉ/4ᵉ et 4ᵉ/5ᵉ vertèbres lombaires), asepsie, > 10 mL chez l'adulte cités, plusieurs tubes (biochimie, bactériologie, virologie, anapath, réserve), acheminement immédiat (lyse des PNN — polynucléaires neutrophiles), urgence.
-- **Autres cités** : ponctions profondes (acte médical, surveillance IDE — infirmier diplômé d'État : douleur, point, écoulement, pansement) ; écouvillons superficiels (sans nettoyer la plaie avant) ; nasopharyngé (VRS — virus respiratoire syncytial, grippe, COVID — FFP2 — pièce faciale filtrante de type 2 — cité) ; ECBC/LBA (examen cytobactériologique des crachats / lavage bronchoalvéolaire, cytologie > 25 PNN — polynucléaires neutrophiles — et < 25 épithéliales, culture > 10⁷/mL ; LBA — lavage bronchoalvéolaire — > 10⁴/mL) ; coproculture/parasito ; sérologies (Chlamydia, syphilis, VIH — virus de l'immunodéficience humaine, hépatites B/C, rubéole, CMV — cytomégalovirus, herpès, toxoplasmose) ; frottis/goutte (paludisme) ; PCR (réaction de polymérisation en chaîne, ADN/ARN — acide désoxyribonucléique / acide ribonucléique, sensible, rapide, multiplex possible).
-- **Antibiogramme** : sensibilité in vitro — R résistant, I intermédiaire, S sensible ; aide à choisir l'antibiotique (prescription médicale).
+
+<Tabs items={['Hémocultures', 'ECBU', 'LCR et autres']}>
+  <Tab value="Hémocultures">
+    **Hémocultures** : 2–3 paires aéro-anaérobie (~8–10 mL/flacon), veine périphérique sauf suspicion sur cathéter, aérobie puis anaérobie, idéalement pendant les frissons, avant antibiothérapie, acheminement immédiat à température ambiante ; automate à 37 °C (CO2 — dioxyde de carbone), alerte souvent 24–48 h ; germes fréquents cités : S. aureus, P. aeruginosa, C. albicans. Indications : T > 38,5 °C ou < 36,5 °C, sepsis/choc, hyperthermie prolongée inexpliquée. Contenu de cours — appliquer le protocole local.
+  </Tab>
+  <Tab value="ECBU">
+    **ECBU (examen cytobactériologique des urines)** : si BU (bandelette urinaire) positive (leucocytes, nitrites) **et** symptômes ; avant antibiothérapie ; toilette périnéale, 1ʳᵉˢ urines du matin si possible, 2ᵉ jet (1ᵉʳ jet si IST — infection sexuellement transmissible) ; transport < 30 min ou réfrigération max 12 h citées ; seuil cité : bactériurie > 10⁴ UFC/mL (unités formant colonie par millilitre) à germe unique = infection, sinon contamination probable ; germes fréquents : E. coli, Proteus, Klebsiella. Contenu de cours — appliquer les seuils du laboratoire local.
+  </Tab>
+  <Tab value="LCR et autres">
+    **Ponction lombaire** : acte médical assisté par l'IDE (infirmier diplômé d'État, L3/L4 ou L4/L5 — 3ᵉ/4ᵉ et 4ᵉ/5ᵉ vertèbres lombaires), asepsie, > 10 mL chez l'adulte cités, plusieurs tubes (biochimie, bactériologie, virologie, anapath, réserve), acheminement immédiat (lyse des PNN — polynucléaires neutrophiles), urgence. **Autres cités** : ponctions profondes (acte médical, surveillance IDE — infirmier diplômé d'État : douleur, point, écoulement, pansement) ; écouvillons superficiels (sans nettoyer la plaie avant) ; nasopharyngé (VRS — virus respiratoire syncytial, grippe, COVID — FFP2 — pièce faciale filtrante de type 2 — cité) ; ECBC/LBA (examen cytobactériologique des crachats / lavage bronchoalvéolaire, cytologie > 25 PNN — polynucléaires neutrophiles — et < 25 épithéliales, culture > 10⁷/mL ; LBA — lavage bronchoalvéolaire — > 10⁴/mL) ; coproculture/parasito ; sérologies (Chlamydia, syphilis, VIH — virus de l'immunodéficience humaine, hépatites B/C, rubéole, CMV — cytomégalovirus, herpès, toxoplasmose) ; frottis/goutte (paludisme) ; PCR (réaction de polymérisation en chaîne, ADN/ARN — acide désoxyribonucléique / acide ribonucléique, sensible, rapide, multiplex possible).
+  </Tab>
+</Tabs>
+
+- **Antibiogramme : sensibilité in vitro — R résistant, I intermédiaire, S sensible** ; aide à choisir l'antibiotique (prescription médicale).
+
+<Callout type="info" title="Méthode">
+Chaque examen associe un moment, un volume, un ordre et un acheminement : hémoculture avant l'antibiothérapie, ECBU seulement si bandelette positive et symptômes, ponction lombaire en urgence avec acheminement immédiat — guider par la clinique, prélever avec asepsie, transmettre vite.
+</Callout>
+
+<Callout type="warn" title="Seuils à vérifier">
+Seuils et volumes cités (ECBU > 10⁴ UFC/mL, ECBC/LBA, volumes d'hémocultures et de LCR) : contenus de cours, appliquer les seuils du laboratoire et le protocole locaux.
+</Callout>
 
 À retenir en méthode : chaque examen associe un moment, un volume, un ordre et un acheminement, et aucun seuil cité ne s'applique sans le laboratoire local. L'hémoculture avant l'antibiothérapie, l'ECBU (examen cytobactériologique des urines) seulement si bandelette positive et symptômes, et la ponction lombaire en urgence avec acheminement immédiat illustrent la même logique : guider par la clinique, prélever avec asepsie, transmettre vite et laisser le choix de l'antibiotique à la prescription médicale éclairée par l'antibiogramme.
 
@@ -66,9 +115,20 @@ Après les marqueurs vient la preuve microbiologique : isoler le germe et son an
 
 Derniers outils, les plus rapides mais aussi les plus limités : ils orientent au lit du patient sans prouver à eux seuls. Cette section précise leurs conditions citées et leurs pièges, pour éviter de conclure sur une bandelette ou un test isolé.
 
-- **Bandelette urinaire** : récipient propre, sec, non stérile ; leucocytes, nitrites, hématies ; nitrites via nitrate-réductase des entérobactéries (E. coli cité) ; sensibilité 75–96 % citée ; faux négatifs possibles si glycosurie/protéinurie importante. ECBU (examen cytobactériologique des urines) si BU (bandelette urinaire) + et symptômes.
-- **Autres tests cités** : antigénique COVID, ICT (test immunochromatographique) paludisme (antigène sur sang), Streptatest angine à streptocoque A (oropharyngé, ~5 min, fiabilité ~95 % citée, prélèvement médecin/pharmacien cité), TRD (test rapide diagnostique) VIH/VHC (virus de l'immunodéficience humaine / virus de l'hépatite C, anticorps). Tests d'orientation : confirmer selon le protocole local.
+<Tabs items={['Bandelette urinaire', 'Autres tests']}>
+  <Tab value="Bandelette urinaire">
+    **Bandelette urinaire** : récipient propre, sec, non stérile ; leucocytes, nitrites, hématies ; nitrites via nitrate-réductase des entérobactéries (E. coli cité) ; sensibilité 75–96 % citée ; faux négatifs possibles si glycosurie/protéinurie importante. ECBU (examen cytobactériologique des urines) si BU (bandelette urinaire) + et symptômes.
+  </Tab>
+  <Tab value="Autres tests">
+    **Autres tests cités** : antigénique COVID, ICT (test immunochromatographique) paludisme (antigène sur sang), Streptatest angine à streptocoque A (oropharyngé, ~5 min, fiabilité ~95 % citée, prélèvement médecin/pharmacien cité), TRD (test rapide diagnostique) VIH/VHC (virus de l'immunodéficience humaine / virus de l'hépatite C, anticorps). Tests d'orientation : confirmer selon le protocole local.
+  </Tab>
+</Tabs>
+
 - TODO : place exacte des TROD (tests rapides d'orientation diagnostique) dans les algorithmes actuels non détaillée dans les extraits — se référer au protocole local.
+
+<Callout type="warn" title="Tests d'orientation">
+Bandelette et tests rapides orientent mais ne prouvent pas : ECBU si BU positive et symptômes, autres tests à confirmer selon le protocole local ; place exacte des TROD non détaillée dans les extraits — TODO conservé.
+</Callout>
 
 En pratique, la bandelette se lit avec ses limites : un résultat positif n'appelle l'ECBU (examen cytobactériologique des urines) que s'il existe des symptômes, et un résultat négatif n'exclut rien en cas de glycosurie ou protéinurie importante. Les autres tests cités, avec leurs sensibilités et circuits de prélèvement, restent des orientations à confirmer selon le protocole local, comme le rappelle le TODO sur la place exacte des TROD (tests rapides d'orientation diagnostique).
 
@@ -82,6 +142,14 @@ La vigilance infirmière résume toute la fiche : sécuriser le geste, respecter
 - Seuils, tubes et coûts cités = contenu de cours : suivre le laboratoire et le protocole locaux, sans prescrire.
 
 Concrètement, cela signifie vérifier chaque étape du pré-analytique, prélever si possible avant l'antibiothérapie tout en alertant sans délai devant l'urgence, et ne jamais conclure sur un marqueur isolé. Les seuils, tubes et coûts cités ne valent que comme repères de cours : seuls le laboratoire et le protocole locaux font foi, sans prescription infirmière.
+
+## Voir aussi
+
+<Cards>
+  <Card title="Physiopathologie des réactions inflammatoires et infectieuses" description="Socle : inflammation, infection et défenses de l'hôte." href="./physiopathologie" />
+  <Card title="Fièvre, bactériémie, sepsis et choc septique" description="Réactions et complications systémiques de l'infection." href="./sepsis" />
+  <Card title="Épidémiologie et déclarations obligatoires" description="Lire une épidémie et savoir ce qui se déclare." href="./epidemiologie" />
+</Cards>
 
 ## Sources
 
