@@ -9,14 +9,20 @@ et ne sont jamais versionnés.
 
 ### Ajouté
 
-- Mise en forme des 10 fiches `immunity` (UE 2.5) avec les composants Fumadocs :
-  Callout (urgences, vigilances, méthode), Tabs (variantes), Steps (procédures),
-  Accordions (compléments), Cards « Voir aussi ».
-- Section « Composants Fumadocs » dans `CONTRIBUTING.md`.
 - Rédaction des 11 fiches `flow` (UE 2.8) à partir des 22 PDF :
   coronaire, prévention, AVC, AOMI, MTEV, embolie pulmonaire, BPCO,
   occlusion intestinale, biliaire, lithiase urinaire, RAC —
   prose pédagogique + composants Fumadocs, contenus datés signalés, TODO sinon.
+
+## [2026-10-10] — Composants Fumadocs immunity + CHANGELOG (PR #3)
+
+### Ajouté
+
+- Mise en forme des 10 fiches `immunity` (UE 2.5) avec les composants Fumadocs :
+  Callout (urgences, vigilances, méthode), Tabs (variantes), Steps (procédures),
+  Accordions (compléments), Cards « Voir aussi ».
+- Section « Composants Fumadocs » dans `CONTRIBUTING.md`.
+- Ce `CHANGELOG.md` pour suivre les évolutions.
 
 ## [2026-10-10] — Prose pédagogique + guide de contribution (PR #2)
 

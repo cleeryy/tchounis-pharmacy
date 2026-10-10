@@ -3,13 +3,142 @@ title: "RAC et cathétérisme"
 description: "Rétrécissement aortique calcifié, rôle IDE et salle de cathétérisme."
 ---
 
-> Contenu à compléter avec les cours.
+import { Callout } from 'fumadocs-ui/components/callout';
+import { Card, Cards } from 'fumadocs-ui/components/card';
+import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
+import { Step, Steps } from 'fumadocs-ui/components/steps';
+import { Accordion, Accordions } from 'fumadocs-ui/components/accordion';
 
-## Au programme
+Un souffle systolique découvert chez une personne âgée, un essoufflement d'effort qui s'installe puis une syncope : le rétrécissement aortique calcifié (RAC) reste longtemps silencieux avant de devenir redoutable une fois symptomatique. Cette fiche suit le cours de juin 2022 du Pr Paul Menu et les fiches de rôle infirmier : comprendre l'obstacle valvulaire et l'hémodynamique intracardiaque, reconnaître les signes et confirmer par l'échographie, puis situer la décision en staff (réunion de concertation) et le rôle infirmier en salle de cathétérisme. Les surfaces, gradients, survies et stratégies cités sont des repères de cours datés de 2021-2022, à confronter aux protocoles en vigueur, jamais à appliquer comme des consignes actuelles.
 
-- RAC et rôle IDE
-- Rôle IDE en salle de cathétérisme
+## L'essentiel en une minute
+
+Les quatre lignes ci-dessous condensent les définitions et repères du cours avant d'entrer dans le détail. Elles permettent de situer rapidement où l'on se trouve entre obstacle compensé, symptômes d'alerte et décision interventionnelle.
+
+- **RAC** = épaississement et calcification des valves aortiques avec diminution de la surface utile, dont la surface normale chez l'adulte est citée entre 3 et 4 cm² ; le ventricule gauche (VG) lutte, s'hypertrophie et maintient d'abord le débit cardiaque.
+- **Clinique (cours)** : très longtemps asymptomatique, découverte par un souffle systolique, puis diminution de la tolérance à l'effort pouvant aller jusqu'à la syncope d'effort, avec un angor d'effort trompeur possible ; la recherche d'un souffle systolique après 70 ans est citée comme devant être systématique.
+- **Repères de cours datés (2022)** : échocardiographie qui affirme le diagnostic et calcule la surface ; rétrécissement aortique (RA) symptomatique et serré cité si surface inférieure à 0,5 cm²/m² (0,6 selon l'American College of Cardiology / American Heart Association [ACC/AHA] citée) avec indication opératoire formelle — repères pédagogiques, appliquer les seuils et indications en vigueur.
+- **Parcours cité** : bilan pré-staff, staff médico-chirurgical, puis implantation valvulaire aortique par voie artérielle (Transcatheter Aortic Valve Implantation [TAVI] selon l'intitulé de cours « Trans Artériel Valvulaire Implantation ») ou remplacement valvulaire aortique chirurgical (RVAo), ou abstention selon la balance bénéfice-risque, avec un rôle infirmier essentiel en salle de cathétérisme.
+
+À retenir avant de poursuivre : l'obstacle s'ouvre mal mais se ferme bien, si bien que le retentissement ne joue que pendant la systole et que le débit paraît d'abord conservé. L'apparition des symptômes cités marque un tournant pronostique dans le cours. Le reste de la fiche décline cette logique, de la valve vers l'hémodynamique puis vers les signes, les seuils et la salle de cathétérisme.
+
+<Callout type="error" title="Urgence">
+Syncope d'effort, angor d'effort ou dyspnée nouvelle chez un patient porteur d'un RAC connu : alerter sans délai selon le protocole local, mettre au repos, ne pas laisser repartir à l'effort, tracer l'heure et les circonstances. Ne jamais programmer ni réaliser d'épreuve d'effort sans décision médicale, l'obstacle serré non bilanté étant cité comme contre-indication.
+</Callout>
+
+## 1. Valve, obstacle et hémodynamique : la porte qui s'ouvre mal
+
+Pour comprendre le RAC, il faut d'abord visualiser la valve entre le VG et l'aorte, puis ce qui change quand elle se calcifie. Le rappel hémodynamique du cours éclaire ensuite pourquoi le gradient n'existe qu'en systole et pourquoi le cathétérisme mesure les pressions. Les valeurs restent des repères de cours datés.
+
+- **Rappel anatomique (cours)** : la valve aortique comporte 3 cusps, se situe entre le VG et l'aorte, est ouverte en systole et fermée en diastole ; la valve mitrale fait l'inverse, ouverte en diastole et fermée en systole (questions corrigées du cours).
+- **Physiopathologie citée** : épaississement et calcification des valves avec diminution de l'orifice utile ; le VG fournit un effort supplémentaire et s'hypertrophie comme un muscle à l'entraînement, améliorant d'abord sa contractilité ; le débit cardiaque ne dépend pas de la surface mais de la régulation neuro-hormonale et reste maintenu dans un premier temps, d'où l'absence de symptôme au début.
+- **Gradient cité** : l'obstacle à l'éjection du VG entraîne un gradient de pression uniquement pendant la systole ; en diastole la valve fermée ne laisse aucun retentissement ; en clair la porte ne s'ouvre pas bien mais se ferme bien, le cœur travaille plus et ne se repose jamais.
+- **Évolution citée** : plus l'obstacle est sévère, plus l'adaptation devient impossible ; la désadaptation se traduit par l'incapacité du VG à fournir des efforts ; la dysfonction systolique avec hypertrophie ventriculaire gauche est citée comme le plus souvent réversible à la levée de l'obstacle.
+- **Hémodynamique intracardiaque (cours)** : étude des pressions dans les 4 cavités du cœur, l'aorte et l'artère pulmonaire ; les valves ne bougent que sous la contrainte des différences de pression, s'ouvrant quand la pression amont dépasse la pression aval et se fermant dans le cas inverse. Question corrigée : l'hémodynamique droite enregistre l'oreillette droite, le ventricule droit et l'artère pulmonaire, tandis que l'hémodynamique gauche n'enregistre pas l'oreillette gauche dans le cadre du cours.
+
+<Callout type="warn" title="Repères datés">
+Surface normale de 3 à 4 cm², débit maintenu puis désadaptation, gradient purement systolique : contenus de cours datés de 2022, repères pédagogiques à confronter aux référentiels actuels, à ne pas utiliser comme seuils actuels.
+</Callout>
+
+En pratique, cette section invite à relire chaque signe comme la fin d'une compensation : tant que l'hypertrophie compense, rien ne se voit, puis l'effort devient impossible quand l'obstacle gagne. Le gradient purement systolique explique pourquoi l'auscultation cherche un souffle systolique et pourquoi la diastole paraît épargnée. C'est cette mécanique qui justifie l'étude invasive des pressions en salle de cathétérisme décrite plus loin, après la clinique.
+
+## 2. Signes, terrain et diagnostic : du souffle au diagnostic échographique
+
+Après la mécanique, cette section passe au patient : qui est concerné, ce qui doit alerter, et comment confirmer sans d'abord être invasif. La liste suivante se lit de la découverte vers les symptômes puis vers les examens, en retenant que l'échographie affirme le diagnostic dans le cours.
+
+- **Terrain cité** : pathologie du vieillissement par calcification, fréquence croissante avec l'âge au-dessus de 70 ans ; chez les patients avec HTA, le VG travaillant déjà plus, la décompensation apparaît plus précocement.
+- **Signes fonctionnels cités** : RAC très longtemps non symptomatique ; découverte d'un souffle systolique lors d'une visite ou d'un bilan chez une personne âgée ; premier signe cité : diminution de la tolérance cardio-respiratoire à l'effort, pouvant aller jusqu'à la syncope d'effort ; de façon trompeuse, premier signe possible : angor d'effort lié à l'augmentation du travail et au déficit en apport d'oxygène. Question corrigée : évoquer le diagnostic devant un examen systématique après 65 ans, une syncope ou un angor, mais pas devant un diabète isolé ni un œdème des membres inférieurs cité comme signe d'insuffisance ventriculaire droite.
+- **Devenir après les premiers symptômes cité (contenu de cours daté)** : durée moyenne de survie citée de 3 ans après l'angor, 3 ans après la syncope, 2 ans après la dyspnée, 18 mois après l'insuffisance cardiaque ; 80 % des patients cités comme décédant dans les 4 ans suivant l'apparition des symptômes ; causes de décès citées sur études autopsiques : insuffisance cardiaque 50 à 60 %, endocardite 15 à 20 %, mort subite 15 à 20 % (Ross et Braunwald, Circulation 1968, cités dans le cours) — repères historiques et pédagogiques, appliquer les données actuelles.
+- **Examens cités** : électrocardiogramme (ECG) pouvant montrer un début d'hypertrophie ventriculaire gauche (HVG) ou être normal ; c'est l'échocardiographie qui affirme le diagnostic, donne suffisamment d'éléments pour poser l'indication, permet de calculer la surface aortique et renseigne sur le VG (question corrigée) ; elle évalue le gradient par les débits et accélérations sans mesurer directement les pressions, et les examens sanglants viendront confirmer la gravité lors du bilan préopératoire complet.
+
+<Callout type="warn" title="Repères datés">
+Survies de 18 mois à 3 ans, 80 % de décès à 4 ans, causes autopsiques et référence de 1968 : contenus de cours historiques et datés, repères pédagogiques — ne pas les présenter comme un pronostic actuel, se référer aux protocoles en vigueur.
+</Callout>
+
+Concrètement, cette section impose une méthode : après 70 ans, chercher le souffle systolique au lieu d'attendre les symptômes, et devant une baisse de tolérance à l'effort, une syncope ou un angor, faire confirmer par l'échographie sans banaliser. Les chiffres de survie cités, anciens, servent dans le cours à justifier que le risque opératoire est présenté comme nettement plus faible que l'évolution sans traitement. C'est sur ces critères que la stratégie en staff se fonde ensuite.
+
+## 3. Stratégie : sévérité, staff et choix TAVI ou chirurgie (repères de cours)
+
+Le diagnostic posé, la question n'est plus seulement la surface mais le caractère serré, évolutif et l'âge physiologique du patient. La liste suivante se lit des critères d'évaluation vers les indications citées puis vers le parcours en staff, chaque seuil restant un repère de cours 2022 renvoyé aux protocoles en vigueur.
+
+- **Critères d'évaluation cités** : clinique (RA symptomatique ou asymptomatique), données de l'écho-doppler (RA serré ou non), importance des calcifications orificielles et, chez le patient à priori asymptomatique, résultats de l'épreuve d'effort et du doppler continu ; la stratégie dépend du caractère serré, du caractère évolutif et de l'âge physiologique.
+- **Indications opératoires citées (contenu de cours daté)** : RA symptomatique et serré cité si surface inférieure à 0,5 cm²/m² (0,6 selon l'ACC/AHA citée) avec indication opératoire formelle hormis âge et comorbidités majeures ; RA symptomatique moyennement serré cité entre 0,6 et 0,8 cm²/m² avec indication admise en l'absence d'autre explication aux signes ou d'autre cause d'altération du VG ; RA asymptomatique cité comme ne pouvant reposer sur une seule mesure de gradient ou de surface, mais sur un faisceau d'arguments (épreuve d'effort, pic de vitesse au doppler continu, calcifications, évolutivité et contextes associés). Question corrigée : devant un RA serré à moins de 0,4 cm² chez un homme de 75 ans en bon état général, ni la seule surveillance, ni l'âge, ni l'absence de bilan ne sont retenus ; chirurgie, TAVI, évaluation de l'âge physiologique et bilan complet avec coronaires sont retenus dans le cadre du cours.
+- **Parcours cité** : RAC diagnostiqué, distingué en serré ou non serré, bilan pré-staff, staff médico-chirurgical, puis TAVI, chirurgie de RVAo ou abstention selon la balance bénéfice-risque ; exemple cité du travail en équipe, des décisions en staff, de l'information aux patients et des pratiques avancées infirmières.
+
+<Tabs items={['TAVI', 'RVAo chirurgical']}>
+  <Tab value="TAVI">
+    **TAVI (cours, diaporama de l'équipe du centre hospitalier universitaire [CHU] d'Angers 2012)** : valve Edwards Sapien XT citée, biologique en péricarde de bovin cousue sur Dacron et montée sur stent, déployable par ballon. Voie fémorale rétrograde citée, percutanée avec système de fermeture ou chirurgicale avec abord de l'artère fémorale au Scarpa puis montée jusqu'à la valve à l'inverse du flux. En France les centres modernes pratiquant le TAVI sont cités comme devenus des salles hybrides — repères datés, appliquer les dispositifs, voies et indications en vigueur.
+  </Tab>
+  <Tab value="RVAo chirurgical">
+    **RVAo chirurgical (cours)** : remplacement valvulaire aortique en chirurgie ouverte, discuté en staff au même titre que le TAVI devant un RA serré symptomatique, après évaluation de l'âge physiologique et bilan complet incluant les coronaires dans le cadre du cours. La réalisation impose le bloc opératoire avec infirmier de bloc opératoire diplômé d'État (IBODE), distincte de la salle de cathétérisme standard citée comme insuffisante pour le TAVI — repères pédagogiques, appliquer les indications en vigueur.
+  </Tab>
+</Tabs>
+
+À retenir de cette comparaison : le cours oppose deux voies de remplacement discutées au même staff, sans en faire des équivalents interchangeables, l'âge physiologique et le bilan orientant le choix. Les surfaces et dispositifs cités, dont la valve de 2012, restent des contenus datés liés à l'époque du support. Une fois l'indication posée, la salle de cathétérisme devient le lieu de l'exploration et de l'implantation, avec son organisation propre décrite ensuite.
+
+<Callout type="info" title="Méthode">
+Lire une indication en trois temps selon le cours : symptômes, sévérité échographique et calcifications, puis âge physiologique et bilan — sans décider sur une seule mesure, et en renvoyant seuils et dispositifs aux protocoles en vigueur.
+</Callout>
+
+## 4. En salle de cathétérisme : organisation et rôle IDE
+
+La décision prise en staff, la salle de cathétérisme accueille l'exploration des pressions, l'examen des coronaires et la procédure de TAVI. La description suivante se lit de la décision vers la procédure programmée puis vers la gestion des incidents et la transmission, en retenant qu'il s'agit d'un acte invasif sous asepsie absolue.
+
+- **Décision et indications citées** : c'est le cardiologue, parfois l'interne, voire le staff médico-chirurgical dans son ensemble qui décide du passage en salle de cathétérisme ; trois grandes indications citées : cathétérisme exploratoire des pressions gauches et droites chez un patient valvulaire, coronarien ou en insuffisance cardiaque pour préciser la stratégie en réunion médico-chirurgicale ; examen des coronaires pour angor stable ou en semi-urgence pour angor instable afin d'orienter entre traitement médical, angioplastie ou chirurgie ; procédure de mise en place d'une valve aortique par voie vasculaire.
+- **Cadre cité** : procédure programmée non urgente détaillée dans le cours, procédures en urgence citées comme peu différentes hormis une équipe généralement plus réduite ; deux possibilités citées : ambulatoire avec coronarographie de routine, ou hospitalisation la veille pour TAVI et coronarographie à risque ; acte invasif nécessitant une asepsie absolue, par ponction de l'artère fémorale ou radiale pour le cathétérisme gauche, de la veine fémorale pour le cathétérisme droit, avec enregistrement à la console.
+- **Équipe citée** : 2 infirmiers de bloc opératoire, 1 infirmier ou manipulateur radio, 2 infirmiers de cardiologie dans le tableau du cours ; modèle cité de coordination transversale entre soignants, médecins, chirurgiens, infirmiers et manipulateurs radio, avec des pratiques avancées présentées comme une perspective dès le début de carrière.
+
+<Steps>
+  <Step>
+    Informer le patient avec ou sans consentement éclairé selon le cadre cité, rechercher les allergies, préparer le patient et le champ opératoire, vérifier les médicaments et le bilan sanguin, organiser le planning et l'attente en salle de pré-cathétérisme.
+  </Step>
+  <Step>
+    Accueillir et installer en salle avec l'équipe d'anesthésie et les éléments de surveillance, appliquer la check-list d'installation, du matériel et de l'enregistrement ; préparer la table chirurgicale et d'angiographie, l'injecteur, les têtes de pression avec test et zéro, la sonde d'échographie trans-œsophagienne (ETO) et la table de sertissage de la valve citée.
+  </Step>
+  <Step>
+    Réaliser le champage opératoire cité de l'appendice xiphoïde jusqu'à mi-cuisse, aborder l'artère fémorale au Scarpa avec mise sur lacs et introducteur, monter guides et désilets jusqu'au VG pour les angiographies, dégager les voies d'abord principale et d'urgence, puis enregistrer pressions et séquences radiologiques derrière la console avec protections contre les radiations.
+  </Step>
+  <Step>
+    Surveiller et gérer les incidents cités (malaise, douleurs thoraciques, tachycardie ventriculaire [TV] / fibrillation ventriculaire [FV], hypoxémie), assurer compression et surveillance en fin d'examen, puis transmettre avec une feuille précise : surveillance du membre, diurèse, ECG et niveau de douleur.
+  </Step>
+</Steps>
+
+Pour lire ces étapes en méthode : chaque temps associe une check-list, une traçabilité et une asepsie de niveau bloc, du bionettoyage de la salle à l'évacuation du matériel souillé. La préparation citée la veille, avec le matériel chirurgical pour la voie d'abord et le matériel endovasculaire, conditionne la fluidité du jour J. Les résultats sont ensuite présentés en concertation multidisciplinaire, une coronarographie diagnostique pouvant se poursuivre dans le même temps par dilatation et stent selon le cours.
+
+## Points de vigilance IDE
+
+La vigilance infirmière découle de tout ce qui précède : évaluer l'âge physiologique, sécuriser un geste invasif chez un patient âgé, tracer dispositifs et pressions, puis surveiller le point de ponction et la diurèse. Les puces ci-dessous reprennent les points des fiches de rôle IDE ; elles se lisent comme la mise en actes de l'asepsie absolue, des check-lists et de la transmission précise.
+
+- **Avant** : préparer la veille le matériel chirurgical pour la voie d'abord et le matériel endovasculaire, transporter le matériel vers la salle, réaliser bionettoyage et préparation de salle au plus proche d'un bloc ; accueillir et installer avec l'équipe, réaliser la préparation cutanée citée avec rasage et hygiène, poser la sonde urinaire citée, vérifier défibrillateur présent et coopération de l'équipe.
+- **Pendant** : instrumenter et aider à la préparation de la valve avec sertissage cité, suivre la procédure derrière la console pour les pressions et les séquences, assurer la traçabilité informatique des dispositifs médicaux implantables (DMI) et la création du support d'images cité pour les opérateurs ; anticiper malaise, douleur thoracique, TV/FV et hypoxémie.
+- **Après** : accompagner en salle de surveillance post-interventionnelle (SSPI), aider au transfert, surveiller le membre ponctionné, la diurèse, l'ECG et la douleur selon la feuille citée ; évacuer le matériel souillé, nettoyer la salle, décontaminer et recomposer, tracer et archiver.
+- **Transversal** : informer le patient et participer aux décisions de staff avec cardiologues, chirurgiens, anesthésiste et cadre infirmier cités ; participer à l'évaluation de l'âge physiologique, essentielle dans le cours avec l'évolution vers les pratiques avancées.
+- TODO : indications actuelles du TAVI, seuils et scores actuels, protocoles actuels d'anesthésie, d'anticoagulation et de surveillance du point de ponction non détaillés dans les extraits — compléter avec les protocoles en vigueur.
+
+<Callout type="warn" title="Repères datés">
+Champage, sondage, check-lists, valve et organisation cités : contenus de cours à confronter au protocole local en vigueur, sur prescription médicale — ne pas les appliquer comme protocole actuel.
+</Callout>
+
+Concrètement, cela signifie vérifier matériel, asepsie, allergies et surveillance avant de commencer, tracer chaque dispositif et chaque pression pendant, puis surveiller membre, diurèse, ECG et douleur après avec une transmission écrite précise. Devant un malaise, une douleur thoracique, un trouble du rythme grave ou une hypoxémie, l'alerte immédiate selon le protocole local prime, les repères datés restant à vérifier comme l'indique le TODO.
+
+<Accordions>
+  <Accordion title="Complément : ce que le cours ne détaille pas" value="complement">
+    Les scores de risque opératoire, les prothèses actuelles, les voies d'abord alternatives et la réhabilitation après TAVI ou chirurgie ne sont pas détaillés dans les extraits fournis. TODO : compléter avec le référentiel local.
+  </Accordion>
+</Accordions>
+
+Après ce complément, la fiche se referme sur ses sources : tout ce qui précède vient des trois supports cités, les contenus datés restant à confronter aux protocoles en vigueur.
+
+## Voir aussi
+
+<Cards>
+  <Card title="Insuffisance coronaire et SCA" description="Autre obstruction : angor, infarctus et rôle IDE." href="./coronaire" />
+  <Card title="Prévention des syndromes obstructifs" description="Facteurs de risque et prévention cardiovasculaire." href="./prevention" />
+  <Card title="AVC" description="Autre territoire vasculaire : signes et filière d'urgence." href="./avc" />
+</Cards>
 
 ## Sources
 
-- Cours UE 2.8 S3 (à venir).
+- Pr Paul Menu, « Rétrécissement aortique calcifié — Parcours de santé d'un patient porteur d'un RAC », UE 2.8, IFSI, juin 2022 (43 pages).
+- Pr Paul Menu, « Conduite à tenir infirmier devant un RAC », UE 2.8, IFSI (6 pages).
+- Fabienne Mauvais / Pr Paul Menu, « Le rôle de l'infirmière en salle de KT », UE 2.8, IFSI, juin 2022 (28 pages).

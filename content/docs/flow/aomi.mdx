@@ -3,12 +3,126 @@ title: "AOMI"
 description: "Artériopathie oblitérante des membres inférieurs."
 ---
 
-> Contenu à compléter avec les cours.
+import { Callout } from 'fumadocs-ui/components/callout';
+import { Card, Cards } from 'fumadocs-ui/components/card';
+import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
+import { Step, Steps } from 'fumadocs-ui/components/steps';
+import { Accordion, Accordions } from 'fumadocs-ui/components/accordion';
 
-## Au programme
+Une douleur au mollet qui oblige à s'arrêter toujours à la même distance, puis cède au repos : la claudication intermittente raconte le manque de sang artériel dans le muscle à l'effort. Cette fiche suit le support de médecine vasculaire (Boulon, Constans, CHU de Bordeaux) : définir l'artériopathie oblitérante des membres inférieurs (AOMI), distinguer les trois tableaux cliniques, comprendre les examens dont l'index de pression systolique (IPS), puis situer le traitement et l'éducation thérapeutique. Les seuils et stratégies cités sont des repères de cours, à confronter aux protocoles en vigueur, jamais à appliquer comme des consignes actuelles.
 
-- AOMI
+## L'essentiel en une minute
+
+Les quatre lignes ci-dessous condensent les définitions et seuils du cours avant d'entrer dans le détail. Elles permettent de situer rapidement où l'on se trouve entre dépistage asymptomatique, claudication d'effort et ischémie de repos grave.
+
+- **AOMI = insuffisance d'apport de sang artériel aux membres inférieurs** ; l'immense majorité est due à l'athérosclérose ; autre localisation possible de la même maladie aux coronaires (cœur), aux artères cérébrales, à l'aorte, aux artères digestives et rénales.
+- **Trois tableaux** : asymptomatique (découverte par dépistage), ischémie d'effort (claudication intermittente), ischémie de repos (douleurs de l'avant-pied, troubles trophiques — situation grave).
+- **Seuils de cours** : AOMI si IPS (index de pression systolique à la cheville) < 0,9 ; chez le diabétique ou l'insuffisant rénal, IPS occlusif cité < 0,7 ; preuve de l'ischémie de repos citée : pression de cheville < 50 mmHg, ou pression d'orteil < 30 mmHg, ou TcPO2 (pression transcutanée en oxygène) < 30 mmHg — repères pédagogiques, appliquer les seuils des protocoles en vigueur.
+- **Double enjeu** : risque local (amputation, douleur ou trouble trophique persistant) et risque général (infarctus du myocarde, AVC) ; en ischémie critique chronique, la moitié des malades cités comme morts ou amputés à un an.
+
+À retenir avant de poursuivre : l'AOMI est une maladie athéroscléreuse souvent silencieuse ou sous-diagnostiquée, dont la gravité se juge à la fois à la jambe et aux autres territoires vasculaires. Les seuils cités restent des contenus de cours à vérifier contre les référentiels actuels. Le reste de la fiche décline cette logique, des facteurs de risque vers les tableaux cliniques puis vers les examens et le traitement.
+
+<Callout type="error" title="Urgence">
+Douleurs de repos de l'avant-pied depuis plus de 15 jours, troubles trophiques nécrotiques et creusants s'aggravant rapidement : ischémie de repos grave — alerter sans délai selon le protocole local, sans appliquer les seuils de cours comme protocole actuel.
+</Callout>
+
+## 1. Définition, fréquence et facteurs de risque
+
+Pour comprendre l'AOMI, il faut d'abord la situer comme une localisation parmi d'autres de l'athérosclérose, fréquente après 65 ans mais sous-diagnostiquée. Les facteurs de risque cités orientent le dépistage, tandis que la coexistence fréquente d'autres atteintes explique le risque cardiaque et cérébral. Les chiffres restent des repères de cours.
+
+- **Fréquence citée** : 800 000 patients en France ; affection fréquente (> 10-15 % après 65 ans cités en conclusion) mais sous-diagnostiquée : un tiers de claudicants consultant, un tiers d'atteints non symptomatiques, un tiers de claudicants ne consultant pas (contenu de cours daté).
+- **Facteurs de risque** : ceux de l'athérosclérose ; les deux plus importants pour l'AOMI selon les recommandations TASC II (Trans-Atlantic Inter-Society Consensus) citées sont le diabète et le tabac ; le traitement des facteurs de risque cité comprend dyslipidémies, tabac, diabète et hypertension artérielle (HTA).
+- **Maladie pluri-territoires** : quand une AOMI existe, il y a souvent aussi une localisation de l'athérosclérose à d'autres territoires (cœur, cerveau, aorte, artères digestives, rénales) — d'où le double versant local et général du traitement.
+
+<Callout type="warn" title="Repères datés">
+Fréquence (800 000 patients, > 10-15 % après 65 ans) et répartition en tiers : contenus de cours datés, repères pédagogiques à confronter aux données actuelles.
+</Callout>
+
+En pratique, cette section invite à dépister l'AOMI chez les sujets avec facteurs de risque ou de plus de 65 ans, même sans plainte, et à raisonner en risque cardiovasculaire global dès qu'une atteinte est trouvée. Le diabète et le tabac cités comme prépondérants cadrent l'interrogatoire. C'est dans cet esprit que la section suivante distingue les trois présentations cliniques.
+
+## 2. Trois tableaux cliniques
+
+Une fois le terrain posé, les symptômes traduisent le degré de faillite circulatoire : muscle à l'effort d'abord, peau au repos ensuite. La liste suivante se lit comme une gradation, de l'absence de symptôme vers l'ischémie critique. Chaque tableau appelle une conduite différente.
+
+<Tabs items={['Asymptomatique', "Ischémie d'effort", 'Ischémie de repos']}>
+  <Tab value="Asymptomatique">
+    **AOMI asymptomatique : aucun symptôme, découverte par le dépistage (sujets avec facteurs de risque ou de plus de 65 ans)**. Signes possibles : défaut de perception d'un pouls, souffle artériel. Diagnostic sur IPS < 0,9 (repère de cours).
+  </Tab>
+  <Tab value="Ischémie d'effort">
+    **Claudication intermittente : douleur en dessous de la lésion artérielle, le plus souvent au mollet, à type de crampe, survenant à la marche pour une même distance et obligeant à l'arrêt, cédant rapidement à l'arrêt**. Elle traduit l'augmentation des besoins du muscle à l'effort.
+  </Tab>
+  <Tab value="Ischémie de repos">
+    **Ischémie de repos (grave) : douleurs de l'avant-pied durant plus de 15 jours, non soulagées par les antalgiques de palier II, amenant souvent le patient à laisser pendre son pied au bord du lit, très intenses ; troubles trophiques nécrotiques, creusants, s'aggravant rapidement, siégeant le plus souvent aux orteils, à la face antérieure du pied ou au talon**. Elle traduit la faillite permanente de la circulation du membre.
+  </Tab>
+</Tabs>
+
+- **Deux pronostics très différents (cours)** : AOMI asymptomatique ou d'effort — risque cardiovasculaire élevé (infarctus du myocarde, AVC) mais très peu de risque d'amputation ; ischémie critique chronique (critical limb ischaemia, CLI) — risque cardiovasculaire très élevé et risque local très élevé, avec la moitié des malades cités comme morts ou amputés à un an.
+
+À retenir de cette comparaison : la claudication à périmètre fixe et cédant à l'arrêt s'oppose aux douleurs permanentes et aux troubles trophiques qui signent la gravité. Le pronostic cité fait basculer l'enjeu du seul membre vers la survie globale en ischémie critique. Cette gradation explique la place des examens, qui confirment le diagnostic puis précisent les lésions avant tout geste.
+
+## 3. Examens : confirmer puis préciser
+
+Après la clinique, les examens confirment l'AOMI par la mesure des pressions, puis précisent les lésions quand un geste est envisagé. La liste suivante se lit en distinguant l'examen de dépistage simple des imageries de second niveau. Les seuils restent des repères de cours renvoyés aux protocoles en vigueur.
+
+<Steps>
+  <Step>
+    Mesurer l'IPS : examen très simple associant pression humérale et pression à la cheville (brassard à tension, doppler). AOMI si IPS < 0,9 (repère de cours). Attention chez le diabétique ou l'insuffisant rénal : IPS occlusif cité < 0,7.
+  </Step>
+  <Step>
+    Préciser par l'échodoppler ; en cas de geste envisagé, angio-TDM (tomodensitométrie injectée) et ARM (angiographie par résonance magnétique) utiles ; l'artériographie est faite en seconde intention, à la fois diagnostique et thérapeutique.
+  </Step>
+  <Step>
+    En cas d'ischémie de repos suspectée, apporter la preuve citée : pression de cheville < 50 mmHg, ou pression d'orteil < 30 mmHg, ou TcPO2 < 30 mmHg.
+  </Step>
+</Steps>
+
+<Callout type="warn" title="Seuils datés">
+IPS < 0,9, IPS occlusif < 0,7 chez le diabétique ou l'insuffisant rénal, pressions de cheville, d'orteil et TcPO2 : seuils de cours, repères pédagogiques — appliquer les seuils et indications des protocoles en vigueur, sur prescription médicale.
+</Callout>
+
+Concrètement, cette séquence montre que le dépistage repose sur un geste simple au chevet du patient, tandis que les imageries lourdes ne se conçoivent que dans une stratégie de revascularisation décidée médicalement. La preuve chiffrée de l'ischémie de repos citée objective la gravité sans s'y substituer cliniquement. C'est sur ce diagnostic étayé que s'articulent le traitement médical permanent et, parfois, le geste chirurgical ou endovasculaire.
+
+## 4. Traitement médical, gestes et éducation
+
+Le diagnostic posé, le traitement concerne toujours les deux versants : protéger la jambe et prévenir l'infarctus et l'AVC. La liste suivante se lit du traitement médical permanent, valable pour tous, vers les gestes réservés à certaines situations, puis vers l'éducation structurée. Aucune posologie dans cette fiche.
+
+- **Traitement médical (toujours)** : traitement des facteurs de risque (dyslipidémies, tabac, diabète, HTA) ; antiagrégants plaquettaires (AAP), généralement statine et inhibiteur de l'enzyme de conversion (IEC) cités ; entraînement à la marche ; éducation thérapeutique structurée (exemple du programme « En Marche » cité, avec ateliers physiopathologie, traitement, activité physique, alimentation et consultations possibles de tabacologie et diététique).
+- **Traitement chirurgical (parfois)** : traditionnel (endartériectomie — ablation de la plaque —, pontages) ou endovasculaire (angioplasties, stents), selon la décision médicale et les lésions.
+- **Conclusion du cours** : traitement toujours médical, parfois chirurgical ; éducation thérapeutique structurée fortement recommandée dans cette pathologie (Haute Autorité de Santé, HAS, citée).
+
+À retenir de cette liste : les médicaments cités et la marche encadrée forment le socle permanent, tandis que le geste ne se discute que sur des lésions précisées par l'imagerie. L'éducation thérapeutique, avec ses ateliers et son travail personnel au quotidien, est présentée comme partie intégrante du traitement. C'est ce versant éducatif et préventif qui structure la vigilance infirmière développée ensuite.
+
+## Points de vigilance IDE
+
+La vigilance infirmière découle de tout ce qui précède : dépister sans banaliser une douleur de marche, repérer l'ischémie de repos, sécuriser la marche et l'observance, et raisonner en risque cardiovasculaire global. Les puces ci-dessous se lisent comme la mise en actes du dépistage, des tableaux cliniques et du traitement ; le support ne détaillant pas un rôle IDE propre, les points marqués TODO restent à compléter avec le protocole local.
+
+- Interroger : périmètre de marche, topographie et type de douleur, soulagement à l'arrêt, douleurs nocturnes et position jambe pendante, troubles trophiques, tabac, diabète, HTA, antécédents cardiaques et cérébraux.
+- Surveiller : pouls périphériques, souffles artériels, couleur et chaleur des pieds, plaies et orteils, douleur et périmètre ; alerter devant douleur de repos, trouble trophique ou aggravation rapide selon le protocole local.
+- Accompagner : entraînement à la marche selon prescription, sevrage tabagique, équilibre glycémique et tensionnel, observance des AAP, statine et IEC prescrits (sans ajuster ni prescrire) ; éducation (pieds, chaussage, activité, alimentation) selon le programme local.
+- TODO : conduite IDE détaillée (pansements, surveillance post-geste, compression) non décrite dans l'extrait — compléter avec les protocoles en vigueur.
+
+<Callout type="error" title="Urgence">
+Ischémie de repos suspectée (douleur permanente de l'avant-pied, pied pendant au bord du lit, trouble trophique nécrotique) : alerte sans délai selon le protocole local. Infarctus et AVC restant les complications générales citées, toute douleur thoracique ou signe neurologique impose la filière d'urgence.
+</Callout>
+
+Concrètement, cela signifie tracer le périmètre de marche, l'état des pieds et les facteurs de risque à chaque contact, et transmettre sans attendre tout passage vers la douleur de repos ou le trouble trophique. L'accompagnement de la marche et de l'observance prolonge le traitement médical cité, sans s'y substituer. Les seuils diagnostiques et les indications de geste restant des repères de cours, la décision et la prescription relèvent du médecin et des protocoles en vigueur, comme l'indique le TODO.
+
+<Accordions>
+  <Accordion title="Compléments : programme En Marche et schémas" value="complement">
+    Le support détaille le parcours « En Marche » (inclusion par médecin ou chirurgien, mise au point d'un programme adapté, choix d'objectifs personnels, évaluation, ateliers collectifs et travail personnel) et illustre les territoires de l'athérosclérose (schéma Dauzat, 2010). Les pages d'ateliers 1 à 5 sont citées sans contenu textuel extractible. TODO : programmes d'éducation actuels — se référer à l'offre locale.
+  </Accordion>
+</Accordions>
+
+Après ce complément, la fiche se referme sur sa source : tout ce qui précède vient du support cité, les contenus datés restant à confronter aux protocoles en vigueur.
+
+## Voir aussi
+
+<Cards>
+  <Card title="AVC" description="Autre territoire de l'athérosclérose : signes, filière et rôle IDE." href="./avc" />
+  <Card title="MTEV" description="Thrombose veineuse et embolie : l'autre versant vasculaire." href="./mtev" />
+  <Card title="Prévention des syndromes obstructifs" description="Facteurs de risque et prévention cardiovasculaire." href="./prevention" />
+</Cards>
 
 ## Sources
 
-- Cours UE 2.8 S3 (à venir).
+- Carine Boulon, Joël Constans, « Artériopathie oblitérante des membres inférieurs (AOMI) », médecine vasculaire, hôpital Saint-André, CHU de Bordeaux (30 pages).

@@ -3,12 +3,144 @@ title: "BPCO"
 description: "Bronchopneumopathie chronique obstructive et rôle IDE."
 ---
 
-> Contenu à compléter avec les cours.
+import { Callout } from 'fumadocs-ui/components/callout';
+import { Card, Cards } from 'fumadocs-ui/components/card';
+import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
+import { Step, Steps } from 'fumadocs-ui/components/steps';
+import { Accordion, Accordions } from 'fumadocs-ui/components/accordion';
 
-## Au programme
+Un fumeur de plus de 40 ans qui tousse chaque hiver, s'essouffle tardivement puis banalise ses « bronchites » répétées : la bronchopneumopathie chronique obstructive (BPCO) s'installe lentement et reste longtemps sous-diagnostiquée. Cette fiche suit le cours de juin 2022 et son support sur le rôle infirmier : définir la maladie et son diagnostic par les explorations fonctionnelles respiratoires (EFR), repérer les terrains et les formes cliniques, puis comprendre le traitement en état stable et la reconnaissance de l'exacerbation. Les seuils et stratégies cités sont des repères de cours datés, à confronter aux protocoles en vigueur, jamais à appliquer comme des consignes actuelles.
 
-- BPCO et rôle IDE
+## L'essentiel en une minute
+
+Les quatre lignes ci-dessous condensent les définitions et repères du cours avant d'entrer dans le détail. Elles permettent de situer rapidement où l'on se trouve entre obstruction, diagnostic fonctionnel et exacerbation.
+
+- **BPCO** = maladie chronique lentement progressive avec diminution non complètement réversible des débits aériens après bronchodilatateur, comportant un infiltrat inflammatoire des voies aériennes lié à l'inhalation de substances toxiques, dont la cause principale citée est le tabagisme.
+- **Diagnostic (repère de cours daté, 2022)** : il repose sur les EFR, avec une obstruction définie par un volume expiré maximal seconde (VEMS) < 80 % et un rapport VEMS/capacité vitale (CV) < 70 % — repère pédagogique, appliquer les critères et référentiels en vigueur.
+- **Épidémiologie citée (contenu de cours daté)** : ~10 % de la population atteinte en Europe, au moins 2,6 millions de patients en France avec sous-estimation diagnostique, taux brut de décès de 26 pour 100 000 habitants ayant doublé en 15 ans, 3e cause de décès par maladie au monde en 2020 — chiffres de cours, à ne pas utiliser comme données actuelles.
+- **Deux situations** : l'état stable, traité au long cours, et l'exacerbation, définie par une expectoration augmentée en volume, plus colorée, avec dyspnée, pouvant engager le pronostic par décompensation respiratoire.
+
+À retenir avant de poursuivre : la BPCO est une maladie obstructive lente et systémique dont le diagnostic clinique seul ne suffit pas et repose sur les EFR dans le cours. Le tabac y tient la place centrale avec un risque attribuable cité de 80 %, et l'exacerbation se reconnaît à trois critères simples. Le reste de la fiche décline cette logique, des définitions vers le dépistage, le traitement en état stable, puis l'urgence de l'exacerbation et la vigilance infirmière.
+
+<Callout type="warn" title="Repères datés">
+Seuils EFR (VEMS < 80 %, VEMS/CV < 70 %), chiffres d'épidémiologie et stratégies citées : contenus de cours datés de 2022, repères pédagogiques — appliquer les critères, seuils et protocoles en vigueur, sur prescription médicale.
+</Callout>
+
+## 1. Définitions : BPCO, bronchite chronique, emphysème
+
+Pour comprendre la BPCO, il faut d'abord distinguer trois notions que le cours articule : la maladie obstructive elle-même, la bronchite chronique définie par sa durée, et l'emphysème défini par l'anatomie. La liste suivante se lit en retenant que ces entités s'intriquent parfois, avec une zone de recouvrement citée avec l'asthme et la dilatation des bronches (DDB).
+
+- **BPCO** : maladie chronique lentement progressive, diminution non complètement réversible des débits aériens après bronchodilatateur, infiltrat inflammatoire des voies aériennes dû à l'inhalation de substances toxiques, cause principale citée : le tabagisme. Le questionnaire (QCM) du cours la décrit comme une maladie obstructive des bronches, souvent due au tabac, d'évolution lente, pouvant conduire à l'insuffisance respiratoire chronique — et non comme un trouble d'évolution rapide ni d'origine infectieuse.
+- **Bronchite chronique** : association d'une toux et d'une expectoration au moins 3 mois par an pendant 2 années consécutives (repère de cours daté).
+- **Emphysème pulmonaire** : élargissement permanent des espaces aériens distaux au-delà des bronchioles terminales, associé à une destruction des cloisons alvéolaires ; le cours précise la destruction des parois alvéolaires par l'activité des protéases qui digèrent la matrice extracellulaire, avec destruction des fibres élastiques.
+- **Facteur de risque principal** : le tabac, risque attribuable cité de 80 % ; la génétique est citée comme autre facteur de risque, sans détail dans les extraits.
+
+En pratique, cette section invite à ne pas confondre symptôme et maladie : la toux chronique productive définit la bronchite chronique par sa durée, tandis que la BPCO se définit par l'obstruction fonctionnelle mesurée. L'emphysème apporte la lésion anatomique de destruction alvéolaire. C'est cette obstruction mesurée qui justifie le dépistage instrumental décrit ensuite.
+
+## 2. Chez qui chercher, comment dépister et que voit-on
+
+Une fois les définitions posées, la question devient opérationnelle : qui dépister et avec quoi, sachant que l'examen clinique est cité comme pauvre et pouvant être normal. La démarche suivante se lit du terrain vers l'outil de dépistage, puis vers les signes à rechercher malgré leur banalisation fréquente.
+
+<Steps>
+  <Step>
+    Cibler le terrain cité : sujet fumeur de plus de 40 ans, avec ou sans bronchite chronique, dyspnée ou « bronchites » répétées (repère de cours daté — appliquer la stratégie de dépistage en vigueur).
+  </Step>
+  <Step>
+    Dépister par spirométrie miniaturisée (minispiromètre électronique, PiKo-6 cité) mesurant le rapport VEMS/VEM6 (volume expiré maximal en 6 secondes) : vert si > 0,8 (a priori pas d'obstruction), jaune entre 0,7 et 0,8 (bilan spécialisé nécessaire si facteurs de risque ou symptômes), rouge si < 0,7 (bilan spécialisé indispensable) — seuils de cours datés.
+  </Step>
+  <Step>
+    Confirmer par spirométrie avec mesure du VEMS et de la CV, test de réversibilité, et bilan spécialisé : examen cité comme simple et pouvant être répété pour le suivi (QCM du cours).
+  </Step>
+</Steps>
+
+- **Clinique citée, souvent banalisée** : l'interrogatoire recherche toux chronique, expectoration, dyspnée à un stade tardif quantifiée par échelle visuelle analogique (EVA), poids et indice de masse corporelle (IMC), antécédents (ATCD) familiaux de BPCO, syndrome d'apnées du sommeil (SAS) associé, comorbidités dont cardiaques et insuffisance cardiaque droite, traitements pris. L'auscultation note ronchi et sibilants ; l'inspection recherche les signes de gravité : cyanose, polypnée, usage des muscles respiratoires accessoires, hippocratisme digital.
+- **Le cercle vicieux de la dyspnée cité** : dyspnée → angoisse et anxiété → augmentation de la fréquence cardiaque → inefficacité et peur de l'asphyxie, qui aggrave la dyspnée.
+
+<Tabs items={['Forme à toux productive', 'Forme à dyspnée prédominante']}>
+  <Tab value="Forme à toux productive">
+    **Forme citée avec surcharge pondérale, toux et expectoration** : tableau où l'hypersécrétion et les épisodes bronchitiques dominent, avec déclin de la fonction respiratoire à surveiller.
+  </Tab>
+  <Tab value="Forme à dyspnée prédominante">
+    **Forme citée longiligne, maigre, distendue, avec dyspnée prédominante** : tableau où l'essoufflement et la distension dominent, la dyspnée témoignant de la gravité citée dans le QCM du cours.
+  </Tab>
+</Tabs>
+
+Ce qu'il faut en retenir : le dépistage cité vise les fumeurs de plus de 40 ans même sans symptôme franc, parce que la clinique est pauvre et la dyspnée tardive. Les couleurs du minispiromètre citées orientent vers le bilan spécialisé sans poser le diagnostic à elles seules. Les deux formes cliniques citées montrent que la même obstruction peut s'exprimer par l'encombrement ou par l'essoufflement, ce qui prépare la lecture des examens complémentaires.
+
+## 3. Examens complémentaires et facteurs prédictifs de mortalité
+
+Après le dépistage, le bilan cité associe biologie, fonction, imagerie et exercice pour évaluer la maladie dans sa dimension systémique. La liste suivante se lit en distinguant ce qui mesure l'obstruction, ce qui en montre les conséquences, et ce qui prédit la mortalité citée.
+
+- **Biologie citée** : numération formule sanguine (NFS), gazométrie artérielle — le QCM précise qu'elle peut être réalisée par une infirmière (réponse citée « oui »), donne le pH du sang et renseigne sur la teneur en gaz carbonique ; la ponction carotidienne est citée comme à ne pas faire.
+- **Fonction et exercice** : EFR avec VEMS, CV, volumes non mobilisables, test de réversibilité, boucle débit-volume, débitmètre de pointe (DEP, sensibilité 90 % et spécificité 80 % citées, interprétation selon âge, taille, sexe) ; test de marche de 6 minutes, cité comme évaluant la tolérance à l'exercice et la dégradation du périmètre de marche, au même titre que l'oxymétrie nocturne ; épreuve d'effort cardiorespiratoire avec consommation maximale d'oxygène (VO2 max) citée.
+- **Imagerie et autres examens cités** : radiographie pulmonaire (RP) avec distension et hyperclarté, scanner thoracique montrant la destruction emphysémateuse des lobes supérieurs citée, fibroscopie bronchique avec dyskinésies et hypertrophie muqueuse citées en vue endoscopique, écho-doppler cardiaque, oxymétrie nocturne.
+- **Facteurs prédictifs de mortalité cités (moyen BODE, repères de cours datés)** : B (body mass index, IMC) < 21 kg/m², O (obstruction) VEMS < 65 % de la théorique, D (dyspnée) échelle > 1, E (exercice) test de marche de 6 minutes < 350 m — repères pédagogiques, appliquer les scores et seuils en vigueur.
+
+<Callout type="warn" title="Seuils datés">
+Seuils BODE (IMC, VEMS, dyspnée, distance de marche), performances du DEP et indications d'examens : contenus de cours datés, repères pédagogiques à confronter aux référentiels en vigueur.
+</Callout>
+
+À retenir de cette liste : aucun examen isolé ne suffit, et c'est leur combinaison — obstruction mesurée, gaz du sang, imagerie de distension et tolérance à l'exercice — qui fonde l'évaluation globale citée comme nécessaire. Les quatre lettres du score cité rappellent que la BPCO est une maladie systémique où le poids, le souffle, la dyspnée et l'exercice pèsent ensemble. Cette évaluation globale commande le traitement en état stable décrit ensuite.
+
+## 4. Traitement en état stable (repères de cours)
+
+Le traitement en état stable cité traite à la fois les composantes de l'obstruction et ses conséquences, dans une prise en charge multidisciplinaire où le médecin généraliste (MG) n'est pas un acteur isolé. La liste suivante se lit en séparant ce qui est recommandé de ce qui est non recommandé ou contre-indiqué dans le cours, sans aucune posologie dans cette fiche.
+
+- **Composantes de l'obstruction citées** : hypersécrétion bronchique par kinésithérapie respiratoire ; bronchospasme par bronchodilatateurs ; inflammation par corticothérapie inhalée en fonction du stade ; infection par la prévention avec vaccinations — le QCM précise que les patients doivent recevoir le vaccin antigrippal et que les cortico��des ne sont pas indiqu��s de façon précoce.
+- **Conséquences de l'obstruction citées** : hypoxémie par oxygénothérapie de longue durée (OLD) ; hypertension artérielle pulmonaire (HTAP) et cœur pulmonaire chronique (CPC) par OLD ; hypercapnie par ventilation ; handicap par réhabilitation. Les bases du traitement validées dans le QCM : prévention anti-tabac et vaccins, kinésithérapie respiratoire, éducation thérapeutique — la ventilation nocturne systématique et les bronchodilatateurs quel que soit le stade y sont cités comme non retenus.
+- **Non recommandés ou contre-indiqués dans le cours (repères datés)** : antibiotiques hors infection non recommandés, mucolytiques non recommandés, immunorégulateurs non recommandés, antitussifs contre-indiqués, stimulants respiratoires non recommandés en prescription régulière, benzodiazépines et narcotiques contre-indiqués ; agents anti-oxydants pouvant être utilisés chez les patients avec exacerbations répétées. Contenus de cours — appliquer la prescription et les référentiels en vigueur.
+
+<Callout type="warn" title="Stratégie datée">
+Schémas par stade, place de la corticothérapie inhalée, de l'OLD, de la ventilation et liste des traitements non recommandés : contenus de cours datés de 2022, repères pédagogiques — appliquer la prescription médicale et les référentiels en vigueur.
+</Callout>
+
+Concrètement, cette section impose une méthode : sevrage tabagique à prescrire, vaccinations à vérifier, kinésithérapie et réhabilitation à organiser, et méfiance envers les antitussifs, benzodiazépines et narcotiques cités comme contre-indiqués. L'éducation thérapeutique, détaillée dans la vigilance infirmière, est citée comme une base au même titre que les traitements. C'est l'échec de cet état stable qui fait basculer vers l'exacerbation.
+
+## 5. Exacerbation : critères et signes de gravité
+
+L'exacerbation citée se définit simplement mais sa gravité s'évalue sur trois registres : respiratoire, cardiovasculaire et neurologique, plus la gazométrie. La liste suivante se lit des critères diagnostiques vers les signes de gravité immédiate, en retenant que tout signe de gravité impose l'alerte.
+
+- **Critères diagnostiques cités** : expectoration augmentée en volume, expectoration plus colorée, dyspnée ; se poser la question de la sévérité avec les signes de gravité immédiate et le risque de décompensation respiratoire.
+
+<Callout type="error" title="Urgence">
+Dyspnée de repos, cyanose, fréquence respiratoire > 25/min, usage des muscles accessoires, respiration abdominale paradoxale, toux inefficace, saturation pulsée en oxygène (SpO2) < 90 %, tachycardie > 110/min, hypotension, troubles du rythme, marbrures, œdème des membres inférieurs, agitation, confusion, obnubilation, astérixis, coma : signes de gravité cités — alerter sans délai selon le protocole local.
+</Callout>
+
+- **Signes gazométriques de gravité cités (repères de cours datés)** : hypoxémie < 55 mmHg (7,33 kPa), hypercapnie > 45 mmHg (6 kPa), acidose respiratoire avec pH < 7,38 — repères pédagogiques, appliquer les seuils et la conduite du protocole local en vigueur.
+
+En pratique, cette section impose de lire l'exacerbation en deux temps : d'abord les trois critères qui la définissent, puis la recherche systématique des signes de gravité listés sans en omettre aucun registre. Les seuils chiffrés cités, cliniques comme gazométriques, restent des contenus de cours datés renvoyés au protocole local. C'est sur cette gravité que se règle la vigilance infirmière développée ensuite.
+
+## Points de vigilance IDE
+
+La vigilance infirmière découle de tout ce qui précède : éduquer en état stable pour prévenir l'exacerbation, puis reconnaître l'exacerbation et ses signes de gravité. Les puces ci-dessous reprennent les points cités dans les deux supports ; elles se lisent comme la mise en actes du dépistage, du traitement stable et de l'alerte.
+
+- **Éducation thérapeutique, citée comme centrale** : information sur les facteurs de risque, sur la BPCO, sur le suivi ; formation à la prise des inhalateurs ; reconnaissance des exacerbations et recours au médecin ; information sur l'oxygénothérapie. La prise en charge est citée comme multidisciplinaire, avec acteurs paramédicaux selon les stades et les objectifs du contrat.
+- **Devant une exacerbation** : rechercher les trois critères diagnostiques et l'ensemble des signes de gravité immédiate respiratoires, cardiovasculaires et neurologiques cités, avec la SpO2 au doigt ; évaluer la sévérité et le risque de décompensation respiratoire ; alerter selon le protocole local.
+- TODO : débits et modalités actuels d'oxygénothérapie, seuils et conduite de la ventilation non invasive, protocoles actuels d'exacerbation et de réhabilitation non détaillés dans les extraits — compléter avec les protocoles en vigueur.
+
+<Callout type="warn" title="Repères datés">
+Contenus d'éducation, critères d'exacerbation et seuils de gravité cités : contenus de cours à confronter au protocole local en vigueur, sur prescription médicale — ne pas les appliquer comme protocole actuel.
+</Callout>
+
+Concrètement, cela signifie vérifier la technique d'inhalation à chaque rencontre, faire reformuler les signes d'exacerbation et le recours au médecin, et tracer poids, dyspnée et périmètre de marche pour suivre la dimension systémique. Devant toute exacerbation, la recherche systématique des signes de gravité listés prime, avec alerte immédiate selon le protocole local. Les modalités actuelles d'oxygénothérapie et de ventilation restant à compléter avec le référentiel local comme l'indique le TODO.
+
+<Accordions>
+  <Accordion title="Complément : précisions du QCM du cours" value="complement">
+    Le QCM du cours précise que la fonction respiratoire de base n'est pas normale, que les sécrétions bronchiques sont augmentées, que la dyspnée peut rester longtemps à un stade 1 ou 2 tout en témoignant de la gravité, et que la spirométrie est un examen simple pouvant être répété pour le suivi. Ces points restent des contenus pédagogiques datés de 2022.
+  </Accordion>
+</Accordions>
+
+Après ce complément, la fiche se referme sur ses sources : tout ce qui précède vient des deux supports cités, les contenus datés restant à confronter aux protocoles en vigueur.
+
+## Voir aussi
+
+<Cards>
+  <Card title="Embolie pulmonaire" description="Autre urgence respiratoire : clinique, gravité et rôle IDE." href="./embolie-pulmonaire" />
+  <Card title="Prévention des syndromes obstructifs" description="Tabac et facteurs de risque : la prévention en amont." href="./prevention" />
+  <Card title="AVC" description="Autre pathologie du tronc commun : filière d'urgence et vigilance." href="./avc" />
+</Cards>
 
 ## Sources
 
-- Cours UE 2.8 S3 (à venir).
+- Pr Paul Menu, « Les maladies broncho-pulmonaires obstructives — BPCO », UE 2.8, IFSI, juin 2022 (58 pages).
+- Pr Paul Menu, « Le rôle infirmier devant une BPCO », UE 2.8, IFSI (8 pages).

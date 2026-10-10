@@ -3,12 +3,118 @@ title: "Obstruction biliaire"
 description: "Syndrome d’obstruction des voies biliaires et rôle IDE."
 ---
 
-> Contenu à compléter avec les cours.
+import { Callout } from 'fumadocs-ui/components/callout';
+import { Card, Cards } from 'fumadocs-ui/components/card';
+import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
+import { Step, Steps } from 'fumadocs-ui/components/steps';
+import { Accordion, Accordions } from 'fumadocs-ui/components/accordion';
 
-## Au programme
+Une douleur brutale de l'hypochondre droit irradiant vers l'épaule, qui revient par crises puis devient permanente avec fièvre et ictère : l'obstruction des voies biliaires engage le pronostic par l'infection. Cette fiche repose sur deux supports seulement : le cours de 2010-2011 sur la lithiase biliaire et le support infirmier péri-opératoire devant une obstruction biliaire. Il n'existe pas de cours principal consacré à l'obstruction biliaire dans les extraits fournis, aussi la fiche reste volontairement courte et signale ses manques en TODO. Les seuils et stratégies cités sont des repères de cours datés, à confronter aux protocoles en vigueur, jamais à appliquer comme des consignes actuelles.
 
-- Obstruction biliaire et rôle IDE
+## L'essentiel en une minute
+
+Les quatre lignes ci-dessous condensent les repères des deux supports avant d'entrer dans le détail. Elles permettent de situer rapidement où l'on se trouve entre crise lithiasique, infection et préparation chirurgicale.
+
+- **Lithiase biliaire (cours 2010-2011)** : calculs le plus souvent cholestéroliques ou mixtes (80 % cités, calculs clairs) et pigmentaires à la bilirubine (20 % cités, calculs noirs) ; 80 % des patients cités comme asymptomatiques ; la crise symptomatique citée est la colique hépatique.
+- **Épidémiologie citée (contenu de cours daté)** : fréquence de la lithiase vésiculaire en France d'environ 20 %, facteurs de risque cités (âge, femme avec risque multiplié par 2, surpoids et variations de poids, multiparité, jeûne prolongé, hypertriglycéridémie, infections et rétentions biliaires, hémolyses) — chiffres de cours, à ne pas utiliser comme données actuelles.
+- **Complications citées par migration ou enclavement** : cholécystite (obstruction cystique avec inflammation vésiculaire), angiocholite (obstruction du cholédoque avec infection des voies biliaires, syndrome septique et ictère), pancréatite aiguë biliaire (obstruction du canal de Wirsung avec inflammation et nécrose pancréatique).
+- **Rôle infirmier cité (support péri-opératoire)** : en phase aiguë, gérer douleur, infection, nausées et vomissements ; en soins, préparer une chirurgie par cœlioscopie ou laparotomie et surveiller le post-opératoire, dont le drain de Kehr.
+
+À retenir avant de poursuivre : la lithiase reste longtemps silencieuse dans le cours, et c'est la migration du calcul qui fait basculer vers trois complications aux tableaux distincts. Le support infirmier ne décrit ni la physiopathologie de l'ictère ni les seuils d'imagerie ou de biologie, d'où les TODO. Le reste de la fiche suit cette logique, de la formation des calculs vers les complications, puis vers le traitement et la vigilance infirmière.
+
+<Callout type="warn" title="Fiche courte : sources limitées">
+Pas de cours principal consacré à l'obstruction biliaire dans les extraits : cette fiche combine le cours 2010-2011 sur la lithiase et le support infirmier péri-opératoire. Définitions, seuils biologiques, imagerie détaillée et stratégies actuelles manquent — voir les TODO, compléter avec les protocoles en vigueur.
+</Callout>
+
+## 1. Rappels : bile, bilirubine et voies biliaires
+
+Pour comprendre l'obstruction, il faut d'abord situer ce qui ne s'écoule plus : la bile sécrétée par le foie, stockée dans la vésicule, puis drainée vers le duodénum par le canal hépatique commun et le cholédoque, avec le canal de Wirsung et la papille cités au carrefour pancréatique. La liste suivante reprend les éléments cités dans le cours, sans y ajouter de physiologie externe.
+
+- **Sécrétions biliaires citées** : eau, électrolytes (dont bicarbonates et sodium cités), bilirubine, sels biliaires, cholestérol, lécithines.
+- **Métabolisme de la bilirubine cité** : destruction des hématies dans le système réticulo-endothélial (rate, os cités) donnant la bilirubine libre, puis glycurono- et sulfo-conjugaisons donnant la bilirubine conjuguée, avec urobilinogène, urobiline et stercobiline cités en aval.
+- **Fonctions hépatiques citées en arrière-plan** : synthèse de la majorité des protéines sériques (albumine, protéines de la coagulation, immunité), synthèse et métabolisme du cholestérol, synthèse des sels biliaires, vitamines liposolubles A, D, K citées, stockage du glycogène, transformation et excrétion de l'hème en bilirubine et des toxiques (médicaments, alcool cités).
+
+En pratique, cette section sert uniquement à nommer les structures citées dans les complications : le canal cystique vers la vésicule, le cholédoque vers le duodénum, le Wirsung vers le pancréas. La composition de la bile citée éclaire la formation des calculs décrite ensuite, sans que le cours ne détaille les seuils de cholestase. C'est l'équilibre entre ces constituants qui se rompt dans la lithogenèse.
+
+## 2. Formation des calculs et colique hépatique
+
+Une fois le circuit posé, le cours explique la lithogenèse comme une rupture d'équilibre, puis décrit la seule manifestation non compliquée citée : la colique hépatique. L'onglet unique et la liste suivante se lisent en retenant que la majorité des lithiases citées restent asymptomatiques et que la crise associe une douleur typique à des examens cités.
+
+<Tabs items={['Lithiase cholestérolique ou mixte', 'Lithiase pigmentaire']}>
+  <Tab value="Lithiase cholestérolique ou mixte">
+    **Lithiase cholestérolique ou mixte (80 % citée, calculs clairs)** : hypomotricité vésiculaire citée (obésité, âge, grossesse, jeûne) comme terrain favorisant.
+  </Tab>
+  <Tab value="Lithiase pigmentaire">
+    **Lithiase pigmentaire à la bilirubine (20 % citée, calculs noirs)** : augmentation de sécrétion de bilirubine libre citée (hémolyses, cirrhoses) ou hydrolyse de la bilirubine conjuguée sur infection chronique des voies biliaires citée, avec sténose par obstacle, anastomose bilio-digestive avec reflux, maladie congénitale des voies biliaires (Caroli cité) et parasitoses (petites douves citées) comme causes listées.
+  </Tab>
+</Tabs>
+
+- **Manifestations cliniques citées (20 % de symptomatiques)** : 80 % des patients cités comme asymptomatiques ; coliques hépatiques avec douleur brutale de l'hypochondre droit irradiant vers l'épaule et évoluant par crise ; examens complémentaires cités : biologie avec cytolyse transitoire possible, imagerie par échographie, avec tomodensitométrie (TDM) et bili-imagerie par résonance magnétique (bili-IRM) citées entre parenthèses — contenus de cours datés, appliquer les indications en vigueur.
+
+Ce qu'il faut en retenir : le cours oppose des calculs clairs liés à l'hypomotricité vésiculaire à des calculs noirs liés à la bilirubine et aux infections chroniques, sans détailler les seuils ni les doses. La colique hépatique citée reste une douleur paroxystique sans fièvre ni ictère permanents, ce qui la distingue des complications. C'est la migration du calcul qui fait passer de cette crise aux tableaux infectés décrits ensuite.
+
+## 3. Complications de la migration : trois tableaux à distinguer
+
+Après la crise simple, l'enclavement du calcul dans trois sites différents produit trois complications que le cours oppose par leur siège et leurs signes. La liste suivante se lit en comparant l'organe obstrué — vésicule, cholédoque, Wirsung — car chacun annonce une gravité et une imagerie différentes. Chaque élément reste un repère de cours daté.
+
+- **Cholécystite citée** : obstruction cystique avec inflammation vésiculaire ; « colique hépatique » permanente et fébrile citée ; biologie avec syndrome inflammatoire, cytolyse et cholestase possibles ; échographie (ECHO) avec lithiase vésiculaire et épaississement de la paroi vésiculaire ; évolution citée : péritonite aiguë biliaire, iléus biliaire.
+- **Angiocholite citée** : obstruction du cholédoque avec infection des voies biliaires ; clinique associant douleur « hépatique » permanente, syndrome septique et ictère ; biologie avec syndrome inflammatoire, cholestase et cytolyse, hémocultures souvent positives citées ; imagerie par échographie (lithiase vésiculaire, dilatation des voies biliaires intra- et extra-hépatiques) puis, pour voir l'obstacle, écho-endoscopie, imagerie par résonance magnétique (IRM), cathétérisme des voies biliaires par endoscopie cités ; évolution citée : septicémie, choc septique.
+- **Pancréatite aiguë biliaire citée** : obstruction du Wirsung avec inflammation du pancréas qui se nécrose et peut « couler » dans la cavité abdominale ; clinique avec douleur épigastrique transfixiante majeure, occlusion réflexe, défaillance multiviscérale possible ; biologie avec augmentation de la lipase, syndrome inflammatoire, cholestase et cytolyse transitoires ; imagerie par scanner thoraco-abdomino-pelvien cité.
+- **Thérapeutique citée (repère de cours daté)** : prise en charge hospitalière en secteur adapté (médecine, chirurgie, réanimation) ; médicaments selon les symptômes (antalgiques, antipyrétiques, antibiotiques cités, sans posologie dans cette fiche) ; traitement étiologique par cholécystectomie (en urgence ou à froid) et sphinctérotomie endoscopique — repères pédagogiques, appliquer la prescription et les protocoles en vigueur.
+
+<Callout type="error" title="Urgence">
+Douleur permanente avec fièvre et/ou ictère, syndrome septique avec frissons : angiocholite et cholécystite citées comme évoluant vers la septicémie et le choc septique — alerter sans délai selon le protocole local, hémocultures citées en cas de fièvre.
+</Callout>
+
+Concrètement, cette section impose de lire toute douleur biliaire permanente et fébrile comme une complication et non comme une simple colique. Le trio douleur permanente, syndrome septique et ictère oriente vers l'angiocholite, tandis que la douleur transfixiante avec lipase élevée oriente vers la pancréatite. Les évolutions citées vers la péritonite, la septicémie et le choc septique justifient l'hospitalisation en secteur adapté et la vigilance infirmière développée ensuite.
+
+## Points de vigilance IDE
+
+La vigilance infirmière découle de ce qui précède : en phase aiguë, sécuriser douleur, infection et vomissements ; en soins, préparer la chirurgie et surveiller le post-opératoire. Les étapes ci-dessous reprennent les points du support péri-opératoire ; elles se lisent comme la mise en actes de la détection de l'infection et de la préparation à la cœlioscopie ou à la laparotomie.
+
+<Steps>
+  <Step>
+    En phase aiguë : évaluer la douleur 4 fois par jour cité, écouter le patient et son ressenti, gérer les vessies de glace, noter les effets secondaires des antalgiques et du traitement antispasmodique ; surveiller l'infection, en particulier l'apparition de frissons avec hémocultures ; assurer la prise en charge des nausées et vomissements et noter les effets secondaires de l'antiémétique (céphalées, bouffées de chaleur citées) en les communiquant au médecin.
+  </Step>
+  <Step>
+    En soins : communiquer avec le patient, donner les grandes lignes du traitement envisagé, suivre recommandations et prescriptions des médecins anesthésistes, laisser à jeun, réaliser le bilan préopératoire (biologique, électrocardiogramme — ECG), prendre les constantes (si fièvre, hémocultures ; si tachycardie et/ou hypotension, prévenir le médecin car signes de gravité cités), évaluer la douleur par échelle visuelle analogique (EVA).
+  </Step>
+  <Step>
+    La veille de l'intervention : préparer le bilan et vérifier le dossier (consentement, désignation de la personne de confiance citée comme « responsable », douche à la bétadine, bijoux), regrouper les éléments du bilan d'anesthésie et d'hémostase cités, s'assurer de la compréhension du déroulement et d'un possible changement de protocole si la cœlioscopie ne peut être poursuivie, rappeler de prendre uniquement les médicaments fournis par les infirmiers ; respecter les protocoles de préparation hygiénique.
+  </Step>
+  <Step>
+    Le matin de l'opération : évaluer le sommeil, rassurer, préparer la zone (tonte et douche citées), prévoir la tenue pour le bloc (pyjama, bonnet, surchaussures cités), faire les prescriptions anesthésiques, recommander de ne pas se lever, même dans le sas d'attente.
+  </Step>
+  <Step>
+    En post-opératoire : planifier prescriptions médicales et recommandations de l'anesthésiste, assurer la surveillance clinique et locale des points d'introduction cutanée (pansement, couleur, propreté, écoulement), tenir le bilan entrées-sorties (drain, urines, sonde gastrique), surveiller le drain de Kehr, rechercher une hémorragie et évaluer son importance (volume du drain, hématocrite, fréquence cardiaque et tension artérielle cités), surveiller le transit et sa reprise.
+  </Step>
+</Steps>
+
+- TODO : définition et seuils actuels de l'obstruction biliaire, biologie détaillée (bilirubine, phosphatases alcalines, gamma-GT), imagerie en vigueur, drainage biliaire endoscopique et antibiothérapie actuelle non détaillés dans les extraits ; cours principal sur l'obstruction biliaire manquant — compléter avec les protocoles en vigueur.
+
+<Callout type="warn" title="Repères datés">
+Fréquences d'évaluation, préparation cutanée, bilans et surveillances cités : contenus du support à confronter au protocole local en vigueur, sur prescription médicale — ne pas les appliquer comme protocole actuel.
+</Callout>
+
+Concrètement, cela signifie tracer douleur, température, frissons et vomissements en phase aiguë, déclencher hémocultures et alerte médicale devant fièvre, tachycardie ou hypotension, puis verrouiller le jeûne et le dossier préopératoire avant de surveiller pansements, drain de Kehr et reprise du transit après le bloc. Devant tout signe septique, l'alerte immédiate selon le protocole local prime, les contenus manquants restant à compléter avec le référentiel local comme l'indique le TODO.
+
+<Accordions>
+  <Accordion title="Complément : conclusion du cours 2010-2011" value="complement">
+    Le cours conclut que les lithiases sont plus fréquentes chez les femmes, les sujets âgés et en surpoids, asymptomatiques dans 80 % des cas cités, avec pour manifestations la colique hépatique, la cholécystite aiguë (douleur et fièvre), l'angiocholite (douleur, fièvre et ictère) et la pancréatite aiguë biliaire, et pour traitement étiologique la cholécystectomie — contenus de cours datés à confronter aux référentiels actuels.
+  </Accordion>
+</Accordions>
+
+Après ce complément, la fiche se referme sur ses sources : tout ce qui précède vient des deux supports cités, les contenus datés et manquants restant à compléter avec les protocoles en vigueur.
+
+## Voir aussi
+
+<Cards>
+  <Card title="Occlusions digestives" description="Autre syndrome obstructif : troisième secteur et rôle IDE." href="./occlusion-intestinale" />
+  <Card title="Lithiase urinaire" description="Autre lithiase : colique néphrétique et rôle IDE." href="./lithiase-urinaire" />
+  <Card title="Prévention des syndromes obstructifs" description="Facteurs de risque et prévention en amont." href="./prevention" />
+</Cards>
 
 ## Sources
 
-- Cours UE 2.8 S3 (à venir).
+- Dr Pauline Roumeguère, « Processus pathologiques de l'obstruction du tube digestif », UE 2.8 S3, IFSI, 2010-2011 (CHU de Bordeaux, hôpital Saint-André) — partie lithiase biliaire.
+- Pr Paul Menu, « Conduite à tenir infirmier devant une obstruction biliaire », UE 2.8, IFSI (8 pages) — support péri-opératoire, sans cours principal associé dans les extraits.
