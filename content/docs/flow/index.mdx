@@ -1,20 +1,118 @@
 ---
 title: "Tchouni's Flow"
-description: "UE 2.8 S3 · Processus obstructifs : sélecteur."
+description: "Fiches de l'UE 2.8 S3 — Processus obstructifs : 11 fiches, de la prévention aux obstructions vasculaires, respiratoires, digestives et urinaires."
 ---
 
-UE 2.8 S3 · Processus obstructifs. Choisis une fiche pour commencer.
+import { Card, Cards } from 'fumadocs-ui/components/card';
+import { Step, Steps } from 'fumadocs-ui/components/steps';
+
+**Tchouni's Flow** regroupe les fiches de l'**UE 2.8 S3 — Processus
+obstructifs**. Une seule règle de fabrication : un syndrome obstructif, une
+page — et sur cette page uniquement ce qui se retient. Les définitions et la
+physiopathologie, la clinique et les examens, le traitement en repères de
+cours datés, puis les points de vigilance infirmière.
+
+## Le gabarit d'une fiche
+
+Les 11 fiches suivent le même plan, dans le même ordre : on sait donc toujours
+où chercher ce dont on a besoin.
+
+<Steps>
+  <Step>
+    ### L'essentiel en une minute
+
+    Les définitions et repères du cours condensés en quatre lignes, pour situer
+    rapidement où l'on se trouve avant d'entrer dans le détail.
+  </Step>
+  <Step>
+    ### Définitions et physiopathologie
+
+    Le mécanisme de l'obstruction et ses facteurs de risque, du rappel
+    anatomique vers le tableau constitué.
+  </Step>
+  <Step>
+    ### Clinique et examens
+
+    Les signes révélateurs et les examens qui confirment, graduent la gravité
+    et orientent la suite.
+  </Step>
+  <Step>
+    ### Traitement en repères de cours
+
+    Les stratégies citées par les cours, datées et sans posologie détaillée :
+    à confronter aux protocoles en vigueur, jamais à appliquer comme des
+    consignes actuelles.
+  </Step>
+  <Step>
+    ### Points de vigilance IDE, sources et voir aussi
+
+    La surveillance infirmière au lit du patient, puis les cours et supports
+    précis et les liens vers les fiches voisines.
+  </Step>
+</Steps>
+
+## Les 11 fiches
 
 <Cards>
-  <Card title="Insuffisance coronaire et SCA" href="/docs/flow/coronaire" />
-  <Card title="Prévention des syndromes obstructifs" href="/docs/flow/prevention" />
-  <Card title="AVC" href="/docs/flow/avc" />
-  <Card title="AOMI" href="/docs/flow/aomi" />
-  <Card title="MTEV" href="/docs/flow/mtev" />
-  <Card title="BPCO" href="/docs/flow/bpco" />
-  <Card title="Embolie pulmonaire" href="/docs/flow/embolie-pulmonaire" />
-  <Card title="Occlusions digestives" href="/docs/flow/occlusion-intestinale" />
-  <Card title="Obstruction biliaire" href="/docs/flow/biliaire" />
-  <Card title="Lithiase urinaire" href="/docs/flow/lithiase-urinaire" />
-  <Card title="RAC et cathétérisme" href="/docs/flow/rac" />
+  <Card
+    title="Prévention des syndromes obstructifs"
+    href="/docs/flow/prevention"
+    description="Prévenir plutôt que déboucher : les facteurs de risque cardiovasculaires et le rôle IDE."
+  />
+  <Card
+    title="Insuffisance coronaire et SCA"
+    href="/docs/flow/coronaire"
+    description="De l'angor stable au syndrome coronarien aigu, avec le rôle IDE en urgence."
+  />
+  <Card
+    title="AVC"
+    href="/docs/flow/avc"
+    description="Les accidents vasculaires cérébraux ischémiques et hémorragiques, leurs signes d'alerte et le rôle IDE."
+  />
+  <Card
+    title="AOMI"
+    href="/docs/flow/aomi"
+    description="L'artériopathie oblitérante des membres inférieurs, de la claudication au diagnostic par IPS."
+  />
+  <Card
+    title="MTEV"
+    href="/docs/flow/mtev"
+    description="La maladie veineuse thrombo-embolique : thrombose veineuse profonde et embolie pulmonaire."
+  />
+  <Card
+    title="Embolie pulmonaire"
+    href="/docs/flow/embolie-pulmonaire"
+    description="La thrombose du lit vasculaire pulmonaire, sa clinique polymorphe et le rôle IDE."
+  />
+  <Card
+    title="BPCO"
+    href="/docs/flow/bpco"
+    description="La bronchopneumopathie chronique obstructive, son diagnostic aux EFR et ses exacerbations."
+  />
+  <Card
+    title="RAC et cathétérisme"
+    href="/docs/flow/rac"
+    description="Le rétrécissement aortique calcifié et le rôle IDE en salle de cathétérisme."
+  />
+  <Card
+    title="Occlusions digestives"
+    href="/docs/flow/occlusion-intestinale"
+    description="L'interruption du transit intestinal, du syndrome occlusif au traitement et au rôle IDE."
+  />
+  <Card
+    title="Obstruction biliaire"
+    href="/docs/flow/biliaire"
+    description="La lithiase biliaire et ses complications migratoires, avec le rôle IDE péri-opératoire."
+  />
+  <Card
+    title="Lithiase urinaire"
+    href="/docs/flow/lithiase-urinaire"
+    description="Les calculs urinaires et la colique néphrétique, des examens à la prévention des récidives."
+  />
 </Cards>
+
+## Par où commencer
+
+- **Éviter l'obstruction** → la prévention d'abord, puis la coronaire et l'AVC.
+- **Une thrombose ou une embolie** → la MTEV puis l'embolie pulmonaire.
+- **Une obstruction d'organe** → la BPCO, les occlusions digestives, la bile et la lithiase urinaire.
