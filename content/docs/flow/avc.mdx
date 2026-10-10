@@ -3,12 +3,147 @@ title: "AVC"
 description: "Accidents vasculaires cérébraux et rôle IDE."
 ---
 
-> Contenu à compléter avec les cours.
+import { Callout } from 'fumadocs-ui/components/callout';
+import { Card, Cards } from 'fumadocs-ui/components/card';
+import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
+import { Step, Steps } from 'fumadocs-ui/components/steps';
+import { Accordion, Accordions } from 'fumadocs-ui/components/accordion';
 
-## Au programme
+Un visage qui ne sourit plus que d'un côté, un bras qui lâche brutalement, une phrase qui ne sort plus : l'accident vasculaire cérébral (AVC) s'installe en quelques minutes et chaque minute compte. Cette fiche suit le cours de juin 2022 : définir l'AVC et l'accident ischémique transitoire (AIT), distinguer les formes ischémiques et hémorragiques, reconnaître les signes d'alerte, puis comprendre la filière d'urgence et le rôle infirmier. Les seuils et stratégies cités sont des repères de cours datés, à confronter aux protocoles en vigueur, jamais à appliquer comme des consignes actuelles.
 
-- AVC et rôle IDE
+## L'essentiel en une minute
+
+Les quatre lignes ci-dessous condensent les définitions et repères du cours avant d'entrer dans le détail. Elles permettent de situer rapidement où l'on se trouve entre ischémie, hémorragie et signal d'alerte transitoire.
+
+- **AVC = déficit neurologique de survenue soudaine lié à une lésion du parenchyme cérébral par obstruction partielle ou totale d'une artère cérébrale ou rétinienne, avec défaut de perfusion** ; **AIT = épisode bref de dysfonctionnement neurologique par ischémie focale, symptômes durant typiquement moins d'une heure, sans preuve d'infarctus à l'imagerie**.
+- **Deux mécanismes** : ischémiques (~8 cas sur 10, caillot bouchant une artère, souvent sur athérosclérose ou embolie d'origine cardiaque) et hémorragiques (~20 %, rupture d'une artère, cause principale citée : tension artérielle élevée, parfois anévrisme ou malformation artério-veineuse).
+- **Repères de cours datés (2022)** : diagnostic précoce et prise en charge rapide cités comme réduisant la mortalité de 30 % ; thrombolyse intraveineuse (fibrinolyse) recommandée jusqu'à la 4e heure selon le cours — repères pédagogiques, appliquer les délais et indications des protocoles en vigueur.
+- **AIT = urgence** : près d'un tiers des AVC durables cités comme précédés d'un tel épisode, risque élevé de nouvel AVC dans les 24 heures — appeler le 15 (service d'aide médicale urgente, SAMU) ou le 112.
+
+À retenir avant de poursuivre : l'AVC est un arrêt brutal de la circulation sanguine cérébrale dont le mécanisme oriente toute la suite, et l'AIT, même furtif, est un signal d'alerte de même niveau d'urgence. Les chiffres et délais cités restent des contenus de cours à vérifier contre les protocoles locaux. Le reste de la fiche décline cette logique, des signes vers l'imagerie puis vers le traitement et la surveillance infirmière.
+
+<Callout type="error" title="Urgence">
+Signes d'AVC ou d'AIT (engourdissement du visage ou d'un membre, perte de force, trouble de la parole ou de la compréhension, perte d'équilibre, trouble visuel brutal) : appeler immédiatement le 15 (SAMU) ou le 112. Allonger le patient, noter l'heure des premiers signes, ne rien faire boire ni manger, ne donner aucun médicament à avaler.
+</Callout>
+
+## 1. Définitions, anatomie et épidémiologie
+
+Pour comprendre l'AVC, il faut d'abord situer ce qui s'arrête : la perfusion d'un encéphale dont les neurones ne se régénèrent pas. Le rappel anatomique du cours éclaire ensuite les territoires touchés, tandis que l'épidémiologie citée donne la mesure de l'enjeu. Les chiffres restent des repères de cours datés.
+
+- **Rappel anatomique (cours)** : le système nerveux comprend le système nerveux central (encéphale — cerveau, tronc cérébral, cervelet — dans la boîte crânienne) et le système nerveux périphérique (12 paires crâniennes, 31 paires de nerfs spinaux) ; l'encéphale est vascularisé par 4 artères (2 carotides, 2 vertébrales, rejoignant le polygone de Willis cité dans le QCM du cours).
+- **Épidémiologie citée (contenu de cours daté)** : plus de 140 000 hospitalisations pour accident neuro-vasculaire en France en 2013, soit 1 AVC toutes les 4 minutes (~360 par jour) ; âge moyen de survenue 71 ans ; hausse des hospitalisations avant 65 ans entre 2002 et 2010 (+14 %, plus marquée chez les femmes citées) ; première cause de handicap acquis avec 30 000 patients gardant des séquelles lourdes ; 40 % des patients cités comme gardant des séquelles ; 60 % cités comme récupérant leur indépendance (QCM du cours).
+- **Particularité rappelée** : les neurones ne se régénèrent pas, d'où la gravité des lésions constituées ; la souffrance cérébrale par manque d'oxygène (anoxie) est citée comme irréversible à partir de 8 minutes dans le QCM du cours — repère pédagogique, pas une conduite.
+
+<Callout type="warn" title="Repères datés">
+Chiffres d'hospitalisation (2013), fréquence (1 toutes les 4 minutes), délai d'irréversibilité (8 minutes) et proportions de séquelles : contenus de cours datés, repères pédagogiques à confronter aux référentiels actuels, à ne pas utiliser comme données actuelles.
+</Callout>
+
+En pratique, cette section invite à relier chaque signe au territoire vasculaire suspecté plutôt qu'à l'apprendre par cœur : le rappel des quatre artères et du polygone de Willis explique pourquoi les troubles identifiés permettent de suspecter l'artère responsable. Les chiffres d'épidémiologie, datés mais parlants, justifient l'urgence absolue de la filière. C'est dans cet esprit que la section suivante oppose les deux mécanismes d'AVC.
+
+## 2. Deux mécanismes : ischémique et hémorragique
+
+Une fois le cadre posé, la distinction entre caillot qui bouche et artère qui rompt conditionne l'imagerie puis le traitement. La liste suivante se lit en comparant les deux tableaux du cours, causes et gravité citées. Les deux restent des AVC, mais leur prise en charge diffère.
+
+<Tabs items={['AVC ischémique', 'AVC hémorragique']}>
+  <Tab value="AVC ischémique">
+    **AVC ischémique (~8 cas sur 10) : interruption de la circulation par un caillot bouchant une artère à destination du cerveau**. Cause principale citée : l'athérosclérose (artère malade depuis longtemps, plaque d'athérome). Parfois le caillot s'est formé à distance, par exemple dans le cœur (fibrillation auriculaire citée), puis a migré vers le cerveau.
+  </Tab>
+  <Tab value="AVC hémorragique">
+    **AVC hémorragique (~20 % des cas) : arrêt de la circulation par rupture d'une artère du cerveau**. Cause principale citée : une tension artérielle élevée. La rupture peut survenir sur une anomalie préexistante : anévrisme ou malformation artério-veineuse (citée chez l'enfant). Séquelles citées comme souvent plus graves.
+  </Tab>
+</Tabs>
+
+- **Facteurs de risque particuliers soulignés** : trouble du rythme cardiaque et sténose (rétrécissement) de l'artère carotide sont présentés comme deux facteurs de risque particuliers.
+- **QCM du cours** : l'artère est le plus souvent obstruée par une plaque d'athérome ou un caillot (vrai), pas par une tumeur, un corps étranger ni un bolus infectieux.
+
+À retenir de cette comparaison : la fréquence citée oppose un mécanisme obstructif majoritaire, souvent athéroscléreux ou embolique cardiaque, à un mécanisme hémorragique plus rare mais cité comme plus grave. Cette distinction explique pourquoi l'imagerie cérébrale en urgence est indispensable avant tout traitement. Elle prépare aussi la lecture des signes, qui reflètent le territoire touché quel que soit le mécanisme.
+
+## 3. Signes d'alerte et AIT : une même urgence
+
+Après les mécanismes, cette section passe à la reconnaissance : à quoi ressemble un AVC débutant, et pourquoi un épisode qui régresse reste une urgence. La liste suivante se lit des premiers signes vers la conduite dans l'attente des secours, en retenant que l'AIT ne se distingue de l'AVC que par sa régression.
+
+- **Premiers signes cités** : engourdissement du visage (impossibilité de sourire, lèvre tombante d'un côté), perte de force ou engourdissement du membre supérieur, trouble de la parole (difficulté à parler ou à répéter une phrase), difficulté à comprendre l'interlocuteur, engourdissement ou faiblesse de la jambe, perte soudaine de l'équilibre, problème de vision même temporaire (perte de la vue d'un œil, baisse brutale unilatérale, vision double) ; s'y ajoutent paralysie d'un membre ou d'un côté, troubles de la sensibilité, troubles de la compréhension.
+- **AIT : symptômes parfois furtifs passant inaperçus, disparaissant en quelques minutes ; au moins un des trois signes d'alerte (engourdissement du visage, engourdissement ou perte de force d'un bras, troubles de la parole)**. Près d'un tiers des AVC durables cités comme précédés d'un tel épisode ; risque élevé de nouvel AVC dans les 24 heures ; l'urgence et la nécessité d'une prise en charge adaptée sont identiques.
+
+<Steps>
+  <Step>
+    Appeler en urgence le 15 (SAMU) ou le 112, y compris si les signes ont régressé (AIT possible).
+  </Step>
+  <Step>
+    Allonger le malade, si possible avec un oreiller sous la tête ; noter l'heure de survenue des premiers signes ; regrouper si possible les ordonnances.
+  </Step>
+  <Step>
+    Ne pas faire boire ni manger, ne donner aucun médicament à avaler (risque de fausse route).
+  </Step>
+</Steps>
+
+<Callout type="error" title="Urgence">
+AIT avec signes disparus en quelques minutes : urgence identique à l'AVC constitué. Ne pas rassurer sur la régression, appeler le 15 ou le 112 car le risque de nouvel AVC dans les 24 heures est cité comme élevé.
+</Callout>
+
+Concrètement, cette section impose une méthode : devant tout signe listé, même isolé ou transitoire, raisonner en territoire vasculaire suspecté et en heure de début, sans attendre de confirmation. La notation de l'heure conditionne l'éligibilité aux traitements de reperfusion décidés médicalement. L'interdiction de faire boire, manger ou avaler un médicament protège des fausses routes avant l'évaluation. C'est cette alerte qui ouvre la filière d'imagerie et de traitement décrite ensuite.
+
+## 4. Diagnostic et traitement hospitalier (repères de cours)
+
+L'alerte donnée, l'hôpital tranche entre ischémie et hémorragie par l'imagerie, puis traite la cause selon le mécanisme. La liste suivante se lit en suivant la chronologie : imagerie en urgence, bilan étiologique, puis traitements cités. Chaque délai et indication reste un repère de cours 2022 renvoyé aux protocoles en vigueur.
+
+- **Imagerie cérébrale indispensable et urgente** : imagerie par résonance magnétique (IRM) ou tomodensitométrie (TDM, scanner cérébral) ; le couple IRM + TDM est cité comme le plus performant pour affirmer le diagnostic (QCM du cours).
+- **Bilan étiologique cité** : électrocardiogramme (ECG), échodoppler cervical, angio-TDM ; l'échocardiographie cardiaque est citée comme indispensable (QCM du cours).
+- **Thrombolyse (fibrinolyse) intraveineuse après AVC ischémique** : perfusion hospitalière, en unité neuro-vasculaire ou en coordination avec elle, d'un médicament dissolvant le caillot pour rétablir la circulation et l'apport en oxygène ; recommandée jusqu'à la 4e heure selon le cours ; indication posée par le médecin ; contre-indications connues ; plus elle est précoce, moins les séquelles sont importantes (cours).
+- **Surveillance protocolée citée (repère de cours)** : lit médicalisé, contrôle de la tension artérielle, scope (surveillance cardiaque continue) pour les 48 premières heures, surveillance neurologique toutes les heures, surveillance biologique habituelle incluant glycémie et coagulation.
+- **Relais médicamenteux cité (sans posologie)** : anticoagulants dans certains cas d'AVC ischémiques, notamment quand le caillot a migré depuis le cœur (fibrillation auriculaire) — empêchent les caillots de grossir et préviennent les nouveaux caillots ; antiagrégants plaquettaires après AVC ischémique — empêchent les plaquettes de s'agglutiner. Aucune molécule ni dose dans cette fiche : appliquer la prescription et le protocole en vigueur.
+- **Chirurgie de la cause, parfois nécessaire** : retrait d'une plaque d'athérome au niveau d'une artère du cou après AVC ischémique, ou correction d'une malformation artério-veineuse après AVC hémorragique, pour éviter un nouvel AVC.
+
+<Callout type="warn" title="Stratégie datée">
+Thrombolyse jusqu'à la 4e heure, scope 48 heures, surveillance neurologique horaire et schémas d'anticoagulants/antiagrégants : contenus de cours datés de 2022, repères pédagogiques — appliquer les délais, indications, contre-indications et protocoles en vigueur, sur prescription médicale.
+</Callout>
+
+À retenir de cette liste : sans imagerie urgente, aucun traitement spécifique ne peut être décidé, et le traitement de reperfusion cité ne vaut que dans la fenêtre et les conditions décidées médicalement. La surveillance protocolée listée montre l'intensité du suivi post-thrombolyse dans le cours, sans valoir protocole actuel. Les traitements au long cours et la chirurgie de la cause visent la prévention de la récidive, citée comme principale complication.
+
+## 5. Séquelles, rééducation et prévention de la récidive
+
+Après la phase aiguë, l'évolution dépend du type, de la localisation et de l'étendue des lésions, ainsi que de la rapidité de la prise en charge et de la rééducation. La liste suivante se lit des séquelles possibles vers les trois objectifs de rééducation cités, puis vers la prévention. Elle éclaire le rôle d'accompagnement infirmier développé ensuite.
+
+- **Séquelles possibles citées** : récupération parfois totale, le plus souvent séquelles de gravité variable ; paralysie ou faiblesse d'un côté du corps, problèmes de vision, troubles de la parole, de l'écriture ou de la compréhension orale, incapacité à reconnaître des objets familiers, fatigue, somnolence, dépression, difficulté à apprendre et à mémoriser, épilepsie ; principale complication citée : la survenue d'un nouvel AVC.
+- **Rééducation** : commence le plus rapidement possible, phase longue et éprouvante, avec kinésithérapie et auto-travail ; trois objectifs : éviter les complications supplémentaires (raidissement progressif des membres paralysés, répétition automatique de mots chez la personne aphasique), récupérer au maximum marche, usage de la main et langage, aider au contrôle des facteurs de risque cardiovasculaire.
+
+Ce qu'il faut en retenir : la diversité des séquelles listées explique pourquoi la rééducation associe prévention des complications, récupération fonctionnelle et contrôle des facteurs de risque. La rapidité de la prise en charge initiale et la persévérance dans la rééducation conditionnent le niveau d'autonomie retrouvé. C'est dans cette durée que s'inscrit la vigilance infirmière, entre prévention des complications et soutien du patient et de sa famille.
+
+## Points de vigilance IDE
+
+La vigilance infirmière découle de tout ce qui précède : organiser l'urgence, sécuriser la phase aiguë à jeun et scopée, puis prévenir les complications d'immobilité et accompagner l'autonomie. Les puces ci-dessous reprennent les points cités dans les deux supports ; elles se lisent comme la mise en actes de l'alerte, de la surveillance protocolée et de la rééducation.
+
+- **Dans l'urgence** : appel au 15, prise en charge le plus souvent par l'intermédiaire du SAMU, équipe d'accueil prévenue pendant le transport pour une organisation optimale.
+- **Dès l'arrivée** : noter score de conscience, poids, identité ; mise en techniques de soins intensifs et de surveillance ; voie veineuse, scope ; maintenir le patient à jeun strict quelles que soient les demandes ; bilan sanguin complet avec hémostase, temps de Quick (TP) et plaquettes ; gestes à visée diagnostique sur prescription, organisation des examens, recueil des données, évaluation de la douleur, information de l'entourage.
+- **Élimination** : transit intestinal (fréquence, couleur, aspect des selles ; participation au choix de l'alimentation ; mobilisation) ; urines (quantifier, surveiller couleur et hydratation, respecter l'hygiène, bandelettes urinaires fréquentes citées) pour prévenir infection, rétention et incontinence.
+- **Peau et mobilisation** : surveiller la literie, matelas et coussins anti-escarres, changements de position réguliers, aide à la mobilisation, hydratation surveillée.
+- **Hygiène et autonomie** : aide pour la toilette, l'habillage, l'alimentation, la parole ; prévention des rétractions musculo-tendineuses.
+- **Dialogue** : accompagner en soulignant les progrès, noter les avancements, expliquer à la famille l'importance de l'accompagnement, justifier et encourager la persévérance, insister sur le temps nécessaire à la récupération ; informations au patient et soutien à la famille selon les prescriptions et le choix thérapeutique.
+- TODO : horaires, seuils et protocoles actuels de thrombolyse, de thrombectomie et de surveillance neuro-vasculaire non détaillés dans les extraits — compléter avec les protocoles en vigueur.
+
+<Callout type="warn" title="Repères datés">
+Voie veineuse centrale, jeun strict, scope, bilans et fréquences de surveillance cités : contenus de cours à confronter au protocole local en vigueur, sur prescription médicale — ne pas les appliquer comme protocole actuel.
+</Callout>
+
+Concrètement, cela signifie tracer le score de conscience, le poids, l'heure des signes et la douleur dès l'arrivée, sécuriser le jeun strict et la surveillance scopée sur prescription, puis organiser le quotidien autour de l'élimination, de la peau et de la mobilisation. Chaque observation — selles, urines, état cutané, langage, progrès moteurs — alimente la prévention des complications secondaires citée en conclusion du cours. Devant toute aggravation neurologique, l'alerte immédiate selon le protocole local prime, les repères datés restant à vérifier comme l'indique le TODO.
+
+<Accordions>
+  <Accordion title="Complément : ce que le cours ne détaille pas" value="complement">
+    La thrombectomie mécanique, les unités neuro-vasculaires actuelles et les échelles (NIHSS, Rankin) ne sont pas détaillées dans les extraits fournis. Le QCM du cours précise que le cerveau adulte compte ~100 milliards de neurones (et l'intestin ~500 millions cités) et que l'hexagone de Willis reçoit les artères vertébrales. TODO : compléter avec le référentiel local.
+  </Accordion>
+</Accordions>
+
+Après ce complément, la fiche se referme sur ses sources : tout ce qui précède vient des deux supports cités, les contenus datés restant à confronter aux protocoles en vigueur.
+
+## Voir aussi
+
+<Cards>
+  <Card title="AOMI" description="Autre territoire de l'athérosclérose : ischémie des membres inférieurs." href="./aomi" />
+  <Card title="Embolie pulmonaire" description="Urgence obstructive : clinique, gravité et rôle IDE." href="./embolie-pulmonaire" />
+  <Card title="Prévention des syndromes obstructifs" description="Facteurs de risque et prévention cardiovasculaire." href="./prevention" />
+</Cards>
 
 ## Sources
 
-- Cours UE 2.8 S3 (à venir).
+- Pr Paul Menu / Pr Joël Constant, « Accidents vasculaires cérébraux », UE 2.8, IFSI, juin 2022 (48 pages).
+- Pr Paul Menu, « Le rôle infirmier devant un AVC », UE 2.8, IFSI (8 pages).

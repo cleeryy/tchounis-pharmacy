@@ -3,13 +3,144 @@ title: "Occlusions digestives"
 description: "Occlusion intestinale et processus obstructifs du tube digestif."
 ---
 
-> Contenu à compléter avec les cours.
+import { Callout } from 'fumadocs-ui/components/callout';
+import { Card, Cards } from 'fumadocs-ui/components/card';
+import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
+import { Step, Steps } from 'fumadocs-ui/components/steps';
+import { Accordion, Accordions } from 'fumadocs-ui/components/accordion';
 
-## Au programme
+Un ventre qui gonfle et devient tympanique, des douleurs abdominales avec des vomissements, puis plus aucun gaz ni aucune selle : l'occlusion intestinale interrompt partiellement ou complètement le transit et menace le pronostic vital par son retentissement hydroélectrolytique. Cette fiche suit le cours de juin 2022 et le cours de 2010-2011 sur les processus obstructifs : définir le syndrome occlusif, comprendre la physiopathologie du troisième secteur et des strangulations, distinguer les occlusions hautes et basses avec leurs causes, puis situer le traitement et le rôle infirmier. Les seuils et stratégies cités sont des repères de cours datés, à confronter aux protocoles en vigueur, jamais à appliquer comme des consignes actuelles.
 
-- Occlusion intestinale
-- Processus obstructifs du tube digestif
+## L'essentiel en une minute
+
+Les quatre lignes ci-dessous condensent les définitions et repères des cours avant d'entrer dans le détail. Elles permettent de situer rapidement où l'on se trouve entre obstacle mécanique, iléus fonctionnel et souffrance intestinale.
+
+- **Occlusion intestinale** = interruption partielle ou complète du transit intestinal (matières fécales et gaz) ; urgence médicale en raison des conséquences induites et du retentissement hydroélectrolytique, pouvant menacer le pronostic vital.
+- **Trois signes révélateurs cités** : douleurs abdominales, arrêt des matières et des gaz, nausées et vomissements (fécaloïdes ou non), avec météorisme abdominal (augmentation du volume, tympanisme).
+- **Épidémiologie citée (contenu de cours daté, 2010-2011)** : 4 à 9 % des syndromes douloureux abdominaux de l'adulte, 75 % de siège grêlique (étranglements herniaires 43 %, brides et adhérences 38 %), siège colique dominé par l'adénocarcinome (43 %), mortalité citée de 5 % pour le grêle et 12 % pour le côlon — chiffres de cours, à ne pas utiliser comme données actuelles.
+- **Traitement cité** : à jeun, sonde nasogastrique (SNG) en aspiration, hydratation et réanimation hydroélectrolytique, antalgie, traitement étiologique médical et/ou chirurgical (lever l'obstacle, parfois stomie), sur prescription médicale et selon les protocoles en vigueur.
+
+À retenir avant de poursuivre : tout le raisonnement part des trois signes révélateurs, puis cherche des signes de choc ou de souffrance intestinale, le niveau anatomique et le mécanisme. La physiopathologie explique pourquoi le troisième secteur déshydrate et pourquoi la strangulation fait craindre la nécrose et le choc septique précoce. Le reste de la fiche décline cette logique, des mécanismes vers la clinique, l'imagerie, les causes par niveau, puis le traitement et la vigilance infirmière.
+
+<Callout type="error" title="Urgence">
+Suspicion d'occlusion (douleurs, arrêt des matières et des gaz, vomissements) avec tachycardie, hypotension, marbrures, fièvre ou signes de souffrance intestinale — strangulation et ischémie citées comme urgences chirurgicales : alerter sans délai selon le protocole local, patient à jeun.
+</Callout>
+
+## 1. Définitions et cadre : du syndrome sub-occlusif à l'occlusion complète
+
+Pour comprendre l'occlusion, il faut d'abord situer ce qui s'arrête : le transit lié au péristaltisme, de la bouche à l'anus, dans une cavité abdominale entourée par le péritoine. Le cours distingue ensuite les présentations selon la sévérité, le niveau et le mécanisme, ce qui oriente toute la suite. Les repères anatomiques cités (œsophage, estomac, duodénum, jéjunum-iléon, valvule iléo-caecale, côlon droit, transverse, gauche, sigmoïde, rectum, anus) servent à nommer le niveau suspecté.
+
+- **Définition (cours 2022)** : interruption partielle ou complète du transit intestinal, matières fécales et gaz ; urgence médicale par les conséquences induites et le retentissement hydroélectrolytique ; peut menacer le pronostic vital.
+- **Distinctions citées** : syndrome sub-occlusif versus occlusion complète ; occlusions hautes versus occlusions basses ; occlusions mécaniques versus occlusions fonctionnelles.
+- **Rôle de l'intestin cité** : absorption des nutriments après dégradation du bol alimentaire par les enzymes hépatiques et les sels biliaires, résorption de l'eau ; ce qui n'est pas absorbé devient un résidu progressant vers le rectum pour être éliminé à l'anus.
+- **Rappel du cours 2010-2011** : le tube digestif est l'ensemble des organes creux entre la bouche et l'anus, avec le foie et le pancréas comme glandes annexées ; l'intestin grêle assure digestion et absorption par le péristaltisme, le côlon absorbe l'eau et les électrolytes et stocke les fèces, avec le rôle de la flore digestive cité.
+
+En pratique, cette section invite à nommer chaque situation avec les trois mots du cours : complète ou partielle, haute ou basse, mécanique ou fonctionnelle. Le rappel du transit par péristaltisme explique pourquoi son interruption retentit sur l'eau et les ions. C'est ce retentissement qui fait l'objet de la physiopathologie décrite ensuite.
+
+## 2. Physiopathologie : troisième secteur, strangulation, iléus réflexe
+
+Une fois le cadre posé, le cours explique comment l'obstacle déshydrate, comment la strangulation ajoute l'ischémie, et comment l'iléus réflexe arrête la motricité sans obstacle. Les trois mécanismes suivants se lisent en comparant ce qui distend, ce qui ischémie et ce qui paralyse, car chacun annonce des complications différentes.
+
+<Tabs items={['Obstacle : troisième secteur', 'Strangulation : ischémie', 'Iléus réflexe : paralysie']}>
+  <Tab value="Obstacle : troisième secteur">
+    **En amont de l'obstruction, l'intestin se distend** avec création d'un troisième secteur par rétention d'eau et perturbation de l'absorption des ions : déshydratation relative, soif, hypovolémie, hyponatrémie, diminution de la filtration rénale avec oligurie. Ces modifications entraînent une translocation bactérienne in situ, rapidement pourvoyeuse de choc septique. Le cours 2010-2011 ajoute l'insuffisance rénale et le choc hypovolémique comme complications générales de ce troisième secteur.
+  </Tab>
+  <Tab value="Strangulation : ischémie">
+    **Au phénomène précédent s'ajoute l'ischémie vasculaire intestinale**, qui entraîne rapidement souffrance clinique puis nécrose tissulaire ; les désordres bactériens sont aggravés par la strangulation, et le choc septique est souvent plus précoce et plus grave. Côté complications pariétales citées : ischémie puis nécrose par strangulation ou par hyperpression luminale, colectasie puis perforation diastatique avec péritonite stercorale.
+  </Tab>
+  <Tab value="Iléus réflexe : paralysie">
+    **Contrairement aux cas précédents, il n'y a pas d'obstacle mécanique** : seul le péristaltisme et la motricité s'arrêtent de façon réflexe. On le voit presque systématiquement après une intervention chirurgicale, mais cela ne doit pas durer plus de 2 à 3 jours (repère de cours daté) ; s'il persiste, on parle d'iléus paralytique. Le cours 2010-2011 cite comme autres causes de paralysie du péristaltisme l'agression (inflammation, infection, traumatisme, post-opératoire) et la pseudo-obstruction (médicaments, troubles ioniques et hormonaux).
+  </Tab>
+</Tabs>
+
+- **Complications aiguës citées (cours 2022)** : choc hypovolémique, ischémie intestinale, perforation intestinale, pneumopathies d'inhalation, hémorragies digestives (ulcère de stress ou syndrome de Mallory-Weiss). Le QCM du cours retient déshydratation, translocation bactérienne et péritonite comme complications fréquentes citées, et non l'hémorragie interne ni le passage à l'occlusion chronique.
+
+À retenir de cette comparaison : l'obstacle simple menace par l'eau et les ions perdus dans le troisième secteur, la strangulation ajoute l'urgence de l'ischémie et de la nécrose, et l'iléus réflexe post-opératoire n'est toléré que 2 à 3 jours dans le cours. La translocation bactérienne vers le choc septique est le danger commun qui justifie l'urgence. C'est cette physiopathologie qui éclaire les signes cliniques décrits ensuite.
+
+## 3. Signes révélateurs et examen clinique
+
+Après les mécanismes, cette section passe à la reconnaissance : les trois signes qui font penser à l'obstruction, puis l'examen qui cherche la tolérance et la cause. La liste suivante se lit de la plainte vers les constantes et les gestes, en retenant les trois questions du cours : choc ou souffrance, niveau, mécanisme.
+
+- **Signes révélateurs cités** : douleurs abdominales, arrêt des matières et des gaz, nausées et vomissements (fécaloïdes ou non), météorisme abdominal avec tympanisme. Le QCM précise que l'occlusion complète du grêle associe vomissements, douleur abdominale, arrêt des gaz et des matières.
+- **Examen clinique cité** : douleurs évaluées par échelle visuelle analogique (EVA) de 0 à 10, fièvre, déshydratation, signes de mauvaise tolérance sur les constantes (tachycardie citée avec insistance, hypotension, marbrures), toucher rectal (TR) fait par l'interne, examen abdominal, orifices herniaires, recherche de cicatrice abdominale.
+- **Examens complémentaires cités** : radiographie d'abdomen sans préparation (ASP) recherchant des niveaux hydroaériques (NHA) et précisant le siège, mais de moins en moins utilisée ; scanner (tomodensitométrie, TDM) abdomino-pelvien recherchant les NHA, précisant l'obstacle et les signes de souffrance intestinale secondaire — repères de cours datés, appliquer les indications d'imagerie en vigueur.
+
+En pratique, cette section impose une méthode : dater l'heure d'apparition des douleurs et des derniers gaz et matières, quantifier fréquence et abondance des vomissements, noter les variations de tension artérielle (TA), le pouls, la température et la coloration des téguments. Les orifices herniaires et les cicatrices orientent vers la cause avant l'imagerie. C'est sur ce socle que se distinguent les tableaux hauts et bas décrits ensuite.
+
+## 4. Tableaux par niveau et causes
+
+L'examen fait, le niveau anatomique sépare deux tableaux que le cours oppose point par point : l'occlusion haute grêlique à début brutal et vomissements précoces, et l'occlusion basse colique à arrêt précoce et vomissements tardifs. Les onglets suivants se lisent en comparant ces cinétiques, puis en retenant les causes de strangulation comme urgences chirurgicales.
+
+<Tabs items={['Occlusion haute : grêle', 'Occlusion basse : côlon']}>
+  <Tab value="Occlusion haute : grêle">
+    **Syndrome occlusif haut grêlique** : début souvent brutal, vomissements précoces et abondants, puis arrêt des matières et des gaz souvent retardé, altération de l'état général (AEG) ; l'ASP montre des NHA et la TDM confirme en montrant l'endroit de l'occlusion. Le QCM précise que dans la strangulation du grêle, le syndrome douloureux débute brutalement avec météorisme et vomissements précoces et abondants, sans syndrome infectieux important d'emblée ni arrêt précoce des matières. **Par strangulation** : invagination intestinale (enfant surtout, incorporation d'un segment dans la portion en aval), brides sur antécédent de chirurgie abdominale même très ancienne par adhérences, étranglement herniaire (orifices ombilical, inguinal, scrotal cités) — urgence chirurgicale. **Par obstruction** : sténose sur maladie inflammatoire chronique de l'intestin (MICI, maladie de Crohn) avec traitement médical, dilatation endoscopique ou chirurgie ; cancer ; endométriose ; grêle radique ; carcinose péritonéale. **Ischémie intestinale** : urgence chirurgicale pour résection du segment ischémié et stomie.
+  </Tab>
+  <Tab value="Occlusion basse : côlon">
+    **Occlusion du tube digestif bas colique** : douleurs abdominales, météorisme, arrêt des matières et des gaz précoce, puis vomissements fécaloïdes tardifs ; examen par ASP et scanner abdomino-pelvien. Début généralement progressif, peu de vomissements tardifs. **Par strangulation** : volvulus du sigmoïde (retournement du sigmoïde sur lui-même en boucle qui s'étrangle à la base). **Par obstruction** : néoplasie (cancer du côlon) avec traitement médical, prothèse et/ou chirurgie ; sténose anastomotique ou inflammatoire ; fécalome (accumulation de matières fécales déshydratées stagnantes dans le rectum) par TR et lavements, rarement chirurgie. **Fonctionnelle** : syndrome d'Ogilvie — colectasie sans obstacle visible à l'imagerie, trouble du tonus d'origine neurologique, terrains cités (accident vasculaire cérébral — AVC, infection sévère, insuffisant respiratoire, patient sous neuroleptique), traitement cité : sonde rectale, colo-exsufflation et traitement de la cause. Le QCM retient comme causes citées la bride sur cicatrice, le volvulus du sigmoïde et l'invagination intestinale, et non le corps étranger ni la rectocolite.
+  </Tab>
+</Tabs>
+
+- **Causes classées (cours 2022)** : organiques mécaniques — au niveau de la paroi (cancer ou sténose inflammatoire), de la lumière (corps étranger — CE — ou fécalome), de l'extérieur (hernies, brides, tumeurs rétropéritonéales) ; fonctionnelles avec ralentissement du péristaltisme (syndrome d'Ogilvie, iléus réflexe). Le cours 2010-2011 classe de même : intraluminal (bézoard, fécalome, calculs), extraluminal par compression (strangulation sur brides post-opératoires ou volvulus, hernie étranglée, tumeur, carcinose), pariétal (cancer, polype, sténose inflammatoire, invagination).
+
+Ce qu'il faut en retenir : la cinétique oppose des vomissements précoces en haut à un arrêt précoce en bas, ce qui aide à situer le niveau avant l'imagerie. Les strangulations citées — hernie étranglée, brides, volvulus, ischémie — sont des urgences chirurgicales, tandis que le fécalome et l'Ogilvie cités relèvent d'abord de gestes non chirurgicaux. Les causes pariétales et extrinsèques listées montrent que tout le tube, de façon intrinsèque ou extrinsèque, peut s'obstruer. C'est sur cette cause que se règle le traitement décrit ensuite.
+
+## 5. Traitement et chirurgie (repères de cours)
+
+La cause identifiée, le traitement cité associe les mesures communes — jeûne, SNG, hydratation — au traitement étiologique médical et/ou chirurgical. La liste suivante se lit des mesures communes vers la chirurgie et ses suites, en retenant que la continuité intestinale n'est pas toujours rétablie d'emblée. Chaque conduite reste un repère de cours renvoyé à la prescription et aux protocoles en vigueur.
+
+- **Mesures communes citées** : à jeun, calmer les douleurs, SNG en aspiration, hydratation, compensation de la SNG, attention aux troubles ioniques en cas de vomissements ou de diarrhée, la kaliémie en particulier ; en bas, sonde de Faucher dans le rectum citée. Le cours 2010-2011 ajoute la perfusion pour l'antalgie, la réhydratation, le remplissage, l'antibiothérapie et les antispasmodiques, la SNG pour le confort, la vidange avant chirurgie et la prévention de l'inhalation — contenus de cours, sur prescription.
+- **Chirurgie citée** : l'objectif est de lever l'obstacle ; le rétablissement de la continuité intestinale n'est pas toujours réalisable dans un premier temps ; il est parfois indispensable de réaliser une colostomie temporaire, en expliquant bien au patient qu'elle peut être temporaire ; la colostomie nécessite une éducation et une aide importante du personnel infirmier. Le cours 2010-2011 cite la résection avec ou sans stomie et la prothèse endoscopique selon la cause.
+
+<Callout type="warn" title="Stratégie datée">
+Jeûne, SNG, compensation, correction ionique, indications chirurgicales et stomies : contenus de cours datés, repères pédagogiques — appliquer la prescription médicale et les protocoles en vigueur.
+</Callout>
+
+Concrètement, cette section montre que le traitement ne se résume pas à opérer : la réanimation hydroélectrolytique et la vidange gastrique le précèdent et l'accompagnent, et la stomie temporaire éventuelle engage l'éducation. La prise en charge hospitalière en milieu adapté est citée comme parfois vitale. C'est dans ce cadre que s'inscrit la vigilance infirmière développée ensuite.
+
+## Points de vigilance IDE
+
+La vigilance infirmière découle de tout ce qui précède : tracer l'heure et les constantes, sécuriser le jeûne et les sondes, préparer une éventuelle chirurgie, puis surveiller le retour de bloc jusqu'à la reprise du transit. Les puces ci-dessous reprennent les points cités dans le cours ; elles se lisent comme la mise en actes de l'examen, de la réanimation et des suites opératoires.
+
+<Steps>
+  <Step>
+    Préciser l'heure d'apparition des douleurs et des derniers gaz et matières ; s'informer de la fréquence et de l'abondance des vomissements ; noter TA, pouls, température, coloration des téguments (pâleur, marbrures).
+  </Step>
+  <Step>
+    Poser perfusion et prise de sang (NFS — numération formule sanguine, coagulation, ionogramme, groupe, rhésus et RAI — recherche d'agglutinines irrégulières) et l'envoyer immédiatement au laboratoire ; respecter la réanimation hydroélectrolytique ; installer une aspiration gastrique continue par SNG en la quantifiant et en la surveillant.
+  </Step>
+  <Step>
+    Poser une sonde urinaire pour calculer la diurèse et analyser les urines ; participer à la tenue des entrées et des sorties ; faire en urgence radiographie pulmonaire et électrocardiogramme (ECG) si chirurgie envisagée ; préparer le champ opératoire très large selon les habitudes du service ; effectuer les prescriptions de l'anesthésiste, notamment la prémédication.
+  </Step>
+  <Step>
+    Au retour de bloc : laisser à jeun strict jusqu'à l'apparition des premiers gaz ; évaluer la douleur ; observer le liquide de sonde et de drainage (quantité, qualité, couleur — l'odeur et l'existence d'aliments ne sont pas retenus dans le QCM) avec prélèvements infectieux si besoin.
+  </Step>
+</Steps>
+
+- TODO : seuils et protocoles actuels de réanimation, d'antibiothérapie, de reprise alimentaire et de surveillance des stomies non détaillés dans les extraits — compléter avec les protocoles en vigueur.
+
+<Callout type="warn" title="Repères datés">
+Bilans, sondes, jeûne strict jusqu'aux gaz et surveillance du drainage cités : contenus de cours à confronter au protocole local en vigueur, sur prescription médicale — ne pas les appliquer comme protocole actuel.
+</Callout>
+
+Concrètement, cela signifie tracer l'heure des douleurs et des derniers gaz dès l'accueil, tenir les entrées-sorties avec la diurèse sondée et l'aspiration gastrique quantifiée, et garder le patient à jeun strict après le bloc jusqu'aux premiers gaz. Chaque observation — constantes, couleur des téguments, aspect du liquide drainé — alimente la détection d'une souffrance ou d'une complication. Devant tout signe de choc ou de souffrance intestinale, l'alerte immédiate selon le protocole local prime, les repères datés restant à vérifier comme l'indique le TODO.
+
+<Accordions>
+  <Accordion title="Compléments : maladie de Crohn et cancer colorectal (cours 2010-2011)" value="complement">
+    La sténose sur maladie de Crohn est décrite comme une réponse immunitaire inadaptée avec lésions discontinues de tout le tube digestif (ulcération, fistule, abcès, st��nose), diarrhée et douleurs selon le segment, manifestations extradigestives citées (polyarthrite, érythème noueux, uvéite, abcès anal), diagnostic par radiologie et iléocoloscopie avec granulomes épithélioïdes sans nécrose caséeuse. L'adénocarcinome colorectal est cité avec 33 000 nouveaux cas et 16 000 morts par an en France, 85 % après 65 ans, survie à 5 ans de 35 %, diagnostic formel par l'histologie — contenus de cours datés à confronter aux référentiels actuels.
+  </Accordion>
+</Accordions>
+
+Après ce complément, la fiche se referme sur ses sources : tout ce qui précède vient des deux supports cités, les contenus datés restant à confronter aux protocoles en vigueur.
+
+## Voir aussi
+
+<Cards>
+  <Card title="Obstruction biliaire" description="Autre syndrome obstructif : lithiase, infection et rôle IDE." href="./biliaire" />
+  <Card title="Lithiase urinaire" description="Obstruction des voies excrétrices : colique néphrétique et rôle IDE." href="./lithiase-urinaire" />
+  <Card title="AVC" description="Terrain cité du syndrome d'Ogilvie : filière d'urgence et vigilance." href="./avc" />
+</Cards>
 
 ## Sources
 
-- Cours UE 2.8 S3 (à venir).
+- Pr Paul Menu, « Syndromes obstructifs abdominaux », UE 2.8, IFSI, juin 2022 (40 pages).
+- Dr Pauline Roumeguère, « Processus pathologiques de l'obstruction du tube digestif », UE 2.8 S3, IFSI, 2010-2011 (CHU de Bordeaux, hôpital Saint-André).

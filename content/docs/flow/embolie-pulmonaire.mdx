@@ -3,12 +3,147 @@ title: "Embolie pulmonaire"
 description: "Embolie pulmonaire et rôle IDE."
 ---
 
-> Contenu à compléter avec les cours.
+import { Callout } from 'fumadocs-ui/components/callout';
+import { Card, Cards } from 'fumadocs-ui/components/card';
+import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
+import { Step, Steps } from 'fumadocs-ui/components/steps';
+import { Accordion, Accordions } from 'fumadocs-ui/components/accordion';
 
-## Au programme
+Une douleur en coup de poignard sur un côté du thorax, un essoufflement brutal même au repos, parfois un simple malaise : l'embolie pulmonaire (EP) est polymorphe et le cours la résume d'une citation d'Ambroise Paré — « quand on y pense toujours, on y pense jamais assez ». Cette fiche suit les deux supports de juin 2022 (capsule EP et rôle infirmier) : comprendre la mécanique d'amont et d'aval, reconnaître la clinique, graduer la probabilité et la gravité, puis situer les examens, le traitement et la vigilance IDE. Les scores, seuils et stratégies cités sont des repères de cours datés, à confronter aux protocoles en vigueur, jamais à appliquer comme des consignes actuelles. Aucune posologie détaillée.
 
-- Embolie pulmonaire et rôle IDE
+## L'essentiel en une minute
+
+Les quatre lignes ci-dessous condensent la mécanique et les repères du cours avant d'entrer dans le détail. Elles permettent de situer rapidement où l'on se trouve entre suspicion, confirmation et niveau de gravité.
+
+- **Mécanique (cours) : thrombose du lit vasculaire pulmonaire** ; en aval : altération de la précharge du ventricule gauche (VG), baisse possible du débit cardiaque systémique, altération du rapport ventilation/perfusion ; en amont : hypertension artérielle pulmonaire (HTAP), signes d'insuffisance cardiaque droite.
+- **Clinique polymorphe** : douleur thoracique volontiers basithoracique brutale et latéralisée « en coup de poignard », dyspnée et tachypnée (polypnée) permanentes y compris au repos, hémoptysie sur infarctus pulmonaire, malaise ou syncope (EP grave), asthénie, fièvre, angoisse ; peut être asymptomatique ou se révéler par une détresse ou un choc.
+- **Repères de cours datés** : scores de Genève révisé et de Wells avec seuils de probabilité faible, intermédiaire et forte ; D-dimères négatifs écartant l'EP en probabilité non forte ; angio-TDM (tomodensitométrie injectée) méthode de référence ; gravité jugée sur le risque de décès hospitalier précoce (30 jours) — repères pédagogiques, appliquer les algorithmes en vigueur.
+- **Rôle IDE cité** : accueil (conscience, poids, identité), soins intensifs et surveillance (scope, jeun strict, bilan avec hémostase), organisation des examens sur prescription, information de l'entourage, puis éducation aux antivitamines K (AVK) avec les 7 règles d'or citées — contenus de cours, sur prescription et protocole local.
+
+À retenir avant de poursuivre : l'EP partage les facteurs de risque de la TVP mais sa prise en charge dépend du degré de gravité, parfois même de l'équipe selon le cours. Les scores et seuils cités restent des contenus de cours à vérifier contre les référentiels actuels. Le reste de la fiche décline cette logique, de la physiopathologie vers la clinique puis vers la stratification, les examens, le traitement et la surveillance infirmière.
+
+<Callout type="error" title="Urgence">
+EP grave suspectée (malaise, syncope, état de choc, hypotension prolongée, détresse respiratoire) : urgence vitale engageant le pronostic vital — alerter sans délai selon le protocole local. Pathologie citée comme pouvant être redoutable selon le terrain et la gravité.
+</Callout>
+
+## 1. Physiopathologie : conséquences d'aval et d'amont
+
+Pour comprendre la gravité, il faut visualiser le caillot comme un obstacle dont les effets se propagent des deux côtés : vers la circulation systémique en aval et vers le cœur droit en amont. La liste suivante se lit en partant du thrombus vers ses deux retentissements, qui expliquent à la fois la dyspnée et le collapsus. Le QCM du cours en donne les points clés.
+
+- **Obstacle : formation d'une thrombose sur le lit vasculaire pulmonaire**.
+- **Conséquences d'aval citées** : altération de la précharge VG et potentielle baisse du débit cardiaque systémique ; altération du rapport ventilation/perfusion au niveau pulmonaire (le sang ne rencontre plus l'air).
+- **Conséquences d'amont citées** : augmentation du régime de pression dans le cœur droit et la petite circulation (HTAP) ; signes d'insuffisance cardiaque droite.
+- **QCM du cours** : augmentation de pression dans le ventricule droit et le tronc de l'artère pulmonaire (vrai), précharge VG non augmentée, rapport ventilation/perfusion non maintenu par la tachycardie, débit cardiaque diminué (vrai).
+
+En pratique, cette double lecture explique pourquoi l'EP tue de deux façons : par l'hypoxie liée au shunt (effet shunt avec hypoxie et hypocapnie recherchés aux gaz du sang) et par la défaillance du cœur droit face à l'obstacle. Elle prépare la compréhension des marqueurs de gravité, qui explorent précisément ces deux versants. C'est dans cet esprit que la section suivante décrit la clinique, reflet variable de cette mécanique selon l'importance de l'obstruction.
+
+## 2. Clinique polymorphe et diagnostic difficile
+
+Après la mécanique, cette section passe aux signes : une liste dont aucun élément isolé ne fait le diagnostic, d'où la formule du cours sur le faisceau d'arguments. Elle se lit en retenant les tableaux typiques sans s'y enfermer, car l'EP peut être silencieuse ou ne se révéler que par l'angoisse ou une tachypnée brutale.
+
+- **Signes fonctionnels cités** : douleur thoracique volontiers basithoracique de début plus ou moins brutal, latéralisée, sans irradiation franche, sans lien avec l'effort, « coup de poignard » ; dyspnée et tachypnée de début plus ou moins brutal, permanentes y compris au repos ; hémoptysie en rapport avec un infarctus pulmonaire ; malaise, syncope, reflets d'une EP grave ; asthénie, fièvre, dissociation pouls-température, angoisse.
+- **QCM du cours** : le diagnostic n'est pas souvent évident (faux), la douleur n'est pas constante (faux), une tachypnée d'apparition brutale doit faire évoquer le diagnostic (vrai), l'hémoptysie est souvent décalée (vrai), l'angoisse est parfois le seul signe précurseur (vrai).
+
+<Callout type="info" title="Méthode">
+Devant toute tachypnée brutale, douleur thoracique latéralisée ou malaise inexpliqué, évoquer l'EP et transmettre sans délai : aucun signe isolé ne confirme ni n'élimine, seul le faisceau d'arguments formalisé en probabilité oriente.
+</Callout>
+
+Concrètement, cette section impose de ne jamais raisonner en signe unique : une douleur typique sans dyspnée comme une angoisse isolée peuvent relever de la même suspicion. La permanence au repos de la dyspnée et la brutalité d'installation sont les traits à tracer avec l'heure de début. C'est cette suspicion, même fragile, qui déclenche l'estimation formalisée de la probabilité décrite ensuite.
+
+## 3. Probabilité clinique et gravité (repères de cours)
+
+La suspicion posée, le cours formalise en deux temps : quelle est la probabilité avant examens, puis quel est le risque de décès précoce. La liste suivante se lit en distinguant ces deux jugements, car la stratégie (D-dimères, imagerie, lieu et intensité du traitement) en découle. Chaque seuil reste un repère daté renvoyé aux protocoles en vigueur.
+
+<Tabs items={['Probabilité', 'Gravité']}>
+  <Tab value="Probabilité">
+    **Scores cités (cours 2022)** : Genève révisé (0-3 faible, 4-10 intermédiaire, > 10 forte) et Wells (0-1 faible, 2-6 intermédiaire, ≥ 7 forte), avec items détaillés dans le support (antécédent de MTEV, chirurgie ou immobilisation, néoplasie, âge, douleurs et signes de jambe, hémoptysie, fréquence cardiaque, diagnostic différentiel). Conduite citée : probabilité faible ou intermédiaire avec D-dimères négatifs — pas de traitement ni nouvelles investigations ; D-dimères positifs — angio-TDM ; probabilité forte — imagerie d'emblée.
+  </Tab>
+  <Tab value="Gravité">
+    **Gravité évaluée sur le risque de décès hospitalier précoce (30 premiers jours)** : clinique (état de choc ou hypotension prolongée), marqueurs de dysfonction du ventricule droit — VD — (échocardiographie transthoracique — ETT —, NT-proBNP, angio-TDM), marqueurs d'atteinte myocardique (troponine) ; la combinaison définit un risque élevé, intermédiaire ou faible, et la stratégie en découle. À haut risque, la filière citée passe par l'ETT au lit si le patient n'est pas transportable, avec thrombolyse ou embolectomie envisagée.
+  </Tab>
+</Tabs>
+
+<Callout type="warn" title="Scores et seuils datés">
+Items, points et seuils des scores de Genève et de Wells, place des D-dimères et stratification du risque : contenus de cours datés de 2022, repères pédagogiques — appliquer les scores, seuils et algorithmes des protocoles en vigueur, sur prescription médicale.
+</Callout>
+
+À retenir de cette comparaison : la probabilité dit s'il faut chercher, la gravité dit où et comment traiter. Les deux scores cités partagent les mêmes piliers — antécédent thrombo-embolique, cancer, immobilisation, signes de phlébite, tachycardie — avec des pondérations propres au support. La stratification de gravité, en combinant clinique, imagerie du cœur droit et biologie, explique pourquoi deux EP confirmées peuvent relever l'une d'une hospitalisation simple et l'autre de la réanimation. Les examens décrits ensuite alimentent précisément ces deux jugements.
+
+## 4. Examens : confirmer et stratifier (repères de cours)
+
+Après la stratification, les examens confirment le caillot et en mesurent le retentissement. La liste suivante se lit en partant des examens d'orientation vers la méthode de référence, en retenant qu'un examen normal n'élimine pas toujours le diagnostic selon le cours. Chaque indication reste un repère daté, sur prescription.
+
+- **Gaz du sang (GDS)** : recherche un effet shunt (hypoxie + hypocapnie) ou une hypoxie.
+- **Biologie** : syndrome inflammatoire non spécifique ; NT-proBNP et troponine comme marqueurs de gravité ; D-dimères selon la probabilité (négatifs écartant l'EP en probabilité non forte citée).
+- **Radiographie pulmonaire (RP)** : normale, elle n'élimine pas le diagnostic ; possibles hyperclarté, atélectasie, surélévation diaphragmatique, foyer, épanchement pleural, dilatation cardiaque droite.
+- **ECG (électrocardiogramme)** : multitude de signes possibles, peut être normal ; tachycardie sinusale citée comme très fréquente, arythmie complète par fibrillation auriculaire (AC/FA), aspect S1Q3, déviation axiale droite, bloc de branche droit, ondes T négatives dans le précordium ; souvent pas de sus-décalage du segment ST (QCM du cours).
+- **ETT** : normale, elle n'élimine pas ; recherche signes d'HTAP, de dysfonction VD et thrombus des cavités ou du tronc pulmonaire (rare).
+- **Angio-TDM thoracique injectée** : méthode de référence citée — visualise un défaut perfusionnel du lit vasculaire injecté (diagnostic positif), recherche complications (infarctus, infection, épanchement) et aide à la gravité (rapport VD/VG, thrombus des cavités droites) ; irradiation modérée 5-10 mSv citée, iode avec risque de dysthyroïdie transitoire fœtale, attention aux allergies et à l'insuffisance rénale (cours).
+- **Scintigraphie pulmonaire de ventilation/perfusion** : classiquement si contre-indication à l'angio-TDM citée ; diagnostic par probabilité, excellente valeur prédictive négative citée ; moins tranchée, non disponible la nuit et le week-end citée ; irradiation comparable.
+
+<Callout type="warn" title="Conduite datée">
+Hiérarchie des examens, doses d'irradiation et indications de la scintigraphie : contenus de cours datés — appliquer les indications, contre-indications et précautions (iode, grossesse, rein, allergies) des protocoles en vigueur, sur prescription médicale.
+</Callout>
+
+En pratique, cette liste montre que la confirmation repose sur l'imagerie du caillot tandis que la gravité repose sur le cœur droit et la biologie, radiographie et ECG normaux n'éliminant pas selon le cours. La mention des contraintes (iode, irradiation, disponibilité) explique les alternatives citées. C'est sur ce bilan à double entrée — caillot et retentissement — que se décide le traitement, dont l'intensité suit le risque.
+
+## 5. Traitement selon le risque et bilan étiologique (repères de cours)
+
+Le diagnostic et le risque posés, le traitement cité va de l'anticoagulation avec oxygène et contention pour les risques faible et intermédiaire jusqu'à la réanimation avec reperfusion pour le haut risque. La liste suivante se lit comme une escalade, suivie du bilan des causes de récidive. Aucune posologie, prescription et protocoles en vigueur.
+
+- **Risque faible ou intermédiaire cité** : hospitalisation et mesures générales (cf. traitement de la TVP), oxygénothérapie, anticoagulation curative avec relais AVK précoce (anticoagulant initial laissé au moins 5 jours cité), durée totale selon gravité et facteurs de risque, bas de contention.
+- **Haut risque de mortalité précoce cité** : urgence médicale en unité de soins intensifs (USI) ou réanimation ; mise en condition, support hémodynamique (drogues inotropes positives) et ventilatoire (oxygène simple jusqu'à intubation et ventilation mécanique — IOT pour VM), anticoagulation sans délai par HNF (héparine non fractionnée) intraveineuse à la seringue électrique (IVSE) citée, thrombolyse en l'absence de contre-indication, assistance circulatoire, embolectomie chirurgicale.
+- **Contre-indications de la thrombolyse citées (cours)** : absolues — antécédent personnel d'AVC hémorragique ou cryptogénique, AVC ischémique dans les 6 derniers mois, traumatisme majeur ou crânien ou chirurgie majeure dans les 3 dernières semaines, néoplasie évolutive ou affection grave du système nerveux central (SNC), saignement digestif dans le mois précédent ; relatives — AIT dans les 6 mois, anticoagulant oral en cours, grossesse, HTA réfractaire à plus de 180 mmHg de systolique, insuffisance hépatocellulaire avancée, endocardite infectieuse, ulcère gastroduodénal (UGD) récent non cicatrisé.
+- **Complications à distance citées** : récidive (EP ou TVP), cœur pulmonaire chronique post-embolique (HTAP chronique vers dysfonction cardiaque droite et insuffisance cardiaque — IC — grave).
+- **Bilan étiologique cité** : rechercher une cause de récidives — échodoppler veineux des membres inférieurs systématique, bilan de thrombophilie chez le jeune (déficits en inhibiteurs, syndrome des antiphospholipides, avec accord du patient pour les mutations génétiques cité), traque d'infection profonde et de néoplasie selon les signes d'appel.
+
+<Callout type="warn" title="Stratégies datées">
+Schémas d'anticoagulation, thrombolyse, embolectomie, contre-indications et bilans : contenus de cours datés de 2022, repères pédagogiques — appliquer la prescription et les protocoles en vigueur, sans utiliser ces listes comme protocole actuel.
+</Callout>
+
+À retenir de cette liste : l'intensité citée suit exactement la stratification — anticoaguler et surveiller d'un côté, reperfuser et suppléer de l'autre — tandis que le bilan étiologique prépare la prévention des récidives. Les contre-indications listées, longues et précises dans le cours, montrent pourquoi la thrombolyse reste une décision médicale encadrée. C'est ce traitement, avec ses contraintes et sa durée, que la vigilance infirmière accompagne au quotidien.
+
+## Points de vigilance IDE
+
+La vigilance infirmière découle de tout ce qui précède : accueillir vite et tracer, sécuriser la surveillance intensive et les examens, puis éduquer au long cours sous anticoagulants. Les puces ci-dessous reprennent les points cités dans le support dédié ; elles se lisent comme la mise en actes de l'urgence, de la stratification et du traitement. La vigilance expliquée en prose suit chaque liste, comme l'exige la forme de la fiche.
+
+- **Dès l'arrivée** : noter score de conscience, poids, identité ; mise en techniques de soins intensifs et de surveillance ; voie veineuse, scope ; maintenir le patient à jeun strict quelles que soient les demandes ; bilan sanguin complet avec hémostase, TP (temps de Quick) et plaquettes ; gestes à visée diagnostique sur prescription, organisation des examens, recueil des données, évaluation de la douleur, information de l'entourage.
+
+Concrètement, cet accueil standardisé sécurise les décisions qui suivent : le poids et le bilan conditionnent l'anticoagulation prescrite, le scope et le jeun préparent l'imagerie et les gestes, et la traçabilité initiale (conscience, douleur, heure des signes) alimente la stratification de gravité. L'information de l'entourage, citée dès l'arrivée, fait partie de cette mise en condition.
+
+- **Selon prescriptions et choix thérapeutique** : appliquer les mesures d'oxygénothérapie, d'anticoagulation et de contention prescrites ; surveiller constantes, dyspnée, saturation, douleur, signes de choc et saignements ; ne jamais présenter les schémas du cours comme actuels.
+
+Concrètement, cette surveillance à double entrée — retentissement (cœur droit, hémodynamique, respiratoire) et tolérance (saignements, chute de l'hémoglobine, thrombopénie induite citée comme risque non négligeable dans la conclusion du cours) — traduit au chevet la stratification de gravité. Chaque anomalie impose l'alerte selon le protocole local, sans attendre l'imagerie de contrôle.
+
+- **Éducation aux AVK citée (7 règles d'or à transmettre à la personne et à partager avec l'entourage)** : respecter dose et horaires ; faire pratiquer régulièrement l'INR (international normalized ratio — pour AVK, pas pour HBPM) ; signaler le traitement à tous les soignants ; consulter en cas de saignement anormal ; remplir le carnet de suivi (Agence nationale de sécurité du médicament citée, carte individuelle) ; surveiller l'alimentation ; demander l'avis du médecin avant tout nouveau médicament ou injection ; et toute injection intramusculaire interdite sous anticoagulant. Adapter précisément selon le traitement choisi et organiser l'observance.
+
+Concrètement, ces règles font de l'éducation thérapeutique le prolongement du traitement : carnet, carte, INR et signalement systématique rendent visible un traitement à marge étroite. L'interdiction de l'intramusculaire et l'avis préalable avant tout ajout médicamenteux se retiennent comme les deux interdits à transmettre sans nuance. L'adaptation au traitement réellement prescrit (les 7 règles visant les AVK) évite d'appliquer à d'autres anticoagulants ce qui ne les concerne pas.
+
+- TODO : seuils, scores, indications de reperfusion et schémas d'anticoagulation actuels non détaillés comme protocole — compléter avec le référentiel local ; rôle IDE post-AOD (anticoagulants oraux directs) non décrit dans l'extrait.
+
+<Callout type="error" title="Urgence">
+Détresse, choc, malaise ou syncope, saignement anormal sous anticoagulant : alerte immédiate selon le protocole local. Ne jamais injecter en intramusculaire sous anticoagulant (cours).
+</Callout>
+
+En synthèse, la vigilance IDE articule trois temps : un accueil qui trace et sécurise (conscience, poids, scope, jeun, bilan), une surveillance qui guette le retentissement et le saignement sous traitement prescrit, et une éducation qui rend le patient et son entourage acteurs de l'observance des AVK selon les 7 règles citées. Les repères datés restant à vérifier comme l'indique le TODO, chaque décision thérapeutique relève de la prescription et des protocoles en vigueur.
+
+<Accordions>
+  <Accordion title="Complément : ce que le cours ne détaille pas" value="complement">
+    La capsule bordelaise MTEV (MTV) annoncée dans le support n'est pas fournie ici ; la fiche MTEV du site la couvre. La cascade de l'hémostase et les dosages de thrombophilie (NFS — numération formule sanguine —, TP, TCA — temps de céphaline activée —, fibrinogène, antithrombine III, protéines C et S, facteurs II et V Leiden, antiphospholipides) sont cités sans seuils ni interprétation. TODO : compléter avec le référentiel local.
+  </Accordion>
+</Accordions>
+
+Après ce complément, la fiche se referme sur ses sources : tout ce qui précède vient des deux supports cités, les contenus datés restant à confronter aux protocoles en vigueur.
+
+## Voir aussi
+
+<Cards>
+  <Card title="MTEV" description="TVP et EP : deux visages d'une même maladie veineuse." href="./mtev" />
+  <Card title="AVC" description="Autre urgence vasculaire : signes, filière et rôle IDE." href="./avc" />
+  <Card title="AOMI" description="Versant artériel : ischémie des membres inférieurs." href="./aomi" />
+</Cards>
 
 ## Sources
 
-- Cours UE 2.8 S3 (à venir).
+- Pr Paul Menu, « L'embolie pulmonaire », UE 2.8, IFSI, juin 2022 (34 pages).
+- Pr Paul Menu, « Le rôle infirmier devant une embolie pulmonaire », UE 2.8, IFSI (5 pages).

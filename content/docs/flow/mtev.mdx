@@ -3,12 +3,140 @@ title: "MTEV"
 description: "Maladie veineuse thrombo-embolique."
 ---
 
-> Contenu à compléter avec les cours.
+import { Callout } from 'fumadocs-ui/components/callout';
+import { Card, Cards } from 'fumadocs-ui/components/card';
+import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
+import { Step, Steps } from 'fumadocs-ui/components/steps';
+import { Accordion, Accordions } from 'fumadocs-ui/components/accordion';
 
-## Au programme
+Un mollet gonflé, douloureux et chaud d'un seul côté après une immobilisation : la thrombose veineuse profonde (TVP) se présente souvent sans signe spécifique, et c'est bien le piège. Cette fiche suit le support de médecine vasculaire (Boulon, Constans, CHU de Bordeaux) : rappeler la mécanique veineuse et la triade de Virchow, distinguer TVP et embolie pulmonaire (EP) comme deux visages d'une même maladie, puis situer le diagnostic et le traitement. Les stratégies citées sont des repères de cours, à confronter aux protocoles en vigueur, jamais à appliquer comme des consignes actuelles. Aucune posologie détaillée dans cette fiche.
 
-- MTEV
+## L'essentiel en une minute
+
+Les quatre lignes ci-dessous condensent les mécanismes et repères du cours avant d'entrer dans le détail. Elles permettent de situer rapidement où l'on se trouve entre retour veineux normal, thrombose constituée et risque embolique.
+
+- **Mécanique** : le système veineux ramène le sang vers l'oreillette droite, à 90 % par les veines profondes aux membres inférieurs ; la pompe musculaire du mollet à la marche et les valvules anti-reflux en sont les moteurs ; la thrombose naît de la triade de Virchow (hypercoagulabilité, stase veineuse, altérations pariétales).
+- **Deux formes, une maladie** : TVP (obstruction du retour veineux : œdème, douleur, signes unilatéraux brutaux, sans signe spécifique) et EP (douleur thoracique, dyspnée, hémoptysie, parfois asymptomatique ou révélée par une détresse ou un choc).
+- **Repères de cours** : incidence citée MTEV (maladie veineuse thrombo-embolique) 1,8/1 000, TVP 1,2/1 000, EP 0,6/1 000 ; D-dimères négatifs excluant TVP ou EP en cas de probabilité non forte ; diagnostic par échodoppler-compression (TVP) et angio-TDM (tomodensitométrie injectée, EP) — repères pédagogiques, appliquer les protocoles en vigueur.
+- **Traitement cité (sans posologie)** : anticoagulants à dose curative et, pour la TVP, compression élastique ; pas d'alitement ; hospitalisation réservée aux EP et à certaines TVP ; stratégies « classique » et « moderne » du cours datées — prescription et protocoles en vigueur.
+
+À retenir avant de poursuivre : TVP et EP sont deux aspects d'une même obstruction veineuse, dont le diagnostic associe toujours probabilité clinique puis confirmation par imagerie. Les chiffres et schémas cités restent des contenus de cours à vérifier contre les référentiels actuels. Le reste de la fiche décline cette logique, des bases vers les tableaux cliniques puis vers les complications et le traitement.
+
+<Callout type="error" title="Urgence">
+Détresse respiratoire, état de choc, malaise ou syncope évoquant une EP grave : urgence vitale — alerter sans délai selon le protocole local. Signes unilatéraux brutaux de TVP (œdème, douleur) : avis médical rapide, sans comprimer ni masser le membre.
+</Callout>
+
+## 1. Bases : circulation veineuse et triade de Virchow
+
+Pour comprendre la thrombose, il faut d'abord visualiser le circuit qu'elle obstrue : deux systèmes séparés par le fascia, dont le profond assure l'essentiel du retour. La pompe du mollet et les valvules expliquent ensuite pourquoi l'immobilisation est si thrombogène, et la triade de Virchow en donne les trois mécanismes. Ces bases éclairent tous les facteurs de risque listés ensuite.
+
+- **Deux systèmes** : superficiel (veines visibles sous la peau, drainées par les saphènes) et profond (veines musculaires et troncs collecteurs), séparés par le fascia ; connectés par les jonctions saphéno-fémorale et saphéno-poplitée et par les veines perforantes ; le retour des membres inférieurs est assuré à 90 % par les veines profondes.
+- **Moteurs du retour** : pompe musculaire du mollet à la marche, valvules empêchant le reflux vers les pieds ; la défaillance vient d'une obstruction par un caillot, d'une destruction des valvules ou de l'immobilisation.
+- **Triade de Virchow : hypercoagulabilité, stase veineuse, altérations pariétales (de la paroi) — les trois mécanismes de la thrombose veineuse**.
+- **Pressions citées (repère de cours)** : pression hydrostatique veineuse à la cheville 10 mmHg couché, 80-100 mmHg debout immobile, 25-30 mmHg à la marche en profondeur, 40 mmHg en superficie, pression nette de filtration −8 mmHg debout — valeurs pédagogiques, non à utiliser comme normes actuelles.
+
+<Callout type="info" title="Méthode">
+Lire chaque facteur de risque ou signe comme la traduction d'un des trois pôles de Virchow : ce qui épaissit ou coagule (hypercoagulabilité), ce qui ralentit (stase), ce qui abîme la paroi (altérations pariétales).
+</Callout>
+
+En pratique, cette grille fait le lien entre l'anatomie et la clinique : une immobilisation prolongée cumule stase et défaillance de la pompe, une chirurgie ou un cathéter cumule lésion pariétale et stase, un cancer ou des œstroprogestatifs relèvent de l'hypercoagulabilité. Les pressions citées illustrent l'effet de la marche sans valoir normes de surveillance. C'est sur ces mécanismes que se greffent les facteurs de risque et les tableaux décrits ensuite.
+
+## 2. Facteurs de risque et tableaux : TVP et EP
+
+Après les mécanismes, cette section passe aux circonstances qui déclenchent et aux signes qui révèlent. La liste suivante se lit en retenant d'abord qu'aucun signe isolé ne fait le diagnostic : c'est le faisceau d'arguments, formalisé en probabilité clinique, qui oriente vers les examens. Les deux tableaux se comprennent comme une même maladie à deux étages.
+
+- **Facteurs majeurs cités** : cancer, chirurgie, immobilisation, plâtre, paralysie, infarctus du myocarde, AVC, infections aiguës, œstroprogestatifs, thrombophilies (anomalies de la coagulation) ; **modérés** : obésité, voyages en avion de plus de 6 heures (contenu de cours).
+- **TVP** : œdème, douleur, survenue brutale, signes unilatéraux ; pas de signe clinique spécifique, d'où le calcul de la probabilité clinique à partir du terrain et des circonstances, des signes physiques et de la probabilité d'un autre diagnostic. Exemple du score de Saint-André cité : cancer +1, paralysie +1, dilatation veineuse superficielle +1, œdème prenant le godet +1, chaleur +1, diagnostic alternatif −1 ; +3 probabilité élevée, 1 ou 2 intermédiaire, −1 ou 0 faible (le score de Wells est cité comme le plus utilisé — repères de cours).
+
+<Tabs items={['TVP', 'EP', 'Thrombose superficielle']}>
+  <Tab value="TVP">
+    **Thrombose veineuse profonde : obstruction du retour veineux profond, donc œdème et douleur unilatéraux brutaux**. D-dimères négatifs excluant le diagnostic en cas de probabilité non forte ; confirmation par échodoppler-compression (cours).
+  </Tab>
+  <Tab value="EP">
+    **Embolie pulmonaire : douleur thoracique, dyspnée, hémoptysie ; peut être complètement asymptomatique ou se révéler par une détresse respiratoire ou un état de choc**. D-dimères négatifs excluant le diagnostic en cas de probabilité non forte ; ECG (électrocardiogramme) et gaz du sang apportant des éléments ; confirmation par angio-TDM (cours).
+  </Tab>
+  <Tab value="Thrombose superficielle">
+    **Thrombose veineuse superficielle (TVS), cas particulier : thrombose d'une veine visible, cordon rouge et douloureux, facilement évoquée** ; 85 % sur varices citées ; peut s'étendre au réseau profond — un échodoppler doit toujours préciser ce point, car le risque d'EP existe alors.
+  </Tab>
+</Tabs>
+
+<Callout type="warn" title="Repères datés">
+Incidences, facteurs de risque, score de Saint-André et place des D-dimères : contenus de cours, repères pédagogiques — appliquer les scores, seuils et algorithmes des protocoles en vigueur, sur prescription médicale.
+</Callout>
+
+À retenir de cette liste : les facteurs cités se répartissent entre hypercoagulabilité, stase et lésion, et aucun ne suffit seul. La TVP se suspecte devant l'association brutale et unilatérale d'œdème et de douleur, l'EP devant une triade inconstante ou un tableau gravissime, la TVS devant un cordon visible dont l'extension profonde doit être éliminée. Dans chaque cas, la probabilité clinique précède l'examen de confirmation cité, sans s'y substituer.
+
+## 3. Évolution et complications
+
+Le diagnostic posé, l'enjeu est double : la TVP menace le poumon à court terme et la jambe à long terme, tandis que l'EP menace la vie vite ou lentement. La liste suivante se lit en partant de chaque forme vers ses complications citées, pour comprendre pourquoi le traitement vise à la fois le symptôme, la complication et la récidive.
+
+- **TVP** : guérison sans séquelle ou deux complications possibles — embolie pulmonaire, syndrome post-thrombotique veineux (25-50 % cités).
+- **EP** : mortalité citée de 2 à 25 % selon la présentation clinique ; peut laisser une hypertension pulmonaire (HTP) évoluant vers la mort ; autre risque fréquent : la récidive.
+- **Résumé du cours** : l'EP peut être mortelle rapidement ou lentement ; la TVP peut se compliquer de syndrome post-thrombotique ; le diagnostic repose sur la probabilité clinique puis la confirmation par angio-TDM ou échodoppler.
+
+En pratique, ces complications expliquent l'architecture du traitement : prévenir l'extension et l'embolie, prévenir la récidive au long cours, et soulager les symptômes dont l'œdème. Le syndrome post-thrombotique cité justifie à lui seul la compression prolongée décrite ensuite. C'est dans cette triple visée — curative, préventive et symptomatique — que se lit la section thérapeutique.
+
+## 4. Traitement : anticoagulants et compression (repères de cours)
+
+Après les complications, cette section présente les moyens cités par le cours, en distinguant la prévention du traitement curatif et les schémas anciens des plus récents au moment du support. Chaque durée et classe reste un repère daté, sans posologie, renvoyé à la prescription et aux protocoles en vigueur.
+
+- **Objectifs cités** : en préventif, prévenir la MTEV dans les circonstances à risque (anticoagulants faiblement dosés type héparine de bas poids moléculaire — HBPM — et compression élastique faible) ; en curatif, prévenir les complications et la récidive, améliorer les symptômes.
+- **Cadre cité** : hospitalisation réservée aux EP et à certaines TVP (insuffisance rénale, contexte social défavorable) ; pas d'alitement.
+- **Schéma « classique » cité (daté)** : anticoagulants injectables à dose élevée pendant environ une semaine (HBPM, fondaparinux, héparine non fractionnée — HNF — si insuffisance rénale), puis relais oral par antivitamines K (AVK) débutés généralement en même temps que les injections, poursuivis pendant une durée variable (de 6 semaines à indéfini).
+- **Schéma « moderne » cité (daté)** : anticoagulants directs par voie orale d'emblée, dose plus élevée au début ; 2 molécules utilisées en France au moment du cours : rivaroxaban et apixaban.
+- **Compression dans la TVP citée** : chaussette, bas ou collant de classe III, initialement par bandes ; durée théorique de 2 ans, au moins la durée de l'anticoagulation ; deux grands types — bandes à allongement court peu élastiques (portées 24 h/24 citées) et bandes à allongement long ou textiles élastiques (à enlever impérativement le soir cité), plus compressions multicouches.
+- **TVS citée** : si associée à une TVP, même traitement que la TVP ; si à distance des veines profondes, fondaparinux à faible dose pendant 6 semaines cité ; compression élastique de classe III toujours indiquée citée.
+
+<Steps>
+  <Step>
+    Évoquer TVP ou EP devant le tableau clinique et estimer la probabilité (terrain, signes, diagnostic alternatif) — avis médical rapide.
+  </Step>
+  <Step>
+    Confirmer sur prescription : D-dimères si probabilité non forte, échodoppler-compression (TVP) ou angio-TDM (EP) — repères de cours.
+  </Step>
+  <Step>
+    Traiter sur prescription : anticoagulation curative et compression de la TVP citées, sans alitement, en surveillant saignements et observance — durées et molécules selon les protocoles en vigueur.
+  </Step>
+</Steps>
+
+<Callout type="warn" title="Stratégies datées">
+Schémas « classique » et « moderne », durées (1 semaine, 6 semaines, 2 ans), classes de compression et conduites de la TVS : contenus de cours datés, repères pédagogiques — aucune molécule ni durée à appliquer sans prescription ni protocole en vigueur.
+</Callout>
+
+À retenir de cette liste : le cours oppose une prévention des circonstances à risque et un traitement curatif en trois temps — anticoaguler, comprimer, mobiliser — dont les modalités citées ont évolué depuis. Le « pas d'alitement » et la compression prolongée rappellent que la pompe du mollet et la contention font partie du traitement de la TVP. Les schémas d'anticoagulants, anciens et récents au moment du support, ne valent que comme repères historiques : la prescription actuelle prime.
+
+## Points de vigilance IDE
+
+La vigilance infirmière découle de tout ce qui précède : évoquer sans affirmer, ne pas aggraver, sécuriser l'anticoagulation et la compression, et surveiller les deux complications majeures. Les puces ci-dessous se lisent comme la mise en actes de la triade de Virchow, des tableaux cliniques et du traitement ; le support ne détaillant pas un rôle IDE propre, les points marqués TODO restent à compléter avec le protocole local.
+
+- Évoquer : œdème et douleur unilatéraux brutaux (TVP), douleur thoracique, dyspnée, hémoptysie, malaise (EP), cordon rouge douloureux (TVS) ; mesurer et comparer les mollets, tracer constantes, douleur, dyspnée et saturation ; transmettre sans délai.
+- Ne pas comprimer ni masser un membre suspect de TVP ; ne pas laisser marcher sans avis en cas de suspicion d'EP grave ; alerter devant détresse, choc, saignement ou aggravation selon le protocole local.
+- Sécuriser sur prescription : anticoagulation (observance, saignements, interactions, éducation AVK citée dans la fiche EP associée), compression (pose le matin, retrait le soir pour les textiles élastiques cités, état cutané, observance), mobilisation précoce sans alitement cité.
+- Surveiller : signes d'EP sous TVP, signes de récidive, syndrome post-thrombotique (lourdeur, œdème persistant cités comme enjeu), complications des anticoagulants.
+- TODO : seuils, scores et conduites actuels (probabilité, D-dimères ajustés, durées d'anticoagulation, AOD) non détaillés comme protocole — compléter avec le référentiel local.
+
+<Callout type="error" title="Urgence">
+Tout signe d'EP sous TVP connue (dyspnée brutale, douleur thoracique, malaise, choc) ou tout saignement anormal sous anticoagulant : alerte immédiate selon le protocole local.
+</Callout>
+
+Concrètement, cela signifie mesurer, comparer et tracer avant de transmettre, protéger le membre suspect des manipulations, et faire de l'observance de l'anticoagulation et de la compression le cœur du suivi. Chaque signal — œdème croissant, dyspnée nouvelle, saignement, cordon étendu — impose une réévaluation sans attendre. Les scores et durées cités restant des repères de cours, l'évaluation et la prescription relèvent du médecin et des protocoles en vigueur, comme l'indique le TODO.
+
+<Accordions>
+  <Accordion title="Complément : iconographie et schémas du support" value="complement">
+    Le support s'appuie sur l'iconographie du Collège des enseignants de médecine vasculaire et sur des schémas anatomiques non extractibles en texte. Les courbes de survie et tableaux de scores illustrés ne sont pas reproduits ici. TODO : actualiser avec les référentiels MTEV en vigueur.
+  </Accordion>
+</Accordions>
+
+Après ce complément, la fiche se referme sur sa source : tout ce qui précède vient du support cité, les contenus datés restant à confronter aux protocoles en vigueur.
+
+## Voir aussi
+
+<Cards>
+  <Card title="Embolie pulmonaire" description="Zoom EP : gravité, examens et rôle IDE détaillé." href="./embolie-pulmonaire" />
+  <Card title="AOMI" description="L'autre versant artériel : ischémie des membres inférieurs." href="./aomi" />
+  <Card title="AVC" description="Complication générale citée : signes, filière et rôle IDE." href="./avc" />
+</Cards>
 
 ## Sources
 
-- Cours UE 2.8 S3 (à venir).
+- Carine Boulon, Joël Constans, « Maladie veineuse thrombo-embolique », médecine vasculaire, hôpital Saint-André, CHU de Bordeaux et université de Bordeaux (33 pages).
