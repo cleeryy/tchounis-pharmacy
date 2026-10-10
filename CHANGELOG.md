@@ -7,12 +7,17 @@ et ne sont jamais versionnés.
 
 ## [Non publié]
 
+_Rien pour le moment._
+
+## [2026-10-10] — Fiches flow UE 2.8 (PR #4)
+
 ### Ajouté
 
 - Rédaction des 11 fiches `flow` (UE 2.8) à partir des 22 PDF :
   coronaire, prévention, AVC, AOMI, MTEV, embolie pulmonaire, BPCO,
   occlusion intestinale, biliaire, lithiase urinaire, RAC —
   prose pédagogique + composants Fumadocs, contenus datés signalés, TODO sinon.
+  (`biliaire` sans cours principal : fiche courte, manques en TODO.)
 
 ## [2026-10-10] — Composants Fumadocs immunity + CHANGELOG (PR #3)
 
