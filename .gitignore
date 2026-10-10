@@ -48,3 +48,6 @@ next-env.d.ts
 
 # pnpm local store (container builds)
 .pnpm-store/
+
+# local course materials (never commit)
+/tchouni-sources/

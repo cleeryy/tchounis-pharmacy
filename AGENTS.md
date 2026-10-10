@@ -3,6 +3,9 @@
 Fiches de pharmacologie (IFSI) — site de documentation en français.
 Dépôt : https://github.com/cleeryy/tchounis-pharmacy
 
+Tâches de rédaction / complétion de fiches : appliquer `CONTRIBUTING.md`
+(source de vérité du workflow : supports locaux, rédaction sourcée, vérifications, PR).
+
 ## Stack
 
 - Next.js 16 + Fumadocs UI v16 (layout docs **notebook**)
@@ -31,19 +34,6 @@ content/docs/
 ```
 
 Chaque sous-dossier a son propre `meta.json` (`{ "title": "…", "pages": ["…"] }`).
-
-## Ajouter une page
-
-1. Créer `content/docs/ma-page.mdx` avec le frontmatter :
-   ```mdx
-   ---
-   title: Titre de la fiche
-   description: Résumé en une phrase.
-   ---
-   ```
-2. L'ajouter à `pages` dans le `meta.json` du dossier.
-3. Lier avec des chemins relatifs : `[texte](./autre-page)`.
-4. Vérifier : `pnpm dev` puis `pnpm build`.
 
 Règle : écrire en français, uniquement des connaissances validées
 (cours / référentiels IFSI) — `TODO` plutôt qu'inventer.
