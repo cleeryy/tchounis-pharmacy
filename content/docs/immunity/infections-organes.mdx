@@ -3,6 +3,11 @@ title: "Infections d'organes"
 description: "Méningites, endocardites, respiratoires, urinaires, digestives, hépatites."
 ---
 
+import { Callout } from 'fumadocs-ui/components/callout';
+import { Card, Cards } from 'fumadocs-ui/components/card';
+import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
+import { Step, Steps } from 'fumadocs-ui/components/steps';
+
 > Fiche de synthèse pédagogique d’après les cours UE 2.5 S3 fournis. Les traitements, seuils et durées cités dans certains supports sont des repères de cours datés, pas des prescriptions : appliquer les recommandations et protocoles en vigueur.
 
 Cette fiche regroupe des infections d'organes très différentes — méninges, cœur, poumon, voies urinaires, abdomen, foie — qui relèvent pourtant d'une même démarche UE 2.5. Dans chaque situation, le site infectieux, le terrain et les signes de gravité orientent la surveillance et l'alerte. La documentation microbiologique avant antibiothérapie et la reconnaissance des urgences constituent le fil conducteur. Chaque section ci-dessous se lit donc avec la même grille : repérer, documenter, surveiller, alerter.
@@ -15,18 +20,25 @@ La liste suivante rassemble les réflexes transversaux à mobiliser avant d'entr
 - Si possible, documenter l’infection par des prélèvements adaptés **avant** l’antibiothérapie, sans retarder la prise en charge d’une urgence.
 - Alerter devant altération de la conscience, détresse respiratoire, hypotension, marbrures, oligurie, purpura fébrile ou aggravation rapide.
 
+<Callout type="info" title="Méthode">
+Même grille pour chaque organe abordé plus bas : repérer (site, terrain, gravité, contexte), documenter par des prélèvements adaptés avant l'antibiothérapie quand l'urgence le permet, puis surveiller et alerter.
+</Callout>
+
 Ces trois points se retiennent ensemble : le contexte oriente les hypothèses, la documentation précède l'antibiothérapie quand l'urgence le permet, et les signes de gravité imposent l'alerte immédiate. Le reste de la fiche applique cette même grille à chaque organe, avec des déclinaisons propres à chaque site.
 
 ## Méningites et encéphalites
 
 Cette section oppose deux situations à ne pas confondre : des causes virales fréquentes dans le cours et une urgence bactérienne à ne pas manquer. La liste suivante se lit dans cet esprit, des définitions vers les signes évocateurs puis vers la démarche diagnostique et les germes cités. L'enjeu pour l'IDE est de situer chaque signe dans cette gradation, sans interpréter seul le LCS.
 
-- **Méningite** : inflammation des méninges ; **méningo-encéphalite** : atteinte associée de l’encéphale. Les causes virales sont les plus fréquentes dans le cours ; une méningite bactérienne est une urgence.
+- **Méningite : inflammation des méninges** ; **méningo-encéphalite : atteinte associée de l'encéphale.** Les causes virales sont les plus fréquentes dans le cours ; une méningite bactérienne est une urgence.
 - Signes évocateurs : fièvre, céphalées, photophobie, nausées/vomissements, raideur nucale. Confusion, baisse de vigilance, convulsions, déficit neurologique ou purpura sont des signes d’alerte.
 - La démarche enseignée associe examen clinique, prélèvements sanguins et analyse du liquide cérébrospinal (LCS) par ponction lombaire (PL), sauf contre-indication évaluée médicalement. Le LCS est acheminé rapidement pour cytologie, biochimie, examen direct/culture et PCR selon le contexte.
 - Un LCS clair avec prédominance lymphocytaire est plutôt compatible avec une origine virale ; un LCS trouble, riche en polynucléaires, hypoglycorachique et hyperprotéinorachique oriente vers une origine bactérienne. L’interprétation est médicale et ne repose pas sur un seul résultat.
-- Germes principaux cités dans les méningites purulentes de l’adulte : pneumocoque, méningocoque, Listeria. Purpura fébrile, notamment chez l’enfant, = urgence immédiate.
-- L’encéphalite herpétique peut se manifester par confusion, troubles de vigilance, convulsions ou déficit : le cours souligne l’urgence diagnostique et thérapeutique.
+- Germes principaux cités dans les méningites purulentes de l’adulte : pneumocoque, méningocoque, Listeria.
+
+<Callout type="error" title="Urgence">
+Purpura fébrile, notamment chez l’enfant, = urgence immédiate. L’encéphalite herpétique (confusion, troubles de vigilance, convulsions ou déficit) relève aussi de l’urgence diagnostique et thérapeutique selon le cours.
+</Callout>
 
 À retenir de cette liste : la distinction entre tableau évocateur, signes d'alerte et orientation apportée par le LCS structure la transmission IDE. Les germes cités et les aspects du LCS ne valent que comme repères de cours pour comprendre l'urgence : l'interprétation reste médicale et s'appuie sur l'ensemble du tableau, pas sur un seul résultat.
 
@@ -48,7 +60,10 @@ Après l'urgence neurologique des méningites, cette section passe à une infect
 - Terrains signalés par le cours : prothèse valvulaire, antécédent d’endocardite, certaines cardiopathies, dispositif cardiaque. Une porte d’entrée dentaire, cutanée, urinaire, digestive ou liée à un dispositif est recherchée.
 - Fièvre/frissons et altération de l’état général sont fréquents ; rechercher un souffle nouveau, des signes d’insuffisance cardiaque, des manifestations neurologiques/emboliques, cutanées ou rénales.
 - Documentation : hémocultures répétées et échocardiographie (ETT/ETO) selon décision médicale. Une hémoculture négative n’exclut pas l’endocardite, notamment après antibiothérapie ou pour certains agents difficiles à cultiver.
-- Le cours décrit une antibiothérapie prolongée adaptée aux cultures et parfois une chirurgie. Les schémas sont spécialisés et datés : aucune molécule ni durée n’est à appliquer sans prescription/référentiel en vigueur.
+
+<Callout type="warn" title="Repères datés">
+Antibiothérapie prolongée et chirurgie décrites dans le cours : schémas spécialisés et datés — aucune molécule ni durée à appliquer sans prescription/référentiel en vigueur.
+</Callout>
 
 À retenir de cette liste : la fièvre prolongée avec altération générale chez un terrain à risque impose de chercher souffle nouveau, signes cardiaques, emboliques, cutanés ou rénaux, tout en sachant qu'une hémoculture négative n'exclut pas le diagnostic dans les situations rappelées par le cours. Les schémas thérapeutiques cités restent des repères datés et spécialisés, à ne pas appliquer sans prescription ni référentiel en vigueur.
 
@@ -69,8 +84,14 @@ Des valves cardiaques, la fiche passe au poumon et aux voies aériennes, où la 
 
 La liste suivante oppose la bronchite aiguë, décrite comme majoritairement virale, à la pneumonie communautaire, dont l'agent reste souvent non identifié dans le cours. Elle se lit en repérant d'abord le tableau clinique, puis les signes de gravité et le terrain, avant les examens possibles sur prescription.
 
-- **Bronchite aiguë** : toux souvent précédée d’une irritation/rhinopharyngite, parfois expectoration et fébricule ; le cours la décrit comme majoritairement virale. La décision d’examens ou de traitement dépend du tableau clinique.
-- **Pneumonie aiguë communautaire (PAC)** : fièvre, toux, expectoration, douleur thoracique ou dyspnée, avec foyer auscultatoire/radiologique possible. Des virus et plusieurs bactéries sont impliqués ; un agent n’est pas identifié dans une proportion importante des cas du cours.
+<Tabs items={['Bronchite aiguë', 'Pneumonie communautaire']}>
+  <Tab value="Bronchite aiguë">
+    Toux souvent précédée d’une irritation/rhinopharyngite, parfois expectoration et fébricule ; le cours la décrit comme majoritairement virale. La décision d’examens ou de traitement dépend du tableau clinique.
+  </Tab>
+  <Tab value="Pneumonie communautaire">
+    **Pneumonie aiguë communautaire (PAC)** : fièvre, toux, expectoration, douleur thoracique ou dyspnée, avec foyer auscultatoire/radiologique possible. Des virus et plusieurs bactéries sont impliqués ; un agent n’est pas identifié dans une proportion importante des cas du cours.
+  </Tab>
+</Tabs>
 - Rechercher les signes de gravité : détresse respiratoire/cyanose, polypnée, désaturation, hypotension, tachycardie, oligurie, confusion ou marbrures. L’âge, les comorbidités et l’immunodépression majorent le risque.
 - Examens possibles selon prescription : radiographie, prélèvement respiratoire/PCR, hémocultures dans certains tableaux, bilan sanguin et antigénuries.
 
@@ -84,6 +105,10 @@ Après les infections basses non spécifiques, cette sous-section isole la gripp
 - Complications : surinfection respiratoire, pneumonie, décompensation de maladie chronique, atteinte neurologique ou cardiaque ; vigilance accrue chez les personnes fragiles, enceintes, très jeunes ou âgées.
 - Prévention : hygiène des mains et respiratoire, masque/précautions selon le contexte, vaccination saisonnière selon recommandations en vigueur. Les supports décrivent l’isolement gouttelettes en établissement ; suivre les consignes locales.
 - En EHPAD, les supports de cours demandent un signalement des épisodes groupés d’infections respiratoires aiguës selon le circuit local ; les seuils présentés dans les diapositives sont datés.
+
+<Callout type="warn" title="Conduite datée">
+Seuils de signalement des épisodes groupés en EHPAD présentés dans les diapositives : repères datés — suivre le circuit et les consignes locales en vigueur.
+</Callout>
 
 À retenir de cette liste : le début brutal et la contagiosité possible avant les signes expliquent les mesures barrières, tandis que les complications listées justifient la vigilance accrue chez les terrains fragiles cités. La prévention et le signalement en EHPAD se comprennent dans cette logique collective, avec des seuils de cours datés à ne pas appliquer tels quels.
 
@@ -107,6 +132,10 @@ Après le poumon de l'adulte et de l'enfant, cette section remonte vers les voie
 - **Otite** : otalgie, fièvre possible, parfois otorrhée ; distinguer atteinte du conduit auditif externe et otite moyenne par examen médical. Complications mastoïdiennes, neurologiques ou altération générale = alerte.
 - Les choix de tests, indications et traitements reprennent des cours datés ; se reporter aux recommandations actuelles.
 
+<Callout type="warn" title="Repères datés">
+TROD streptococcique, choix de tests, indications et traitements ORL : cours datés — se reporter aux recommandations et à l’algorithme actuels selon l’âge.
+</Callout>
+
 À retenir de cette liste : le principe de distinguer les formes bactériennes avant tout antibiotique s'applique à chaque localisation, tandis que les alertes propres — œdème palpébral ou troubles visuels, complications mastoïdiennes, altération générale — imposent l'évaluation urgente. Les tests et traitements cités restent des repères datés, avec renvoi aux recommandations actuelles.
 
 ## Infections ostéo-articulaires
@@ -114,8 +143,12 @@ Après le poumon de l'adulte et de l'enfant, cette section remonte vers les voie
 Des voies aériennes hautes, la fiche passe à l'os et à l'articulation, où la douleur fébrile ou inflammatoire peut relever d'une urgence diagnostique. La liste suivante se lit en partant des voies d'atteinte et du germe cité, vers les trois tableaux décrits — arthrite, spondylodiscite, pied diabétique — chacun avec son alerte propre.
 
 - Une infection peut atteindre articulation et/ou os, par voie hématogène ou par contiguïté après traumatisme/geste. Les germes cités incluent notamment *Staphylococcus aureus*.
-- **Arthrite septique** : douleur, chaleur, rougeur, gonflement, épanchement, impotence fonctionnelle ; fièvre inconstante. C’est une urgence diagnostique : hémocultures et ponction articulaire pour documenter avant antibiothérapie si l’état le permet.
-- **Spondylodiscite** : douleur rachidienne inflammatoire et raideur, parfois fièvre. Déficit moteur/sensitif ou sphinctérien évoque une compression neurologique et requiert une alerte urgente. IRM et prélèvements sont décidés médicalement.
+- **Arthrite septique : douleur, chaleur, rougeur, gonflement, épanchement, impotence fonctionnelle ; fièvre inconstante.** C’est une urgence diagnostique : hémocultures et ponction articulaire pour documenter avant antibiothérapie si l’état le permet.
+- **Spondylodiscite : douleur rachidienne inflammatoire et raideur, parfois fièvre.**
+
+<Callout type="error" title="Urgence">
+Déficit moteur/sensitif ou sphinctérien évoquant une compression neurologique dans une spondylodiscite : alerte urgente. IRM et prélèvements décidés médicalement. **Arthrite septique** : urgence diagnostique — hémocultures et ponction articulaire pour documenter avant antibiothérapie si l’état le permet.
+</Callout>
 - **Pied diabétique infecté** : plaie, cellulite, abcès ou atteinte osseuse possibles ; neuropathie et troubles vasculaires peuvent masquer la douleur. Décharge, soins locaux, équilibre glycémique et évaluation multidisciplinaire sont soulignés dans le cours.
 
 À retenir de cette liste : l'arthrite septique et la compression neurologique de la spondylodiscite relèvent de l'alerte urgente, tandis que le pied diabétique illustre le tableau masqué par la neuropathie et les troubles vasculaires. La documentation avant antibiothérapie quand l'état le permet et la décision médicale d'imagerie ou de prélèvements structurent la suite, sans ajouter de conduite propre.
@@ -128,10 +161,34 @@ Des articulations, la fiche passe aux voies urinaires, où la distinction entre 
 
 La liste suivante se lit de la cystite simple décrite vers la pyélonéphrite et l'IU masculine, avant les examens et les urgences obstructives. Elle sert à situer chaque signe urinaire ou général dans cette gradation, sans préjuger des seuils ni des traitements datés.
 
-- **Cystite** : signes fonctionnels urinaires bas (brûlures, pollakiurie, impériosités) sans signe général ni atteinte parenchymateuse dans la forme simple décrite.
-- **Pyélonéphrite** : fièvre/frissons, douleur lombaire ou abdominale, parfois symptômes urinaires et nausées/vomissements ; risque de sepsis. **IU masculine/prostatite** : troubles mictionnels, signes généraux et douleur abdomino-pelvienne ; rétention possible.
-- BU/ECBU, hémocultures et imagerie dépendent du tableau et de la prescription. Un ECBU se prélève avant antibiothérapie si possible ; toilette adaptée, recueil du milieu de jet (sauf prélèvement spécifique) et transport rapide.
-- Rétention aiguë : douleur et voussure sus-pubienne, dysurie/anurie ; bladder-scan et sondage éventuel selon prescription/protocole. Douleur lombaire hyperalgique avec obstacle suspecté = urgence.
+<Tabs items={['Cystite', 'Pyélonéphrite', 'IU masculine / prostatite']}>
+  <Tab value="Cystite">
+    Signes fonctionnels urinaires bas (brûlures, pollakiurie, impériosités) sans signe général ni atteinte parenchymateuse dans la forme simple décrite.
+  </Tab>
+  <Tab value="Pyélonéphrite">
+    Fièvre/frissons, douleur lombaire ou abdominale, parfois symptômes urinaires et nausées/vomissements ; risque de sepsis.
+  </Tab>
+  <Tab value="IU masculine / prostatite">
+    Troubles mictionnels, signes généraux et douleur abdomino-pelvienne ; rétention possible.
+  </Tab>
+</Tabs>
+
+<Steps>
+  <Step>
+    Prélever un ECBU avant antibiothérapie si possible.
+  </Step>
+  <Step>
+    Réaliser une toilette adaptée et recueillir le milieu de jet (sauf prélèvement spécifique).
+  </Step>
+  <Step>
+    Assurer un transport rapide ; BU/ECBU, hémocultures et imagerie dépendent du tableau et de la prescription.
+  </Step>
+</Steps>
+- Rétention aiguë : douleur et voussure sus-pubienne, dysurie/anurie ; bladder-scan et sondage éventuel selon prescription/protocole.
+
+<Callout type="error" title="Urgence">
+Douleur lombaire hyperalgique avec obstacle suspecté = urgence.
+</Callout>
 
 À retenir de cette liste : les signes bas sans signe général caractérisent la forme simple décrite, tandis que fièvre, douleur lombaire ou abdominale, troubles mictionnels masculins et rétention font monter en gravité. La qualité du prélèvement — avant antibiothérapie si possible, milieu de jet, transport rapide — et la reconnaissance de l'obstacle douloureux comme urgence structurent le rôle IDE, sur prescription et protocole.
 
@@ -144,6 +201,10 @@ Après les formes communautaires, cette sous-section traite des infections liée
 - Dans les supports, pas de bandelette urinaire pour diagnostiquer une IUAS ; privilégier ECBU avant antibiotique selon procédure. Patient sondé : prélèvement au site prévu après désinfection, jamais dans la poche ; ne pas envoyer la sonde au laboratoire.
 - Prévention IDE : indication de sonde réévaluée chaque jour et retrait précoce, pose aseptique, système clos non désadapté, poche en déclive sous la vessie ; suivi des signes, diurèse, température et bilans prescrits.
 - Les seuils microbiologiques et durées/choix d’antibiotiques des cours 2021–2022 sont datés et ne sont pas reproduits comme conduite actuelle.
+
+<Callout type="warn" title="Repères datés">
+Seuils microbiologiques et durées/choix d’antibiotiques des cours 2021–2022 : datés et non reproduits comme conduite actuelle — privilégier l’ECBU avant antibiotique selon la procédure en vigueur.
+</Callout>
 
 À retenir de cette liste : chez la personne sondée ou âgée, les signes atypiques — changement cognitif, aggravation de dépendance, fièvre ou hypothermie — ont autant de poids que les signes urinaires, tandis que la technique de prélèvement chez le sondé conditionne la fiabilité de l'ECBU. La prévention quotidienne — réévaluation de l'indication, retrait précoce, système clos — se comprend comme le versant infirmier de cette vigilance, avec des seuils et traitements de cours datés non reproduits.
 
@@ -159,7 +220,15 @@ La liste suivante part des situations décrites par le cours vers les signaux d'
 - **Signaux d’alerte** : douleur abdominale intense ou diffuse, défense/contracture (« ventre de bois »), fièvre/frissons, vomissements, arrêt des matières et des gaz, ictère, hypotension ou altération générale.
 - L’appendicite associe typiquement douleur de fosse iliaque droite et signes digestifs ; la péritonite peut donner douleur diffuse, contracture et arrêt du transit ; douleur de l’hypochondre droit avec fièvre évoque notamment une infection biliaire. L’angiocholite associe dans le cours douleur, fièvre/frissons et ictère.
 - La prise en charge associe documentation biologique/microbiologique, imagerie, traitement médical et parfois drainage ou chirurgie. La surveillance infirmière porte sur douleur, constantes, conscience, diurèse, transit, hydratation et signes de choc ; alerter devant toute aggravation.
+
+<Callout type="error" title="Urgence">
+Signes de choc ou aggravation rapide dans une infection intra-abdominale : alerter immédiatement selon la filière d’urgence.
+</Callout>
 - Antibiotiques, durées et choix de chirurgie indiqués dans le cours Cypierre (2021–2022) sont datés : appliquer la prescription et les protocoles en vigueur.
+
+<Callout type="warn" title="Conduite datée">
+Antibiotiques, durées et choix de chirurgie du cours Cypierre (2021–2022) : repères datés — appliquer la prescription et les protocoles en vigueur.
+</Callout>
 
 À retenir de cette liste : les tableaux typiques — fosse iliaque droite, ventre de bois avec arrêt du transit, hypochondre droit fébrile, triade douleur-fièvre-ictère — orientent l'alerte sans suffire au diagnostic, qui repose sur biologie, imagerie et décision médicale. La surveillance infirmière listée se comprend comme le suivi rapproché de ces signaux, avec des choix thérapeutiques datés renvoyés à la prescription en vigueur.
 
@@ -167,11 +236,15 @@ La liste suivante part des situations décrites par le cours vers les signaux d'
 
 Après les urgences potentiellement chirurgicales, cette sous-section passe à un symptôme fréquent et souvent résolutif, où le risque principal guetté par l'IDE est la déshydratation. La liste suivante se lit en partant de la définition du cours vers les signes de déshydratation, puis vers les examens ciblés et les priorités infirmières, avec le paludisme au retour de zone d'endémie comme alerte à part.
 
-- Le cours définit la diarrhée aiguë par des selles liquides fréquentes ; les formes infectieuses sont souvent spontanément résolutives. Causes médicamenteuses, inflammatoires et autres sont aussi possibles.
+- Le cours définit la **diarrhée aiguë par des selles liquides fréquentes** ; les formes infectieuses sont souvent spontanément résolutives. Causes médicamenteuses, inflammatoires et autres sont aussi possibles.
 - Rechercher systématiquement la **déshydratation** : soif/sécheresse, pli cutané, extrémités froides ou marbrures, baisse de diurèse, altération de vigilance. Noter fréquence/aspect des selles, vomissements, apports et pertes.
 - Examens microbiologiques non systématiques dans une forme brève sans facteur de risque ; coproculture/parasitologie ou recherche de *C. difficile* selon gravité, voyage, immunodépression, contexte épidémique ou antibiothérapie récente — selon prescription.
 - Priorités IDE : réhydratation prescrite (orale si possible), surveillance poids/entrées-sorties, hygiène des mains et précautions contact selon l’agent. Les antibiotiques ne sont pas automatiques ; se référer à la décision médicale.
 - Fièvre après retour d’une zone d’endémie : le paludisme est une urgence à évoquer, même si la diarrhée est au premier plan.
+
+<Callout type="error" title="Urgence">
+Fièvre au retour d’une zone d’endémie : évoquer le paludisme en urgence, même si la diarrhée est au premier plan.
+</Callout>
 
 À retenir de cette liste : la notation des selles, vomissements, apports et pertes alimente l'évaluation de la déshydratation, tandis que les examens microbiologiques restent ciblés selon les facteurs listés et la prescription. La réhydratation prescrite, la surveillance des entrées-sorties et les précautions d'hygiène forment le cœur du rôle IDE, sans antibiothérapie automatique et avec l'urgence palustre à évoquer au retour de zone d'endémie.
 
@@ -181,11 +254,23 @@ Des diarrhées aiguës, la fiche passe aux hépatites virales, où l'enjeu infir
 
 - Une hépatite aiguë peut être asymptomatique ou associer asthénie, syndrome pseudo-grippal, ictère et perturbation du bilan hépatique. Une forme chronique peut rester longtemps silencieuse et évoluer vers fibrose/cirrhose.
 - Repères de transmission des cours : hépatites A et E surtout féco-orales/alimentaires ; B et C surtout sanguines (le cours signale également la voie sexuelle pour B) ; D nécessite la présence du virus B. Les caractéristiques détaillées et les marqueurs sérologiques dépendent du virus.
-- Le bilan comprend notamment transaminases, marqueurs viraux et évaluation de la fonction hépatique, selon prescription. Le cours 2023 signale comme gravité d’hépatite aiguë une baisse du taux de prothrombine/facteur V associée à une encéphalopathie : urgence spécialisée.
+- Le bilan comprend notamment transaminases, marqueurs viraux et évaluation de la fonction hépatique, selon prescription.
+
+<Callout type="error" title="Urgence">
+Gravité d’hépatite aiguë signalée par le cours 2023 : baisse du taux de prothrombine/facteur V associée à une encéphalopathie — urgence spécialisée.
+</Callout>
 - Prévention : vaccination contre A/B selon indications, hygiène alimentaire, prévention des expositions au sang, dépistage et éducation thérapeutique. Il n’existe pas de vaccin contre C dans le support.
 - **Vigilance IDE** : repérer ictère, troubles de conscience, saignement ou aggravation ; éducation, confidentialité, prévention de transmission et accompagnement au dépistage/suivi. Se référer aux recommandations actuelles pour indications vaccinales et thérapeutiques.
 
 À retenir de cette liste : les modes de transmission cités expliquent les axes de prévention — alimentaire, sanguine, vaccinale selon A/B — tandis que le bilan et le signe de gravité du cours 2023 cadrent la surveillance. La vigilance IDE se comprend ici comme un accompagnement dans la durée : repérer l'aggravation, expliquer sans juger, préserver la confidentialité et orienter vers dépistage et suivi, avec les indications vaccinales et thérapeutiques renvoyées aux recommandations actuelles.
+
+## Voir aussi
+
+<Cards>
+  <Card title="Fièvre, bactériémie, sepsis et choc septique" description="Réactions et complications systémiques de l'infection." href="./sepsis" />
+  <Card title="Examens biologiques" description="Hémocultures, ECBU et bilan hépatique : réalisation et interprétation." href="./examens-bio" />
+  <Card title="Infections cutanées" description="Bactériennes, virales, fongiques, ectoparasitoses et éruptions." href="./infections-cutanees" />
+</Cards>
 
 ## Sources
 

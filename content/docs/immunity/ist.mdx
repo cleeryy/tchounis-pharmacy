@@ -3,9 +3,18 @@ title: "Autres infections sexuellement transmissibles"
 description: "Chlamydia, gonocoque, syphilis, ulcérations, IST virales et parasitaires."
 ---
 
+import { Callout } from 'fumadocs-ui/components/callout';
+import { Card, Cards } from 'fumadocs-ui/components/card';
+import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
+import { Step, Steps } from 'fumadocs-ui/components/steps';
+
 > Fiche de synthèse à partir des cours UE 2.5 S3 IST parties 1, 2.1, 2.2 et 3 (Pr Cazanave, supports JNI 2017–2021, données HAS 2018, épidémiologie 2019–2022). Données et schémas thérapeutiques datés : se référer au protocole et aux recommandations en vigueur. Les posologies citées dans les cours ne sont pas reprises ici.
 
 Les infections sexuellement transmissibles (IST) regroupent des tableaux variés, souvent asymptomatiques, d'origine virale, bactérienne ou parasitaire. Cette fiche suit l'ordre du cours : généralités et prévention, infections bactériennes majeures, ulcérations, IST virales puis parasitaires. La méthode de lecture est syndromique : devant un écoulement, une ulcération ou une situation à risque, associer le tableau cité aux prélèvements et à l'orientation prévus, puis vérifier le protocole en vigueur. Les données chiffrées et schémas thérapeutiques sont datés et marqués TODO lorsqu'ils doivent être actualisés.
+
+<Callout type="info" title="Méthode">
+Lecture syndromique : devant un écoulement, une ulcération ou une situation à risque, associer le tableau cité aux prélèvements et à l'orientation prévus, puis vérifier le protocole en vigueur.
+</Callout>
 
 ## 1. Généralités
 
@@ -24,6 +33,18 @@ Ce qu'il faut retenir de ces généralités, c'est que l'absence de symptômes n
 
 Ce cadre général conduit aux infections bactériennes les plus détaillées dans le cours, à commencer par Chlamydia.
 
+<Tabs items={['Chlamydia', 'Gonocoque', 'Syphilis']}>
+  <Tab value="Chlamydia">
+    Bactérie intracellulaire, sérotypes D à K cités ; portages asymptomatiques fréquents ; principal agent d'infections génitales hautes cité.
+  </Tab>
+  <Tab value="Gonocoque">
+    Contagiosité importante ; urgence médicale citée ; résistance décrite (CNR 2020 cité, daté).
+  </Tab>
+  <Tab value="Syphilis">
+    Maladie par stades (I, II, latente précoce) ; chancre unique, induré, indolore cité.
+  </Tab>
+</Tabs>
+
 ## 2. Infections à Chlamydia trachomatis
 
 L'intérêt porté à Chlamydia trachomatis s'explique par les éléments du cours : fréquence élevée, portages asymptomatiques et risque de complications hautes chez la femme. La lecture consiste à relier l'agent et l'épidémiologie cités aux tableaux cliniques, puis au prélèvement cité, en gardant en mémoire que le traitement est marqué TODO. Le virus de l'immunodéficience humaine n'est pas développé ici, les sigles restant ceux du cours.
@@ -34,6 +55,10 @@ L'intérêt porté à Chlamydia trachomatis s'explique par les éléments du cou
 - **Diagnostic cité** : biologie moléculaire (PCR) — premier jet d'urine chez l'homme, auto-écouvillonnage vaginal chez la femme (aussi rentable que le cervical selon le cours) ; sérologie sans intérêt dans les infections basses.
 - **Traitement (familles citées, daté)** : cyclines en première intention pour les infections basses, azithromycine en seconde intention selon le cours — **TODO : schéma et durées actuels selon protocole en vigueur**.
 - **Infections génitales hautes (IGH)** : C. trachomatis en est le principal agent cité (sur 1 000 patientes infectées : 170 IGH, 70 salpingites, 5 stérilités tubaires, 2 grossesses extra-utérines selon le cours). Diagnostic : douleur pelvienne spontanée depuis plus de 4 jours + facteurs de risque et signes associés (leucorrhées, saignements, frissons, signes urinaires, dyspareunie, douleur hypochondre droit, syndrome rectal) ; douleur annexielle provoquée ou à la mobilisation utérine = signe de diagnostic positif. Bilan cité : prélèvement endocervical, ± bilan IST, NFS/CRP, échographie pelvienne. Complications : abcès tubo-ovariens, pelvipéritonite, bactériémie, infertilité, GEU, douleurs chroniques. Principe du traitement cité : couvrir chlamydia + gonocoque + anaérobies + entérobactéries/streptocoques — **TODO : protocole actuel**.
+
+<Callout type="warn" title="Schémas datés">
+Familles citées (cyclines en première intention, azithromycine en seconde intention) et principe de couverture des IGH cité : contenus datés — TODO : schéma, durées et protocole actuels selon le protocole en vigueur.
+</Callout>
 
 Ce qu'il faut retenir, c'est l'écart entre la fréquence des formes asymptomatiques et la gravité potentielle des infections génitales hautes décrites. Le prélèvement par biologie moléculaire cité et le bilan des douleurs pelviennes constituent les repères pratiques, tandis que les schémas thérapeutiques relèvent du protocole en vigueur indiqué par les TODO. La suite logique est l'autre bactérie majeure à urétrite et cervicite, le gonocoque.
 
@@ -46,7 +71,26 @@ Le gonocoque complète le raisonnement commencé avec Chlamydia : contagiosité 
 - **Diagnostic cité** : prélèvements systématiques génital + pharyngé/anal selon les pratiques ; examen direct (Gram sur frottis génital), culture (gélose chocolat), PCR gonocoque.
 - **Traitement (daté, sans posologie ici)** : urgence médicale citée (contagiosité, complications) ; ceftriaxone en molécule de référence, alternatives citées (gentamicine IM, ciprofloxacine après antibiogramme) ; protection pendant 7 jours après dose unique et jusqu'à la fin du traitement si plusieurs prises ; consultation de suivi à J7 systématique selon le cours. **TODO : schéma actuel et gestion des résistances.**
 - **Résistance (CNR 2020 cité, daté)** : 60 % de résistance à la ciprofloxacine, 10 % à l'azithromycine, 0 % à la ceftriaxone et à la spectinomycine ; gonocoque XDR décrit dans la littérature citée. Ne pas présenter comme situation actuelle.
-- **Urétrite masculine (approche syndromique)** : écoulement ± purulent du méat, brûlures mictionnelles (différent de l'infection urinaire) ; gonocoque = écoulements plus purulents et douloureux ; chlamydia/Mycoplasma genitalium = plus clairs et moins douloureux. Diagnostic : prélèvement du pus urétral, PCR Ct/Ng sur premier jet d'urine. Principe cité : traitement probabiliste couvrant gonocoque + chlamydia ; cervicite : le plus souvent paucisymptomatique, recherche des facteurs de risque, auto-écouvillonnage vaginal ou prélèvement cervical.
+
+<Callout type="error" title="Urgence">
+Gonococcie : urgence médicale citée (contagiosité, complications) ; protection citée et consultation de suivi à J7 citée — se référer au protocole en vigueur (TODO : schéma actuel).
+</Callout>
+
+<Callout type="warn" title="Repères datés">
+Résistances CNR 2020 citées et données CeGIDD novembre 2022 citées : contenus datés, à ne pas présenter comme situation actuelle.
+</Callout>
+
+<Steps>
+  <Step>
+    Devant un écoulement ± purulent du méat cité avec brûlures mictionnelles citées (différent de l'infection urinaire) : orienter selon l'aspect cité — gonocoque = écoulements plus purulents et douloureux ; chlamydia/Mycoplasma genitalium = plus clairs et moins douloureux.
+  </Step>
+  <Step>
+    Prélever selon le protocole local : prélèvement du pus urétral cité, PCR Ct/Ng sur premier jet d'urine citée ; cervicite : le plus souvent paucisymptomatique, recherche des facteurs de risque, auto-écouvillonnage vaginal ou prélèvement cervical.
+  </Step>
+  <Step>
+    Appliquer le principe cité de traitement probabiliste couvrant gonocoque + chlamydia — TODO : schéma actuel selon le protocole en vigueur.
+  </Step>
+</Steps>
 
 Ce qu'il faut retenir, c'est la lecture syndromique des écoulements : l'aspect cité oriente sans remplacer les prélèvements, et le principe de couverture probabiliste cité ne préjuge pas du schéma actuel marqué TODO. Les chiffres de résistance cités illustrent l'enjeu sans décrire la situation actuelle. Après les écoulements, le cours aborde les tableaux d'ulcération et de syphilis.
 
@@ -59,6 +103,10 @@ La syphilis se lit comme une maladie par stades, où la classification du cours 
 - **Syphilis primaire** : incubation ~3 semaines ; chancre unique, induré, indolore, à fond propre et superficiel, guérissant spontanément en ~2 semaines ; adénopathie(s) satellite(s).
 - **Syphilis secondaire** : inconstante (~1/3 des patients), dans les 6 semaines après le chancre (jusqu'à 1 an) ; 1ʳᵉ floraison = roséole ; 2ᵉ floraison = syphilides papulo-squameuses polymorphes (tronc, visage), contagieuses si excoriées/érosives/ulcéreuses ; plaques muqueuses, alopécie, queue des sourcils ; autres : fièvre, adénopathies, ostéo-arthrite, hépatite, neurosyphilis (ophtalmologique, méningite, vascularite).
 - **Syphilis latente précoce** : fréquente ; examen clinique normal ; seule une sérologie négative datant de moins d'1 an permet de l'affirmer selon le cours.
+
+<Callout type="warn" title="Schéma daté">
+Traitement par injection unique de benzathine-pénicilline G cité en phase précoce : contenu daté — TODO : vérifier le schéma actuel selon le protocole en vigueur.
+</Callout>
 
 Ce qu'il faut retenir, c'est la description du chancre et des floraisons secondaires citées, ainsi que la définition de la latence précoce par la sérologie antérieure. La conduite thérapeutique citée étant marquée TODO, il convient de se référer au protocole en vigueur. Les ulcérations d'autres causes font l'objet de la section suivante.
 
@@ -84,6 +132,10 @@ La section sur les papillomavirus humains (HPV) éclaire pourquoi le cours insis
 - **Traitement cité** : condylomes = local (topiques immunomodulateurs, laser, chirurgie) ; cancers = chirurgie ± chimio/radiothérapie selon localisation.
 - **Prévention primaire (données datées)** : annonce gouvernementale du 28/02/2023 (vaccination des élèves de 5ᵉ quel que soit le sexe/genre) ; couverture fin 2021 chez les femmes < 16 ans : 37 %, cible 80 % d'ici 2030 ; schémas cités (2 doses 11–14 ans, 3 doses 15–19 ans, HSH jusqu'à 26 ans, immunodéprimés jusqu'à 19 ans) — **TODO : vérifier le calendrier en vigueur**.
 - **Prévention secondaire (HAS 2020 citée)** : 25–29 ans = cytologie tous les 3 ans après 2 premiers tests normaux à 1 an d'intervalle ; 30–65 ans = test HPV-HR tous les 5 ans si négatif ; place du proctologue pour le cancer de l'anus — **TODO : vérifier les modalités actuelles**.
+
+<Callout type="warn" title="Calendriers datés">
+Schémas vaccinaux cités (2 doses 11–14 ans, 3 doses 15–19 ans, HSH jusqu'à 26 ans, immunodéprimés jusqu'à 19 ans) et modalités de dépistage citées (HAS 2020) : contenus datés — TODO : vérifier le calendrier et les modalités en vigueur.
+</Callout>
 
 Ce qu'il faut retenir, c'est la distinction entre infection le plus souvent transitoire et persistance à risque citée, ainsi que la complémentarité vaccination-dépistage. Les âges et rythmes cités étant datés, seules les modalités en vigueur font foi.
 
@@ -122,6 +174,14 @@ La vigilance de l'infirmier diplômé d'État (IDE) reprend en prose les réflex
 - Éducation : préservatifs, chemsex et réduction des risques, vaccination (VHB, HPV, mpox selon indications en vigueur).
 
 Ce qu'il faut retenir, c'est que chaque action citée — prélèvement, traitement, protection, suivi, déclaration — s'inscrit dans le protocole local ou en vigueur, sans ajouter de délai ou de schéma. Lorsque la fiche porte un TODO, la conduite consiste à vérifier avant d'agir.
+
+## Voir aussi
+
+<Cards>
+  <Card title="Infection par le VIH" description="Dépistage, prévention combinée et suivi : l'autre versant des IST." href="./vih" />
+  <Card title="Vaccination et sérothérapie" description="Vaccins VHB, HPV et rappels : calendriers cités et principes." href="./vaccination" />
+  <Card title="Examens biologiques" description="PCR, sérologies et prélèvements : réalisation et interprétation." href="./examens-bio" />
+</Cards>
 
 ## Sources (cours locaux utilisés)
 

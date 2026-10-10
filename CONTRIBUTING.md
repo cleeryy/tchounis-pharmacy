@@ -25,7 +25,23 @@ des connaissances validées (cours / référentiels IFSI), sinon `TODO`.
   vigilance IDE expliquée en prose. Des listes ou tableaux seuls sont indigestes :
   la prose qui les encadre fait la qualité pédagogique de la fiche.
 
-## 3. Règles du dépôt
+## 3. Composants Fumadocs
+
+- Pas de `mdx-components` global : import explicite par fichier, après le frontmatter,
+  uniquement des composants utilisés (exemple avec `Tabs` / `Steps` dans
+  `content/docs/pharmacy/anti-infectieux/antibiotiques.mdx`) :
+
+  ```mdx
+  import { Tabs, Tab } from 'fumadocs-ui/components/tabs';
+  import { Step, Steps } from 'fumadocs-ui/components/steps';
+  ```
+
+- `Callout` : `error` = urgences, `warn` = vigilances et rappels datés, `info` = méthode.
+- `Tabs` = variantes parallèles ; `Steps` = procédures séquentielles.
+- `Accordions` = compléments « pour aller plus loin » uniquement, jamais le cœur de la fiche.
+- `Cards` « Voir aussi » en fin de fiche, avec liens relatifs.
+
+## 4. Règles du dépôt
 
 - Garder le frontmatter (`title`, `description`), la structure des fiches et les liens
   relatifs (`[texte](./autre-page)`). Pour une nouvelle page, partir de ce modèle :
@@ -39,7 +55,7 @@ des connaissances validées (cours / référentiels IFSI), sinon `TODO`.
 
 - Ajouter une nouvelle page à `pages` dans le `meta.json` du dossier correspondant.
 
-## 4. Vérifier
+## 5. Vérifier
 
 ```bash
 pnpm lint
@@ -47,7 +63,7 @@ pnpm types:check
 pnpm build
 ```
 
-## 5. Branche, commit et PR
+## 6. Branche, commit et PR
 
 - Créer une branche `feat/<sujet>` ; vérifier `git status`.
 - Ne stage que les MDX / configs intentionnels — jamais les sources locales.
@@ -63,6 +79,7 @@ pnpm build
 - [ ] Prose pédagogique : intro narrative, paragraphes avant/après chaque liste ou tableau, transitions, vigilance IDE en prose (pas de listes seules).
 - [ ] `TODO` si source manquante ; seuils / traitements datés et caveatés.
 - [ ] Frontmatter, structure, `meta.json`, liens relatifs OK.
+- [ ] Composants Fumadocs : imports explicites après le frontmatter (utilisés uniquement), Callout / Tabs / Steps / Accordions / Cards « Voir aussi » selon leurs usages.
 - [ ] `pnpm lint`, `pnpm types:check`, `pnpm build` verts.
 - [ ] Branche `feat/<sujet>`, `git status` vérifié, sources exclues du stage, PR vers `main`.
 

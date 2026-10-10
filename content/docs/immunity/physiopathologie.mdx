@@ -3,18 +3,24 @@ title: "Physiopathologie des réactions inflammatoires et infectieuses"
 description: "Comprendre l'inflammation et l'infection avant d'étudier les pathologies."
 ---
 
+import { Callout } from 'fumadocs-ui/components/callout';
+import { Card, Cards } from 'fumadocs-ui/components/card';
+import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
+
 En stage, une plaie rouge, chaude et douloureuse interroge toujours : s'agit-il d'une simple inflammation ou d'une infection à traiter ? La confusion entre les deux termes fausse les transmissions et retarde les mesures adaptées. Cette fiche pose les repères du cours pour distinguer contamination, colonisation et infection, puis pour comprendre la réponse inflammatoire et immunitaire. Elle sert de socle avant d'aborder la fièvre, le sepsis et les examens biologiques.
 
 ## L'essentiel en une minute
 
 La liste ci-dessous rassemble les définitions à ne pas confondre le jour de l'évaluation comme au lit du patient. Chaque terme conditionne la suite du raisonnement : nommer correctement, c'est déjà orienter la surveillance et l'hygiène.
 
-- L'**infection** suppose un agent pathogène nuisible pour l'hôte avec mise en jeu du système immunitaire ; la **contamination** est la transmission de l'agent, la **colonisation** sa multiplication sans effet délétère.
-- L'**inflammation** est la réponse des tissus vivants vascularisés à une agression : elle vise l'élimination de l'agent et la réparation, mais elle peut devenir néfaste (agressivité, persistance, localisation, immunodépression).
+- L'**infection suppose un agent pathogène nuisible pour l'hôte avec mise en jeu du système immunitaire** ; la **contamination est la transmission de l'agent**, la **colonisation est sa multiplication sans effet délétère**.
+- L'**inflammation est la réponse des tissus vivants vascularisés à une agression : elle vise l'élimination de l'agent et la réparation, mais elle peut devenir néfaste (agressivité, persistance, localisation, immunodépression)**.
 - La défense combine **barrières anatomiques**, **réaction inflammatoire** et **système immunitaire** (complément, immunoglobulines, cytokines, cellules).
 - Retenir : **inflammation ≠ infection** — inflammation sans infection possible, et infection sans inflammation possible (ex. cités dans le cours : syphilis, infections ostéo-articulaires chroniques).
 
+<Callout type="info" title="Méthode">
 À retenir avant de poursuivre : ces quatre lignes suffisent à éviter l'erreur la plus fréquente, qui consiste à conclure à une infection devant tout signe inflammatoire. Les sections suivantes détaillent comment l'hôte se défend et comment l'inflammation se déroule.
+</Callout>
 
 ## 1. Relation hôte – agent pathogène
 
@@ -34,9 +40,17 @@ Ce qu'il faut en retenir pour la clinique : à agression égale, la réponse dif
 
 L'inflammation est la séquence que l'infirmier observe au quotidien : elle fait le lien entre l'agression décrite plus haut et les signes surveillés au lit du patient. La connaître permet de nommer ce que l'on voit et d'anticiper la chronicisation.
 
-- **Définition (cours)** : réponse des tissus vivants vascularisés à une agression, avec réaction locale du système immunitaire ; objectif : éliminer l'agent et réparer.
-  - aiguë : rapide (quelques heures), courte ;
-  - chronique : installation lente, persistante.
+- **Définition (cours) : réponse des tissus vivants vascularisés à une agression, avec réaction locale du système immunitaire ; objectif : éliminer l'agent et réparer.**
+
+<Tabs items={['Aiguë', 'Chronique']}>
+  <Tab value="Aiguë">
+    Rapide (quelques heures), courte.
+  </Tab>
+  <Tab value="Chronique">
+    Installation lente, persistante.
+  </Tab>
+</Tabs>
+
 - **Étiologies citées** : agent physique (traumatisme, chaleur), chimique (venins, toxines), corps étranger (dispositifs médicaux), défaut de vascularisation (ischémie), anomalie de la réponse immunitaire (allergies). TODO : le cours ne détaille pas les autres causes dysimmunitaires — compléter avec le référentiel local.
 - **Signes généraux** : fièvre (signe le plus flagrant), altération de l'état général (les 3 « A » : asthénie, anorexie, amaigrissement), syndrome inflammatoire biologique.
 - **Signes locaux — tétrade de Celse** : rougeur, œdème, chaleur, douleur.
@@ -46,7 +60,9 @@ L'inflammation est la séquence que l'infirmier observe au quotidien : elle fait
   3. détersion (nettoyage complet ou incomplet — incomplet = chronicisation) ;
   4. réparation/cicatrisation (bourgeon charnu, cicatrice, régénération endothéliale).
 
+<Callout type="info" title="En pratique">
 Pour la pratique, l'enchaînement à mémoriser est le suivant : une inflammation aiguë, rapide et courte, doit aboutir à une détersion complète puis à une réparation. Si le nettoyage reste incomplet, la situation bascule vers la chronicisation, d'où l'importance de surveiller la persistance des signes locaux de la tétrade de Celse et des signes généraux comme la fièvre et les 3 « A ».
+</Callout>
 
 ## 3. Immunité innée et adaptative
 
@@ -64,7 +80,9 @@ Ce tableau se lit comme une chronologie : l'inné, immédiat et non spécifique,
 - **Signal danger** : motifs microbiens (PAMPs — motifs moléculaires associés aux pathogènes) reconnus par des récepteurs (PRR — récepteurs de reconnaissance de motifs, dont TLR — récepteurs Toll-like) → phagocytose, réaction inflammatoire, libération de cytokines, afflux cellulaire, activation de l'immunité adaptative.
 - **Activation lymphocytaire** : le lymphocyte T reconnaît le peptide via le TCR (récepteur des lymphocytes T, présenté par la cellule présentatrice, CMH — complexe majeur d'histocompatibilité), le lymphocyte B via le BCR (récepteur des lymphocytes B, endocytose) ; expansion clonale puis différenciation en effecteurs (T CD4, T CD8, plasmocytes sécrétant des anticorps), mémoire et mort cellulaire.
 
-À retenir : l'inné ne se contente pas de contenir, il déclenche et module l'adaptatif en fonction du stimulus et du micro-environnement. Le signal danger, puis la reconnaissance du peptide via le TCR ou le BCR avec présentation par le CMH (complexe majeur d'histocompatibilité), expliquent l'expansion clonale et la mise en mémoire qui préparent une réponse ultérieure.
+<Callout type="info" title="À retenir">
+L'inné ne se contente pas de contenir, il déclenche et module l'adaptatif en fonction du stimulus et du micro-environnement. Le signal danger, puis la reconnaissance du peptide via le TCR ou le BCR avec présentation par le CMH (complexe majeur d'histocompatibilité), expliquent l'expansion clonale et la mise en mémoire qui préparent une réponse ultérieure.
+</Callout>
 
 ## 4. Facteurs humoraux et cellules
 
@@ -87,7 +105,9 @@ Dernière étape du raisonnement : face à un agent supposé, vers quelle défen
 - Défense **antifongique** : neutrophiles, macrophages, phagocytose au niveau peau/muqueuses.
 - **Infiltrat orientatif** : neutrophiles → bactérie ; lymphocytes → virus ; éosinophiles → parasites. Il s'agit d'une orientation, pas d'une preuve — toujours confronter à la clinique et à la biologie (voir fiche Examens biologiques).
 
+<Callout type="warn" title="Vigilance">
 En pratique, cet infiltrat orientatif aide à formuler une hypothèse — neutrophiles vers le bactérien, lymphocytes vers le viral, éosinophiles vers le parasitaire — mais il ne remplace ni l'examen clinique ni les examens biologiques. C'est précisément cette confrontation qui évite les conclusions hâtives.
+</Callout>
 
 ## Points de vigilance IDE
 
@@ -99,7 +119,17 @@ La vigilance infirmière découle directement de ce qui précède : bien nommer,
 - Terrain à risque d'inflammation néfaste ou prolongée : personne âgée, immunodéprimé, chimiothérapie — signaler toute persistance.
 - Se référer au protocole local pour toute conduite (pas de prescription dans cette fiche).
 
+<Callout type="warn" title="Vigilance">
 Concrètement, cela signifie tracer avec rigueur la température, l'heure et l'éventuel antipyrétique, renforcer l'hygiène des mains face au risque manuporté, et signaler sans attendre toute persistance chez une personne âgée, immunodéprimée ou sous chimiothérapie. Pour toute conduite, seul le protocole local fait foi, cette fiche ne portant aucune prescription.
+</Callout>
+
+## Voir aussi
+
+<Cards>
+  <Card title="Fièvre, bactériémie, sepsis et choc septique" description="Réactions et complications systémiques de l'infection." href="./sepsis" />
+  <Card title="Examens biologiques" description="Biochimie, hématologie et microbiologie : réalisation et interprétation." href="./examens-bio" />
+  <Card title="Épidémiologie et déclarations obligatoires" description="Lire une épidémie et savoir ce qui se déclare." href="./epidemiologie" />
+</Cards>
 
 ## Sources
 

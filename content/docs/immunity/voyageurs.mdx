@@ -3,9 +3,19 @@ title: "Voyageurs, migrants et tuberculose"
 description: "Prise en soin des migrants, pathologies du voyageur, tuberculose, zoonoses."
 ---
 
+import { Callout } from 'fumadocs-ui/components/callout';
+import { Card, Cards } from 'fumadocs-ui/components/card';
+import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
+import { Step, Steps } from 'fumadocs-ui/components/steps';
+import { Accordion, Accordions } from 'fumadocs-ui/components/accordion';
+
 > Fiche de synthèse à partir des cours locaux UE 2.5 S3 (Pr Faucher : migrants, pathologie du voyageur ; Dr Ballouhey : tuberculose ; diaporama IDE zoonoses 2021–2022). Contenus datés (2021–2022, OMS 2011, BEH voyageurs 2021) : chiffres, schémas et molécules cités à titre historique, se référer au calendrier/protocole en vigueur. Aucune posologie détaillée ici ; lacunes marquées TODO.
 
 Cette fiche rassemble des situations apparemment éloignées — accueil des personnes migrantes, pathologies du voyageur, tuberculose et zoonoses — autour d'une même exigence : situer le risque infectieux dans le parcours, l'origine géographique et les conditions de vie. Elle suit l'ordre du cours et s'appuie uniquement sur les repères cités, datés et à confronter aux référentiels en vigueur. La méthode de lecture consiste à relier chaque tableau ou dispositif cité à l'orientation correspondante, sans ajouter de fait nouveau.
+
+<Callout type="info" title="Méthode">
+Situer le risque infectieux dans le parcours, l'origine géographique et les conditions de vie : relier chaque tableau ou dispositif cité à l'orientation correspondante.
+</Callout>
 
 ## 1. Personnes migrantes : définitions et repères
 
@@ -14,6 +24,15 @@ Comprendre la définition citée et l'hétérogénéité des parcours évite de 
 - **Définition INSEE citée** : personne née à l'étranger sans nationalité française, entrée en France pour s'y établir durablement ; 5,3 millions de personnes (Pilly 2020 cité) ; origines Afrique et Europe ; hétérogénéité géographique ; statuts variés, légaux ou non.
 - **Ne pas réduire aux infections** : déracinement, isolement social, psychotraumatismes (exploitation, violences physiques/sexuelles sur le parcours), précarité (malbouffe, hébergement contraint), risques métaboliques (HTA, diabète, obésité), psychopathologie, santé bucco-dentaire, sexualité/contraception.
 - **Deux groupes d'infections** : pathologies d'importation (peu/pas d'accès aux soins dans le pays d'origine) et infections acquises en France (précarité : promiscuité, prostitution… ; infections respiratoires/entériques, tuberculose, IST ; pneumocoque et salmonelles chez les personnes drépanocytaires).
+
+<Tabs items={['Importation', 'Acquises en France']}>
+  <Tab value="Importation">
+    Pathologies d'importation citées : peu/pas d'accès aux soins dans le pays d'origine.
+  </Tab>
+  <Tab value="Acquises en France">
+    Infections acquises en France citées (précarité : promiscuité, prostitution…) : infections respiratoires/entériques, tuberculose, IST ; pneumocoque et salmonelles chez les personnes drépanocytaires.
+  </Tab>
+</Tabs>
 - **Dépistages ciblés cités** : VIH, hépatite B, tuberculose ; hépatite C largement dépistée de même que certaines parasitoses selon la région d'origine ; paludisme si fièvre ; schistosomose si provenance d'Afrique subsaharienne.
 - **Bilan paraclinique de première intention cité** : NFS (hyperéosinophilie = helminthose ?), sérologies VIH/VHB/VHC, radiographie du thorax. Selon contexte : frottis/goutte épaisse si fièvre + provenance compatible, examen parasitologique des selles si diarrhée, bandelette urinaire/sérologie schistosomose si provenance compatible.
 - **Où ?** Centres d'examen de santé de la Sécurité sociale (AME/PUMA), tout laboratoire/cabinet de radiologie si protection sociale. AME = aide médicale d'État (> 3 mois, sans titre de séjour, faibles ressources) ; PUMA = protection universelle maladie (> 3 mois avec titre de séjour ou demande d'asile). Dispositifs cités : PASS, CeGIDD, centres de vaccination, PMI, CPEF, CLAT, dentistes, assistance sociale/juridique (séjour pour soins, asile), CMP. Recours à l'**interprétariat professionnel**.
@@ -30,6 +49,10 @@ Le voyageur n'est pas exposé qu'aux infections : le cours rappelle les causes n
 - **Fièvre au retour** : diagnostics variés cités (paludisme, bilharziose primo-invasion, abcès amibien, fièvre typhoïde/salmonelles, rickettsioses, leptospiroses, brucelloses, arboviroses dont dengue, hépatites A/E, primo-infection VIH, grippe aviaire…). **Toute fièvre au retour de zone d'endémie = suspicion de paludisme**, surtout dans les 3 mois suivant le retour.
 - **Incontournables cités** : par fréquence (diarrhée/turista liée au péril fécal, dermatoses bactériennes sur piqûres/plaies/punaises de lit — prévention : répulsifs, vêtements protecteurs, nécessaire à pansements) et par gravité (paludisme, arboviroses dont fièvre jaune, hépatite A, rage).
 
+<Callout type="error" title="Urgence">
+Toute fièvre au retour de zone d'endémie = suspicion de paludisme citée, surtout dans les 3 mois suivant le retour : orienter en urgence selon le protocole en vigueur.
+</Callout>
+
 Ce qu'il faut retenir avant d'entrer dans le détail, c'est le réflexe cité : toute fièvre au retour de zone d'endémie fait suspecter un paludisme, en particulier dans les trois mois cités. Les diagnostics variés listés montrent l'éventail à évoquer sans en ajouter d'autres. Le paludisme et les vaccinations précisent ensuite la prévention et l'orientation.
 
 ### Paludisme (données datées 2018–2021)
@@ -39,6 +62,22 @@ Le paludisme est présenté en trois volets — prévenir l'infection, prévenir
 - **Épidémiologie citée** : ~4 000 cas/an en France (95 % Afrique, P. falciparum 90 %) ; 2018 : 5 280 cas estimés dont 334 graves et 9 décès. Risque pour 1 mois d'exposition cité : Afrique 1–3 %, Asie et Amérique du Sud/Caraïbes 0,001 %.
 - **Prévention en 3 volets** : (1) prévenir l'infection = lutte antivectorielle nocturne (pierre angulaire) : moustiquaire imprégnée, répulsifs, vêtements longs le soir, protection du coucher au lever (pic anophèle 22h–5h) ; (2) prévenir la maladie = chimioprophylaxie (molécules citées à titre historique : méfloquine, doxycycline, atovaquone-proguanil — **TODO : indications, schémas et contre-indications actuels**) ; (3) prévenir le décès = éducation (thermomètre, consulter pour toute fièvre > 1 semaine après exposition et jusqu'à 3 mois après le retour), observance, protection non absolue.
 - **Soins IDE** : information avant/après voyage, vérification de l'observance, orientation rapide si fièvre au retour.
+
+<Steps>
+  <Step>
+    Prévenir l'infection citée par la lutte antivectorielle nocturne (pierre angulaire) : moustiquaire imprégnée, répulsifs, vêtements longs le soir, protection du coucher au lever (pic anophèle 22h–5h).
+  </Step>
+  <Step>
+    Prévenir la maladie citée par la chimioprophylaxie — molécules citées à titre historique (méfloquine, doxycycline, atovaquone-proguanil) — **TODO : indications, schémas et contre-indications actuels**.
+  </Step>
+  <Step>
+    Prévenir le décès cité par l'éducation : thermomètre, consulter pour toute fièvre > 1 semaine après exposition et jusqu'à 3 mois après le retour ; observance ; protection non absolue.
+  </Step>
+</Steps>
+
+<Callout type="warn" title="Molécules datées">
+Chimioprophylaxie (méfloquine, doxycycline, atovaquone-proguanil) : molécules citées à titre historique — TODO : indications, schémas et contre-indications actuels selon le protocole en vigueur.
+</Callout>
 
 Ce qu'il faut retenir, c'est la place centrale de la lutte antivectorielle nocturne citée comme pierre angulaire et le rôle de l'éducation à consulter vite. Les molécules et schémas étant marqués TODO, la conduite consiste à vérifier l'observance et à orienter selon le protocole en vigueur.
 
@@ -51,6 +90,18 @@ Les vaccinations du voyageur combinent mise à jour du calendrier courant et vac
 - **Principales citées** : hépatite A (péril fécal, pas de traitement curatif, vaccin très efficace et bien toléré) et fièvre jaune (arbovirose souvent grave, pas de traitement curatif, vaccin très efficace mais contre-indiqué chez l'immunodéprimé). Autres possibles citées : hépatite B, typhoïde, méningocoques, encéphalites à tiques/japonaise — se référer au BEH recommandations voyageurs en vigueur (le cours cite l'édition 2021).
 - **Rage** : tous les cas déclarés mortels selon le cours ; éviter de jouer avec les animaux (chiens +++) ; vaccination préventive recommandée chez certains voyageurs — **TODO : indications et conduite post-exposition actuelles**.
 
+<Tabs items={['Hépatite A', 'Fièvre jaune', 'Rage']}>
+  <Tab value="Hépatite A">
+    Péril fécal cité, pas de traitement curatif cité, vaccin très efficace et bien toléré cité.
+  </Tab>
+  <Tab value="Fièvre jaune">
+    Arbovirose souvent grave citée, pas de traitement curatif cité, vaccin très efficace cité mais contre-indiqué chez l'immunodéprimé cité ; obligatoire citée pour certaines destinations (Règlement sanitaire international).
+  </Tab>
+  <Tab value="Rage">
+    Tous les cas déclarés mortels selon le cours ; éviter de jouer avec les animaux (chiens +++) ; vaccination préventive recommandée chez certains voyageurs — **TODO : indications et conduite post-exposition actuelles**.
+  </Tab>
+</Tabs>
+
 Ce qu'il faut retenir, c'est la double vérification citée : calendrier de routine d'une part, exigences et recommandations liées à la destination d'autre part, selon le BEH en vigueur. Les indications vaccinales précises et la conduite post-exposition étant marquées TODO, elles relèvent du référentiel actuel. La tuberculose, autre pathologie au premier plan citée, fait l'objet de la section suivante.
 
 ## 3. Tuberculose (Dr Ballouhey, données OMS 2011 et schémas datés)
@@ -60,12 +111,29 @@ La tuberculose illustre l'articulation entre transmission aérienne, histoire na
 - **Définition** : maladie infectieuse transmissible, transmission aérienne par aérosol (diffusion à longue distance) ; agent = mycobactérie du complexe tuberculosis (M. tuberculosis/BK, M. bovis, M. africanum).
 - **Épidémiologie citée (datée, OMS 2011)** : ~2 milliards d'infectés, incidence 8,7 millions, mortalité 1,4 million ; maladie de la pauvreté/promiscuité ; une des principales causes de décès chez les personnes VIH+ ; multirésistances (480 000 dans le monde, 1,5 % en France selon le cours). France : 8,5 cas/100 000 (vigilance Île-de-France, Guyane, Mayotte). Ne pas présenter comme chiffres actuels.
 - **Histoire naturelle** : infection tuberculeuse latente (ITL : asymptomatique, radio normale, microscopie négative, tests immunologiques positifs) vs tuberculose maladie (TM : symptomatique, radio anormale, microscopie positive, contagieuse) ; ~5 % des sujets développent une TM dans les 2 ans selon le cours.
+
+<Tabs items={['Infection latente', 'Maladie']}>
+  <Tab value="Infection latente">
+    ITL citée : asymptomatique, radio normale, microscopie négative, tests immunologiques positifs ; non contagieuse citée.
+  </Tab>
+  <Tab value="Maladie">
+    TM citée : symptomatique, radio anormale, microscopie positive, contagieuse.
+  </Tab>
+</Tabs>
 - **Formes** : pulmonaire commune (+++), miliaire, pleurésie, pneumonie aiguë ; extrapulmonaires (ganglions — VIH, Afrique/Asie —, ostéo-articulaire, neuroméningée, génito-urinaire, digestive).
 - **Transmission** : patient bacillifère, gouttelettes de Flügge (toux ~3 500 gouttelettes, éternuements ~1 million) ; risque selon quantité émise, proximité, durée (aérosol survivant 9–12 h cité), immunité, âge.
 - **Clinique pulmonaire commune** : début insidieux sur plusieurs semaines, non spécifique — altération de l'état général, fébricule, sueurs nocturnes, toux ± expectorations, hémoptysies, dyspnée ; radio évocatrice (opacité apicale, alvéolaire/micronodulaire/cavernes).
 - **Diagnostic** : y penser devant des signes peu évocateurs ; bactériologie = BK sur crachats/expectoration induite × 3 jours, tubages gastriques × 2 jours ou fibroscopie (ECBC) ; examen direct (Ziehl-Neelsen, auramine), cultures (liquide + Löwenstein-Jensen), PCR ; anatomopathologie (granulome gigantocellulaire avec nécrose caséeuse). Expectoration induite citée comme meilleur rendement que le tubage (NaCl 20 % + eau PPI, nébulisation 20–30 min, surveillance FC/FR/PA/SpO₂, ≥ 2 mL/prélèvement ; effets : nausées, poussée hypertensive, bronchospasme).
 - **Traitement cité (historique, sans posologie ici)** : quadrithérapie initiale (isoniazide + rifampicine + éthambutol + pyrazinamide) puis bithérapie, prise quotidienne matinale à jeun ; toxicités citées (hépatiques, polynévrites, induction enzymatique de la rifampicine, névrite optique, hyperuricémie) ; surveillance clinique, radiologique, bactériologique, ophtalmologique et biologique (hépatique, uricémie) ; antibiogramme nécessaire (résistances possibles). **TODO : schémas et durées actuels.**
 - **Mesures associées citées** : isolement respiratoire « air » dès la suspicion (FFP2 + hygiène des mains, masque chirurgical au patient hors chambre, porte fermée, aération, déplacements limités) jusqu'à négativation ; déclaration obligatoire en 24 h (CLAT, ARS), enquête autour du cas, prise en charge à 100 %.
+
+<Callout type="error" title="Urgence">
+Isolement respiratoire « air » dès la suspicion citée et déclaration obligatoire en 24 h citée (CLAT, ARS), avec enquête autour du cas citée.
+</Callout>
+
+<Callout type="warn" title="Schémas datés">
+Quadrithérapie initiale citée puis bithérapie citée, et traitement de l'ITL cité (bithérapie INH+RMP 3 mois, INH 9 mois ou RMP 4 mois) : schémas historiques — TODO : schémas, durées et indications actuels selon le protocole en vigueur. Épidémiologie OMS 2011 citée : chiffres datés, à ne pas présenter comme actuels.
+</Callout>
 - **ITL** : sujets contacts (même toit 13 %, professionnel 5 %, occasionnel 1 % cités), immigrés, soignants, immunodéprimés/avant immunosuppresseurs ; bilan initial (clinique, radio, IDR, Quantiféron) répété à 3 mois ; traitement cité (bithérapie INH+RMP 3 mois, INH 9 mois ou RMP 4 mois) avec surveillance hépatique ; à traiter en priorité si contage étroit, Quantiféron très élevé ou ITL récente, et systématiquement avant anti-TNF ou si VIH — **TODO : indications et schémas actuels**.
 
 Ce qu'il faut retenir, c'est la distinction entre infection latente non contagieuse et maladie contagieuse citées, qui commande l'isolement et la déclaration. La clinique insidieuse citée impose d'y penser devant des signes peu évocateurs. Les schémas thérapeutiques étant historiques et marqués TODO, seuls les principes — isolement « air », déclaration en 24 h, enquête autour du cas, surveillance citée — sont à mémoriser ici. Les zoonoses complètent le panorama infectieux.
@@ -84,6 +152,12 @@ Cette section reprend uniquement les notions explicites citées, l'extraction é
 - **Fièvre Q (Coxiella burnetii)** : ovins/bovins/caprins ; inhalation d'aérosols, lait cru, tiques ; 60 % asymptomatique cité, incubation ~3 semaines ; formes aiguës (hépatite granulomateuse, pneumopathie, fièvre isolée) et chroniques (endocardite à hémocultures négatives, vasculaire) ; diagnostic sérologique ; cyclines citées (formes chroniques prolongées + hydroxychloroquine) — **TODO : vérifier**.
 - TODO : rage, leptospirose et autres zoonoses non exploitables depuis l'extraction — à compléter uniquement depuis les cours.
 
+<Accordions>
+  <Accordion title="Pour aller plus loin : repères partiels du diaporama">
+    L'extraction du diaporama est partielle (texte mêlé aux images) : ne retenir que les notions explicites ci-dessus ; le reste est marqué TODO — à compléter uniquement depuis les cours.
+  </Accordion>
+</Accordions>
+
 Ce qu'il faut retenir de ces repères partiels, c'est la prudence imposée par l'avertissement : seules les notions explicites sont utilisables, le reste relève des TODO et des cours. Les nuances citées — sérologie de Lyme ne signant pas à elle seule une infection évolutive, diagnostic clinique de l'érythème migrant — illustrent cette lecture stricte des sources. L'ensemble débouche sur les vigilances transversales infirmières.
 
 ## 5. Points de vigilance IDE (transversal)
@@ -96,6 +170,18 @@ La vigilance de l'infirmier diplômé d'État (IDE) relie ici isolement, urgence
 - Éducation : hygiène alimentaire, préservatifs, antivectoriel, observance, vaccinations à jour selon le calendrier en vigueur.
 
 Ce qu'il faut retenir, c'est que chaque point cité renvoie à un dispositif ou à un protocole en vigueur, sans ajouter de délai ou de schéma. Lorsque la fiche porte un TODO, la conduite consiste à vérifier avant d'agir.
+
+<Callout type="error" title="Urgence">
+Fièvre au retour de voyage ou chez un migrant = urgence diagnostique citée (paludisme, tuberculose, IST, hépatites) : orienter sans délai selon le protocole en vigueur.
+</Callout>
+
+## Voir aussi
+
+<Cards>
+  <Card title="Vaccination et sérothérapie" description="Calendrier vaccinal, rattrapages et voyageurs : principes cités." href="./vaccination" />
+  <Card title="Infection par le VIH" description="Dépistage ciblé, TPE et suivi : repères cités." href="./vih" />
+  <Card title="Autres infections sexuellement transmissibles" description="IST citées chez les migrants et voyageurs : démarche syndromique." href="./ist" />
+</Cards>
 
 ## Sources (cours locaux utilisés)
 
