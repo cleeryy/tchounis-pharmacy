@@ -9,6 +9,15 @@ et ne sont jamais versionnés.
 
 _Rien pour le moment._
 
+## [2026-10-13] — Corrigé caractères d'encodage (PR #9)
+
+### Corrigé
+
+- Caractères d'encodage endommagés (�) dans les fiches `flow` :
+  « sténose » dans `occlusion-intestinale`, « délais » dans `coronaire`.
+  Le troisième (corticoïdes dans `bpco`) avait déjà été corrigé sur `main`.
+  Balayage complet du dépôt : aucun autre `�` restant dans le contenu.
+
 ## [2026-10-13] — Fiches school, talk, plan (PR #7)
 
 ### Ajouté
