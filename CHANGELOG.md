@@ -7,7 +7,16 @@ et ne sont jamais versionnés.
 
 ## [Non publié]
 
-_Rien pour le moment._
+### Ajouté
+
+- Accordion TLDR « L'essentiel en un coup d'œil » replié en bas de chacune
+  des 50 fiches des 6 espaces (immunity, flow, crew, school, talk, plan) :
+  suite fléchée et/ou mini-tableau, sans fait nouveau ni posologie.
+- Page `essentiel.mdx` par espace (6 pages) : synthèse visuelle (urgences
+  en Callout error, repères clés, réflexes IDE) et navigation mise à jour.
+- Index des espaces `crew`, `plan`, `school` et `talk` enrichis sur le
+  gabarit des index `immunity`/`flow` (intro prose, descriptions, « Par où
+  commencer »).
 
 ## [2026-10-13] — Corrigé caractères d'encodage (PR #9)
 

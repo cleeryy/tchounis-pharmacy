@@ -1,0 +1,122 @@
+---
+title: "L'essentiel en schémas"
+description: "Synthèse visuelle de l'espace : repères, urgences et réflexes IDE en un coup d'œil."
+---
+
+import { Callout } from 'fumadocs-ui/components/callout';
+import { Card, Cards } from 'fumadocs-ui/components/card';
+import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
+
+Onze fiches, un même réflexe : reconnaître l'obstruction, situer la gravité, alerter sans retarder. Cette page ne rajoute rien aux fiches, elle les resserre en schémas visuels pour réviser vite avant un stage ou un partiel. Chaque suite fléchée et chaque tableau reprend strictement des faits déjà écrits dans les fiches, sans posologie. Les chiffres, seuils et délais cités restent des repères de cours datés, à confronter aux protocoles en vigueur.
+
+## Urgences à ne pas rater
+
+Devant toute bascule brutale, le raisonnement tient en trois temps : heure de début notée, mise au repos avec jeûne, appel de la filière. Les tableaux ci-dessous rappellent les signaux cités dans les fiches, du cœur au rein.
+
+<Callout type="error" title="Urgences citées dans les fiches">
+SCA ([coronaire](./coronaire)) : douleur angineuse prolongée résistant à la trinitrine en spray → 15, repos, ECG continu. AVC et AIT ([avc](./avc)) : visage, bras, parole, équilibre, vision, même transitoires → 15 ou 112, heure notée, rien à avaler. EP à haut risque ([embolie-pulmonaire](./embolie-pulmonaire)) : malaise, syncope, choc, hypotension prolongée, détresse → alerte vitale immédiate. Exacerbation grave de [BPCO](./bpco) : dyspnée de repos, cyanose, SpO2 < 90 % citée, muscles accessoires, confusion → alerte sans délai. Strangulation et occlusion ([occlusion-intestinale](./occlusion-intestinale)) : douleurs avec arrêt des matières et des gaz plus tachycardie, hypotension, marbrures ou fièvre → jeûne et alerte chirurgicale. Infection biliaire ([biliaire](./biliaire)) : douleur permanente avec fièvre et/ou ictère → hémocultures et alerte citées. Lithiase compliquée ([lithiase-urinaire](./lithiase-urinaire)) : colique fébrile, anurique ou hyperalgique → hospitaliser. Ischémie de repos ([aomi](./aomi)) et RAC symptomatique ([rac](./rac)) : douleur permanente de l'avant-pied ou syncope d'effort → alerte sans délai.
+</Callout>
+
+Ce bloc se lit comme une check-list d'alerte, pas comme un protocole : chaque ligne renvoie à sa fiche pour la conduite détaillée et ses TODO. Les seuils cités entre parenthèses restent des repères de cours datés. Une fois l'urgence écartée ou cadrée, les repères par famille prennent le relais.
+
+## Repères clés
+
+Les six blocs suivants reprennent les logiques déjà écrites fiche par fiche, en version fléchée et tabulaire. Chaque famille garde son vocabulaire et ses seuils de cours, signalés quand ils sont datés.
+
+### Artériel : coronaire, prévention, AOMI
+
+La prévention ([prevention](./prevention)) ouvre la chaîne : agir sur tabac, alimentation, activité et stress avant la bascule brutale vers l'infarctus ou l'AVC.
+
+Tabac + sédentarité + HTA + diabète cités → athérome → angor d'effort → SCA → reperfusion citée.
+
+| Repère cité | [Coronaire](./coronaire) | [AOMI](./aomi) |
+|---|---|---|
+| Signal d'effort | Douleur en barre cédant à l'arrêt | Crampe au mollet à périmètre fixe |
+| Signal de gravité | Douleur > 30 min au repos | Douleur > 15 jours, pied pendant, nécrose |
+| Examen cité | ECG, biologie protocolée, coronarographie | IPS < 0,9 cité, pressions de cheville et d'orteil |
+
+Délai avant 6 heures, IPS < 0,9 et chiffres de mortalité cités : repères de cours datés 2021-2022, appliquer les protocoles en vigueur. Ce versant artériel explique pourquoi chaque douleur d'effort se trace avec son périmètre et son heure.
+
+### Veineux : MTEV et EP
+
+La [MTEV](./mtev) et l'[embolie pulmonaire](./embolie-pulmonaire) sont deux étages d'une même maladie veineuse née de la triade de Virchow citée.
+
+Stase + hypercoagulabilité + paroi → TVP unilatérale → embol pulmonaire → gravité par le cœur droit.
+
+<Tabs items={['TVP', 'EP']}>
+  <Tab value="TVP">
+    Œdème et douleur brutaux d'un mollet → probabilité clinique → échodoppler-compression cité → anticoagulation et compression citées, sans alitement, sans masser.
+  </Tab>
+  <Tab value="EP">
+    Coup de poignard latéral + dyspnée permanente au repos + hémoptysie ou choc → probabilité (Genève, Wells cités) → angio-TDM citée → traitement selon risque faible, intermédiaire ou haut.
+  </Tab>
+</Tabs>
+
+Scores, D-dimères et schémas classique et moderne cités : repères de cours datés, sur prescription. Le veineux se retient ainsi comme une montée : jambe d'abord, poumon et cœur droit ensuite.
+
+### Respiratoire : BPCO et AVC
+
+La [BPCO](./bpco) s'installe lentement quand l'[AVC](./avc) frappe en minutes, mais les deux partagent le tabac et l'urgence de l'heure notée.
+
+Tabac cité → obstruction non réversible → toux puis dyspnée tardive → exacerbation à trois critères cités.
+
+| Situation citée | Repère du cours | Fiche |
+|---|---|---|
+| BPCO stable | VEMS < 80 %, VEMS/CV < 70 % cités | [bpco](./bpco) |
+| Exacerbation | Volume + couleur + dyspnée, SpO2 < 90 % citée | [bpco](./bpco) |
+| AVC ischémique (~8/10 cités) | Caillot, thrombolyse jusqu'à la 4e heure citée | [avc](./avc) |
+| AVC hémorragique (~20 % cités) | Rupture, HTA citée en premier | [avc](./avc) |
+
+Seuils EFR, BODE et délai de thrombolyse cités : repères de cours datés 2022, appliquer les référentiels en vigueur. Le respiratoire et le neuro-vasculaire se rejoignent sur un point de méthode : ne jamais banaliser une dyspnée brutale ou un signe transitoire.
+
+### Digestif : occlusion et biliaire
+
+L'[occlusion](./occlusion-intestinale) bloque le transit quand la [bile](./biliaire) bloque l'écoulement, et les deux basculent vers l'infection.
+
+Douleurs + arrêt des gaz et matières + vomissements → troisième secteur → strangulation et choc septique cité.
+
+| Niveau cité | Cinétique | Urgence citée |
+|---|---|---|
+| Grêle haut | Vomissements précoces et abondants | Hernie étranglée, brides, ischémie |
+| Côlon bas | Arrêt précoce, vomissements tardifs | Volvulus du sigmoïde |
+| Biliaire | Douleur permanente + fièvre + ictère | Angiocholite, cholécystite vers septicémie |
+
+Jeûne, sonde nasogastrique et cholécystectomie cités : repères de cours, sur prescription. Le digestif se résume à cette bascule : crise simple d'un côté, douleur permanente et fébrile de l'autre.
+
+### Urinaire et valve : lithiase et RAC
+
+La [lithiase urinaire](./lithiase-urinaire) met les voies excrétrices en tension quand le [RAC](./rac) met le ventricule gauche en surcharge, et les deux se révèlent par l'effort ou la crise.
+
+Excès urinaires + pH → calcul → colique vers OGE sans position antalgique → fièvre, anurie ou hyperalgie = hospitaliser cité.
+
+| Repère cité | [Lithiase](./lithiase-urinaire) | [RAC](./rac) |
+|---|---|---|
+| Signal typique | Douleur lombo-abdominale brutale | Souffle systolique après 70 ans, puis syncope |
+| Confirmation citée | Imagerie, calcul récupéré | Échographie, surface < 0,5 cm²/m² citée |
+| Suite citée | Sonde JJ ou dérivation si compliquée | Staff puis TAVI, chirurgie ou abstention |
+
+Seuils de taille, diurèse > 2 L/j, surfaces et survies cités : repères de cours datés, appliquer les protocoles en vigueur. Ces deux derniers blocs rappellent que l'obstruction n'est pas que vasculaire : elle peut être lithiasique ou valvulaire.
+
+## Réflexes IDE
+
+Les fiches convergent vers les mêmes gestes infirmiers, à adapter au protocole local et à la prescription. Les six réflexes ci-dessous les condensent sans rien y ajouter.
+
+Noter l'heure exacte du début et tracer douleur, constantes, saturation et diurèse dès l'accueil reste le premier réflexe cité. Mettre au repos et à jeun, sans rien faire boire, manger ni avaler devant une douleur thoracique, un signe neurologique, une dyspnée grave ou un ventre occlusif, sécurise l'imagerie et les gestes. Alerter la filière adaptée — 15, 112, USIC, neuro-vasculaire, réanimation ou chirurgie — sans attendre la biologie quand les signes de gravité sont là, puis organiser examens et bilans sur prescription. Sécuriser perfusion, scope, oxygène et sondes en surveillant saignements, point de ponction, état cutané et reprise du transit selon la fiche. Éduquer à l'observance, à la marche, au sevrage tabagique et aux carnets de suivi cités, en vérifiant la technique d'inhalation ou la compression. Enfin, signaler tout contenu daté et renvoyer aux protocoles en vigueur plutôt qu'appliquer un seuil de cours comme consigne.
+
+Ces réflexes se lisent comme la mise en actes des schémas ci-dessus : tracer, protéger, alerter, surveiller, éduquer. Ils ne remplacent ni la prescription ni le protocole local, rappel constant des onze fiches.
+
+## Voir aussi
+
+<Cards>
+  <Card title="Prévention des syndromes obstructifs" description="Quatre leviers cités avant la bascule : tabac, alimentation, activité, stress." href="./prevention" />
+  <Card title="Insuffisance coronaire et SCA" description="De l'angor stable à la reperfusion citée." href="./coronaire" />
+  <Card title="AVC" description="Signes brutaux et filière : même un AIT régressé alerte." href="./avc" />
+  <Card title="AOMI" description="De la claudication à l'ischémie de repos grave." href="./aomi" />
+  <Card title="MTEV" description="TVP et EP : triade de Virchow et probabilité puis imagerie." href="./mtev" />
+  <Card title="Embolie pulmonaire" description="Polymorphe, stratifiée par le risque de décès précoce cité." href="./embolie-pulmonaire" />
+  <Card title="BPCO" description="Obstruction lente, exacerbation à trois critères cités." href="./bpco" />
+  <Card title="Occlusions digestives" description="Troisième secteur, strangulation et niveaux haut et bas." href="./occlusion-intestinale" />
+  <Card title="Obstruction biliaire" description="Migration du calcul : vésicule, cholédoque, Wirsung." href="./biliaire" />
+  <Card title="Lithiase urinaire" description="Colique typique et trois bascules vers l'hôpital citées." href="./lithiase-urinaire" />
+  <Card title="RAC et cathétérisme" description="Valve qui s'ouvre mal, staff et salle de cathétérisme." href="./rac" />
+</Cards>
