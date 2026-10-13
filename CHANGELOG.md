@@ -9,6 +9,17 @@ et ne sont jamais versionnés.
 
 ### Ajouté
 
+- Schémas Mermaid : intégration officielle (`mermaid` + `next-themes`,
+  composant `<Mermaid view="..." global>` enregistré dans `components/mdx.tsx`,
+  thème clair/sombre) et conversion des résumés en vrais flowcharts —
+  50 accordéons « L'essentiel en un coup d'œil » + 2 schémas par page
+  `essentiel.mdx` (56 fichiers, faits inchangés).
+- Composant usage documenté dans `CONTRIBUTING.md`.
+
+## [2026-10-13] — TL;DR visuel + synthèses par espace (PR #10)
+
+### Ajouté
+
 - Accordion TLDR « L'essentiel en un coup d'œil » replié en bas de chacune
   des 50 fiches des 6 espaces (immunity, flow, crew, school, talk, plan) :
   suite fléchée et/ou mini-tableau, sans fait nouveau ni posologie.
