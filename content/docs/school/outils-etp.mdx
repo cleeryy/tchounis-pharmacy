@@ -3,12 +3,133 @@ title: "Mise en œuvre et outils"
 description: "Passer du bilan à l’action."
 ---
 
-> Contenu à compléter avec les cours.
+import { Callout } from 'fumadocs-ui/components/callout';
+import { Card, Cards } from 'fumadocs-ui/components/card';
+import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
+import { Step, Steps } from 'fumadocs-ui/components/steps';
+import { Accordion, Accordions } from 'fumadocs-ui/components/accordion';
 
-## Au programme
+Passer du bilan convenu aux séances réelles suppose de transformer des objectifs en situations d'apprentissage. Cette fiche présente la mise en œuvre de l'Éducation Thérapeutique du Patient (ETP — éducation thérapeutique du patient) d'après le diaporama du Travail Dirigé (TD — travail dirigé) 5 et sa consigne, la trame d'atelier de la Cellule Régionale Éducation Thérapeutique Amélioration des Pratiques et Évaluation (ETAPE — éducation thérapeutique amélioration des pratiques et évaluation) en Aquitaine, le conducteur vierge et le Cours Magistral (CM — cours magistral) sur la démarche éducative. Les pages 16 à 21 du diaporama du TD 5, composées d'images sans texte extractible, restent en TODO explicite. Le plan progresse des principes d'apprentissage vers les techniques, puis vers le conducteur et la co-animation.
 
-- Mise en œuvre de l’ETP et outils
+## L'essentiel en une minute
+
+Les quatre lignes ci-dessous condensent les repères à avoir en tête avant d'entrer dans le détail. Elles permettent de situer rapidement comment passer du contrat éducatif à l'atelier animé.
+
+- **Point de départ cité (TD 5)** : synthèse du bilan éducatif partagé avec compétences et objectifs définis, facteurs facilitants et limitants établis, projet(s) établi(s), mise en œuvre planifiée et contrat éducatif écrit, dans une compréhension mutuelle des objectifs et stratégies.
+- **Principes cités (TD 5 et CM)** : patient apprenant qui seul peut apprendre, intérêt perçu et absence d'angoisse, apprentissage comme processus individuel, constructif et cumulatif partant des représentations ; réflexion préalable exigée (désir d'apprendre, environnement favorable, présentation, outil, conducteur, modalités cités).
+- **Ateliers cités (CM)** : séances individuelles (30 à 45 minutes citées) ou collectives (minimum 3 personnes, 8 à 10 adultes et 6 à 8 enfants cités, 45 minutes citées avec maximum 3 heures si pause citée), structurées en trois temps (préparation, atelier avec synthèse, analyse après cités), à contenus scientifiquement fondés.
+- **Manques signalés (cours)** : pages 16 à 21 du TD 5 (exemples d'objectifs et outils, questions pour choisir un outil) illisibles en extraction — TODO, compléter avec le diaporama original et les formateurs ; trames ETAPE et conducteur vierge citées comme cas d'usage, appliquer la trame locale en vigueur.
+
+À retenir avant de poursuivre : la mise en œuvre listée prolonge le contrat écrit, respecte les principes de l'apprentissage adulte et s'outille par des techniques actives, un conducteur rédigé et une animation préparée. D'où l'importance d'en détailler chaque versant, en commençant par les principes.
+
+## 1. Principes et conditions de l'apprentissage
+
+Pour choisir un outil utilement, il faut d'abord comprendre comment le patient apprend. Le TD 5 rappelle que lui seul peut apprendre, qu'il doit y voir un intérêt pour lui et ne pas ressentir d'angoisse ni de peurs, l'apprentissage y étant décrit comme un processus individuel, constructif et cumulatif où l'apprenant traite activement l'information en modifiant sa structure cognitive initiale, à partir de ses représentations et de son organisation de la pensée (mémorisation, raisonnement, résolution de problèmes cités). Les paragraphes suivants présentent les conditions et actions citées avant de les détailler en liste, puis d'en tirer la posture d'animation.
+
+- **Conditions pour faciliter citées (TD 5)** : se questionner (réfléchir à partir de ses questions), découvrir (comprendre au regard de ses connaissances antérieures), s'exprimer (retenir ce qu'on redit avec ses mots), appliquer (maîtriser ce qu'on pratique), donner du sens (intégrer si cela a du sens), avoir un enjeu (mobiliser si l'enjeu est important), avoir un retour (feed-back rapide et précis cité).
+- **Actions pour faciliter citées (TD 5)** : établir une relation de confiance (en soi et en l'autre), développer la motivation (souhaits et projets de l'apprenant, utilité perçue, mise en réussite), partir de ce qu'il sait, répondre à ses questions, adapter le langage à son niveau, transmettre l'essentiel sans trop d'informations à la fois, faire des retours, respecter le rythme et le droit à l'erreur.
+- **Techniques actives citées (TD 5)** : elles favorisent la motivation, la participation du groupe, la coopération et la négociation, les attitudes et acquis, l'auto-évaluation, l'activation des connaissances, le renforcement des acquis, l'effort réflexif, la relation animateur-participants (facilitateur, tuteur cités).
+
+En pratique, cette section impose une méthode : partir des représentations, donner du sens et un enjeu, faire pratiquer et reformuler, doser l'information et retourner rapidement. Les conditions et actions listées montrent que l'outil ne vaut que par l'environnement qu'il crée. C'est le choix des techniques de présentation et d'exploration qui concrétise ensuite cet environnement.
+
+## 2. Présenter et explorer : quelles techniques
+
+Les principes posés, le TD 5 et le Cours Magistral détaillent les techniques de présentation des participants puis d'exploration des représentations. Le choix du mode de présentation y dépend de la finalité (ponctuel ou progressif), du résultat attendu (liens entre participants, renseignement de l'animateur), de la composition (participants se connaissant ou non), de la taille du groupe et du temps disponible, tandis que la présentation de l'animateur y dépend de la pédagogie (descendante ou active), de la typologie du groupe et de sa personnalité. Les paragraphes suivants présentent ces variantes avant de les détailler en onglets, puis d'en tirer le critère de choix.
+
+<Tabs items={['Se présenter', 'Explorer les représentations']} >
+  <Tab value="Se présenter">
+    **Présentation croisée / binôme citée (TD 5 et CM)** : facilite la prise de parole, diminue le stress, crée convivialité et connivence. **Tour de table cité** : classique et habituel, ne surprend pas, maintient les relations hiérarchiques. **Sous-groupe cité** : permet la découverte et une meilleure connaissance, développe la communication. **Portrait chinois cité** : livrer un peu de soi, favoriser l'esprit de groupe. **Présentation de l'arbre citée** : se présenter à travers plusieurs thèmes. **Autres citées** : curriculum vitae (CV — curriculum vitae) imaginaire, prénoms et lettres, dessinez-vous, portrait-minute, je me fais de la pub — contenus de cours cités d'après le Centre Régional d'Éducation pour la Santé (CRES — centre régional d'éducation pour la santé) Languedoc-Roussillon (janvier 2009 cité).
+  </Tab>
+  <Tab value="Explorer les représentations">
+    **Blason cité (TD 5)** : réflexion individuelle valorisante sur ses ressources, sentiment d'identité collective. **Photo-langage cité (TD 5 et CM)** : expression facilitée par l'image, ressenti et émotions exprimés avec distanciation. **Remue-méninges (brainstorming cité) (TD 5 et CM)** : collecte rapide d'information, donne la tonalité du groupe. **Carte conceptuelle citée (TD 5 et CM)** : explicitation des connaissances et de leurs liens, confrontation d'idées en groupe.
+  </Tab>
+</Tabs>
+
+<Callout type="warn" title="Pages-images illisibles">
+Pages 16 à 21 du diaporama du TD 5 (exemples d'objectifs et outils éducatifs, questions à se poser pour choisir un outil) composées d'images sans texte extractible au moment de la rédaction : TODO — compléter impérativement avec le diaporama original, la bibliographie citée (CRES, Marchand / Institut de Perfectionnement en Communication et Éducation Médicales (IPCEM — institut de perfectionnement en communication et éducation médicales)) et les formateurs, sans choisir d'outil au hasard.
+</Callout>
+
+Concrètement, cette section invite à choisir la présentation selon l'objectif relationnel (sécuriser par le binôme, ritualiser par le tour de table, faire se découvrir par le sous-groupe) puis à faire émerger les représentations par l'image, le dessin ou la carte avant tout apport. Les techniques listées restent des contenus de cours à adapter au public, dont les personnes ne sachant ni lire ni écrire évoquées dans les références. C'est le conducteur d'atelier qui ordonne ensuite ces choix.
+
+## 3. Conducteur d'atelier : rédiger avant d'animer
+
+Les techniques choisies, la trame ETAPE et le conducteur vierge imposent une rédaction préalable qui précise le public, les compétences, les objectifs, les moyens, les éducateurs, la durée, le déroulé et l'évaluation. Le Cours Magistral y ajoute que la forme ne se résume pas à un cours de thérapeutique : elle est guidée par une volonté d'apprentissage et non d'enseignement, avec réflexion sur le type de séances, les outils et la qualification des intervenants. La procédure suivante se lit dans l'ordre, chaque rubrique citée conditionnant l'animation.
+
+<Steps>
+  <Step>
+    Cadrer (trame ETAPE et conducteur vierge cités) : public cible et nombre maximum avec critères d'inclusion, patients ou proches précisés ; compétence(s) visée(s) ; objectifs éducatifs formulés en « le patient sera capable de… » avec verbe actif, contenu et critère, sans aucune posologie détaillée dans cette fiche ; caractéristiques du lieu, matériel, éducateurs (nombre, compétences, rôle de chacun) et durée totale avec temps par activité.
+  </Step>
+  <Step>
+    Dérouler (trame ETAPE et conducteur vierge cités) : introduction (accueil, objectifs, déroulement, règles de fonctionnement, lien avec les séances précédentes et suivantes) puis tableau par objectif (ce que fait l'éducateur, ce que font les participants, messages-clés, technique et outil avec fiche descriptive, durée et responsable) — contenu scientifiquement fondé enrichi des retours d'expérience, avec partage d'expérience par des patients formés fortement encouragé par l'Agence Régionale de Santé (ARS — agence régionale de santé) selon le Cours Magistral.
+  </Step>
+  <Step>
+    Évaluer et analyser (trame ETAPE, conducteur vierge et CM cités) : type, outil, déroulé et moment de l'évaluation (à l'issue pour compréhension et satisfaction, à distance pour acquis et utilité perçue cités) ; structuration en trois temps avec préparation avant, synthèse avec le patient pendant, et temps d'analyse après la séance ; synthèse du bilan reprise (compétences, objectifs, freins et leviers, projet) comme point de départ cité du TD 5.
+  </Step>
+</Steps>
+
+Pour lire cette procédure en méthode, aucun atelier ne s'improvise : le conducteur écrit ce qui sera fait, par qui, avec quoi, pour quel objectif et comment ce sera évalué. Les rubriques listées montrent que l'introduction sécurise et que la synthèse referme chaque objectif. Les trames citées restant des cas d'usage, il convient d'appliquer la trame locale en vigueur. Les formats de séances précisés ensuite cadrent les choix possibles.
+
+Les formats cités (CM) distinguent l'individuel du collectif selon les possibilités locales (accessibilité, disponibilité, moyens cités) et le bilan partagé (avec le patient et ses proches pour l'individuel). La liste suivante se lit du cadre vers le contenu, chaque format cité servant de repère d'organisation.
+
+- **Séances collectives citées (CM)** : un animateur et un co-animateur ; minimum 3 personnes, taille moyenne de 8 à 10 adultes et 6 à 8 enfants cités ; durée recommandée de 45 minutes pour les adultes citée, avec maximum de 3 heures si pause et deux séances enchaînées citées.
+- **Séances individuelles citées (CM)** : avec le patient et ses proches éventuels ; durée de 30 à 45 minutes citée.
+- **Contenus et méthodes cités (CM)** : activités programmées et structurées avec temps de sensibilisation, d'information orale et écrite, d'apprentissage de la gestion et du plan de traitement, et d'évaluation des compétences ; méthodes par savoirs en collectif (tour de table, exposé interactif, étude de cas, Métaplan, remue-méninges, arbre, photo-langage, cartes conceptuelles, ateliers cuisine et lecture d'étiquettes, simulations, activités physiques, table ronde, jeu de rôle, relaxation, audiovisuel cités, d'après De La Tribonnière 2016 cité), en individuel (entretien, étude de cas, simulation, pilulier, classeur imagier, planning thérapeutique, conseil téléphonique, courriels, travaux pratiques, activité physique, entretien centré sur l'émotion, jeu de rôle, lecture ou film cités) et en auto-apprentissage (lecture, sites, fiches, vidéo, pairs, associations, forums cités, avec accompagnement à la gestion de l'information) ; jeu sérieux (serious game cité) via la plateforme régionale citée comme repère de cours.
+
+En pratique, ces formats montrent que le collectif ne s'anime pas seul et que l'individuel associe les proches, avec des durées et tailles citées comme repères de cours à confronter au protocole local. Les méthodes listées restent à choisir selon le savoir visé (savoir, savoir-faire, savoir-être cités). C'est la co-animation qui sécurise ensuite le collectif.
+
+## 4. Co-animer : avantages, limites et méthode
+
+Les formats posés, le TD 5 détaille la co-animation comme une double écoute exigeante. Les avantages y tiennent à l'écoute bipolaire, à la sécurité des formateurs et à l'analyse partagée, tandis que les inconvénients y tiennent au coût, à la confiance, à la paresse et aux effets du groupe. Les paragraphes suivants présentent cet équilibre avant de le détailler en liste, puis d'en tirer la méthode.
+
+- **Avantages cités (TD 5)** : écoute bipolaire (double écoute des personnes et du groupe, recul sur le fonctionnement, moins d'arbitraire et d'impulsivité, limite de la toute-puissance, de la séduction, de la dépendance et de l'identification, apports de deux personnes) ; sécurité des formateurs (double expérience, anticipation, écoute, créativité, distance aux affects, partage d'analyse) ; analyse postérieure avec distanciation et effet miroir (œil extérieur, partage des représentations).
+- **Inconvénients cités (TD 5)** : coût ; confiance et connivence (attention à l'autre, peur d'être remis en cause ou déstabilisé) ; paresse (adhésion sans enthousiasme, repos sur l'autre, difficulté à sortir du préparé, réajustement reporté aux pauses) ; effets du groupe (sentiment d'être moins entendu, renvoi des contradictions et réactions inconscientes sur chaque animateur).
+- **En pratique cité (TD 5)** : avant — définir les rôles (qui sommes-nous, représentations, connaissances, compétences, expériences, complémentarités, qui fait quoi et quand) ; pendant — respecter le décidé, écouter l'autre, compléter sans surenchérir ; après — analyser le déroulé et les rôles de chacun.
+
+<Callout type="info" title="Méthode">
+Rédiger le conducteur, définir les rôles avant, respecter le partage pendant, analyser après : le TD 5 lie la qualité à cette discipline — devant tout atelier collectif, vérifier que chaque animateur sait qui fait quoi et quand.
+</Callout>
+
+Concrètement, cette section invite à préparer la complémentarité plutôt que la doublure, à tenir le cadre décidé sans rivalité, et à débriefer systématiquement. Les avantages et limites listés montrent que la co-animation sécurise à condition d'être travaillée. C'est l'exercice du TD 5 qui entraîne ensuite à ces gestes.
+
+L'exercice cité (consigne TD 5, repère daté du 9 octobre 2026) répartit en quatre groupes de quatre à cinq étudiants : trois groupes rédigent un conducteur sur le diabète (connaissances, autosoins techniques, adaptation psychosociale cités) en détaillant désir d'apprendre, environnement favorable, présentation, conducteur et modalités, et un groupe présente un outil d'animation ; apports théoriques par diaporama (30 minutes citées), travaux (60 minutes citées) puis présentation (30 minutes citées). La liste suivante se lit comme le cahier des charges de l'entraînement, chaque consigne citée servant de plan de rendu.
+
+- **Consignes de rédaction citées (TD 5)** : susciter le désir d'apprendre, créer un environnement favorable, choisir une technique de présentation, rédiger le conducteur, définir les modalités d'animation.
+- **Conclusion du TD 5 citée** : la mise en œuvre exige une réflexion préalable différant selon l'apprentissage — mêmes cinq points plus la sélection de l'outil selon l'apprentissage visé.
+
+En pratique, cet exercice montre que le même thème (diabète cité) appelle trois conducteurs différents selon la compétence visée. Les temps et groupes listés restent des repères datés à confronter aux consignes en vigueur. C'est la vigilance infirmière qui sécurise ensuite chaque animation réelle.
+
+## Points de vigilance IDE
+
+La vigilance infirmière découle de tout ce qui précède : préparer par écrit, animer en sécurité et évaluer sans nuire. Les puces ci-dessous reprennent les points des cours ; elles se lisent comme la mise en actes des principes, des techniques, du conducteur et de la co-animation.
+
+- Partir de la synthèse partagée et du contrat écrit, viser en priorité les compétences de sécurité parmi les autosoins, et fonder les contenus sur des sources scientifiques enrichies des retours d'expérience, d'après les cours — sans aucune posologie détaillée, appliquer la prescription et les protocoles en vigueur.
+- Adapter le langage et le rythme, doser l'information à l'essentiel, respecter le droit à l'erreur, protéger la confidentialité et recueillir l'accord, avec synthèse systématique avec le patient, d'après les cours.
+- Préparer les rôles en co-animation, respecter le partage décidé, compléter sans surenchérir, puis analyser le déroulé et les rôles après chaque séance, d'après le cours.
+- TODO : pages 16 à 21 du TD 5 illisibles, trame locale exacte et outils validés absents du dossier au moment de la rédaction — vérifier impérativement contre le diaporama original, la trame de l'établissement et les formateurs.
+
+Concrètement, cela signifie ne jamais animer sans conducteur rédigé, sans matériel vérifié et sans évaluation prévue, et ajuster en équipe plutôt qu'en séance. Devant un incident, un refus ou un doute sur un contenu, l'arrêt et le recours à l'encadrement et aux protocoles en vigueur priment, le TODO renvoyant aux vérifications indispensables.
+
+<Accordions>
+  <Accordion title="Complément : références citées par les cours" value="complement">
+    Le TD 5 cite le CRES Languedoc-Roussillon (techniques d'animation, janvier 2009) et Marchand / IPCEM (carte conceptuelle) ; le Cours Magistral cite De La Tribonnière (2016) pour les méthodes par savoirs, la Haute Autorité de Santé et l'Institut National de Prévention et d'Éducation pour la Santé (INPES — institut national de prévention et d'éducation pour la santé) (guide méthodologique de juin 2007 cité) et le CRES pour les techniques. Contenus de cours — vérifier les références en vigueur pour tout travail académique.
+  </Accordion>
+</Accordions>
+
+Après ce complément, la fiche se referme sur ses sources : tout ce qui précède vient des supports cités, les pages-images et la trame locale restant à vérifier contre les sources en vigueur.
+
+## Voir aussi
+
+<Cards>
+  <Card title="Bilan éducatif partagé" description="Synthèse, projet et contrat : le point de départ." href="./bilan-educatif" />
+  <Card title="Démarche éducative et ETP" description="Quatre étapes, cadre et évaluation : le versant soin." href="./demarche-etp" />
+  <Card title="Les concepts" description="Champs, prévention et méthode : le vocabulaire des ateliers." href="./concepts" />
+</Cards>
 
 ## Sources
 
-- Cours UE 4.6 S3 (à venir).
+- « La mise en œuvre de l'ETP et les outils », UE 4.6 S3, TD 5 du 9 octobre 2026 (32 pages) — principes, techniques, co-animation et conducteur.
+- « Consignes étudiants TD 5 — Mettre en œuvre l'ETP et les outils », 9 octobre 2026 (1 page) — exercice sur le diabète.
+- Cellule Régionale ETAPE Aquitaine, « Exemple de trame d'atelier ETP » (2 pages, cas d'usage cité) — rubriques, déroulé et évaluation.
+- « Conducteur atelier ETP vierge » (document de travail, cas d'usage cité) — rubriques du conducteur.
+- « La démarche éducative et l'Éducation thérapeutique du patient (ETP) », UE 4.6 S3, CM du 14 septembre 2026, promotion 2025-2028 (81 pages) — formats, méthodes par savoirs et contenus.
+- TODO : pages 16 à 21 du TD 5 (images non extractibles), trame locale en vigueur et outils validés absents du dossier — sources à ajouter dès réception.

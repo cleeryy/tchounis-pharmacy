@@ -3,12 +3,148 @@ title: "Plan de soins et chemin clinique"
 description: "Du plan de soins type au chemin clinique."
 ---
 
-> Contenu à compléter avec les cours.
+import { Callout } from 'fumadocs-ui/components/callout';
+import { Card, Cards } from 'fumadocs-ui/components/card';
+import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
+import { Step, Steps } from 'fumadocs-ui/components/steps';
+import { Accordion, Accordions } from 'fumadocs-ui/components/accordion';
 
-## Au programme
+Pour une même pathologie, les examens, traitements et soins se ressemblent, et c'est cette régularité qui autorise un savoir collectif écrit. Cette fiche suit le support « Plans de soins types et chemins cliniques » (UE 3.2 S3, août 2026) et les fiches de TD 3 et 4 (construction d'un plan de soins type puis d'un chemin clinique, août 2026). Les documents « Plan de soin type PTH (prothèse totale de hanche) » et « Exemple présentation chemin clinique » étant des scans illisibles dans les extraits, cette fiche ne s'appuie que sur les autres supports ; les cas cités (thyroïdectomie, fracture trochantérienne et prothèse de hanche, M. Choire, M. SANSE) sont des illustrations pédagogiques, pas des protocoles. Le plan va du standard vers le parcours, puis vers la qualité.
 
-- Plan de soins type et chemin clinique
+## L'essentiel en une minute
+
+Les quatre lignes ci-dessous condensent les définitions à avoir en tête avant d'entrer dans le détail. Elles permettent de situer rapidement où l'on se trouve entre savoir collectif, trajectoire et personnalisation.
+
+- **Plan de soins type (PST — plan de soins type) cité (cours)** : référentiel de qualité orientant le jugement clinique à partir d'un raisonnement collectif et la décision des interventions, pour un groupe homogène de patients (pathologie donnée ou situation de dépendance), préalable indispensable au chemin clinique.
+- **Chemin clinique (CC — chemin clinique) cité (Haute Autorité de santé (HAS — Haute Autorité de santé), cours)** : description, pour une pathologie donnée, de tous les éléments du processus de prise en charge constituant le parcours du patient ; tableau (au minimum la liste des actes) servant d'outil d'organisation, de planification et de traçabilité.
+- **Lien cité (cours)** : le PST explique le lien entre interventions et problématique de santé, le CC planifie les actions coordonnées sur la trajectoire ; dès que le patient sort du chemin (problèmes différents), le professionnel utilise les transmissions ciblées.
+- **TD cités (cours)** : TD 3 avec la situation de M. Choire (80 ans, fracture trochantérienne droite opérée avec prothèse de hanche) pour bâtir un PST par domaine, TD 4 avec la fracture du col du fémur et prothèse totale de hanche chez les 70 ans et plus pour en dériver un chemin clinique par jour (J0, J1, J3, J4, J5 cités).
+
+À retenir avant de poursuivre : le PST y formalise le savoir, le CC y organise le parcours, et la sortie du chemin y renvoie à l'écriture ciblée. Les exemples cités restent pédagogiques. Le reste de la fiche décline cette logique, des prérequis vers l'évaluation.
+
+<Callout type="info" title="Méthode">
+Le double défi cité (Soins, 2010) est d'alterner soins standardisés et personnalisés, avec écoute, disponibilité et connaissances pointues, une équipe motivée gardant un espace de communication qui garantit la personnalisation.
+</Callout>
+
+## 1. Prérequis : standardisation, recommandations et groupes homogènes
+
+Pour justifier un référentiel commun, le support part d'un constat simple : à pathologie égale, la prise en charge est quasiment similaire. Les recommandations professionnelles et les modèles de la HAS y fondent la standardisation, et les groupes homogènes y classent les séjours. La liste suivante se lit du constat vers le classement, chaque notion restant un contenu de cours.
+
+- **Standardisation citée (cours)** : pour chaque pathologie, examens, traitements et soins sensiblement identiques, avec une forme de standardisation répondant à des recommandations professionnelles et à des modèles de prise en charge, dont ceux de la HAS.
+- **Groupes homogènes de malades ou de patients (GHM (GHM — groupe homogène de malades) / GHP (GHP — groupe homogène de patients)) cités (cours)** : regroupement des prises en charge de même nature médicale et économique, catégorie élémentaire de classification en médecine, chirurgie et obstétrique (MCO — médecine, chirurgie, obstétrique) ; chaque séjour y aboutit selon un algorithme fondé sur les informations médico-administratives du résumé de sortie standardisé (RSS — résumé de sortie standardisé).
+- **Cadre cité du PST (cours)** : élaboré en équipe sous la direction du cadre de santé, validé par l'équipe médicale pour un groupe homogène, avec pour cadre de référence le modèle trifocal (lien entre savoir théorique et pratique, déployé avec le dossier patient informatisé).
+
+En pratique, cette section invite à lire le PST non comme une recette mais comme un consensus écrit issu d'une analyse de pratique. Les sigles et circuits cités sont des contenus de cours. C'est dans cet esprit que le contenu du PST se détaille ensuite.
+
+## 2. Contenu du PST : tableau trifocal et fondements
+
+Une fois le groupe défini, le PST rassemble le savoir sur les problèmes réels et les risques liés à la pathologie ou à la dépendance. Le titre, les définitions et le tableau d'analyse y sont standardisés, avec fondements et références. Le tableau suivant se lit comme la maquette citée, chaque colonne restant un contenu de cours.
+
+| Colonne citée | Contenu cité (cours) |
+| --- | --- |
+| Problèmes de santé | Cibles prévalentes par domaine trifocal (symptomatologie, complications, réactions humaines). |
+| Données cliniques | Données et cibles prévalentes caractérisant chaque problème. |
+| Actions sur prescription médicale | Interventions relevant de la prescription. |
+| Actions sur décisions infirmières ou d'autres professionnels | Interventions relevant du rôle propre et de la collaboration. |
+| Résultats attendus | Résultats en attente, centrés sur le patient. |
+| Argumentations scientifiques ou fondements théoriques | Fondements et argumentation selon le contexte de l'unité, avec références bibliographiques. |
+
+Le support y ajoute un intitulé, des définitions avec argumentation des choix, et un ensemble de pathologies prévalentes. L'exemple pédagogique de la thyroïdectomie totale cité illustre la maquette : nodule et adénopathies cervicales côté symptomatologie ; risques hémorragique et infectieux, hémorragie et infection, troubles de la déglutition côté complications ; risques puis présence de douleur, d'anxiété préopératoire et de perturbation de l'image corporelle côté réactions humaines. Le détail cité du risque de trouble de la déglutition (immobilité des cordes vocales, laryngoscopie et reprise alimentaire citées, résultats et fondements cités) reste une illustration pédagogique, sans valoir protocole actuel.
+
+<Callout type="warn" title="Repères datés">
+Exemple de thyroïdectomie, examens et délais cités (laryngoscopie dès J1 citée) : contenus de cours datés à visée pédagogique, à confronter aux protocoles en vigueur — ne pas les appliquer comme conduite actuelle.
+</Callout>
+
+Ce qu'il faut en retenir : le tableau fait correspondre chaque problème à ses données, ses actions réparties selon la prescription et le rôle propre, et ses résultats fondés. Les cases citées montrent la rigueur attendue. C'est dans cette logique que le chemin clinique décline ensuite le parcours.
+
+## 3. Chemin clinique : parcours planifié et tableau de coordination
+
+Le PST explique, le chemin organise : pour chaque problème ou risque du PST, le chemin note les actions de l'équipe pluridisciplinaire dans un tableau qui structure le parcours et remplace le diagramme de soins cité. L'onglet suivant se lit en comparant les deux outils, avant d'entrer dans les avantages.
+
+<Tabs items={['PST', 'Chemin clinique']}>
+  <Tab value="PST">
+    **PST cité (cours)** : savoir formalisé pour un groupe homogène, avec tableau d'analyse et fondements ; élément préalable indispensable, intégré comme le chemin au dossier patient informatisé.
+  </Tab>
+  <Tab value="Chemin clinique">
+    **Chemin clinique cité (cours, HAS)** : planification d'actions coordonnées sur la trajectoire, tableau structurant le parcours et les interventions programmées, outil d'organisation, de planification et de traçabilité de toutes les interventions.
+  </Tab>
+</Tabs>
+
+Les avantages cités montrent pourquoi ce double outillage vaut l'effort et la liste suivante les présente successivement, du collectif vers l'efficience. Elle se lit comme les gains attendus quand le chemin est tenu.
+
+- **Travail et clinique cités (cours)** : renforcement du pluriprofessionnel, diagnostics infirmiers clairement posés, pratiques harmonisées, anticipation des événements avec clinique renforcée, support pédagogique pour les nouveaux arrivants (sécurité, aide à la décision).
+- **Qualité et efficience citées (cours)** : outil de qualité et de recherche, limitation des dysfonctionnements (retards, oublis) par la prévisibilité et la coordination, examens non systématisés, coût diminué et durée moyenne de séjour contrôlée cités, lien hôpital-réseau renforcé.
+- **Intérêts cités (cours)** : réduction de la variabilité non justifiée, appropriation des recommandations, protocoles validés mis en œuvre, continuité et qualité de la délivrance, coordination et communication améliorées, soins et risques rationalisés.
+
+En pratique, cette liste invite à utiliser le chemin comme une partition commune où chacun sait quand intervenir, tout en gardant l'écoute qui personnalise. Les gains cités restent des contenus de cours. C'est dans cet esprit que l'élaboration et l'évaluation se règlent ensuite.
+
+## 4. Élaborer, appliquer et évaluer : consensus puis écarts
+
+Un référentiel ne vaut que par son élaboration collective et sa révision à partir des écarts observés. Le support confie l'écriture à une équipe médicale et paramédicale après analyse de pratique, avec consensus pour transformer les connaissances en savoir rédigé, notion reliée à la compétence comme mobilisation de savoirs, savoir-faire et savoir-être. La procédure suivante se lit dans l'ordre, de l'écriture vers l'ajustement.
+
+<Steps>
+  <Step>
+    Faire réaliser par une équipe médicale et paramédicale une analyse de pratique avant de formaliser par écrit le résultat de la réflexion collective, avec consensus pour valider le PST selon le cours.
+  </Step>
+  <Step>
+    Faire guider l'évaluation par le cadre de santé avec des objectifs, une durée et un nombre suffisant de personnes du groupe homogène : appropriation avec traçabilité par tous, réflexe « hors chemin clinique » avec écriture en transmissions ciblées, analyse de ces transmissions pour évaluer le raisonnement en lien avec le PST, grille de recueil avec points forts, points faibles et mesures correctrices collectives selon le cours.
+  </Step>
+  <Step>
+    Informatiser avec requêtes pour des évaluations globales par groupe à partir de la mesure des écarts, puis ajuster PST et chemin (points faibles et forts, mesures correctrices collectives) selon le cours.
+  </Step>
+</Steps>
+
+Le support souligne le rôle permanent de l'infirmière et de l'aide-soignante, présentes 24 heures sur 24 dans de nombreuses structures, et l'importance d'impliquer tous les acteurs dès la construction pour que l'évaluation ne soit pas ressentie comme un contrôle. Le savoir collectif accessible aux débutants comme aux experts recentre alors le raisonnement individuel sur les risques élevés, oriente l'évaluation personnalisée par les signes cliniques, et permet d'expliquer le sens des soins au patient et à sa famille. Les rôles et circuits cités restent des contenus de cours.
+
+Pour la conclusion du support, les deux outils donnent un consensus autour des mêmes problèmes de santé, une standardisation articulée à la personnalisation, une anticipation des risques, une qualité fondée sur des connaissances scientifiques et des raisonnements coordonnés, avec des liens entre savoir, savoir-faire et savoir-être. C'est dans cette exigence que les TD prennent leur sens.
+
+## 5. TD 3 et 4 : de M. Choire au chemin par jour (illustrations)
+
+La méthode s'apprend en fabriquant : un PST sur une fracture opérée, puis un chemin réparti par journées avec les professionnels mobilisés. Les consignes citées demandent d'identifier les trois domaines, puis de bâtir le tableau avec actions sur prescription et rôle propre, résultats et fondements. La liste suivante se lit du PST vers le chemin, chaque consigne restant un contenu de cours.
+
+- **TD 3 cité, PST (cours)** : M. Choire, 80 ans, chute à domicile sans malaise, fracture trochantérienne droite opérée avec prothèse de hanche, suites immédiates simples, douleur persistante ; éléments cités (perfusion, antibioprophylaxie, antalgiques de palier 1 et anti-inflammatoires non stéroïdiens (AINS — anti-inflammatoires non stéroïdiens) avec morphinique possible, héparine de bas poids moléculaire (HBPM — héparine de bas poids moléculaire) citée 2 fois par jour, bas de contention, pansement de hanche, drain de Redon, sonde urinaire, premier lever à J1) ; temps cité (5 minutes de consignes, 30 minutes d'identification trifocale, 1 heure de PST, 1 h 15 de mise en commun à 15 minutes par groupe). Illustrations et thérapeutiques citées : exemples pédagogiques, aucune posologie détaillée dans cette fiche, appliquer prescription et protocoles en vigueur.
+- **TD 4 cité, chemin (cours)** : à partir du PST du TD 3 et d'un PST complet fourni, construire le chemin de la fracture du col du fémur avec prothèse totale de hanche chez les 70 ans et plus, avec un jour par groupe (J0, J1, J3, J4 et J5 cités), professionnels mobilisés, durée approximative de chaque problème, modèle déposé sur e-notitia cité ; temps cité (10 minutes de consignes, 1 h 20 d'élaboration, 1 heure de mise en commun à 10 minutes par groupe avec tableau des formateurs). Repères pédagogiques et plateforme cités : contenus datés et locaux.
+- **Cas du TD projet de soins cité en écho (cours)** : M. SANSE, 83 ans, accident vasculaire cérébral (AVC — accident vasculaire cérébral) sylvien ischémique en unité neuro-vasculaire, avec jugement clinique listant constipation, communication verbale altérée, estime de soi, thrombose veineuse profonde, suspicion d'infection urinaire, récidive, déglutition, chute et soins personnels ; consigne citée (classer par domaine, développer un problème prioritaire par domaine avec au moins 2 éléments de négociation, planifier sur 13 h 45-21 h 15). Illustration citée sans détail de doses dans cette fiche.
+
+<Callout type="warn" title="Repères datés">
+Thérapeutiques, jours, horaires et plateformes cités (HBPM, antalgiques, J0-J5, 13 h 45-21 h 15, e-notitia) : contenus de cours datés et locaux à visée pédagogique, à confronter aux prescriptions et protocoles en vigueur — aucune posologie dans cette fiche.
+</Callout>
+
+En pratique, ces TD invitent à passer du savoir partagé au parcours daté, en nommant qui fait quoi et quand, avec les écarts tracés hors chemin. Les situations citées montrent la méthode sans la figer. C'est dans cette limite que s'inscrit la vigilance infirmière.
+
+## Points de vigilance IDE
+
+La vigilance infirmière découle de tout ce qui précède : appliquer le chemin sans cesser d'observer, et tracer tout ce qui s'en écarte. Les puces ci-dessous reprennent les points des supports ; elles se lisent comme la mise en actes du standard vers la personne, du tableau vers le chevet.
+
+- Utiliser PST et chemin comme des repères collectifs validés, en gardant l'évaluation personnalisée par les signes cliniques et l'explication du sens des soins au patient et à sa famille.
+- Dès qu'un problème diffère du chemin, écrire en transmissions ciblées et analyser l'écart en lien avec le PST, selon la méthode citée.
+- Répartir les actions selon la prescription, le rôle propre et la collaboration, avec traçabilité par tous et respect du champ de chaque professionnel.
+- Devant toute thérapeutique, délai ou organisation datés, appliquer la prescription et le protocole en vigueur ; aucune posologie n'est détaillée dans cette fiche.
+- TODO : PST de prothèse totale de hanche et exemple de chemin illisibles dans les extraits, fondements fins et modèle e-notitia non détaillés — compléter avec les cours en vigueur.
+
+Concrètement, cela signifie cocher le prévu, écrire l'imprévu, et relire les écarts en équipe pour ajuster collectivement. Devant un risque ou une aggravation, l'alerte et la traçabilité selon le protocole priment, les repères datés restant à vérifier comme l'indique le TODO.
+
+<Accordions>
+  <Accordion title="Complément : références citées par le support" value="complement">
+    Le support cite notamment Psiuk et Gouby (plans de soins types et chemins cliniques, 19 situations prévalentes, 2013), Psiuk (méthodologies et mobilisation des connaissances, revues Soins 2010 et 2013) et une ressource étudiante consultée en 2023. Repères bibliographiques de cours, à confronter aux éditions et référentiels en vigueur.
+  </Accordion>
+</Accordions>
+
+Après ce complément, la fiche se referme sur ses sources : tout ce qui précède vient des supports cités, les contenus datés restant à confronter aux référentiels et protocoles en vigueur.
+
+## Voir aussi
+
+<Cards>
+  <Card title="Méthode et raisonnement clinique" description="Recueillir, analyser et prioriser avant le projet." href="./methode-rc" />
+  <Card title="Transmissions ciblées" description="Tracer l'essentiel et planifier la suite." href="./transmissions" />
+  <Card title="Négociation" description="Consentir, négocier et tracer les accords." href="./negociation" />
+  <Card title="Accueil et alliance" description="Sécuriser, connaître et construire la confiance." href="./accueil" />
+</Cards>
 
 ## Sources
 
-- Cours UE 3.2 S3 (à venir).
+- « Plans de soins types et chemins cliniques », UE 3.2 S3 projet de soins infirmiers, compétence 2, V1, août 2026 (45 pages).
+- « TD 3 — Plans de soins : construction d'un plan de soins type » (fiche intervention étudiants), UE 3.2, promotion 2025-2028, V1, août 2026 (3 pages) : situation de M. Choire citée en illustration.
+- « TD 4 — Du plan de soins type au chemin clinique » (fiche intervention étudiant), UE 3.2, promotion 2025-2028, V1, août 2026 (1 page) : consignes par jour citées.
+- « TD projet de soins » (TD n° 6), UE 3.2, promotion 2025-2028, V1, 3 octobre 2026 (9 pages) : cas de M. SANSE cité en écho et planification citée.
+- Documents « Plan de soin type PTH » et « Exemple présentation chemin clinique » : scans illisibles dans les extraits, non utilisés au-delà du signalement.

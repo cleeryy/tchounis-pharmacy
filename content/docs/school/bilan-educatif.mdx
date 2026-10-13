@@ -3,12 +3,132 @@ title: "Bilan éducatif partagé"
 description: "Le point de départ de toute démarche éducative."
 ---
 
-> Contenu à compléter avec les cours.
+import { Callout } from 'fumadocs-ui/components/callout';
+import { Card, Cards } from 'fumadocs-ui/components/card';
+import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
+import { Step, Steps } from 'fumadocs-ui/components/steps';
+import { Accordion, Accordions } from 'fumadocs-ui/components/accordion';
 
-## Au programme
+Proposer des séances sans avoir écouté la personne expose à éduquer à côté de ses besoins. Cette fiche présente le bilan éducatif partagé (BEP — bilan éducatif partagé), première étape de la démarche, d'après le Cours Magistral (CM — cours magistral) sur la démarche éducative, le diaporama dédié au bilan et la consigne du Travail Dirigé (TD — travail dirigé) 3, avec la trame RUNDIABETE de l'Unité de Coordination et d'Appui à l'Éducation Thérapeutique du Patient (UCEP — unité de coordination et d'appui à l'éducation thérapeutique du patient) de La Réunion comme cas d'usage cité. Les durées et organisations citées y sont des repères de cours, à confronter aux protocoles en vigueur. Le plan progresse des finalités vers les dimensions, puis vers la trame et la synthèse.
 
-- Bilan éducatif partagé
+## L'essentiel en une minute
+
+Les quatre lignes ci-dessous condensent les repères à avoir en tête avant d'entrer dans le détail. Elles permettent de situer rapidement ce que le bilan est et comment le conduire.
+
+- **Nature citée (cours)** : première étape de la démarche, évolutive, non exhaustive, collégiale et consignée au dossier ; réalisée par un éducateur formé lors d'une séance individuelle ; durée d'environ 1 heure 30 citée.
+- **Finalités citées (cours)** : côté usager (s'exprimer, comprendre son expérience, prendre conscience du besoin d'apprendre, comprendre le sens et renforcer la motivation) et côté soignant (expliquer ses intentions, comprendre les facteurs influençant les comportements, évaluer les potentialités, convenir d'un plan personnalisé).
+- **Dimensions citées (Berton/Berthon, cours)** : biomédicale (qu'a-t-il ?), socioprofessionnelle (que fait-il ?), cognitive (que sait-il ?), psycho-affective (qui est-il ?) et motivationnelle (quel est son projet ?), avec exemples de questions cités.
+- **Cas d'usage cité (trame RUNDIABETE)** : entretien en contexte d'égal à égal par questions ouvertes, reformulation et valorisation, transmis au patient et versé au dossier « Mon parcours ETP », avec synthèse (représentations, leviers, freins), propositions de séances, consentement et étoile des compétences — cas d'usage pédagogique cité, appliquer la trame locale en vigueur.
+
+À retenir avant de poursuivre : le bilan listé initie la confiance et l'engagement sans viser l'exhaustivité, explore cinq dimensions avec des questions ouvertes, et se conclut par une synthèse partagée qui fonde le projet. D'où l'importance d'en détailler les finalités, en commençant par le sens du partage.
+
+## 1. Finalités : pourquoi partager le bilan
+
+Pour conduire utilement, il faut d'abord comprendre que le bilan n'est pas un interrogatoire mais une rencontre qui met la réalité vécue au centre. Le Cours Magistral y distingue le choix de s'intéresser à la réalité telle que la personne la vit, la perçoit et la comprend, l'accueil de son vécu, l'analyse objective de ses propos et la lecture partagée en équipe de sa situation avec la maladie et le traitement. Les paragraphes suivants présentent ce double bénéfice avant de le détailler en onglets, puis d'en tirer la posture.
+
+<Tabs items={['Côté usager', 'Côté soignant']} >
+  <Tab value="Côté usager">
+    **Finalités côté usager citées (cours)** : s'exprimer sur sa vie, sa maladie, ses besoins et son projet ; s'exprimer sur son expérience et mieux la comprendre ; prendre conscience de son besoin d'apprendre ; comprendre le sens de l'éducation et renforcer sa motivation ; découvrir la personne du soignant éducateur et ses impératifs. La synthèse du diaporama y ajoute : montrer qu'on a entendu la personne et ce qu'elle vit, sans la juger, et convenir avec elle des objectifs.
+  </Tab>
+  <Tab value="Côté soignant">
+    **Finalités côté soignant citées (cours)** : mettre le patient au centre, s'intéresser à sa réalité vécue, identifier ses besoins, prendre en compte ses demandes et son projet ; expliquer ses intentions éducatives et la démarche ; comprendre les facteurs influençant les comportements ; évaluer avec le patient la situation et les potentialités d'apprentissage ; convenir d'un plan d'action personnalisé avec formulation des objectifs et compétences. Le bilan y est décrit comme évolutif, non exhaustif, collégial et consigné, avec lecture partagée en équipe.
+  </Tab>
+</Tabs>
+
+<Callout type="error" title="Posture">
+Accueillir le vécu, s'intéresser aux interprétations bien plus qu'aux explications, prendre le temps d'inviter au récit : le cours lie l'engagement à cette qualité d'écoute — un bilan mené comme un interrogatoire fermé manque sa finalité.
+</Callout>
+
+Concrètement, cette section invite à ouvrir par la présentation et l'explication des intentions, à laisser raconter avant de questionner, et à valider avec la personne les objectifs et compétences. Les finalités listées montrent que le bilan produit à la fois de la connaissance partagée et de la motivation. C'est l'exploration des cinq dimensions qui donne ensuite matière à cette synthèse.
+
+## 2. Cinq dimensions : quoi explorer
+
+Les finalités posées, le diaporama structure l'exploration en cinq dimensions attribuées à Isabelle Berton (écrit « Berthon » en bibliographie du diaporama). Chaque dimension associe des contenus à recueillir et des exemples de questions citées, sans ordre strict selon la trame RUNDIABETE. La liste suivante se lit de la maladie vers le projet, chaque dimension citée servant de guide d'entretien.
+
+- **Biomédicale : qu'a-t-il ? (cours)** : nature, ancienneté, évolution, sévérité ou gravité ; problèmes annexes importants pour l'usager ; fréquence et motifs d'hospitalisation ; exemples de questions cités : « Quels traitements prenez-vous ? », « En quelle année avez-vous eu votre premier infarctus ? », « Avez-vous fait des allergies à ce médicament ? » — sans aucune posologie dans cette fiche.
+- **Socioprofessionnelle : que fait-il ? (cours)** : vie quotidienne, loisirs, profession et activité, hygiène de vie, environnement social et familial ; exemples de questions cités : « Quelle est votre profession ? », « Quels sont vos loisirs ? », « Quel(s) sport(s) pratiquez-vous ? ».
+- **Cognitive : que sait-il ? (cours)** : connaissances sur la maladie et son histoire, ce qu'il veut savoir ; représentations de la maladie, des traitements et de leurs conséquences ; croyances et conceptions ; rôle et mode d'action des médicaments ; efficacité perçue ; vécu, sentiment d'auto-efficacité et image de soi ; utilité perçue de l'éducation ; façons préférées d'apprendre et capacités ; exemples de questions cités : « À votre avis, quelle influence a l'alimentation sur votre pathologie ? », « En cas d'hypoglycémie, que faites-vous ? ».
+- **Psycho-affective : qui est-il ? (cours)** : stade dans l'acceptation (choc initial, déni cités), stress, réactions face aux crises, attitudes, stratégies d'adaptation (coping cité), réussites et difficultés ; exemples de questions cités : « Qu'attendez-vous de cette rencontre ? En quoi puis-je vous aider ? », « Quelles situations vous stressent particulièrement ? », « Quelles personnes de votre entourage vous soutiennent ? ».
+- **Motivationnelle : quel est son projet ? (cours)** : repérage du projet initial et de la réceptivité à la démarche, présentation de ce que l'éducation peut apporter, motivation ; exemples de questions cités : « Quels projets vous tiennent à cœur actuellement ? », « Quelle aide voulez-vous qu'on vous apporte ? », « En quoi vos projets sont-ils compromis du fait de la maladie ? ».
+
+Le diaporama y ajoute les contenus transversaux à explorer : besoins, valeurs, émotions, ressources, projets de vie, représentations, mécanismes de défense, cognitif et métacognitif (penser sur ses propres pensées cité), infra-cognitif (réflexe de pensées cité), regard sur la santé, la maladie et le traitement. La liste suivante se lit comme le fond commun irriguant les cinq dimensions, chaque contenu cité servant de point de vigilance.
+
+- **Fond commun cité (CM)** : besoins, valeurs, émotions, ressources, projets de vie, représentations, mécanismes de défense, processus métacognitifs et regard porté sur la santé, la maladie et le traitement.
+- **Besoin éducatif en santé cité (CM, Deccache et Lavendhomme 1989)** : ce qu'il serait nécessaire d'apprendre pour résoudre un ou plusieurs problèmes de santé — ce que les patients doivent apprendre, réapprendre ou transformer pour mieux vivre avec leur maladie.
+
+En pratique, cette section impose une méthode d'entretien : questions ouvertes, reformulation, demande de précision, valorisation et synthèses, sans ordre strict, dans un contexte décrit comme d'égal à égal entre personnes responsables. Les questions listées servent d'amorces et non de questionnaire à cocher. C'est la trame RUNDIABETE qui illustre ensuite cette mise en actes.
+
+## 3. Cas d'usage : la trame RUNDIABETE (citée)
+
+Les dimensions posées, la trame de bilan initial sur le diabète du programme RUNDIABETE, porté par l'Unité de Coordination et d'Appui à l'Éducation Thérapeutique du Patient de La Réunion, illustre un recueil structuré en six volets avec synthèse, propositions et étoile des compétences. Les questions des cadres orange y sont complétées par l'éducateur d'après les réponses et non posées directement, dans un but d'évaluation statistique de données anonymisées cité, et le bilan (hors encadrés) est transmis au patient et versé au dossier « Mon parcours ETP » cité. Les paragraphes suivants présentent ce cas avant de le détailler en étapes, avec renvoi à la trame locale en vigueur.
+
+<Steps>
+  <Step>
+    Explorer ce que la personne a (volet A cité) : état de santé, antécédents, pathologies, durée et évolution ; diabète, dyslipidémie, hypertension artérielle, syndrome d'apnées du sommeil cités ; symptômes ressentis, complications (plaie du pied, atteintes rénale, cardiaque, artérielle dont artériopathie, Accident Vasculaire Cérébral (AVC — accident vasculaire cérébral) et Infarctus Du Myocarde (IDM — infarctus du myocarde), neuropathie, rétinopathie cités, cochés si cités par le patient sans les citer) et auto-évaluation sur une échelle de 1 à 10 citée.
+  </Step>
+  <Step>
+    Explorer ce qu'elle sait (volet B cité) : définition personnelle du diabète, sources d'information (professionnel, internet ou médias, ami ou famille cités), complications connues, gravité perçue sur échelle de 1 à 10 citée, traitement raconté (difficultés, oublis, craintes, nécessité perçue, insuline, surveillance glycémique, passage infirmier cités), croyances sur les causes (représentation exogène ou endogène citée) et leviers perçus d'amélioration ou d'aggravation.
+  </Step>
+  <Step>
+    Explorer comment elle vit avec (volet C cité) : quotidien et gêne principale, vécu sur échelle de 1 à 10 citée, actions déjà mises en place, attribution (soi, entourage, médecin, environnement cités), facilité à en parler, changements et impacts (travail, loisirs, famille, finances, renoncements cités), projection à cinq ans (très inquiet à confiant cité).
+  </Step>
+  <Step>
+    Explorer qui elle est et ce qu'elle fait (volets D et E cités) : journée type, place du diabète et du traitement dans le récit, hygiène de vie (alcool, tabac cités), entourage (statut, enfants, information, soutien perçu et besoin cité, antécédents familiaux, recours en cas de besoin cité), activités professionnelle, de loisirs et physique (nature et rythme cités).
+  </Step>
+  <Step>
+    Repérer ressources et obstacles puis formuler la synthèse (volet F et synthèse cités) : projets et ce qui y tient à cœur, obstacles perçus, attentes et priorités vis-à-vis de l'Éducation Thérapeutique du Patient, objectifs exprimés ; synthèse en représentations et croyances, atouts et leviers, difficultés et freins, avec remarque d'éducateur non versée au dossier citée ; propositions de séances (compréhension et risques cardiovasculaires, suivi et surveillance dont Hémoglobine glyquée (HbA1c — hémoglobine glyquée) et cholestérol, alimentation, activité physique, expression et entourage cités), format collectif ou individuel (avec motif si individuel cité), consentement recueilli, modalités d'envoi au patient et étoile des compétences complétée avec le patient cités.
+  </Step>
+</Steps>
+
+<Callout type="warn" title="Cas d'usage daté">
+Trame RUNDIABETE / Unité de Coordination et d'Appui à l'Éducation Thérapeutique du Patient de La Réunion citée comme cas d'usage pédagogique (licence Creative Commons Attribution – Pas d'Utilisation Commerciale – Pas de Modification citée) — appliquer impérativement la trame locale en vigueur, sans recopier ce cas comme modèle actuel.
+</Callout>
+
+Concrètement, ce cas montre comment passer des dimensions aux décisions : chaque volet alimente la synthèse, la synthèse fonde les séances proposées, et l'étoile rend visibles les écarts à travailler. Les échelles et cases listées restent des contenus de cours cités. C'est l'exercice du TD 3 qui entraîne ensuite à construire sa propre trame.
+
+## 4. TD 3 : s'entraîner au bilan sur le diabète
+
+Le cas illustré, la consigne du TD 3 organise un entraînement en cinq temps sur le diabète. Le premier temps (15 minutes citées) définit individuellement le bilan et sa finalité, le deuxième (15 minutes citées) présente le diaporama jusqu'à la trame, le troisième (45 minutes citées) construit la trame d'entretien, le quatrième (45 minutes citées) joue une mise en situation soignant-soigné avec observateurs, et le cinquième (45 minutes citées) analyse l'entretien. La liste suivante se lit dans l'ordre, chaque temps cité servant de repère de préparation.
+
+- **Mise en situation citée (consigne TD 3)** : infirmier en Éducation Thérapeutique du Patient accueillant une patiente atteinte de diabète de type 1 adressée par l'endocrinologue vers le programme, après présentation, en suivant la trame construite — situation simulée citée.
+- **Objectifs des observateurs cités (consigne TD 3)** : pertinence des questions, facteurs favorisant la relation, freins à l'expression du soigné.
+- **Objectifs pédagogiques cités (consigne TD 3)** : identifier les dimensions, élaborer un diagnostic éducatif et réaliser sa synthèse.
+
+En pratique, cette section invite à préparer la trame avant de jouer, à observer la relation autant que le contenu, et à analyser l'entretien dimension par dimension. Les temps et la situation listés restent des repères de cours datés (consigne du 30 septembre 2026) à confronter aux consignes en vigueur. C'est la synthèse partagée qui referme ensuite le bilan.
+
+La synthèse citée (cours) identifie les compétences et objectifs éducatifs sans systématiquement reprendre les cinq dimensions bien qu'explorées, repère les facteurs facilitants et limitants de l'apprentissage, et identifie le projet de l'usager — avec besoins, ressources, freins, projet et changement souhaité. Le paragraphe précédent montre que cette synthèse se valide avec la personne et se partage en équipe avant de fonder le contrat éducatif. Les contenus listés confirment que le bilan n'a pas vocation à être exhaustif mais à montrer qu'on a entendu sans juger.
+
+## Points de vigilance IDE
+
+La vigilance infirmière découle de tout ce qui précède : écouter sans juger, explorer sans épuiser et synthétiser sans trahir. Les puces ci-dessous reprennent les points des cours ; elles se lisent comme la mise en actes des finalités, des dimensions et de la trame.
+
+- Conduire en séance individuelle, avec un éducateur formé, en prenant le temps (environ 1 heure 30 citée), par questions ouvertes avec reformulation et valorisation, dans un contexte décrit comme d'égal à égal — vérifier la durée et l'organisation contre le protocole local.
+- Explorer les cinq dimensions citées avec leurs exemples de questions, sans ordre strict, en accueillant représentations, émotions et mécanismes de défense, et en repérant ressources, freins et projet.
+- Formuler la synthèse avec la personne (objectifs, compétences à mobiliser ou acquérir), la partager en équipe, la consigner au dossier, recueillir le consentement et transmettre le bilan selon le choix du patient, d'après les cours — appliquer la trame locale en vigueur.
+- TODO : trame locale exacte, dossier d'éducation et modalités de transmission en vigueur absents du dossier au moment de la rédaction — vérifier impérativement contre le protocole et la trame de l'établissement.
+
+Concrètement, cela signifie préparer la trame sans la réciter, noter sans interpréter, et valider chaque formulation avec la personne avant de la consigner. Devant une détresse, un refus ou un désaccord en équipe, l'arrêt, l'écoute et le recours à l'encadrement priment, le TODO renvoyant aux vérifications indispensables.
+
+<Accordions>
+  <Accordion title="Complément : bibliographie du diaporama" value="complement">
+    Le diaporama cite Traynard (2010, diagnostic éducatif), Communier et Couralet (Instance Régionale d'Éducation et de Promotion de la Santé (IREPS — instance régionale d'éducation et de promotion de la santé), 2011) et Berthon (repères pratiques) comme repères bibliographiques de cours, et attribue les cinq dimensions à Isabelle Berton (Berthon en bibliographie). Contenus de cours — vérifier les références en vigueur pour tout travail académique.
+  </Accordion>
+</Accordions>
+
+Après ce complément, la fiche se referme sur ses sources : tout ce qui précède vient des supports cités, la trame locale et les références restant à vérifier contre les protocoles en vigueur.
+
+## Voir aussi
+
+<Cards>
+  <Card title="Démarche éducative et ETP" description="Quatre étapes, cadre et évaluation : le versant soin." href="./demarche-etp" />
+  <Card title="Mise en œuvre et outils" description="Du contrat aux ateliers : passer du bilan à l'action." href="./outils-etp" />
+  <Card title="Les concepts" description="Champs, prévention et méthode : le vocabulaire du bilan." href="./concepts" />
+</Cards>
 
 ## Sources
 
-- Cours UE 4.6 S3 (à venir).
+- « La démarche éducative et l'Éducation thérapeutique du patient (ETP) », UE 4.6 S3, CM du 14 septembre 2026, promotion 2025-2028 (81 pages) — bilan, finalités et synthèse.
+- « Le bilan éducatif partagé », UE 4.6 S3, 28 septembre 2026 (16 pages) — cinq dimensions avec exemples de questions et synthèse.
+- « Consignes étudiants TD 3 — Bilan éducatif partagé », 30 septembre 2026 (1 page) — entraînement sur le diabète.
+- « BEP initial diabète », trame d'entretien RUNDIABETE, UCEP de La Réunion (16 pages, cas d'usage cité) — volets, synthèse, propositions et étoile des compétences.
+- TODO : trame locale en vigueur et dossier d'éducation absents du dossier — sources à ajouter dès réception.

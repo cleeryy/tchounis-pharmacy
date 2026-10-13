@@ -3,12 +3,125 @@ title: "Les différents types d’entretien"
 description: "Quel entretien pour quel objectif."
 ---
 
-> Contenu à compléter avec les cours.
+import { Callout } from 'fumadocs-ui/components/callout';
+import { Card, Cards } from 'fumadocs-ui/components/card';
+import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
+import { Step, Steps } from 'fumadocs-ui/components/steps';
+import { Accordion, Accordions } from 'fumadocs-ui/components/accordion';
 
-## Au programme
+Un patient qui arrive aux urgences et répond à un questionnaire rapide, une famille accueillie le jour d'une admission, une personne en crise qu'il faut apaiser ici et maintenant : ces trois scènes n'appellent pas le même entretien. Cette fiche suit le cours magistral (CM — cours magistral) « Différents types d'entretien » de l'unité d'enseignement 4.2 S3 (soins relationnels, septembre 2025), qui pose les définitions, les configurations, les méthodes et les phases de l'entretien infirmier. Les contenus y sont cités comme repères de cours, à confronter aux protocoles en vigueur. Le plan progresse des définitions vers les méthodes et les types, puis vers la conduite pratique en quatre phases.
 
-- Types d’entretien
+## L'essentiel en une minute
+
+Les quatre lignes ci-dessous condensent les repères à avoir en tête avant d'entrer dans le détail. Elles permettent de situer rapidement où l'on se trouve entre recueil d'informations et relation d'aide.
+
+- **Définitions citées** : interaction entre deux personnes (le soignant et le patient) qui s'adressent mutuellement et volontairement la parole avec un objectif et un intérêt communs (Dabrion, citée) ; situation provisoire d'interaction et d'inter-influence, essentiellement verbale, avec un objectif préalablement posé ; formelle ou informelle, elle nécessite des conditions et des méthodes différentes.
+- **Configurations citées** : entretien formel structuré (à l'initiative du soignant, adapté à l'éducatif, peu d'initiatives au patient) ou non structuré (adapté à la relation d'aide, expression libre) ; entretien informel structuré (temps court, information précise à passer ou recueillir) ou non structuré (ponctuel, décidé par les circonstances, lieu non défini).
+- **Méthodes citées** : entretien directif (questions précises, réponses brèves, récupération d'informations) ; semi-directif (questions anticipées, ouvertes possibles, personne suivie plutôt que dirigée) ; non directif centré sur la personne (aucune direction imposée, facilitation de l'expression du vécu).
+- **Phases citées** : préparer l'entretien, conduire l'entretien, clôturer l'entretien, réaliser les transmissions ; l'entretien infirmier est un outil au service du projet de soins.
+
+À retenir avant de poursuivre : le cours rappelle avec Watzlawick (cité) qu'il est impossible de ne pas communiquer, car même le silence transmet un message. D'où l'importance du choix du type et de la méthode selon l'objectif et la demande. Le reste de la fiche décline cette logique, des buts vers la pratique.
+
+<Callout type="info" title="Méthode">
+Pour réviser, associer chaque notion à sa question : définitions — qu'est-ce qu'un entretien, configurations — formel ou informel, méthodes — qui dirige, types — quel objectif, phases — comment conduire.
+</Callout>
+
+## 1. Définir l'entretien et ses buts
+
+Définir l'entretien évite de confondre toute conversation avec un acte de soin relationnel, car le cours exige une interaction volontaire avec un objectif partagé. La dimension relationnelle du soin y est présentée comme transversale à tout acte thérapeutique, et la rencontre met en présence une personne en difficulté (aidée, soignée, malade, patiente, résidente, usagère citée) ayant posé une demande d'aide implicite ou explicite, et un professionnel infirmier diplômé et formé aux pratiques d'aides psychologiques telles que définies dans son rôle propre par le décret infirmier (cité). Les variantes suivantes situent les buts possibles avant de détailler les conditions.
+
+<Tabs items={['Buts', 'Conditions et variables']}>
+  <Tab value="Buts">
+    **Six buts cités (formel ou informel)** : élaboration d'un climat de confiance ; support de médiation ; résolution de problèmes et explicitation ; soutien et motivationnel ; relation d'aide ; entretien auprès d'une personne en crise.
+  </Tab>
+  <Tab value="Conditions et variables">
+    **Conditions citées** : lieu calme, non surchauffé, confortable, clos ; temps (durée et moment) ; présentation (personne, objectif) ; positions (même hauteur, objet entre participants, côte à côte, distance physique) ; confidentialité (chambre à deux personnes citée, propos partagés avec l'équipe) ; tenir compte de l'âge, du niveau d'études, de la culture, de l'état de fatigue et du contexte. **Variables citées** : matérielles (unité de lieu) ; symboliques (unité de temps, de personne, d'action) ; inhérentes au soignant (niveau de formation, connaissance de soi, disponibilité psychique) ; inhérentes au soigné (état physique et mental, âge cité) ; liées au contexte motivationnel (demande émanant du patient, d'un tiers, ou à l'initiative de l'infirmier diplômé d'État (IDE — infirmier diplômé d'État)).
+  </Tab>
+</Tabs>
+
+La comparaison montre que les buts orientent le degré de structure, tandis que les conditions et variables rappellent que le même entretien ne se conduit pas de la même façon selon le lieu, le moment et l'origine de la demande. C'est sur ce socle que s'articulent les trois méthodes de la section suivante.
+
+## 2. Trois méthodes : directif, semi-directif, non directif
+
+Une fois l'objectif et le cadre posés, la méthode règle qui mène l'échange et avec quelles questions, car on ne recueille pas une information urgente comme on accompagne un vécu. Le cours distingue trois méthodes, chacune illustrée par des exemples de cours. Les variantes suivantes se lisent du plus dirigé vers le plus libre, avant de détailler les types d'entretien correspondants.
+
+<Tabs items={['Directif', 'Semi-directif', 'Non directif']}>
+  <Tab value="Directif">
+    **Entretien directif (cours)** : structuré par des questions précises, réponses attendues brèves, précises et concrètes ; permet en général de récupérer des informations. Exemple cité : questionnaire aux urgences.
+  </Tab>
+  <Tab value="Semi-directif">
+    **Entretien semi-directif (cours)** : questions anticipées (définies), questions ouvertes possibles laissant plus de place à la personne soignée ; la personne est davantage suivie que dirigée. Exemples cités : entretien d'accueil (apparition officielle en 1986 dans le guide du service infirmier citée : dialogue entre l'infirmier diplômé d'État et le patient dans les heures suivant l'admission ou dès la première rencontre en extrahospitalier) ; entretien de recueil de données ; entretien de conseil, informatif, à caractère éducatif ou pédagogique (aider à prendre en charge sa santé, expliquer, montrer, informer, répondre — exemple du brossage des dents cité).
+  </Tab>
+  <Tab value="Non directif">
+    **Entretien non directif centré sur la personne (cours)** : le soignant ne donne pas de direction, il n'intervient que pour faciliter l'expression du vécu afin que la personne trouve ses propres réponses. Exemples cités : entretien de relation d'aide (réduire la souffrance, permettre de verbaliser, aider à remobiliser les ressources) ; entretien d'aide thérapeutique.
+  </Tab>
+</Tabs>
+
+La comparaison montre un dégradé de directivité : le directif recueille, le semi-directif suit et informe, le non directif facilite sans diriger. Les types d'entretien décrits ensuite prolongent cette logique par objectifs de soins, du recueil vers la crise.
+
+## 3. Les types d'entretien par objectif
+
+Les méthodes ne suffisent pas sans des types nommés par leur finalité, car chaque situation de soin appelle un objectif précis. Le cours situe d'abord la personne dans son processus pathologique et dans l'étape de son projet thérapeutique afin d'établir les objectifs, puis choisit le type en fonction des priorités, du caractère formel ou informel, de la demande exprimée et des particularités du contexte. La liste suivante se lit de l'accueil vers l'urgence relationnelle, chaque type restant un contenu cité.
+
+- **Accueil, recueil et information (cours)** : entretien d'accueil de la personne dans toutes ses dimensions, de la famille et de l'entourage (accueillir, établir le contact, faciliter la communication, instaurer un climat de confiance, sécuriser, mettre en place une relation de soin ; moyens cités : Qui, Quoi, Quand, Pourquoi Faire, Pourquoi Maintenant) ; entretien de recueil des données, des attentes et besoins en santé ; entretien informatif, de conseil ou à visée éducative.
+- **Évaluation, soutien et crise (cours)** : entretien d'évaluation de l'adhésion au projet de soin et de repositionnement au cadre thérapeutique ; entretien de soutien psychologique (parler des difficultés présentes, des craintes, du vécu ; réduire la souffrance psychique, soutenir dans les moments difficiles) ; entretien de crise (réduire l'état de crise, desserrer l'angoisse, réduire l'agitation, établir un minimum de contact ; calmer ici et maintenant pour restaurer la communication — exemples cités : personne agressive aux urgences après des heures d'attente, personne voulant sortir contre avis médical ; la crise y est définie comme moment aigu de déséquilibre et rupture pouvant entraîner une détresse : deuil, crise conjugale, traumatisme, maladie cités).
+- **Soutien, motivationnel et explication (cours)** : entretien à visée psychothérapeutique (prescrit par un médecin, soin programmé, répété dans le temps) ; soutien et counseling (relation interpersonnelle de soutien en crise, facilitation de la résolution de problèmes, développement des aptitudes au changement, conception positive et évolutive de la personne — exemples cités : personne atteinte par le virus de l'immunodéficience humaine (VIH — virus de l'immunodéficience humaine), conseil familial et conjugal ; formation nécessaire citée) ; autres situations citées : famille, personne de confiance, annonce en cancérologie. Entretien motivationnel (Miller et Rollnick, cités : approche centrée sur la personne visant un changement de comportement par la motivation intrinsèque et la résolution de l'ambivalence ; empathie, développement des divergences, évitement de l'argumentation — exemples cités : toxicomanie, douloureux chronique). Entretien d'explication (technique d'aide à la verbalisation a posteriori : guider le récit précis d'actions matérielles ou mentales situées dans le temps et l'espace, en réduisant les interprétations).
+
+<Callout type="warn" title="Repères de cours">
+Contenus pédagogiques du cours de septembre 2025 (guide du service infirmier 1986, définitions citées) : repères de cours à confronter aux référentiels et protocoles en vigueur, jamais comme consignes actuelles.
+</Callout>
+
+Concrètement, cette section invite à choisir le type après avoir situé la personne dans son parcours : accueillir d'abord, recueillir et informer ensuite, soutenir et apaiser en cas de crise, prescrire et répéter pour le psychothérapeutique, motiver sans argumenter pour le motivationnel, faire verbaliser après coup pour l'explication. Les phases de conduite décrites ensuite donnent la méthode commune à tous ces types.
+
+## 4. Conduire l'entretien en quatre phases (procédure)
+
+Choisir le bon type ne suffit pas sans une conduite rigoureuse, car un entretien improvisé expose à la rupture de confiance et à la perte d'informations. Le cours décrit quatre phases, de la préparation aux transmissions, avec le rappel que conduire un entretien mobilise un contexte spécifique, des interactions verbales et non verbales, et un jeu de relations émotives et affectives. La procédure suivante se lit dans l'ordre, de la préparation vers la trace écrite.
+
+<Steps>
+  <Step>
+    Préparer l'entretien selon le cours : définir le cadre environnemental (confort, sécurité, confidentialité, neutralité, température, luminosité, matériel, disponibilité de la pièce) ; définir les modalités de temps (durée précise, planification selon la personne, l'organisation du secteur et l'équipe, état clinique) ; préparer la personne (information claire sur le statut du soignant, la nature du soin, ses objectifs, sa durée, le lieu, l'installation, les règles éthiques ; recherche du consentement) ; se rendre disponible psychologiquement (clarifier les objectifs, ses représentations et affects, la problématique de santé, ses propres réactions affectives, sa disponibilité physique avec l'équipe) ; relire les notes ou comptes rendus précédents (lien, évolution, objectifs, lieu, durée) ; établir la confiance (rappeler objectifs, cadre, durée, confidentialité et transmissions, renouveler le consentement si besoin, installation confortable, posture d'accueil et d'écoute congruente).
+  </Step>
+  <Step>
+    Conduire l'entretien selon le cours : mobiliser empathie et écoute, proxémie appropriée (Hall cité), communication verbale et non verbale adaptée, reformulation, respect du rythme, juste présence (Hesbeen cité) ; assurer l'amorce (accompagner la réflexion, encourager l'expression libre, utiliser le discours explicite, l'infra-verbal — intonation, rythme, accent, volume cités — et le non verbal, aider à rester sur les objectifs) ; utiliser les questions selon leur visée (ouvertes exploratoires, fermées de recueil et de précision, alternatives à choix restreint, directes immédiates, indirectes vers le ressenti, projectives vers impressions, sentiments, désirs et motivations cités) ; reformuler en feed-back selon Mucchielli cité (redire en d'autres termes, plus concis ou explicite, avec accord de la personne) ; capter le feed-back non verbal (gestes, postures, mouvements, mimiques, tête, yeux cités) par les quatre canaux sensoriels cités (auditif, visuel, olfactif, tactile).
+  </Step>
+  <Step>
+    Clôturer l'entretien selon le cours : annoncer la fin en rappelant le cadre si besoin, résumer les points clés mis en évidence par le patient, proposer les pistes ultérieures d'accompagnement, informer des éléments communiqués à l'équipe en précisant à qui (médecin, psychologue, infirmiers, aides-soignants cités) et recueillir l'accord, informer du suivi donné.
+  </Step>
+  <Step>
+    Réaliser les transmissions selon le cours : transmettre oralement aux professionnels concernés en temps utile selon l'urgence estimée et par écrit dans le dossier patient, dans le respect des règles éthiques et déontologiques ; l'entretien permet d'élaborer ou de réajuster le raisonnement clinique en donnant au patient la place de partenaire.
+  </Step>
+</Steps>
+
+À la lecture de cette procédure, chaque phase protège la suivante : sans préparation ni consentement, la conduite manque son cadre, et sans clôture ni transmissions, l'entretien ne sert ni la continuité ni le raisonnement clinique. La vigilance décrite ensuite en tire les conséquences pour la pratique infirmière.
+
+## Points de vigilance IDE
+
+La vigilance infirmière découle de tout ce qui précède : choisir le type selon l'objectif et la demande, tenir les conditions matérielles et humaines, et tracer pour assurer la continuité. Les puces ci-dessous reprennent les points du cours ; elles se lisent comme la mise en actes du cadre, de la méthode et des phases.
+
+- Vérifier que l'objectif, la demande (patient, tiers ou initiative soignante) et le contexte sont clarifiés avant de choisir entre formel et informel, structuré et non structuré, directif, semi-directif et non directif.
+- Tenir les conditions citées (lieu, temps, présentation, positions, confidentialité, âge, culture, fatigue) et adapter la communication verbale, infra-verbale et non verbale au rythme de la personne.
+- Devant une crise, viser le calmement ici et maintenant et la restauration d'un minimum de communication avant tout autre objectif, selon le cours et les protocoles en vigueur.
+- Clôturer avec résumé, pistes, information sur les transmissions et accord, puis transmettre oralement et par écrit dans le respect de l'éthique et de la déontologie.
+
+Concrètement, cela signifie annoncer qui l'on est et pourquoi l'on est là, demander l'accord, respecter le rythme, reformuler pour vérifier, puis résumer et tracer. Devant une situation dépassant le champ infirmier ou relevant d'une prescription (psychothérapeutique cité), le relais vers les professionnels concernés s'impose selon les protocoles en vigueur.
+
+<Accordions>
+  <Accordion title="Complément : ce que le cours ne détaille pas" value="complement">
+    Les jeux de rôle des travaux dirigés (TD — travaux dirigés) et les situations cliniques citées dans les autres fiches du périmètre servent d'illustrations de méthode, pas de fondation théorique. Les échelles d'évaluation et protocoles actuels ne figurent pas dans ce cours — TODO : compléter avec les référentiels et protocoles en vigueur, sans inventer de contenu.
+  </Accordion>
+</Accordions>
+
+Après ce complément, la fiche se referme sur ses sources : tout ce qui précède vient du cours cité, les repères datés restant à confronter aux textes et protocoles en vigueur.
+
+## Voir aussi
+
+<Cards>
+  <Card title="Les outils pour conduire un entretien" description="Rogers, Porter, reformulation : la boîte à outils." href="./outils-entretien" />
+  <Card title="Écoute et reformulation" description="Écouter, reformuler, apaiser." href="./ecoute" />
+  <Card title="Fondements de la relation" description="Confiance, alliance et représentations : le socle." href="./fondements-relation" />
+</Cards>
 
 ## Sources
 
-- Cours UE 4.2 S3 (à venir).
+- CM 1 « Différents types d'entretien », unité d'enseignement 4.2 S3, septembre 2025, 51 pages (Watzlawick, Dabrion, Hall, Hesbeen, Mucchielli, Miller et Rollnick cités).
+- Maquette unité d'enseignement 4.2 S3, promotion 2025-2028, version du 4 mars 2026 (cadrage : typologie, conduite d'entretien, analyse des interactions).

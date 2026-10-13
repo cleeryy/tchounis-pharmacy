@@ -7,7 +7,23 @@ et ne sont jamais versionnés.
 
 ## [Non publié]
 
-_Rien pour le moment._
+### Ajouté
+
+- Rédaction des 8 fiches `school` (UE 4.6 : ETP, promotion de la santé) :
+  concepts, démarche ETP, bilan éducatif partagé, outils ETP, promotion santé
+  (SSES/PSNA), entretien motivationnel, compétences psychosociales,
+  analyse de démarche — prose pédagogique + composants Fumadocs,
+  contenus datés signalés, TODO sinon (consigne TD7 absente, rendus
+  étudiants ignorés).
+- Rédaction des 10 fiches `talk` (UE 4.2 : soins relationnels) : types et
+  outils de l'entretien, fondements de la relation, émotions, attitudes
+  (Porter), écoute et reformulation, alliance thérapeutique, relation d'aide,
+  douleur et MEOPA, agressivité (méthode Oméga + désamorçage HAS) —
+  prose + composants, mésusage N2O signalé comme repère daté.
+- Rédaction des 5 fiches `plan` (UE 3.2) : raisonnement clinique, accueil,
+  négociation des soins, plans de soins types et chemins cliniques,
+  transmissions ciblées (CDAR) — prose + composants, 2 scans illisibles
+  signalés en TODO.
 
 ## [2026-10-10] — Fiches crew UE 3.3 + préférences standing (PR #6)
 

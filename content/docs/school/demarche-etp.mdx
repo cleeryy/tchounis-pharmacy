@@ -3,12 +3,135 @@ title: "Démarche éducative et ETP"
 description: "Théorie de l’éducation thérapeutique du patient."
 ---
 
-> Contenu à compléter avec les cours.
+import { Callout } from 'fumadocs-ui/components/callout';
+import { Card, Cards } from 'fumadocs-ui/components/card';
+import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
+import { Step, Steps } from 'fumadocs-ui/components/steps';
+import { Accordion, Accordions } from 'fumadocs-ui/components/accordion';
 
-## Au programme
+Soigner une maladie chronique ne se réduit pas à prescrire et à informer, car l'information seule ne change pas les comportements. Cette fiche présente la théorie de l'Éducation Thérapeutique du Patient (ETP — éducation thérapeutique du patient) d'après le Cours Magistral (CM — cours magistral) sur la démarche éducative : sa définition de l'Organisation Mondiale de la Santé (OMS — organisation mondiale de la santé) de 1996, son contexte de création, son cadre réglementaire et ses quatre étapes. Les contenus juridiques et chiffrés cités y sont des repères de cours datés, à confronter aux textes et protocoles en vigueur, jamais à appliquer comme droit actuel. Le plan progresse de la définition vers le contexte, puis vers le cadre et la démarche.
 
-- Théorie sur l’ETP
+## L'essentiel en une minute
+
+Les quatre lignes ci-dessous condensent les repères à avoir en tête avant d'entrer dans le détail. Elles permettent de situer rapidement ce que l'Éducation Thérapeutique du Patient est et comment elle s'organise.
+
+- **Définition citée (OMS 1996, cours)** : aider les patients à acquérir ou maintenir les compétences nécessaires pour gérer au mieux leur vie avec une maladie chronique, en partie intégrante et permanente de la prise en charge, avec soutien psychosocial, pour comprendre, collaborer et assumer leurs responsabilités afin de maintenir et améliorer la qualité de vie.
+- **Contexte cité (CM, repère daté)** : vieillissement et maladies chroniques (8 à 28 millions de personnes, environ un quart de la population ; 11 millions en Affection de Longue Durée (ALD — affection de longue durée) en 2016 cités), 60 % des remboursements de l'Assurance maladie cités, observance partielle (50 % de prise correcte citée) et demande d'écoute et de coordination.
+- **Cadre cité (CM, repère daté)** : Loi Hôpital Patients Santé Territoires (HPST — hôpital patients santé territoires) du 21 juillet 2009 (première inscription dans la loi), décret du 2 août 2010, arrêté du 2 août 2010, arrêté du 14 janvier 2015 (cahier des charges), décret du 31 décembre 2020 (déclaration remplaçant l'autorisation) — appliquer les textes en vigueur.
+- **Démarche citée (CM)** : quatre étapes — bilan éducatif partagé, projet individualisé et objectifs éducatifs, mise en œuvre (ateliers), évaluation avec renforcement éventuel — avec consentement, confidentialité et coordination.
+
+À retenir avant de poursuivre : la définition citée fait de l'Éducation Thérapeutique du Patient un soin éducatif permanent centré sur les compétences et la qualité de vie, né d'un triple contexte épidémiologique, économique et sociologique, encadré par des textes datés et structuré en quatre étapes. D'où l'importance d'en détailler chaque versant, en commençant par le sens de la démarche.
+
+## 1. Définition et sens : un soin éducatif permanent
+
+Pour comprendre la suite, il faut d'abord saisir que l'Éducation Thérapeutique du Patient n'est pas un supplément d'information mais un processus intégré aux soins. La définition de l'Organisation Mondiale de la Santé citée en fait une aide à l'acquisition et au maintien des compétences, comprenant des activités organisées et un soutien psychosocial, pour rendre les patients conscients et informés de leur maladie, des soins, de l'organisation et des procédures hospitalières ainsi que des comportements liés à la santé et à la maladie. Les paragraphes suivants présentent les visées citées avant de les détailler en liste, puis d'en tirer la posture soignante.
+
+- **Buts de la démarche éducative pour l'exercice infirmier cités (CM)** : préserver, maintenir et développer les capacités à vivre de la personne soignée quel que soit le défi imposé par le problème de santé ; développer ses habiletés à utiliser les structures de soins mises à sa disposition ; soutenir ses compétences à s'actualiser comme sujet capable de décision et de choix pour une vie de qualité empreinte de sens et d'espérance, en évitant la confiscation de soi par la technologie et la consommation passive.
+- **Processus intégré cité (CM)** : sensibilisation, information, apprentissage et soutien psychosocial, inscrits dans le parcours de soins.
+- **Visées citées (CM)** : renforcer les comportements positifs, accroître l'autonomie, promouvoir le bien-être, accompagner les attitudes et la gestuelle, agir sur les connaissances.
+- **Posture citée (CM)** : le patient y est auteur et acteur (notion d'empowerment, pouvoir d'agir) ; le soignant y est accompagnant (étayage, compagnonnage) dans une relation décrite comme symétrique, d'égal à égal, avec écoute active et entretien motivationnel ; l'information y est nécessaire mais pas suffisante pour induire un changement de comportement.
+
+<Callout type="info" title="Méthode">
+Retenir la formule citée du Cours Magistral : « Tu me dis, j'oublie ; tu m'apprends, je me souviens ; tu m'implique, j'apprends » (attribuée à B. Franklin dans le cours) — elle résume l'exigence d'apprentissage contre le seul enseignement.
+</Callout>
+
+Concrètement, cette section invite à lire chaque action éducative comme un soin : elle vise des compétences et non des contenus récités, elle s'inscrit dans la durée de la prise en charge, et elle se juge à l'autonomie et à la qualité de vie. Les visées listées montrent que les connaissances n'y sont qu'un levier parmi les comportements, les attitudes et les gestes. C'est le contexte décrit ensuite qui explique pourquoi ce soin s'est imposé.
+
+## 2. Contexte de création : pourquoi l'ETP (repère daté)
+
+La définition posée, le Cours Magistral situe la création de l'Éducation Thérapeutique du Patient dans un triple contexte épidémiologique, économique et sociologique. Le vieillissement accroît les maladies chroniques, leur coût pèse sur l'Assurance maladie, et l'observance partielle comme la demande des usagers appellent une autre relation de soin. La liste suivante se lit des besoins vers les attentes, chaque chiffre cité restant un repère de cours daté.
+
+- **Épidémiologique cité (CM, repère daté)** : vieillissement avec augmentation des maladies chroniques — 8 à 28 millions de personnes atteintes en France, environ un quart de la population cité ; 11 millions, soit 17 % de la population du régime général, déclarés en affection de longue durée en 2016 cité ; enjeu d'augmenter l'espérance de vie sans incapacité et l'état de santé perçu — chiffres de cours, se référer aux données actuelles.
+- **Économique cité (CM, repère daté)** : maladie chronique représentant 60 % des remboursements de l'Assurance maladie, soit près de 90 milliards d'euros cités, enjeu majeur de maîtrise des dépenses — chiffres de cours, se référer aux données actuelles.
+- **Sociologique cité (CM)** : traitements prescrits pas toujours suivis (patients dits « non compliants » ou « non observants » dans le cours) ; études montrant que seulement 50 % des patients atteints de pathologies chroniques prennent correctement leur traitement cité (repère daté) ; usagers réclamant davantage de transparence, de coordination, d'écoute, d'explications et de prise en compte globale.
+
+<Callout type="warn" title="Chiffres datés">
+Effectifs de maladies chroniques, part en affection de longue durée en 2016, 60 % des remboursements et 50 % d'observance : contenus de cours datés cités comme repères pédagogiques — vérifier contre les données et référentiels en vigueur, sans les utiliser comme chiffres actuels.
+</Callout>
+
+En pratique, cette section explique que l'Éducation Thérapeutique du Patient répond à la fois à une pression épidémiologique et financière et à une exigence relationnelle des usagers. Les chiffres listés éclairent l'enjeu sans valoir comme données actuelles. C'est le cadre réglementaire qui donne ensuite à cette réponse sa forme opposable.
+
+## 3. Cadre réglementaire et législatif (repère daté)
+
+Le contexte posé, le Cours Magistral retrace la première inscription dans la loi puis les textes d'application. La Loi Hôpital Patients Santé Territoires de 2009 inscrit l'Éducation Thérapeutique du Patient dans le parcours de soins, le décret et l'arrêté de 2010 en fixent les conditions, l'arrêté de 2015 en détaille le cahier des charges, et le décret de 2020 en modifie le régime. Les paragraphes suivants présentent cet empilement avant de le détailler en onglets, chaque texte cité restant à vérifier contre le droit en vigueur.
+
+<Tabs items={['Loi 2009', 'Décret et arrêté 2010', 'Arrêté 2015 et décret 2020']} >
+  <Tab value="Loi 2009">
+    **Loi HPST du 21 juillet 2009 citée (CM, repère daté)** : première apparition dans la loi, titre VI chapitre 1er — Éducation Thérapeutique du Patient inscrite dans le parcours de soins, visant l'autonomie, l'adhésion au traitement et la qualité de vie ; non opposable au malade et sans conditionnement du remboursement ; interdiction de contact direct entre malade ou entourage et industrie pharmaceutique citée, avec exception des programmes d'apprentissage des gestes techniques mis en œuvre par des professionnels pour le compte d'un opérateur pouvant être financé par l'exploitant cité ; compétences déterminées par décret, programmes conformes au cahier des charges, mis en place localement après autorisation de l'Agence Régionale de Santé (ARS — agence régionale de santé), proposés aux malades et médecins, évalués par la Haute Autorité de Santé — appliquer les textes en vigueur.
+  </Tab>
+  <Tab value="Décret et arrêté 2010">
+    **Décret du 2 août 2010 cité (CM, repère daté)** : conditions d'autorisation — programmes scientifiquement fondés sur recommandations professionnelles, concernant sauf exception une ou plusieurs affections de longue durée ainsi que l'asthme, les maladies rares ou les priorités de santé cités ; objectifs définis et critères de jugement clinique, de qualité de vie, d'autonomie, psychosociaux, de recours aux soins ou biologiques cités. **Arrêté du 2 août 2010 cité (CM, repère daté)** : compétences pour dispenser ou coordonner — au moins deux professionnels de santé de professions différentes dont un médecin cités, formation à l'Éducation Thérapeutique du Patient (40 heures citées), coordinateur médecin, autre professionnel ou représentant mandaté d'association agréée cité — appliquer les textes en vigueur.
+  </Tab>
+  <Tab value="Arrêté 2015 et décret 2020">
+    **Arrêté du 14 janvier 2015 cité (CM, repère daté)** : cahier des charges et dossier d'autorisation et renouvellement — compétences justifiées par attestation (heures et contenu cités) ; équipe et programme (population, procédure d'objectifs partagés et de programme personnalisé, dossier d'éducation papier ou informatique, modalités, outils, évaluation, financements cités) ; coordination (échanges entre intervenants et parcours subordonnés à l'accord du patient, place du médecin traitant, articulation avec l'accompagnement cités) ; confidentialité et déontologie (information, consentement à l'entrée, sortie possible à tout moment sans préjudice, non-partage sans accord, Commission Nationale de l'Informatique et des Libertés (CNIL — commission nationale de l'informatique et des libertés), charte d'engagement cités) ; évaluation annuelle et quadriennale selon guides méthodologiques de la Haute Autorité de Santé de mai 2014 cités, rapports accessibles aux bénéficiaires et rapport quadriennal transmis à l'Agence Régionale de Santé cité. **Décret du 31 décembre 2020 cité (CM, repère daté)** : autorisation remplacée par déclaration dématérialisée auprès de l'Agence Régionale de Santé, notification des modifications, sanction administrative en cas de non-déclaration, de manquement ou de mise en danger cités — appliquer les textes en vigueur.
+  </Tab>
+</Tabs>
+
+<Callout type="warn" title="Droit daté">
+Lois, décrets et arrêtés cités (2009, 2010, 2015, 2020) : repères de cours datés — le régime applicable, les seuils et les procédures doivent impérativement être vérifiés contre les textes en vigueur, sans appliquer le cours comme du droit actuel.
+</Callout>
+
+Concrètement, cette section impose une méthode : devant tout programme, vérifier l'autorisation ou la déclaration, la conformité au cahier des charges, les compétences de l'équipe, le consentement et la confidentialité, puis l'évaluation. Les textes listés montrent une exigence croissante de structuration et de traçabilité. C'est la démarche en quatre étapes qui met ensuite ces exigences en actes.
+
+## 4. La démarche en quatre étapes
+
+Le cadre posé, la démarche éducative citée s'ordonne en quatre étapes indissociables. Le bilan partagé met le patient au centre, le projet individualisé négocie objectifs et moyens par écrit, la mise en œuvre organise les ateliers, et l'évaluation mesure l'atteinte côté patient comme côté programme avec renforcement éventuel. La procédure suivante se lit dans l'ordre, chaque étape citée conditionnant la suivante.
+
+<Steps>
+  <Step>
+    Réaliser le bilan éducatif partagé (première étape citée) : mettre le patient au centre, accueillir le vécu, analyser avec objectivité, partager la lecture en équipe, synthétiser besoins, ressources, freins, projet et changement souhaité — voir la fiche bilan éducatif partagé.
+  </Step>
+  <Step>
+    Négocier le projet individualisé et les objectifs éducatifs (deuxième étape citée) : accord sur problématique, objectifs et moyens ; contrat éducatif écrit conseillé (étapes, ordre, part de chacun, repères temporels cités) à valeur d'engagement mutuel et de moteur de motivation ; compétences visées — autosoins dont sécurité (gérer la maladie, faire face aux crises, surveiller, se traiter), adaptation psychosociale (mieux vivre, nouveau rapport à soi, aux autres et à l'environnement) et savoir-devenir (se projeter sans que la maladie soit obstacle ou but détourné).
+  </Step>
+  <Step>
+    Mettre en œuvre les ateliers (troisième étape citée) : contenus scientifiquement fondés enrichis des retours d'expérience, apprentissage plutôt qu'enseignement, séances individuelles ou collectives avec synthèse, trois temps (préparation, atelier, analyse) — voir la fiche mise en œuvre et outils.
+  </Step>
+  <Step>
+    Évaluer puis renforcer éventuellement (quatrième étape citée) : côté patient (chaque atelier et chaque patient — atteinte des objectifs, gestes, autonomie, efficacité et satisfaction pour le concret ; représentations, peurs, croyances, attentes, autonomie, qualité de vie et état de santé pour l'abstrait) et côté programme (auto-évaluation annuelle et quadriennale citées, faisabilité, adaptabilité, pertinence, cohérence, amélioration continue, valorisation) — contenus de cours, appliquer le cadre en vigueur.
+  </Step>
+</Steps>
+
+Pour lire cette procédure en méthode, chaque étape produit un livrable : synthèse partagée, contrat écrit, séances tracées avec synthèse, évaluations individuelle et collective. Les compétences listées distinguent ce qui sécurise (autosoins prioritaires) de ce qui permet de vivre avec (adaptation) et de se projeter (savoir-devenir). Les évaluations citées restant datées dans leurs modalités, il convient de les confronter au cahier des charges en vigueur. Les domaines d'intervention rappelés ensuite précisent le périmètre.
+
+Les domaines d'intervention cités (CM) resserrent ce périmètre vers la prévention tertiaire, les maladies chroniques (asthme, diabète, pathologies cardiovasculaires, cancers cités), l'observance thérapeutique, la prévention de la iatrogénie médicamenteuse et l'entourage (maladie d'Alzheimer citée). La liste suivante se lit du soin individuel vers l'entourage, chaque domaine cité illustrant où la démarche s'applique.
+
+- **Prévention tertiaire et maladies chroniques citées (CM)** : asthme, diabète, pathologies cardiovasculaires, cancers — exemples de cours.
+- **Médicament cité (CM)** : observance thérapeutique et prévention de la iatrogénie médicamenteuse — sans aucune posologie dans cette fiche, appliquer la prescription et les protocoles en vigueur.
+- **Entourage cité (CM)** : patient et entourage, exemple de la maladie d'Alzheimer cité.
+
+En pratique, ces domaines montrent que la démarche s'adresse autant au patient qu'à son entourage, autant à la gestion du traitement qu'à la vie quotidienne. Les exemples listés restent des contenus de cours. C'est la vigilance infirmière qui sécurise ensuite leur mise en œuvre.
+
+## Points de vigilance IDE
+
+La vigilance infirmière découle de tout ce qui précède : inscrire l'éducation dans le soin, respecter le cadre protecteur et évaluer sans réduire la personne à ses compétences. Les puces ci-dessous reprennent les points du cours ; elles se lisent comme la mise en actes de la définition, du cadre et des étapes.
+
+- Inscrire l'Éducation Thérapeutique du Patient dans le parcours avec consentement recueilli à l'entrée et sortie possible à tout moment sans préjudice, confidentialité garantie et coordination avec l'accord du patient, d'après le cours — vérifier contre les textes en vigueur.
+- Fonder les contenus sur des sources scientifiques et recommandations, enrichis des retours d'expérience, avec des informations validées et une équipe formée et pluridisciplinaire, d'après le cours.
+- Négocier le projet et formaliser le contrat par écrit, viser en priorité les compétences de sécurité parmi les autosoins, mobiliser adaptation et savoir-devenir, et évaluer chaque atelier comme chaque patient avant d'envisager un renforcement, d'après le cours.
+- TODO : textes applicables exacts, seuils et procédures d'autorisation ou déclaration en vigueur absents du dossier au moment de la rédaction — vérifier impérativement contre les textes actuels et le cahier des charges de l'Agence Régionale de Santé.
+
+Concrètement, cela signifie expliquer la démarche et recueillir l'accord avant tout bilan, tracer objectifs et séances, protéger les données et associer le médecin traitant avec l'accord du patient. Devant un doute juridique, un refus ou une mise en danger, l'arrêt et le recours à l'encadrement et aux textes en vigueur priment, le TODO renvoyant aux vérifications indispensables.
+
+<Accordions>
+  <Accordion title="Complément : structures et suites du CM" value="complement">
+    Le Cours Magistral cite des structures de coordination dans le département 47 (Unité Transversale d'Éducation Thérapeutique (UTEP — unité transversale d'éducation thérapeutique) au Centre Hospitalier Agen-Nérac (CHAN — centre hospitalier Agen-Nérac), Dispositif d'Accompagnement en ETP 47 (DAC — dispositif d'appui à la coordination), Instance Régionale d'Éducation et de Promotion de la Santé (IREPS — instance régionale d'éducation et de promotion de la santé)) comme repère local daté, et renvoie les compétences d'éducateur vers les Unités d'Enseignement (UE — unité d'enseignement) 4.2, 5.4, 3.3, 5.3, 3.1 et 5.2. Contenus de cours — vérifier l'organisation locale en vigueur.
+  </Accordion>
+</Accordions>
+
+Après ce complément, la fiche se referme sur ses sources : tout ce qui précède vient du support cité, les contenus datés et l'organisation locale restant à vérifier contre les textes et dispositifs en vigueur.
+
+## Voir aussi
+
+<Cards>
+  <Card title="Les concepts" description="Champs d'action, prévention et méthode d'étude : le vocabulaire." href="./concepts" />
+  <Card title="Bilan éducatif partagé" description="Première étape : mettre le patient au centre." href="./bilan-educatif" />
+  <Card title="Mise en œuvre et outils" description="Ateliers, co-animation et outils : passer à l'action." href="./outils-etp" />
+</Cards>
 
 ## Sources
 
-- Cours UE 4.6 S3 (à venir).
+- « La démarche éducative et l'Éducation thérapeutique du patient (ETP) », UE 4.6 S3, CM du 14 septembre 2026, promotion 2025-2028 (81 pages).
+- Organisation Mondiale de la Santé (OMS), définition de l'éducation thérapeutique citée dans le CM (1996) — repère de cours.
+- Loi HPST du 21 juillet 2009, décret du 2 août 2010, arrêté du 2 août 2010, arrêté du 14 janvier 2015, décret n° 2020-1832 du 31 décembre 2020 — cités dans le CM comme repères datés, appliquer les textes en vigueur.
+- TODO : textes consolidés en vigueur et cahier des charges actuel absents du dossier — sources à ajouter dès réception.
