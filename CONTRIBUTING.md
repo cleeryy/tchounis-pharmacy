@@ -40,6 +40,9 @@ des connaissances validées (cours / référentiels IFSI), sinon `TODO`.
 - `Tabs` = variantes parallèles ; `Steps` = procédures séquentielles.
 - `Accordions` = compléments « pour aller plus loin » uniquement, jamais le cœur de la fiche.
 - `Cards` « Voir aussi » en fin de fiche, avec liens relatifs.
+- `<Mermaid chart="...">` : composant enregistré globalement dans `components/mdx.tsx`
+  (thème clair/sombre géré, utilisable dans tout MDX sans import) — idéal pour les schémas
+  (chronologies, flux, classifications).
 
 ## 4. Règles du dépôt
 
@@ -79,7 +82,7 @@ pnpm build
 - [ ] Prose pédagogique : intro narrative, paragraphes avant/après chaque liste ou tableau, transitions, vigilance IDE en prose (pas de listes seules).
 - [ ] `TODO` si source manquante ; seuils / traitements datés et caveatés.
 - [ ] Frontmatter, structure, `meta.json`, liens relatifs OK.
-- [ ] Composants Fumadocs : imports explicites après le frontmatter (utilisés uniquement), Callout / Tabs / Steps / Accordions / Cards « Voir aussi » selon leurs usages.
+- [ ] Composants Fumadocs : imports explicites après le frontmatter (utilisés uniquement), Callout / Tabs / Steps / Accordions / Cards « Voir aussi » selon leurs usages, `<Mermaid chart="...">` sans import si schéma.
 - [ ] `pnpm lint`, `pnpm types:check`, `pnpm build` verts.
 - [ ] Branche `feat/<sujet>`, `git status` vérifié, sources exclues du stage, PR vers `main`.
 
