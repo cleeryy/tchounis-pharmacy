@@ -7,6 +7,10 @@ et ne sont jamais versionnés.
 
 ## [Non publié]
 
+_Rien pour le moment._
+
+## [2026-10-13] — Fiches school, talk, plan (PR #7)
+
 ### Ajouté
 
 - Rédaction des 8 fiches `school` (UE 4.6 : ETP, promotion de la santé) :
