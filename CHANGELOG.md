@@ -7,6 +7,10 @@ et ne sont jamais versionnés.
 
 ## [Non publié]
 
+_Rien pour le moment._
+
+## [2026-10-10] — Fiches crew UE 3.3 + préférences standing (PR #6)
+
 ### Ajouté
 
 - Rédaction des 6 fiches `crew` (UE 3.3) à partir des 8 PDF :
