@@ -1,0 +1,145 @@
+---
+title: "L'essentiel en schémas"
+description: "Synthèse visuelle de l'espace : repères, urgences et réflexes IDE en un coup d'œil."
+---
+
+import { Callout } from 'fumadocs-ui/components/callout';
+import { Card, Cards } from 'fumadocs-ui/components/card';
+import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
+import { Accordion, Accordions } from 'fumadocs-ui/components/accordion';
+
+Cette page rassemble en un seul regard les repères déjà développés dans les dix fiches de l'espace. Elle ne remplace ni les fiches ni les protocoles locaux : elle sert de révision visuelle avant le stage ou l'évaluation. Chaque suite fléchée et chaque mini-tableau reprend strictement un fait cité dans une fiche, sans fait nouveau et sans posologie.
+
+## Urgences à ne pas rater
+
+Devant un tableau fébrile ou cutané, l'enjeu est de reconnaître en quelques secondes les situations citées comme urgentes dans les fiches. La liste ci-dessous les regroupe pour les mémoriser ensemble, avec les liens vers les fiches détaillées.
+
+<Callout type="error" title="Urgences citées dans les fiches">
+- [Sepsis et choc](./sepsis) : sepsis, choc septique, purpura fébrile et purpura fulminans, neutropénie fébrile.
+- [Épidémiologie et déclarations](./epidemiologie) : méningites à méningocoque (purpura fulminans cité) et à Listeria, à déclarer selon le protocole local.
+- [Infections d'organes](./infections-organes) : purpura fébrile de l'enfant, encéphalite herpétique, arthrite septique, compression neurologique d'une spondylodiscite, obstacle lombaire hyperalgique, choc intra-abdominal, fièvre au retour de zone d'endémie (paludisme cité), gravité d'hépatite aiguë citée (baisse du taux de prothrombine / facteur V avec encéphalopathie).
+- [Infections cutanées](./infections-cutanees) : purpura non effaçable, fasciite nécrosante (douleur disproportionnée, progression rapide), atteinte oculaire, choc ou altération de conscience.
+- [VIH](./vih), [IST](./ist) et [voyageurs](./voyageurs) : exposition au VIH à orienter en urgence vers le traitement post-exposition cité, gonococcie citée comme urgence médicale, fièvre au retour de zone d'endémie ou chez un migrant citée comme urgence diagnostique, isolement « air » dès la suspicion de tuberculose citée avec déclaration en 24 h citée.
+</Callout>
+
+Cette liste se lit comme un réflexe unique : devant l'un de ces tableaux cités, alerter sans délai selon la filière et le protocole local, sans attendre la documentation complète. Les sections suivantes remettent chaque urgence dans sa logique par thème.
+
+## Repères clés
+
+Les repères ci-dessous reprennent les enchaînements et tableaux déjà présents dans les fiches. Chaque bloc visuel se lit avec la fiche correspondante, qui détaille définitions, limites et contenus datés.
+
+### Socle et sepsis
+
+La [physiopathologie](./physiopathologie) distingue les situations avant tout raisonnement, puis le [sepsis](./sepsis) gradue la gravité systémique.
+
+Contamination (transmission citée) → colonisation (multiplication sans effet citée) → infection (agent nuisible avec immunité en jeu citée).
+
+| Infiltrat cité | Orientation citée |
+|---|---|
+| Neutrophiles | Bactérie |
+| Lymphocytes | Virus |
+| Éosinophiles | Parasites |
+
+Fièvre caractérisée (début, courbe, frissons, antipyrétique cités) → terrains à risque repérés → signes d'alerte → hémocultures avant antibiothérapie si possible (cité).
+
+Ces deux enchaînements se lisent ensemble : nommer juste la situation citée, graduer la gravité citée, puis sécuriser la documentation citée sans retarder l'urgence.
+
+### Épidémiologie et organes
+
+La lecture des chiffres de l'[épidémiologie](./epidemiologie) précède la grille commune des [infections d'organes](./infections-organes), appliquée ensuite aux [infections cutanées](./infections-cutanees).
+
+| Niveau cité | Sens cité |
+|---|---|
+| Contrôle | Réduction à un niveau acceptable, mesures pérennes |
+| Élimination | Zéro nouveau cas dans une zone, mesures continues |
+| Éradication | Zéro cas mondial permanent (variole citée) |
+
+Site + terrain + gravité + contexte cités → documenter avant antibiothérapie si possible → surveiller → alerter (cité).
+
+Décrire (type, extension, muqueuses cités) → chercher fièvre, terrain, contage cités → précautions adaptées → transmettre et alerter (cité).
+
+Cet enchaînement commun aux organes et à la peau rappelle que la documentation citée ne retarde jamais l'alerte citée. Les seuils et schémas restent des repères datés à vérifier selon le protocole en vigueur.
+
+### VIH et IST
+
+Le suivi du [VIH](./vih) repose sur deux paramètres cités, tandis que les [IST](./ist) se lisent en syndromique à partir des tableaux cités.
+
+Capital CD4 + charge virale cités → dépistage avec accord cité → prévention combinée citée → suivi observance et comorbidités cités.
+
+<Tabs items={['Cinétique VIH citée', 'Lecture IST citée']}>
+  <Tab value="Cinétique VIH citée">
+    ARN / charge virale vers le 10ᵉ jour → antigénémie p24 vers le 15ᵉ jour → anticorps dès le 20ᵉ jour et à vie (cités).
+  </Tab>
+  <Tab value="Lecture IST citée">
+    Écoulement, ulcération ou risque cité → tableau et prélèvements cités → protocole en vigueur → partenaire dépisté et protégé (cités).
+  </Tab>
+</Tabs>
+
+Ces deux logiques se complètent : la cinétique explique le choix et le délai du test cité, la lecture syndromique explique l'association tableau-prélèvements citée. Les schémas et fenêtres restent des repères datés à vérifier selon le protocole en vigueur.
+
+### Voyageurs, biologie et vaccination
+
+Les [voyageurs et la tuberculose](./voyageurs) articulent parcours et orientation, les [examens biologiques](./examens-bio) sécurisent le prélèvement, et la [vaccination](./vaccination) oppose deux types d'immunoprophylaxie cités.
+
+<Tabs items={['Voyage et tuberculose', 'Biologie et vaccins']}>
+  <Tab value="Voyage et tuberculose">
+    Parcours + origine + conditions de vie cités → dépistage ciblé cité → dispositif cité → éducation et vaccins selon le calendrier en vigueur.
+  </Tab>
+  <Tab value="Biologie et vaccins">
+    Clinique d'abord → prélever avant antibiothérapie si possible → asepsie et acheminement rapide → interpréter avec la clinique (cités).
+  </Tab>
+</Tabs>
+
+Ces deux enchaînements rappellent que l'orientation citée dépend du parcours et que la fiabilité citée dépend du prélèvement. Le tableau suivant fixe les derniers repères transversaux déjà cités dans les fiches.
+
+<Accordions>
+  <Accordion title="Repères cités : tuberculose, marqueurs et types de vaccins">
+    Infection latente citée (asymptomatique, non contagieuse) ↔ maladie citée (symptomatique, contagieuse).
+
+    | Situation citée | Conduite citée |
+    |---|---|
+    | Hémocultures | 2–3 paires, frissons, avant antibiothérapie |
+    | ECBU | Si bandelette positive et symptômes cités |
+    | Vaccination active | Protection différée et durable citée |
+    | Sérothérapie passive | Protection immédiate et transitoire citée |
+  </Accordion>
+</Accordions>
+
+Ces derniers blocs rappellent que la documentation et la protection dépendent du moment et du terrain cités. Les molécules, seuils, tubes et calendriers restent des contenus de cours datés à confronter au laboratoire et au protocole locaux.
+
+## Réflexes IDE
+
+Les réflexes ci-dessous traversent les dix fiches et se lisent comme une même posture : nommer juste, sécuriser le prélèvement, tracer et alerter selon le protocole local.
+
+**Nommer juste avant d'agir.** Distinguer contamination, colonisation et infection, inflammation et infection, incidence et prévalence, comme cité dans les fiches [physiopathologie](./physiopathologie) et [épidémiologie](./epidemiologie).
+
+**Prélever avant l'antibiothérapie si possible, sans retarder l'urgence.** Vérifier prescription, identité, asepsie, volumes et acheminement cités, comme rappelé dans les fiches [sepsis](./sepsis) et [examens-bio](./examens-bio).
+
+**Surveiller, tracer et transmettre.** Température et heure, courbe et antipyrétique, lésion et extension, diurèse et vigilance, comme cité dans les fiches [infections-organes](./infections-organes) et [infections-cutanees](./infections-cutanees).
+
+**Protéger et isoler selon le protocole local.** Hygiène des mains, précautions respiratoires ou contact, isolement « air » dès la suspicion de tuberculose citée, comme cité dans les fiches [voyageurs](./voyageurs) et [epidemiologie](./epidemiologie).
+
+**Dépister avec accord, sans juger, en préservant la confidentialité.** Proposer le dépistage cité, orienter vers les dispositifs cités et dépister le ou la partenaire selon les situations, comme cité dans les fiches [vih](./vih) et [ist](./ist).
+
+**Vérifier vaccins, rappels et calendrier en vigueur.** Relier chaque vaccin cité à son type et aux contre-indications citées des vaccins vivants, comme cité dans la fiche [vaccination](./vaccination).
+
+Ces six réflexes se retiennent ensemble : aucun ne remplace la prescription ni le protocole local, et tout repère daté ou marqué TODO dans les fiches se vérifie avant d'agir.
+
+## Voir aussi
+
+<Cards>
+  <Card title="Physiopathologie" description="Socle : inflammation, infection et défenses de l'hôte." href="./physiopathologie" />
+  <Card title="Fièvre, bactériémie, sepsis" description="Seuils, alertes et hémocultures." href="./sepsis" />
+  <Card title="Épidémiologie" description="Lire une épidémie et savoir ce qui se déclare." href="./epidemiologie" />
+  <Card title="Infections d'organes" description="Méningites, respiratoires, urinaires, digestives, hépatites." href="./infections-organes" />
+  <Card title="Infections cutanées" description="Bactériennes, virales, fongiques et éruptions." href="./infections-cutanees" />
+  <Card title="VIH" description="Dépistage, prévention combinée et suivi." href="./vih" />
+  <Card title="IST" description="Démarche syndromique et partenaires." href="./ist" />
+  <Card title="Voyageurs et tuberculose" description="Parcours, paludisme, tuberculose et zoonoses." href="./voyageurs" />
+  <Card title="Examens biologiques" description="Prélèvements, marqueurs et tests rapides." href="./examens-bio" />
+  <Card title="Vaccination" description="Principes, vaccins et sérothérapie." href="./vaccination" />
+</Cards>
+
+## Sources
+
+Synthèse strictement issue des dix fiches de l'espace, sans apport nouveau : [physiopathologie](./physiopathologie), [sepsis](./sepsis), [épidémiologie](./epidemiologie), [infections d'organes](./infections-organes), [infections cutanées](./infections-cutanees), [VIH](./vih), [IST](./ist), [voyageurs](./voyageurs), [examens biologiques](./examens-bio), [vaccination](./vaccination).
