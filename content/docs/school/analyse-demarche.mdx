@@ -3,12 +3,129 @@ title: "Analyse d’une démarche"
 description: "Analyser une démarche d’éducation à la santé."
 ---
 
-> Contenu à compléter avec les cours.
+import { Callout } from 'fumadocs-ui/components/callout';
+import { Card, Cards } from 'fumadocs-ui/components/card';
+import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
+import { Step, Steps } from 'fumadocs-ui/components/steps';
+import { Accordion, Accordions } from 'fumadocs-ui/components/accordion';
 
-## Au programme
+L'épreuve écrite individuelle de l'UE 4.6 S3 demande d'analyser une démarche d'éducation en mobilisant les concepts du semestre, poster de stage du service sanitaire à l'appui. Cette fiche s'appuie sur les grilles d'évaluation du CM sur la démarche éducative (étapes du Service sanitaire des étudiants en santé (SSES — service sanitaire des étudiants en santé) et de l'éducation thérapeutique du patient (ETP — éducation thérapeutique du patient)), sur l'article de Sandrin (2013) comme lentille d'analyse, et sur les attendus d'évaluation de la présentation de l'UE — la consigne du TD 7 étant absente du dossier au moment de la rédaction. Les critères, dates et barèmes cités y sont des repères de cours datés, à confronter aux consignes en vigueur, jamais à appliquer comme consignes actuelles. Le plan progresse des attendus vers les grilles, puis vers la lentille critique.
 
-- Analyse d’une démarche d’éducation à la santé
+## L'essentiel en une minute
+
+Les quatre lignes ci-dessous condensent les repères à avoir en tête avant d'entrer dans le détail. Elles permettent de situer rapidement ce que l'analyse doit démontrer.
+
+- **Attendus cités (présentation UE, repère daté)** : travail écrit individuel sur table d'analyse d'une démarche d'éducation en lien avec les concepts étudiés (SSES), avec le poster de stage remis lors du temps individuel — critères cités : pertinence dans l'utilisation des concepts et qualité de l'analyse — session 1 le 4 décembre 2026, session 2 le 11 mars 2027.
+- **Grille SSES citée (CM)** : comprendre le contexte, se documenter (problème, déterminants, demande), formuler des objectifs Spécifiques, Mesurables, Atteignables, Réalistes, Temporellement définis (SMART — spécifiques, mesurables, atteignables, réalistes, temporellement définis), planifier (Qui, Quoi, Où, Quand, Comment, Pourquoi — QQOQCP), réaliser, évaluer (effectivité, efficacité), valoriser et diffuser.
+- **Grille ETP citée (CM)** : bilan éducatif partagé, projet individualisé et objectifs éducatifs, mise en œuvre (ateliers), évaluation avec renforcement éventuel — avec consentement, confidentialité et coordination.
+- **Lentille Sandrin 2013 citée** : distinguer la démarche « bancaire » qui dépose des contenus (démarche dite Canada Dry, calquée sur la démarche clinique : diagnostic, prescription, application, vérification) de la démarche émancipatrice et centrée sur la personne (Freire, Shor, Rogers) qui construit les savoirs dans le dialogue et la réciprocité.
+
+À retenir avant de poursuivre : l'analyse décrite croise une grille descriptive (que s'est-il passé à chaque étape) et une lentille critique (quelle conception de l'éducation et de la personne la démarche véhicule-t-elle). Les critères et dates cités restent des repères datés. Le reste de la fiche décline cette double exigence, des attendus vers les grilles puis vers la lentille.
+
+<Callout type="warn" title="Consigne manquante">
+Consigne du TD 7 absente du dossier au moment de la rédaction : cette fiche s'appuie sur les grilles du CM, l'article de Sandrin et les attendus de l'UE, avec TODO explicites — vérifier impérativement la consigne et les critères en vigueur avant l'épreuve.
+</Callout>
+
+## 1. Attendus de l'épreuve : ce qui est évalué (repère de cours)
+
+Pour analyser utilement, il faut d'abord savoir ce que l'épreuve attend. La présentation de l'UE décrit un écrit individuel d'analyse adossé au poster de stage SSES, noté sur 16 points au sein d'une UE à 20 points avec 2 crédits européens (ECTS — european credit transfer and accumulation system). Les paragraphes suivants présentent ce cadrage avant de le détailler dans l'onglet, puis d'en tirer la méthode de préparation.
+
+<Tabs items={['Format', 'Critères']} >
+  <Tab value="Format">
+    **Format cité (présentation UE, repère daté)** : travail écrit individuel sur table d'analyse d'une démarche d'éducation en lien avec les concepts étudiés (SSES), avec le poster de stage de SSES remis lors du temps individuel d'analyse (16 points) ; s'y ajoutent le poster scientifique de groupe (dépôt sur e.notitia le 19 novembre 2026, méthodologie, 2 points) et la présentation orale synthétique et dynamique du 20 novembre 2026 (2 points) — ensemble daté, appliquer le calendrier et les consignes en vigueur.
+  </Tab>
+  <Tab value="Critères">
+    **Critères cités (présentation UE et maquette, repère daté)** : pertinence dans l'utilisation des concepts et qualité de l'analyse. La maquette précise l'objectif — caractériser les concepts (prévention, promotion de la santé, éducation en santé, éducation thérapeutique) et analyser une démarche d'éducation thérapeutique — avec pour modalité un travail écrit individuel d'analyse d'une démarche d'éducation et d'utilisation des concepts.
+  </Tab>
+</Tabs>
+
+La préparation se lit ensuite comme la mise en actes de ce cadrage. Le TD 2 donne un avant-goût des questions à travailler, transposables à l'analyse.
+
+- **Questions du TD 2 citées (cours)** : qu'est-ce qui fait que le patient suit les recommandations thérapeutiques concernant son diabète, qu'est-ce qui fait qu'il ne les suit pas, quels sont les retentissements du diabète sur sa vie — traitées en cartes mentales de groupes.
+- **Situation simulée du TD 2 citée (cours)** : accueil d'une patiente de 62 ans apprenant un diabète de type 2, adressée par l'endocrinologue vers le programme ETP sans savoir ce qu'elle fait là — observer la stratégie de présentation de l'ETP, les facteurs favorisant la relation, les moyens facilitant l'expression.
+- **TODO** : consigne exacte du TD 7 et sujet type de l'écrit absents du dossier — compléter impérativement avec les consignes en vigueur et les annales ou exemples fournis par les formateurs.
+
+À retenir de ce cadrage : l'écrit décrit valorise l'usage précis des concepts au service d'une analyse argumentée de la démarche vécue en stage, poster à l'appui. Les formats, dates et barèmes cités restent des repères datés. C'est sur ce socle que s'appliquent les grilles descriptives.
+
+## 2. Grilles descriptives : SSES et ETP
+
+Les attendus posés, il reste à décrire la démarche étape par étape. Le CM fournit deux grilles : les étapes de l'intervention SSES pour l'éducation à la santé collective, et les quatre étapes de la démarche éducative ETP pour le soin éducatif individualisé. La liste suivante se lit de la grille collective vers la grille individualisée, chaque étape citée servant de point de contrôle de l'analyse.
+
+- **Grille SSES citée (CM)** : comprendre le contexte (population et terrain, projet pédagogique ou d'établissement, interventions déjà réalisées, fonctionnement de la structure) ; se documenter sur les problèmes de la population cible (fréquence, conséquences graves, coût pour la société, solutions ayant fait leurs preuves ; déterminants modifiables ; étude de la demande par entretien, groupe focalisé — focus groupe cité — observation ou questionnaire) ; formuler des objectifs SMART (général d'amélioration de l'état de santé, spécifiques liés aux déterminants, opérationnels de stratégie, avec indicateurs) ; planifier l'organisation (QQOQCP, moyens, ressources, préparation, mise en œuvre) ; évaluer (contraintes et freins, effets positifs et négatifs, mise en œuvre, axes d'amélioration) — la présentation PSNA ajoutant : réaliser, distinguer effectivité (passé comme prévu) et efficacité (effet produit), valoriser et diffuser.
+- **Grille ETP citée (CM)** : première étape, bilan éducatif partagé (mettre le patient au centre, expression du vécu, synthèse des besoins, ressources, freins, projet et changement souhaité) ; deuxième étape, projet individualisé et objectifs éducatifs (accord sur la problématique, les objectifs et les moyens, contrat éducatif formalisé par écrit cité, compétences d'auto-soins dont sécurité, d'adaptation et de savoir-devenir) ; troisième étape, mise en œuvre des ateliers (contenus scientifiquement fondés, méthodes participatives, séances individuelles ou collectives avec synthèse) ; quatrième étape, évaluation (de chaque atelier et pour chaque patient — atteinte des objectifs, gestes, autonomie, satisfaction, représentations — et du programme — auto-évaluation annuelle et quadriennale citées) avec renforcement éventuel.
+- **Cadre ETP cité (CM, repère daté)** : consentement recueilli à l'entrée avec sortie possible à tout moment sans préjudice, confidentialité (charte d'engagement citée), coordination avec accord du patient et place du médecin traitant décrite, informations scientifiquement fondées — contenus de cours, appliquer le cadre en vigueur.
+
+<Steps>
+  <Step>
+    Décrire la démarche observée étape par étape selon la grille adaptée (SSES pour l'action collective, ETP pour le programme individualisé) d'après le cours.
+  </Step>
+  <Step>
+    Pour chaque étape, confronter le prévu au réalisé : objectifs et indicateurs, moyens et ressources, écarts et ajustements, effets positifs et négatifs d'après le cours.
+  </Step>
+  <Step>
+    Qualifier l'évaluation : effectivité contre efficacité côté SSES, atteinte des objectifs et compétences côté ETP, avec axes d'amélioration d'après le cours.
+  </Step>
+  <Step>
+    Formuler des préconisations argumentées (poursuivre, ajuster, renforcer, réorienter) en les reliant aux concepts, d'après les critères cités.
+  </Step>
+</Steps>
+
+<Callout type="info" title="Méthode">
+Pour l'écrit, structurer en quatre temps : description fidèle étape par étape, analyse des écarts prévu-réalisé, mobilisation des concepts (nommés et définis), préconisations hiérarchisées et justifiées.
+</Callout>
+
+En pratique, cette section impose une méthode : aucune analyse sans description préalable ordonnée, aucun jugement sans indicateur ou fait observé, aucune préconisation sans lien conceptuel. Les grilles listées servent de plan de devoir autant que d'outil de lecture. Les cadres cités restant datés, il convient de les confronter aux textes en vigueur. C'est la lentille critique qui donne ensuite du relief à cette description.
+
+## 3. Lentille critique : la démarche est-elle vraiment éducative (Sandrin 2013)
+
+La description posée, l'article de Sandrin invite à interroger la conception de l'éducation que la démarche véhicule. L'auteure y oppose les modèles technologiques et bancaires aux pédagogies émancipatrices et centrées sur la personne, avec un tableau des risques d'analogie entre démarche clinique et ETP dite Canada Dry. La liste suivante se lit des pièges vers les repères, chaque apport cité restant un contenu de cours.
+
+- **Convergence des valeurs citée (Sandrin 2013)** : charte d'Ottawa pour la promotion de la santé et charte de l'éducation populaire (2005) partagent émancipation, coopération, solidarité, justice et démocratie participative — agir AVEC les personnes et non à leur place.
+- **Freire et l'éducation bancaire citée (Sandrin 2013)** : Paulo Freire oppose la conception bancaire (déposer des contenus inertes dans un élève supposé vide, l'enseignant sachant et parlant, l'élève écoutant) à l'éducation libératrice (dialogue ancré dans la réalité des participants, savoirs construits en réciprocité, éducateur et élève devenant sujets ensemble) — l'éducation n'y est jamais neutre : elle favorise la domination ou l'émancipation.
+- **Shor et l'empowerment cité (Sandrin 2013)** : le modèle d'Ira Shor (Empowering Education) fait travailler les participants en équipe de chercheurs à partir d'une problématique qu'ils ont contribué à définir, avec questionnement initial, productions en petits groupes, synthèse, apports extérieurs venant nourrir et non clore le débat, puis projets d'action — les objectifs formulés du point de vue des patients (solutions élaborées ensemble) plutôt que du point de vue des soignants (décrire le rôle des médicaments) y signalent la cohérence.
+- **Rogers et l'approche centrée sur la personne citée (Sandrin 2013)** : Carl Rogers conditionne l'apprentissage à trois attitudes — authenticité (être vrai, sans jouer de rôle), valorisation et considération positive inconditionnelle (accepter la personne telle qu'elle est, lui faire fondamentalement confiance), compréhension empathique (percevoir le monde subjectif d'autrui comme si l'on était cette personne, sans s'y confondre) — d'où la préférence pour « bilan éducatif partagé » plutôt que « diagnostic éducatif », et pour le bricolage de solutions communes plutôt que la prescription.
+- **Risque Canada Dry cité (Sandrin 2013)** : une ETP qui adopte le vocabulaire et les quatre étapes (besoins, compétences, séances, évaluation) tout en restant calquée sur la démarche clinique — interrogatoire étoffé, objectifs fixés au patient, séances prescrites, questionnaire de vérification — encourage le soignant à agir pendant que le patient devrait devenir acteur ; l'auteure y voit une démarche centrée sur l'activité du professionnel, à confronter à la complexité des situations (exemple de Dirk Gevaert cité) où la réponse ne relève pas toujours de l'acquisition de compétences.
+- **Environnement cité (Sandrin 2013)** : éducation informelle (influence du milieu sans projet délibéré), éducation indirecte (transformer le milieu pour le rendre promoteur de santé et d'autonomie), relations de la personne à son environnement et action sur celui-ci — avec la traque des messages contradictoires (menus de cantine, règlements, ordonnances illisibles, magazines en salle d'attente cités).
+
+<Callout type="error" title="Piège d'analyse">
+Décrire les quatre étapes sans interroger la posture, ou confondre participation décorative (jeu, images, questions fermées visant la bonne réponse) et co-construction : l'article lie la valeur émancipatrice à la réciprocité réelle — devant tout atelier, vérifier qui définit le problème, qui produit le savoir et qui décide de l'action.
+</Callout>
+
+Concrètement, cette section invite à relire chaque étape de la grille avec trois questions : la relation établie (authenticité, valorisation, empathie), l'animation (qui parle, qui cherche, qui décide) et l'environnement (messages cohérents ou contradictoires). Les apports listés montrent que la même architecture peut servir deux logiques opposées. L'article cité restant un repère de cours, il convient de le mobiliser comme outil critique et non comme norme.
+
+## Points de vigilance IDE
+
+La vigilance infirmière découle de tout ce qui précède : analyser sans trahir la réalité observée, sans juger les personnes et en respectant la confidentialité. Les puces ci-dessous reprennent les points du cours ; elles se lisent comme la mise en actes des grilles et de la lentille.
+
+- Décrire fidèlement avant de juger : étapes, objectifs, indicateurs, écarts prévu-réalisé, effets et axes d'amélioration, avec des faits et non des impressions.
+- Mobiliser les concepts avec pertinence (nommer, définir, relier à la situation) plutôt que les empiler — critère cité de l'épreuve.
+- Interroger la posture (qui définit, qui sait, qui décide), la réciprocité et la cohérence de l'environnement, en s'appuyant sur la lentille citée.
+- Respecter le consentement et la confidentialité des situations de stage, anonymiser, et vérifier tout repère daté contre les consignes et textes en vigueur.
+- TODO : consigne TD 7 et sujet type absents du dossier — vérifier impérativement la consigne, le plan attendu et les critères en vigueur avant l'épreuve.
+
+Concrètement, cela signifie adosser chaque affirmation à un élément du poster ou du stage, distinguer effectivité et efficacité, et hiérarchiser les préconisations en les justifiant par les concepts. Devant une situation sensible ou un doute déontologique, l'anonymisation et le recours à l'encadrement priment, le TODO renvoyant aux vérifications indispensables.
+
+<Accordions>
+  <Accordion title="Complément : ce que le dossier ne fournit pas" value="complement">
+    La consigne du TD 7 (analyse d'une démarche d'éducation thérapeutique, 3 heures, 16 octobre 2026) ne figure pas dans les sources lues. Le TD 2 fournit une fiche de lecture de l'article Sandrin selon la méthodologie de l'UE 6.1 S1 et un entraînement à la présentation de l'ETP. TODO : récupérer la consigne du TD 7, le plan attendu et les critères en vigueur auprès des formateurs.
+  </Accordion>
+</Accordions>
+
+Après ce complément, la fiche se referme sur ses sources : tout ce qui précède vient des supports cités, la consigne manquante et les contenus datés restant à vérifier contre les consignes en vigueur.
+
+## Voir aussi
+
+<Cards>
+  <Card title="Promotion de la santé" description="Méthode de projet SSES : le versant collectif de l'analyse." href="./promotion-sante" />
+  <Card title="La démarche ETP" description="Bilan, projet, ateliers, évaluation : le versant soin." href="./demarche-etp" />
+  <Card title="Les concepts" description="Prévention, éducation et promotion : le vocabulaire de l'écrit." href="./concepts" />
+</Cards>
 
 ## Sources
 
-- Cours UE 4.6 S3 (à venir).
+- Sandrin B., « Éducation thérapeutique et promotion de la santé : quelle démarche éducative ? », Santé Publique, 2013/HS2 (S2), p. 125-135.
+- « La démarche éducative et l'Éducation thérapeutique du patient (ETP) », UE 4.6 S3, CM du 14 septembre 2026, promotion 2025-2028 (81 pages) — grilles SSES p. 9-12 et ETP.
+- « Présentation UE 4.6 S3 », promotion 2025-2028, 14 septembre 2026 (8 pages) — repère daté pour l'évaluation.
+- « Consignes étudiants TD 2 — La démarche éducative », 29 septembre 2026 (2 pages).
+- « Maquette UE 4.6 S3 2025-2026 » (1 page) — repère daté pour les objectifs et critères.
+- TODO : consigne du TD 7 absente du dossier au moment de la rédaction — source à ajouter dès réception.

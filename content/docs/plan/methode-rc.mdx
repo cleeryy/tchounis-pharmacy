@@ -3,12 +3,181 @@ title: "Méthode et raisonnement clinique"
 description: "Le raisonnement clinique, pas à pas."
 ---
 
-> Contenu à compléter avec les cours.
+import { Callout } from 'fumadocs-ui/components/callout';
+import { Card, Cards } from 'fumadocs-ui/components/card';
+import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
+import { Step, Steps } from 'fumadocs-ui/components/steps';
+import { Accordion, Accordions } from 'fumadocs-ui/components/accordion';
 
-## Au programme
+En semestre 3, l'unité d'enseignement (UE — unité d'enseignement) 3.2 « Projet de soins infirmiers » prolonge l'UE 3.1 des semestres 1 et 2 et prépare à concevoir et conduire un projet de soins infirmiers (compétence 2). Cette fiche suit le support « Raisonnement clinique — modèle trifocal » (travaux dirigés (TD — travaux dirigés) 1 de rappel, promotion 2025-2028, août 2026) et la présentation de l'UE (20 heures, 1 crédit (ECTS — european credit transfer system), 5 heures de cours magistral (CM — cours magistral) et 15 heures de TD). Les exemples cliniques cités (Mme Petit, Mme Uga, escarre sacrée, traumatisme sous anticoagulant) sont des illustrations pédagogiques, pas des protocoles. Le plan suit les six temps du raisonnement, puis les voies d'hypothèses, le modèle trifocal et le projet de soins.
 
-- Rappel méthode RC
+## L'essentiel en une minute
+
+Les quatre lignes ci-dessous condensent la méthode à avoir en tête avant d'entrer dans le détail. Elles permettent de situer rapidement où l'on se trouve entre recueil, analyse et projet.
+
+- **Six temps cités (cours)** : recueil des données, macrocible, émission d'hypothèses, analyse, modèle trifocal (jugement clinique ou problème de santé), projet de soins.
+- **Macrocible citée (cours)** : outil de synthèse qui trie les données recueillies pour conserver les données significatives, structurée autour de maladie et motif, thérapeutique, vécu, environnement et développement, avec formulation des problèmes de santé du jour et devenir à court, moyen et long terme.
+- **Modèle trifocal cité (Thérèse Psiuk, 2012)** : trois domaines cliniques intégrant la dimension humaine — symptomatologie et pathologie, risques et complications (problème traité en collaboration (PTC — problème traité en collaboration) et diagnostic infirmier (DI — diagnostic infirmier)), réactions humaines réelles et risques de réactions humaines (DI).
+- **Projet de soins cité (cours)** : plan d'action élaboré par une équipe soignante pluridisciplinaire avec la collaboration du patient et/ou de sa famille, présenté en tableau problème de santé, objectifs de soins, activités et actions, évaluations, avec objectifs conseillés selon la méthode (SMART — spécifique, mesurable, acceptable, réaliste, temporel).
+
+À retenir avant de poursuivre : le raisonnement y est présenté comme un enchaînement du recueil vers le projet, la macrocible y fait le tri, et le trifocal y pose le jugement. Les libellés de diagnostics infirmiers cités relèvent de l'ouvrage de référence cité, à vérifier dans l'édition en vigueur. Le reste de la fiche décline chaque temps dans l'ordre du support.
+
+<Callout type="info" title="Méthode">
+Le recueil cité ne s'appuie plus sur les 14 besoins fondamentaux : il procède en trois temps, de la connaissance administrative de la personne vers la synthèse clinique ciblée pour raisonner par anticipation ou selon le modèle inducto-hypothético-déductif.
+</Callout>
+
+## 1. Les six temps du raisonnement cité
+
+Pour passer des données brutes au projet, le support ordonne six temps qui s'enchaînent du recueil vers l'action. Le recueil y est détaillé en trois temps propres, la macrocible y fait la synthèse, et l'analyse y confirme ou infirme avant la pose du jugement. La procédure suivante se lit dans l'ordre, chaque temps préparant le suivant.
+
+<Steps>
+  <Step>
+    Recueillir les données en trois temps cités : connaissance de la personne (données administratives), caractéristiques de la macrocible (données médicales, environnementales, sociales, familiales, professionnelles, observations physiques et psychologiques), puis ciblage des données cliniques pour raisonner par anticipation ou selon le modèle inducto-hypothético-déductif (synthèse clinique).
+  </Step>
+  <Step>
+    Rédiger la macrocible entrée, état de santé du jour et sortie : trier l'ensemble des données pour conserver les données significatives selon maladie et motif, thérapeutique, vécu, environnement, développement (dépendances ou handicaps), formulation des problèmes de santé du jour et devenir à court, moyen et long terme.
+  </Step>
+  <Step>
+    Émettre des hypothèses avec recherches sur les pathologies et la pharmacologie et recueil de données complémentaires, selon la voie analytique ou non analytique décrite plus bas.
+  </Step>
+  <Step>
+    Analyser en mettant en lien connaissance de la personne, observation, écoute, connaissances théoriques mobilisées dans une démarche réflexive et données cliniques, pour évaluer la situation, confirmer ou infirmer les hypothèses et identifier le problème de santé.
+  </Step>
+  <Step>
+    Poser le jugement selon le modèle trifocal (trois domaines), avec formalisation des diagnostics infirmiers selon la taxonomie citée.
+  </Step>
+  <Step>
+    Élaborer le projet de soins (tableau, objectifs, activités et actions, évaluations) puis le réajuster à partir de l'évaluation.
+  </Step>
+</Steps>
+
+Ce qu'il faut en retenir : la procédure fait du recueil un questionnement progressif, de la macrocible un filtre, et de l'analyse une mise en lien avant toute conclusion. Les intitulés cités restent des contenus de cours. C'est dans cet esprit que les deux voies d'hypothèses se distinguent ensuite.
+
+## 2. Deux voies pour émettre des hypothèses : comparer sans les confondre
+
+Une fois les premiers indices repérés, le support distingue une voie analytique progressive et une voie non analytique par reconnaissance, puis deux raisonnements dans le trifocal. L'onglet suivant se lit en comparant les exemples pédagogiques cités, qui illustrent la démarche sans valoir conduite à tenir.
+
+<Tabs items={['Analytique', 'Non analytique']}>
+  <Tab value="Analytique">
+    **Voie analytique, exemple pédagogique de Mme Petit (cours)** : femme de 78 ans en établissement d'hébergement pour personnes âgées dépendantes (EHPAD — établissement d'hébergement pour personnes âgées dépendantes), ralentissement psychomoteur et difficultés d'expression sans traitement en cours ; hypothèses initiales (fatigue, désorientation, pathologie), donnée complémentaire d'une aide-soignante (peu mangé, petit-déjeuner refusé), hypothèse d'hypoglycémie confirmée par la glycémie capillaire citée. Illustration pédagogique, pas un seuil ni un protocole actuel.
+  </Tab>
+  <Tab value="Non analytique">
+    **Voie non analytique, exemple pédagogique de Mme Uga (cours)** : étudiante de 19 ans, douleurs abdominales, brûlures mictionnelles et fièvre ; reconnaissance immédiate d'un tableau d'infection urinaire grâce à l'expérience et au transfert, confirmation par bandelette urinaire citée. Illustration pédagogique, pas une règle diagnostique.
+  </Tab>
+</Tabs>
+
+Dans le trifocal, le support ajoute deux raisonnements que la liste suivante présente successivement, chacun avec son exemple de cours. Elle se lit du signe mineur vers l'anticipation du risque, en acceptant le doute comme moteur des hypothèses.
+
+- **Raisonnement inducto-hypothético-déductif, exemple pédagogique cité (cours)** : part d'un indice (picotements au sacrum, signe mineur), pose des hypothèses (miette, irritation, allergie, pli de draps), recueille des données complémentaires par l'observation (rougeur sacrée), mobilise la connaissance théorique (rougeur ne cédant pas à la pression, signe majeur) et valide l'hypothèse d'escarre sacrée de stade 1 cité. Le soignant n'y exprimerait que le produit de son raisonnement (domaine de l'implicite). Illustration, pas une conduite de stadification actuelle.
+- **Raisonnement par anticipation, exemple pédagogique cité (cours)** : part d'un problème identifié ou d'une capacité (traumatisme de la cuisse chez un patient sous anticoagulant pour antécédent cardiaque) et anticipe une gestion de risque (hématome majeur, voire hémorragie) avec une dimension préventive et personnalisée. Illustration, pas une prescription.
+
+À retenir de cette comparaison : la voie analytique avance par hypothèses vérifiées, la voie non analytique par reconnaissance issue de l'expérience, et l'anticipation par prévention d'un risque connu. Les situations citées restent des vignettes de cours. C'est dans cette logique que le tableau d'analyse prépare le trifocal.
+
+## 3. Analyser puis classer : tableau d'analyse et modèle trifocal
+
+Après les hypothèses, l'analyse met les données en lien dans un tableau qui répertorie problèmes réels, risques du domaine 2 et réactions humaines, puis priorise. Le modèle trifocal pose ensuite les problèmes de la personne en trois domaines. Le tableau suivant se lit de la symptomatologie vers les réactions humaines, chaque case restant un contenu de cours.
+
+| Domaine cité | Contenu cité (cours) |
+| --- | --- |
+| Domaine 1 : signes, symptômes, suspicion de pathologie | Pathologie diagnostiquée en lien avec le motif d'hospitalisation ; problème traité en collaboration relatif au rôle prescrit (PTC). |
+| Domaine 2 : PTC et DI | Risques avec la pathologie et effets secondaires des traitements ; risques de réactions humaines physiques et/ou psychologiques potentielles ; problème traité en collaboration (PTC) et diagnostic infirmier de risque (DI). |
+| Domaine 3 : DI | Problèmes réels en lien avec les réactions humaines physiques et/ou psychologiques ; diagnostic infirmier relatif au rôle propre (DI). |
+
+En pratique, ce tableau invite à distinguer le réel du potentiel avant de formuler, car la formulation change selon ce statut. Les intitulés PTC et DI cités gardent le sens donné par le support. C'est dans cet esprit que les deux formulations se comparent ensuite.
+
+<Tabs items={['PES (réel)', 'PE (potentiel)']}>
+  <Tab value="PES (réel)">
+    **Formulation (PES — problème, étiologie, symptômes) pour les PTC et diagnostics réels (cours)** : P pour le problème (intitulé précis), E pour l'étiologie (lié à, facteurs favorisants ou déclenchants), S pour les symptômes (se manifestant par, signes cliniques et symptômes). Exemple pédagogique cité : peur excessive (domaine 3) liée à l'hospitalisation et aux changements de repères, se manifestant par troubles du sommeil, perte d'appétit et inquiétude quant au devenir, chez une patiente de 85 ans en pneumologie pour bronchopneumopathie. Numéros de pages cités de l'ouvrage de référence : repères de cours, à vérifier dans l'édition en vigueur.
+  </Tab>
+  <Tab value="PE (potentiel)">
+    **Formulation (PE — problème, étiologie) pour les problèmes potentiels (cours)** : P pour l'intitulé précis, E pour l'étiologie (lié à, facteurs de risque susceptibles d'entraîner des complications), sans manifestations car le risque est inhérent à la situation. Exemples pédagogiques cités : risque d'infection de plaie chirurgicale lié à la pose de prothèse totale de genou, risque de thrombose lié à l'intervention et à la restriction de mobilité, chez un patient à J1. Repères de cours, pas des libellés actuels sans vérification.
+  </Tab>
+</Tabs>
+
+La taxonomie des diagnostics infirmiers citée compte 13 domaines (promotion de la santé, nutrition, élimination et échanges, activité et repos, perception et cognition, perception de soi, relations et rôles, sexualité, adaptation et tolérance au stress, principes de vie, sécurité et protection, confort, croissance et développement), par modes de réactions humaines ou par thèmes de santé. La formalisation citée s'appuie sur l'ouvrage « Diagnostics infirmiers — définitions et classification 2024-2026 » (NANDA (NANDA — north american nursing diagnosis association) International, 13e édition, Elsevier-Masson) : vérifier définition, caractéristiques et facteurs de risque pour choisir le libellé, selon la taxonomie domaine, classe et intitulé. Ces références éditoriales sont des repères de cours datés, à confronter à l'édition en vigueur.
+
+<Callout type="warn" title="Repères datés">
+Libellés, numéros de pages et taxonomie cités d'après l'ouvrage 2024-2026 et les supports 2026 : contenus de cours datés, repères pédagogiques à vérifier dans l'édition et les référentiels en vigueur — ne pas les utiliser comme libellés actuels sans vérification.
+</Callout>
+
+## 4. Projet de soins : tableau, objectifs, actions et évaluation
+
+Le projet de soins est défini dans le support comme un plan d'action élaboré par une équipe pluridisciplinaire avec le patient et/ou sa famille, donnant l'orientation générale des soins et pouvant indiquer la durée de séjour prévisible (DMS — durée moyenne de séjour), comme un résultat à atteindre. Le tableau suivant en donne la structure citée, qui se lit du problème vers l'évaluation.
+
+| Colonne citée | Contenu cité (cours) |
+| --- | --- |
+| Problème de santé | Problème posé selon le trifocal. |
+| Objectifs de soins | Résultat à atteindre, conseillé selon la méthode SMART. |
+| Activités de soins et actions | Détail rédigé à partir de l'annexe du référentiel des 9 activités de l'arrêté du 31 juillet 2009 relatif au diplôme d'État infirmier, formulé en acte, titre et tiret selon le cours (repère réglementaire de cours, à confronter au texte en vigueur). |
+| Évaluations | Vérification de l'atteinte des objectifs et de l'efficacité, à partir d'indicateurs, indices, signes et symptômes recueillis auprès de la personne et de sa famille, pour actualiser et réajuster. |
+
+Pour formuler un objectif utile, le support conseille la méthode SMART que la liste suivante détaille dans l'ordre, chaque lettre restant un contenu de cours. Elle se lit comme une grille de contrôle avant d'écrire.
+
+- **Spécifique** : personnalisé et adapté au contexte.
+- **Mesurable** : évaluable grâce à des critères définis.
+- **Acceptable** : négocié avec le patient et/ou son entourage.
+- **Réaliste** : prenant en compte les capacités du patient.
+- **Temporel** : inscrit dans une unité de temps.
+
+Les exemples pédagogiques cités (crèche et autonomie d'Inès avant la rentrée, maintien de l'indépendance de Mme Gertrude en EHPAD, absence de complications postopératoires et reprise des activités de M. Xavier en chirurgie, stabilisation pour un retour à domicile (RAD — retour à domicile) en psychiatrie) illustrent la formulation sans valoir objectifs types. Le support leur ajoute trois caractéristiques que la phrase suivante résume : le projet y est linéaire (résoudre, prévenir, gérer l'urgence), systémique (organiser et hiérarchiser dans le temps) et personnalisé (harmoniser invariants de qualité et attributs du patient). L'exemple détaillé du risque thromboembolique après prothèse de genou (surveillances citées, thérapeutiques citées sans détail de doses dans cette fiche, évaluation citée par absence de signes et de complications) reste une illustration pédagogique. C'est dans cette logique que la priorisation ordonne ensuite les problèmes.
+
+## 5. Prioriser : douze critères cités (repères de cours)
+
+Face à plusieurs problèmes, le support de TD sur la priorisation (références citées : travaux de Thérèse Psiuk, modèle trifocal, approches de Lynda Juall Carpenito) propose douze critères argumentés et dynamiques, la priorité pouvant changer au cours de la journée. La liste suivante se lit dans l'ordre du support, de la menace vitale vers la volonté du patient, chaque critère restant un contenu de cours.
+
+- **1. Urgence et menace vitale (prime sur tout)** : détresse respiratoire, voies aériennes, trouble circulatoire ou choc, hémorragie importante, altération neurologique aiguë, hypoglycémie sévère, sepsis ou infection grave, risque suicidaire imminent cités ; question citée : sans prise en charge immédiate, que peut-il arriver dans les minutes ou heures.
+- **2. Caractère actuel ou potentiel** : en règle générale le réel passe avant le risque (douleur actuelle cotée à 8/10 avant risque d'infection cité), sauf risque très probable, imminent, grave, difficilement réversible ou vital, comme une hypoglycémie sévère potentielle avant une douleur modérée citée.
+- **3. Gravité potentielle** : décès, perte de fonction, complication grave, séquelle, perte d'autonomie ou aggravation cités ; une hypoglycémie sévère potentielle peut passer avant une constipation ancienne citée.
+- **4. Rapidité d'évolution** : glycémie très élevée avec symptômes avant douleur chronique stable citée ; question citée : quel problème se dégraderait le plus vite sans intervention.
+- **5. Besoin physiologique fondamental** : cadre cité de la pyramide de Maslow (fonctions vitales, sécurité, appartenance, estime, accomplissement), sans automatisme, un problème psychosocial avec menace majeure pour la sécurité pouvant devenir prioritaire.
+- **6. Sécurité du patient** : chutes, fugue, suicide, erreur médicamenteuse, infection grave, hypoglycémie, hémorragie, complication postopératoire, environnement cités ; un risque potentiel peut devancer un problème actuel moins grave.
+- **7. Impact sur les autres problèmes** : problème transversal dont le non-traitement aggrave ou bloque les autres (exemple pédagogique cité du déséquilibre glycémique sur sécurité, kinésithérapie, récupération, fatigue, autonomie et retour à domicile).
+- **8. Impact sur l'autonomie et le devenir fonctionnel** : particulièrement pondéré en soins médicaux et de réadaptation (SMR — soins médicaux et de réadaptation) — autonomie, réadaptation, durée d'hospitalisation, retour à domicile, quotidien et projet de vie cités.
+- **9. Souffrance ressentie** : intensité de la douleur, anxiété, souffrance psychologique, préoccupations exprimées et qualité de vie citées ; le plus grave médicalement n'est pas toujours la préoccupation principale de la personne.
+- **10. Potentiel de réversibilité** : effet attendu d'une intervention précoce entre deux problèmes d'importance voisine, sans jamais passer devant l'urgence vitale.
+- **11. Contexte et moment du parcours** : urgences, réanimation, chirurgie, SMR, psychiatrie et domicile cités ; en SMR, pondérer autonomie, mobilité, réadaptation, éducation, prévention, sortie et vie sociale et professionnelle.
+- **12. Volonté et priorités du patient** : entre problèmes sans même degré d'urgence, intégrer ce qui compte pour la personne (question citée : qu'est-ce qui est le plus important pour vous actuellement), sans qu'une urgence vitale puisse être écartée par ce seul critère.
+
+<Callout type="warn" title="Repères datés">
+Douze critères, exemples chiffrés et situations (douleurs cotées, glycémies, SMR) : contenus de cours 2026 à visée pédagogique, à confronter aux référentiels en vigueur — ne pas les appliquer comme règles ni comme seuils actuels.
+</Callout>
+
+En pratique, cette liste invite à une hiérarchisation clinique argumentée et réévaluée, articulant pathologie, risques et réactions humaines du trifocal. Les exemples cités montrent les exceptions sans les figer. C'est dans cette limite que s'inscrit la vigilance infirmière.
+
+## Points de vigilance IDE
+
+La vigilance infirmière découle de tout ce qui précède : recueillir sans conclure trop vite, trier sans perdre le significatif, et formuler sans étiqueter la personne. Les puces ci-dessous reprennent les points des supports ; elles se lisent comme la mise en actes du raisonnement, du chevet vers le projet.
+
+- Recueillir en trois temps, garder la donnée validante en premier dans les écrits, et vérifier toute hypothèse par des données complémentaires avant de conclure, selon la méthode citée.
+- Formuler les diagnostics avec l'ouvrage de référence en vigueur (définition, caractéristiques, facteurs de risque vérifiés) et distinguer PES du PE, sans jugement de valeur.
+- Rédiger des objectifs SMART et négociés, des actions personnalisées et précises, et des évaluations centrées sur la personne avec indicateurs mesurables, en réajustant si nécessaire.
+- Prioriser de façon dynamique avec les douze critères cités, en faisant primer l'urgence vitale et la sécurité, tout en intégrant souffrance exprimée, contexte et volonté de la personne.
+- Devant tout libellé, seuil ou exemple datés, vérifier l'édition et le protocole en vigueur, sur prescription le cas échéant ; aucune posologie n'est détaillée dans cette fiche.
+- TODO : contenus réglementaires détaillés de l'arrêté cité, taxonomie actuelle et attendus fins d'évaluation non détaillés dans les extraits — compléter avec les textes et référentiels en vigueur.
+
+Concrètement, cela signifie dater et tracer chaque étape, relire la priorité au fil de la journée, et préférer une hypothèse infirmée à temps à une conclusion hâtive. Devant une menace vitale listée, l'alerte immédiate selon le protocole prime, les repères datés restant à vérifier comme l'indique le TODO.
+
+<Accordions>
+  <Accordion title="Complément : cadrage de l'UE et de son évaluation (repères datés)" value="complement">
+    L'UE 3.2 S3 est présentée sur 20 heures pour 1 ECTS avec S. Graffeille comme formateur référent cité, des prérequis (UE 3.1 S1-S2, UE 3.2 S2 : macrocible, analyse, trifocal, projet, planification) et des objectifs (négocier, mettre en œuvre et suivre en pluriprofessionnalité, prioriser au regard des données du jour, planifier pour un groupe). L'évaluation citée est un écrit en groupe restreint avec élaboration d'un projet de soins et recherche d'éléments de négociation, en compensation avec l'UE 3.3, session 1 citée le jeudi 22 octobre 2026 de 9 h à 12 h, avec critères (contexte pluriprofessionnel, négociation, traçabilité). Contenus datés et locaux, renvoyés à l'organisation en vigueur.
+  </Accordion>
+</Accordions>
+
+Après ce complément, la fiche se referme sur ses sources : tout ce qui précède vient des supports cités, les contenus datés restant à confronter aux référentiels et protocoles en vigueur.
+
+## Voir aussi
+
+<Cards>
+  <Card title="Accueil et alliance" description="Sécuriser, connaître et construire la confiance." href="./accueil" />
+  <Card title="Négociation" description="Consentir, négocier et tracer les accords." href="./negociation" />
+  <Card title="Plan de soins et chemin clinique" description="Du plan de soins type au parcours coordonné." href="./plan-soins" />
+  <Card title="Transmissions ciblées" description="Tracer l'essentiel et planifier la suite." href="./transmissions" />
+</Cards>
 
 ## Sources
 
-- Cours UE 3.2 S3 (à venir).
+- « Raisonnement clinique — modèle trifocal », UE 3.2 projet de soins infirmiers, promotion 2025-2028, TD 1 rappel modèle trifocal V1, août 2026 (35 pages).
+- « TD projet de soins — priorisation — attendus », UE 3.2 S3, promotion 2025-2028, année 2026-2027, V1, 27 septembre 2026 (21 pages) : 12 critères de priorisation cités.
+- « Présentation UE 3.2 semestre 3 2026-2027 », compétence 2 « Concevoir et conduire un projet de soins infirmiers » (9 pages) : cadrage cité.
+- « Grille d'évaluation UE 3.2 S3 session 1 », Institut de formation en soins infirmiers (IFSI — institut de formation en soins infirmiers) région d'Aquitaine, promotion 2025-2028, année 2026-2027 (2 pages) : barème cité en complément.
+- Ouvrages cités dans les supports : « Diagnostics infirmiers — définitions et classification 2024-2026 », 13e édition, Elsevier-Masson ; Martin L. (2019), Psiuk T. (2019), Cesiform (décembre 2024).

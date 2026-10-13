@@ -3,15 +3,139 @@ title: "Concepts en éducation à la santé"
 description: "Prévention, maladie chronique, éducation en santé, alliance, autosoins, deuil, littératie, empowerment."
 ---
 
-> Contenu à compléter avec les cours.
+import { Callout } from 'fumadocs-ui/components/callout';
+import { Card, Cards } from 'fumadocs-ui/components/card';
+import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
+import { Step, Steps } from 'fumadocs-ui/components/steps';
+import { Accordion, Accordions } from 'fumadocs-ui/components/accordion';
 
-## Au programme
+Parler d'éducation en santé sans s'accorder sur les mots expose à confondre informer, prévenir et accompagner. Cette fiche pose les repères du Cours Magistral (CM — cours magistral) sur la démarche éducative, la méthode d'étude des concepts du Travail Dirigé (TD — travail dirigé) 1 et la lentille critique de l'article de Sandrin (2013). Les définitions détaillées de chaque concept du TD 1 ne figurent pas dans les supports lus : elles restent à construire en travaux de groupe, avec des TODO explicites. Le plan progresse des champs d'action vers la prévention, puis vers la méthode d'étude et la lentille critique.
 
-- Prévention et maladie chronique
-- Éducation et promotion de la santé
-- Apprentissage, deuil et littératie en santé
-- Empowerment et motivation
+## L'essentiel en une minute
+
+Les quatre lignes ci-dessous condensent les distinctions à avoir en tête avant d'entrer dans le détail. Elles permettent de situer rapidement où l'on se trouve entre population générale et patient atteint de maladie chronique.
+
+- **Champs d'action cités (CM)** : promotion de la santé (population globale, déterminants globaux), éducation à la santé (population générale ou groupes, savoirs et compétences psychosociales), éducation / santé des patients (personnes atteintes de pathologies chroniques et entourage), Éducation Thérapeutique du Patient (ETP — éducation thérapeutique du patient, cadre structuré et personnalisé, soin à part entière).
+- **Prévention citée (CM)** : quatre niveaux articulés à l'Éducation Thérapeutique du Patient — primaire (prévenir la survenue), secondaire (régression ou arrêt précoce, dépistage cité), tertiaire (vivre avec une maladie chronique, compétences d'adaptation), quaternaire (accompagnement de l'invalidité et du processus de la mort, soins palliatifs cités).
+- **TD 1 cité (consignes)** : quatre ensembles de concepts étudiés par quarts de promotion, avec une méthode en cinq pas (recherches, caractéristiques, liens, exemples, définition propre) et une synthèse en diaporama avec restitution.
+- **Lentille Sandrin 2013 citée** : éducation bancaire qui dépose des contenus contre éducation libératrice qui construit dans le dialogue, modèle d'Ira Shor par questionnement et travail en groupes, trois attitudes de Carl Rogers, risque d'Éducation Thérapeutique du Patient dite Canada Dry et place de l'environnement.
+
+À retenir avant de poursuivre : les champs et niveaux listés servent à qualifier toute action d'éducation, la méthode du TD 1 sert à définir les mots avec rigueur, et la lentille critique sert à vérifier que la démarche émancipe au lieu de déposer. Le reste de la fiche décline ces trois apports, des définitions du Cours Magistral vers la méthode puis vers la critique.
+
+## 1. Champs d'action : de la population au patient
+
+Pour qualifier une action, le Cours Magistral invite d'abord à repérer à qui elle s'adresse et dans quel but. La promotion vise les déterminants globaux, l'éducation à la santé vise les savoirs et comportements, et l'éducation des patients puis l'Éducation Thérapeutique du Patient resserrent vers la vie avec la maladie chronique. Les paragraphes suivants présentent ces quatre champs avant de les détailler en onglets, puis d'en tirer la conséquence pour l'analyse.
+
+<Tabs items={['Promotion', 'Éducation à la santé', 'Patients et ETP']} >
+  <Tab value="Promotion">
+    **Promotion de la santé citée (CM)** : champ englobant la population globale, y compris les personnes bien portantes ; objectif d'agir sur les déterminants globaux (sociaux, économiques, environnementaux, politiques) pour donner davantage de maîtrise sur sa santé et améliorer la qualité de vie ; exemples cités : politiques publiques favorables (taxation du tabac, pistes cyclables), campagnes nationales (nutrition, environnement), cadre de vie scolaire ou professionnel.
+  </Tab>
+  <Tab value="Éducation à la santé">
+    **Éducation à la santé citée (CM)** : champ adressé à la population générale, à des groupes spécifiques (jeunes, salariés cités) ou à des personnes consultant pour des facteurs de risque ; objectif de transmettre des savoirs, développer des compétences psychosociales (estime de soi, esprit critique cités) et favoriser des comportements favorables ; exemples cités : ateliers en écoles (sommeil, addictions), actions associatives, outils d'information et conseils d'hygiène de vie.
+  </Tab>
+  <Tab value="Patients et ETP">
+    **Éducation / santé des patients citée (CM)** : champ ciblant les personnes atteintes d'une ou plusieurs pathologies chroniques et leur entourage ; objectif d'aider à comprendre la maladie, à s'approprier le traitement, à acquérir des compétences d'autosoins et à s'adapter au quotidien ; exemples cités : entretiens individuels ou collectifs par soignants formés, gestes techniques (auto-surveillance glycémique citée), gestion de la douleur, activité physique adaptée. **ETP citée (CM)** : cadre réglementaire, structuré et personnalisé de cette éducation, reconnu et encadré par la Haute Autorité de Santé (HAS — haute autorité de santé), soin à part entière intégré au parcours, visant à rendre le patient acteur (diabète, asthme, insuffisance cardiaque, cancers cités) ; exemple cité : programme structuré et validé avec bilan personnalisé, séances pluridisciplinaires et évaluation finale.
+  </Tab>
+</Tabs>
+
+En pratique, cette section impose une méthode de qualification : devant toute action, nommer le public réel, l'objectif poursuivi et le cadre mobilisé avant de choisir le vocabulaire. Les exemples listés montrent que le même thème (nutrition, activité physique) change de champ selon qu'il vise une population ou un patient suivi. C'est sur ces distinctions que s'articulent ensuite les niveaux de prévention.
+
+## 2. Prévention : quatre niveaux articulés à l'ETP
+
+Les champs posés, le schéma du Cours Magistral situe l'Éducation Thérapeutique du Patient à chaque niveau de prévention. La prévention primaire promeut des conduites pour éviter la survenue, la secondaire vise la régression ou l'arrêt précoce avec le dépistage, la tertiaire accompagne la vie avec la maladie chronique, et la quaternaire accompagne l'invalidité et le processus de la mort. La liste suivante se lit du plus en amont vers le plus en aval, chaque niveau cité servant de repère de qualification.
+
+- **Prévention primaire citée (CM)** : promotion de conduites individuelles pour prévenir la survenue d'une maladie ; exemple cité : campagne ; Éducation Thérapeutique du Patient mentionnée dans le schéma à ce niveau.
+- **Prévention secondaire citée (CM)** : promotion de comportement pour la régression ou l'arrêt de la maladie à un stade précoce ; exemple cité : dépistage ; Éducation Thérapeutique du Patient mentionnée dans le schéma à ce niveau.
+- **Prévention tertiaire citée (CM)** : compétences d'adaptation pour vivre avec une maladie chronique ; Éducation Thérapeutique du Patient mentionnée dans le schéma à ce niveau.
+- **Prévention quaternaire citée (CM)** : accompagnement de l'invalidité et du processus de la mort ; exemples cités : soins d'accompagnement, prise en charge de la douleur, soins palliatifs.
+
+<Callout type="info" title="Méthode">
+Pour qualifier une action, croiser le champ (à qui l'on s'adresse) et le niveau (où l'on se situe dans l'histoire de la maladie) d'après le Cours Magistral, puis vérifier que les objectifs et indicateurs correspondent à ce double positionnement.
+</Callout>
+
+Concrètement, cette section invite à ne pas réduire la prévention au dépistage ni l'Éducation Thérapeutique du Patient à la seule phase chronique stabilisée, puisque le schéma cité l'inscrit aux quatre niveaux. Les intitulés listés restent des contenus de cours à manier comme des repères de qualification. C'est la méthode d'étude des concepts qui permet ensuite de définir chaque mot avec rigueur.
+
+## 3. TD 1 : étudier les concepts en cinq pas
+
+Pour définir utilement, la consigne du TD 1 impose une démarche collective en deux temps et cinq pas. Le premier temps (3 heures citées) étudie un ensemble de concepts par quart de promotion avec un rapporteur, le second (2 heures citées) restitue au quart de groupe avec 15 minutes de présentation par groupe plus 15 minutes d'échanges selon la consigne. Les paragraphes suivants présentent les quatre ensembles avant de détailler la méthode en étapes, avec des TODO explicites pour les définitions absentes du dossier.
+
+- **Groupe 1 cité (consigne TD 1)** : prévention, maladie chronique, perte, éducation en santé.
+- **Groupe 2 cité (consigne TD 1)** : éducation, promotion de la santé, alliance thérapeutique, autosoins (écrit « auto soins » dans la consigne).
+- **Groupe 3 cité (consigne TD 1)** : apprentissage, deuil, littératie en santé, éducation thérapeutique.
+- **Groupe 4 cité (consigne TD 1)** : empowerment (pouvoir d'agir, terme conservé en anglais dans la consigne), motivation, formation, compétences psychosociales.
+
+<Steps>
+  <Step>
+    Faire des recherches approfondies (sources fiables, livres, articles, exemples en action) et noter les références pour la bibliographie, d'après la consigne.
+  </Step>
+  <Step>
+    Identifier les caractéristiques clés : ce qui définit chaque concept et le rend unique, d'après la consigne.
+  </Step>
+  <Step>
+    Établir les liens et relations entre concepts pour les situer dans un contexte plus large, d'après la consigne.
+  </Step>
+  <Step>
+    Illustrer par des exemples concrets (vie réelle, histoire, littérature citées), d'après la consigne.
+  </Step>
+  <Step>
+    Rédiger une définition propre, claire et sans ambiguïté, puis synthétiser en diaporama déposé en PDF sur e-Notitia avec restitution orale, d'après la consigne.
+  </Step>
+</Steps>
+
+<Callout type="warn" title="Définitions à construire">
+Définitions détaillées de la perte, de l'alliance thérapeutique, des autosoins, de l'apprentissage, du deuil, de la littératie en santé, de l'empowerment, de la motivation, de la formation et des compétences psychosociales non fournies dans les supports lus : TODO — les établir en groupe selon la méthode citée, uniquement à partir de sources fiables, sans inventer.
+</Callout>
+
+À retenir de cette méthode : aucun concept ne se définit sans recherches tracées, sans caractéristiques discriminantes, sans liens, sans exemples et sans formulation propre. Les ensembles et temps listés restent des repères de cours datés (consigne du 16 septembre 2026) à confronter aux consignes en vigueur. C'est la lentille critique qui donne ensuite du relief à ces définitions.
+
+## 4. Lentille critique : quelle démarche éducative (Sandrin 2013)
+
+Les définitions posées, l'article de Sandrin invite à interroger les valeurs et modèles pédagogiques mobilisés. L'auteure y montre la convergence entre la charte d'Ottawa pour la promotion de la santé et la charte de l'éducation populaire (2005) autour de l'émancipation, de la coopération, de la solidarité, de la justice et de la démocratie participative — agir AVEC les personnes et non à leur place. La liste suivante se lit des pièges vers les repères, chaque apport cité restant un contenu de cours.
+
+- **Finalité de l'éducation citée (Sandrin 2013)** : former une personne autonome, capable de ne se soumettre qu'aux impératifs qu'elle a elle-même élaborés ou reconnus ; certains soignants y sont mal à l'aise avec le mot « éducation » associé à l'enfance et à l'autorité, d'où l'enjeu de clarifier ses références pédagogiques.
+- **Cinq axes d'Ottawa cités (Sandrin 2013)** : politique (conséquences des décisions sur la santé), environnement (ressources et conditions de vie favorables), démocratie (communautés choisissant priorités et décisions), éducation pour la santé (aptitudes indispensables à la vie, contrôle sur santé et environnement), services de santé (système respectant la dimension culturelle et sociale, expression des attentes, formation et recherche orientées en ce sens).
+- **Freire et l'éducation bancaire citée (Sandrin 2013)** : Paulo Freire oppose la conception bancaire (déposer des contenus inertes dans un élève supposé vide, l'enseignant sachant et parlant, l'élève écoutant) à l'éducation libératrice (dialogue ancré dans la réalité, savoirs construits en réciprocité) — l'éducation n'y est jamais neutre : elle favorise la domination ou l'émancipation.
+- **Shor et l'empowerment cité (Sandrin 2013)** : le modèle d'Ira Shor (Empowering Education) fait travailler les participants en équipe de chercheurs à partir d'une problématique définie ensemble, avec questionnement initial, premières idées, rédaction en petits groupes, rapports en plénière, synthèse et apports extérieurs venant nourrir et non clore le débat, puis projets d'action ; la formulation des objectifs du point de vue des patients plutôt que des soignants y signale la cohérence.
+- **Rogers et l'approche centrée sur la personne citée (Sandrin 2013)** : Carl Rogers conditionne l'apprentissage à trois attitudes — authenticité (être vrai, sans jouer de rôle), considération positive inconditionnelle (accepter la personne telle qu'elle est, foi en ses capacités), compréhension empathique (percevoir le monde subjectif d'autrui comme si l'on était cette personne, sans s'y confondre) — d'où la préférence pour « bilan éducatif partagé » plutôt que « diagnostic éducatif », et pour le bricolage de solutions communes plutôt que la prescription.
+- **Risque Canada Dry cité (Sandrin 2013)** : une Éducation Thérapeutique du Patient qui adopte les quatre étapes (besoins, compétences, séances, évaluation) tout en restant calquée sur la démarche clinique (diagnostic, prescription, application, vérification) — interrogatoire étoffé, objectifs fixés au patient, séances prescrites, questionnaire de vérification — décourage la participation et l'application ; l'exemple de Dirk Gevaert cité (arbitrage entre glycémie basse et maintien de l'activité professionnelle) montre des situations relevant de la complexité et non de la seule acquisition de compétences.
+- **Environnement cité (Sandrin 2013)** : éducation informelle (influences reçues sans projet délibéré d'éduquer), éducation indirecte (transformer le milieu pour le rendre promoteur de santé et d'autonomie), relations de la personne à son environnement et action sur celui-ci — avec la traque des messages contradictoires (menus de cantine, sieste-punition, règlement interdisant la vie affective, ordonnance illisible, magazines de régimes en salle d'attente cités).
+
+<Callout type="error" title="Piège pédagogique">
+Confondre participation décorative (jeu, images, questions fermées visant la bonne réponse) et co-construction : l'article lie la valeur émancipatrice à la réciprocité réelle — devant tout atelier, vérifier qui définit le problème, qui produit le savoir et qui décide de l'action.
+</Callout>
+
+Concrètement, cette section invite à relire chaque définition et chaque atelier avec trois questions : la relation établie (authenticité, valorisation, empathie), l'animation (qui parle, qui cherche, qui décide) et l'environnement (messages cohérents ou contradictoires). Les apports listés montrent que la même architecture peut servir deux logiques opposées. L'article cité restant un repère de cours, il convient de le mobiliser comme outil critique et non comme norme.
+
+## Points de vigilance IDE
+
+La vigilance infirmière découle de tout ce qui précède : nommer juste, définir avec rigueur et animer en cohérence avec les valeurs affichées. Les puces ci-dessous reprennent les points des cours ; elles se lisent comme la mise en actes des champs, de la méthode et de la lentille.
+
+- Qualifier chaque action par son champ et son niveau (public, objectif, cadre) avant de choisir entre informer, prévenir et accompagner, d'après le Cours Magistral.
+- Définir selon la méthode citée (recherches tracées, caractéristiques, liens, exemples, formulation propre) et signaler en TODO tout ce que le dossier ne fournit pas, sans inventer.
+- Vérifier la réciprocité réelle (qui définit, qui sait, qui décide), les trois attitudes citées et la cohérence de l'environnement, en s'appuyant sur la lentille citée.
+- Respecter le consentement et la confidentialité des situations de stage, anonymiser, et vérifier tout repère daté contre les consignes et textes en vigueur.
+
+Concrètement, cela signifie adosser chaque usage d'un concept à une définition sourcée, hiérarchiser les objectifs selon le champ et le niveau, et ajuster l'animation pour que les patients restent auteurs de leur formation. Devant un doute sur un seuil, une stratégie ou un message contradictoire, le recours à l'encadrement et aux textes en vigueur prime, les TODO renvoyant aux vérifications indispensables.
+
+<Accordions>
+  <Accordion title="Complément : ce que le dossier ne fournit pas" value="complement">
+    Les rendus d'étudiants du TD 1 (diaporamas par groupes de prénoms) sont des exemples pédagogiques établis et non des cours : ils ne sont pas mobilisés dans cette fiche. TODO : verser les définitions validées de chaque concept et la synthèse du TD 1 dès réception des supports formateurs.
+  </Accordion>
+</Accordions>
+
+Après ce complément, la fiche se referme sur ses sources : tout ce qui précède vient des supports cités, les définitions manquantes et les contenus datés restant à vérifier contre les consignes en vigueur.
+
+## Voir aussi
+
+<Cards>
+  <Card title="Démarche éducative et ETP" description="Définition, cadre et quatre étapes : le versant soin." href="./demarche-etp" />
+  <Card title="Bilan éducatif partagé" description="Mettre le patient au centre : la première étape." href="./bilan-educatif" />
+  <Card title="Analyser une démarche" description="Grilles SSES et ETP, lentille critique : la méthode d'analyse." href="./analyse-demarche" />
+</Cards>
 
 ## Sources
 
-- Cours UE 4.6 S3 (à venir).
+- « La démarche éducative et l'Éducation thérapeutique du patient (ETP) », UE 4.6 S3, CM du 14 septembre 2026, promotion 2025-2028 (81 pages) — champs d'action et prévention.
+- « Consignes étudiants TD 1 — Étude de concepts », 16 septembre 2026 (2 pages) — quatre ensembles de concepts et méthode en cinq pas.
+- Sandrin B., « Éducation thérapeutique et promotion de la santé : quelle démarche éducative ? », Santé Publique, 2013/HS2 (S2), p. 125-135.
+- TODO : définitions validées des concepts du TD 1 et synthèse des groupes absentes du dossier au moment de la rédaction — sources à ajouter dès réception.
