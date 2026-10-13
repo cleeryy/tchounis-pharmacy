@@ -3,13 +3,132 @@ title: "Rôles, missions et compétences"
 description: "Ce que fait l’IDE et avec qui."
 ---
 
-> Contenu à compléter avec les cours.
+import { Callout } from 'fumadocs-ui/components/callout';
+import { Card, Cards } from 'fumadocs-ui/components/card';
+import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
+import { Step, Steps } from 'fumadocs-ui/components/steps';
+import { Accordion, Accordions } from 'fumadocs-ui/components/accordion';
 
-## Au programme
+Au centre d'un parcours où se croisent médecin, aide-soignant, kinésithérapeute, psychologue et assistant social, l'infirmier diplômé d'État (IDE — infirmier diplômé d'État) tient une place singulière d'interface, de coordination et d'accompagnement. Cette fiche suit le cours de septembre 2026 sur le rôle, les fonctions, les missions et les compétences des IDE et de leurs partenaires, rattaché à la compétence 9 (organiser et coordonner les interventions soignantes). Les articles, décrets et arrêtés cités y sont des repères de cours, à confronter aux textes en vigueur, jamais à appliquer comme droit actuel. Le plan progresse de la collaboration en général vers la place de l'IDE, puis vers les outils et les acteurs.
 
-- Rôle, fonctions, missions et compétences des IDE
-- Acteurs partenaires
+## L'essentiel en une minute
+
+Les quatre lignes ci-dessous condensent les définitions et repères à avoir en tête avant d'entrer dans le détail. Elles permettent de situer rapidement où l'on se trouve entre simple addition de métiers et véritable action commune.
+
+- **Collaboration contre coopération (cours)** : la coopération divise le travail en sous-tâches indépendantes assemblées ensuite, tandis que la collaboration est un travail conjoint où les participants agissent ensemble en permanence sur le même objet, avec un objectif commun centré sur le patient, dans le respect de chaque champ professionnel.
+- **Trois niveaux d'action commune (cours)** : la pluriprofessionnalité met en commun des spécialités qui gardent chacune spécificité et méthodes ; l'interprofessionnalité, au sens de l'Organisation mondiale de la santé (OMS — Organisation mondiale de la santé), fait travailler et apprendre ensemble au moins deux professions pour améliorer les résultats en santé ; l'interdisciplinarité construit une dynamique positive par complémentarité, pour une vision globale et multidimensionnelle du patient.
+- **Place de l'IDE citée (cours)** : interface entre patient, famille et équipe soignante, coordination des soins et circulation de l'information, explication et orientation dans le parcours, suivi du projet de soins dans une approche globale et cohérente, avec des compétences relationnelles, organisationnelles, pédagogiques, éthiques et réflexives.
+- **Cadres et outils cités (repères de cours datés)** : article R.4311-4 du code de la santé publique (CSP — code de la santé publique) sur la collaboration avec les aides-soignants, auxiliaires de puériculture et aides médico-psychologiques ; outils de coordination (transmissions ciblées, réunions, dossier informatisé, réunions de concertation pluridisciplinaire (RCP — réunion de concertation pluridisciplinaire), retour d'expérience (RETEX — retour d'expérience), protocoles, plan de soins type, chemin clinique, ViaTrajectoire, dossier médical partagé (DMP — dossier médical partagé), messagerie sécurisée) et référentiels par métier — repères pédagogiques, appliquer les textes et protocoles en vigueur.
+
+À retenir avant de poursuivre : la collaboration décrite garantit la cohérence du parcours et partage la responsabilité de la réussite globale, sans effacer les frontières professionnelles. Les textes et outils cités restent des contenus de cours datés. Le reste de la fiche décline cette logique, des définitions vers la pratique interdisciplinaire puis vers les acteurs.
+
+<Callout type="warn" title="Repères datés">
+Article R.4311-4 du CSP, article R.4311-3 cité, décrets et arrêtés par métier et dispositifs numériques cités : contenus de cours à confronter aux textes et protocoles en vigueur — ne pas les utiliser comme droit actuel.
+</Callout>
+
+## 1. Coopérer, collaborer, décloisonner : ce que les mots engagent
+
+Pour travailler ensemble utilement, il faut d'abord s'entendre sur les mots, car chaque terme décrit un degré différent d'action commune. Le cours distingue soigneusement la coopération et la collaboration en sciences humaines, avant de décliner la pluriprofessionnalité, l'interprofessionnalité et l'interdisciplinarité. Les paragraphes suivants présentent ces définitions avant de les comparer dans l'onglet, puis d'en tirer la leçon pour la continuité des soins.
+
+<Tabs items={['Coopération / collaboration', 'Pluri / inter']} >
+  <Tab value="Coopération / collaboration">
+    **Coopération et collaboration (cours)** : la coopération découpe un grand problème en sous-tâches indépendantes, chacun travaillant dans son coin avant assemblage ; la collaboration fait agir ensemble en permanence sur le même objet, en interagissant à chaque étape. La collaboration soignante est une démarche collective centrée sur le patient avec un objectif commun, chacun agissant dans son champ, garantissant la cohérence du parcours et du projet de soins, avec des échanges permanents et une responsabilité partagée de la réussite globale. L'article R.4311-4 du CSP cité prévoit que les actes et soins relevant du rôle propre, dispensés en établissement ou à domicile sanitaire, social ou médico-social, peuvent être assurés par l'infirmier sous sa responsabilité avec la collaboration d'aides-soignants, d'auxiliaires de puériculture ou d'aides médico-psychologiques qu'il encadre, dans les limites de leur qualification liée à la formation, le cas échéant dans le cadre de protocoles de soins infirmiers mentionnés à l'article R.4311-3 — repère de cours, appliquer le texte en vigueur.
+  </Tab>
+  <Tab value="Pluri / inter">
+    **Pluriprofessionnalité et interprofessionnalité (cours)** : la pluriprofessionnalité met en commun connaissances, expertise et expérience de façon concomitante au service des patients, chacun gardant spécificité et compétences ; Glykos (2010) cité y voit des disciplines concourant à une réalisation commune sans modifier leur vision ni leurs méthodes, avec un travail pluridisciplinaire peu formalisé ; à l'hôpital, c'est la collaboration de plusieurs professionnels autour d'un patient, l'addition des travaux donnant l'amélioration visée — approche jugée morcelée et réductrice par le cours, qui interroge sa qualité. L'interprofessionnalité, selon l'OMS citée, concrétise apprentissage et activité lorsque des spécialistes d'au moins deux professions travaillent conjointement et apprennent les uns des autres pour améliorer les résultats, aucune profession ne pouvant fournir seule toute la gamme des soins ; elle suppose de dépasser préjugés, malentendus et intérêts étroits vers la complémentarité, la synergie, l'échange et le partage, dans le seul but du bien-être du patient et de la qualité. Guihard cité y voit le partage de valeurs et de savoirs rendant possible la prise en compte du sujet en souffrance ; Sainsaulieu, Ford et D'Amour (2005) cités insistent sur le faire-ensemble et la réponse intégrative et partagée. L'image retenue : entendre un professionnel dire « après votre accord, nous avons discuté autour de votre dossier avec les autres professionnels, et voici ce que nous vous proposons et pourquoi ».
+  </Tab>
+</Tabs>
+
+À retenir de cette comparaison : la coopération juxtapose des contributions, la collaboration les articule en continu, la pluriprofessionnalité les additionne et l'interprofessionnalité les met en synergie avec une culture commune. L'article cité encadre strictement la collaboration de l'IDE avec les aides-soignants et professions voisines, sous sa responsabilité et dans leurs qualifications. Les définitions et l'article cités restent des contenus de cours à vérifier contre les textes en vigueur. C'est dans cet esprit que l'interdisciplinarité prolonge la réflexion vers l'organisation concrète.
+
+<Callout type="info" title="Méthode">
+Pour réviser, associer chaque notion à sa question : coopération — qui fait quelle part séparément, collaboration — qui agit ensemble sur le même objet, pluriprofessionnalité — qu'additionne-t-on, interprofessionnalité — que met-on en commun et qu'apprend-on ensemble.
+</Callout>
+
+## 2. L'interdisciplinarité : conditions, attributs et construction commune
+
+Une fois les mots posés, le cours décrit l'interdisciplinarité comme la condition optimale de prise en charge, sans la réduire aux seules spécialités médicales. Le Consortium pancanadien de l'interprofessionnalisme en santé (CIPS — Consortium pancanadien de l'interprofessionnalisme en santé) cité y voit le développement et le maintien de relations de travail avec apprenants, professionnels, patients, familles, proches et communauté pour des résultats optimaux en santé et services sociaux, tandis que D'Amour et Oandasan (2005) cités y voient des modalités de pratique cohérentes et intégrées répondant aux besoins de la personne, des proches et de la communauté. La liste suivante se lit des conditions vers les attributs, puis vers la construction quotidienne.
+
+- **Définition et conditions de réussite (cours)** : complémentarité de professionnels aux compétences différentes créant une dynamique positive, pour une vision globale et multidimensionnelle ; objectif commun et partagé, bonne utilisation des compétences individuelles et collectives, compréhension du système de valeur des autres disciplines, prise de décision en consensus guidant l'action thérapeutique.
+- **Construction commune d'une organisation (cours)** : coordination des activités, répartition des tâches, apprendre ensemble, vision globale et analyse multidimensionnelle du patient et de ses besoins, reconnaissance de l'importance de la collaboration et de l'interdépendance, respect entre disciplines, langage commun, transmissions des informations.
+- **Attributs et caractéristiques (cours)** : travail se construisant autour d'un projet donné et contextualisé à dimension scientifique, plusieurs disciplines représentées par des professions différentes rendant compte de leur discipline, disciplines différentes et complémentaires sans prédominance, responsabilités partagées selon formation et compétences, œuvre commune décidée et admise par tous ; même finalité et même mandat avec contractualisation autour d'objectifs précis, motivation créant responsabilité, émulation et créativité, ouverture d'esprit et valorisation des différences, feed-back possible, communication centrale, adaptation aux situations nouvelles, patient pris dans son environnement bio-psycho-social, identité professionnelle de chaque acteur.
+
+En pratique, cette section invite à lire l'interdisciplinarité comme un construit et non comme un état : elle associe médecins et IDE avec intégration des analyses cliniques et avis infirmiers dans la vision médicale, prend l'individu dans ses dimensions physique, psychique, humaine, sociale et spirituelle, et transcende filières soignantes, éducatives, administratives et techniques, sanitaire, médico-social et social, ville et hôpital, jusqu'aux bénévoles et associations de soutien aux usagers. Chaque condition listée éclaire un point de vigilance du travail réel. C'est cette exigence qui fonde la méthode du travailler-ensemble décrite ensuite.
+
+## 3. Travailler ensemble : méthode et place de l'IDE
+
+Après les définitions, cette section passe à la méthode : comment passer de la coexistence à l'enrichissement mutuel, et quelle y est la place de l'infirmier. Le cours insiste sur les interactions continues, la connaissance mutuelle et la complémentarité plutôt que la concurrence, au service de la qualité, de la sécurité et de la continuité des soins. L'organisation ne s'y fait ni au hasard ni au gré des envies, mais selon une logique d'enchaînement des soins éclairée par la connaissance des attributions et contraintes de chacun. La procédure suivante se lit dans l'ordre, de la reconnaissance vers la structuration.
+
+<Steps>
+  <Step>
+    Apprendre à se connaître, soi et les autres, et reconnaître les compétences de chacun selon le cours.
+  </Step>
+  <Step>
+    Savoir échanger et partager à partir de ces compétences, confronter et analyser les différents points de vue selon le cours.
+  </Step>
+  <Step>
+    Structurer les interventions des professionnels au bon moment et au bon endroit, dans un esprit de complémentarité et non de concurrence, pour la qualité, la sécurité et la continuité des soins selon le cours.
+  </Step>
+  <Step>
+    Communiquer pour la cohérence des objectifs et des actions, tenir la traçabilité et respecter les interventions de chacun, la solidité de l'équipe et la qualité des relations améliorant l'organisation et la qualité de vie au travail selon le cours.
+  </Step>
+</Steps>
+
+- **Rôle et place de l'IDE dans l'équipe interdisciplinaire (cours)** : interface entre patient, famille et équipe soignante ; coordination des soins et circulation de l'information ; explication et orientation du patient dans son parcours ; suivi du projet de soins avec une approche globale et cohérente.
+- **Compétences infirmières mobilisées citées (cours)** : relationnelles (écoute, reformulation) ; organisationnelles (planification, traçabilité, gestion du temps) ; pédagogiques (explication, accompagnement, éducation à la santé) ; éthiques et réflexives (respect des rôles, secret professionnel, analyse de pratique).
+- **Posture de traducteur citée (cours)** : être capable d'expliquer au patient le rôle de chaque intervenant et partager avec les collaborateurs les informations utiles, avec pertinence.
+
+<Callout type="error" title="Urgence et continuité">
+Rupture de circulation de l'information, transmissions manquantes ou coordination défaillante : le cours lie qualité, sécurité et continuité des soins au travailler-ensemble — devant toute situation à risque, alerter et tracer sans délai selon le protocole en vigueur.
+</Callout>
+
+Concrètement, cette section impose une méthode : connaître les attributions et contraintes des autres pour respecter leurs interventions, communiquer pour aligner objectifs et actions, et tenir la place d'interface décrite sans sortir de son champ. L'infirmier y explique chaque rôle au patient et ne transmet que l'utile, avec pertinence. Les compétences listées montrent l'articulation entre relation, organisation, pédagogie et éthique. C'est cette posture qui donne sens aux outils de coordination présentés ensuite.
+
+## 4. Outils de coordination et acteurs partenaires (repères de cours)
+
+L'alerte et la méthode posées, il reste à outiller la coordination et à nommer qui fait quoi. Le cours regroupe les professionnels en médicaux (médecin, pharmacien, interne), paramédicaux (masseur-kinésithérapeute, ergothérapeute, psychomotricien, diététicien, aide-soignant, IDE, cadre de santé) et sociaux (assistant social, psychologue selon le classement du cours), chacun agissant selon son référentiel de compétences dans le respect des rôles. La liste suivante se lit des outils vers les acteurs, chaque cadre cité restant un repère de cours à vérifier.
+
+- **Outils de coordination et de communication cités (cours)** : transmissions ciblées, réunions de coordination, dossier informatisé ; RCP, RETEX ; protocoles de service, plan de soins type et chemin clinique ; outils numériques (ViaTrajectoire, DMP, messagerie sécurisée) — contenus de cours, appliquer les outils et protocoles en vigueur.
+- **Médecin, avec ou sans spécialité, et interne (repère de cours)** : rôle de diagnostic, prescription et orientation thérapeutique ; raisonnement clinique, coordination thérapeutique, gestion des priorités ; code de déontologie médicale (CSP R.4127 cité) ; lien avec l'infirmier — mise en œuvre par l'IDE, observation, transmission, alerte, rôle sur prescription — repère pédagogique, appliquer le texte en vigueur.
+- **Rééducation et autonomie (repères de cours)** : ergothérapeute — autonomie et adaptation de l'environnement, analyse de l'activité, aménagement du domicile, aides techniques, arrêté du 5 juillet 2010 cité, lien avec l'infirmier pour le retour à domicile et la prévention des chutes ; masseur-kinésithérapeute (kinésithérapeute cité) — rééducation et réadaptation fonctionnelle, bilan kinésithérapique, plan de rééducation, prévention, décret n° 2015-1110 du 2 septembre 2015 cité, ajustement des soins selon les capacités ; psychomotricien — rééducation psychomotrice et régulation tonico-émotionnelle, évaluation psychomotrice, coordination, relaxation, décret n° 88-659 du 6 mai 1988 cité, observation du comportement et transmission des évolutions — repères pédagogiques, appliquer les textes en vigueur.
+- **Soutien, éducation et soins (repères de cours)** : diététicien — adaptation des apports alimentaires, évaluation nutritionnelle, plan alimentaire, éducation diététique, décret n° 2007-352 du 14 mars 2007 cité, suivi des apports, éducation thérapeutique du patient (ETP — éducation thérapeutique du patient) et poids avec l'infirmier ; psychologue — soutien psychologique et évaluation des troubles émotionnels, écoute active, accompagnement, travail en équipe, décret n° 90-255 du 22 mars 1990 cité, collaboration sur la relation d'aide et la communication ; aide-soignant (AS — aide-soignant) — accompagnement dans les activités de la vie quotidienne (AVQ — activités de la vie quotidienne) en évaluant l'état clinique avec une communication adaptée, observation, transmission, assistance gestuelle, arrêté du 10 juin 2021 relatif au diplôme d'État d'aide-soignant (DEAS — diplôme d'État d'aide-soignant) cité, continuité des soins et délégation encadrée avec l'infirmier — repères pédagogiques, appliquer les textes en vigueur.
+- **Parcours et lien social (repère de cours)** : assistant de service social (assistant social cité) — accompagnement social et administratif, aide aux démarches, coordination médico-sociale, accès aux droits, code de l'action sociale et des familles articles L.411-1 et suivants cités, préparation du projet de sortie et relais avec les partenaires sociaux avec l'infirmier — repère pédagogique, appliquer le texte en vigueur.
+- **TODO** : pharmacien, cadre de santé et interne cités dans la typologie mais non détaillés dans l'extraction — compléter avec leurs référentiels et les textes en vigueur ; enjeux cités (cohérence du parcours, sécurité, bien-être) et facilitateurs (formation, protocoles, plan de soins type, reconnaissance mutuelle) à approfondir avec les protocoles locaux.
+
+<Callout type="warn" title="Référentiels datés">
+Typologie des acteurs, rôles, compétences et cadres réglementaires listés : contenus de cours à confronter aux référentiels et textes en vigueur, dans le respect des champs de chacun — ne pas les utiliser comme définitions actuelles.
+</Callout>
+
+À retenir en méthode de lecture : les outils cités articulent l'écrit (transmissions, dossier, protocoles, plans types, chemins cliniques, messagerie) et l'oral (réunions, RCP, RETEX), sans valoir protocole actuel. Chaque acteur listé agit selon son référentiel, et le lien avec l'infirmier décrit une complémentarité précise — mise en œuvre et alerte côté médical, retour à domicile et capacités côté rééducation, apports et poids côté diététique, relation d'aide côté psychologue, délégation encadrée côté aide-soignant, sortie et droits côté social. Les manques signalés en TODO imposent de compléter avec les référentiels en vigueur.
+
+## Points de vigilance IDE
+
+La vigilance infirmière découle de tout ce qui précède : tenir l'interface sans outrepasser son champ, faire circuler l'information utile au bon moment, et tracer pour la continuité. Les puces ci-dessous reprennent les points du cours ; elles se lisent comme la mise en actes de la collaboration, de la coordination et du respect des référentiels.
+
+- Expliquer au patient le rôle de chaque intervenant, orienter dans le parcours et suivre le projet de soins en approche globale et cohérente selon le cours.
+- Partager avec pertinence les informations utiles, tenir transmissions ciblées et traçabilité, mobiliser protocoles, plans types et outils numériques selon les protocoles en vigueur.
+- Agir dans son champ : mise en œuvre, observation, transmission et alerte côté prescription médicale ; collaboration encadrée avec aides-soignants et professions citées dans les limites de leur qualification ; respect du secret professionnel et des rôles selon le cours.
+- Devant tout repère daté (articles, décrets, arrêtés, outils cités), vérifier le texte et le protocole en vigueur, sur prescription le cas échéant.
+- TODO : pharmacien, cadre de santé et interne non détaillés dans l'extraction — compléter avec leurs référentiels et les textes en vigueur.
+
+Concrètement, cela signifie formuler chaque transmission autour de l'objectif commun et du projet de soins, structurer les interventions au bon moment et au bon endroit, et confronter les points de vue en complémentarité plutôt qu'en concurrence. Devant une rupture de continuité ou une situation à risque, l'alerte et la traçabilité immédiates selon le protocole priment, les repères datés restant à vérifier comme l'indiquent les avertissements et le TODO.
+
+<Accordions>
+  <Accordion title="Complément : ce que le cours ne détaille pas" value="complement">
+    La conclusion du cours rappelle que l'interdisciplinarité renforce la qualité, place l'infirmière au centre de la coordination et de l'accompagnement, exige le respect des référentiels et ne supprime pas les frontières mais favorise leurs liens. La bibliographie cite Oiry (2005), Terraneo et Avvanzino (2006), Hatano-Chalvidan (2016), Guihard, Warchol (2012), le rapport IGESR-IGAS 21-22-275A, l'ARS sur la pratique avancée, Lévy, l'OMS, la Haute Autorité de santé (HAS — Haute Autorité de santé), les métiers de la santé et, pour les référentiels, le CSP et le guide des métiers de la santé (Mleczko, 2025-2026). TODO : compléter avec les textes en vigueur.
+  </Accordion>
+</Accordions>
+
+Après ce complément, la fiche se referme sur ses sources : tout ce qui précède vient du support cité, les contenus datés restant à confronter aux textes et protocoles en vigueur.
+
+## Voir aussi
+
+<Cards>
+  <Card title="Histoire de la profession" description="D'où vient le rôle propre et l'autonomie : chronologie et tournants." href="./histoire-profession" />
+  <Card title="Les principaux concepts" description="Compétence, autonomie et pratique avancée : le socle théorique." href="./concepts" />
+  <Card title="Équipe et outils" description="Coordination, transmissions et outils du travail ensemble." href="./equipe-outils" />
+</Cards>
 
 ## Sources
 
-- Cours UE 3.3 (à venir).
+- « ROLE, FONCTIONS, MISSIONS, COMPETENCES DES IDE ET DES ACTEURS PARTENAIRES DES IDE », UE 3.3 S3, promotion 2025-2028, version 3 du 24 septembre 2026 (53 pages).

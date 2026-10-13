@@ -3,13 +3,129 @@ title: "Les principaux concepts"
 description: "Concepts fondateurs et travail en équipe."
 ---
 
-> Contenu à compléter avec les cours.
+import { Callout } from 'fumadocs-ui/components/callout';
+import { Card, Cards } from 'fumadocs-ui/components/card';
+import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
+import { Step, Steps } from 'fumadocs-ui/components/steps';
+import { Accordion, Accordions } from 'fumadocs-ui/components/accordion';
 
-## Au programme
+Dire d'un soignant qu'il est « compétent » ou « autonome » semble aller de soi, mais le cours magistral (CM) 2 de septembre 2026 montre que ces mots recouvrent des définitions précises et concurrentes. Cette fiche suit ce CM, de l'étymologie latine de la compétence jusqu'à la pratique avancée, en passant par les dix compétences infirmières du référentiel cité. Les contenus réglementaires et chiffrés y sont des repères de cours, à confronter aux textes et au référentiel en vigueur en 2025-2026, jamais à appliquer comme consignes actuelles. Le plan progresse de la compétence en général vers la compétence infirmière, puis vers l'autonomie et le collectif.
 
-- Principaux concepts
-- Travail en équipe et transmissions
+## L'essentiel en une minute
+
+Les quatre lignes ci-dessous condensent les définitions à avoir en tête avant d'entrer dans le détail. Elles permettent de situer rapidement la différence entre savoir, savoir-faire et savoir agir avec pertinence.
+
+- **Compétence, sens premier (cours)** : du latin *competens* (participe de *competere* : aller avec, convenir, être adapté) ; dès la fin du XVIIe siècle, connaissance approfondie et reconnue conférant le droit de juger ou de décider ; en psychologie américaine, lien entre qualités personnelles et performance (White 1959 ; Mac Clelland 1973 : connaissances, compétences, comportements, caractéristiques, motifs).
+- **Formules repères (cours)** : Zarifian (philosophe et sociologue cité) — prise d'initiative et de responsabilité sur les situations professionnelles, et intelligence pratique des situations ; Le Boterf (sociologue du travail cité) — savoir agir avec pertinence dans un contexte particulier en mobilisant un double équipement de ressources personnelles et de réseaux ; Perrenoud (sociologue cité) — capacité d'agir efficacement dans un type défini de situation.
+- **Dix compétences infirmières citées (repère de cours daté, référentiel 2009 à confronter au référentiel en vigueur)** : évaluer une situation clinique et établir un diagnostic infirmier ; concevoir et conduire un projet de soins ; accompagner les soins quotidiens ; mettre en œuvre des actions diagnostiques et thérapeutiques ; initier des soins éducatifs et préventifs ; communiquer et conduire la relation ; analyser la qualité et améliorer sa pratique ; rechercher et traiter des données scientifiques ; organiser et coordonner les interventions ; informer et former — liste de cours, appliquer le référentiel en vigueur.
+- **Autonomie et collectif (cours)** : *autos* (soi) + *nomos* (loi) — qui se régit par ses propres lois, avec initiative sous-entendue dans le décret cité de 2004 sans autonomie explicitement affirmée ; compétence collective supérieure à la somme des prestations individuelles (Zarifian 1999) ; pratique avancée décrite comme un nouveau métier à la frontière entre médecin et infirmier.
+
+À retenir avant de poursuivre : la compétence n'est ni un savoir isolé ni un savoir-faire découpé, mais une mobilisation située et reconnue, individuelle puis collective. Les dix compétences et les textes cités restent des contenus de cours datés. Le reste de la fiche décline cette logique, des modèles théoriques vers la formation puis vers l'autonomie.
+
+<Callout type="warn" title="Repères datés">
+Dix compétences, paliers, crédits (ECTS — european credits transfer system), unités d'enseignement (UE — unités d'enseignement) et textes cités (loi Hôpital, patients, santé et territoires (HPST — hôpital, patients, santé et territoires) de 2009, décret n° 2004-802 du 29 juillet 2004) : contenus de cours à confronter au référentiel et aux textes en vigueur, notamment la réforme de 2026 — ne pas les utiliser comme droit actuel.
+</Callout>
+
+## 1. Qu'est-ce qu'une compétence : trois approches complémentaires
+
+Pour éviter de réduire la compétence à une simple habileté gestuelle, le cours confronte trois lectures qui se complètent : la psychologie américaine l'ancre dans l'individu, la sociologie l'ancre dans la situation et la reconnaissance sociale, la gestion des ressources humaines (GRH — gestion des ressources humaines) l'ancre dans le savoir-agir en contexte incertain. Les paragraphes suivants présentent chaque approche avant de les comparer dans l'onglet, puis d'en tirer la leçon commune.
+
+<Tabs items={['Psychologie', 'Sociologie', 'Ressources humaines']}>
+  <Tab value="Psychologie">
+    **Approche psychologique américaine (cours)** : la compétence est d'abord individuelle ; White (1959) y voit les paramètres influençant significativement la performance au travail ; Mac Clelland (1973) distingue cinq dimensions — *knowledges* (connaissances), *skills* (compétences au sens d'habiletés), *behaviours* (comportements), *traits* (caractéristiques), *motives* (motifs) — avec un lien de cause à effet entre qualités personnelles et performance dans l'emploi.
+  </Tab>
+  <Tab value="Sociologie">
+    **Approche sociologique (cours)** : pour Witorski et Zarifian, la compétence se situe à l'intersection de la formation, de l'expérience et du parcours de socialisation ; Wittorski (1998) ajoute la reconnaissance sociale — compétence finalisée, produite par un individu ou un collectif en situation, nommée et reconnue socialement, mobilisant des savoirs combinés selon le cadre de perception de l'acteur ; Zarifian (1999) la définit comme prise d'initiative et de responsabilité — action modifiant l'existant, introduisant du nouveau — et comme intelligence pratique s'appuyant sur les connaissances et les transformant d'autant plus que les situations se diversifient.
+  </Tab>
+  <Tab value="Ressources humaines">
+    **Approche gestion des ressources humaines (cours)** : contre le taylorisme — organisation où l'opérateur exécute des opérations prescrites découpées en listes exhaustives, réduit au savoir-faire sans compétence — Le Boterf (2002, 1999) fait appel à l'initiative et à la polyvalence : savoir-agir face à l'imprévu, innover, décider en incertitude ; personne compétente sachant sélectionner, organiser et employer les ressources pour réaliser une activité, résoudre un problème ou conduire un projet ; double équipement de ressources personnelles (connaissances, savoir-faire, qualités, culture, ressources émotionnelles) et de réseaux (banques de données, réseaux documentaires et d'expertise) ; vouloir agir soutenu par une image de soi réaliste et positive, un contexte de confiance, de reconnaissance et d'incitation.
+  </Tab>
+</Tabs>
+
+À retenir de cette comparaison : les trois approches convergent vers une même exigence, agir avec pertinence en situation plutôt qu'appliquer une recette. La dimension individuelle (qualités, motifs) ne suffit pas sans reconnaissance sociale ni sans contexte de confiance, et le taylorisme en est le contre-modèle explicite. C'est cette logique de mobilisation située qui fonde les définitions suivantes, du pouvoir d'agir à l'intelligence pratique.
+
+<Callout type="info" title="Méthode">
+Pour réviser, associer chaque auteur à sa formule : Mac Clelland les cinq dimensions individuelles, Wittorski la reconnaissance sociale, Zarifian l'initiative et l'intelligence pratique, Le Boterf le savoir-agir avec double équipement, Perrenoud l'efficacité dans une famille de situations.
+</Callout>
+
+## 2. Mobiliser, intégrer, transférer : le pouvoir d'agir en situation
+
+Une fois les approches posées, le cours précise le mécanisme commun : la compétence se déploie dans une pratique de travail, comme processus plutôt que comme état. Jonnaert, Masciotra, Boufrahi et Barrette (2005) la décrivent comme la mise en œuvre coordonnée, en situation et en contexte, d'un ensemble diversifié de ressources choisies, mobilisées et organisées pour un traitement réussi. Develay (2015) y ajoute le jugement sur la pertinence de sa propre action, soit un savoir-agir réfléchi. Bellier (citée) la résume comme la résolution satisfaisante de problèmes professionnels en contexte par mobilisation intégrée de capacités.
+
+- **Répertoire de ressources (cours)** : connaissances scientifiques et techniques, savoirs procéduraux et méthodologiques, capacités relationnelles, aptitudes et expérience ; ni simple application ni somme de savoir, savoir-faire et savoir-être, mais construction par mobilisation, intégration et transfert en contexte professionnel.
+- **Intelligence pratique (cours)** : orientation vers l'action avec une dimension cognitive (choisir à bon escient les savoirs utiles) et une dimension compréhensive (comprendre la situation, décoder les comportements d'autrui en interaction sociale pour ajuster son comportement et réussir son activité).
+- **Pouvoir agir et pratiques (cours)** : pouvoir agir rendu possible par l'organisation du travail et plusieurs savoir-faire (comprendre, s'adapter, procéder, traiter l'information, raisonner, coopérer) avec prise d'initiatives ; à corps de savoirs identique délivré aux étudiants, l'interprétation et l'exploitation restent uniques et personnelles en situation ; activités professionnelles distinguées de la performance (résultats obtenus), avec critères de performance, de réussite, conditions, buts et moyens à préciser ; situation professionnelle entendue largement — missions, fonctions, activités, tâches techniques, organisationnelles et humaines, en poste et en relation avec autrui et l'institution.
+
+En pratique, cette section invite à ne jamais confondre tâche prescrite et compétence : les situations de travail infirmier — complexité de chaque malade comme personne, de l'ensemble des malades et de la gestion du service — ne sont jamais des cas d'école et ne fournissent aucune recette à appliquer. C'est à partir de l'expérience propre, souvent entremêlée à celle des autres, que l'apprenant crée des connaissances et savoir-faire nouveaux pour savoir agir. La section suivante applique cette logique aux dix compétences infirmières citées.
+
+## 3. Les dix compétences infirmières citées et leur acquisition (repère de cours)
+
+Après la théorie générale, le cours rattache la naissance des compétences infirmières à la réforme sanitaire de la loi dite Bachelot-HPST du 21 juillet 2009 (repère de cours daté). Face à une situation clinique, l'infirmier diplômé d'État (IDE — infirmier diplômé d'État) y fait appel à des savoirs techniques et scientifiques (anatomie, physiologie, pharmacologie), procéduraux (protocoles), méthodologiques (raisonnement clinique), pratiques (actions menées) et sociaux (éducation, relation). La liste suivante reprend les dix intitulés cités ; elle se lit comme un référentiel de formation daté, à vérifier contre le référentiel en vigueur.
+
+- **Compétences 1 à 5 citées (cours)** : 1. évaluer une situation clinique et établir un diagnostic dans le domaine infirmier ; 2. concevoir et conduire un projet de soins infirmiers ; 3. accompagner une personne dans la réalisation de ses soins quotidiens ; 4. mettre en œuvre des actions à visée diagnostique et thérapeutique ; 5. initier et mettre en œuvre des soins éducatifs et préventifs.
+- **Compétences 6 à 10 citées (cours)** : 6. communiquer et conduire une relation dans un contexte de soins ; 7. analyser la qualité des soins et améliorer sa pratique professionnelle ; 8. rechercher et traiter des données professionnelles et scientifiques ; 9. organiser et coordonner les interventions soignantes ; 10. informer et former des professionnels et des personnes en formation.
+- **Acquisition citée (repère de cours daté)** : formation par alternance aidant à apprendre des compétences qui ne se transmettent pas mais se construisent pour et par l'action, en tirant les leçons de l'expérience ; attitude critique sur sa perception et sa résolution de problèmes, analyse de son comportement, identification des sources de problèmes (analyse de pratiques professionnelles (APP — analyse de pratiques professionnelles) citée) ; paliers comprendre (acquérir les savoirs), agir (mobiliser et évaluer son action), transférer (conceptualiser et transposer dans des situations nouvelles) ; réflexivité en trois temps — réflexion-action (réfléchir à sa manière d'agir), réflexion-critique (prise de distance), réflexion-constructive (réinvestir dans les situations à venir).
+
+<Steps>
+  <Step>
+    Comprendre : acquérir les savoirs nécessaires à la compréhension des situations, en stage réel comme en simulation à l'institut selon le cours.
+  </Step>
+  <Step>
+    Agir : mobiliser les savoirs, acquérir la capacité d'agir et évaluer son action, avec validation progressive des dix compétences, des actes et des éléments de compétences en stage et à l'institut selon le cours.
+  </Step>
+  <Step>
+    Transférer : conceptualiser et transposer ses acquis dans des situations nouvelles, en réinvestissant la réflexion issue de l'expérience selon le cours.
+  </Step>
+  <Step>
+    Valider selon les repères chiffrés cités (contenus de cours datés) : une semaine de stage valant un crédit européen (ECTS) citée, 60 ECTS et 57 UE cités, validation d'une UE à 10/20 citée avec compensation entre 9 et 10 sur certaines UE, 120 ECTS cités — repères pédagogiques, appliquer le référentiel en vigueur.
+  </Step>
+</Steps>
+
+Ce qu'il faut en retenir : la liste des dix intitulés donne le vocabulaire attendu en stage, mais ni les intitulés ni les chiffres de validation ne valent droit actuel. La progression comprendre-agir-transférer et la réflexivité à trois temps décrivent comment l'expérience devient compétence, avec l'implication, la remise en cause, l'apprentissage permanent et le sentiment d'appartenance à un groupe aux règles, valeurs et éthique cités comme exigences pour l'étudiant. C'est dans cet esprit que l'autonomie et le collectif prolongent la réflexion.
+
+<Callout type="warn" title="Repères datés">
+Loi HPST de 2009, dix intitulés, paliers, ECTS, UE et seuils de validation : contenus de cours datés, repères pédagogiques à confronter au référentiel en vigueur (réforme de 2026 citée dans la fiche histoire) — ne pas les utiliser comme règles actuelles.
+</Callout>
+
+## 4. Autonomie, autonomie professionnelle et pratique avancée
+
+Dernière étape du raisonnement : articuler l'autonomie de la personne et celle du professionnel, puis ouvrir vers le collectif et la pratique avancée. Le dictionnaire de l'Académie française cité définit la personne autonome comme capable d'agir par elle-même et de répondre à ses besoins sans être influencée ; l'étymologie grecque (*autos*, soi ; *nomos*, loi) donne *autonomos*, qui se régit par ses propres lois. La philosophie y ajoute la relation interdépendante à autrui et la connaissance de soi, Kant la volonté se donnant à elle-même sa loi, la psychologie l'intériorisation négociée des règles et valeurs, Mill le refus de la contrainte paternaliste. La liste suivante resserre ensuite sur la profession infirmière.
+
+- **Autonomie professionnelle infirmière (cours)** : Blondeau (1999, université Laval citée) appelant à dépasser l'image de l'infirmière au chevet ou à la piqûre vers le jugement clinique, la réflexion et la science ; décret n° 2004-802 du 29 juillet 2004 cité réaffirmant le rôle propre sans évoquer la consultation infirmière — « l'infirmier a compétence pour prendre les initiatives et accomplir les soins qu'il juge nécessaires… Il identifie les besoins, pose un diagnostic infirmier, formule les objectifs, met en œuvre les actions et les évalue, et peut élaborer des protocoles relevant de son initiative avec l'équipe » — autonomie sous-entendue par l'initiative répétée mais non clairement affirmée selon le cours.
+- **Pratique avancée aujourd'hui (repères de cours)** : Conseil international des infirmiers (CII — Conseil international des infirmiers) cité — diplômé en pratique avancée aux connaissances théoriques, savoir-faire de décisions complexes et compétences cliniques, caractéristiques déterminées par le contexte d'autorisation ; activités citées — orientation, éducation, prévention, dépistage, évaluation et conclusion clinique, actes techniques, surveillance clinique et paraclinique, prescriptions de produits non soumis à prescription médicale, d'examens complémentaires, renouvellements ou adaptations de prescriptions médicales ; nouveau métier à la frontière entre médecin et infirmier, répondant au vieillissement et aux maladies chroniques selon le cours.
+- **Bénéfices attendus cités (cours)** : pour les infirmiers, carrière, exercice plus autonome et reconnaissance y compris financière ; pour les médecins, temps médical retrouvé et coopération ; pour les patients, accès, diversité et articulation ville-hôpital ; pour le système, exercice coordonné en soins primaires et temps médical disponible — contenus de cours, à vérifier contre les textes en vigueur.
+- **Du individuel au collectif (cours)** : compétence collective comme faculté à mobiliser des réseaux d'acteurs autour des mêmes situations, à partager enjeux et coresponsabilités (Zarifian 1999), supérieure à la somme des prestations individuelles ; suggestions de Le Boterf citées — langage commun, travail en réseau, entraide, organisation synergique, projets transversaux et pluridisciplinarité, retour d'expérience et évaluation, management, formalisation et valorisation des spécificités.
+- **TODO** : travail en équipe au quotidien et transmissions écrites et orales non détaillés dans ce CM — compléter avec le cours d'équipe et outils et les protocoles en vigueur.
+
+À retenir en méthode de lecture : l'autonomie décrite n'est pas l'isolement mais une capacité réfléchie d'initiative dans un cadre partagé, dont le décret de 2004 cité donne la formulation sans la nommer. La pratique avancée et la compétence collective en sont les prolongements, l'une vers des missions élargies, l'autre vers l'œuvre commune. Les dispositifs et bénéfices cités restent des contenus de cours à vérifier, et le TODO renvoie aux supports manquants pour l'équipe et les transmissions.
+
+## Points de vigilance IDE
+
+La vigilance infirmière découle de tout ce qui précède : nommer la compétence mobilisée en situation, tracer ce qui fonde le jugement clinique, et respecter le champ d'initiative sans l'outrepasser. Les puces ci-dessous reprennent les points du cours ; elles se lisent comme la mise en pratique du savoir-agir réfléchi, de la réflexivité et du collectif.
+
+- Relier chaque acte au savoir mobilisé (technique, procédural, méthodologique, pratique, social) et à la compétence citée, avec traçabilité et évaluation de son action selon le cours.
+- Pratiquer la réflexivité à trois temps — réfléchir à sa manière d'agir, prendre distance, réinvestir — avec implication, remise en cause et appartenance au groupe professionnel cités.
+- En collectif, développer le langage commun, le travail en réseau, l'entraide et le retour d'expérience, et insérer ses connaissances comme contribution à l'œuvre commune selon le cours.
+- Devant tout repère daté (dix compétences de 2009, ECTS, seuils, décret de 2004, pratique avancée citée), vérifier le référentiel et les textes en vigueur, sur prescription et protocole le cas échéant.
+
+Concrètement, cela signifie formuler l'initiative prise (besoin identifié, diagnostic infirmier, objectif, action, évaluation) dans les termes du décret cité, tout en vérifiant sa validité actuelle avant d'agir. En équipe, cela signifie partager enjeux et responsabilités plutôt que juxtaposer des prestations. Les contenus datés restant à vérifier comme l'indique l'avertissement, le TODO sur l'équipe et les transmissions impose de compléter avec les supports et protocoles en vigueur.
+
+<Accordions>
+  <Accordion title="Complément : ce que le cours ne détaille pas" value="complement">
+    La bibliographie cite Oiry (2005), Terraneo et Avvanzino (2006), Hatano-Chalvidan (2016), Guihard, Warchol (2012), le rapport IGESR-IGAS 21-22-275A, l'agence régionale de santé (ARS — agence régionale de santé) sur la pratique avancée et Lévy sur l'état de l'art de la compétence. Les schémas, tableaux de synthèse et pages quasi-vides du CM ne sont pas exploitables dans l'extraction. TODO : compléter avec le référentiel en vigueur.
+  </Accordion>
+</Accordions>
+
+Après ce complément, la fiche se referme sur ses sources : tout ce qui précède vient du support cité, les contenus datés restant à confronter au référentiel et aux textes en vigueur.
+
+## Voir aussi
+
+<Cards>
+  <Card title="Histoire de la profession" description="D'où vient le rôle propre et l'autonomie : chronologie et tournants." href="./histoire-profession" />
+  <Card title="Rôles, missions et compétences" description="Place de l'IDE dans l'équipe et acteurs partenaires." href="./roles-missions" />
+  <Card title="Équipe et outils" description="Coordination, transmissions et outils du travail ensemble." href="./equipe-outils" />
+</Cards>
 
 ## Sources
 
-- Cours UE 3.3 (à venir).
+- « PRINCIPAUX CONCEPTS LIÉS À LA NOTION DE TRAVAIL », CM 2, UE 3.3 S3, promotion 2025-2028, version 04-09-2026 (62 pages).
