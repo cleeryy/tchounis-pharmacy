@@ -3,13 +3,149 @@ title: "Réseau de soins et IRC"
 description: "Parcours de soins et insuffisance rénale chronique."
 ---
 
-> Contenu à compléter avec les cours.
+import { Callout } from 'fumadocs-ui/components/callout';
+import { Card, Cards } from 'fumadocs-ui/components/card';
+import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
+import { Step, Steps } from 'fumadocs-ui/components/steps';
+import { Accordion, Accordions } from 'fumadocs-ui/components/accordion';
 
-## Au programme
+Une maladie silencieuse et insuffisamment dépistée, qui progresse pendant des années avant d'imposer une suppléance : la maladie rénale chronique (MRC — maladie rénale chronique) illustre pourquoi le parcours de soins associe dépistage, annonce, éducation et coordination. Cette fiche suit le support « Le parcours de soins du patient atteint d'une maladie rénale chronique » de septembre 2026, éclairé par les scénarios des travaux dirigés (TD — travaux dirigés) sur le travail d'équipe. Les seuils, stades, chiffres et organisations cités sont des repères de cours datés et pour partie locaux, à confronter aux protocoles en vigueur, jamais à appliquer comme consignes actuelles. Le plan progresse des définitions vers le parcours, puis vers les suppléances et l'organisation locale.
 
-- Réseau de soins
-- Parcours IRC
+## L'essentiel en une minute
+
+Les quatre lignes ci-dessous condensent les définitions et repères à avoir en tête avant d'entrer dans le détail. Elles permettent de situer rapidement où l'on se trouve entre dépistage, suivi et suppléance.
+
+- **MRC et insuffisance rénale chronique (IRC — insuffisance rénale chronique) (cours)** : la MRC est définie, indépendamment de sa cause, par plus de 3 mois de marqueurs d'atteinte rénale et/ou un débit de filtration glomérulaire (DFG — débit de filtration glomérulaire) estimé sous 60 mL/min/1,73 m² ; l'IRC est la diminution progressive et irréversible du DFG reflétant le fonctionnement rénal, avec un seuil convenu sous 60 mL/min/1,73 m².
+- **Stades cités (repères de cours)** : stade 1 ≥ 90 avec marqueurs, stade 2 entre 60 et 89 avec marqueurs, stades 3A entre 45 et 59 et 3B entre 30 et 44 modérés, stade 4 entre 15 et 29 sévère, stade 5 sous 15 terminal — repères pédagogiques, appliquer les référentiels en vigueur.
+- **Parcours cité (cours)** : médecin généraliste, médecin néphrologue, médecins spécialistes, infirmière formée à l'éducation thérapeutique du patient (ETP — éducation thérapeutique du patient), infirmier en pratique avancée (IPA — infirmier en pratique avancée), diététicienne, psychologue, assistante sociale et infirmière de consultation MRC, avec objectifs de ralentir l'évolution, retarder la suppléance et favoriser proximité et éducation.
+- **Suppléances et organisations citées (repères datés et locaux)** : greffe rénale, hémodialyse, dialyse péritonéale et traitement conservateur ; forfait MRC, Maison du Rein et unités d'autodialyse (UAD — unité d'autodialyse) décrits pour le Lot-et-Garonne en 2026 — repères locaux, renvoyés à l'organisation en vigueur.
+
+À retenir avant de poursuivre : la définition articule durée, marqueurs et DFG, les stades ordonnent le suivi, et le parcours associe annonce, éducation et coordination vers le choix partagé de la suppléance. Les seuils et chiffres cités restent des contenus de cours. Le reste de la fiche décline cette logique, du diagnostic vers les trajectoires puis vers les structures.
+
+<Callout type="warn" title="Repères datés">
+Seuils de DFG, stades, chiffres de greffe et de dialyse, effectifs, lits, postes et organisations du Lot-et-Garonne cités en 2026 : contenus de cours datés et locaux, repères pédagogiques à confronter aux référentiels et à l'organisation en vigueur — ne pas les utiliser comme données ni comme consignes actuelles.
+</Callout>
+
+## 1. Définir et diagnostiquer : une maladie silencieuse
+
+Pour organiser un parcours, il faut d'abord nommer la maladie et la détecter tôt, car la MRC est présentée comme silencieuse et insuffisamment dépistée. Le support en donne la définition de la Haute Autorité de santé (HAS — Haute Autorité de santé) citée, puis les outils diagnostiques et les personnes à risque. La liste suivante se lit du repérage vers la confirmation, chaque seuil restant un repère de cours.
+
+- **Définitions (cours)** : MRC définie par plus de 3 mois de marqueurs d'atteinte rénale et/ou un DFG estimé sous 60 mL/min/1,73 m², quelle qu'en soit la cause ; IRC définie par la diminution progressive et irréversible du DFG, considérée comme évolutive avec un risque de progression vers un besoin de suppléance ; altération progressive et définitive des fonctions exocrines et endocrines du parenchyme rénal, à lésions irréversibles, avec au bilan biologique cité : urée, créatinine, acide urique, pH, hypertension artérielle (HTA — hypertension artérielle) et perturbations du métabolisme phosphocalcique.
+- **Diagnostic (cours)** : bilan sanguin avec clairance de la créatinine et DFG, dosage de la créatinine et de l'urée ; bilan urinaire avec recherche de protéinurie ou d'albuminurie ; échographie rénale, scanner, entre autres — liste de cours, sans protocole détaillé.
+- **Personnes à risque en amont (cours)** : diabétiques, hypertendus traités ou non, obèses, insuffisants cardiaques, atteintes cardiovasculaires athéromateuses, affections urologiques dont uropathies obstructives et infections urinaires récidivantes, maladies auto-immunes dont lupus cité ; traitements ou injections néphrotoxiques dont anti-inflammatoires non stéroïdiens (AINS — anti-inflammatoires non stéroïdiens) et chimiothérapies cités, antécédents familiaux d'insuffisance rénale dont polykystose, expositions professionnelles dont plomb, mercure et solvants cités.
+
+En pratique, cette section invite à lire le diagnostic comme une anticipation : repérer les terrains listés, confirmer par la biologie et l'imagerie citées, et inscrire le patient détecté dans un parcours. Les outils et terrains listés restent des contenus de cours sans conduite détaillée. C'est dans cet esprit que l'annonce et l'éducation structurent la suite.
+
+## 2. Annoncer et éduquer : rendre le patient acteur
+
+Une fois la maladie nommée, le support répartit l'annonce entre le médecin traitant, le néphrologue et l'équipe pluridisciplinaire, et associe information et ETP au parcours. Le patient détecté entre alors dans un parcours associant les professionnels listés, avec des objectifs de stabilisation et de proximité. La procédure suivante se lit dans l'ordre, de l'annonce vers l'autonomie.
+
+<Steps>
+  <Step>
+    Faire annoncer la MRC par le médecin traitant, en insistant sur les habitudes de vie, l'adhésion aux traitements, les mesures de néphroprotection et le suivi pour ralentir la progression et prévenir ou retarder les complications selon le cours.
+  </Step>
+  <Step>
+    Faire annoncer par le néphrologue l'évolution possible vers l'insuffisance rénale chronique terminale (IRCT — insuffisance rénale chronique terminale) et le besoin de suppléance, avec recours possible au psychologue selon le cours.
+  </Step>
+  <Step>
+    Faire préparer par l'équipe pluridisciplinaire le traitement de suppléance, avec détermination du choix du mode de suppléance par le patient selon le cours.
+  </Step>
+  <Step>
+    Associer information et ETP pour acquérir et maintenir les compétences nécessaires : améliorer la santé, atteindre les objectifs des traitements dont ralentissement de la progression, prévention cardiovasculaire et gestion des complications, décider de façon partagée du mode de suppléance et préserver la qualité de vie selon le cours.
+  </Step>
+</Steps>
+
+- **Objectifs du parcours (cours)** : retarder et stabiliser l'évolution de la MRC, retarder le recours aux suppléances, favoriser l'accès à une surveillance de proximité et aux actions éducatives.
+- **Conclusion du support (cours)** : la découverte précoce permet d'accompagner le patient dans un parcours adapté, de ralentir la progression, de présenter les suppléances, de rendre le patient acteur de sa prise en charge et d'éviter les démarrages en urgence.
+
+À retenir de cette procédure : l'annonce y est progressive et partagée, l'éducation y est indissociable du traitement, et le choix de la suppléance y appartient au patient informé. Les formulations citées restent des contenus de cours. C'est cette trajectoire que les stades ordonnent ensuite.
+
+## 3. Suivre par stades : trajectoires citées (repères de cours)
+
+Après l'annonce, le support ordonne le suivi selon le DFG et décline les actions par stade, avec des références à la HAS citées et des ateliers locaux. Le tableau suivant se lit des stades précoces vers la suppléance, chaque case restant un repère de cours daté renvoyé aux protocoles en vigueur.
+
+| Stade cité | DFG cité (mL/min/1,73 m²) | Suivi et actions cités |
+| --- | --- | --- |
+| 1, 2 et 3A | ≥ 90 avec marqueurs, 60 à 89 avec marqueurs, 45 à 59 | Dépistage assuré par le médecin généraliste ; référence citée au dispositif d'inclusion des parcours MRC de la HAS |
+| 3B | 30 à 44 | Systématisation du suivi néphrologique ; atelier ETP « Mes reins, j'y tiens … j'en prends soin ! » animé par une IDE formée à l'ETP ; atelier avec la diététicienne ; à l'hôpital ou délocalisé sur le territoire, Villeneuve et Marmande cités |
+| 4 | 15 à 29 | Suivi des actions du stade 3B ; atelier ETP « Choix du traitement de suppléance » ; références citées au dispositif d'annonce du besoin de suppléance et à la méthode pour décider ensemble du traitement de suppléance de la HAS |
+| 5 | < 15 | Programme MRC et choix du traitement de suppléance cités |
+
+<Callout type="warn" title="Seuils et dispositifs datés">
+Stades, seuils de DFG, ateliers, lieux et dispositifs HAS cités : contenus de cours à confronter aux référentiels et à l'organisation en vigueur — ne pas les appliquer comme seuils ni comme parcours actuels.
+</Callout>
+
+Ce qu'il faut en retenir : le tableau organise une intensification progressive, du dépistage de proximité vers le choix partagé de la suppléance, avec des ateliers et des lieux cités localement. Les intitulés d'ateliers et les communes citées restent des repères datés. C'est dans cet esprit que les suppléances comparent quatre voies.
+
+## 4. Quatre voies de suppléance : comparer sans prescrire
+
+Au stade terminal, le support cite quatre traitements : la greffe rénale, l'hémodialyse, la dialyse péritonéale et le traitement conservateur, sans aucune posologie ni prescription dans cette fiche. L'onglet suivant se lit en comparant les préparations et les chiffres cités, qui restent des repères datés et locaux.
+
+<Tabs items={['Greffe', 'Hémodialyse', 'Dialyse péritonéale', 'Conservateur']}>
+  <Tab value="Greffe">
+    **Greffe rénale (repères de cours datés)** : orientation vers un service de transplantation en vue d'une greffe préemptive ou non ; greffe dite préemptive avec bilan à débuter sous 20 de DFG et greffe sous 15 selon le cours — appliquer les indications en vigueur. Chiffres cités : 219 greffes à Bordeaux dont 39 de donneurs vivants en 2024, attente moyenne de 34,6 mois, environ 40 mois pour les groupes O et B, environ 4 ans à 75 ans, plus de 9 000 inscrits en France dont 1 003 à Bordeaux, 36 % de refus de dons — contenus datés, ne pas utiliser comme données actuelles.
+  </Tab>
+  <Tab value="Hémodialyse">
+    **Hémodialyse (repères de cours)** : création précoce d'un abord vasculaire, fistule artério-veineuse (FAV — fistule artério-veineuse) par un chirurgien vasculaire, pour éviter le démarrage en urgence sur cathéter, préjudiciable au pronostic selon le cours ; démarrage au centre du CHAN, évaluation pour l'autodialyse ou la poursuite au centre, éducation pour le départ en UAD — repères pédagogiques, sur prescription et selon les protocoles en vigueur.
+  </Tab>
+  <Tab value="Dialyse péritonéale">
+    **Dialyse péritonéale (repères de cours datés et locaux)** : orientation dans le respect du libre choix après information ; visite du domicile par l'infirmière coordinatrice de l'association pour l'utilisation du rein artificiel (AURAD — association pour l'utilisation du rein artificiel, citée comme Maison du Rein AURAD Aquitaine) ; pose du cathéter par un chirurgien en amont ; formation par l'infirmière de coordination sur le CH d'Agen ; suivi à domicile par la coordinatrice et suivi médical mensuel avec le néphrologue. Effectifs cités : 23 patients en dialyse péritonéale sur le département dont 20 suivis par le CHAN et 3 par le centre hospitalier universitaire (CHU — centre hospitalier universitaire) de Bordeaux, 4 poses prévues — contenus datés et locaux.
+  </Tab>
+  <Tab value="Conservateur">
+    **Traitement conservateur (cours)** : cité parmi les traitements de l'IRC terminale et inclus dans les critères du forfait MRC hors soins palliatifs selon le cours. TODO : contenu, indications et suivi non détaillés dans l'extraction — compléter avec les référentiels en vigueur.
+  </Tab>
+</Tabs>
+
+À retenir de cette comparaison : la greffe suppose bilan et inscription avec des délais cités, l'hémodialyse suppose un abord préparé tôt, la dialyse péritonéale suppose domicile visité, formation et suivi rapproché, et le traitement conservateur reste à compléter. Les chiffres et effectifs cités sont datés et locaux. C'est dans cet esprit que l'organisation locale illustre la coordination.
+
+## 5. Organisation locale citée : coordonner près du domicile (repères datés)
+
+Dernière étape : le support décrit finement l'organisation du Lot-et-Garonne en 2026, entre service hospitalier, forfait, Maison du Rein et UAD, avec une population rurale éparpillée. La liste suivante se lit des structures vers le fonctionnement quotidien, chaque élément restant un repère local daté renvoyé à l'organisation en vigueur.
+
+- **File active et structures citées (cours, 2026)** : environ 500 patients en file active au CH d'Agen, 209 dialysés dont 83 au centre lourd du CHAN, 126 en autodialyse et 20 en dialyse péritonéale ; service de néphrologie de 10 lits, centre de dialyse de 29 postes, 3 néphrologues hospitaliers et 4 praticiens rattachés, environ 420 consultations annuelles sur 2 jours hebdomadaires hors vacances scolaires ; équipe paramédicale citée avec 1 cadre, 1 coordinatrice Maison du Rein-AURAD, 20,4 équivalents temps plein (ETP — équivalent temps plein) infirmiers dont 2 pour la dialyse péritonéale et 0,20 pour l'ETP, 12,1 ETP aides-soignants, 2 ETP agents des services hospitaliers (ASH — agent des services hospitaliers) et 2,6 ETP secrétaires — contenus datés et locaux.
+- **Forfait MRC cité (cours)** : mis en place sur le service d'hémodialyse du CHAN avec équipe infirmière dédiée formée à l'ETP ; alternance de suivi néphrologue, infirmière-diététicienne et IPA jusqu'au démarrage de la suppléance, en consultation individuelle ; critères d'inclusion cités : MRC stades 4 et 5 avec passage de 3 à 4 dans l'année, DFG sous 30 sur 2 mesures à 3 mois d'intervalle, âge supérieur à 18 ans, soins conservateurs inclus hors palliatif — repères pédagogiques, appliquer les critères en vigueur.
+- **Maison du Rein AURAD Aquitaine citée (cours)** : présente dans 5 départements, suivi MRC avec consultations infirmière de parcours, diététicienne, néphrologue, activité physique adaptée (APA — activité physique adaptée), psychologue et assistante sociale ; prise en charge administrative de 500 patients dont 436 dialysés, 10 en hémodialyse à domicile et 52 en dialyse péritonéale cités, 168 inscrits en greffe ; 25 sites, siège à Gradignan, médecins, pharmaciens, infirmiers libéraux conventionnés, coordinatrices par secteur et maintenance technique — contenus datés et locaux.
+- **UAD du secteur 47 citées (cours)** : 8 unités et 14 salles, 126 patients répartis en 24 séries de 6 patients, plus de 20 000 séances annuelles, 1 coordinatrice, 25 infirmiers libéraux, diététicienne à 80 % et 2,4 ETP secrétaires ; séances assurées par des libéraux formés, 6 patients par séance et par infirmier, sans médecin présent mais joignable, visite mensuelle en présentiel ou en visioconférence, dossier informatisé commun avec le CH pour le temps réel, les prescriptions et la communication, avec repli obligatoire au CH — contenus datés et locaux.
+- **Projets cités (cours)** : ouverture d'une unité de dialyse médicalisée (UDM — unité de dialyse médicalisée) à Marmande depuis janvier 2026 avec 4 patients par série et visite médicale hebdomadaire, convention avec le service d'aide médicale urgente (SAMU — service d'aide médicale urgente) voisin, ouverture validée à Villeneuve ; dialyse à domicile avec éducation renforcée, 1 patient actuel et 2 projets cités ; accueil de vacanciers après validation néphrologique, 26 séjours cités en 2026 — contenus datés et locaux.
+
+<Callout type="warn" title="Organisation locale datée">
+File active, lits, postes, ETP, séries, séances, UDM, conventions et projets cités pour 2026 : repères de cours locaux, à confronter à l'organisation en vigueur — ne pas les utiliser comme description actuelle.
+</Callout>
+
+En pratique, cette liste invite à lire l'organisation comme une réponse à la dispersion rurale : rapprocher la dialyse du domicile, superviser à distance, et garantir le repli hospitalier. Les effectifs et fonctionnements cités montrent l'intensité de la coordination décrite, sans valoir état actuel. C'est dans cette limite que s'inscrit la vigilance infirmière.
+
+## Points de vigilance IDE
+
+La vigilance infirmière découle de tout ce qui précède : dépister tôt, annoncer avec progressivité, éduquer pour l'autonomie et coordonner sans rompre la continuité. Les puces ci-dessous reprennent les points des supports ; elles se lisent comme la mise en actes du parcours, du domicile vers l'hôpital et retour.
+
+- Repérer les terrains à risque listés et contribuer au dépistage et à la surveillance de proximité, dont hydratation, constantes et bilans notés, selon les protocoles et sur prescription.
+- Participer à l'annonce progressive et à l'ETP : habitudes de vie, adhésion, néphroprotection, suivi, choix partagé de la suppléance et qualité de vie, avec recours possible au psychologue selon le cours.
+- Préparer sans prescrire : information sur les quatre voies, anticipation de l'abord vasculaire ou du domicile selon la voie retenue médicalement, lutte contre les démarrages en urgence sur cathéter selon le cours.
+- Coordonner et tracer : dossier informatisé commun, suivi des prescriptions, communication avec les néphrologues, relais entre CH, Maison du Rein, UAD et domicile, avec repli hospitalier prévu — selon l'organisation en vigueur.
+- Devant tout seuil, chiffre ou organisation datés, vérifier le référentiel et le protocole en vigueur, sur prescription le cas échéant.
+- TODO : traitement conservateur, protocoles de dialyse et seuils actuels non détaillés dans les extraits — compléter avec les référentiels en vigueur.
+
+Concrètement, cela signifie formuler chaque transmission autour du stade, du projet et du choix du patient, structurer les interventions au bon moment et au bon endroit, et préférer l'anticipation à l'urgence. Devant une aggravation ou une rupture de continuité, l'alerte et la traçabilité immédiates selon le protocole priment, les repères datés restant à vérifier comme l'indique le TODO.
+
+<Accordions>
+  <Accordion title="Complément : éclairages des TD d'équipe" value="complement">
+    Les TD montrent la coordination en actes : accueil, constantes et ECG transmis pour une douleur thoracique avec transfert rapide ; alerte de l'aide-soignante, bilan des entrées et sorties, protocole d'hydratation et relais avec l'équipe de nuit en EHPAD ; staff SMR avec médecin, psychologue, kinésithérapeute, infirmier, cadre, assistante sociale et famille pour un projet individualisé après fracture. TODO : situation de Maeva et outils numériques non détaillés ici — compléter avec les cours en vigueur.
+  </Accordion>
+</Accordions>
+
+Après ce complément, la fiche se referme sur ses sources : tout ce qui précède vient des supports cités, les contenus datés restant à confronter aux référentiels et protocoles en vigueur.
+
+## Voir aussi
+
+<Cards>
+  <Card title="Équipe et outils" description="Coordination, transmissions et critères du travail ensemble." href="./equipe-outils" />
+  <Card title="Dossier patient informatisé" description="Tracer et partager : le dossier commun entre hôpital et dialyse." href="./dossier-patient" />
+  <Card title="Rôles, missions et compétences" description="Ce que fait l'IDE et avec qui : coordination du parcours." href="./roles-missions" />
+</Cards>
 
 ## Sources
 
-- Cours UE 3.3 (à venir).
+- « LE PARCOURS DE SOINS DU PATIENT ATTEINT D'UNE MALADIE RÉNALE CHRONIQUE », C. Lamarche, 16 septembre 2026 (36 pages).
+- « EQUIPE ET OUTILS », UE 3.3 S3 — Rôles infirmiers, organisation du travail et interprofessionnalité, compétence 9, CM version 2, septembre 2026 (69 pages) : critères et organisation cités en éclairage.
+- « UE 3.3S3 Consignes ESI — TD Travail d'équipe » (TD1), promotion 2025-2028, version 2 du 4 septembre 2026, consignes du 24 septembre 2026 (2 pages, 3 scénarios) : coordination en actes.
+- « UE 3.3S3 Consignes ESI — TD Travail d'équipe et transmission » (TD2), promotion 2025-2028, version 1 du 8 septembre 2026, situation de Maeva (2 pages) : parcours et transmissions en consigne.

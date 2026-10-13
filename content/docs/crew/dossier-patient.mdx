@@ -3,13 +3,115 @@ title: "Dossier patient informatisé"
 description: "Bonnes pratiques et dossier de soins informatisé."
 ---
 
-> Contenu à compléter avec les cours.
+import { Callout } from 'fumadocs-ui/components/callout';
+import { Card, Cards } from 'fumadocs-ui/components/card';
+import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
+import { Step, Steps } from 'fumadocs-ui/components/steps';
+import { Accordion, Accordions } from 'fumadocs-ui/components/accordion';
 
-## Au programme
+Un bilan des entrées et sorties non tenu en établissement d'hébergement pour personnes âgées dépendantes (EHPAD — établissement d'hébergement pour personnes âgées dépendantes), des dossiers du jour transmis par des aides-soignantes absentes du staff, un dossier partagé entre l'hôpital et les unités d'autodialyse : le dossier du patient apparaît dans les supports non comme un chapitre isolé, mais comme le fil de la continuité. Cette fiche rassemble uniquement les apports indirects réellement présents dans les quatre PDF lus, sans y ajouter de règles inventées, et signale tout le reste en TODO explicite. Les repères cités sont des contenus de cours, à confronter aux protocoles en vigueur. Le plan progresse des transmissions vers la traçabilité, puis vers le dossier informatisé commun du parcours.
 
-- Règles de bonnes pratiques
-- Dossier patient informatisé
+## L'essentiel en une minute
+
+Les quatre lignes ci-dessous condensent les seuls apports sourcés avant d'entrer dans le détail. Elles permettent de situer rapidement ce que les supports disent vraiment du dossier, sans extrapoler.
+
+- **Aucun support dédié (constat de lecture)** : aucun des quatre PDF ne décrit les règles de tenue, le contenu réglementaire ni le logiciel du dossier patient ou du dossier de soins informatisé ; tout ce qui suit reste donc indirect et partiel.
+- **Transmissions comme apport écrit (cours et travaux dirigés (TD — travaux dirigés))** : le cours magistral (CM — cours magistral) « Équipe et outils » cite les transmissions infirmières comme exemple d'échanges entre acteurs et les temps de réunion et de transmissions comme donnant du sens au projet ; les TD montrent des transmissions orales, écrites et de relais entre équipes.
+- **Traçabilité comme exigence (TD)** : bilan des entrées et sorties, prises de liquide notées, transmissions pour les dossiers du jour, suivi avec l'équipe de nuit et transmissions ciblées vers les professionnels du parcours.
+- **Dossier informatisé commun (parcours)** : dans le parcours de la maladie rénale chronique (MRC — maladie rénale chronique), la prise en charge en unité d'autodialyse (UAD — unité d'autodialyse) cite un dossier informatisé commun avec le centre hospitalier (CH — centre hospitalier), avec information en temps réel, suivi des prescriptions et communication avec les médecins néphrologues.
+
+À retenir avant de poursuivre : les supports parlent du dossier par ses usages — transmettre, tracer, partager — jamais par ses règles propres. Les lignes ci-dessus restent des contenus de cours. Le reste de la fiche décline ces trois usages, puis liste explicitement tout ce qui manque.
+
+<Callout type="warn" title="Support manquant">
+Aucun des quatre PDF lus ne traite du dossier patient, du dossier de soins ni de leurs bonnes pratiques de tenue : règles, contenu, confidentialité, accès, sécurité et logiciels non décrits — voir les TODO, à compléter avec les cours et protocoles en vigueur, sans appliquer cette fiche comme un référentiel.
+</Callout>
+
+## 1. Transmettre : l'écrit au service de l'équipe
+
+Pour comprendre la place du dossier, il faut d'abord rappeler que les supports en parlent à travers les transmissions, car c'est l'échange entre acteurs qui donne sens à l'écrit. Le cours cite les transmissions infirmières comme exemple d'échanges à favoriser et range les temps de réunion et de transmissions parmi les leviers de cohésion donnant du sens au projet. Les paragraphes suivants comparent les formes de transmissions visibles dans les scénarios, avant d'en tirer la leçon pour la traçabilité.
+
+<Tabs items={['Oral et écrit', 'Relais et ciblage']}>
+  <Tab value="Oral et écrit">
+    **Transmissions orales et écrites (TD1)** : dans le scénario d'admission pour douleur thoracique, l'infirmière d'accueil transmet oralement les informations au médecin urgentiste, qui transmet à son tour à l'infirmier puis au cardiologue ; dans le scénario de staff en soins médicaux et de réadaptation (SMR — soins médicaux et de réadaptation), les aides-soignantes absentes font des transmissions écrites pour les dossiers du jour, relayées oralement par le cadre de santé — fatigue en fin de journée, moral, parole sur la famille et demande de rééducation le matin.
+  </Tab>
+  <Tab value="Relais et ciblage">
+    **Relais entre équipes et transmissions ciblées (TD1 et TD2)** : dans le scénario en EHPAD, l'infirmière coordinatrice prévoit un point avec l'équipe de nuit pour assurer le suivi et demande de noter toutes les prises de liquide ; dans la consigne du TD2, il est demandé d'identifier pour trois professionnels les transmissions à leur faire pour présenter la situation de la patiente, en contexte de pluriprofessionnalité et d'interprofessionnalité — contenus de consignes, sans modèle de transmission fourni dans l'extraction.
+  </Tab>
+</Tabs>
+
+À retenir de cette comparaison : l'oral alerte et coordonne dans l'instant, l'écrit porte les dossiers du jour en l'absence des auteurs, et le relais entre équipes comme le ciblage par destinataire organisent la continuité. Les exemples cités montrent aussi la fragilité symétrique : sans écrit, l'évaluation de l'hydratation reste impossible, et sans relais oral, l'écrit ne suffit pas. C'est dans cet esprit que la traçabilité précise ce qui doit être noté.
+
+<Callout type="info" title="Méthode">
+Pour réviser, associer chaque transmission à sa question : quoi — les observations utiles au projet, pour qui — le destinataire et son champ, quand — avant la décision et entre les équipes, où — le support prévu par l'organisation en vigueur.
+</Callout>
+
+## 2. Tracer : ce que les scénarios exigent de noter
+
+Une fois les formes posées, les scénarios indiquent concrètement ce qui doit laisser une trace, car l'évaluation et la décision s'appuient sur du noté et non sur du souvenu. La liste suivante se lit des manques constatés vers les réponses collectives, chaque point restant un exemple de scénario et non une règle générale du dossier.
+
+- **Bilan des entrées et sorties (TD1, scénario EHPAD)** : l'infirmière coordinatrice demande un bilan sur les dernières 24 heures pour évaluer l'hydratation ; l'aide-soignante répond ne pas l'avoir suivi de près ; la consigne devient de noter ces informations pour tous les résidents à risque — exemple de scénario, appliquer les protocoles en vigueur.
+- **Prises de liquide et suivi (TD1)** : mise en place d'un protocole d'hydratation, information de l'équipe, notation de toutes les prises de liquide, point avec l'équipe de nuit — exemple de scénario, sur prescription et selon le protocole en vigueur.
+- **Dossiers du jour et observations (TD1, scénario SMR)** : transmissions des aides-soignantes pour les dossiers du jour — fatigue, moral, parole sur la famille, venue des proches, préférence horaire de rééducation — relayées en staff pour le projet individualisé ; proposition collective d'une fiche de suivi spécifique pour les résidents à risque dans le scénario EHPAD — exemples de scénarios, sans modèle fourni.
+- **Transmissions vers le parcours (TD2)** : consigne de formuler, pour trois professionnels hors infirmier diplômé d'État (IDE — infirmier diplômé d'État) et médecin, le but, l'objectif et les transmissions présentant la situation de Maeva, en tenant compte de la famille et du dossier de la maison départementale des personnes handicapées (MDPH — maison départementale des personnes handicapées) transféré — consigne de TD, sans contenu de transmission fourni.
+
+En pratique, cette section invite à lire chaque note comme une décision future : sans bilan noté, pas d'évaluation fiable ; sans prises notées, pas de suivi entre équipes ; sans observations relayées, pas de projet individualisé ajusté. Les exemples listés montrent que la traçabilité engage la qualité et la sécurité, sans pour autant décrire les règles de tenue du dossier. C'est dans cet esprit que le dossier informatisé commun illustre le partage à l'échelle d'un parcours.
+
+## 3. Partager : le dossier informatisé commun du parcours rénal
+
+Après la traçabilité en service, le support sur le parcours de la MRC donne le seul exemple explicite de dossier partagé entre structures. La prise en charge en UAD y cite un dossier informatisé commun avec le CH, articulé à la collaboration entre le centre hospitalier d'Agen-Nérac (CHAN — centre hospitalier d'Agen-Nérac cité), la Maison du Rein et les infirmiers libéraux. La liste suivante se lit des fonctions citées vers les conditions organisationnelles, chaque élément restant un repère de cours daté de 2026 renvoyé à l'organisation en vigueur.
+
+- **Fonctions citées (cours)** : information en temps réel, suivi des prescriptions, communication avec les médecins néphrologues — repère de cours, appliquer les outils en vigueur.
+- **Acteurs reliés (cours)** : CH d'Agen et Maison du Rein, UAD avec infirmiers libéraux (IDEL — infirmiers diplômés d'État libéraux cités) et infirmière coordinatrice (IDEC — infirmière de coordination citée), avec obligation d'accueil au CH en cas de repli — repère de cours daté, renvoyé à l'organisation en vigueur.
+- **Prises en charge associées (cours)** : consultations néphrologiques, visites en antenne pendant les séances, prise en charge diététique, d'assistante sociale et de psychologue, communication étroite entre tous les interlocuteurs — repère de cours, sans détail logiciel.
+
+<Callout type="warn" title="Repères datés">
+Dossier commun, organisations, effectifs et fonctionnements cités pour le Lot-et-Garonne en 2026 : repères de cours datés et locaux, à confronter à l'organisation en vigueur — ne pas les utiliser comme description actuelle.
+</Callout>
+
+Ce qu'il faut en retenir : le dossier commun y apparaît comme l'outil du temps réel et de la prescription suivie entre ville, domicile et hôpital, indissociable de la collaboration décrite. Les fonctions listées restent sommaires et locales, sans règle de tenue ni garantie de sécurité décrites. C'est dans cet esprit que les manques structurent la suite.
+
+## 4. Ce qui manque : TODO explicites
+
+Le constat de lecture posé, cette section nomme sans détour tout ce que les supports ne permettent pas d'écrire, car inventer des règles de dossier exposerait patients et soignants. La liste suivante se lit comme un programme de compléments, chaque point renvoyant aux cours et protocoles en vigueur.
+
+- **TODO** : règles de bonnes pratiques de tenue du dossier patient et du dossier de soins (contenu, structure, qualité rédactionnelle, horodatage, signature, rectification, confidentialité, accès, conservation) non décrites dans les quatre PDF — compléter avec les cours et protocoles en vigueur.
+- **TODO** : dossier de soins informatisé (logiciels, prescription connectée, plan de soins, transmissions ciblées formalisées, codification, interopérabilité, sécurité) non décrit — compléter avec les cours et protocoles en vigueur.
+- **TODO** : cadre juridique et déontologique (secret professionnel et partage, consentement, droits d'accès, traçabilité des accès) non traité dans les extraits — compléter avec les textes en vigueur.
+- **TODO** : modèles et méthode de transmissions (formats, outils et grilles éventuels) non fournis dans les extraits des TD — compléter avec les cours en vigueur, sans appliquer un modèle extérieur.
+
+En pratique, cette liste impose une méthode : n'écrire dans un dossier que selon les règles enseignées et les outils prévus localement, tracer sans délai et avec pertinence, et vérifier chaque repère daté. Les TODO ci-dessus rappellent que cette fiche ne remplace ni un cours sur le dossier ni un manuel logiciel. C'est dans cette limite que s'inscrit la vigilance infirmière.
+
+## Points de vigilance IDE
+
+La vigilance infirmière découle de tout ce qui précède : transmettre l'utile au bon destinataire, tracer ce qui conditionne la décision, et partager sans exposer. Les puces ci-dessous reprennent les seuls points sourcés ; elles se lisent comme la mise en actes des transmissions et de la traçabilité décrites, dans l'attente des compléments signalés.
+
+- Transmettre avec pertinence : observations utiles au projet (constantes, hydratation, douleur, moral, entourage), au bon professionnel et au bon moment, à l'oral comme à l'écrit, selon les scénarios cités.
+- Tracer sans délai : bilan des entrées et sorties, prises de liquide, observations et relais entre équipes de jour et de nuit, selon les exemples cités et les protocoles en vigueur.
+- Partager sans substituer : en staff, relayer fidèlement les transmissions des absents et les dires de la famille ; dans le parcours, utiliser le dossier commun prévu pour l'information en temps réel et le suivi des prescriptions, selon l'organisation en vigueur.
+- Devant tout repère daté ou local (organisations, effectifs, outils cités), vérifier le protocole en vigueur, sur prescription le cas échéant.
+- TODO : règles de tenue, logiciels, cadres juridiques et modèles de transmissions non décrits dans les supports — compléter avec les cours et protocoles en vigueur.
+
+Concrètement, cela signifie noter ce qui sera décidé demain, relayer ce qui a été observé aujourd'hui, et ne jamais combler un manque de règle par une habitude personnelle. Devant une rupture de traçabilité ou une situation à risque, l'alerte et la trace immédiates selon le protocole priment, les repères datés restant à vérifier comme l'indiquent les avertissements et les TODO.
+
+<Accordions>
+  <Accordion title="Complément : ce que les supports ne détaillent pas" value="complement">
+    Ni le CM « Équipe et outils », ni les deux TD, ni le support sur le parcours ne décrivent la structure du dossier, la qualité rédactionnelle attendue, la gestion des accès ni la sécurité informatique. Les sigles IDEL et IDEC, le CHAN et la Maison du Rein y sont cités dans l'organisation locale de 2026. TODO : compléter avec les cours dédiés et les textes en vigueur.
+  </Accordion>
+</Accordions>
+
+Après ce complément, la fiche se referme sur ses sources : tout ce qui précède vient des apports indirects cités, les contenus datés restant à confronter aux protocoles en vigueur.
+
+## Voir aussi
+
+<Cards>
+  <Card title="Équipe et outils" description="Coordination, transmissions et critères du travail ensemble." href="./equipe-outils" />
+  <Card title="Réseau de soins et IRC" description="Parcours coordonné : le dossier commun entre hôpital et dialyse." href="./reseau-irc" />
+  <Card title="Rôles, missions et compétences" description="Ce que fait l'IDE et avec qui : traçabilité et outils cités." href="./roles-missions" />
+</Cards>
 
 ## Sources
 
-- Cours UE 3.3 (à venir).
+- « EQUIPE ET OUTILS », UE 3.3 S3 — Rôles infirmiers, organisation du travail et interprofessionnalité, compétence 9, CM version 2, septembre 2026 (69 pages) : transmissions infirmières et temps de transmissions cités.
+- « UE 3.3S3 Consignes ESI — TD Travail d'équipe » (TD1), promotion 2025-2028, version 2 du 4 septembre 2026, consignes du 24 septembre 2026 (2 pages, 3 scénarios) : transmissions, traçabilité et relais cités.
+- « UE 3.3S3 Consignes ESI — TD Travail d'équipe et transmission » (TD2), promotion 2025-2028, version 1 du 8 septembre 2026, situation de Maeva (2 pages) : transmissions ciblées demandées en consigne.
+- « LE PARCOURS DE SOINS DU PATIENT ATTEINT D'UNE MALADIE RÉNALE CHRONIQUE », C. Lamarche, 16 septembre 2026 (36 pages) : dossier informatisé commun cité pour la prise en charge en UAD.

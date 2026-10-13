@@ -7,7 +7,15 @@ et ne sont jamais versionnés.
 
 ## [Non publié]
 
-_Rien pour le moment._
+### Ajouté
+
+- Rédaction des 6 fiches `crew` (UE 3.3) à partir des 8 PDF :
+  histoire de la profession, concepts, rôles-missions-acteurs,
+  équipe et outils, dossier patient, réseau IRC / parcours MRC —
+  prose pédagogique + composants Fumadocs, contenus datés signalés, TODO sinon.
+  (`dossier-patient` sans support dédié : apports indirects + TODO explicites.)
+- Préférences standing consignées dans `AGENTS.md` (sources, forme,
+  intouchables, autonomie commit/PR/merge, discipline de délégation).
 
 ## [2026-10-10] — Fiches flow UE 2.8 (PR #4)
 
