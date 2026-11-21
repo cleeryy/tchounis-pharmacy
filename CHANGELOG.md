@@ -9,6 +9,9 @@ et ne sont jamais versionnés.
 
 ### Ajouté
 
+- Publication de l'image Docker sur GHCR (`.github/workflows/docker-publish.yml` :
+  build multi-stage, tags `latest` / `sha-*` / tag git, cache GitHub Actions)
+  et `docker-compose.yml` prêt pour le déploiement VPS (`docker compose pull`).
 - Schémas Mermaid : intégration officielle (`mermaid` + `next-themes`,
   composant `<Mermaid view="..." global>` enregistré dans `components/mdx.tsx`,
   thème clair/sombre) et conversion des résumés en vrais flowcharts —

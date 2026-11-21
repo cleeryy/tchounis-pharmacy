@@ -15,6 +15,28 @@ pnpm dev
 yarn dev
 ```
 
+## Déploiement Docker (GHCR)
+
+Chaque push sur `main` (et chaque tag `v*` ou lancement manuel) construit et
+publie l'image sur GitHub Container Registry via
+`.github/workflows/docker-publish.yml` :
+
+```text
+ghcr.io/cleeryy/tchounis-pharmacy:latest
+ghcr.io/cleeryy/tchounis-pharmacy:sha-<commit>
+```
+
+Sur un serveur (VPS) avec Docker Compose :
+
+```bash
+docker compose pull
+docker compose up -d
+# accessible sur http://<ip-du-serveur>:3000
+```
+
+Si le package GHCR est privé, se connecter d'abord avec un token
+`read:packages` : `echo "$TOKEN" | docker login ghcr.io -u cleeryy --password-stdin`.
+
 Open http://localhost:3000 with your browser to see the result.
 
 ## Explore
